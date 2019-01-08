@@ -12979,8 +12979,8 @@ img{
 .note-toolbar .btn-light {
     background-color: #ffffff;
 }
-.w-130 {
-    width: 130px !important;
+.w-120 {
+    width: 120px !important;
 }
 @media screen and (max-width: 1500px) {
 	.form-w-50{
@@ -13009,5 +13009,12 @@ img{
     flex-grow:1;
     max-width:100%;
         width: 100%;
+}
+}
+@media screen and (max-width: 550px){
+.form-w-50 .radio-inline {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 0 0 20px;
 }
 }

@@ -12976,6 +12976,12 @@ img{
 .note-editor.note-frame .note-statusbar{
 	border-top: 1px solid #e6e6e6;
 }
+.note-toolbar .btn-light {
+    background-color: #ffffff;
+}
+.w-130 {
+    width: 130px !important;
+}
 @media screen and (max-width: 1500px) {
 	.form-w-50{
 		display: flex;

@@ -13028,6 +13028,9 @@ img{
 margin: 5px 0 -10px !important;
     font-size: 15px!important;  
 }
+.f-s-g-s-1{
+    flex-grow: 1;
+}
 }
 @media screen and (max-width: 550px){
 .form-w-50 .radio-inline {

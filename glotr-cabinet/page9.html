@@ -38,7 +38,7 @@
 		</script>
 </head>
 
-<body class="animsition">
+<body class="animsition"> 
     <!--[if lt IE 8]>
 				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
@@ -1382,7 +1382,7 @@
                                     <a style="text-decoration: underline;" class="add-form-link" href="#">добавить оптовую цену</a>
                                 </div>
                                 <div style="display: none" class="wholesale_exemplary_price_block">
-                                    <div class="form-group">
+                                    <div class="form-group wholesale_retail_price_form1">
                                         <div class="d-flex">
                                             <div class="d-flex align-items-center">
                                                 <span class="mr-15 label-text">Цена от:</span>
@@ -1401,7 +1401,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class=" alert alert-warning alert-dismissible" role="alert">
+                                    <div class="form-block1"></div>
+                                    <a style="text-decoration: underline;" class="add-form-link1 " href="#">добавить оптовую цену</a>
+                                    <div class=" alert alert-warning alert-dismissible mt-20" role="alert">
                                         Если Вы указываете примерную цену для Вашего товара, а именно «Цена от ..», то для данной товарной позиции
                                         не будут доступны некоторые функции: указание скидок, условия кредита, оформление заказа через корзину, онлайн покупки.
                                     </div>
@@ -1980,6 +1982,10 @@
         $(".add-form-link").click(function(e) {
             e.preventDefault();
             $(".correct_price_block > .wholesale_retail_price_form").clone().prependTo(".form-block");
+        });
+        $(".add-form-link1").click(function(e) {
+            e.preventDefault();
+            $(".wholesale_exemplary_price_block > .wholesale_retail_price_form1").clone().prependTo(".form-block1");
         });
     });
     </script>

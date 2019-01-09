@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+}
+
+article,
+aside,
+dialog,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans Hebrew', serif;
+    color: #223C61;
+}
+
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: #222;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 50px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+html {
+    position: relative;
+    min-height: 100%;
+}

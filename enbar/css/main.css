@@ -1,4 +1,25 @@
-@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+@font-face {
+    font-family: 'Open Sans Hebrew';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/OpenSansHebrew-Regular.eot);
+    src: url(../fonts/OpenSansHebrew-Regular.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/OpenSansHebrew-Regular.woff2) format('woff2'),
+        url(../fonts/OpenSansHebrew-Regular.woff) format('woff'),
+        url(../fonts/OpenSansHebrew-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans Hebrew';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/OpenSansHebrew-Bold.eot);
+    src: url(../fonts/OpenSansHebrew-Bold.eot?#iefix) format('embedded-opentype'),
+        url(../fonts/OpenSansHebrew-Bold.woff2) format('woff2'),
+        url(../fonts/OpenSansHebrew-Bold.woff) format('woff'),
+        url(../fonts/OpenSansHebrew-Bold.ttf) format('truetype');
+}
+
 html {
     font-family: sans-serif;
     line-height: 1.15;
@@ -7,7 +28,9 @@ html {
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: transparent;
 }
-
+.container {
+    max-width: 1228px;
+}
 article,
 aside,
 dialog,
@@ -25,7 +48,7 @@ section {
 body {
     margin: 0;
     font-family: 'Open Sans Hebrew', serif;
-    color: #223C61;
+    color: #000;
 }
 
 
@@ -1285,3 +1308,249 @@ html {
     margin-bottom: auto !important
 }
 
+.widget {
+    border: 2px solid #2f5dab;
+    background-color: #dbedf4;
+}
+
+.widget-title {
+    background-color: #d1defb;
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 10px;
+    border-bottom: 2px solid #2f5dab;
+}
+
+.widget-body {
+    padding:30px;
+}
+
+.s-title {
+    font-size: 24px;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.s-title:after {
+    content: "";
+    width: 160px;
+    height: 2px;
+    background-color: #2f5dab;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.custom-control {
+    position: relative;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    min-height: 1.5rem;
+    padding-left: 0;
+    padding-right: 1.7rem;
+}
+.block-checkboxes .custom-control{
+    display: flex;
+    margin-bottom:15px;
+}
+.custom-control.fill-checkbox {
+    color: black;
+    font-size: 18px;
+}
+
+.custom-control.fill-checkbox .fill-control-input {
+    display: none;
+}
+
+.custom-control.fill-checkbox .fill-control-input:checked~.fill-control-indicator {
+    background-color: #2f5dab;
+    border: 1px solid #2f5dab;
+    background-size: 80%;
+}
+
+.custom-control.fill-checkbox .fill-control-indicator {
+    border-radius: 3px;
+    display: inline-block;
+    position: absolute;
+    top: 4px;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #2f5dab;
+    transition: .3s;
+    background: #fff;
+    background-size: 0%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+}
+
+.custom-control-input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-control-indicator {
+    position: absolute;
+    top: .25rem;
+    left: 0;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #ddd;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.custom-radio .custom-control-indicator {
+    border-radius: 50%;
+}
+
+.custom-control-input:checked~.custom-control-indicator {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-indicator {
+    background-image: url(data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E);
+}
+.btn {
+    padding: 15px 55px;
+    font-size: 18px;
+    font-weight: 700;
+border-radius: 3px;
+}
+.btn-warning {
+    color: #000;
+    background-color: #ffba00;
+    border-color: #ffba00;
+}
+.table-bordered td{
+font-size: 18px;
+font-weight: 400;
+text-transform: uppercase;
+border: 1px solid #808080;
+}
+.table-bordered th{
+    color: black;
+font-size: 18px;
+font-weight: 700;
+text-transform: uppercase;
+border: 1px solid #808080!important;
+}
+.badge{
+font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+.badge-warning{
+    background-color:#ffba00;
+    border-color: #ffba00;
+}
+.title{
+font-size: 24px;
+font-weight: 400;
+text-transform: uppercase;
+}
+h5{
+    font-size: 14px;
+font-weight: 400;
+line-height: 16px;
+}
+.form-control {
+    padding: 8px .75rem;
+    font-size: 16px;
+    color: #495057;
+border: 2px solid #2f5dab;
+    border-radius:0;
+}
+.form-group .form-control-label {
+font-size: 16px;
+font-weight: 400;
+}
+.calendar-form{
+        background: url(../img/calendar.png) no-repeat #fff 10px 7px;
+}
+.max-width-300{
+    max-width: 300px;
+    margin:auto;
+}
+.widget-footer{
+    padding: 30px;
+}
+.flex-grow-1 {
+    flex-grow: 1;
+}
+.widget-content > div{
+    width: 100%;
+}
+.mb-s-30{
+    margin-bottom:30px;
+}
+@media (max-width: 992px){
+    .mb-s-30{
+    margin-bottom:0;
+}
+   .widget-title {
+    font-size: 17px;
+    padding: 5px;
+    border-bottom: 1px solid #2f5dab;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+} 
+.widget {
+    border: 1px solid #2f5dab;  
+    height:calc(100vh - 30px);
+    position: relative;  
+}
+.widget-body{
+    padding: 10px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: scroll;
+        padding-bottom: 80px;
+}
+.s-title {
+    font-size: 16px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.s-title:after {
+    width: 60px;
+    margin-left: -30px;
+}
+.widget-footer{
+     padding: 10px;
+     position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+        background-color: #dbedf4;
+
+}
+.widget-footer .btn{
+    display: block;
+}
+.max-width-300 {
+    max-width: 100%;
+    margin: auto;
+}
+
+}

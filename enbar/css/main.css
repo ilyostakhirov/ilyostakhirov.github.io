@@ -53,7 +53,10 @@ body {
     color: #000;
 }
 
-
+body.home{
+background: url(../img/bg.png) no-repeat 50% 0;
+background-size: contain;
+}
 
 ul {
     list-style: none;
@@ -1798,7 +1801,20 @@ h5 {
 .f-18 {
     font-size: 18px !important;
 }
+.f-28 {
+    font-size: 28px !important;
+}
 
+.f-23 {
+    font-size: 23px !important;
+}
+
+.f-19 {
+    font-size: 19px !important;
+}
+.top-header{
+    padding-top: 220px;
+}
 .grid-form {
     margin: 0 -3px;
 }

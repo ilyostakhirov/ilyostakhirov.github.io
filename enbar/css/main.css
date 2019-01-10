@@ -1892,6 +1892,7 @@ h5 {
     .widget {
         border: 1px solid #2f5dab;
         height: calc(100vh - 30px);
+        height: calc(var(--vh, 1vh) * 100 - 30px);
         position: relative;
     }
 

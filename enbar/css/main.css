@@ -1409,7 +1409,7 @@ html {
 .custom-control-indicator {
     position: absolute;
     top: .25rem;
-    left: 0;
+    right: 0;
     display: block;
     width: 1rem;
     height: 1rem;
@@ -1418,7 +1418,7 @@ html {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #ddd;
+    border: 1px solid #2f5dab;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50% 50%;
@@ -1894,7 +1894,6 @@ h5 {
     border: none;
     border-bottom: 1px solid #949ab5;
     box-shadow: none;
-    height:100%;
 
 }
 
@@ -1903,6 +1902,7 @@ h5 {
     border: none;
     border-bottom: 1px solid #949ab5;
     box-shadow: none;
+    background-color: #d5dcf7;
 }
 
 .blue-title {

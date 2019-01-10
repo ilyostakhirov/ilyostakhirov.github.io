@@ -53,9 +53,9 @@ body {
     color: #000;
 }
 
-body.home{
-background: url(../img/bg.png) no-repeat 50% 0;
-background-size: contain;
+body.home {
+    background: url(../img/bg.png) no-repeat 50% 0;
+    background-size: contain;
 }
 
 ul {
@@ -1798,23 +1798,79 @@ h5 {
     border-bottom: 2px solid #2f5dab;
 }
 
+.f-14 {
+    font-size: 14px !important;
+}
+
+.f-15 {
+    font-size: 15px !important;
+}
+
+.f-16 {
+    font-size: 16px !important;
+}
+
+.f-17 {
+    font-size: 17px !important;
+}
+
 .f-18 {
     font-size: 18px !important;
 }
-.f-28 {
-    font-size: 28px !important;
+
+.f-19 {
+    font-size: 19px !important;
+}
+
+.f-20 {
+    font-size: 20px !important;
+}
+
+.f-21 {
+    font-size: 21px !important;
+}
+
+.f-22 {
+    font-size: 22px !important;
 }
 
 .f-23 {
     font-size: 23px !important;
 }
 
-.f-19 {
-    font-size: 19px !important;
+.f-24 {
+    font-size: 25px !important;
 }
-.top-header{
+
+.f-25 {
+    font-size: 25px !important;
+}
+
+.f-26 {
+    font-size: 26px !important;
+}
+
+.f-27 {
+    font-size: 27px !important;
+}
+
+.f-28 {
+    font-size: 28px !important;
+}
+
+.f-29 {
+    font-size: 29px !important;
+}
+
+.f-30 {
+    font-size: 30px !important;
+}
+
+.top-header {
     padding-top: 220px;
+    padding-right: 240px;
 }
+
 .grid-form {
     margin: 0 -3px;
 }
@@ -1829,6 +1885,56 @@ h5 {
     display: block;
 }
 
+.grey {
+    background-color: #e7e7e8;
+}
+
+.blue-input {
+    background-color: #d5dcf7;
+    border: none;
+    border-bottom: 1px solid #949ab5;
+    box-shadow: none;
+    height:100%;
+
+}
+
+.blue-input:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #949ab5;
+    box-shadow: none;
+}
+
+.blue-title {
+   color: #fff;
+font-size: 24px;
+font-weight: 400;
+background-color: #2f5dab;
+text-align:center;
+}
+.table-form td{
+border: 1px solid #2f5dab;
+padding: 0;
+}
+.table-form tr.grey td{
+    text-align:center;
+    color: black;
+font-size: 22px;
+}
+.home .custom-control.fill-checkbox {
+    font-size: 17px;
+    line-height: 16px;
+}
+.home .custom-control {
+min-height: 1rem;
+    padding-left: 0;
+    padding-right: 1.3rem;
+}
+.home .custom-control.fill-checkbox .fill-control-indicator {
+    top: 2px;
+    width: 14px;
+    height: 14px;
+}
 @media (min-width: 991px) {}
 
 @media (max-width: 992px) {

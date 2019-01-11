@@ -1904,7 +1904,10 @@ h5 {
     box-shadow: none;
     background-color: #d5dcf7;
 }
-
+.white-input,.white-input:focus{
+   background-color: #fff;
+   border-bottom: 1px solid #fff;
+}
 .blue-title {
    color: #fff;
 font-size: 24px;
@@ -1935,8 +1938,44 @@ min-height: 1rem;
     width: 14px;
     height: 14px;
 }
+.table-form.table-bordered {
+    border: 1px solid #2f5dab;
+}
+.b-n{
+    border:none!important;
+}
+.b-t-n{
+    border-top:none!important;
+}
+.b-r-n{
+    border-right:none!important;
+}
+.b-l-n{
+    border-left:none!important;
+}
+.b-b-n{
+    border-bottom:none!important;
+}
+.blue-tr{
+    background-color: #2f5dab;
+    
+}
+.blue-tr th{
+    color: #fff;
+    font-size:21px;
+    text-align:center;
+}
+select.form-control.blue-input {
+    padding-left: 30px;
+    background: #dde4ff url(../img/arr.png) no-repeat 15px center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 41px!important;
+}
 @media (min-width: 991px) {}
-
+.table-1-s{
+    display: none;
+}
 @media (max-width: 992px) {
     .responsive-table thead {
         display: none;
@@ -1974,7 +2013,9 @@ min-height: 1rem;
         border-left: 1px solid #808080;
 
     }
-
+.responsive-table tr:last-child{
+border-bottom: 1px solid #808080;
+}
     .responsive-table tr td:nth-child(2) {
         padding-top: 5px;
         -webkit-box-flex: 1;
@@ -2059,4 +2100,35 @@ min-height: 1rem;
         max-width: 100%;
         margin: auto;
     }
+    .top-header {
+        padding-top: 100px;
+        padding-right: 0;
+    }
+    .top-header .f-28{
+    font-size:18px !important;
+    }
+    .top-header .f-22{
+    font-size: 12px !important;
+    }
+    .top-header .f-18{
+    font-size: 12px !important;
+    }
+    .block-1{
+        flex-grow: 1;
+        width: 100%;
+    }
+    .block-1 input{
+        width: inherit!important;
+    }
+
+.block-1  .f-25 {
+    white-space: nowrap;
+    font-size: 16px!important;
+}
+.table-1-d{
+    display: none;
+}
+.table-1-s{
+    display: block;
+}
 }

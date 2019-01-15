@@ -13215,13 +13215,24 @@ display: none;
 .product-list-table table.table th:nth-child(2),.product-list-table table.table td:nth-child(2){
 display: none;
 }
+.sm-block-form .radio-inline{
+    display: block;
+    margin-left:0;
+}
 }
 @media screen and (max-width: 550px){
+    .w-120 {
+    width: 100px !important;
+}
 .form-w-50 .radio-inline {
     flex: 0 0 100%;
     max-width: 100%;
     margin: 0 0 10px;
 }
+.product-list-table table.table th:nth-child(1),.product-list-table table.table td:nth-child(1){
+display: none;
+}
+
 }
 @media screen and (max-width: 1350px){
 .h-md{

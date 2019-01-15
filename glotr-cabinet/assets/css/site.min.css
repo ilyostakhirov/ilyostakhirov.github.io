@@ -13285,6 +13285,7 @@ table.table-striped tbody tr td {
 }
 .price.sm-sh{
     margin-top:0;
+        padding-right: 26px;
 }
 }
 @media screen and (max-width: 1350px){

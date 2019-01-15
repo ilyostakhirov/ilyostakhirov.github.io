@@ -13290,6 +13290,9 @@ table.table-striped tbody tr td {
     margin-top:0;
         padding-right: 32px;
 }
+.product-list-table .overlay .btn {
+display: none;
+}
 }
 @media screen and (max-width: 1350px){
 .h-md{

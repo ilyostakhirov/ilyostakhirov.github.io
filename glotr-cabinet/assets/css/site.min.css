@@ -13219,7 +13219,7 @@ display: none;
     margin-left:0;
 }
 .sm-sh{
-    display: block;
+    display: inline-block;
 }
 .price.sm-sh{
     margin-top:10px;

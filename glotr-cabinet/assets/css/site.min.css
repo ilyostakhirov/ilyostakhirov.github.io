@@ -13252,6 +13252,9 @@ display: none;
     border-left: none;
     max-width: 110px;
 }
+.product-list-table table.table-striped tbody tr td:nth-child(3){
+    padding-left:0;
+}
 table.table-striped tbody tr td {
     vertical-align: middle;
     flex-grow: 1;
@@ -13285,7 +13288,7 @@ table.table-striped tbody tr td {
 }
 .price.sm-sh{
     margin-top:0;
-        padding-right: 26px;
+        padding-right: 32px;
 }
 }
 @media screen and (max-width: 1350px){

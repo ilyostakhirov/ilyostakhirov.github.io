@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="global/vendor/switchery/switchery.css">
     <link rel="stylesheet" href="global/vendor/dropify/dropify.css">
     <link rel="stylesheet" href="global/vendor/bootstrap-treeview/bootstrap-treeview.min.css">
+    <link rel="stylesheet" href="global/vendor/webui-popover/webui-popover.css">
     <link href="global/vendor/summernote/summernote-bs4.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/site.min.css">
     <!-- Plugins -->
@@ -1258,25 +1259,22 @@
                         </div>
                         <div class="modal-body">
                             <div class="form-group mb-10">
-                                
                                 <div class="row">
                                     <div class="col-6">
-                                    	<label class="form-control-label">Наличие</label>
+                                        <label class="form-control-label">Наличие</label>
                                         <select class="form-control">
                                             <option>в наличии</option>
                                         </select>
                                     </div>
                                     <div class="col-6">
-                                    	<label class="form-control-label">Остатки</label>
-                                    	<div class="d-flex align-items-center">
-                                    	<input class="form-control mr-10">
-                                    	<span>шт.</span>
-                                    	</div>
-                                        
+                                        <label class="form-control-label">Остатки</label>
+                                        <div class="d-flex align-items-center">
+                                            <input class="form-control mr-10">
+                                            <span>шт.</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            
                         </div>
                         <div class="modal-footer justify-content-center">
                             <button type="button" class="btn btn-default">отменить</button>
@@ -1308,12 +1306,12 @@
                             <div class="retail_price_block">
                                 <div class="label-text mb-10">Розничная цена</div>
                                 <div class="form-group mb-0">
-                                    <div class="form-w-50 retail_price_form">
-                                        <div class="radio-custom mb-20 radio-default radio-inline">
+                                    <div class="retail_price_form">
+                                        <div class="radio-custom mb-10 radio-default radio-inline">
                                             <input type="radio" name="retail_price" value="correct_price" id="correct_price" checked="">
                                             <label for="correct_price">точная цена</label>
                                         </div>
-                                        <div class="radio-custom mb-20 radio-default radio-inline">
+                                        <div class="radio-custom mb-10 radio-default radio-inline">
                                             <input type="radio" name="retail_price" value="exemplary_price" id="exemplary_price">
                                             <label for="exemplary_price">примерная цена «Цена от...)</label>
                                         </div>
@@ -1366,12 +1364,12 @@
                             <div style="display: none" class="wholesale_price_block mb-20">
                                 <div class="label-text mb-10">Оптовая цена</div>
                                 <div class="form-group mb-0">
-                                    <div class="form-w-50 retail_price_form">
-                                        <div class="radio-custom mb-20 radio-default radio-inline">
+                                    <div class="retail_price_form">
+                                        <div class="radio-custom mb-10 radio-default radio-inline">
                                             <input type="radio" name="wholesale_price" value="wholesale_correct_price" id="wholesale_correct_price" checked="">
                                             <label for="wholesale_correct_price">точная цена</label>
                                         </div>
-                                        <div class="radio-custom mb-20 radio-default radio-inline">
+                                        <div class="radio-custom mb-10 radio-default radio-inline">
                                             <input type="radio" name="wholesale_price" value="wholesale_exemplary_price" id="wholesale_exemplary_price">
                                             <label for="wholesale_exemplary_price">примерная цена «Цена от...)</label>
                                         </div>
@@ -1435,36 +1433,33 @@
                                     <label class="form-control-label">Условия кредита</label>
                                 </div>
                                 <div class="form-horizontal">
-                                    <div class="form-group mb-0 row">
-                                        <label class="col-md-2 mt-5 text-left pl-15 pr-15 form-control-label">Наценка к розничной цене:</label>
-                                        <div class="col-md-9">
-                                            <div class="form-w-50">
-                                                <div class="radio-custom mb-20 radio-default radio-inline">
+                                    <div class="form-group mb-0">
+                                        <label class="form-control-label">Наценка к розничной цене:</label>
+                                        <div>
+                                                <div class="radio-custom mb-10 radio-default radio-inline">
                                                     <input type="radio" name="credit_type" id="credit_type1" checked="">
                                                     <label for="credit_type1">Процент</label>
                                                 </div>
-                                                <div class="radio-custom mb-20 radio-default radio-inline">
+                                                <div class="radio-custom mb-10 radio-default radio-inline">
                                                     <input type="radio" name="credit_type" id="credit_type2">
                                                     <label for="credit_type2">Денежный эквивалент</label>
                                                 </div>
-                                                <div class="radio-custom mb-20 radio-default radio-inline">
+                                                <div class="radio-custom mb-10 radio-default radio-inline">
                                                     <input type="radio" name="credit_type" id="credit_type3">
                                                     <label for="credit_type3">Без наценки</label>
                                                 </div>
-                                            </div>
                                         </div>
                                     </div>
-                                    <div class="form-group row">
-                                        <label class="col-md-2 form-control-label"></label>
-                                        <div class="col-md-9 flex-s-wrap d-flex align-items-center">
+                                    <div class="form-group">
+                                        <div class="flex-s-wrap d-flex align-items-center">
                                             <input type="text" class="form-control w-150 mr-10">
                                             <span class="w-30">%</span>
                                             <span class="ml-20 f-s-g-1 red-600 font-size-18">1 250 000 сум (цена в кредит)</span>
                                         </div>
                                     </div>
-                                    <div class="form-group row">
-                                        <label class="col-md-2 mt-5 text-left pl-15 pr-15 form-control-label">Первоначальный взнос</label>
-                                        <div class="col-md-9 flex-s-wrap d-flex align-items-center">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Первоначальный взнос</label>
+                                        <div class="flex-s-wrap d-flex align-items-center">
                                             <select class="form-control w-150 mr-10">
                                                 <option>25</option>
                                                 <option>30</option>
@@ -1474,9 +1469,9 @@
                                             <span class="ml-20 f-s-g-1 red-600 font-size-18">250 000 сум</span>
                                         </div>
                                     </div>
-                                    <div class="form-group row">
-                                        <label class="col-md-2 mt-5 text-left pl-15 pr-15 form-control-label">Период выплаты</label>
-                                        <div class="col-md-9 flex-s-wrap d-flex align-items-center">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Период выплаты</label>
+                                        <div class="flex-s-wrap d-flex align-items-center">
                                             <select class="form-control w-150 mr-10">
                                                 <option>12</option>
                                                 <option>24</option>
@@ -1536,12 +1531,23 @@
                             </div>
                         </div>
                     </div>
+                    <div id="examplePopWithDateBlock" hidden>
+                    	<div class="p-10 font-size-13">
+				       <strong>Актуальность предложения</strong> - 25%<br>
+				       <strong>Опубликовано</strong> - 15.05.2019<br>
+				       <strong>Обновлено</strong> - 18.05.2019
+				       </div>
+				        <div class="mb-10 text-center">
+				            <button type="button" class="btn btn-sm mr-10 btn-primary">Потвердить актуальность</button>
+				        </div>
+				    </div>
                     <div class="table-wrap table-responsive product-list-table">
                         <table class="table table-hover table-bordered table-striped">
                             <thead>
                                 <tr>
                                     <th style="width: 30px;min-width: 30px;">
                                         <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                                        
                                     </th>
                                     <th style="min-width: 150px;width: 150px" scope="col">
                                         <strong>Фото</strong>
@@ -1565,8 +1571,9 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>
+                                    <td class="text-center">
                                         <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                                        <div class="fill-bar h-fill-bar mt-10"><small>20%</small><span></span><span></span><span></span><span class="bg-green-800"></span><span class="bg-green-800"></span></div>
                                     </td>
                                     <td>
                                         <figure class="overlay">
@@ -1583,7 +1590,7 @@
                                         <h5><span class="badge badge-warning mb-0 mr-5">новинка</span> <a class="blue-800" href="#">Телевизор LG OLED55B8</a></h5>
                                         <h6><span class="mr-5">ID:</span><small>6546546545</small> <span class="ml-20 mr-5">Артикуль:</span><small>6546546545</small></h6>
                                         <h6><span class="mr-5 h-md">Публикация:</span><label class="badge badge-success mb-0 mr-20">опубликовано</label><a class="mr-10" href="#">на сайте</a><a class="mr-10" href="#">в каталоге</a></h6>
-                                        <h6 class="mb-0"><span class="mr-5">Актуальность:</span><div class="fill-bar mr-5"><span class="bg-green-800"></span><span class="bg-green-800"></span><span></span><span></span><span></span></div> <small class="h-md">очень низкая</small><span class="ml-20 mr-5">Заполнено на:</span><div class="fill-bar mr-5"><span class="bg-green-800"></span><span></span><span></span><span></span><span></span></div> <small class="h-md">20 %</small></h6>
+                                        <h6 class="mb-0"><span class="mr-5">Актуальность:</span><a id="examplePopWithDate" href="javascript:void(0)" class="fill-bar mr-5"><span class="bg-green-800"></span><span class="bg-green-800"></span><span></span><span></span><span></span></a> <small class="h-md">очень низкая</small></h6>
                                     </td>
                                     <td class="text-center">
                                         <small>в розницу</small>
@@ -1598,7 +1605,7 @@
                                         <button type="button" class="btn btn-icon btn-success mb-5 p-5"><i class="icon wb-pencil" aria-hidden="true"></i></button>
                                         <button type="button" class="btn btn-icon btn-warning mb-5  p-5"><i class="icon wb-trash" aria-hidden="true"></i></button>
                                         <div class="btn-group p-s">
-                                            <button type="button" class="btn btn-icon p-5 btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false" data-animation="fade">
+                                            <button type="button" class="btn btn-icon p-5 btn-dark dropdown-toggle" data-toggle="dropdown" aria-expanded="false" data-animation="fade">
                                                 <i class="icon wb-more-vertical" aria-hidden="true"></i>
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right">
@@ -1628,6 +1635,7 @@
                                 <tr>
                                     <td>
                                         <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                                        <div class="fill-bar h-fill-bar mt-10"><small>20%</small><span></span><span></span><span></span><span class="bg-green-800"></span><span class="bg-green-800"></span></div>
                                     </td>
                                     <td>
                                         <figure class="overlay">
@@ -1644,7 +1652,7 @@
                                         <h5><span class="badge badge-primary mb-0 mr-5">хит продаж</span> <a class="blue-800" href="#">Телевизор LG OLED55B8</a></h5>
                                         <h6><span class="mr-5">ID:</span><small>6546546545</small> <span class="ml-20 mr-5">Артикуль:</span><small>6546546545</small></h6>
                                         <h6><span class="mr-5 h-md">Публикация:</span><label class="badge badge-danger mb-0 mr-20">не опубликовано</label><a class="" href="#">отказано модератором</a></h6>
-                                        <h6 class="mb-0"><span class="mr-5">Актуальность:</span><div class="fill-bar mr-5"><span class="bg-green-800"></span><span class="bg-green-800"></span><span></span><span></span><span></span></div> <small class="h-md">очень низкая</small><span class="ml-20 mr-5">Заполнено на:</span><div class="fill-bar mr-5"><span class="bg-green-800"></span><span></span><span></span><span></span><span></span></div> <small class="h-md">20 %</small></h6>
+                                        <h6 class="mb-0"><span class="mr-5">Актуальность:</span><div class="fill-bar mr-5"><span class="bg-green-800"></span><span class="bg-green-800"></span><span></span><span></span><span></span></div> <small class="h-md">очень низкая</small></h6>
                                     </td>
                                     <td class="text-center">
                                         <small>оптом</small>
@@ -1659,7 +1667,7 @@
                                         <button type="button" class="btn btn-icon btn-success mb-5 p-5"><i class="icon wb-pencil" aria-hidden="true"></i></button>
                                         <button type="button" class="btn btn-icon btn-warning mb-5  p-5"><i class="icon wb-trash" aria-hidden="true"></i></button>
                                         <div class="btn-group p-s">
-                                            <button type="button" class="btn btn-icon p-5 btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false" data-animation="fade">
+                                            <button type="button" class="btn btn-icon p-5 btn-dark dropdown-toggle" data-toggle="dropdown" aria-expanded="false" data-animation="fade">
                                                 <i class="icon wb-more-vertical" aria-hidden="true"></i>
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right">
@@ -1689,6 +1697,7 @@
                                 <tr>
                                     <td>
                                         <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                                        <div class="fill-bar h-fill-bar mt-10"><small>20%</small><span></span><span></span><span></span><span class="bg-green-800"></span><span class="bg-green-800"></span></div>
                                     </td>
                                     <td>
                                         <figure class="overlay">
@@ -1705,7 +1714,7 @@
                                         <h5><span class="badge badge-primary mb-0 mr-5">хит сезона</span> <a class="blue-800" href="#">Телевизор LG OLED55B8</a></h5>
                                         <h6><span class="mr-5">ID:</span><small>6546546545</small> <span class="ml-20 mr-5">Артикуль:</span><small>6546546545</small></h6>
                                         <h6><span class="mr-5 h-md">Публикация:</span><label class="badge badge-danger mb-0 mr-20">не опубликовано</label><a class="" href="#">скрыто</a></h6>
-                                        <h6 class="mb-0"><span class="mr-5">Актуальность:</span><div class="fill-bar mr-5"><span class="bg-green-800"></span><span class="bg-green-800"></span><span></span><span></span><span></span></div> <small class="h-md">очень низкая</small><span class="ml-20 mr-5">Заполнено на:</span><div class="fill-bar mr-5"><span class="bg-green-800"></span><span></span><span></span><span></span><span></span></div> <small class="h-md">20 %</small></h6>
+                                        <h6 class="mb-0"><span class="mr-5">Актуальность:</span><div class="fill-bar mr-5"><span class="bg-green-800"></span><span class="bg-green-800"></span><span></span><span></span><span></span></div> <small class="h-md">очень низкая</small></h6>
                                     </td>
                                     <td class="text-center">
                                         <small>оптом и в розницу</small>
@@ -1721,7 +1730,7 @@
                                         <button type="button" class="btn btn-icon btn-success mb-5 p-5"><i class="icon wb-pencil" aria-hidden="true"></i></button>
                                         <button type="button" class="btn btn-icon btn-warning mb-5  p-5"><i class="icon wb-trash" aria-hidden="true"></i></button>
                                         <div class="btn-group p-s">
-                                            <button type="button" class="btn btn-icon p-5 btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false" data-animation="fade">
+                                            <button type="button" class="btn btn-icon p-5 btn-dark dropdown-toggle" data-toggle="dropdown" aria-expanded="false" data-animation="fade">
                                                 <i class="icon wb-more-vertical" aria-hidden="true"></i>
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right">
@@ -1751,6 +1760,7 @@
                                 <tr>
                                     <td>
                                         <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                                        <div class="fill-bar h-fill-bar mt-10"><small>20%</small><span></span><span></span><span></span><span class="bg-green-800"></span><span class="bg-green-800"></span></div>
                                     </td>
                                     <td>
                                         <figure class="overlay">
@@ -1766,12 +1776,12 @@
                                         <h5><a class="blue-800" href="#">Телевизор LG OLED55B8</a></h5>
                                         <h6><span class="mr-5">ID:</span><small>6546546545</small> <span class="ml-20 mr-5">Артикуль:</span><small>6546546545</small></h6>
                                         <h6><span class="mr-5 h-md">Публикация:</span><label class="badge badge-danger mb-0 mr-20">не опубликовано</label><a class="" href="#">в архиве</a></h6>
-                                        <h6 class="mb-0"><span class="mr-5">Актуальность:</span><div class="fill-bar mr-5"><span class="bg-green-800"></span><span class="bg-green-800"></span><span></span><span></span><span></span></div> <small class="h-md">очень низкая</small><span class="ml-20 mr-5">Заполнено на:</span><div class="fill-bar mr-5"><span class="bg-green-800"></span><span></span><span></span><span></span><span></span></div> <small class="h-md">20 %</small></h6>
+                                        <h6 class="mb-0"><span class="mr-5">Актуальность:</span><div class="fill-bar mr-5"><span class="bg-green-800"></span><span class="bg-green-800"></span><span></span><span></span><span></span></div> <small class="h-md">очень низкая</small></h6>
                                     </td>
                                     <td class="text-center">
                                         <small>в кредит</small>
                                         <a href="#" class="t-d-n d-block mb-20"><strong>150 000 000</strong> <small>сум / шт</small></a>
-										<small>взнос 250 000 сум, <br>12 мес./450 000 сум</small>
+                                        <small>взнос 250 000 сум, <br>12 мес./450 000 сум</small>
                                     </td>
                                     <td class="text-center"><small>в наличии</small>
                                         <a href="#" class="t-d-n d-block"><strong>15</strong> <small>штук</small></a></td>
@@ -1782,7 +1792,7 @@
                                         <button type="button" class="btn btn-icon btn-success mb-5 p-5"><i class="icon wb-pencil" aria-hidden="true"></i></button>
                                         <button type="button" class="btn btn-icon btn-warning mb-5  p-5"><i class="icon wb-trash" aria-hidden="true"></i></button>
                                         <div class="btn-group p-s">
-                                            <button type="button" class="btn btn-icon p-5 btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false" data-animation="fade">
+                                            <button type="button" class="btn btn-icon p-5 btn-dark dropdown-toggle" data-toggle="dropdown" aria-expanded="false" data-animation="fade">
                                                 <i class="icon wb-more-vertical" aria-hidden="true"></i>
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right">
@@ -1837,6 +1847,7 @@
     <script src="global/vendor/icheck/icheck.min.js"></script>
     <script src="global/vendor/switchery/switchery.js"></script>
     <script src="global/vendor/dropify/dropify.min.js"></script>
+    <script src="global/vendor/webui-popover/jquery.webui-popover.min.js"></script>
     <script src="global/vendor/formatter/jquery.formatter.js"></script>
     <script src="global/vendor/bootstrap-treeview/bootstrap-treeview.min.js"></script>
     <script src="global/vendor/jstree/jstree.min.js"></script>
@@ -1860,6 +1871,7 @@
     <script src="assets/js/Site.js"></script>
     <script src="assets/examples/js/advanced/treeview.js"></script>
     <script src="assets/js/sticky-sidebar.js"></script>
+    <script src="assets/examples/js/uikit/tooltip-popover.js"></script>
     <script>
     (function(document, window, $) {
         'use strict';

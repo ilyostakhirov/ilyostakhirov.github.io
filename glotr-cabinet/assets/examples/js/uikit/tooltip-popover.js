@@ -65,6 +65,16 @@
         (0, _jquery2.default)('#examplePopWithTable1').webuiPopover(_jquery2.default.extend({}, defaults, tableSettings));
     })();
 
+    (function() {
+        var tableContent = (0, _jquery2.default)('#examplePopWithDateBlock').html(),
+            tableSettings = {
+                content: tableContent,
+                width: 300
+            };
+
+        (0, _jquery2.default)('#examplePopWithDate').webuiPopover(_jquery2.default.extend({}, defaults, tableSettings));
+    })();
+
 
     (function() {
         var tableContent = (0, _jquery2.default)('#examplePopoverTable2').html(),

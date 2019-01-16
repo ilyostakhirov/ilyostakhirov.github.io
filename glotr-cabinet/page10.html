@@ -1248,12 +1248,12 @@
                     </div>
                 </div>
             </div>
-            <div class="modal demo-modal">
+            <div id="myModal1" class="modal fade modal-fullscreen">
                 <div class="modal-dialog mt-0">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h4 class="modal-title">Настройка наличия товаров</h4>
-                            <button type="button" class="close">
+                            <button data-dismiss="modal" type="button" class="close">
                                 <span aria-hidden="true">×</span>
                             </button>
                         </div>
@@ -1277,13 +1277,13 @@
                             </div>
                         </div>
                         <div class="modal-footer justify-content-center">
-                            <button type="button" class="btn btn-default">отменить</button>
+                            <button type="button" data-dismiss="modal" class="btn btn-default">отменить</button>
                             <button type="button" class="btn btn-primary">сохранить</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal demo-modal">
+            <div class="modal demo-modal ">
                 <div class="modal-dialog mt-0">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -1592,7 +1592,7 @@
                                         </figure>
                                     </td>
                                     <td>
-                                        <h5><span class="badge sm-h badge-warning mb-0 mr-5">новинка</span> <a class="blue-800" href="#">Телевизор LG OLED55B8</a></h5>
+                                        <h5><span class="badge sm-h badge-warning mb-0 mr-5">новинка</span> <a class="blue-800" href="#myModal1" role="button" data-toggle="modal">Телевизор LG OLED55B8</a></h5>
                                         <h6><span class="mr-5 sm-h">ID:</span><small class="mr-20 sm-h">6546546545</small> <span class="mr-5">Артикуль:</span><small>6546546545</small></h6>
                                         <h6 ><span class="mr-5 h-md">Статус:</span><label class="badge badge-success mb-0 mr-10">опубликовано</label><a class="mr-10 sm-h" href="#">на сайте</a><a class="mr-10 sm-h" href="#">в каталоге</a> <span class="sm-sh">в розницу</span></h6>
                                         <h6 class="mb-0 sm-h"><span class="mr-5">Заполнено:</span><a id="examplePopWithDate" href="javascript:void(0)" class="fill-bar mr-5"><span class="bg-green-800"></span><span class="bg-green-800"></span><span></span><span></span><span></span></a> <small class="h-md">20%</small></h6>

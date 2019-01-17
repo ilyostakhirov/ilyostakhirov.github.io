@@ -8715,6 +8715,7 @@ ul.panel-actions>li:first-child {
     padding: 0px 0 4px;
     font-weight: 400;
     color: #5a5a5a;
+        margin: 0;
 }
 
 .panel-bordered>.panel-footer {
@@ -13372,6 +13373,9 @@ th.sortable.desc {
 
     .price.sm-sh {
         margin-top: 10px;
+    }
+    .form-control {
+     padding: .429rem 0.6rem;
     }
 }
 

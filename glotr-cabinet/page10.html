@@ -1184,12 +1184,12 @@
                 <h2 class="mt-10 mb-20 float-left">УПРАВЛЕНИЕ ТОВАРАМИ</h2>
                 <button type="button" class="ml-30 float-right btn btn-danger btn-lg">ДОБАВИТЬ ТОВАР/УСЛУГУ</button>
             </div>
-            <div class="modal demo-modal">
+            <div id="myModal" class="modal fade modal-fullscreen">
                 <div class="modal-dialog mt-0">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h4 class="modal-title">Настройка скидки</h4>
-                            <button type="button" class="close">
+                            <button type="button" class="close" data-dismiss="modal">
                                 <span aria-hidden="true">×</span>
                             </button>
                         </div>
@@ -1224,24 +1224,24 @@
                                 </select>
                             </div>
                             <div class="row align-items-center">
-                                <div class="col-4 label-text">
+                                <div class="col-5 label-text">
                                     Цена без скидки:
                                 </div>
-                                <div class="col-8 t-d-l font-size-18 orange-700">
+                                <div class="col-7 t-d-l font-size-18 orange-700">
                                     150 000 000 <small>сум/шт</small>
                                 </div>
                             </div>
                             <div class="row mt-10 align-items-center">
-                                <div class="col-4 label-text">
+                                <div class="col-5 label-text">
                                     Цена со скидкой:
                                 </div>
-                                <div class="col-8 font-size-18 orange-700">
+                                <div class="col-7 font-size-18 orange-700">
                                     145 000 000 <small>сум/шт</small>
                                 </div>
                             </div>
                         </div>
                         <div class="modal-footer justify-content-center">
-                            <button type="button" class="btn btn-default">отменить</button>
+                            <button type="button" data-dismiss="modal" class="btn btn-dark">Отменить</button>
                             <button type="button" class="btn btn-danger">удалить</button>
                             <button type="button" class="btn btn-primary">сохранить</button>
                         </div>
@@ -1260,13 +1260,13 @@
                         <div class="modal-body">
                             <div class="form-group mb-10">
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-md-6 mb-10">
                                         <label class="form-control-label">Наличие</label>
                                         <select class="form-control">
                                             <option>в наличии</option>
                                         </select>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-md-6 mb-10">
                                         <label class="form-control-label">Остатки</label>
                                         <div class="d-flex align-items-center">
                                             <input class="form-control mr-10">
@@ -1283,12 +1283,12 @@
                     </div>
                 </div>
             </div>
-            <div class="modal demo-modal ">
+            <div id="myModal2" class="modal fade modal-fullscreen">
                 <div class="modal-dialog mt-0">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h4 class="modal-title">Настройка цены</h4>
-                            <button type="button" class="close">
+                            <button type="button" class="close" data-dismiss="modal">
                                 <span aria-hidden="true">×</span>
                             </button>
                         </div>
@@ -1485,7 +1485,8 @@
                             </div>
                         </div>
                         <div class="modal-footer justify-content-center">
-                            <button type="button" class="btn btn-danger">ОТПРАВИТЬ ЗАПРОС</button>
+                        	<button type="button" data-dismiss="modal" class="btn btn-dark">Отменить</button>
+                            <button type="button" class="btn btn-danger">Отправить запрос</button>
                         </div>
                     </div>
                 </div>
@@ -1592,7 +1593,7 @@
                                         </figure>
                                     </td>
                                     <td>
-                                        <h5><span class="badge sm-h badge-warning mb-0 mr-5">новинка</span> <a class="blue-800" href="#myModal1" role="button" data-toggle="modal">Телевизор LG OLED55B8</a></h5>
+                                        <h5><span class="badge sm-h badge-warning mb-0 mr-5">новинка</span> <a class="blue-800" href="#myModal" role="button" data-toggle="modal">Телевизор LG OLED55B8</a></h5>
                                         <h6><span class="mr-5 sm-h">ID:</span><small class="mr-20 sm-h">6546546545</small> <span class="mr-5">Артикуль:</span><small>6546546545</small></h6>
                                         <h6 ><span class="mr-5 h-md">Статус:</span><label class="badge badge-success mb-0 mr-10">опубликовано</label><a class="mr-10 sm-h" href="#">на сайте</a><a class="mr-10 sm-h" href="#">в каталоге</a> <span class="sm-sh">в розницу</span></h6>
                                         <h6 class="mb-0 sm-h"><span class="mr-5">Заполнено:</span><a id="examplePopWithDate" href="javascript:void(0)" class="fill-bar mr-5"><span class="bg-green-800"></span><span class="bg-green-800"></span><span></span><span></span><span></span></a> <small class="h-md">20%</small></h6>
@@ -1658,7 +1659,7 @@
                                         </figure>
                                     </td>
                                     <td>
-                                        <h5><span class="badge sm-h badge-primary mb-0 mr-5">хит продаж</span> <a class="blue-800" href="#">Телевизор LG OLED55B8</a></h5>
+                                        <h5><span class="badge sm-h badge-primary mb-0 mr-5">хит продаж</span> <a class="blue-800" href="#myModal1" role="button" data-toggle="modal">Телевизор LG OLED55B8</a></h5>
                                         <h6><span class="mr-5 sm-h">ID:</span><small class="mr-20 sm-h">6546546545</small> <span class="mr-5">Артикуль:</span><small>6546546545</small></h6>
                                         <h6><span class="mr-5 h-md">Статус:</span><label class="badge badge-danger mb-0 mr-10">не опубликовано</label><a class=" sm-h" href="#">отказано модератором</a><span class="sm-sh">оптом</span></h6>
                                         <h6 class="mb-0 sm-h"><span class="mr-5">Заполнено:</span><div class="fill-bar mr-5"><span class="bg-green-800"></span><span class="bg-green-800"></span><span></span><span></span><span></span></div> <small class="h-md">20%</small></h6>
@@ -1724,7 +1725,7 @@
                                         </figure>
                                     </td>
                                     <td>
-                                        <h5><span class="badge sm-h badge-primary mb-0 mr-5">хит сезона</span> <a class="blue-800" href="#">Телевизор LG OLED55B8</a></h5>
+                                        <h5><span class="badge sm-h badge-primary mb-0 mr-5">хит сезона</span> <a class="blue-800"  href="#myModal2" role="button" data-toggle="modal">Телевизор LG OLED55B8</a></h5>
                                         <h6 class="sm-h"><span class="mr-5 sm-h">ID:</span><small class="mr-20 sm-h">6546546545</small> <span class="mr-5">Артикуль:</span><small>6546546545</small></h6>
                                         <h6 ><span class="mr-5 h-md">Статус:</span><label class="badge badge-danger mb-0 mr-10">не опубликовано</label><a class=" sm-h" href="#">скрыто</a><span class="sm-sh">оптом и в розницу</span></h6>
                                         <h6 class="mb-0 sm-h"><span class="mr-5">Заполнено:</span><div class="fill-bar mr-5"><span class="bg-green-800"></span><span class="bg-green-800"></span><span></span><span></span><span></span></div> <small class="h-md">20%</small></h6>

@@ -13503,9 +13503,10 @@ th.sortable.desc {
         height: 50px;
         padding: 0;
         line-height: 50px;
-        background-color: #f8f8f8;
-        border-color: #e7e7e7;
-        padding: 10px 20px;
+            background-color: #eee;
+    border-color: #e7e7e7;
+    padding: 10px 20px;
+    border-radius: 0;
     }
 
     .modal.modal-fullscreen .modal-dialog .modal-content .modal-header .modal-title {
@@ -13523,6 +13524,7 @@ th.sortable.desc {
 
     .modal.modal-fullscreen .modal-dialog .modal-content .modal-header .close {
             margin: 0 0 0 auto;
+                font-size: 31px;
     }
 
     .modal.modal-fullscreen .modal-dialog .modal-content .modal-header .fullscreen-buttons {
@@ -13548,6 +13550,7 @@ th.sortable.desc {
     width: 100%;
     padding: 10px;
     border-top: 1px solid #eee;
+    background-color: #f3f2f2;
     }
 }
 

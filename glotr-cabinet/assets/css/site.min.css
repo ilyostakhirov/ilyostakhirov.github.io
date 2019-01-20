@@ -12893,9 +12893,11 @@ table.table-striped tbody tr,
     }
 
     .accordion.accordion-multiple-filled .card .form-inline .form-group.search-form {
-        flex: 0 0 100%;
+        flex: 0 0 70%;
     }
-
+.accordion.accordion-multiple-filled .card .form-inline .form-group.list-icons{
+        flex: 0 0 30%;
+}
     .accordion.accordion-multiple-filled .card .form-inline .btn.btn-primary {
         margin-left: 5px;
     }
@@ -13378,12 +13380,28 @@ th.sortable.desc {
      padding: .429rem 0.6rem;
     }
 }
-
+.font-size-25{
+    font-size:25px;
+}
 @media screen and (max-width: 650px) {
     .w-120 {
         width: 100px !important;
     }
-
+.product-list-table table.table td:last-child > div {
+    text-align: left;
+    line-height: 13px;
+}
+.product-list-table table.table td:last-child > div small{
+        font-size: 80%;
+    line-height: 1;
+        font-weight: 400;
+}
+.product-list-table .overlay .badge{
+    position: absolute;
+    left:0;
+    top: 0;
+    font-size:10px;
+}
     .form-w-50 .radio-inline {
         flex: 0 0 100%;
         max-width: 100%;
@@ -13396,25 +13414,27 @@ th.sortable.desc {
     }
 
     .product-list-table table.table tbody tr {
-        background-color: #fff;
-        display: flex;
-        width: 100%;
-        border: 1px solid #d2d2d2;
-        margin-bottom: 10px;
-        position: relative;
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    border: 1px solid #d2d2d2;
+    margin-bottom: 10px;
+    position: relative;
+    flex-wrap: wrap;
     }
 
     .product-list-table table.table th:nth-child(2),
     .product-list-table table.table td:nth-child(2) {
         display: block;
-        width: 110px;
+        width: 30%;
         border-right: none;
         border-left: none;
-        max-width: 110px;
+        max-width: 30%;
     }
 
     .product-list-table table.table-striped tbody tr td:nth-child(3) {
         padding-left: 0;
+            width: 70%;
     }
 
     table.table-striped tbody tr td {
@@ -13424,16 +13444,17 @@ th.sortable.desc {
     }
 
     .product-list-table table.table td:last-child {
-        max-width: 100%;
-        position: absolute;
-        border: none;
-        right: 0;
-        bottom: 0;
+           max-width: 100%;
+    border: none;
+    border-top: 1px solid #d2d2d2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     }
 
     .product-list-table table.table td:last-child .btn,
     .product-list-table table.table td:last-child .btn-group {
-        display: none;
+            margin: 0 0 0 5px!important;
     }
 
     .product-list-table table.table td:last-child .btn:first-child {

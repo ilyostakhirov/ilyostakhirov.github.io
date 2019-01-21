@@ -13397,12 +13397,22 @@ display: block;
     text-align: left!important;
     border-top: 1px solid #d2d2d2;
 }
+.product-list-table .price-td .sm-sh small {
+    font-size: 80%;
+    font-weight:400;
+}
+.product-list-table .price-td .sm-sh strong {
+    font-size: 12px;
+}
     .product-list-table table.table td:last-child>div {
         text-align: left;
         line-height: 13px;
     }
 .price-td .mb-10,.price-td .mb-20  {
     margin-bottom: 0!important;
+}
+button.sm-sh.more-date-btn.btn.btn-icon.btn-success.p-5.active i {
+    transform: rotate(180deg);
 }
     .product-list-table table.table td:last-child>div small {
         font-size: 80%;

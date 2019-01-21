@@ -13389,6 +13389,9 @@ th.sortable.desc {
 }
 
 @media screen and (max-width: 650px) {
+    .product-list-table .table td {
+    padding: 5px;
+}
     .w-120 {
         width: 100px !important;
     }

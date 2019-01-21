@@ -13404,6 +13404,16 @@ display: block;
 .product-list-table .price-td .sm-sh strong {
     font-size: 11px;
 }
+.title-wrap{
+    text-align: center;
+}
+.h2, h2 {
+    font-size: 18px;
+}
+.btn-lg {
+    font-size: 12px;
+    padding: 5px 10px;
+}
     .product-list-table table.table td:last-child>div {
         text-align: left;
         line-height: 13px;

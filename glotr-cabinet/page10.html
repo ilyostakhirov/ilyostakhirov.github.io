@@ -1485,7 +1485,7 @@
                             </div>
                         </div>
                         <div class="modal-footer justify-content-center">
-                        	<button type="button" data-dismiss="modal" class="btn btn-dark">Отменить</button>
+                            <button type="button" data-dismiss="modal" class="btn btn-dark">Отменить</button>
                             <button type="button" class="btn btn-danger">Отправить запрос</button>
                         </div>
                     </div>
@@ -1505,10 +1505,10 @@
                             <div id="collapseOne-3" class="collapse" role="tabpanel" aria-labelledby="headingOne-3" data-parent="#accordion-3">
                                 <div class="card-body">
                                     <form class="form-inline font-size-25 mb-20">
-                                    	<div class="form-group list-icons align-items-center">
-                                    		<a class="mr-10" href="#"><i class="fa fa-th-list"></i></a>
-                                    		<a href="#"><i class="fa fa-bars"></i></a>
-                                    	</div>
+                                        <div class="form-group list-icons align-items-center">
+                                            <a class="mr-10" href="#"><i class="fa fa-th-list"></i></a>
+                                            <a href="#"><i class="fa fa-bars"></i></a>
+                                        </div>
                                         <div class="form-group search-form">
                                             <div class="input-search input-search-dark">
                                                 <i class="input-search-icon wb-search" aria-hidden="true"></i>
@@ -1587,7 +1587,7 @@
                                     </td>
                                     <td>
                                         <figure class="overlay">
-                                        	<span class="sm-sh badge badge-danger">Новинка</span>
+                                            <span class="sm-sh badge badge-danger">Новинка</span>
                                             <img class="overlay-figure" src="assets/images/lg.jpg" alt="...">
                                             <figcaption class="overlay-panel overlay-icon">
                                                 <a class="mr-20 mb-5 btn btn-floating btn-dark btn-sm" href="#search">3</a>
@@ -1600,11 +1600,11 @@
                                     <td>
                                         <h5><span class="badge sm-h badge-warning mb-0 mr-5">новинка</span> <a class="blue-800" href="#myModal" role="button" data-toggle="modal">Телевизор LG OLED55B8</a></h5>
                                         <h6><label class="sm-sh badge badge-success mb-0 mr-10">опубликовано</label> <span class="mr-5 sm-h">ID:</span><small class="mr-20 sm-h">6546546545</small> <span class="mr-5 sm-h">Артикуль:</span><small>6546546545</small></h6>
-                                        <h6 ><span class="mr-5 h-md">Статус:</span><label class="sm-h badge badge-success mb-0 mr-10">опубликовано</label><a class="mr-10 sm-h" href="#">на сайте</a><a class="mr-10 sm-h" href="#">в каталоге</a><a class="sm-sh green-700 mr-10" href="#">в наличии 15 штук</a> <small class="sm-sh">в розницу</small></h6>
+                                        <h6 ><a class="sm-sh green-700 mr-10" href="#">в наличии 15 штук</a><span class="mr-5 h-md">Статус:</span><label class="sm-h badge badge-success mb-0 mr-10">опубликовано</label><a class="mr-10 sm-h" href="#">на сайте</a><a class="mr-10 sm-h" href="#">в каталоге</a> <small class="sm-sh">в розницу</small></h6>
                                         <h6 class="mb-0 sm-h"><span class="mr-5">Заполнено:</span><a id="examplePopWithDate" href="javascript:void(0)" class="fill-bar mr-5"><span class="bg-green-800"></span><span class="bg-green-800"></span><span></span><span></span><span></span></a> <small class="h-md">20%</small></h6>
                                         <h6 class="price sm-sh mb-0"> <strong>150 000 000</strong> <small>сум / шт</small> <span class="sm-sh badge badge-outline badge-danger ml-10">-25%</span></h6>
                                     </td>
-                                    <td class="text-center">
+                                    <td class="text-center price-td">
                                         <small>в розницу</small>
                                         <a href="#" class="t-d-n d-block"><strong>150 000 000</strong> <small>сум / шт</small></a>
                                     </td>
@@ -1614,11 +1614,10 @@
                                         <strong>15 %</strong><br><small>еще</small> <strong class="green-700">5 дней</strong>
                                     </td>
                                     <td class="text-center">
-                                    	<div class="sm-sh mr-auto font-size-14">
-                                    	<small class="mr-5">Заполнено - 20%</small>
-                                    	<small>Актуальность - 40%</small>
-                                    	</div>
-                                    	<button type="button" class="sm-sh btn btn-icon btn-success p-5"><i class="icon fa fa-chevron-down" aria-hidden="true"></i></button>
+                                        <div class="sm-sh mr-auto font-size-14">
+                                            <small class="mr-5">Заполнено - 20%</small>
+                                            <small>Актуальность - 40%</small>
+                                        </div>
                                         <button type="button" class="sm-h btn btn-icon btn-success mb-5 p-5"><i class="icon wb-pencil" aria-hidden="true"></i></button>
                                         <button type="button" class="sm-h btn btn-icon btn-warning mb-5  p-5"><i class="icon wb-trash" aria-hidden="true"></i></button>
                                         <div class="btn-group p-s">
@@ -1667,26 +1666,34 @@
                                     </td>
                                     <td>
                                         <h5><span class="badge sm-h badge-primary mb-0 mr-5">хит продаж</span> <a class="blue-800" href="#myModal1" role="button" data-toggle="modal">Телевизор LG OLED55B8</a></h5>
-                                        <h6><span class="mr-5 sm-h">ID:</span><small class="mr-20 sm-h">6546546545</small> <span class="mr-5">Артикуль:</span><small>6546546545</small></h6>
-                                        <h6><span class="mr-5 h-md">Статус:</span><label class="badge badge-danger mb-0 mr-10">не опубликовано</label><a class=" sm-h" href="#">отказано модератором</a><span class="sm-sh">оптом</span></h6>
+                                        <h6><label class="sm-sh badge badge-success mb-0 mr-10">опубликовано</label> <span class="mr-5 sm-h">ID:</span><small class="mr-20 sm-h">6546546545</small> <span class="mr-5 sm-h">Артикуль:</span><small>6546546545</small></h6>
+                                        <h6><a class="sm-sh green-700 mr-10" href="#">в наличии 15 штук</a><span class="mr-5 h-md">Статус:</span><label class="sm-h badge badge-danger mb-0 mr-10">не опубликовано</label><a class=" sm-h" href="#">отказано модератором</a><small class="sm-sh">оптом</small></h6>
                                         <h6 class="mb-0 sm-h"><span class="mr-5">Заполнено:</span><div class="fill-bar mr-5"><span class="bg-green-800"></span><span class="bg-green-800"></span><span></span><span></span><span></span></div> <small class="h-md">20%</small></h6>
-                                        <h6 class="price sm-sh mb-0">
-
-                                       <strong>150 000 000</strong> <small>сум / шт</small><br><small class="mr-5">при заказе от</small><strong>5</strong> шт <a class="blue-600 ml-10" href="#">(3)</a>
-                                        </h6>
+                                        <h6 class="price sm-sh mb-0"> <strong>150 000 000</strong> <small>сум / шт</small> <span class="sm-sh badge badge-outline badge-danger ml-10">-25%</span></h6>
                                     </td>
-                                    <td class="text-center">
+                                    <td class="text-center price-td">
+                                    	<div class="sm-h">
                                         <small>оптом</small>
                                         <a href="#" class="t-d-n d-block mb-10"><strong>150 000 000</strong> <small>сум / шт</small></a>
-                                        <small class="mr-10">при заказе от 5 шт</small><a class="blue-grey-600" href="#">еще</a>
+                                        <small class="mr-10">при заказе от 5 шт</small><a class="blue-grey-600" href="#">еще</a></div>
+                                        <div class="sm-sh">
+                                        	<small class="mr-5">опт. цена</small> <strong class="mr5">150 000 000 сум</strong><small class="ml-10">при заказе от 5 шт</small><br>
+                                        	<small class="mr-5">опт. цена</small> <strong class="mr5">150 000 000 сум</strong><small class="ml-10">при заказе от 5 шт</small><br>
+                                        	<small class="mr-5">опт. цена</small> <strong class="mr5">150 000 000 сум</strong><small class="ml-10">при заказе от 5 шт</small>
+                                        </div>
                                     </td>
                                     <td class="text-center">нет <br>в наличии</td>
                                     <td class="text-center">
                                         <strong>15 %</strong><br><small>еще</small> <strong class="green-700">5 дней</strong>
                                     </td>
-                                    <td class="text-center">
-                                        <button type="button" class="btn btn-icon btn-success mb-5 p-5"><i class="icon wb-pencil" aria-hidden="true"></i></button>
-                                        <button type="button" class="btn btn-icon btn-warning mb-5  p-5"><i class="icon wb-trash" aria-hidden="true"></i></button>
+                                     <td class="text-center">
+                                        <div class="sm-sh mr-auto font-size-14">
+                                            <small class="mr-5">Заполнено - 20%</small>
+                                            <small>Актуальность - 40%</small>
+                                        </div>
+                                        <button type="button" class="sm-sh more-date-btn btn btn-icon btn-success p-5"><i class="icon fa fa-chevron-down" aria-hidden="true"></i></button>
+                                        <button type="button" class="sm-h btn btn-icon btn-success mb-5 p-5"><i class="icon wb-pencil" aria-hidden="true"></i></button>
+                                        <button type="button" class="sm-h btn btn-icon btn-warning mb-5  p-5"><i class="icon wb-trash" aria-hidden="true"></i></button>
                                         <div class="btn-group p-s">
                                             <button type="button" class="btn btn-icon p-5 btn-dark dropdown-toggle" data-toggle="dropdown" aria-expanded="false" data-animation="fade">
                                                 <i class="icon wb-more-vertical" aria-hidden="true"></i>
@@ -1733,26 +1740,36 @@
                                     </td>
                                     <td>
                                         <h5><span class="badge sm-h badge-primary mb-0 mr-5">хит сезона</span> <a class="blue-800"  href="#myModal2" role="button" data-toggle="modal">Телевизор LG OLED55B8</a></h5>
-                                        <h6 class="sm-h"><span class="mr-5 sm-h">ID:</span><small class="mr-20 sm-h">6546546545</small> <span class="mr-5">Артикуль:</span><small>6546546545</small></h6>
-                                        <h6 ><span class="mr-5 h-md">Статус:</span><label class="badge badge-danger mb-0 mr-10">не опубликовано</label><a class=" sm-h" href="#">скрыто</a><span class="sm-sh">оптом и в розницу</span></h6>
+                                       <h6><label class="sm-sh badge badge-success mb-0 mr-10">опубликовано</label> <span class="mr-5 sm-h">ID:</span><small class="mr-20 sm-h">6546546545</small> <span class="mr-5 sm-h">Артикуль:</span><small>6546546545</small></h6>
+                                        <h6 ><a class="sm-sh green-700 mr-10" href="#">в наличии 15 штук</a><span class="mr-5 h-md">Статус:</span><label class="sm-h badge badge-danger mb-0 mr-10">не опубликовано</label><a class=" sm-h" href="#">скрыто</a><small class="sm-sh">оптом и в розницу</small></h6>
                                         <h6 class="mb-0 sm-h"><span class="mr-5">Заполнено:</span><div class="fill-bar mr-5"><span class="bg-green-800"></span><span class="bg-green-800"></span><span></span><span></span><span></span></div> <small class="h-md">20%</small></h6>
-                                        <h6 class="price sm-sh mb-0">
-                                       <strong>150 000 000</strong> <small>сум / шт</small><br><a class="blue-600" href="#">оптовые цены</a>
-                                        </h6>
+                                        <h6 class="price sm-sh mb-0"> <strong>150 000 000</strong> <small>сум / шт</small> <small class="ml-10">от 5 шт</small></h6>
                                     </td>
-                                    <td class="text-center">
+                                    <td class="text-center price-td">
+                                    	<div class="sm-h">
                                         <small>оптом и в розницу</small>
                                         <a href="#" class="t-d-n d-block mb-10"><strong>150 000 000</strong> <small>сум / шт</small></a>
                                         <a class="blue-grey-600 d-inline" href="#">оптовые цены</a>
+                                    </div>
+                                    <div class="sm-sh">
+                                        	<small class="mr-5">опт. цена</small> <strong class="mr5">150 000 000 сум</strong><small class="ml-10">при заказе от 5 шт</small><br>
+                                        	<small class="mr-5">опт. цена</small> <strong class="mr5">150 000 000 сум</strong><small class="ml-10">при заказе от 5 шт</small><br>
+                                        	<small class="mr-5">опт. цена</small> <strong class="mr5">150 000 000 сум</strong><small class="ml-10">при заказе от 5 шт</small>
+                                        </div>
                                     </td>
                                     <td class="text-center"><small>под заказ</small>
                                         <a href="#" class="t-d-n d-block"><strong>3</strong> <small>дня</small></a></td>
                                     <td class="text-center">
                                         ---
                                     </td>
-                                    <td class="text-center">
-                                        <button type="button" class="btn btn-icon btn-success mb-5 p-5"><i class="icon wb-pencil" aria-hidden="true"></i></button>
-                                        <button type="button" class="btn btn-icon btn-warning mb-5  p-5"><i class="icon wb-trash" aria-hidden="true"></i></button>
+                                     <td class="text-center">
+                                        <div class="sm-sh mr-auto font-size-14">
+                                            <small class="mr-5">Заполнено - 20%</small>
+                                            <small>Актуальность - 40%</small>
+                                        </div>
+                                        <button type="button" class="sm-sh more-date-btn btn btn-icon btn-success p-5"><i class="icon fa fa-chevron-down" aria-hidden="true"></i></button>
+                                        <button type="button" class="sm-h btn btn-icon btn-success mb-5 p-5"><i class="icon wb-pencil" aria-hidden="true"></i></button>
+                                        <button type="button" class="sm-h btn btn-icon btn-warning mb-5  p-5"><i class="icon wb-trash" aria-hidden="true"></i></button>
                                         <div class="btn-group p-s">
                                             <button type="button" class="btn btn-icon p-5 btn-dark dropdown-toggle" data-toggle="dropdown" aria-expanded="false" data-animation="fade">
                                                 <i class="icon wb-more-vertical" aria-hidden="true"></i>
@@ -1798,26 +1815,35 @@
                                     </td>
                                     <td>
                                         <h5><a class="blue-800" href="#">Телевизор LG OLED55B8</a></h5>
-                                        <h6 class="sm-h"><span class="mr-5">ID:</span><small class="mr-20">6546546545</small> <span class="mr-5">Артикуль:</span><small>6546546545</small></h6>
-                                        <h6><span class="mr-5 h-md">Статус:</span><label class="badge badge-danger mb-0 mr-10">не опубликовано</label><a class=" sm-h" href="#">в архиве</a><span class="sm-sh">в кредит</span></h6>
+                                        <h6><label class="sm-sh badge badge-success mb-0 mr-10">опубликовано</label> <span class="mr-5 sm-h">ID:</span><small class="mr-20 sm-h">6546546545</small> <span class="mr-5 sm-h">Артикуль:</span><small>6546546545</small></h6>
+                                        <h6><a class="sm-sh green-700 mr-10" href="#">в наличии 15 штук</a><span class="mr-5 h-md">Статус:</span><label class="sm-h badge badge-danger mb-0 mr-10">не опубликовано</label><a class=" sm-h" href="#">скрыто</a><small class="sm-sh">в кредит</small></h6>
                                         <h6 class="mb-0 sm-h"><span class="mr-5">Заполнено:</span><div class="fill-bar mr-5"><span class="bg-green-800"></span><span class="bg-green-800"></span><span></span><span></span><span></span></div> <small class="h-md">20%</small></h6>
-                                        <h6 class="price sm-sh mb-0">
-                                       <strong>150 000 000</strong> <small>сум / шт</small><br><small>взнос 250 000 сум, <br>12 мес./450 000 сум</small>
-                                        </h6>
+                                        <h6 class="price sm-sh mb-0"> <strong>150 000 000</strong> <small>сум / шт</small></h6>
                                     </td>
-                                    <td class="text-center">
+                                    <td class="text-center price-td">
+                                    	<div class="sm-h">
                                         <small>в кредит</small>
                                         <a href="#" class="t-d-n d-block mb-20"><strong>150 000 000</strong> <small>сум / шт</small><br>
-                                        <small>взнос 250 000 сум, 12 мес./450 000 сум</small>
+                                        <small>взнос 250 000 сум, 12 мес./450 000 сум</small></a>
+                                        </div>
+                                        <div class="sm-sh">
+                                        	<small class="mr-5">первый взнос</small> <strong class="mr-10">250 000 сум</strong>
+                                        	<small class="mr-5">12 мечяцев по</small> <strong>250 000 сум</strong>
+                                        </div>
                                     </td>
                                     <td class="text-center"><small>в наличии</small>
                                         <a href="#" class="t-d-n d-block"><strong>15</strong> <small>штук</small></a></td>
                                     <td class="text-center">
                                         <strong>15 %</strong><br><small>еще</small> <strong class="green-700">5 дней</strong>
                                     </td>
-                                    <td class="text-center">
-                                        <button type="button" class="btn btn-icon btn-success mb-5 p-5"><i class="icon wb-pencil" aria-hidden="true"></i></button>
-                                        <button type="button" class="btn btn-icon btn-warning mb-5  p-5"><i class="icon wb-trash" aria-hidden="true"></i></button>
+                                     <td class="text-center">
+                                        <div class="sm-sh mr-auto font-size-14">
+                                            <small class="mr-5">Заполнено - 20%</small>
+                                            <small>Актуальность - 40%</small>
+                                        </div>
+                                        <button type="button" class="sm-sh more-date-btn btn btn-icon btn-success p-5"><i class="icon fa fa-chevron-down" aria-hidden="true"></i></button>
+                                        <button type="button" class="sm-h btn btn-icon btn-success mb-5 p-5"><i class="icon wb-pencil" aria-hidden="true"></i></button>
+                                        <button type="button" class="sm-h btn btn-icon btn-warning mb-5  p-5"><i class="icon wb-trash" aria-hidden="true"></i></button>
                                         <div class="btn-group p-s">
                                             <button type="button" class="btn btn-icon p-5 btn-dark dropdown-toggle" data-toggle="dropdown" aria-expanded="false" data-animation="fade">
                                                 <i class="icon wb-more-vertical" aria-hidden="true"></i>
@@ -1850,18 +1876,18 @@
                         </table>
                     </div>
                     <div class="clearfix category-footer d-flex flex-wrap mt-30">
-                    	<div class="div mr-auto">
-                    		<div class="input-group mb-20">
-  <select class="form-control" id="inputGroupSelect02">
-    <option selected>Действие ...</option>
-    <option value="1">Удалить</option>
-    <option value="2">Редактировать</option>
-  </select>
-  <div class="input-group-append">
-    <button class="btn btn-primary" type="button">Применить</button>
-  </div>
-</div>
-                    	</div>
+                        <div class="div mr-auto">
+                            <div class="input-group mb-20">
+                                <select class="form-control" id="inputGroupSelect02">
+                                    <option selected>Действие ...</option>
+                                    <option value="1">Удалить</option>
+                                    <option value="2">Редактировать</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="button">Применить</button>
+                                </div>
+                            </div>
+                        </div>
                         <ul class="pagination pagination-gap">
                             <li class="pagination-prev page-item disabled"><a class="page-link" href="javascript:void(0)" aria-label="Prev"><span class="icon wb-chevron-left-mini"></span></a></li>
                             <li class="pagination-items page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
@@ -2069,6 +2095,9 @@
             e.preventDefault();
             $(".wholesale_exemplary_price_block > .wholesale_retail_price_form1").clone().prependTo(".form-block1");
         });
+    });
+    $(".more-date-btn").on("click", function() {
+        $(this).parent().parent().find('.price-td').toggleClass('open');
     });
     </script>
 </body>

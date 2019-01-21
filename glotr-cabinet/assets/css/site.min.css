@@ -8715,7 +8715,7 @@ ul.panel-actions>li:first-child {
     padding: 0px 0 4px;
     font-weight: 400;
     color: #5a5a5a;
-        margin: 0;
+    margin: 0;
 }
 
 .panel-bordered>.panel-footer {
@@ -12895,9 +12895,11 @@ table.table-striped tbody tr,
     .accordion.accordion-multiple-filled .card .form-inline .form-group.search-form {
         flex: 0 0 70%;
     }
-.accordion.accordion-multiple-filled .card .form-inline .form-group.list-icons{
+
+    .accordion.accordion-multiple-filled .card .form-inline .form-group.list-icons {
         flex: 0 0 30%;
-}
+    }
+
     .accordion.accordion-multiple-filled .card .form-inline .btn.btn-primary {
         margin-left: 5px;
     }
@@ -13376,32 +13378,45 @@ th.sortable.desc {
     .price.sm-sh {
         margin-top: 10px;
     }
+
     .form-control {
-     padding: .429rem 0.6rem;
+        padding: .429rem 0.6rem;
     }
 }
-.font-size-25{
-    font-size:25px;
+
+.font-size-25 {
+    font-size: 25px;
 }
+
 @media screen and (max-width: 650px) {
     .w-120 {
         width: 100px !important;
     }
-.product-list-table table.table td:last-child > div {
-    text-align: left;
-    line-height: 13px;
+.product-list-table table.table td.price-td.open {
+display: block;
+    text-align: left!important;
+    border-top: 1px solid #d2d2d2;
 }
-.product-list-table table.table td:last-child > div small{
+    .product-list-table table.table td:last-child>div {
+        text-align: left;
+        line-height: 13px;
+    }
+.price-td .mb-10,.price-td .mb-20  {
+    margin-bottom: 0!important;
+}
+    .product-list-table table.table td:last-child>div small {
         font-size: 80%;
-    line-height: 1;
+        line-height: 1;
         font-weight: 400;
-}
-.product-list-table .overlay .badge{
-    position: absolute;
-    left:0;
-    top: 0;
-    font-size:10px;
-}
+    }
+
+    .product-list-table .overlay .badge {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 10px;
+    }
+
     .form-w-50 .radio-inline {
         flex: 0 0 100%;
         max-width: 100%;
@@ -13414,13 +13429,13 @@ th.sortable.desc {
     }
 
     .product-list-table table.table tbody tr {
-    background-color: #fff;
-    display: flex;
-    width: 100%;
-    border: 1px solid #d2d2d2;
-    margin-bottom: 10px;
-    position: relative;
-    flex-wrap: wrap;
+        background-color: #fff;
+        display: flex;
+        width: 100%;
+        border: 1px solid #d2d2d2;
+        margin-bottom: 10px;
+        position: relative;
+        flex-wrap: wrap;
     }
 
     .product-list-table table.table th:nth-child(2),
@@ -13434,7 +13449,7 @@ th.sortable.desc {
 
     .product-list-table table.table-striped tbody tr td:nth-child(3) {
         padding-left: 0;
-            width: 70%;
+        width: 70%;
     }
 
     table.table-striped tbody tr td {
@@ -13444,17 +13459,20 @@ th.sortable.desc {
     }
 
     .product-list-table table.table td:last-child {
-           max-width: 100%;
-    border: none;
-    border-top: 1px solid #d2d2d2;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+        max-width: 100%;
+        border: none;
+        border-top: 1px solid #d2d2d2;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0px 4px;
     }
 
     .product-list-table table.table td:last-child .btn,
     .product-list-table table.table td:last-child .btn-group {
-            margin: 0 0 0 5px!important;
+        margin: 0 0 0 2px !important;
+        padding: 3px !important;
+        font-size: 12px;
     }
 
     .product-list-table table.table td:last-child .btn:first-child {
@@ -13528,10 +13546,10 @@ th.sortable.desc {
         height: 50px;
         padding: 0;
         line-height: 50px;
-            background-color: #eee;
-    border-color: #e7e7e7;
-    padding: 10px 20px;
-    border-radius: 0;
+        background-color: #eee;
+        border-color: #e7e7e7;
+        padding: 10px 20px;
+        border-radius: 0;
     }
 
     .modal.modal-fullscreen .modal-dialog .modal-content .modal-header .modal-title {
@@ -13548,8 +13566,8 @@ th.sortable.desc {
     }
 
     .modal.modal-fullscreen .modal-dialog .modal-content .modal-header .close {
-            margin: 0 0 0 auto;
-                font-size: 31px;
+        margin: 0 0 0 auto;
+        font-size: 31px;
     }
 
     .modal.modal-fullscreen .modal-dialog .modal-content .modal-header .fullscreen-buttons {
@@ -13571,11 +13589,11 @@ th.sortable.desc {
 
     .modal.modal-fullscreen .modal-dialog .modal-content .modal-footer {
         position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    border-top: 1px solid #eee;
-    background-color: #f3f2f2;
+        bottom: 0;
+        width: 100%;
+        padding: 10px;
+        border-top: 1px solid #eee;
+        background-color: #f3f2f2;
     }
 }
 

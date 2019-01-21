@@ -13392,6 +13392,12 @@ th.sortable.desc {
     .product-list-table .table td {
     padding: 5px;
 }
+.product-list-table .table td .mr-10 {
+    margin-right: 5px !important;
+}
+.product-list-table h6 small {
+    font-size: 11px;
+}
     .w-120 {
         width: 100px !important;
     }

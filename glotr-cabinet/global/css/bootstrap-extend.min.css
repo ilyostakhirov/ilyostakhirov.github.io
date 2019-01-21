@@ -4421,10 +4421,6 @@ fieldset[disabled] .btn-pure:hover {
   margin: 6px 0
 }
 
-.dropdown-menu {
-  transition: .25s
-}
-
 .dropdown-menu.dropdown-menu-bullet {
   margin-top: 12px
 }

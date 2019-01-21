@@ -13407,6 +13407,9 @@ display: block;
 .title-wrap{
     text-align: center;
 }
+a.sm-sh.green-700 {
+    font-size: 11px;
+}
 .h2, h2 {
     font-size: 18px;
 }

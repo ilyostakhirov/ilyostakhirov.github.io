@@ -13369,7 +13369,7 @@ th.sortable.desc {
         flex-grow: 1;
     }
 
-    .product-list-table table.table th:nth-child(4),
+    .product-list-table table.table th:nth-child(4),.product-list-table-no-img.product-list-table table.table th:nth-child(3),
     .product-list-table table.table th:nth-child(5),
     .product-list-table table.table th:nth-child(6),
     .product-list-table table.table td:nth-child(4),
@@ -13384,17 +13384,13 @@ th.sortable.desc {
     width: 100%;
     max-width: 100%;
 }
+.
     .sm-block-form .radio-inline {
         display: block;
         margin-left: 0;
     }
 
-    .sm-sh {
-        display: inline-block;
-    }
-h6.sm-sh{
-    display: block;
-}
+
     .price.sm-sh {
         margin-top: 10px;
     }
@@ -13409,6 +13405,12 @@ h6.sm-sh{
 }
 
 @media screen and (max-width: 650px) {
+        .sm-sh {
+        display: inline-block;
+    }
+h6.sm-sh{
+    display: block;
+}
     .product-list-table .table td {
     padding: 5px;
 }

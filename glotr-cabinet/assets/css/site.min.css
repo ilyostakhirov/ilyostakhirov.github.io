@@ -13290,7 +13290,19 @@ th.sortable.desc {
 .sm-sh {
     display: none;
 }
-
+.keywords{
+        border: 1px solid #e4eaec;
+        padding:10px;
+}
+.keywords .badge{
+    padding: 5px 7px;
+    margin-right:5px;
+}
+.keywords .badge a{
+    color: #fff;
+    display: inline-block;
+    margin-left: 5px;
+}
 @media (min-width: 768px) {
     .modal-sm {
         width: 400px;

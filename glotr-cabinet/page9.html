@@ -1179,9 +1179,9 @@
     <!-- Page -->
     <div class="page">
         <div class="page-content">
-            <div class="clearfix">
-                <h2 class="mt-0 mb-20 float-left">Добавить товар / услугу</h2>
-                <button type="button" class="ml-30 float-right btn btn-danger btn-lg">Сохранить</button>
+            <div class="clearfix title-wrap mb-20">
+                <h2 class="mt-10 mb-5 mb-sm-20 float-sm-left">Добавить товар / услугу</h2>
+                <button type="button" class="float-sm-right btn btn-danger btn-lg">Сохранить</button>
             </div>
             <div class="row" data-sticky_parent>
                 <div class="col-md-8">
@@ -1222,28 +1222,13 @@
                                 </div>
                                 <div class="form-group">
                                     <label class="form-control-label">Ключевые слова для поиска</label>
-                                    <div class="row">
-                                        <div class="col-md-4 mb-20">
-                                            <input type="text" class="form-control" placeholder="">
-                                        </div>
-                                        <div class="col-md-4 mb-20">
-                                            <input type="text" class="form-control" placeholder="">
-                                        </div>
-                                        <div class="col-md-4 mb-20">
-                                            <input type="text" class="form-control" placeholder="">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-4 mb-20 mb-md-0">
-                                            <input type="text" class="form-control" placeholder="">
-                                        </div>
-                                        <div class="col-md-4 mb-20 mb-md-0">
-                                            <input type="text" class="form-control" placeholder="">
-                                        </div>
-                                        <div class="col-md-4 mb-20 mb-md-0">
-                                            <input type="text" class="form-control" placeholder="">
-                                        </div>
-                                    </div>
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                                <div class="keywords mb-20">
+                                	<span class="badge badge-primary">Default <a href="#"><i class="icon wb-close" aria-hidden="true"></i></a></span>
+                                	<span class="badge badge-primary">Default <a href="#"><i class="icon wb-close" aria-hidden="true"></i></a></span>
+                                	<span class="badge badge-primary">Default <a href="#"><i class="icon wb-close" aria-hidden="true"></i></a></span>
+                                	<span class="badge badge-primary">Default <a href="#"><i class="icon wb-close" aria-hidden="true"></i></a></span>
                                 </div>
                                 <div class="form-group ">
                                     <label class="form-control-label">Описание</label>
@@ -1256,9 +1241,42 @@
                     </div>
                     <div class="panel panel-bordered mt-30">
                         <div class="panel-heading">
+                            <h3 class="panel-title">Продвижение</h3>
+                        </div>
+                        <div class="panel-body pt-10 pb-0">
+                        	<div class="form-group mb-0">
+                                <label class="form-control-label">Метки</label>
+                                <div class="form-w-50">
+                                    <div class="radio-custom mb-20 radio-default radio-inline">
+                                        <input type="radio" name="metki" id="radio_inline11" checked="">
+                                        <label for="radio_inline11">Без метки</label>
+                                    </div>
+                                    <div class="radio-custom mb-20 radio-default radio-inline">
+                                        <input type="radio" name="metki" id="radio_inline112">
+                                        <label for="radio_inline112"><span class="badge badge-danger">Новинка</span></label>
+                                    </div>
+                                    <div class="radio-custom mb-20 radio-default radio-inline">
+                                        <input type="radio" name="metki" id="radio_inline113">
+                                        <label for="radio_inline113"><span class="badge badge-success">Хит сезона</span></label>
+                                    </div>
+                                    <div class="radio-custom mb-20 radio-default radio-inline">
+                                        <input type="radio" name="metki" id="radio_inline114">
+                                        <label for="radio_inline114"><span class="badge badge-success">Хит продаж</span></label>
+                                    </div>
+                                    <div class="radio-custom mb-20 radio-default radio-inline">
+                                        <input type="radio" name="metki" id="radio_inline115">
+                                        <label for="radio_inline115"><span class="badge badge-success">Популярные</span></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="panel panel-bordered mt-30">
+                        <div class="panel-heading">
                             <h3 class="panel-title">Условия продаж</h3>
                         </div>
-                        <div class="panel-body pt-20">
+                        <div class="panel-body pt-20 pb-10">
                             <div class="form-group mb-0">
                                 <label class="form-control-label">Тип продаж</label>
                                 <div class="form-w-50">
@@ -1499,12 +1517,12 @@
                             </div>
                             <div class="label-text mb-10">Дополнительно</div>
                             <div class="form-inline mb-0">
-                                <div class="form-group m-f-g d-flex align-items-center mb-20 mr-40">
+                                <div class="form-group mb-20 m-f-g d-flex align-items-center mr-40">
                                     <label class=" mr-10">Мин. заказ</label>
                                     <input type="text" class="form-control w-120 mr-10">
                                     <span>шт.</span>
                                 </div>
-                                <div class="form-group mb-0">
+                                <div class="form-group mb-20">
                                     <label class=" mr-10">Возможность поставки</label>
                                     <div class="d-flex">
                                         <div class="d-flex align-items-center">

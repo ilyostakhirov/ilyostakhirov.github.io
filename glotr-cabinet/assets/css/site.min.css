@@ -13595,6 +13595,9 @@ th.sortable.desc {
 }
 
 @media (max-width:992px) {
+    .f-s-11 {
+    font-size: 11px !important;
+}
     .modal.modal-fullscreen {
         box-shadow: 0 0 0 100px #fff
     }

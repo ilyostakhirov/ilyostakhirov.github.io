@@ -13290,19 +13290,23 @@ th.sortable.desc {
 .sm-sh {
     display: none;
 }
-.keywords{
-        border: 1px solid #e4eaec;
-        padding:10px;
+
+.keywords {
+    border: 1px solid #e4eaec;
+    padding: 10px;
 }
-.keywords .badge{
+
+.keywords .badge {
     padding: 5px 7px;
-    margin-right:5px;
+    margin-right: 5px;
 }
-.keywords .badge a{
+
+.keywords .badge a {
     color: #fff;
     display: inline-block;
     margin-left: 5px;
 }
+
 @media (min-width: 768px) {
     .modal-sm {
         width: 400px;
@@ -13369,7 +13373,8 @@ th.sortable.desc {
         flex-grow: 1;
     }
 
-    .product-list-table table.table th:nth-child(4),.product-list-table-no-img.product-list-table table.table th:nth-child(3),
+    .product-list-table table.table th:nth-child(4),
+    .product-list-table-no-img.product-list-table table.table th:nth-child(3),
     .product-list-table table.table th:nth-child(5),
     .product-list-table table.table th:nth-child(6),
     .product-list-table table.table td:nth-child(4),
@@ -13377,15 +13382,17 @@ th.sortable.desc {
     .product-list-table table.table td:nth-child(6) {
         display: none;
     }
-.product-list-table-no-img.product-list-table table.table-striped tbody tr td:nth-child(3) {
-    display: none;
-}
-.product-list-table-no-img.product-list-table table.table-striped tbody tr td:nth-child(2) {
-    width: 100%;
-    max-width: 100%;
-}
-.
-    .sm-block-form .radio-inline {
+
+    .product-list-table-no-img.product-list-table table.table-striped tbody tr td:nth-child(3) {
+        display: none;
+    }
+
+    .product-list-table-no-img.product-list-table table.table-striped tbody tr td:nth-child(2) {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    . .sm-block-form .radio-inline {
         display: block;
         margin-left: 0;
     }
@@ -13405,61 +13412,79 @@ th.sortable.desc {
 }
 
 @media screen and (max-width: 650px) {
-        .sm-sh {
+    .sm-sh {
         display: inline-block;
     }
-h6.sm-sh{
-    display: block;
-}
+
+    h6.sm-sh {
+        display: block;
+    }
+
     .product-list-table .table td {
-    padding: 5px;
-}
-.product-list-table .table td .mr-10 {
-    margin-right: 5px !important;
-}
-.product-list-table h6 small {
-    font-size: 11px;
-}
+        padding: 5px;
+    }
+
+    .product-list-table .table td .mr-10 {
+        margin-right: 5px !important;
+    }
+
+    .product-list-table h6 small {
+        font-size: 11px;
+    }
+
     .w-120 {
         width: 100px !important;
     }
-.product-list-table table.table td.price-td.open {
-display: block;
-    text-align: left!important;
-    border-top: 1px solid #d2d2d2;
-    max-width: 100%;
-    width: 100%;
-}
-.product-list-table .price-td .sm-sh small {
-    font-size: 80%;
-    font-weight:400;
-}
-.product-list-table .price-td .sm-sh strong {
-    font-size: 11px;
-}
-.title-wrap{
-    text-align: center;
-}
-a.sm-sh.green-700 {
-    font-size: 11px;
-}
-.h2, h2 {
-    font-size: 18px;
-}
-.btn-lg {
-    font-size: 12px;
-    padding: 5px 10px;
-}
+
+    .product-list-table table.table td.price-td.open {
+        display: block;
+        text-align: left !important;
+        border-top: 1px solid #d2d2d2;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .product-list-table .price-td .sm-sh small {
+        font-size: 80%;
+        font-weight: 400;
+    }
+
+    .product-list-table .price-td .sm-sh strong {
+        font-size: 11px;
+    }
+
+    .title-wrap {
+        text-align: center;
+    }
+
+    a.sm-sh.green-700 {
+        font-size: 11px;
+    }
+
+    .h2,
+    h2 {
+        font-size: 18px;
+    }
+
+    .btn-lg {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
     .product-list-table table.table td:last-child>div {
         text-align: left;
         line-height: 13px;
     }
-.price-td .mb-10,.price-td .mb-20  {
-    margin-bottom: 0!important;
-}
-button.sm-sh.more-date-btn.btn.btn-icon.btn-success.p-5.active i {
-    transform: rotate(180deg);
-}
+
+    .price-td .mb-10,
+    .price-td .mb-20 {
+        margin-bottom: 0 !important;
+    }
+
+    button.sm-sh.more-date-btn.btn.btn-icon.btn-success.p-5.active i {
+        transform: rotate(180deg);
+    }
+
     .product-list-table table.table td:last-child>div small {
         font-size: 80%;
         line-height: 1;
@@ -13657,4 +13682,103 @@ button.sm-sh.more-date-btn.btn.btn-icon.btn-success.p-5.active i {
     .modal.modal-fullscreen .modal-dialog .modal-content .modal-header .btn {
         display: none
     }
+}
+
+.table-dragger-handle {
+  position: relative;
+  display: inline-block;
+  margin-left: .3em;
+  font-family: "Web Icons";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none;
+  text-rendering: auto;
+}
+
+.table-dragger-handle:before {
+  content: "";
+}
+
+.sindu_dragger {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+.sindu_handle {
+  cursor: move;
+}
+
+.sindu_dragger table {
+  background: #f3f7f9;
+}
+
+.sindu_dragger li {
+  padding: 0;
+  margin: 0;
+  text-align: inherit;
+  list-style: none;
+}
+
+.sindu_dragger li table, .sindu_dragger tr, .sindu_dragger th, .sindu_dragger td {
+  box-sizing: border-box;
+}
+
+.gu-mirror {
+  list-style: none;
+}
+
+.sindu_dragger.sindu_column li {
+  float: left;
+}
+
+.sindu_dragging .sindu_origin_table {
+  visibility: hidden;
+}
+
+.gu-mirror {
+  position: fixed !important;
+  z-index: 9999 !important;
+  margin: 0 !important;
+  opacity: .8;
+}
+
+.gu-mirror li {
+  padding: 0;
+  margin: 0;
+  text-align: inherit;
+  list-style: none;
+}
+
+.gu-mirror table {
+  background: #e4eaec;
+}
+
+.gu-mirror li table, .gu-mirror tr, .gu-mirror th, .gu-mirror td {
+  box-sizing: border-box;
+}
+
+.gu-hide {
+  display: none !important;
+}
+
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+.gu-transit {
+  opacity: .5;
+}
+
+.sindu_dragger table {
+  background: transparent !important;
 }

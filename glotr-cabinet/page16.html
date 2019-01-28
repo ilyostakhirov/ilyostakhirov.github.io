@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="global/vendor/switchery/switchery.css">
     <link rel="stylesheet" href="global/vendor/dropify/dropify.css">
     <link rel="stylesheet" href="global/vendor/bootstrap-maxlength/bootstrap-maxlength.css">
+    <link rel="stylesheet" href="global/vendor/bootstrap-treeview/bootstrap-treeview.min.css">
     <link rel="stylesheet" href="assets/css/site.min.css">
     <!-- Plugins -->
     <!-- Fonts -->
@@ -1318,13 +1319,52 @@
             </div>
             <div class="panel panel-bordered mt-30">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Настройки</h3>
+                    <h3 class="panel-title">Настройки автоматического прайс листа</h3>
                 </div>
                 <div class="panel-body pt-20">
-                    <div class="form-group ">
-                        <label class="form-control-label">Категория</label>
-                        <input type="text" class="form-control">
-                    </div>
+                	<h3 class="panel-title p-0 mb-15">Добавить товары</h3>
+                	<p>Выберите один или несколько категорий товаров или услуг которые будут автоматически добавлены в прайс лист. Например если Вы добавили товары
+из категории «ТЕЛЕВИЗОРЫ» то в прайс листе будут добавлены все активные и актуальные товары в данной категории. По мере добавления в категорию 
+новых товаров они также будут добавлены в данный прайс лист</p>
+                     <form class="form-group" id="exampleSearchForm" role="search">
+                                <div class="input-search">
+                                    <input type="search" class="form-control" id="inputSearchable" placeholder="Поиск категории ...">
+                                    <button type="submit" class="input-search-btn">
+                                        <i class="icon wb-search" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="form-group form-w-50 mb-0">
+                                <div class="radio-custom  radio-default radio-inline">
+                                    <input type="radio" id="manually_select" name="choose_cat" checked="">
+                                    <label for="manually_select">ТОВАРЫ</label>
+                                </div>
+                                <div class="radio-custom radio-default radio-inline">
+                                    <input type="radio" id="selected_cat" name="choose_cat">
+                                    <label for="selected_cat">УСЛУГИ</label>
+                                </div>
+                            </div>
+                            <div class="manually_select_block">
+                            	<div class="mb-20">
+                                <strong>Выбрано: <a href="#">text</a>, <a href="#">text</a></strong>
+                                </div>
+                                <div class="h-300 category-wrap" data-plugin="scrollable">
+                                    <div data-role="container">
+                                        <div id="exampleSearchableTree" data-role="content"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display: none" class="selected_cat_block">
+                                <div class="h-300 category-wrap " data-plugin="scrollable">
+                                    <div data-role="container">
+                                        <div class="treeview selected-menu" data-role="content">
+                                            <div class="list-group-item"><span class="icon node-icon fa fa-circle-o"></span>Товары > Бытовая техника > Бытовая техника</div>
+                                            <div class="list-group-item"><span class="icon node-icon fa fa-circle-o"></span>Товары > Бытовая техника > Бытовая техника</div>
+                                            <div class="list-group-item"><span class="icon node-icon fa fa-circle-o"></span>Товары > Бытовая техника > Бытовая техника</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     <h3 class="panel-title mt-30 p-0 mb-15">Информация на шапке</h3>
                     <div class="table-wrap table-responsive">
                         <table id="handle-table" class="table table-hover table-bordered table-striped sortable-table">
@@ -1579,6 +1619,7 @@
         <script src="global/vendor/dropify/dropify.min.js"></script>
         <script src="global/vendor/formatter/jquery.formatter.js"></script>
         <script src="global/vendor/table-dragger/table-dragger.min.js"></script>
+        <script src="global/vendor/bootstrap-treeview/bootstrap-treeview.min.js"></script>
         <!-- Scripts -->
         <script src="global/js/Component.js"></script>
         <script src="global/js/Plugin.js"></script>
@@ -1589,9 +1630,11 @@
         <script src="assets/js/Section/Sidebar.js"></script>
         <script src="assets/js/Section/PageAside.js"></script>
         <script src="assets/js/Plugin/menu.js"></script>
+        <script src="global/js/Plugin/bootstrap-treeview.js"></script>
         <script src="global/js/Plugin/clockpicker.js"></script>
         <script src="global/js/Plugin/switchery.js"></script>
         <script src="global/js/Plugin/formatter.js"></script>
+        <script src="assets/examples/js/advanced/treeview.js"></script>
         <script src="assets/js/Site.js"></script>
         <script>
         (function(document, window, $) {

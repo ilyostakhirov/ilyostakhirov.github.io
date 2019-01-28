@@ -1188,11 +1188,11 @@
                         <label class="form-control-label mb-10">Тип предложения</label>
                         <div class="form-w-50">
                             <div class="radio-custom mb-20 radio-default radio-inline">
-                                <input type="radio" name="radio1112" id="radio111112" checked="">
+                                <input type="radio" name="radio1112" id="radio111112">
                                 <label for="radio111112">опубликовать файл</label>
                             </div>
                             <div class="radio-custom mb-20 radio-default radio-inline">
-                                <input type="radio" name="radio1112" id="radio111123">
+                                <input type="radio" name="radio1112" id="radio111123" checked="">
                                 <label for="radio111123">автомат прайс лист</label>
                             </div>
                         </div>
@@ -1311,24 +1311,250 @@
                             <label class="form-control-label">Наименование</label>
                             <input type="text" class="form-control">
                         </div>
-                        <div class="form-group mb-0">
-                            <label class="form-control-label">Прайс лист</label>
-                            <input type="file" name="img[]" class="file-upload-default">
-                            <div class="input-group col-xs-12">
-                                <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
-                                <span class="input-group-append">
-                          <button class="file-upload-browse btn btn-info" type="button">загрузить</button>
-                        </span>
-                            </div>
-                            <p class="mt-5 text-help">Формат: XLS, DOCS, PDF. Минимальный размер 10 мб</p>
-                        </div>
-                        <button type="button" class="mt-10 btn-lg btn btn-danger">Добавить</button>
                     </div>
                     <div class="tab-pane" id="exampleTabsInverseTwo" role="tabpanel">
                     </div>
                 </div>
             </div>
-            
+            <div class="panel panel-bordered mt-30">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Настройки</h3>
+                </div>
+                <div class="panel-body pt-20">
+                    <div class="form-group ">
+                        <label class="form-control-label">Категория</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <h3 class="panel-title mt-30 p-0 mb-15">Информация на шапке</h3>
+                    <div class="table-wrap table-responsive">
+                        <table id="handle-table" class="table table-hover table-bordered table-striped sortable-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 300px;min-width: 300px;" scope="col">
+                                        <strong>Информация</strong>
+                                    </th>
+                                    <th scope="col" style="min-width: 300px;">
+                                        <strong>Описание</strong>
+                                    </th>
+                                    <th scope="col" class="text-center" style="width: 100px;min-width: 100px;">
+                                        <strong>Показать</strong>
+                                    </th>
+                                    <th scope="col" class="text-center" style="width: 50px;min-width: 50px;">
+                                        <strong><i class="font-size-18 icon wb-settings" aria-hidden="true"></i></strong>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <strong>Название компании</strong>
+                                    </td>
+                                    <td>
+                                        Отображается название компании указанная в профиле
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                                    </td>
+                                    <td class="font-size-18 text-center">
+                                        <i class="table-dragger-handle"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Контактные телефоны компании</strong>
+                                    </td>
+                                    <td>
+                                        Будут отображаться до 3-х контактных номеров. Первым будут отображаться основной номер компании
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                                    </td>
+                                    <td class="font-size-18 text-center">
+                                        <i class="table-dragger-handle"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Email адрес</strong>
+                                    </td>
+                                    <td>
+                                        Будут отображаться до 3-х email адресов. Первым будут отображаться основной номер компании
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                                    </td>
+                                    <td class="font-size-18 text-center">
+                                        <i class="table-dragger-handle"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Сайт компании</strong>
+                                    </td>
+                                    <td>
+                                        Будут отображаться до 3-х email адресов. Первым будут отображаться основной номер компании
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                                    </td>
+                                    <td class="font-size-18 text-center">
+                                       <i class="table-dragger-handle"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Ссылка на страницу в каталоге</strong>
+                                    </td>
+                                    <td>
+                                        Будут отображаться до 3-х email адресов. Первым будут отображаться основной номер компании
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                                    </td>
+                                    <td class="font-size-18 text-center">
+                                       <i class="table-dragger-handle"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Логотип компании</strong>
+                                    </td>
+                                    <td>
+                                        Будут отображаться до 3-х email адресов. Первым будут отображаться основной номер компании
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                                    </td>
+                                    <td class="font-size-18 text-center">
+                                        <i class="table-dragger-handle"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Название компании</strong>
+                                    </td>
+                                    <td>
+                                        Отображается название компании указанная в профиле
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                                    </td>
+                                    <td class="font-size-18 text-center">
+                                        <i class="table-dragger-handle"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                     <h3 class="panel-title mt-30 p-0 mb-15">Настройка таблицы</h3>
+                    <div class="table-wrap table-responsive">
+                        <table id="handle-table" class="table table-hover table-bordered table-striped sortable-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 300px;min-width: 300px;" scope="col">
+                                        <strong>Информация</strong>
+                                    </th>
+                                    <th scope="col" style="min-width: 300px;">
+                                        <strong>Описание</strong>
+                                    </th>
+                                    <th scope="col" class="text-center" style="width: 100px;min-width: 100px;">
+                                        <strong>Показать</strong>
+                                    </th>
+                                    <th scope="col" class="text-center" style="width: 50px;min-width: 50px;">
+                                        <strong><i class="font-size-18 icon wb-settings" aria-hidden="true"></i></strong>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <strong>Фото товара</strong>
+                                    </td>
+                                    <td>
+                                        Отображается название компании указанная в профиле 
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                                    </td>
+                                    <td class="font-size-18 text-center">
+                                        <i class="table-dragger-handle"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Название товара</strong>
+                                    </td>
+                                    <td>
+                                        Отображаеттся адрес компании указанная в профиле 
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                                    </td>
+                                    <td class="font-size-18 text-center">
+                                        <i class="table-dragger-handle"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Артикуль товара</strong>
+                                    </td>
+                                    <td>
+                                        Будут отображаться до 3-х контактных номеров. Первым будут отображаться основной номер компании
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                                    </td>
+                                    <td class="font-size-18 text-center">
+                                        <i class="table-dragger-handle"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Тип продажи</strong>
+                                    </td>
+                                    <td>
+                                        Будут отображаться до 3-х email адресов. Первым будут отображаться основной номер компании
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                                    </td>
+                                    <td class="font-size-18 text-center">
+                                       <i class="table-dragger-handle"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Цена товара</strong>
+                                    </td>
+                                    <td>
+                                        Будут отображаться до 3-х email адресов. Первым будут отображаться основной номер компании
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                                    </td>
+                                    <td class="font-size-18 text-center">
+                                       <i class="table-dragger-handle"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Минимальный заказ</strong>
+                                    </td>
+                                    <td>
+                                        Будут отображаться до 3-х email адресов. Первым будут отображаться основной номер компании
+                                    </td>
+                                    <td class="text-center">
+                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                                    </td>
+                                    <td class="font-size-18 text-center">
+                                        <i class="table-dragger-handle"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- End Page -->
         <!-- Footer -->

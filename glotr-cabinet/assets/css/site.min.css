@@ -13785,3 +13785,26 @@ th.sortable.desc {
 .sindu_dragger table {
   background: transparent !important;
 }
+.inner-tab.nav-tabs-inverse .tab-content{
+    box-shadow: none;
+} 
+.inner-tab .nav-tabs {
+    border-bottom: none;
+}
+.inner-tab .nav-tabs .nav-item.show .nav-link, .inner-tab .nav-tabs .nav-link.active {
+    color: #273238;
+    background-color: #f2f2f2;
+    border-color: #d2d2d2 #d2d2d2 #ddd;
+    font-weight: 500;
+    border-bottom: none;
+}
+.inner-tab .table-wrap {
+     border-radius: 0; 
+    border-collapse: collapse;
+}
+.inner-tab .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fff;
+}
+.inner-tab table.table-striped thead th {
+    background-color: #f2f2f2;
+}

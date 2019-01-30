@@ -13680,7 +13680,11 @@ th.sortable.desc {
         background-color: #f3f2f2;
     }
 }
-
+@media (max-width:768px) {
+.text-s-left{
+    text-align: left!important;
+}
+}
 @media (min-width:992px) {
     .modal.modal-fullscreen .modal-dialog .modal-content .modal-header .btn {
         display: none
@@ -13777,11 +13781,15 @@ th.sortable.desc {
   -ms-user-select: none !important;
   user-select: none !important;
 }
-
+.t-d-u{
+    text-decoration:underline;
+}
 .gu-transit {
   opacity: .5;
 }
-
+.strong{
+    font-weight:bold!important;
+}
 .sindu_dragger table {
   background: transparent !important;
 }

@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="global/vendor/switchery/switchery.css">
     <link rel="stylesheet" href="global/vendor/dropify/dropify.css">
     <link rel="stylesheet" href="global/vendor/bootstrap-maxlength/bootstrap-maxlength.css">
-    <link rel="stylesheet" href="global/vendor/bootstrap-treeview/bootstrap-treeview.min.css">
     <link rel="stylesheet" href="assets/css/site.min.css">
     <!-- Plugins -->
     <!-- Fonts -->
@@ -1179,118 +1178,10 @@
     <!-- Page -->
     <div class="page">
         <div class="page-content">
-            <h2 class="mt-0 mb-20">Прайс лист</h2>
-            <div class="panel panel-bordered mt-30">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Тип прайс листа</h3>
-                </div>
-                <div class="panel-body pt-20">
-                    <div class="form-group mb-0">
-                        <label class="form-control-label mb-10">Тип предложения</label>
-                        <div class="form-w-50">
-                            <div class="radio-custom mb-20 radio-default radio-inline">
-                                <input type="radio" name="radio1112" id="radio111112">
-                                <label for="radio111112">опубликовать файл</label>
-                            </div>
-                            <div class="radio-custom mb-20 radio-default radio-inline">
-                                <input type="radio" name="radio1112" id="radio111123" checked="">
-                                <label for="radio111123">автомат прайс лист</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="alert dark alert-warning">
-                        Вы можете загрузить Ваши прайс листы в одном из форматов xls, docs или pdf. Опубликованные файлы будут отображаться в каталоге GLOTR.UZ а также на Вашем сайте в соответствующих разделах.
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-bordered mt-30">
-                <h3 class="panel-title clearfix">
-                <span class="mt-5 inline-block">Прайс листы</span>
-                <button type="button" class="btn btn-primary btn-sm float-right">+ Добавить</button>
-              </h3>
-                <div class="panel-body pt-20">
-                    <div class="table-wrap table-responsive">
-                        <table class="table table-hover table-bordered table-striped">
-                            <thead>
-                                <tr>
-                                    <th style="width: 30px;min-width: 30px;">
-                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
-                                    </th>
-                                    <th scope="col">
-                                        <strong>Наименование</strong>
-                                    </th>
-                                    <th class="text-center" style="width: 200px;min-width: 200px;" scope="col">
-                                        <strong>Ссылка</strong>
-                                    </th>
-                                    <th class="text-center" style="width: 100px;min-width: 100px;" scope="col">
-                                        <strong>Опубликовано</strong>
-                                    </th>
-                                    <th style="width: 100px;min-width: 100px;" class="text-center" scope="col">
-                                        <strong>Показать</strong>
-                                    </th>
-                                    <th class="text-center" style="width: 100px;min-width: 100px;" scope="col">
-                                        <strong>На сайте</strong>
-                                    </th>
-                                    <th scope="col" class="text-center" style="width: 50px;min-width: 50px;">
-                                        <strong><i class="font-size-18 icon wb-settings" aria-hidden="true"></i></strong>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="text-center">
-                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
-                                    </td>
-                                    <td> <strong>Прайс лист на оборудование</strong><br><label class="badge badge-danger mb-0 mt-0">не опубликовано</label></td>
-                                    <td class="text-center"><a class="btn-sm btn-success t-d-n" href="#">Посмотреть прайс</a></td>
-                                    <td class="text-center">17.05.2018</td>
-                                    <td class="text-center"> <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" /></td>
-                                    <td class="text-center">
-                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
-                                    </td>
-                                    <td class="text-center">
-                                        <button type="button" class="btn btn-icon btn-success mb-5 p-5"><i class="icon wb-pencil" aria-hidden="true"></i></button>
-                                        <button type="button" class="btn btn-icon btn-warning  p-5"><i class="icon wb-trash" aria-hidden="true"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">
-                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
-                                    </td>
-                                    <td> <strong>Прайс лист на оборудование</strong><br><label class="badge badge-success mb-0 mt-0">опубликовано</label></td>
-                                    <td class="text-center"><a class="btn-sm btn-success t-d-n" href="#">Посмотреть прайс</a></td>
-                                    <td class="text-center">17.05.2018</td>
-                                    <td class="text-center"> <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" /></td>
-                                    <td class="text-center">
-                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
-                                    </td>
-                                    <td class="text-center">
-                                        <button type="button" class="btn btn-icon btn-success mb-5 p-5"><i class="icon wb-pencil" aria-hidden="true"></i></button>
-                                        <button type="button" class="btn btn-icon btn-warning  p-5"><i class="icon wb-trash" aria-hidden="true"></i></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">
-                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
-                                    </td>
-                                    <td> <strong>Прайс лист на оборудование</strong><br><label class="badge badge-success mb-0 mt-0">опубликовано</label></td>
-                                    <td class="text-center"><a class="btn-sm btn-success t-d-n" href="#">Посмотреть прайс</a></td>
-                                    <td class="text-center">17.05.2018</td>
-                                    <td class="text-center"> <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" /></td>
-                                    <td class="text-center">
-                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
-                                    </td>
-                                    <td class="text-center">
-                                        <button type="button" class="btn btn-icon btn-success mb-5 p-5"><i class="icon wb-pencil" aria-hidden="true"></i></button>
-                                        <button type="button" class="btn btn-icon btn-warning  p-5"><i class="icon wb-trash" aria-hidden="true"></i></button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="nav-tabs-horizontal nav-tabs-inverse" data-plugin="tabs">
+          
+            <h2 class="mt-0 mb-20">НАСТРОЙКИ ДОСТАВКИ</h2>
+
+<div class="nav-tabs-horizontal nav-tabs-inverse" data-plugin="tabs">
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item" role="presentation">
                         <a class="nav-link active" data-toggle="tab" href="#exampleTabsInverseOne" aria-controls="exampleTabsInverseOne"
@@ -1307,295 +1198,144 @@
                 </ul>
                 <div class="tab-content p-20">
                     <div class="tab-pane active" id="exampleTabsInverseOne" role="tabpanel">
-                        <h3 class="panel-title p-0 mb-20">Добавить прайс лист</h3>
-                        <div class="form-group ">
-                            <label class="form-control-label">Наименование</label>
-                            <input type="text" class="form-control">
+                        <h3 class="panel-title p-0 mb-20">Виды доставки</h3>
+                        <p>Вы можете указать в качестве Вашего сайта сторонний ресурс или указать сайт который создали на нашей платформе. По умолчанию будет указано. При этом вы будете иметь возможность изменить Ваш сайт в любое время.    </p>
+                        <form class="form-horizontal">
+                    <div class="form-group row">
+                      <div class="col-md-2 text-right text-s-left"><label class="strong form-control-label mb-10">Стандартная доставка: </label></div>
+                      <div class="col-md-10">
+                        <div class="mb-10 d-flex">
+                          <div class="mr-20">
+                    <div class="float-left mr-10">
+                      <input type="checkbox" id="inputBasicOff" checked data-plugin="switchery" />
+                    </div>
+                    <label class="pt-3" for="inputBasicOff">Включить</label>
+                  </div>
+                   <div class="mr-20">
+                    <div class="float-left mr-10">
+                      <input type="checkbox" id="inputBasicOff1" checked data-plugin="switchery" />
+                    </div>
+                    <label class="pt-3" for="inputBasicOff1">показать на сайте</label>
+                  </div>
                         </div>
+                       <textarea  rows="5" class="form-control" >Уведомления будут отправляться на подтвержденные мобильный номер телефона в виде СМС. Если у пользователя несколько подтвержденных мобильных номеров, то смс будет отправлен  на основной номер. Уведомления будут отправляться на подтвержденные мобильный номер телефона в виде СМС. </textarea>
+                      </div>
+                    </div>
+
+
+                    <div class="form-group row">
+                      <div class="col-md-2 text-right text-s-left"><label class="strong form-control-label mb-10">Экспресс доставка: </label></div>
+                      <div class="col-md-10">
+                        <div class="mb-10 d-flex">
+                          <div class="mr-20">
+                    <div class="float-left mr-10">
+                      <input type="checkbox" id="inputBasicOff2" checked data-plugin="switchery" />
+                    </div>
+                    <label class="pt-3" for="inputBasicOff2">Включить</label>
+                  </div>
+                   <div class="mr-20">
+                    <div class="float-left mr-10">
+                      <input type="checkbox" id="inputBasicOff3" checked data-plugin="switchery" />
+                    </div>
+                    <label class="pt-3" for="inputBasicOff3">показать на сайте</label>
+                  </div>
+                        </div>
+                       <textarea  rows="5" class="form-control" >Уведомления будут отправляться на подтвержденные мобильный номер телефона в виде СМС. Если у пользователя несколько подтвержденных мобильных номеров, то смс будет отправлен  на основной номер. Уведомления будут отправляться на подтвержденные мобильный номер телефона в виде СМС. </textarea>
+                      </div>
+                    </div>
+
+
+                    <div class="form-group row">
+                      <div class="col-md-2 text-right text-s-left"><label class="strong form-control-label mb-10">Бесплатная доставка: </label></div>
+                      <div class="col-md-10">
+                        <div class="mb-10 d-flex">
+                          <div class="mr-20">
+                    <div class="float-left mr-10">
+                      <input type="checkbox" id="inputBasicOff4" checked data-plugin="switchery" />
+                    </div>
+                    <label class="pt-3" for="inputBasicOff4">Включить</label>
+                  </div>
+                   <div class="mr-20">
+                    <div class="float-left mr-10">
+                      <input type="checkbox" id="inputBasicOff5" checked data-plugin="switchery" />
+                    </div>
+                    <label class="pt-3" for="inputBasicOff5">показать на сайте</label>
+                  </div>
+                        </div>
+                       <textarea  rows="5" class="form-control" >Уведомления будут отправляться на подтвержденные мобильный номер телефона в виде СМС. Если у пользователя несколько подтвержденных мобильных номеров, то смс будет отправлен  на основной номер. Уведомления будут отправляться на подтвержденные мобильный номер телефона в виде СМС. </textarea>
+                      </div>
+                    </div>
+
+
+                    <div class="form-group row">
+                      <div class="col-md-2 text-right text-s-left"><label class="strong form-control-label mb-10">Самовывоз: </label></div>
+                      <div class="col-md-10">
+                        <div class="mb-10 d-flex">
+                          <div class="mr-20">
+                    <div class="float-left mr-10">
+                      <input type="checkbox" id="inputBasicOff6" checked data-plugin="switchery" />
+                    </div>
+                    <label class="pt-3" for="inputBasicOff6">Включить</label>
+                  </div>
+                   <div class="mr-20">
+                    <div class="float-left mr-10">
+                      <input type="checkbox" id="inputBasicOff7" checked data-plugin="switchery" />
+                    </div>
+                    <label class="pt-3" for="inputBasicOff7">показать на сайте</label>
+                  </div>
+                        </div>
+                       <textarea  rows="5" class="form-control" >Уведомления будут отправляться на подтвержденные мобильный номер телефона в виде СМС. Если у пользователя несколько подтвержденных мобильных номеров, то смс будет отправлен  на основной номер. Уведомления будут отправляться на подтвержденные мобильный номер телефона в виде СМС. </textarea>
+                      </div>
+                    </div>
+                  </form>
                     </div>
                     <div class="tab-pane" id="exampleTabsInverseTwo" role="tabpanel">
                     </div>
                 </div>
             </div>
+
             <div class="panel panel-bordered mt-30">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Настройки автоматического прайс листа</h3>
+                    <h3 class="panel-title">Регионы доставки и условия</h3>
                 </div>
                 <div class="panel-body pt-20">
-                	<h3 class="panel-title p-0 mb-15">Добавить товары</h3>
-                	<p>Выберите один или несколько категорий товаров или услуг которые будут автоматически добавлены в прайс лист. Например если Вы добавили товары
-из категории «ТЕЛЕВИЗОРЫ» то в прайс листе будут добавлены все активные и актуальные товары в данной категории. По мере добавления в категорию 
-новых товаров они также будут добавлены в данный прайс лист</p>
-                     <form class="form-group" id="exampleSearchForm" role="search">
-                                <div class="input-search">
-                                    <input type="search" class="form-control" id="inputSearchable" placeholder="Поиск категории ...">
-                                    <button type="submit" class="input-search-btn">
-                                        <i class="icon wb-search" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                            </form>
-                            <div class="form-group form-w-50 mb-0">
-                                <div class="radio-custom  radio-default radio-inline">
-                                    <input type="radio" id="manually_select" name="choose_cat" checked="">
-                                    <label for="manually_select">ТОВАРЫ</label>
-                                </div>
-                                <div class="radio-custom radio-default radio-inline">
-                                    <input type="radio" id="selected_cat" name="choose_cat">
-                                    <label for="selected_cat">УСЛУГИ</label>
-                                </div>
-                            </div>
-                            <div class="manually_select_block">
-                            	<div class="mb-20">
-                                <strong>Выбрано: <a href="#">text</a>, <a href="#">text</a></strong>
-                                </div>
-                                <div class="h-300 category-wrap" data-plugin="scrollable">
-                                    <div data-role="container">
-                                        <div id="exampleSearchableTree" data-role="content"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div style="display: none" class="selected_cat_block">
-                                <div class="h-300 category-wrap " data-plugin="scrollable">
-                                    <div data-role="container">
-                                        <div class="treeview selected-menu" data-role="content">
-                                            <div class="list-group-item"><span class="icon node-icon fa fa-circle-o"></span>Товары > Бытовая техника > Бытовая техника</div>
-                                            <div class="list-group-item"><span class="icon node-icon fa fa-circle-o"></span>Товары > Бытовая техника > Бытовая техника</div>
-                                            <div class="list-group-item"><span class="icon node-icon fa fa-circle-o"></span>Товары > Бытовая техника > Бытовая техника</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    <h3 class="panel-title mt-30 p-0 mb-15">Информация на шапке</h3>
-                    <div class="table-wrap table-responsive">
-                        <table id="handle-table" class="table table-hover table-bordered table-striped sortable-table">
-                            <thead>
-                                <tr>
-                                    <th style="width: 300px;min-width: 300px;" scope="col">
-                                        <strong>Информация</strong>
-                                    </th>
-                                    <th scope="col" style="min-width: 300px;">
-                                        <strong>Описание</strong>
-                                    </th>
-                                    <th scope="col" class="text-center" style="width: 100px;min-width: 100px;">
-                                        <strong>Показать</strong>
-                                    </th>
-                                    <th scope="col" class="text-center" style="width: 50px;min-width: 50px;">
-                                        <strong><i class="font-size-18 icon wb-settings" aria-hidden="true"></i></strong>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <strong>Название компании</strong>
-                                    </td>
-                                    <td>
-                                        Отображается название компании указанная в профиле
-                                    </td>
-                                    <td class="text-center">
-                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
-                                    </td>
-                                    <td class="font-size-18 text-center">
-                                        <i class="table-dragger-handle"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <strong>Контактные телефоны компании</strong>
-                                    </td>
-                                    <td>
-                                        Будут отображаться до 3-х контактных номеров. Первым будут отображаться основной номер компании
-                                    </td>
-                                    <td class="text-center">
-                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
-                                    </td>
-                                    <td class="font-size-18 text-center">
-                                        <i class="table-dragger-handle"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <strong>Email адрес</strong>
-                                    </td>
-                                    <td>
-                                        Будут отображаться до 3-х email адресов. Первым будут отображаться основной номер компании
-                                    </td>
-                                    <td class="text-center">
-                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
-                                    </td>
-                                    <td class="font-size-18 text-center">
-                                        <i class="table-dragger-handle"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <strong>Сайт компании</strong>
-                                    </td>
-                                    <td>
-                                        Будут отображаться до 3-х email адресов. Первым будут отображаться основной номер компании
-                                    </td>
-                                    <td class="text-center">
-                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
-                                    </td>
-                                    <td class="font-size-18 text-center">
-                                       <i class="table-dragger-handle"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <strong>Ссылка на страницу в каталоге</strong>
-                                    </td>
-                                    <td>
-                                        Будут отображаться до 3-х email адресов. Первым будут отображаться основной номер компании
-                                    </td>
-                                    <td class="text-center">
-                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
-                                    </td>
-                                    <td class="font-size-18 text-center">
-                                       <i class="table-dragger-handle"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <strong>Логотип компании</strong>
-                                    </td>
-                                    <td>
-                                        Будут отображаться до 3-х email адресов. Первым будут отображаться основной номер компании
-                                    </td>
-                                    <td class="text-center">
-                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
-                                    </td>
-                                    <td class="font-size-18 text-center">
-                                        <i class="table-dragger-handle"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <strong>Название компании</strong>
-                                    </td>
-                                    <td>
-                                        Отображается название компании указанная в профиле
-                                    </td>
-                                    <td class="text-center">
-                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
-                                    </td>
-                                    <td class="font-size-18 text-center">
-                                        <i class="table-dragger-handle"></i>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                     <h3 class="panel-title mt-30 p-0 mb-15">Настройка таблицы</h3>
-                    <div class="table-wrap table-responsive">
-                        <table id="handle-table" class="table table-hover table-bordered table-striped sortable-table">
-                            <thead>
-                                <tr>
-                                    <th style="width: 300px;min-width: 300px;" scope="col">
-                                        <strong>Информация</strong>
-                                    </th>
-                                    <th scope="col" style="min-width: 300px;">
-                                        <strong>Описание</strong>
-                                    </th>
-                                    <th scope="col" class="text-center" style="width: 100px;min-width: 100px;">
-                                        <strong>Показать</strong>
-                                    </th>
-                                    <th scope="col" class="text-center" style="width: 50px;min-width: 50px;">
-                                        <strong><i class="font-size-18 icon wb-settings" aria-hidden="true"></i></strong>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <strong>Фото товара</strong>
-                                    </td>
-                                    <td>
-                                        Отображается название компании указанная в профиле 
-                                    </td>
-                                    <td class="text-center">
-                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
-                                    </td>
-                                    <td class="font-size-18 text-center">
-                                        <i class="table-dragger-handle"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <strong>Название товара</strong>
-                                    </td>
-                                    <td>
-                                        Отображаеттся адрес компании указанная в профиле 
-                                    </td>
-                                    <td class="text-center">
-                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
-                                    </td>
-                                    <td class="font-size-18 text-center">
-                                        <i class="table-dragger-handle"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <strong>Артикуль товара</strong>
-                                    </td>
-                                    <td>
-                                        Будут отображаться до 3-х контактных номеров. Первым будут отображаться основной номер компании
-                                    </td>
-                                    <td class="text-center">
-                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
-                                    </td>
-                                    <td class="font-size-18 text-center">
-                                        <i class="table-dragger-handle"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <strong>Тип продажи</strong>
-                                    </td>
-                                    <td>
-                                        Будут отображаться до 3-х email адресов. Первым будут отображаться основной номер компании
-                                    </td>
-                                    <td class="text-center">
-                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
-                                    </td>
-                                    <td class="font-size-18 text-center">
-                                       <i class="table-dragger-handle"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <strong>Цена товара</strong>
-                                    </td>
-                                    <td>
-                                        Будут отображаться до 3-х email адресов. Первым будут отображаться основной номер компании
-                                    </td>
-                                    <td class="text-center">
-                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
-                                    </td>
-                                    <td class="font-size-18 text-center">
-                                       <i class="table-dragger-handle"></i>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <strong>Минимальный заказ</strong>
-                                    </td>
-                                    <td>
-                                        Будут отображаться до 3-х email адресов. Первым будут отображаться основной номер компании
-                                    </td>
-                                    <td class="text-center">
-                                        <input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
-                                    </td>
-                                    <td class="font-size-18 text-center">
-                                        <i class="table-dragger-handle"></i>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                  </div>
+                  <p>Вы можете предоставить доступ по управлению кабинетом Вашей компании другим пользователям  с учетом определенных
+прав.  ВАЖНО! Право доступа предоставляется исключительно пользователям зарегистрированных в каталоге GLOTR.UZ 
+как «Пользователь». При этом они должны указать и подтвердить мобильный номер телефона и email адрес. 
+Для отправки запроса на предоставление права доступа введите ID номер пользователя.</p>
+
+<div class="row mt-20 mb-10">
+  <div class="col-md-6">
+    <div class="radio-custom mb-20 radio-default radio-inline">
+        <input type="radio" name="radio1112" id="radio111112" checked="">
+        <label class="strong font-size-15" for="radio111112">Внутренний сайт. Сайт созданный на платформе GLOTR.UZ</label>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <input type="text" value="gogo.gl.uz" disabled="" class="form-control">
+    <span class="text-help">название сайта отображается автоматически</span>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <div class="radio-custom mb-20 radio-default radio-inline">
+        <input type="radio" name="radio1112" id="radio111113" checked="">
+        <label class="strong font-size-15" for="radio111113">Внешний сайт. Сайт созданный на сторонней платформе</label>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <input type="text" value="gogo.gl.uz" class="form-control">
+    <span class="text-help">введите название сайта без www. Пример: company.uz </span>
+  </div>
+</div>
+<div class="text-center"><button type="button" class="mt-20 btn-lg btn btn-danger">СОХРАНИТЬ</button></div>
+                    
                 </div>
             </div>
+           
+            
+          </div>
+            
         </div>
         <!-- End Page -->
         <!-- Footer -->
@@ -1620,7 +1360,6 @@
         <script src="global/vendor/dropify/dropify.min.js"></script>
         <script src="global/vendor/formatter/jquery.formatter.js"></script>
         <script src="global/vendor/table-dragger/table-dragger.min.js"></script>
-        <script src="global/vendor/bootstrap-treeview/bootstrap-treeview.min.js"></script>
         <!-- Scripts -->
         <script src="global/js/Component.js"></script>
         <script src="global/js/Plugin.js"></script>
@@ -1631,11 +1370,9 @@
         <script src="assets/js/Section/Sidebar.js"></script>
         <script src="assets/js/Section/PageAside.js"></script>
         <script src="assets/js/Plugin/menu.js"></script>
-        <script src="global/js/Plugin/bootstrap-treeview.js"></script>
         <script src="global/js/Plugin/clockpicker.js"></script>
         <script src="global/js/Plugin/switchery.js"></script>
         <script src="global/js/Plugin/formatter.js"></script>
-        <script src="assets/examples/js/advanced/treeview.js"></script>
         <script src="assets/js/Site.js"></script>
         <script>
         (function(document, window, $) {

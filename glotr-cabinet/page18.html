@@ -1304,34 +1304,109 @@
 как «Пользователь». При этом они должны указать и подтвердить мобильный номер телефона и email адрес. 
 Для отправки запроса на предоставление права доступа введите ID номер пользователя.</p>
 
-<div class="row mt-20 mb-10">
-  <div class="col-md-6">
-    <div class="radio-custom mb-20 radio-default radio-inline">
-        <input type="radio" name="radio1112" id="radio111112" checked="">
-        <label class="strong font-size-15" for="radio111112">Внутренний сайт. Сайт созданный на платформе GLOTR.UZ</label>
-    </div>
-  </div>
-  <div class="col-md-6">
-    <input type="text" value="gogo.gl.uz" disabled="" class="form-control">
-    <span class="text-help">название сайта отображается автоматически</span>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-6">
-    <div class="radio-custom mb-20 radio-default radio-inline">
-        <input type="radio" name="radio1112" id="radio111113" checked="">
-        <label class="strong font-size-15" for="radio111113">Внешний сайт. Сайт созданный на сторонней платформе</label>
-    </div>
-  </div>
-  <div class="col-md-6">
-    <input type="text" value="gogo.gl.uz" class="form-control">
-    <span class="text-help">введите название сайта без www. Пример: company.uz </span>
-  </div>
-</div>
-<div class="text-center"><button type="button" class="mt-20 btn-lg btn btn-danger">СОХРАНИТЬ</button></div>
-                    
+
+ <table id="handle-table" class="table table-hover table-bordered table-striped sortable-table">
+                            <thead>
+                                <tr>
+                                    <th style="min-width: 200px;" scope="col">
+                                        <strong>РЕГИОН</strong>
+                                    </th>
+                                    <th scope="col" class="text-center" style="width: 200px;min-width: 150px;">
+                                        <strong>Стандартная</strong>
+                                    </th>
+                                    <th scope="col" class="text-center" style="width: 200px;min-width: 150px;">
+                                        <strong>Быстрая</strong>
+                                    </th>
+                                    <th scope="col" class="text-center" style="width: 200px;min-width: 150px;">
+                                        <strong>Бесплатная</strong>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                    <td class="table-title-a">
+                                      <input type="checkbox" class="icheckbox-primary" id="inputChecked1" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                                       <label for="inputChecked1" class="ml-5">Страны СНГ</label>
+                                       <a href="#"><i class="icon wb-chevron-down ml-5" aria-hidden="true"></i></a>
+                                    </td>
+                                    <td class="text-center">
+                                       17 500 сум
+                                    </td>
+                                    <td class="text-center">
+                                       35 000 сум
+                                    </td>
+                                    <td class="text-center">
+                                        нет
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-title-a">
+                                      <input type="checkbox" class="icheckbox-primary" id="inputChecked2" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                                       <label for="inputChecked2" class="ml-5">Узбекистан</label>
+                                       <a href="#"><i class="icon wb-chevron-down ml-5" aria-hidden="true"></i></a>
+                                    </td>
+                                    <td class="text-center">
+                                       17 500 сум
+                                    </td>
+                                    <td class="text-center">
+                                       35 000 сум
+                                    </td>
+                                    <td class="text-center">
+                                        нет
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-title-a pl-30">
+                                      <input type="checkbox" class="icheckbox-primary" id="inputChecked3" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                                       <label for="inputChecked3" class="ml-5">г. Ташкент</label>
+                                       <a href="#"><i class="icon wb-chevron-right ml-5" aria-hidden="true"></i></a>
+                                    </td>
+                                    <td class="text-center">
+                                       17 500 сум
+                                    </td>
+                                    <td class="text-center">
+                                       35 000 сум
+                                    </td>
+                                    <td class="text-center">
+                                        нет
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-title-a pl-30">
+                                      <input type="checkbox" class="icheckbox-primary" id="inputChecked4" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                                       <label for="inputChecked4" class="ml-5">Ташкентская область</label>
+                                       <a href="#"><i class="icon wb-chevron-right ml-5" aria-hidden="true"></i></a>
+                                    </td>
+                                    <td class="text-center">
+                                       17 500 сум
+                                    </td>
+                                    <td class="text-center">
+                                       35 000 сум
+                                    </td>
+                                    <td class="text-center">
+                                        нет
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-title-a pl-30">
+                                      <input type="checkbox" class="icheckbox-primary" id="inputChecked5" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                                       <label for="inputChecked5" class="ml-5">Андижанская область</label>
+                                       <a href="#"><i class="icon wb-chevron-right ml-5" aria-hidden="true"></i></a>
+                                    </td>
+                                    <td class="text-center">
+                                       17 500 сум
+                                    </td>
+                                    <td class="text-center">
+                                       35 000 сум
+                                    </td>
+                                    <td class="text-center">
+                                        нет
+                                    </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                    </div>
                 </div>
-            </div>
            
             
           </div>

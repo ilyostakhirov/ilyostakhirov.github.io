@@ -1178,148 +1178,116 @@
     <!-- Page -->
     <div class="page">
         <div class="page-content">
-            <h2 class="mt-0 mb-20">ИНФОРМАЦИЯ О КОМПАНИИ</h2>
-            <div class="panel panel-bordered mt-30">
-                <div class="panel-heading clearfix">
-                    <h3 class="panel-title float-left">Конвертер валют</h3>
-                    <div class="float-right mt-10 d-flex">
-                        <div class="mr-20">
-                            <div class="float-left mr-20">
-                                <input type="checkbox" id="inputBasicOff" checked data-plugin="switchery" />
-                            </div>
-                            <label class="pt-3" for="inputBasicOff">Включить</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel-body pt-20">
-                    <p>Если у Вас есть товары или услуги, цены на которые указаны в у.е., то Вы можете включить функцию
-                        конвертера. При этом цены на Ваши товары будут автоматически сконвертированы и будут отображаться
-                        в сумах. Например, если Вы указали цену на Ваш товар 100 у.е., то после настройки цена будет
-                        отображаться в сумах по выставленному Вами значению.</p>
-                    <div class="d-flex flex-column align-items-center mt-30">
-                        <div class="form-group">
-                            <div>
-                                <div class="radio-custom mb-20 radio-default radio-inline">
-                                    <input type="radio" name="radio111" id="radio11111" checked="">
-                                    <label for="radio11111"><strong>привязовать к курсу ЦБ</strong></label>
-                                </div>
-                                <div class="radio-custom mb-20 radio-default radio-inline">
-                                    <input type="radio" name="radio111" id="radio11112">
-                                    <label for="radio11112"><strong>установить курс вручную</strong></label>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="form-group d-flex">
-                                <label class="form-control-label font-size-20 w-120 text-right mr-20">1 у.е. <span class="ml-10">=</span></label>
-                                <input type="text" class="form-control w-120">
-                            </div>
-                            <div class="d-flex form-group">
-                                <div class="form-control-label font-size-20 w-120 text-right mr-20">1 у.е. <span class="ml-10">=</span></div>
-                                <div><strong class="font-size-20">8 340</strong> <sup class="blue-800 f-s-11 font-size-14">+ 15 обновлено 15.05.2019</sup></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <h2 class="mt-0 mb-20">ТОЧКИ САМОВЫВОЗА</h2>
+            <div class="panel panel-bordered">
+            <div class="panel-heading">
+              <h3 class="panel-title clearfix">
+                <span class="mt-5 inline-block">Точки самовывоза</span>
+        <button type="button" data-target="#filials-add" data-toggle="modal" class="btn btn-primary btn-sm float-right">+ Добавить</button>
+              </h3>
             </div>
-            <div class="panel panel-bordered mt-30">
-                <div class="panel-heading clearfix">
-                    <h3 class="panel-title float-left">Автоматическое управление остатками</h3>
-                    <div class="float-right mt-10 d-flex">
-                        <div class="mr-20">
-                            <div class="float-left mr-20">
-                                <input type="checkbox" id="inputBasicOff" checked data-plugin="switchery" />
-                            </div>
-                            <label class="pt-3" for="inputBasicOff">Включить</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel-body pt-20">
-                    <p>Вы можете управлять наличием своих товаров и услуг автоматически по мере поступления заказов.
-                        При поступлении заказа от клиентов и при условии их принятия система автоматически будет уменьшать
-                        количество товаров в остакте. </p>
-                    
-                    <div class="nav-tabs-horizontal nav-tabs-inverse inner-tab" data-plugin="tabs">
-                <ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link active" data-toggle="tab" href="#exampleTabsInverseOne" aria-controls="exampleTabsInverseOne"
-                      role="tab">
-                  Русские
-                </a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" data-toggle="tab" href="#exampleTabsInverseTwo" aria-controls="exampleTabsInverseTwo"
-                      role="tab">
-                  O'zbekcha
-                </a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane active" id="exampleTabsInverseOne" role="tabpanel">
-                        <div class="table-wrap table-responsive">
+            <div class="panel-body pt-20">
+              <p>Вы можете предоставить доступ по управлению кабинетом Вашей компании другим пользователям  с учетом определенных
+прав.  ВАЖНО! Право доступа предоставляется исключительно пользователям зарегистрированных в каталоге GLOTR.UZ 
+как «Пользователь». При этом они должны указать и подтвердить мобильный номер телефона и email адрес. 
+Для отправки запроса на предоставление права доступа введите ID номер пользователя.
+</p>
+             <div class="table-wrap table-responsive">
                 <table class="table table-hover table-bordered table-striped">
                     <thead>
                         <tr>
-                          <th scope="col" style="min-width: 100px;" class="text-center">
-                                <strong>Категория</strong>
+                          <th scope="col" style="width: 50px;">
+                                <strong>№</strong>
                             </th>
-                            <th style="width: 100px;min-width: 100px;" class="text-center" scope="col">
-                                <strong>Применить</strong>
+                            <th scope="col">
+                                <strong>НАИМЕНОВАНИЕ</strong>
                             </th>
                             <th style="width: 200px;min-width: 200px;" class="text-center" scope="col">
-                                <strong>Изменение статуса</strong>
+                                <strong>РЕГИОН</strong>
+                            </th>
+                            <th class="text-center" style="width: 200px;min-width: 200px;" scope="col">
+                                <strong>КОНТАКТНОЕ ЛИЦО</strong>
+                            </th>  
+                            <th scope="col" class="text-center" style="width: 100px;min-width: 100px;">
+                                <strong>ПОКАЗАТЬ</strong>
+                            </th>      
+                            <th scope="col" class="text-center" style="width: 100px;min-width: 100px;">
+                                <strong>НА САЙТЕ</strong>
+                            </th>                     
+                            <th scope="col" class="text-center" style="width: 50px;min-width: 50px;">
+                                <strong><i class="font-size-18 icon wb-settings" aria-hidden="true"></i></strong>
                             </th>
                         </tr>
-
                     </thead>
                     <tbody>
                         <tr>
-                          <td>Телевизоры</td>
-                            <td class="text-center"><input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                          <td class="text-center">1</td>
+                            <td>ООО Агростройбизнес<br>
+                                    <label class="badge badge-success">опубликовано</label>
+                            </td>
+                            <td class="text-center"><a href="#">Узбекистан, <br>Андижанская область</a></td>
+                            <td class="text-center">
+                              <h5 class="mb-0">Умарова Ётволдихон</h5>
+                              + 998 90 178 15 51<br>
+                              + 998 90 178 15 51
                             </td>
                             <td class="text-center">
-                            	<select class="form-control">
-                    <option>Под заказ</option>
-                  </select>
+                        <input type="checkbox" class="icheckbox-primary" id="inputColorPrimary1" name="inputiCheckColorCheckboxes"
+                          data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue"
+                          checked />
+                      </td>
+                            <td class="text-center">
+                        <input type="checkbox" class="icheckbox-primary" id="inputColorPrimary" name="inputiCheckColorCheckboxes"
+                          data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue"
+                          checked />
+                      </td>
+                            <td class="text-center">
+                                <button type="button" class="btn btn-icon btn-success mb-5 p-5"><i class="icon wb-pencil" aria-hidden="true"></i></button>
+                                <button type="button" class="btn btn-icon btn-warning  p-5"><i class="icon wb-trash" aria-hidden="true"></i></button>
                             </td>
                         </tr>
                         <tr>
-                          <td>Телевизоры</td>
-                            <td class="text-center"><input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
+                          <td class="text-center">2</td>
+                            <td>ООО Агростройбизнес<br>
+                                    <label class="badge badge-success">опубликовано</label>
+                            </td>
+                            <td class="text-center"><a href="#">Узбекистан, <br>Андижанская область</a></td>
+                            <td class="text-center">
+                              <h5 class="mb-0">Умарова Ётволдихон</h5>
+                              + 998 90 178 15 51<br>
+                              + 998 90 178 15 51
                             </td>
                             <td class="text-center">
-                            	<select class="form-control">
-                    <option>Под заказ</option>
-                  </select>
-                            </td>
-                        </tr>
-                        <tr>
-                          <td>Телевизоры</td>
-                            <td class="text-center"><input type="checkbox" class="icheckbox-primary" data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue" />
-                            </td>
+                        <input type="checkbox" class="icheckbox-primary" id="inputColorPrimary1" name="inputiCheckColorCheckboxes"
+                          data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue"
+                          checked />
+                      </td>
                             <td class="text-center">
-                            	<select class="form-control">
-                    <option>Под заказ</option>
-                  </select>
+                        <input type="checkbox" class="icheckbox-primary" id="inputColorPrimary" name="inputiCheckColorCheckboxes"
+                          data-plugin="iCheck" data-checkbox-class="icheckbox_flat-blue"
+                          checked />
+                      </td>
+                            <td class="text-center">
+                               <button type="button" class="btn btn-icon btn-success mb-5 p-5"><i class="icon wb-pencil" aria-hidden="true"></i></button>
+                                <button type="button" class="btn btn-icon btn-warning  p-5"><i class="icon wb-trash" aria-hidden="true"></i></button>
                             </td>
                         </tr>
-                       
-                        
-                       
                     </tbody>
                 </table>
             </div>
-                    </div>
-                    <div class="tab-pane" id="exampleTabsInverseTwo" role="tabpanel">
-                    </div>
+            </div>
+          </div>
+            <div class="panel panel-bordered mt-30">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Пункты самовывоза на карте</h3>
+                </div>
+                <div class="panel-body pt-20">
+                    <p>Вы можете указать Ваш адрес, который будет использоваться автоматически при заказе товаров и услуг в каталоге.
+                        Информация будет доступно только для продавцов товаров и услуг после Вашего заказа, в остальных случаях данные будут скрыты.
+                    </p>
+                    <iframe class="map" src="https://yandex.ru/map-widget/v1/-/CBFZ7Zw3KD" width="560" height="300" frameborder="1" allowfullscreen="true"></iframe>
                 </div>
             </div>
-
-                   
-                </div>
-            </div>
-
-            
         </div>
     </div>
     <!-- End Page -->

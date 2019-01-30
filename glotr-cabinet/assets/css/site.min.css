@@ -13596,8 +13596,9 @@ th.sortable.desc {
 
 @media (max-width:992px) {
     .f-s-11 {
-    font-size: 10px !important;
-}
+        font-size: 10px !important;
+    }
+
     .modal.modal-fullscreen {
         box-shadow: 0 0 0 100px #fff
     }
@@ -13680,11 +13681,13 @@ th.sortable.desc {
         background-color: #f3f2f2;
     }
 }
+
 @media (max-width:768px) {
-.text-s-left{
-    text-align: left!important;
+    .text-s-left {
+        text-align: left !important;
+    }
 }
-}
+
 @media (min-width:992px) {
     .modal.modal-fullscreen .modal-dialog .modal-content .modal-header .btn {
         display: none
@@ -13692,127 +13695,144 @@ th.sortable.desc {
 }
 
 .table-dragger-handle {
-  position: relative;
-  display: inline-block;
-  margin-left: .3em;
-  font-family: "Web Icons";
-  font-style: normal;
-  font-weight: normal;
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  speak: none;
-  text-rendering: auto;
+    position: relative;
+    display: inline-block;
+    margin-left: .3em;
+    font-family: "Web Icons";
+    font-style: normal;
+    font-weight: normal;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    speak: none;
+    text-rendering: auto;
 }
 
 .table-dragger-handle:before {
-  content: "";
+    content: "";
 }
 
 .sindu_dragger {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    list-style: none;
 }
 
 .sindu_handle {
-  cursor: move;
+    cursor: move;
 }
 
 .sindu_dragger table {
-  background: #f3f7f9;
+    background: #f3f7f9;
 }
 
 .sindu_dragger li {
-  padding: 0;
-  margin: 0;
-  text-align: inherit;
-  list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: inherit;
+    list-style: none;
 }
 
-.sindu_dragger li table, .sindu_dragger tr, .sindu_dragger th, .sindu_dragger td {
-  box-sizing: border-box;
+.sindu_dragger li table,
+.sindu_dragger tr,
+.sindu_dragger th,
+.sindu_dragger td {
+    box-sizing: border-box;
 }
 
 .gu-mirror {
-  list-style: none;
+    list-style: none;
 }
 
 .sindu_dragger.sindu_column li {
-  float: left;
+    float: left;
 }
 
 .sindu_dragging .sindu_origin_table {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 .gu-mirror {
-  position: fixed !important;
-  z-index: 9999 !important;
-  margin: 0 !important;
-  opacity: .8;
+    position: fixed !important;
+    z-index: 9999 !important;
+    margin: 0 !important;
+    opacity: .8;
 }
 
 .gu-mirror li {
-  padding: 0;
-  margin: 0;
-  text-align: inherit;
-  list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: inherit;
+    list-style: none;
 }
 
 .gu-mirror table {
-  background: #e4eaec;
+    background: #e4eaec;
 }
 
-.gu-mirror li table, .gu-mirror tr, .gu-mirror th, .gu-mirror td {
-  box-sizing: border-box;
+.gu-mirror li table,
+.gu-mirror tr,
+.gu-mirror th,
+.gu-mirror td {
+    box-sizing: border-box;
 }
 
 .gu-hide {
-  display: none !important;
+    display: none !important;
 }
 
 .gu-unselectable {
-  -webkit-user-select: none !important;
-  -moz-user-select: none !important;
-  -ms-user-select: none !important;
-  user-select: none !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
 }
-.t-d-u{
-    text-decoration:underline;
+
+.t-d-u {
+    text-decoration: underline;
 }
+
 .gu-transit {
-  opacity: .5;
+    opacity: .5;
 }
-.strong{
-    font-weight:bold!important;
+
+.strong {
+    font-weight: bold !important;
 }
+
 .sindu_dragger table {
-  background: transparent !important;
+    background: transparent !important;
 }
-.inner-tab.nav-tabs-inverse .tab-content{
+
+.inner-tab.nav-tabs-inverse .tab-content {
     box-shadow: none;
-} 
+}
+
 .inner-tab .nav-tabs {
     border-bottom: none;
 }
-.inner-tab .nav-tabs .nav-item.show .nav-link, .inner-tab .nav-tabs .nav-link.active {
+
+.inner-tab .nav-tabs .nav-item.show .nav-link,
+.inner-tab .nav-tabs .nav-link.active {
     color: #273238;
     background-color: #f2f2f2;
     border-color: #d2d2d2 #d2d2d2 #ddd;
     font-weight: 500;
     border-bottom: none;
 }
+
 .inner-tab .table-wrap {
-     border-radius: 0; 
+    border-radius: 0;
     border-collapse: collapse;
 }
+
 .inner-tab .table-striped tbody tr:nth-of-type(odd) {
     background-color: #fff;
 }
+
 .inner-tab table.table-striped thead th {
     background-color: #f2f2f2;
 }

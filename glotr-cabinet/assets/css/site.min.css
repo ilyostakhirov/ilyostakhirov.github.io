@@ -13836,3 +13836,64 @@ th.sortable.desc {
 .inner-tab table.table-striped thead th {
     background-color: #f2f2f2;
 }
+
+
+
+.accordian a {
+        padding: 0 10px 0 20px;
+        font-size: 12px;
+        line-height: 34px;
+        display: block;
+        color:#11b7e7;
+        text-decoration: none;
+        position: relative;
+}
+
+
+
+.accordian li i {
+        margin-right: 10px;
+}
+
+.accordian li {
+        list-style-type: none;
+        margin: 5px 0;
+}
+
+.accordian ul{
+    margin:0;
+    padding: 0;
+}
+.accordian ul ul {
+        display: none;
+}
+
+.accordian li.active>ul {
+        display: block;
+            margin-left: 20px;
+}
+
+.accordian ul  > ul > ul {
+        margin-left: 15px;
+        border-left: 1px dotted rgba(0, 0, 0, 0.5);
+}
+
+.accordian a:not(:only-child):after {
+    content: "\f105";
+    font-family: fontawesome;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 14px;
+}
+
+.accordian .active>a:not(:only-child):after {
+        content: "\f107";
+}
+.accordian a span {
+    border-bottom: 1px dotted;
+}
+.accordian li [class^="icheckbox_"] + label, .accordian li [class^="iradio_"] + label {
+    margin: 0 0 0 10px;
+    font-size: 13px;
+}

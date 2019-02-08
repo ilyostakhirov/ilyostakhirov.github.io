@@ -13193,7 +13193,7 @@ img {
     width: 120px !important;
 }
 
-.product-list-table table.table tbody tr {
+.product-list-table table.table tbody tr,.order-list-table table.table tbody tr {
     background-color: #fff;
 }
 
@@ -13896,4 +13896,11 @@ th.sortable.desc {
 .accordian li [class^="icheckbox_"] + label, .accordian li [class^="iradio_"] + label {
     margin: 0 0 0 10px;
     font-size: 13px;
+}
+.orders-tab .badge.up {
+    position: relative;
+    top: -11px;
+    margin: 0 -5px;
+    border-radius: 15px;
+    font-size: 11px;
 }

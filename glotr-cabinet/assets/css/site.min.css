@@ -13306,7 +13306,220 @@ th.sortable.desc {
     display: inline-block;
     margin-left: 5px;
 }
+.table-dragger-handle {
+    position: relative;
+    display: inline-block;
+    margin-left: .3em;
+    font-family: "Web Icons";
+    font-style: normal;
+    font-weight: normal;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    speak: none;
+    text-rendering: auto;
+}
 
+.table-dragger-handle:before {
+    content: "";
+}
+
+.sindu_dragger {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.sindu_handle {
+    cursor: move;
+}
+
+.sindu_dragger table {
+    background: #f3f7f9;
+}
+
+.sindu_dragger li {
+    padding: 0;
+    margin: 0;
+    text-align: inherit;
+    list-style: none;
+}
+
+.sindu_dragger li table,
+.sindu_dragger tr,
+.sindu_dragger th,
+.sindu_dragger td {
+    box-sizing: border-box;
+}
+
+.gu-mirror {
+    list-style: none;
+}
+
+.sindu_dragger.sindu_column li {
+    float: left;
+}
+
+.sindu_dragging .sindu_origin_table {
+    visibility: hidden;
+}
+
+.gu-mirror {
+    position: fixed !important;
+    z-index: 9999 !important;
+    margin: 0 !important;
+    opacity: .8;
+}
+
+.gu-mirror li {
+    padding: 0;
+    margin: 0;
+    text-align: inherit;
+    list-style: none;
+}
+
+.gu-mirror table {
+    background: #e4eaec;
+}
+
+.gu-mirror li table,
+.gu-mirror tr,
+.gu-mirror th,
+.gu-mirror td {
+    box-sizing: border-box;
+}
+
+.gu-hide {
+    display: none !important;
+}
+
+.gu-unselectable {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+
+.t-d-u {
+    text-decoration: underline;
+}
+
+.gu-transit {
+    opacity: .5;
+}
+
+.strong {
+    font-weight: bold !important;
+}
+
+.sindu_dragger table {
+    background: transparent !important;
+}
+
+.inner-tab.nav-tabs-inverse .tab-content {
+    box-shadow: none;
+}
+
+.inner-tab .nav-tabs {
+    border-bottom: none;
+}
+
+.inner-tab .nav-tabs .nav-item.show .nav-link,
+.inner-tab .nav-tabs .nav-link.active {
+    color: #273238;
+    background-color: #f2f2f2;
+    border-color: #d2d2d2 #d2d2d2 #ddd;
+    font-weight: 500;
+    border-bottom: none;
+}
+
+.inner-tab .table-wrap {
+    border-radius: 0;
+    border-collapse: collapse;
+}
+
+.inner-tab .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fff;
+}
+
+.inner-tab table.table-striped thead th {
+    background-color: #f2f2f2;
+}
+
+
+
+.accordian a {
+        padding: 0 10px 0 20px;
+        font-size: 12px;
+        line-height: 34px;
+        display: block;
+        color:#11b7e7;
+        text-decoration: none;
+        position: relative;
+}
+
+
+
+.accordian li i {
+        margin-right: 10px;
+}
+
+.accordian li {
+        list-style-type: none;
+        margin: 5px 0;
+}
+
+.accordian ul{
+    margin:0;
+    padding: 0;
+}
+.accordian ul ul {
+        display: none;
+}
+
+.accordian li.active>ul {
+        display: block;
+            margin-left: 20px;
+}
+
+.accordian ul  > ul > ul {
+        margin-left: 15px;
+        border-left: 1px dotted rgba(0, 0, 0, 0.5);
+}
+
+.accordian a:not(:only-child):after {
+    content: "\f105";
+    font-family: fontawesome;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 14px;
+}
+
+.accordian .active>a:not(:only-child):after {
+        content: "\f107";
+}
+.accordian a span {
+    border-bottom: 1px dotted;
+}
+.accordian li [class^="icheckbox_"] + label, .accordian li [class^="iradio_"] + label {
+    margin: 0 0 0 10px;
+    font-size: 13px;
+}
+.orders-tab .badge.up {
+    position: relative;
+    top: -11px;
+    margin: 0 -5px;
+    border-radius: 15px;
+    font-size: 11px;
+}
+.badge.badge-lg{
+        padding: 7px 15px;
+    font-size: 100%;
+}
 @media (min-width: 768px) {
     .modal-sm {
         width: 400px;
@@ -13392,7 +13605,7 @@ th.sortable.desc {
         max-width: 100%;
     }
 
-    . .sm-block-form .radio-inline {
+    .sm-block-form .radio-inline {
         display: block;
         margin-left: 0;
     }
@@ -13436,14 +13649,21 @@ th.sortable.desc {
         width: 100px !important;
     }
 
-    .product-list-table table.table td.price-td.open {
+    .product-list-table table.table td.price-td.open,.product-list-table table.table td.sh-td.open {
         display: block;
         text-align: left !important;
         border-top: 1px solid #d2d2d2;
         max-width: 100%;
         width: 100%;
     }
-
+.order-list-table.product-list-table table.table td:nth-child(7) {
+    border-top: 1px solid #d2d2d2;
+    text-align: left!important;
+}
+.badge.badge-lg {
+    padding: 3px 9px;
+    font-size: 90%;
+}
     .product-list-table .price-td .sm-sh small {
         font-size: 80%;
         font-weight: 400;
@@ -13694,213 +13914,3 @@ th.sortable.desc {
     }
 }
 
-.table-dragger-handle {
-    position: relative;
-    display: inline-block;
-    margin-left: .3em;
-    font-family: "Web Icons";
-    font-style: normal;
-    font-weight: normal;
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    speak: none;
-    text-rendering: auto;
-}
-
-.table-dragger-handle:before {
-    content: "";
-}
-
-.sindu_dragger {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    list-style: none;
-}
-
-.sindu_handle {
-    cursor: move;
-}
-
-.sindu_dragger table {
-    background: #f3f7f9;
-}
-
-.sindu_dragger li {
-    padding: 0;
-    margin: 0;
-    text-align: inherit;
-    list-style: none;
-}
-
-.sindu_dragger li table,
-.sindu_dragger tr,
-.sindu_dragger th,
-.sindu_dragger td {
-    box-sizing: border-box;
-}
-
-.gu-mirror {
-    list-style: none;
-}
-
-.sindu_dragger.sindu_column li {
-    float: left;
-}
-
-.sindu_dragging .sindu_origin_table {
-    visibility: hidden;
-}
-
-.gu-mirror {
-    position: fixed !important;
-    z-index: 9999 !important;
-    margin: 0 !important;
-    opacity: .8;
-}
-
-.gu-mirror li {
-    padding: 0;
-    margin: 0;
-    text-align: inherit;
-    list-style: none;
-}
-
-.gu-mirror table {
-    background: #e4eaec;
-}
-
-.gu-mirror li table,
-.gu-mirror tr,
-.gu-mirror th,
-.gu-mirror td {
-    box-sizing: border-box;
-}
-
-.gu-hide {
-    display: none !important;
-}
-
-.gu-unselectable {
-    -webkit-user-select: none !important;
-    -moz-user-select: none !important;
-    -ms-user-select: none !important;
-    user-select: none !important;
-}
-
-.t-d-u {
-    text-decoration: underline;
-}
-
-.gu-transit {
-    opacity: .5;
-}
-
-.strong {
-    font-weight: bold !important;
-}
-
-.sindu_dragger table {
-    background: transparent !important;
-}
-
-.inner-tab.nav-tabs-inverse .tab-content {
-    box-shadow: none;
-}
-
-.inner-tab .nav-tabs {
-    border-bottom: none;
-}
-
-.inner-tab .nav-tabs .nav-item.show .nav-link,
-.inner-tab .nav-tabs .nav-link.active {
-    color: #273238;
-    background-color: #f2f2f2;
-    border-color: #d2d2d2 #d2d2d2 #ddd;
-    font-weight: 500;
-    border-bottom: none;
-}
-
-.inner-tab .table-wrap {
-    border-radius: 0;
-    border-collapse: collapse;
-}
-
-.inner-tab .table-striped tbody tr:nth-of-type(odd) {
-    background-color: #fff;
-}
-
-.inner-tab table.table-striped thead th {
-    background-color: #f2f2f2;
-}
-
-
-
-.accordian a {
-        padding: 0 10px 0 20px;
-        font-size: 12px;
-        line-height: 34px;
-        display: block;
-        color:#11b7e7;
-        text-decoration: none;
-        position: relative;
-}
-
-
-
-.accordian li i {
-        margin-right: 10px;
-}
-
-.accordian li {
-        list-style-type: none;
-        margin: 5px 0;
-}
-
-.accordian ul{
-    margin:0;
-    padding: 0;
-}
-.accordian ul ul {
-        display: none;
-}
-
-.accordian li.active>ul {
-        display: block;
-            margin-left: 20px;
-}
-
-.accordian ul  > ul > ul {
-        margin-left: 15px;
-        border-left: 1px dotted rgba(0, 0, 0, 0.5);
-}
-
-.accordian a:not(:only-child):after {
-    content: "\f105";
-    font-family: fontawesome;
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-size: 14px;
-}
-
-.accordian .active>a:not(:only-child):after {
-        content: "\f107";
-}
-.accordian a span {
-    border-bottom: 1px dotted;
-}
-.accordian li [class^="icheckbox_"] + label, .accordian li [class^="iradio_"] + label {
-    margin: 0 0 0 10px;
-    font-size: 13px;
-}
-.orders-tab .badge.up {
-    position: relative;
-    top: -11px;
-    margin: 0 -5px;
-    border-radius: 15px;
-    font-size: 11px;
-}

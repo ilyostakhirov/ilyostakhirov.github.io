@@ -1280,7 +1280,7 @@
                 </ul>
                 <div class="tab-content p-20">
                   <div class="tab-pane active" id="exampleTabsInverse1" role="tabpanel">
-                    <div class="table-wrap table-responsive product-list-table">
+                    <div class="table-wrap table-responsive order-list-table product-list-table">
                         <table class="table table-hover table-bordered table-striped">
                             <thead>
                                 <tr>
@@ -1327,25 +1327,25 @@
                                         <h6 class="mb-0"><span class="mr-5">№</span><a class="t-d-n" href="#">19949844</a><span class="mr-5 ml-10">от</span><span>12.05.2019</span></h6>
                                        
                                     </td>
-                                    <td class="text-center">                                        
+                                    <td class="text-center sh-td">                                        
                                         <span class="font-size-15 font-weight-400 blue-800">Абдурахманханов Маматкузи</span><br>
                                         <a class="font-size-12" href="#">показать контакты</a>
                                     </td>
-                                    <td class="text-center">
+                                    <td class="text-center sh-td">
                                         <span class="font-size-15 font-weight-400"><i class="fa fa-truck mr-5" aria-hidden="true"></i> Бесплатная доставка</span><br>
                                         <span class="font-size-12" href="#">Андижанская область, г. Асака</span>
                                     </td>
-                                    <td class="text-center">
+                                    <td class="text-center sh-td">
                                         <strong class="mr-5 blue-800">235 000 000</strong><span class="font-weight-400">сум</span>
                                         <br><small>в наличии</small>
                                     </td>
                                     <td class="text-center">
-                                      <span class="badge badge-warning mb-0">новый</span>
+                                      <span class="badge badge-danger badge-lg badge-round mb-0">новый</span>
                                     </td>
                                     <td class="text-center">
                                        
-                                        <button type="button" class="sm-h btn btn-icon btn-success mb-5 p-5"><i class="icon fa fa-check" aria-hidden="true"></i></button>
-                                        
+                                        <button type="button" class="sm-h btn btn-icon btn-danger mb-5 p-5"><i class="icon fa fa-check" aria-hidden="true"></i></button>
+                                        <button type="button" class="sm-sh more-date-btn btn btn-icon btn-success p-5"><i class="icon fa fa-chevron-down" aria-hidden="true"></i></button>
                                         <div class="btn-group dropdown p-s">
                                             <button type="button" class="btn btn-icon p-5 btn-dark dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                                 <i class="icon wb-more-vertical" aria-hidden="true"></i>
@@ -1595,7 +1595,7 @@
         });
     });
     $(".more-date-btn").on("click", function() {
-        $(this).parent().parent().find('.price-td').toggleClass('open');
+        $(this).parent().parent().find('.sh-td').toggleClass('open');
         $(this).toggleClass('active');
     });
     </script>

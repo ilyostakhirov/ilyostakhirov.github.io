@@ -13768,6 +13768,17 @@ th.sortable.desc {
 .order-date-table .table tr:first-child td{
     border-top: none;
 }
+.contact-detail-ul li{
+    padding: 5px 0;
+    font-size:14px;
+    color: #37474f;
+    font-weight: 400;
+}
+.contact-detail-ul li i{
+    font-size:18px;
+    color: #b0292c;
+        bottom: -1px;
+}
 @media screen and (max-width: 650px) {
     .sm-sh {
         display: inline-block;

@@ -1178,7 +1178,13 @@
     <!-- Page -->
     <div class="page">
         <div class="page-content">
-            <h2 class="mt-0 mb-20">Заказ № 65456545</h2>
+        	<div class="clearfix">
+            <h2 class="mt-5 mb-0 float-left">Заказ № 65456545</h2>
+             <div class="float-right">
+                        <button type="button" class="btn btn-dark">Отменить заказ</button>
+                        <button type="button" class="ml-30 btn btn-danger">Принять заказ</button>
+                    </div>
+        </div>
             <div class="row">
                 <div class="col-md-8">
                     <div class="panel panel-bordered mt-30">
@@ -1203,7 +1209,7 @@
                                             <input type="text" class="form-control" name="touchSpinPrefix" data-plugin="TouchSpin" data-min="1" data-max="1000000000" data-stepinterval="1" data-maxboostedstep="10000000" value="0" />
                                         </td>
                                         <td style="white-space: nowrap;" class="text-right v-middle">
-                                            <strong class="sm-h mr-5 blue-800">235 000 000</strong><span class="sm-h font-weight-400">сум</span>
+                                            <strong class="sm-h mr-5 red-800">235 000 000</strong><span class="sm-h font-weight-400">сум</span>
                                         </td>
                                         <td style="width: 30px;min-width: 30px;" class="text-center v-middle">
                                             <button type="button" class="btn btn-icon btn-danger p-5"><i class="icon fa fa-times" aria-hidden="true"></i></button>
@@ -1239,7 +1245,7 @@
                                         </tr>
                                         <tr>
                                             <td style="width: 130px;white-space:nowrap;text-align: right;"><strong class="font-size-15">Тип доставки::</strong></td>
-                                            <td style="width: 100%">Срочная <small>(с учетом стоимости доставки <span class="blue-700">25 000 сум</span>)</small></td>
+                                            <td style="width: 100%">Срочная <small>(с учетом стоимости доставки <span class="red-700">25 000 сум</span>)</small></td>
                                             <td>
                                                 <a href="#">изменить</a>
                                             </td>
@@ -1281,7 +1287,7 @@
                                         </tr>
                                         <tr>
                                             <td style="width: 130px;white-space:nowrap;text-align: right;"><strong class="font-size-15">Тип доставки::</strong></td>
-                                            <td style="width: 100%">Бесплатная <small>(достигнуто порог суммы заказа для бесплатной доставки - 250 000 сум)</small></td>
+                                            <td style="width: 100%">Бесплатная <small>(достигнуто порог суммы заказа для бесплатной доставки -  <span class="red-700">250 000 сум</span>)</small></td>
                                             <td>
                                                 <a href="#">изменить</a>
                                             </td>
@@ -1323,7 +1329,7 @@
                                         </tr>
                                         <tr>
                                             <td style="width: 130px;white-space:nowrap;text-align: right;"><strong class="font-size-15">Тип доставки::</strong></td>
-                                            <td style="width: 100%">Платная <small>(стоимость доставки <span class="blue-700">25 000 сум</span>)</small></td>
+                                            <td style="width: 100%">Платная <small>(стоимость доставки <span class="red-700">25 000 сум</span>)</small></td>
                                             <td>
                                                 <a href="#">изменить</a>
                                             </td>
@@ -1359,6 +1365,9 @@
                             <h3 class="panel-title ">Покупатель</h3>
                         </div>
                         <div class="panel-body pt-20">
+                        	<h4 class="blue-800">ООО "Макробизнес агро спектр"</h4>
+                        	<hr>
+                        	<h5>Контактное лицо:</h5>
                             <div class="media">
                                 <div class="pr-20">
                                     <div class="avatar avatar-md avatar-online">
@@ -1372,12 +1381,73 @@
                                 </div>
                             </div>
                             <hr>
-                            <div class="label-text font-size-15">Контакты:</div>
-                            <ul class="list-group">
-                  <li class="list-group-item pl-0 pr-0">
+                            <h5>Контакты:</h5>
+                            <ul class="list-group contact-detail-ul">
+                  <li class="list-group-item">
+                  <i class="icon fa fa-phone-square" aria-hidden="true"></i> + 998 90 178 15 51 <sup class="ml-5">(основной)</sup>
+                </li>    
+                <li class="list-group-item">
                   <i class="icon fa fa-phone-square" aria-hidden="true"></i> + 998 90 178 15 51
+                </li>    
+                <li class="list-group-item">
+                  <i class="icon fa fa-envelope" aria-hidden="true"></i> mailmail@mail.ru
+                </li>    
+                <li class="list-group-item">
+                  <i class="icon fa fa-telegram" aria-hidden="true"></i> + 998 90 178 15 51
                 </li>                 
                 </ul>
+                <hr>
+                <h5>Адрес:</h5>
+                <p>Узбекистан, г. Ташкент Улица Яккачинор дом 15, квартира 26</p>
+                <hr>
+                <div class="text-center">
+                	<button type="button" class="btn btn-danger">Написать в чате</button>
+                	<button type="button" class="ml-20 btn btn-danger">Написать письмо</button>
+                </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-bordered mt-30">
+                        <div class="panel-heading clearfix">
+                            <h3 class="panel-title ">Покупатель</h3>
+                        </div>
+                        <div class="panel-body pt-20">
+                            <div class="media">
+                                <div class="pr-20">
+                                    <div class="avatar avatar-md avatar-online">
+                                        <img src="assets/images/portraits/1.jpg" alt="...">
+                                        <i></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-5">Алимов Сардор Зухайлович</h5>
+                                    <span>ID: 132123154</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <h5>Контакты:</h5>
+                            <ul class="list-group contact-detail-ul">
+                  <li class="list-group-item">
+                  <i class="icon fa fa-phone-square" aria-hidden="true"></i> + 998 90 178 15 51<sup class="ml-5">(основной)</sup>
+                </li>    
+                <li class="list-group-item">
+                  <i class="icon fa fa-phone-square" aria-hidden="true"></i> + 998 90 178 15 51
+                </li>    
+                <li class="list-group-item">
+                  <i class="icon fa fa-envelope" aria-hidden="true"></i> mailmail@mail.ru
+                </li>    
+                <li class="list-group-item">
+                  <i class="icon fa fa-telegram" aria-hidden="true"></i> + 998 90 178 15 51
+                </li>                 
+                </ul>
+                <hr>
+                <h5>Адрес:</h5>
+                <p>Узбекистан, г. Ташкент Улица Яккачинор дом 15, квартира 26</p>
+                <hr>
+                <div class="text-center">
+                	<button type="button" class="btn btn-danger">Написать в чате</button>
+                	<button type="button" class="ml-20 btn btn-danger">Написать письмо</button>
+                </div>
                         </div>
                     </div>
                 </div>

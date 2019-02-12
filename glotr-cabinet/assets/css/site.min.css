@@ -13743,6 +13743,31 @@ th.sortable.desc {
 .order-m-d >div:first-child{
     display: none;
 }
+.oplata-img {
+    width: 48px;
+    border: 1px solid #c1c0c0;
+    padding:2px 4px;
+    border-radius: 5px;
+}
+.v-middle{
+    vertical-align: middle!important;
+}
+.order-list-table1 tr{
+    background-color: #fff!important;
+    border-bottom: 1px solid #e4eaec;
+}
+.font-size-15{
+    font-size:15px;
+}
+.font-size-16{
+    font-size:16px;
+}
+.font-size-17{
+    font-size:17px;
+}
+.order-date-table .table tr:first-child td{
+    border-top: none;
+}
 @media screen and (max-width: 650px) {
     .sm-sh {
         display: inline-block;

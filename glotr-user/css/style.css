@@ -32834,12 +32834,18 @@ div.tagsinput span.tag a {
 }
 
 .navbar.horizontal-layout .navbar-menu-wrapper .search-field .input-group-prepend .input-group-text,
-.navbar.horizontal-layout .navbar-menu-wrapper .search-field .asColorPicker-trigger .input-group-text {
+.navbar.horizontal-layout .navbar-menu-wrapper .search-field .asColorPicker-trigger .input-group-text,.search-field .input-group-text {
     border-radius: 50px 0 0 50px;
     background: #f7f7f7;
     border: none;
 }
-
+.nav-tabs-inverse .tab-content {
+    border: 1px solid #d5dcec;
+    border-top: 0;
+        background-color: #fff;
+        padding: 15px;
+       transition: box-shadow .3s ease-out, transform .3s ease-out, opacity .2s ease-out;
+}
 .navbar.horizontal-layout .navbar-menu-wrapper .search-field .form-control,
 .navbar.horizontal-layout .navbar-menu-wrapper .search-field .asColorPicker-input,
 .navbar.horizontal-layout .navbar-menu-wrapper .search-field .dataTables_wrapper select,
@@ -32856,7 +32862,7 @@ div.tagsinput span.tag a {
 .select2-container--default .select2-selection--single .navbar.horizontal-layout .navbar-menu-wrapper .search-field .select2-search__field,
 .navbar.horizontal-layout .navbar-menu-wrapper .search-field .tt-hint,
 .navbar.horizontal-layout .navbar-menu-wrapper .search-field .tt-query,
-.navbar.horizontal-layout .navbar-menu-wrapper .search-field .typeahead {
+.navbar.horizontal-layout .navbar-menu-wrapper .search-field .typeahead, .search-field .form-control{
     width: 50%;
     background: #f7f7f7;
     border: none;

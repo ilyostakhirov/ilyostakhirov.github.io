@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="480" width="640" id="flag-icon-css-ge">
+  <path d="M0 0h640v480H0z" fill="#fff"/>
+  <path d="M272.001 0h96v480h-96z" fill="red"/>
+  <path d="M0 192h640v96H0z" fill="red"/>
+  <path style="mix-blend-mode:multiply" d="M146.848 373.155c1.023-16.824 3.969-31.155 3.969-31.155s-9.84 1.008-14.817 1.008c-4.902 0-14.814-1.00880D13A50" fill="red" fill-rule="evenodd"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="480" width="640" id="flag-icon-css-mz">
+  <defs>
+    <clipPath id="a">
+      <path fill-opacity=".67" d="M0 0h682.67v512H0z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#a)" transform="scale(.9375)">
+    <path fill-rule="evenodd" fill="#009a00" d="M0 0h768v160H0z"/>
+    <path fill-rule="evenodd" fill="#fff" d="M0 159.96h768v16.018H0z"/>
+    <path fill-rule="evenodd" d="M0 175.98h768v160H0z"/>
+    <path fill-rule="evenodd" fill="#fff" d="M0 335.98h768v16.018H0z"/>
+    <path fill-rule="evenodd" fill="#ffca00" d="M0 352h768v160H0z"/>
+    <path d="M0 0v512l336.02-256L0 0z" fill-rule="evenodd" fill="red"/>
+    <path fill="#ffca00" fill-rule="evenodd" d="M198.532 332.966l-51.23-37.505-51.163 37.514 19.841-60.31-51.49-37.066 63.493.235 19.336-60.424 19.397 60.46 63.442-.29-51.506 37.13z"/>
+    <path stroke-linejoin="round" d="M102.837 290.905h36.905c2.969 3.331 9.594 4.69 15.904-.04 11.567-6.334 33.945.04 33.945.04l4.407-4.601A290CAE3" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-width="1.103" fill="#fff"/>
+    <path stroke-linejoin="round" d="M110.274 281.819s35.251-4.407 45.442 9.088c-5.755 3.938-10.823 4.263-16.25.276.865-1.44 12.67-13.77 42.689-9.64" stroke="#000" stroke-linecap="round" stroke-width="1.103" fill="none"/>
+    <path d="M148.002 246.567l-.273 38.833m31.67-38.286l6.61 30.846" stroke="#000" stroke-width="1.176" fill="none"/>
+    <path stroke-linejoin="round" d="M116.971 246.63l-3.668 15.906" stroke="#000" stroke-linecap="round" stroke-width="1.103" fill="none"/>
+    <path stroke-linejoin="round" d="M78.868 295.14l8.68 10.175c1.018.608 1.924.57 2.829 0l12.862-15.434 5.402-6.689c.837-.99 1.104-2.09608DD36DA82" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-width="1.103"/>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="512" width="512" id="flag-icon-css-pf">
+  <defs>
+    <clipPath id="a">
+      <path fill-opacity=".67" d="M0 0h512v512H0z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#a)">
+    <path style="width:0" fill="#fff" d="M0 0h512v512H0z"/>
+    <path d="M210.43 363.47s11.562-9.374 22.812-9.374 14.375 7.811 22.188 8.436c7.812.625 14.373-7.812 24.062-8.10C1A1C9A62" fill-rule="evenodd" stroke="#083d9c" stroke-width="2pt" fill="#083d9c"/>
+    <path stroke-linejoin="round" d="M236.06 233.47l40.938 10.938V185.97c-18.751.938-34.374-35.624-1.25-38.124-32.5-4.688-36.25 3.75-40 12.812l.312 72.811z" fill-rule="evenodd" stroke="#000" stroke-width="2.5" fill="red"/>
+    <path d="M210.12 275.97l92.499.312" fill-rule="evenodd" stroke="#083d9c" stroke-linecap="round" stroke-width="5" fill="#083d9c"/>
+    <path d="M214.5 253.78l10.938 14.688m-10.938.012l11.876-14.374m-5.616-1.266l-.312 9.062M232 253.78l10.938 14.688M232 268.48l11.876-14.374m-5.616-1.266l-.312 9.062M249.812 253.78l10.938 14.688m-10.938.012l11.876-14.374m-5.616-1.266l-.312 9.062M268.249 253.78l10.938 14.688m-10.938.012l11.876-14.374m-5.616-1.266l-.312 9.062M286.061 253.78l10.938 14.688m-10.938.012l11.876-14.374m-5.616-1.266l-.312 9.062" stroke-width="4" stroke="#000" stroke-linecap="round" fill="none"/>
+    <path d="M147.93 276.91l39.374.313v-24.687l-45-2.186 5.626 26.56zm-1.87-34.06l41.875 4.063-.312-17.5-40.937-10F1E985A31" fill-rule="evenodd" fill="#ef7d08"/>
+    <path stroke-linejoin="round" d="M245.14 286.29c-8.904 14.748-32.708 10.374-38.274.078-1.668-.472-.681-63.52-.681-63.52s-2.66-1.212-205CCDE9A80" fill-rule="evenodd" stroke="#000" stroke-width="2.5" fill="red"/>
+    <path d="M236.49 315.3l39.762-.024c.31-.312-8.902-13.732-19.875-12.786-12.223.32-20.527 12.81-19.887 12.81zm10627DB2A8C" fill-rule="evenodd" stroke="#083d9c" stroke-width="2pt" fill="#083d9c"/>
+    <path fill-rule="evenodd" fill="#de2010" d="M-128 384h768v128h-768zm0-384h768v128h-768z"/>
+  </g>
+</svg>

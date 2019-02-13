@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="480" width="640" id="flag-icon-css-zw">
+  <defs>
+    <clipPath id="a">
+      <rect fill-rule="evenodd" ry="0" height="420.1" width="545.96" y=".113" x="1.928" fill="#00f"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#a)" transform="matrix(1.1722 0 0 1.1426 -2.26 -.129)">
+    <path fill="#006400" d="M0 0h840v420H0z"/>
+    <path fill="#ffd200" d="M0 60h840v300H0z"/>
+    <path fill="#d40000" d="M0 120h840v180H0z"/>
+    <path d="M0 180h840v60H0z"/>
+    <path stroke-width="20" stroke="#000" d="M0 0v420l280-210z"/>
+    <path fill="#fff" d="M0 0v420l280-210z"/>
+    <path fill="#d40000" d="M106.52 104.41l55.459 170.68L16.789 169.6h179.47l-145.2 105.5z"/>
+    <path fill="#fc0" d="M82.77 253.66l9.8-1.782 18.176-.713 6.682.624 14.968 2.495 1.158-1.515v-10.78l1.693-9.267 3.118-9.44075262EA25"/>
+    <path d="M87.956 141.92c-1.715-.001-2.538.295-4.237 1.219-1.534.834-3.354 1.387-4.594 1.387-2.521 0-4.556 1.80834CDDADE"/>
+    <path id="b" d="M124.76 217.76c-2.964 0-5.081 2.188-5.081 5.269 0 4.8 5.397 7.125 8.662 3.731s1.038-9-3.58-9zm-.02 1081BE45AC8"/>
+    <use xlink:href="#b" height="100%" width="100%" y="-.6" x="-20.065"/>
+    <path d="M88.012 145.28a1.723 1.764 0 0 0-1.594 1.762 1.725 1.766 0 1 0 3.45 0 1.723 1.764 0 0 0-1.856-1.762z012948CA34"/>
+  </g>
+</svg>

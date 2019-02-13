@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="512" width="512" id="flag-icon-css-mo">
+  <path fill="#00785e" d="M0 0h512v512H0z"/>
+  <path fill="#fbd116" d="M272.533 147.425L256 96.533l-16.533 50.892 43.29-31.45h-53.515z"/>
+  <g id="a">
+    <path d="M256 353.734H146.69a156.086 156.086 0 0 1-4.057-4.267H256a2.283 2.283 0 0 1 1.52 2.02c.05.982-.568 1017BE86A2B" fill="#fff"/>
+    <path fill="#fbd116" d="M155.592 211.667l-7.067-36.342-15.64 33.558 32.373-17.958-36.74-4.508zm49.3-58.75l-29.575-22.276 10.825 35.41 12.058-35.016-30.334 21.24z"/>
+  </g>
+  <use height="100%" width="100%" xlink:href="#a" transform="matrix(-1 0 0 1 512 0)"/>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="480" width="640" id="flag-icon-css-sz">
+  <defs>
+    <clipPath id="a">
+      <path fill-opacity=".67" d="M-85.333 0h682.67v512h-682.67z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#a)" transform="translate(80) scale(.9375)">
+    <path fill-rule="evenodd" fill="#3e5eb9" d="M-128 0h768v512h-768z"/>
+    <path fill-rule="evenodd" fill="#ffd900" d="M-128 91.429h768v329.14h-768z"/>
+    <path fill-rule="evenodd" fill="#b10c0c" d="M-128 128h768v256h-768z"/>
+    <rect fill-rule="evenodd" rx="5.767" ry="5.851" height="10.971" width="621.71" stroke="#000" y="250.51" x="-51.439" stroke-width="1.474" fill="#ffd900"/>
+    <g stroke="#000" transform="translate(-757.03 -25.6) scale(1.0321)">
+      <path d="M-106.3 265.75l-88.583 35.433 88.583 35.433 88.582-35.433-88.582-35.433z" fill-rule="evenodd" transform="matrix(.34 0 0 .3 1256.8 136.42)" stroke-width="4.175" fill="#fff"/>
+      <rect fill-rule="evenodd" rx="4.108" ry="3.78" height="7.087" width="442.91" y="223.23" x="761.81" stroke-width="1.333" fill="#ffd900"/>
+      <path d="M1224.4 279.92c-3.54 0-7.09-3.544-7.09-7.087s3.55-7.087 7.09-7.087" transform="matrix(-.50001 0 0 .5 1806.3 90.354)" stroke-width="2.667" fill="none"/>
+      <path d="M1224.4 279.92c-3.54 0-7.09-3.544-7.09-7.087s3.55-7.087 7.09-7.087" transform="matrix(-.50001 0 0 .5 1802.8 90.354)" stroke-width="2.667" fill="none"/>
+      <path d="M1224.4 279.92c-3.54 0-7.09-3.544-7.09-7.087s3.55-7.087 7.09-7.087" transform="matrix(-.50001 0 0 .5 1799.2 90.355)" stroke-width="2.667" fill="none"/>
+    </g>
+    <g stroke="#000" transform="translate(-786.29 -3.657) scale(1.0321)">
+      <path d="M-106.3 265.75l-88.583 35.433 88.583 35.433 88.582-35.433-88.582-35.433z" fill-rule="evenodd" transform="matrix(.34 0 0 .3 1256.8 136.42)" stroke-width="4.175" fill="#fff"/>
+      <rect fill-rule="evenodd" rx="4.108" ry="3.78" height="7.087" width="442.91" y="223.23" x="761.81" stroke-width="1.333" fill="#ffd900"/>
+      <path d="M1224.4 279.92c-3.54 0-7.09-3.544-7.09-7.087s3.55-7.087 7.09-7.087" transform="matrix(-.50001 0 0 .5 1806.3 90.354)" stroke-width="2.667" fill="none"/>
+      <path d="M1224.4 279.92c-3.54 0-7.09-3.544-7.09-7.087s3.55-7.087 7.09-7.087" transform="matrix(-.50001 0 0 .5 1802.8 90.354)" stroke-width="2.667" fill="none"/>
+      <path d="M1224.4 279.92c-3.54 0-7.09-3.544-7.09-7.087s3.55-7.087 7.09-7.087" transform="matrix(-.50001 0 0 .5 1799.2 90.355)" stroke-width="2.667" fill="none"/>
+    </g>
+    <g fill-rule="evenodd">
+      <path d="M338.07-.416c-5.571 12.442 4.275-4.138 28.299 16.69 4.452 3.87 8.342 14.09 8.342 21.178-1.13-.975-1.0927E47AF1" transform="matrix(.9944 0 0 .77118 190.368 251.963)" stroke="#000" stroke-width="1.422" fill="#3d5da7"/>
+      <path d="M505.878 299.164c2.3-4.597 4.419-6.056 5.905-9.016 2.626-5.203 3-9.343 5.288-8.736 2.288.607 2.285 202C89E1A96" fill="#a70000"/>
+    </g>
+    <g fill-rule="evenodd">
+      <path d="M329.6 20.703c-.272-2.662.253-2.98-1.258-4.989 2.2.997 2.284 3.649 4.959 1.767.983-.551 1.411-.569.20A4C1CCA5A" transform="matrix(1.1372 0 0 1.0495 -399.418 239.16)" stroke="#000" stroke-width="1.422" fill="#3d5da7"/>
+      <path d="M-35.707 289.802c2.327-5.704 4.425-7.495 5.929-11.167 2.655-6.454 3.088-11.613 5.32-10.826 2.23.787 0BA963DA78" fill="#a70000"/>
+    </g>
+    <g fill-rule="evenodd">
+      <path d="M637.8 230.32c-53.15 59.05-124.02 177.16-265.75 177.16-124.02 0-212.6-118.11-265.75-177.16 53.15-59.089FF9AAF6" transform="matrix(.68807 0 0 .61926 .001 113.366)" stroke="#000" stroke-width="2.108" fill="#fff"/>
+      <path d="M243.234 184.445c9.73 10.943 1.605 15.354 11.903 16.073 10.86.797 4.705 11.562 13.84 11.936 6.387.280436799AA1"/>
+      <path d="M141.408 216.989h8.866v29.256h-8.866zm0 48.761h8.866v29.256h-8.866zm17.73-48.761h8.866v29.256h-8.866015F608AAA" stroke-width="1pt" fill="#fff"/>
+      <path d="M275.499 216.989h8.866v29.256h-8.866zm0 48.761h8.866v29.256h-8.866zm17.729-48.761h8.866v29.256h-8.860A8A829A1D" stroke-width="1pt"/>
+    </g>
+    <g fill-rule="evenodd">
+      <path d="M338.07-.416c-5.571 12.442 9.754-4.138 33.778 16.69 4.452 3.87 10.833 19.16 10.833 26.246-5.115-1.25086B517A93" transform="matrix(.9094 0 0 .78749 -110.58 166.096)" stroke="#000" stroke-width="1.422" fill="#3d5da7"/>
+      <path d="M184.375 213.644c.81-6.752 2.576-9.295 3.103-13.643.94-7.648-.175-13.237 2.534-13.095 2.71.141 3.49 0242E7DA4D" fill="#a70000"/>
+    </g>
+  </g>
+</svg>

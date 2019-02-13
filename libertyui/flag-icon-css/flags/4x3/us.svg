@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="480" width="640" id="flag-icon-css-us">
+  <g fill-rule="evenodd">
+    <g stroke-width="1pt">
+      <path d="M0 0h972.81v39.385H0zm0 78.77h972.81v39.385H0zm0 78.77h972.81v39.385H0zm0 78.77h972.81v39.385H0zm0 78.77h972.81v39.385H0zm0 78.77h972.81v39.385H0zm0 78.77h972.81v39.385H0z" fill="#bd3d44" transform="scale(.9375)"/>
+      <path d="M0 39.385h972.81V78.77H0zm0 78.77h972.81v39.385H0zm0 78.77h972.81v39.385H0zm0 78.77h972.81v39.385H0zm0 78.77h972.81v39.385H0zm0 78.77h972.81v39.385H0z" fill="#fff" transform="scale(.9375)"/>
+    </g>
+    <path fill="#192f5d" d="M0 0h389.12v275.69H0z" transform="scale(.9375)"/>
+    <g fill="#fff">
+      <path d="M32.427 11.8l3.54 10.896h11.458l-9.27 6.735 3.541 10.896-9.27-6.734-9.268 6.734 3.54-10.896-9.269-6.02C52E6AE2" transform="scale(.9375)"/>
+    </g>
+  </g>
+</svg>

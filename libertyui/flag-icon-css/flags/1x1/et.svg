@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="512" width="512" id="flag-icon-css-et">
+  <defs>
+    <clipPath id="a">
+      <path fill-opacity=".67" d="M229.34 6.346H718.6v489.26H229.34z"/>
+    </clipPath>
+  </defs>
+  <g fill-rule="evenodd" clip-path="url(#a)" transform="translate(-240 -6.64) scale(1.046)" stroke-width="1pt">
+    <path fill="#ffc621" d="M1.923 9.69h991.84v475.89H1.923z"/>
+    <path fill="#ef2118" d="M0 333.64h993.18v161.97H0z"/>
+    <path fill="#298c08" d="M1.923 6.346h991.93v172H1.923z"/>
+    <ellipse cx="534.22" rx="199.65" cy="352.97" transform="matrix(.515 0 0 .515 204.68 77.013)" ry="199.65" fill="#006bc6"/>
+    <path d="M434.08 186.19l-6.148 4.322 22.45 31.555 5.99-3.82-22.293-32.056zm28.103 74.482l-9.232-6.437 3.816-1098221DAA9" fill="#ffc621"/>
+  </g>
+</svg>

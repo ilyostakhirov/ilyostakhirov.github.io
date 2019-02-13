@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="512" width="512" id="flag-icon-css-ar">
+  <path fill="#74acdf" d="M0 0h512v512H0z"/>
+  <path fill="#fff" d="M0 170.67h512v170.67H0z"/>
+  <g id="c" transform="translate(-153.6) scale(1.024)">
+    <path id="a" d="M396.84 251.31l28.454 61.992s.49 1.185 1.28.859c.79-.327.299-1.512.299-1.512l-23.715-63.956m-.68 24.12c-.347 9.428 5.452 14.613 4.694 23.032-.757 8.42 3.867 13.18 4.94 16.454 1.073 3.274-1.16 5.232-.198 5.698.963.466 3.07-2.12 2.383-6.775-.687-4.655-4.22-6.037-3.39-16.32.83-10.283-4.206-12.678-2.98-22.058" fill="#f6b40e" stroke="#85340a" stroke-width="1.112"/>
+    <use height="100%" width="100%" xlink:href="#a" transform="rotate(22.5 400 250)"/>
+    <use height="100%" width="100%" xlink:href="#a" transform="rotate(45 400 250)"/>
+    <use height="100%" width="100%" xlink:href="#a" transform="rotate(67.5 400 250)"/>
+    <path id="b" d="M404.31 274.41c.453 9.054 5.587 13.063 4.579 21.314 2.213-6.525-3.124-11.583-2.82-21.22m-7.649-23.757l19.487 42.577-16.329-43.887" fill="#85340a"/>
+    <use height="100%" width="100%" xlink:href="#b" transform="rotate(22.5 400 250)"/>
+    <use height="100%" width="100%" xlink:href="#b" transform="rotate(45 400 250)"/>
+    <use height="100%" width="100%" xlink:href="#b" transform="rotate(67.5 400 250)"/>
+  </g>
+  <use height="100%" width="100%" xlink:href="#c" transform="rotate(90 256 256)"/>
+  <use height="100%" width="100%" xlink:href="#c" transform="rotate(180 256 256)"/>
+  <use height="100%" width="100%" xlink:href="#c" transform="rotate(-90 256 256)"/>
+  <circle r="28.445" cy="256" cx="256" fill="#f6b40e" stroke="#85340a" stroke-width="1.536"/>
+  <path id="h" d="M265.697 249.917c-1.942 0-3.802.842-4.896 2.592 2.188 1.97 7.021 2.183 10.304-.224-1.422-1.53-3.466-098A563A02" fill="#843511"/>
+  <use height="100%" width="100%" xlink:href="#d" transform="matrix(-1 0 0 1 512.256 0)"/>
+  <use height="100%" width="100%" xlink:href="#e" transform="matrix(-1 0 0 1 512.256 0)"/>
+  <use height="100%" width="100%" xlink:href="#f" transform="translate(19.315)"/>
+  <use height="100%" width="100%" xlink:href="#g" transform="matrix(-1 0 0 1 512.256 0)"/>
+  <path d="M251.648 259.932c-.935.17-1.6 1-1.6 1.952 0 1.087.899 1.952 1.984 1.952.642 0 1.231-.304 1.6-.832.750550E20A56" fill="#85340a"/>
+  <path d="M253.05 268.35c-.863.038-2.006.211-3.647.703 3.94-.874 4.809.448 6.56.448h.032c1.75 0 2.62-1.323 6.50B91467AF7" fill="#85340a"/>
+  <path d="M249.6 269.025c-.254.003-.531.005-.832.032 4.596.438 2.387 3.072 7.2 3.072H256c4.813 0 2.636-2.634 7020D6C2A30" fill="#85340a"/>
+  <path id="e" d="M238.316 249.876c5.032-4.375 11.376-5.032 14.878-1.75.857 1.148 1.406 2.376 1.632 3.656.44 2.492-.330F0F388A73" fill="#85340a"/>
+  <path id="d" d="M246.19 248.566c2.843 0 3.5.657 4.814 1.75 1.314 1.095 1.97.875 2.188 1.095.217.22 0 .874-.437.655-.0A01504A10" fill="#85340a"/>
+  <use height="100%" width="100%" xlink:href="#h" transform="translate(-19.641)"/>
+  <circle id="f" cy="252.058" cx="246.313" r="1.969" fill="#85340a"/>
+  <path id="g" d="M240.937 253.379c3.72 2.845 7.44 2.626 9.627 1.312 2.188-1.312 2.188-1.75 1.751-1.75-.436 0-.873.438-2.624 1.312-1.752.877-4.376.877-8.752-.874z" fill="#85340a"/>
+</svg>

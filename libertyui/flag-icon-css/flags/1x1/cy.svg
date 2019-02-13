@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="512" width="512" id="flag-icon-css-cy">
+  <path fill="#fff" d="M0 0h512v512H0z"/>
+  <path id="a" d="M243.03 425.173a.87.87 0 0 1-.297-.21l-.106-.1c-.277-.252-.735-.7-1.35-1.4-1.137-1.292-2.662-3.182-40AF68A5AE0" fill="#435125"/>
+  <use height="100%" width="100%" xlink:href="#a" transform="matrix(-1 0 0 1 462.66 0)"/>
+  <path d="M468.335 81.473l-2.01.8-.787.314-2.436-.134-2.28 1.095-4.045 2.764-.18.128-1.507.393-1.4-.604-.795.303C49F2ADA" fill="#d47600"/>
+</svg>

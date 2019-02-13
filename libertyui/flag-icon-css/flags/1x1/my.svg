@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" id="flag-icon-css-my">
+  <path d="M0 .05h512v512H0z" fill="#cc0001"/>
+  <path d="M0 475.48h512v36.57H0z" fill="#fff" id="a"/>
+  <use xlink:href="#a" transform="translate(0 -73.143)" width="100%" height="100%"/>
+  <use xlink:href="#a" transform="translate(0 -146.286)" width="100%" height="100%"/>
+  <use xlink:href="#a" transform="translate(0 -219.43)" width="100%" height="100%"/>
+  <use xlink:href="#a" transform="translate(0 -292.57)" width="100%" height="100%"/>
+  <use xlink:href="#a" transform="translate(0 -365.714)" width="100%" height="100%"/>
+  <use xlink:href="#a" transform="translate(0 -438.857)" width="100%" height="100%"/>
+  <path d="M0 .05h320.077v292.57H0z" fill="#010066"/>
+  <g fill="#fc0">
+    <path d="M123.812 51.9c-51.45 0-93.21 41.621-93.21 92.9 0 51.28 41.76 92.903 93.21 92.903 18.59 0 35.908-5.440A9B6C8A09"/>
+    <path d="M278.39 193.164l-39.263-20.486 11.61 41.926-26.262-35.071-8.193 42.686-8.058-42.71-26.372 34.991 11.0599838A7B"/>
+  </g>
+</svg>

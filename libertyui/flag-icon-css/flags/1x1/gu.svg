@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="512" width="512" id="flag-icon-css-gu">
+  <path fill-rule="evenodd" fill="#be0027" d="M0 0h512v512H0z"/>
+  <path fill-rule="evenodd" fill="#3b5aa3" d="M20.48 20.48h470v471.04h-470z"/>
+  <path d="M251.86 396.13c1.818.996 4.694.943 6.312.078 103.36-54.986 103.42-205.78.15-259.99-1.918-1.01-4.706-08D78BEA49" fill-rule="evenodd" fill="#cbe0e5"/>
+  <path d="M251.86 398.85c1.607 1.31 4.847 1.184 6.312.078 76.168-57.026 76.615-92.573 73.24-92.572l-150.75.08c-2.306 0 1.327 36.085 71.198 92.413z" fill-rule="evenodd" fill="#add2d9"/>
+  <path d="M192.6 334.61c6.536-1.7 14.43-2.15 20.863 1.286 5.715 2.986 9.026 2.957 15.183 3.04 6.444.086 11.51 058DF8CAA7" fill-rule="evenodd" fill="#fdf9a1"/>
+  <path d="M242.41 305.14l87.027-.405 1.53-7.71s-3.105-.465-5.61-.61c-3.124-.193-8.48 3.267-12.068 3.246-2.54-.0A3027BA64" fill-rule="evenodd" fill="#179a3b"/>
+  <path d="M242.41 307l89.576-.456v-2.434l-91.614.456L242.41 307z" fill-rule="evenodd" fill="#fdf9a1"/>
+  <path d="M279.22 333.92c1.38 5.29 2.834 7.09 8.398 8.437 5.496 1.352 13.88-4.006 8.67-9.178-4.962-4.813-10.170BADE24A75" fill-rule="evenodd" fill="#a79270"/>
+  <text font-family="helvetica" font-size="25.614" stroke="#fff" y="269.487" x="465.114" stroke-width="1.638" fill="#bd0728" transform="translate(-256.29 5.09)">
+    <tspan>G</tspan>
+  </text>
+  <text font-family="helvetica" font-size="25.614" stroke="#fff" y="269.607" x="488.065" stroke-width="1.638" fill="#bd0728" transform="translate(-256.29 5.09)">
+    <tspan>U</tspan>
+  </text>
+  <text font-family="helvetica" font-size="25.614" stroke="#fff" y="269.59" x="516.053" stroke-width="1.638" fill="#bd0728" transform="translate(-256.29 5.09)">
+    <tspan>A</tspan>
+  </text>
+  <text font-family="helvetica" font-size="25.614" stroke="#fff" y="269.542" x="539.532" stroke-width="1.638" fill="#bd0728" transform="translate(-256.29 5.09)">
+    <tspan>M</tspan>
+  </text>
+  <path d="M211.9 207.31c-1.158 2.235 2.712-.652 3.588-.963 5.015-1.785 6.98-8.12 15.62-4.306 6.8 2.94 15.93 1.003A6A6AD9" fill-rule="evenodd" fill="#239e46"/>
+  <path fill-rule="evenodd" d="M238.71 319.84h3.57v5.95h-3.57z"/>
+  <path d="M220.99 280.21c14.154 19.6 36.84 31.025 37.295 39.926-14.334-.057-29.87.007-44.206-.05 10.155-12.21 16.345-20.454 6.91-39.876z" fill-rule="evenodd" fill="#fdf9ff"/>
+  <path d="M208.12 320.58c19.23 4.288 42.187 6.65 56.85-.6.12 4.286-4.767 10.456-8.774 10.456h-36.898c4.286-.610FF1B85AD8" fill-rule="evenodd" fill="#a68861"/>
+  <path d="M251.73 405.93c1.955 1.07 5.045 1.014 6.785.085 111.1-59.135 111.16-221.3.162-279.61-2.063-1.087-5.06-1.028-7.11.085-108.26 59.262-108.55 219.59.163 279.44zm.552-13.35c1.707.945 4.404.896 5.923.074 92.997-54.73 94.136-199.32.14-251.15-1.798-1.322-4.415-.908-6.204.074-89.066 52.672-94.033 191.3.142 251z" fill-rule="evenodd" fill="#be0027"/>
+  <text font-size="25.614" y="269.487" x="465.114" font-family="helvetica" fill="#bd0728" transform="translate(-256.29 5.09)">
+    <tspan>G</tspan>
+  </text>
+  <text font-size="25.614" y="269.607" x="488.065" font-family="helvetica" fill="#bd0728" transform="translate(-256.29 5.09)">
+    <tspan>U</tspan>
+  </text>
+  <text font-size="25.614" y="269.59" x="516.053" font-family="helvetica" fill="#bd0728" transform="translate(-256.29 5.09)">
+    <tspan>A</tspan>
+  </text>
+  <text font-size="25.614" y="269.542" x="539.532" font-family="helvetica" fill="#bd0728" transform="translate(-256.29 5.09)">
+    <tspan>M</tspan>
+  </text>
+</svg>

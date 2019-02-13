@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="512" width="512" id="flag-icon-css-al">
+  <path fill="#e41e20" d="M0 0h512v512H0z"/>
+  <path id="a" d="M204.896 99.537c-4.978-.084-13.24 1.587-13.056 5.408-13.867-2.376-15.31 3.35-14.496 8.448 1.32-2.023079A9C6AB8"/>
+  <use height="100%" width="100%" xlink:href="#a" transform="matrix(-1 0 0 1 512 0)"/>
+</svg>

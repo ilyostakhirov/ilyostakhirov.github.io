@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="512" width="512" id="flag-icon-css-nf">
+  <g fill-rule="evenodd" stroke-width="1pt">
+    <path fill="#fff" d="M155.831 0h200.355v512H155.831z"/>
+    <path fill="#198200" d="M0 0h155.83v512H0zm356.185 0H512v512H356.185z"/>
+  </g>
+  <g stroke-linejoin="round" fill-rule="evenodd" stroke="#000">
+    <path d="M242.961 332.355v41.025l16.581.171s-5.299-35.726-2.393-40.512c2.906-4.786 5.641-4.103 5.641-4.103s100E88BBAA5E" stroke-linecap="round" stroke-width=".742" fill="#198200"/>
+    <path d="M244.963 308.085v-2.863s-6.456-1.145-9.605-.501c-1.865-1.069-3.627-2.476-5.856-1.288-.43.93 4.08 3.30376CEEA2E" stroke-linecap="round" stroke-width=".792" fill="#fff"/>
+    <path d="M217.046 314.73c0 .085-.085 2.74-.085 2.74s-4.883-1.37-6.425-4.111c2.827-.77 6.596 1.456 6.51 1.37z" stroke-width=".792" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>LibertyUI Premium Bootstrap Admin Dashboard Template</title>
+    <link rel="stylesheet" href="vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="vendors/css/vendor.bundle.addons.css">
+    <link rel="stylesheet" href="vendors/iconfonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-scroller">
+        <nav class="navbar horizontal-layout col-lg-12 col-12 p-0">
+            <div class="container d-flex flex-row">
+                <button class="navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                        <span class="mdi mdi-menu"></span>
+                    </button>
+                <div class="text-center navbar-brand-wrapper d-flex align-items-top">
+                    
+                    <a class="navbar-brand brand-logo" href="#"><img src="images/logo.png" alt="logo"/></a>
+
+                </div>
+                <div class="navbar-menu-wrapper d-flex align-items-center">
+                    <form class="search-field ml-auto" action="#" _lpchecked="1">
+                        <div class="form-group mb-0">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="mdi mdi-magnify"></i></span>
+                                </div>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="navbar-nav navbar-nav-right ml-20">
+                        <li class="nav-item dropdown mr-0  d-none d-lg-flex nav-language">
+                            <div class="nav-link">
+                                <span class="dropdown-toggle btn btn-sm" id="languageDropdown" data-toggle="dropdown"><i class="flag-icon flag-icon-ru" title="ru" id="ru"></i>
+                                    </span>
+                                <div style="padding-bottom: 0;" class="dropdown-menu navbar-dropdown" aria-labelledby="languageDropdown">
+                                    <a href="#" class="dropdown-item font-weight-medium">
+                                            <i class="flag-icon flag-icon-ru" title="ru" id="ru"></i>
+                                        </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="#" class="dropdown-item font-weight-medium">
+                                            <i class="flag-icon flag-icon-uz" title="uz" id="uz"></i>
+                                        </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item search-li">
+                            <a class="nav-link search-a" href="#">
+                                    <i class="mdi mdi-magnify"></i>
+                                </a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link count-indicator" href="#">
+                                    <i class="mdi mdi-comment-processing-outline"></i>
+                                    <span class="count bg-warning">1</span>
+                                </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link count-indicator" href="#">
+                                    <i class="mdi mdi-star-outline"></i>
+                                    <span class="count bg-warning">2</span>
+                                </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link count-indicator" href="#">
+                                    <i class="mdi mdi-cart-outline"></i>
+                                    <span class="count bg-warning">4</span>
+                                </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                                    <i class="mdi mdi-bell-outline"></i>
+                                    <span class="count bg-warning">4</span>
+                                </a>
+                            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                                <a class="dropdown-item py-3">
+                                        <p class="mb-0 font-weight-medium float-left">You have 4 new notifications
+                                        </p>
+                                        <span class="badge badge-pill badge-inverse-info float-right">View all</span>
+                                    </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item preview-item">
+                                        <div class="preview-thumbnail">
+                                            <div class="preview-icon bg-inverse-success">
+                                                <i class="mdi mdi-alert-circle-outline mx-0"></i>
+                                            </div>
+                                        </div>
+                                        <div class="preview-item-content">
+                                            <h6 class="preview-subject font-weight-normal text-dark mb-1">Application Error</h6>
+                                            <p class="font-weight-light small-text mb-0">
+                                                Just now
+                                            </p>
+                                        </div>
+                                    </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item preview-item">
+                                        <div class="preview-thumbnail">
+                                            <div class="preview-icon bg-inverse-warning">
+                                                <i class="mdi mdi-comment-text-outline mx-0"></i>
+                                            </div>
+                                        </div>
+                                        <div class="preview-item-content">
+                                            <h6 class="preview-subject font-weight-normal text-dark mb-1">Settings</h6>
+                                            <p class="font-weight-light small-text mb-0">
+                                                Private message
+                                            </p>
+                                        </div>
+                                    </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item preview-item">
+                                        <div class="preview-thumbnail">
+                                            <div class="preview-icon bg-inverse-info">
+                                                <i class="mdi mdi-email-outline mx-0"></i>
+                                            </div>
+                                        </div>
+                                        <div class="preview-item-content">
+                                            <h6 class="preview-subject font-weight-normal text-dark mb-1">New user registration</h6>
+                                            <p class="font-weight-light small-text mb-0">
+                                                2 days ago
+                                            </p>
+                                        </div>
+                                    </a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown mr-0 user-li">
+                            <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                                    <img class="img-xs rounded-circle" src="images/faces/face1.jpg" alt="Profile image">
+                                    <span class="nav-profile-name">
+                                        Кабинет пользователя
+                                        <small>Акбар Куандыков (ID: 254564)</small>
+                                    </span>
+                                </a>
+                            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+                                <a class="dropdown-item p-0">
+                                        <div class="d-flex border-bottom w-100">
+                                            <div class="py-3 px-4 d-flex align-items-center justify-content-center flex-grow-1"><i class="mdi mdi-bookmark-plus-outline mr-0 text-gray"></i></div>
+                                            <div class="py-3 px-4 d-flex align-items-center justify-content-center border-left border-right flex-grow-1"><i class="mdi mdi-account-outline mr-0 text-gray"></i></div>
+                                            <div class="py-3 px-4 d-flex align-items-center justify-content-center flex-grow-1"><i class="mdi mdi-alarm-check mr-0 text-gray"></i></div>
+                                        </div>
+                                    </a>
+                                <a class="dropdown-item mt-2">
+                                        Manage Accounts
+                                    </a>
+                                <a class="dropdown-item">
+                                        Change Password
+                                    </a>
+                                <a class="dropdown-item">
+                                        Check Inbox
+                                    </a>
+                                <a class="dropdown-item">
+                                        Sign Out
+                                    </a>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="nav-bottom">
+                <div class="container">
+                    <ul class="nav page-navigation">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link"><i class="link-icon mdi mdi-home"></i><span class="menu-title">Главная</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="link-icon mdi mdi-cart"></i><span class="menu-title">Покупка</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="link-icon mdi mdi-forum"></i><span class="menu-title">Общение</span><i class="menu-arrow"></i></a>
+                            <div class="submenu">
+                                <ul class="submenu-item">
+                                    <li class="nav-item"><a class="nav-link" href="#">Email</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Calendar</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Todo List</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="link-icon mdi mdi-star"></i><span class="menu-title">Отзывы</span><i class="menu-arrow"></i></a>
+                            <div class="submenu">
+                                <ul class="submenu-item">
+                                    <li class="nav-item"><a class="nav-link" href="#">Email</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Calendar</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Todo List</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="link-icon mdi mdi-account-switch"></i><span class="menu-title">Действия</span><i class="menu-arrow"></i></a>
+                            <div class="submenu">
+                                <ul class="submenu-item">
+                                    <li class="nav-item"><a class="nav-link" href="#">Email</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Calendar</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Todo List</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><i class="link-icon mdi mdi-account"></i><span class="menu-title">Профиль</span><i class="menu-arrow"></i></a>
+                            <div class="submenu">
+                                <ul class="submenu-item">
+                                    <li class="nav-item"><a class="nav-link" href="#">Email</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Calendar</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Todo List</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="row">
+                        <div class="col-lg-3 d-none d-lg-block grid-margin stretch-card">
+                            <div class="card mb-30">
+                                <div class="card-body">
+                                    <ul class="main-menu-list">
+                                        <li class="main-menu-item active"><a href="#"><i class="mdi mdi-account-circle"></i><span >Информация</span></a></li>
+                                        <li class="main-menu-item"><a href="#"><i class="mdi mdi-security"></i><span >Безопасность</span></a></li>
+                                        <li class="main-menu-item"><a href="#"><i class="mdi mdi-bell-ring"></i><span >Уведомлений</span></a></li>
+                                        <li class="main-menu-item"><a href="#"><i class="mdi mdi-settings"></i><span >Права доступа</span></a></li>
+                                        <li class="main-menu-item"><a href="#"><i class="mdi mdi-delete"></i><span >Удалить аккаунт</span></a></li>
+                                        <li class="main-menu-item"><a href="#"><i class="mdi mdi-history"></i><span >История действий</span></a></li>
+                                        <li class="main-menu-item"><a href="#"><i class="mdi mdi-backup-restore"></i><span >БЕКАП</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <img src="images/banner.png" alt="">
+                            <h4 class="card-title mt-30 mb-20">
+                                Glotr PROMO
+                            </h4>
+                            <div class="product product-grid mb-30">
+                                <div class="product-media">
+                                    <div class="product-thumbnail">
+                                        <a href="#"><img src="images/15400333054892.jpg" alt=""></a>
+                                    </div>
+                                    <span class="product-label new"><span class="item-sale">- 22  %</span></span>
+                                </div>
+                                <div class="product-body">
+                                    <h2 class="product-name">
+                                        <a href="#">Плинтус пластиковый</a>
+                                    </h2>
+                                    <div class="product-price">
+                                        <span class="amount"> 43 680 сум / шт.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product product-grid mb-30">
+                                <div class="product-media">
+                                    <div class="product-thumbnail">
+                                        <a href="#"><img src="images/15400333054892.jpg" alt=""></a>
+                                    </div>
+                                    <span class="product-label new"><span class="item-sale">- 22  %</span></span>
+                                </div>
+                                <div class="product-body">
+                                    <h2 class="product-name">
+                                        <a href="#">Плинтус пластиковый</a>
+                                    </h2>
+                                    <div class="product-price">
+                                        <span class="amount"> 43 680 сум / шт.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 grid-margin ">
+                            <div class="clearfix">
+                                <h1 class="display-4 mt-5">Безопасность</h1>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Приватность</h4>
+                                    <p>Вы можете указать одновременно несколько Ваших контактных данных такие как мобильный номер телефона, email адрес и мессенджеры. Каждый добавленный контакт необходимо подтвердить. Не подтвержденные контакты не будут отображаться.
+                                    </p>
+                                    <p><strong>Выбирете информацию которая будет доступна для других пользователей</strong></p>
+                                    <div class="ml-40">
+                                        <div class="d-flex mb-15 custom-checkbox-wrap align-items-center">
+                                            <div class="form-check m-0">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" class="form-check-input">
+                                                </label>
+                                            </div>
+                                            <span class="btn mr-10 btn-icons btn-rounded btn-success"><i class="mdi mdi-cellphone-iphone" data-name="mdi-cellphone-iphone"></i></span>
+                                            <div class="checkbox-text">
+                                                Мобильный номер
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mb-15 custom-checkbox-wrap align-items-center">
+                                            <div class="form-check m-0">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" class="form-check-input">
+                                                </label>
+                                            </div>
+                                            <span class="btn mr-10 btn-icons btn-rounded btn-success"><i class="mdi mdi-account" data-name="mdi-cellphone-iphone"></i></span>
+                                            <div class="checkbox-text">
+                                                Фамилия, Имя, Отчество
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mb-15 custom-checkbox-wrap align-items-center">
+                                            <div class="form-check m-0">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" class="form-check-input">
+                                                </label>
+                                            </div>
+                                            <span class="btn mr-10 btn-icons btn-rounded btn-success"><i class="mdi mdi-deskphone" data-name="mdi-deskphone"></i></span>
+                                            <div class="checkbox-text">
+                                                Номер телефона
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mb-15 custom-checkbox-wrap align-items-center">
+                                            <div class="form-check m-0">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" class="form-check-input">
+                                                </label>
+                                            </div>
+                                            <span class="btn mr-10 btn-icons btn-rounded btn-success"><i class="mdi mdi-email" data-name="mdi-cellphone-iphone"></i></span>
+                                            <div class="checkbox-text">
+                                                Email адрес
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mb-15 custom-checkbox-wrap align-items-center">
+                                            <div class="form-check m-0">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" class="form-check-input">
+                                                </label>
+                                            </div>
+                                            <span class="btn mr-10 btn-icons btn-rounded btn-success"><i class="mdi mdi-facebook-messenger" data-name="mdi-facebook-messenger"></i></span>
+                                            <div class="checkbox-text">
+                                                Мессенджеры
+                                            </div>
+                                        </div>
+                                        <div class="d-flex custom-checkbox-wrap align-items-center">
+                                            <div class="form-check m-0">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" class="form-check-input">
+                                                </label>
+                                            </div>
+                                            <span class="btn mr-10 btn-icons btn-rounded btn-success"><i class="mdi mdi-comment-processing-outline" data-name="mdi-comment-processing-outline"></i></span>
+                                            <div class="checkbox-text">
+                                                Социальные сети
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-30">
+                                <div class="card-body">
+                                    <h4 class="card-title">Логин</h4>
+                                    <p>Вы можете указать одновременно несколько Ваших контактных данных такие как мобильный номер телефона, email адрес и мессенджеры. Каждый добавленный контакт необходимо подтвердить. Не подтвержденные контакты не будут отображаться.
+                                    </p>
+                                    <p><strong>Выбирете информацию которую Вы хотите скрыть от других пользователей</strong></p>
+                                    <div class="ml-40">
+                                        <div class="d-flex mb-15 custom-checkbox-wrap align-items-center">
+                                            <div class="form-radio m-0">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                </label>
+                                            </div>
+                                            <span class="btn mr-10 btn-icons btn-rounded btn-success"><i class="mdi mdi-cellphone-iphone" data-name="mdi-cellphone-iphone"></i></span>
+                                            <div class="checkbox-text">
+                                                Мобильный номер
+                                                <strong>(998901781551) <span class="notify ml-5" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet" >?</span></strong>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mb-15 custom-checkbox-wrap align-items-center">
+                                            <div class="form-radio m-0">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                </label>
+                                            </div>
+                                            <span class="btn mr-10 btn-icons btn-rounded btn-success"><i class="mdi mdi-email" data-name="mdi-cellphone-iphone"></i></span>
+                                            <div class="checkbox-text">
+                                                Email адрес
+                                                <strong class="red">(недоступно) <span class="notify ml-5" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet" >?</span></strong>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex custom-checkbox-wrap align-items-center">
+                                            <div class="form-radio m-0">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                </label>
+                                            </div>
+                                            <span class="btn mr-10 btn-icons btn-rounded btn-success"><i class="mdi mdi-account" data-name="mdi-cellphone-iphone"></i></span>
+                                            <div class="checkbox-text">
+                                                Никнейм
+                                                <strong>(gogosha1551)<span class="notify ml-5" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet" >?</span></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-30">
+                                <div class="card-body">
+                                    <h4 class="card-title">Изменить пароль</h4>
+                                    <p>Вы можете указать одновременно несколько Ваших контактных данных такие как мобильный номер телефона, email адрес и мессенджеры. Каждый добавленный контакт необходимо подтвердить. Не подтвержденные контакты не будут отображаться.
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-4 form-group">
+                                            <label>Текущий пароль:</label>
+                                            <input class="form-control">
+                                        </div>
+                                        <div class="col-md-4 form-group">
+                                            <label>Новый пароль:</label>
+                                            <input class="form-control">
+                                        </div>
+                                        <div class="col-md-4 form-group">
+                                            <label>Повторите новый пароль:</label>
+                                            <input class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-30">
+                                <div class="card-body">
+                                    <h4 class="card-title">Дополнительный пароль</h4>
+                                    <p>Вы можете указать одновременно несколько Ваших контактных данных такие как мобильный номер телефона, email адрес и мессенджеры. Каждый добавленный контакт необходимо подтвердить. Не подтвержденные контакты не будут отображаться.
+                                    </p>
+                                    <div class="text-center">
+                                        <h6 class="card-title">Дополнительный пароль: <span class="text-success">подключен</span></h6>
+                                        <button type="submit" class="btn btn-success mr-2">изменить</button>
+                                        <button type="submit" class="btn btn-danger">удалить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-30">
+                                <div class="card-body">
+                                    <h4 class="card-title">Дополнительный пароль</h4>
+                                    <p>Вы можете указать одновременно несколько Ваших контактных данных такие как мобильный номер телефона, email адрес и мессенджеры. Каждый добавленный контакт необходимо подтвердить. Не подтвержденные контакты не будут отображаться.
+                                    </p>
+                                    <div class="text-center">
+                                        <h6 class="card-title">Дополнительный пароль: <span class="text-danger">не подключен</span></h6>
+                                        <button data-toggle="modal" data-target="#exampleModal-4" type="submit" class="btn btn-success">подключить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-30">
+                                <div class="card-body">
+                                    <h4 class="card-title">Дополнительный пароль</h4>
+                                    <p>Вы можете указать одновременно несколько Ваших контактных данных такие как мобильный номер телефона, email адрес и мессенджеры. Каждый добавленный контакт необходимо подтвердить. Не подтвержденные контакты не будут отображаться.
+                                    </p>
+                                    <div class="text-center">
+                                        <h6 class="card-title">Дополнительный пароль: <span class="text-warning">на проверке</span></h6>
+                                        <p class="text-center">На email ma......@list.ru отправлена ссылка<br>
+                                            для подтверждения дополнительного пароля. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-30">
+                                <div class="card-body">
+                                    <h4 class="card-title">Доверительные устройства</h4>
+                                    <p>Вы можете указать одновременно несколько Ваших контактных данных такие как мобильный номер телефона, email адрес и мессенджеры. Каждый добавленный контакт необходимо подтвердить. Не подтвержденные контакты не будут отображаться.
+                                    </p>
+                                    <div class="table-responsive mt-20">
+                                        <table class="rwd-table table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th style="text-align: center;">
+                                                        ОПЕРАЦИОННАЯ СИСТЕМА
+                                                    </th>
+                                                    <th style="text-align: center;">
+                                                        УСТРОЙСТВО
+                                                    </th>
+                                                    <th style="text-align: center;">
+                                                        ПОСЛЕДНИЙ ЛОГИН
+                                                    </th>
+                                                    <th style="width: 40px;text-align: center;">
+                                                        ДЕЙСТВИЯ
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td style="text-align: center;">
+                                                        Android
+                                                    </td>
+                                                    <td style="text-align: center;">
+                                                        Safari
+                                                    </td>
+                                                    <td style="text-align: center;">
+                                                        17.05.2018 17:55
+                                                    </td>
+                                                    <td style="text-align: center;">
+                                                        <button data-toggle="tooltip" data-placement="top" title="" type="button" class="btn btn-icons btn-inverse-success" data-original-title="удалить"><i class="mdi mdi-delete" data-name="mdi-delete"></i></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="exampleModal-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel-4" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel-4">Дополнительный пароль</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Дополнительный пароль необходимо для того что бы обезопасить свой аккаунт в случаях когда Ваш основной логин и пароль станет известным для других пользователей. </p>
+                                            <form>
+                                                <div class="form-group">
+                                                    <label class="col-form-label">Дополнительный пароль:</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-form-label">Повторите пароль:</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-form-label">Подсказка:</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-form-label">Подсказка:</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </form>
+                                            <p class="mb-0">На указанный Вами email адрес будет выслано письмо со ссылкой для подтверждения дополнительного пароля. Дополнительный пароль будет включен только после его подтверждения.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success">Добавить</button>
+                                            <button type="button" class="btn btn-light" data-dismiss="modal">Отменить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-30">
+                                <button type="button" class="btn btn btn-success btn-lg">Сохранить изменения</button>
+                            </div>
+                            <div class="d-lg-none">
+                                <h4 class="card-title mt-30 mb-20">
+                                Glotr PROMO
+                            </h4>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="product  product-grid mb-30">
+                                            <div class="product-media">
+                                                <div class="product-thumbnail">
+                                                    <a href="#"><img src="images/15400333054892.jpg" alt=""></a>
+                                                </div>
+                                                <span class="product-label new"><span class="item-sale">- 22  %</span></span>
+                                            </div>
+                                            <div class="product-body">
+                                                <h2 class="product-name">
+                                        <a href="#">Плинтус пластиковый</a>
+                                    </h2>
+                                                <div class="product-price">
+                                                    <span class="amount"> 43 680 сум / шт.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="product   product-grid mb-30">
+                                            <div class="product-media">
+                                                <div class="product-thumbnail">
+                                                    <a href="#"><img src="images/15400333054892.jpg" alt=""></a>
+                                                </div>
+                                                <span class="product-label new"><span class="item-sale">- 22  %</span></span>
+                                            </div>
+                                            <div class="product-body">
+                                                <h2 class="product-name">
+                                        <a href="#">Плинтус пластиковый</a>
+                                    </h2>
+                                                <div class="product-price">
+                                                    <span class="amount"> 43 680 сум / шт.</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="container-fluid clearfix">
+                        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">© 2012 - 2018 glotr.uz | Все права защищены.</span>
+                        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
+                        </span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="vendors/js/vendor.bundle.base.js"></script>
+    <script src="vendors/js/vendor.bundle.addons.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/formpickers.js"></script>
+    <script src="js/x-editable.js"></script>
+    <script src="js/dropify.js"></script>
+    <script src="js/dropzone.js"></script>
+    <script src="js/jquery-file-upload.js"></script>
+    <script src="js/formpickers.js"></script>
+    <script src="js/form-repeater.js"></script>
+    <script>
+    $(".search-a").click(function(e) {
+        $('body').toggleClass('search-active');
+        return false;
+    });
+    $(function() {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+</body>
+
+</html>

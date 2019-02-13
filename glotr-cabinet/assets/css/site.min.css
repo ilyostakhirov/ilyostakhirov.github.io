@@ -13779,6 +13779,15 @@ th.sortable.desc {
     color: #b0292c;
         bottom: -1px;
 }
+.btn-squared {
+    border-radius: 0;
+}
+.order-list-table .btn-squared{
+    width: 90px;
+    text-align: center;
+    padding: 7px 0;
+    font-size:13px;
+}
 @media screen and (max-width: 650px) {
     .sm-sh {
         display: inline-block;

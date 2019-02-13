@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="480" width="640" id="flag-icon-css-gb-wls">
+  <path fill="#00ab39" d="M0 240h640v240H0z"/>
+  <path fill="#fff" d="M0 0h640v240H0z"/>
+  <g stroke="#000" stroke-width="1.388">
+    <path d="M418.916 70.772c-.008.015-.014.033-.024.048.026-.014.047-.034.073-.048h-.05zm-.024.048c-40.283 22.2707B933DA56" fill="#d21034"/>
+    <path d="M207.406 171.15l3.653 5.313m-.167.168s0 7.14 1.494 7.308m-3.32 3.818c.165.167 3.82 6.31 3.82 6.31m-10D6B8D6ACA" fill="none" stroke-linejoin="round"/>
+    <path d="M182.346 101.32l9.268 1.715s-6.523 8.75-9.268-1.716z" stroke-linejoin="round"/>
+  </g>
+</svg>

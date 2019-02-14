@@ -34549,7 +34549,7 @@ img {
         padding-right: 20px;
     }
 
-    #accordion-3 .card .card-body .form-group:nth-child(2n) {
+    #accordion-3 .card .card-body .form-group:nth-child(3n) {
         padding-right: 0;
     }
 
@@ -35053,5 +35053,15 @@ img.overlay-figure {
 }
 .more-date-btn.sm-sh.active i:before {
      content: "\F140";
+}
+#accordion-3 .form-inline .search-field{
+        position: relative;
+    visibility: visible;
+    opacity: 1;
+    padding: 0!important;
+    width: 100%!important;
+}
+#accordion-3 .form-inline .search-field .form-control {
+    width: auto;
 }
 }

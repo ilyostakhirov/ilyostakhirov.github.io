@@ -41,3 +41,160 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
+
+.nav-tabs-vertical .nav-tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    float: left;
+    border-right: 1px solid #e4eaec;
+    border-bottom: none;
+}
+.nav-tabs-vertical .tab-content {
+    overflow: hidden;
+}
+.nav-tabs-vertical .nav-tabs .nav-item {
+    float: none;
+    margin-right: -1px;
+    margin-bottom: 2px;
+    margin-left: 0;
+}
+.nav-tabs-vertical::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.nav-tabs-vertical .nav-tabs {
+  -ms-flex-direction: column;
+  flex-direction: column;
+  float: left;
+  border-right: 1px solid #e4eaec;
+  border-bottom: none;
+}
+
+.nav-tabs-vertical .nav-tabs .nav-item {
+  float: none;
+  margin-right: -1px;
+  margin-bottom: 2px;
+  margin-left: 0;
+}
+
+.nav-tabs-vertical .nav-tabs .nav-link {
+  border-radius: .286rem 0 0 .286rem;
+}
+
+.nav-tabs-vertical .nav-tabs .nav-link:hover {
+  border-right-color: #e4eaec;
+  border-bottom-color: transparent;
+}
+
+.nav-tabs-vertical .nav-tabs .nav-link.active, .nav-tabs-vertical .nav-tabs .nav-link.active:focus, .nav-tabs-vertical .nav-tabs .nav-link.active:hover {
+  border-right-color: #3e8ef7;
+  border-bottom-color: transparent;
+}
+
+.nav-tabs-vertical .nav-tabs-reverse {
+  float: right;
+  border-right: none;
+  border-left: 1px solid #e4eaec;
+}
+
+.nav-tabs-vertical .nav-tabs-reverse .nav-item {
+  margin-right: 0;
+  margin-left: -1px;
+}
+
+.nav-tabs-vertical .nav-tabs-reverse .nav-link {
+  border-radius: 0 .286rem .286rem 0;
+}
+
+.nav-tabs-vertical .nav-tabs-reverse .nav-link:hover {
+  border-right-color: transparent;
+  border-left-color: #e4eaec;
+}
+
+.nav-tabs-vertical .nav-tabs-reverse .nav-link.active, .nav-tabs-vertical .nav-tabs-reverse .nav-link.active:focus, .nav-tabs-vertical .nav-tabs-reverse .nav-link.active:hover {
+  border-right-color: transparent;
+  border-left-color: #3e8ef7;
+}
+
+.nav-tabs-vertical .nav-tabs-solid {
+  border-right-color: #f3f7f9;
+}
+
+.nav-tabs-vertical .nav-tabs-solid .nav-link:hover {
+  border-color: transparent;
+}
+
+.nav-tabs-vertical .nav-tabs-solid .nav-link.active, .nav-tabs-vertical .nav-tabs-solid .nav-link.active:focus, .nav-tabs-vertical .nav-tabs-solid .nav-link.active:hover {
+  border-color: transparent;
+}
+
+.nav-tabs-vertical .nav-tabs-solid + .tab-content {
+  padding: 1.429rem;
+}
+
+.nav-tabs-vertical .nav-tabs-solid.nav-tabs-reverse {
+  border-left-color: #f3f7f9;
+}
+
+.nav-tabs-vertical .nav-tabs-line .nav-link {
+  border-right: 2px solid transparent;
+  border-bottom: none;
+}
+
+.nav-tabs-vertical .nav-tabs-line .nav-link:hover {
+  border-right-color: #ccd5db;
+}
+
+.nav-tabs-vertical .nav-tabs-line .nav-link.active, .nav-tabs-vertical .nav-tabs-line .nav-link.active:hover, .nav-tabs-vertical .nav-tabs-line .nav-link.active:focus {
+  border-right: 2px solid #3e8ef7;
+  border-bottom: none;
+}
+
+.nav-tabs-vertical .nav-tabs-line.nav-tabs-reverse .nav-link {
+  border-right-width: 1px;
+  border-left: 2px solid transparent;
+}
+
+.nav-tabs-vertical .nav-tabs-line.nav-tabs-reverse .nav-link:hover {
+  border-color: transparent;
+  border-left-color: #ccd5db;
+}
+
+.nav-tabs-vertical .nav-tabs-line.nav-tabs-reverse .nav-link.active, .nav-tabs-vertical .nav-tabs-line.nav-tabs-reverse .nav-link.active:hover, .nav-tabs-vertical .nav-tabs-line.nav-tabs-reverse .nav-link.active:focus {
+  border-right: 1px solid transparent;
+  border-left: 2px solid #3e8ef7;
+}
+
+.nav-tabs-vertical .tab-content {
+  overflow: hidden;
+}
+
+.nav-tabs-inverse .nav-link.active, .nav-tabs-inverse .nav-link.active:hover, .nav-tabs-inverse .nav-link.active:focus {
+  border-color: transparent;
+}
+
+.nav-tabs-inverse .nav-tabs-solid {
+  border-bottom-color: #fff;
+}
+
+.nav-tabs-inverse .nav-tabs-solid .nav-link.active, .nav-tabs-inverse .nav-tabs-solid .nav-link.active:hover, .nav-tabs-inverse .nav-tabs-solid .nav-link.active:focus {
+  color: #76838f;
+  background-color: #fff;
+}
+
+.nav-tabs-inverse.nav-tabs-vertical .nav-link.active, .nav-tabs-inverse.nav-tabs-vertical .nav-link.active:hover, .nav-tabs-inverse.nav-tabs-vertical .nav-link.active:focus {
+  border-color: transparent;
+}
+
+.nav-tabs-inverse.nav-tabs-vertical .nav-tabs-solid {
+  border-right-color: #fff;
+}
+
+.nav-tabs-inverse.nav-tabs-vertical .nav-tabs-solid.nav-tabs-reverse {
+  border-left-color: #fff;
+}

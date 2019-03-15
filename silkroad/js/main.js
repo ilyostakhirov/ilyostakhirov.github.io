@@ -59,15 +59,10 @@ burger.addEventListener('click', function(e) {
     nav.classList.toggle('is-open');
 });
 
-slowmo.addEventListener('click', function(e) {
-    this.classList.toggle('is-slowmo');
-});
-
 /* Onload demo - dirty timeout */
 let clickEvent = new Event('click');
 
 window.addEventListener('load', function(e) {
-    slowmo.dispatchEvent(clickEvent);
     burger.dispatchEvent(clickEvent);
 
     setTimeout(function() {

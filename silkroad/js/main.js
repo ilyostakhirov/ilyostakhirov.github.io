@@ -44,7 +44,7 @@ $(document).ready(function(e) {
         e.preventDefault();
         var param = $(this).attr("href").replace("#", "");
         var concept = $(this).text();
-        $('.type-fly').text(concept);
+        $('#type-fly').text(concept);
     });
 });
 
@@ -59,17 +59,7 @@ burger.addEventListener('click', function(e) {
     nav.classList.toggle('is-open');
 });
 
+
 /* Onload demo - dirty timeout */
 let clickEvent = new Event('click');
 
-window.addEventListener('load', function(e) {
-    burger.dispatchEvent(clickEvent);
-
-    setTimeout(function() {
-        burger.dispatchEvent(clickEvent);
-
-        setTimeout(function() {
-            slowmo.dispatchEvent(clickEvent);
-        }, 3500);
-    }, 5500);
-});

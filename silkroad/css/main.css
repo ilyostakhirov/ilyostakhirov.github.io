@@ -945,7 +945,13 @@ body {
     max-width: 40px;
     max-height: 22px; }
   .footer .footer-logoes li:not(:first-child) {
-    margin-left: 10px; } }
+    margin-left: 10px; }
+  .touch-wrap .input-group .form-control {
+    max-width: 25px;
+    width: 25px;
+    font-size: 13px;
+    line-height: 1.5;
+    padding-left: 0; } }
 
 .ham1 {
   display: none; }

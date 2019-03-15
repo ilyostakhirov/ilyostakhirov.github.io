@@ -518,7 +518,7 @@ body {
           border: none;
           color: #64b2d5;
           text-align: center;
-          padding: 20px 0; }
+          padding: 20px 6px 20px 0; }
           .page-wrap .tab-search .nav-tabs .nav-item .nav-link.active, .page-wrap .tab-search .nav-tabs .nav-item .nav-link.active:hover {
             background-color: #e7d435;
             border-radius: 0;

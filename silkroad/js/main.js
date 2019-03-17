@@ -1,8 +1,18 @@
-$('#my-element').data('datepicker');
 
 
 
 $(document).ready(function() {
+     wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       false,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
+
     var spinner = $('.adults');
     if (spinner && spinner.TouchSpin) {
         $('.adults').TouchSpin({
@@ -60,52 +70,52 @@ burger.addEventListener('click', function(e) {
 });
 
 $(document).ready(function() {
-    
-
-/* Onload demo - dirty timeout */
-let clickEvent = new Event('click');
 
 
-var template = $('.repeatable-form').clone();
+    /* Onload demo - dirty timeout */
+    let clickEvent = new Event('click');
 
-//define counter
-var sectionsCount = 1;
 
-//add new section
-$('body').on('click', '.add-route-btn', function() {
+    var template = $('.repeatable-form').clone();
 
-    //increment
-    sectionsCount++;
+    //define counter
+    var sectionsCount = 1;
 
-    //loop through each input
-    template.show();
-    var section = template.clone().find(':input').each(function(){
+    //add new section
+    $('body').on('click', '.add-route-btn', function() {
 
-        //set id to store the updated section number
-        var newId = this.id + sectionsCount;
+        //increment
+        sectionsCount++;
+        $('.datepicker-here').data('datepicker')
+        //loop through each input
+        template.show();
+        var section = template.clone().find(':input').each(function() {
 
-        //update for label
-        $(this).prev().attr('for', newId);
+                //set id to store the updated section number
+                var newId = this.id + sectionsCount;
 
-        //update id
-        this.id = newId;
+                //update for label
+                $(this).prev().attr('for', newId);
 
-    }).end()
+                //update id
+                this.id = newId;
 
-    //inject new section
-    .appendTo('.repeateble-items');
-    return false;
-});
+            }).end()
 
-//remove section
-$('.repeateble-items').on('click', '.remove', function() {
-    //fade out section
-    $(this).parent().fadeOut(300, function(){
-        //remove parent element (main section)
-        $(this).parent().parent().empty();
+            //inject new section
+            .appendTo('.repeateble-items');
         return false;
     });
-    return false;
-});
+
+    //remove section
+    $('.repeateble-items').on('click', '.remove', function() {
+        //fade out section
+        $(this).parent().fadeOut(300, function() {
+            //remove parent element (main section)
+            $(this).parent().parent().empty();
+            return false;
+        });
+        return false;
+    });
 
 });

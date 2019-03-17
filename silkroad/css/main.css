@@ -354,7 +354,9 @@ body {
   border-bottom: none; }
 
 .nav-tabs-vertical .tab-content {
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative;
+  z-index: 999; }
 
 .nav-tabs-vertical .nav-tabs .nav-item {
   float: none;
@@ -507,7 +509,9 @@ body {
       overflow: hidden;
       border-radius: 7px 0 0 7px;
       min-width: 130px;
-      border: none; }
+      border: none;
+      position: relative;
+      z-index: 1; }
       .page-wrap .tab-search .nav-tabs .nav-item {
         margin: 0;
         border-bottom: 1px solid #2187b5; }
@@ -784,7 +788,9 @@ body {
     .additional-fields .btn-group .btn-warning:not(:disabled):not(.disabled).active:focus:after,
     .additional-fields .btn-group .btn-warning:not(:disabled):not(.disabled):active:focus:after {
       border-left-color: #d39e00; }
-  .additional-fields .btn-warning:not(:disabled):not(.disabled).active, .additional-fields .btn-warning:not(:disabled):not(.disabled):active, .additional-fields .show > .btn-warning.dropdown-toggle {
+  .additional-fields .btn-warning:not(:disabled):not(.disabled).active,
+  .additional-fields .btn-warning:not(:disabled):not(.disabled):active,
+  .additional-fields .show > .btn-warning.dropdown-toggle {
     background-color: #e7d435;
     border-color: #e7d435;
     color: #000; }
@@ -803,6 +809,9 @@ body {
 .dropdown-item {
   font-size: 14px;
   border-bottom: 1px solid #eee; }
+
+.wow {
+  visibility: hidden; }
 
 @media only screen and (max-width: 1300px) {
   .header .main-menu li {

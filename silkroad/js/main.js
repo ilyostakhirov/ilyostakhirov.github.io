@@ -1,17 +1,12 @@
-
-
-
 $(document).ready(function() {
-     wow = new WOW(
-                      {
-                      boxClass:     'wow',      // default
-                      animateClass: 'animated', // default
-                      offset:       0,          // default
-                      mobile:       false,       // default
-                      live:         true        // default
-                    }
-                    )
-                    wow.init();
+    wow = new WOW({
+        boxClass: 'wow', // default
+        animateClass: 'animated', // default
+        offset: 0, // default
+        mobile: false, // default
+        live: true // default
+    })
+    wow.init();
 
     var spinner = $('.adults');
     if (spinner && spinner.TouchSpin) {
@@ -86,7 +81,6 @@ $(document).ready(function() {
 
         //increment
         sectionsCount++;
-        $('.datepicker-here').data('datepicker')
         //loop through each input
         template.show();
         var section = template.clone().find(':input').each(function() {
@@ -112,7 +106,7 @@ $(document).ready(function() {
         //fade out section
         $(this).parent().fadeOut(300, function() {
             //remove parent element (main section)
-            $(this).parent().parent().empty();
+            $(this).parent().empty();
             return false;
         });
         return false;

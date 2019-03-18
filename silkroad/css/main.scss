@@ -750,7 +750,22 @@ body {
     visibility: hidden;
 }
 
-
+.ham1 {
+    display: none;
+}
+.main-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background: rgba(0, 138, 187, 0.9);
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    transition: all .375s;
+}
 @media only screen and (max-width: 1300px) {
     .header .main-menu li {
         margin: 0 13px;
@@ -977,23 +992,9 @@ body {
 
 }
 
-.ham1 {
-    display: none;
-}
 
-.main-nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    text-align: center;
-    background: rgba(0, 138, 187, 0.9);
-    opacity: 0;
-    z-index: -1;
-    visibility: hidden;
-    transition: all .375s;
-}
+
+
 
 @media only screen and (max-width: 450px) {
 

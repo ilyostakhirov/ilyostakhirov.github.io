@@ -835,9 +835,12 @@ img {
     position: absolute;
     right: 6px;
     top: -10px;
-    background-color: #e7d435;
-    box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.39);
+    background-color: #d16666;
     border-radius: 50%;
+    width: 21px;
+    height: 21px;
+    line-height: 19px;
+    text-align: center;
 }
 
 .tabs-flight {
@@ -876,53 +879,79 @@ img {
         background-color: white;
         border-radius: 7px;
         box-shadow: 0 0 3.8px 0.2px rgba(42, 129, 170, 0.4);
-        display:flex;
+        display: flex;
     }
-    .ticket_buy-col{
-        max-width:180px;
+
+    .ticket_buy-col {
+        max-width: 180px;
         padding-right: 20px;
-        border-right:1px solid #bbbbbb;
-        .btn-warning{
-            display:block;
-            margin-bottom:10px;
+        border-right: 1px solid #bbbbbb;
+
+        .btn-warning {
+            display: block;
+            margin-bottom: 10px;
+
             strong {
-                display:block;
+                display: block;
             }
-            span{
-                font-weight:400;
-                color:#000;
+
+            span {
+                font-weight: 400;
+                color: #000;
             }
         }
-        span{
+
+        span {
             color: #a6a6a6;
             font-size: 12px;
         }
-        p{
+
+        p {
             color: black;
             font-size: 12px;
             font-weight: 700;
             line-height: 20px;
-            margin:5px 0;
+            margin: 5px 0;
         }
     }
-    .ticket_content{
+
+    .ticket_content {
         flex-grow: 1;
         padding-left: 20px;
-        .segment-route{
-            display:flex;
+
+        .segment-route {
+            display: flex;
         }
+    }
+}
+.segment-route{
+    .route__time{
+color: #000;
+font-size: 24px;
+font-weight: 400;
+    }
+    .route__city{
+color: #a6a6a6;
+font-size: 14px;
+    }
+    .route__date{
+color: #a6a6a6;
+font-size: 12px;
     }
 }
 .custom-control {
     margin-bottom: 6px;
 }
-.custom-control-label{
-    font-size:12px;
-    color:#000;
+
+.custom-control-label {
+    font-size: 12px;
+    color: #000;
 }
+
 .custom-control-label::before {
     top: 1px;
 }
+
 @media only screen and (max-width: 1300px) {
     .header .main-menu li {
         margin: 0 13px;

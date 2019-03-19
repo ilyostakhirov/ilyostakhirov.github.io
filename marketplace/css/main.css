@@ -602,7 +602,7 @@ body {
   border-radius: 5px;
   -webkit-box-shadow: 0 0 19.6px 0.4px rgba(0, 0, 0, 0.05);
   box-shadow: 0 0 19.6px 0.4px rgba(0, 0, 0, 0.05);
-  padding: 25px; }
+  padding: 20px; }
   .credit-block .credit-block__desc-item {
     display: -webkit-box;
     display: -webkit-flex;
@@ -613,11 +613,14 @@ body {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin: 20px 0 0; }
+    .credit-block .credit-block__desc-item div:first-child {
+      font-size: 13px;
+      margin-top: 3px; }
     .credit-block .credit-block__desc-item div:last-child strong {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 700; }
     .credit-block .credit-block__desc-item div:last-child small {
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 400;
       margin-left: 5px; }
   .credit-block .credit-block__desc-item:first-child {
@@ -1004,7 +1007,7 @@ input[type="range"]:focus + .rangeslider .rangeslider__handle {
   -ms-flex-direction: column;
   flex-direction: column; }
   .card-item-block label {
-    font-size: 11px;
+    font-size: 11px !important;
     text-transform: uppercase;
     font-weight: 400;
     text-align: left; }
@@ -1301,5 +1304,34 @@ input[type="range"]:focus + .rangeslider .rangeslider__handle {
 .picedit_box {
   font-family: 'Formular';
   width: 100% !important;
-  height: 520px;
+  height: 300px;
   background-color: #eee; }
+
+.picedit_box canvas {
+  width: 100%;
+  height: auto; }
+
+.pr {
+  position: relative; }
+
+.help-btn {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 8px;
+  top: 34px; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.alert-w-img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .alert-w-img img {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center; }

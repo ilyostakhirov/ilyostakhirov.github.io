@@ -90,7 +90,7 @@ body {
 }
 
 .page .wrap {
-    background: url(../img/bg.png) no-repeat 50% 0;
+    background: url(../img/bg1.png) no-repeat 50% 0;
 }
 
 .page .header {
@@ -726,21 +726,6 @@ img {
             border: none;
             padding: 8px 25px;
             box-shadow: none;
-
-            // &::after {
-            //     right: -36px;
-            //     top: 50%;
-            //     border: solid transparent;
-            //     content: " ";
-            //     height: 0;
-            //     width: 0;
-            //     position: absolute;
-            //     pointer-events: none;
-            //     border-color: rgba(231, 212, 53, 0);
-            //     border-left-color: #e7d435;
-            //     border-width: 18px;
-            //     margin-top: -18px;
-            // }
         }
 
         .dropdown-menu {
@@ -987,7 +972,12 @@ img {
         align-items: center;
         justify-content: space-between;
         margin: 0 20px 0 30px;
-
+        span.text{
+            position:absolute;
+            width: 100%;
+            text-align: center;
+                top: 2px;
+        }
         img {
             position: relative;
             z-index: 10;
@@ -1099,6 +1089,32 @@ hr.dot {
 .bs-tooltip-auto[x-placement^=bottom] .arrow::before,
 .bs-tooltip-bottom .arrow::before {
     border-bottom-color: #e7d435;
+}
+.ticket-links{
+    a{
+        font-size:13px;
+        color: #4396bd;
+        &:first-child{
+            margin-right:15px;
+        }
+    }
+}
+.jivo{
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    width: 65px;
+    height: 65px;
+    z-index: 25;
+    cursor: pointer;    
+    background: url(../img/envelope.svg) no-repeat;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    
+    svg{
+       filter: drop-shadow( 0 0 24px rgba(0, 0, 0, 0.35));
+    }
 }
 
 @media only screen and (max-width: 1300px) {

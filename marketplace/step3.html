@@ -25,7 +25,7 @@
     <div class="section page grey-bg">
         <div class="container">
             <div class="credit-block row">
-                <div class="col-md-8">
+                <div class="col-md-9">
                     <div class="credit-block__form">
                         <div class="step-3" id="step-progress" data-current-step="1">
                             <div class="step-bar">
@@ -59,7 +59,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group ">
-                                    <label >Имя</label>
+                                    <label>Имя</label>
                                     <input type="text" class="form-control">
                                 </div>
                                 <div class="form-group ">
@@ -69,19 +69,20 @@
                                 <div class="form-group ">
                                     <label for="card1">Дата рождения</label>
                                     <input type="text" class="form-control">
-                                </div> 
+                                </div>
                                 <div class="form-group ">
                                     <label for="card1">Пол</label>
                                     <div>
-                                   <div class="custom-control custom-radio custom-control-inline">
-  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-  <label class="custom-control-label" for="customRadioInline1">Мужской</label>
-</div>
-<div class="custom-control custom-radio custom-control-inline">
-  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-  <label class="custom-control-label" for="customRadioInline2">Женский</label>
-</div></div>
-                                </div>                                 
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline1">Мужской</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline2">Женский</label>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="form-group ">
                                     <label for="card1">Адрес</label>
                                     <input type="text" class="form-control">
@@ -90,13 +91,34 @@
                                     <label for="card1">Номер паспорта</label>
                                     <input type="text" class="form-control">
                                 </div>
-                                <div class="form-group ">
+                                <div class="form-group pr">
                                     <label for="card1">ПИНФЛ</label>
                                     <input type="text" class="form-control">
+                                    <a href="#modal1" role="button" data-toggle="modal" class="help-btn" href="#"><img src="img/alert.svg" alt=""></a>
                                 </div>
                             </div>
                             <div class="col-md-6 pt-10">
                                 <input type="file" name="thefile" id="thebox">
+
+                                <div class="alert alert-primary alert-w-img mt-20" role="alert">
+                  <img style="max-width: 80px;" class="mr-20" src="img/1.jpg" alt="">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">ПИНФЛ</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/Pport_RU.jpg" alt="">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="mt-30 d-flex justify-content-between">
@@ -107,7 +129,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="credit-block__desc">
                         <div class="credit-block__desc-item">
                             <div>Сумма:</div>
@@ -118,7 +140,7 @@
                             <div><strong>12</strong><small>месяцев</small></div>
                         </div>
                         <div class="credit-block__desc-item">
-                            <div>Ежемесячный платёж:</div>
+                            <div>Ежемесячный<br> платёж:</div>
                             <div><strong>700 000</strong><small>сум</small></div>
                         </div>
                         <div class="credit-block__desc-item">
@@ -153,7 +175,7 @@
     <script type="text/javascript" src="js/picedit.min.js"></script>
     <script type="text/javascript">
     $(function() {
-        $('#thebox').picEdit();
+        $('#thebox').picEdit({});
     });
     </script>
 </body>

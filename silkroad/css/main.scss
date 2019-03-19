@@ -1114,7 +1114,11 @@ hr.dot {
     
     svg{
        filter: drop-shadow( 0 0 24px rgba(0, 0, 0, 0.35));
+
     }
+    &:hover svg{
+        filter: drop-shadow( 0 0 40px rgba(0, 0, 0, 0.7));
+       }
 }
 
 @media only screen and (max-width: 1300px) {

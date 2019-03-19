@@ -1159,6 +1159,9 @@ hr.dot {
   .jivo svg {
     -webkit-filter: drop-shadow(0 0 24px rgba(0, 0, 0, 0.35));
     filter: drop-shadow(0 0 24px rgba(0, 0, 0, 0.35)); }
+  .jivo:hover svg {
+    -webkit-filter: drop-shadow(0 0 40px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(0 0 40px rgba(0, 0, 0, 0.7)); }
 
 @media only screen and (max-width: 1300px) {
   .header .main-menu li {

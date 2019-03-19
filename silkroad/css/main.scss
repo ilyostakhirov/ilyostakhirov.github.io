@@ -923,6 +923,7 @@ img {
     .ticket_content {
         flex-grow: 1;
         padding-left: 20px;
+            padding-right: 40px;
 
         .segment-route {
             display: flex;
@@ -985,7 +986,7 @@ img {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 0 30px;
+        margin: 0 20px 0 30px;
 
         img {
             position: relative;
@@ -1029,9 +1030,11 @@ img {
     color: #000;
 }
 
-.custom-control-label::before,.custom-control-label::after  {
+.custom-control-label::before,
+.custom-control-label::after {
     top: 1px;
 }
+
 .inner-title {
     display: flex;
     color: #8ecce9;
@@ -1045,49 +1048,59 @@ img {
         margin-right: 25px;
     }
 }
-.filter-sidebar{
 
-    .collapse-title{
+.filter-sidebar {
+
+    .collapse-title {
         color: #000;
-font-size: 16px;
-&::before{
-        display: inline-block;
-    margin-right: 15px;
-    vertical-align: 3px;
-    content: "";
-    border-top: .4em solid;
-    border-right: .4em solid transparent;
-    border-bottom: 0;
-    border-left: .4em solid transparent;
-    color:#2980a8;
-}
+        font-size: 16px;
+
+        &::before {
+            display: inline-block;
+            margin-right: 15px;
+            vertical-align: 3px;
+            content: "";
+            border-top: .4em solid;
+            border-right: .4em solid transparent;
+            border-bottom: 0;
+            border-left: .4em solid transparent;
+            color: #2980a8;
+        }
     }
-    .collapse{
-        margin:20px 0;
+
+    .collapse {
+        margin: 20px 0;
     }
+
     .custom-control-label {
-color: #4396bd;
+        color: #4396bd;
+    }
 }
+
+hr.dot {
+    border-top: 2px dotted #dce8ee;
+    margin: 20px 0;
 }
-hr.dot{
-   border-top: 2px dotted #dce8ee; 
-   margin:20px 0;
+
+.grey-bg {
+    background-color: #f2f2f2;
+    border: 1px solid white;
+    padding: 30px 0;
 }
-.grey-bg{
-   background-color: #f2f2f2;
-border: 1px solid white; 
-padding:30px 0;
-}
+
 .tooltip-inner {
     color: #000000;
-    font-size:12px;
+    font-size: 12px;
     text-align: left;
     background-color: #e7d435;
-    font-weight:400;
+    font-weight: 400;
 }
-.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .bs-tooltip-bottom .arrow::before {
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.bs-tooltip-bottom .arrow::before {
     border-bottom-color: #e7d435;
 }
+
 @media only screen and (max-width: 1300px) {
     .header .main-menu li {
         margin: 0 13px;

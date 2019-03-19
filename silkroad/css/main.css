@@ -981,7 +981,8 @@ img {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  padding-left: 20px; }
+  padding-left: 20px;
+  padding-right: 40px; }
   .product-list .ticket_content .segment-route {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1044,7 +1045,7 @@ img {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin: 0 30px; }
+    margin: 0 20px 0 30px; }
     .segment-route .route-path img {
       position: relative;
       z-index: 10; }
@@ -1073,7 +1074,8 @@ img {
   font-size: 12px;
   color: #000; }
 
-.custom-control-label::before, .custom-control-label::after {
+.custom-control-label::before,
+.custom-control-label::after {
   top: 1px; }
 
 .inner-title {
@@ -1127,7 +1129,8 @@ hr.dot {
   background-color: #e7d435;
   font-weight: 400; }
 
-.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .bs-tooltip-bottom .arrow::before {
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.bs-tooltip-bottom .arrow::before {
   border-bottom-color: #e7d435; }
 
 @media only screen and (max-width: 1300px) {

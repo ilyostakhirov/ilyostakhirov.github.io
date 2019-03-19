@@ -65,7 +65,7 @@ burger.addEventListener('click', function(e) {
 });
 
 $(document).ready(function() {
-$('[data-toggle="tooltip"]').tooltip({html:true});  
+    $('[data-toggle="tooltip"]').tooltip({ html: true });
 
     /* Onload demo - dirty timeout */
     let clickEvent = new Event('click');

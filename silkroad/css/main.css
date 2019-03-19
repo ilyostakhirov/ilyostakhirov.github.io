@@ -1157,11 +1157,14 @@ hr.dot {
   -o-transition: all .3s;
   transition: all .3s; }
   .jivo svg {
-    -webkit-filter: drop-shadow(0 0 24px rgba(0, 0, 0, 0.35));
-    filter: drop-shadow(0 0 24px rgba(0, 0, 0, 0.35)); }
+    -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
   .jivo:hover svg {
-    -webkit-filter: drop-shadow(0 0 40px rgba(0, 0, 0, 0.7));
-    filter: drop-shadow(0 0 40px rgba(0, 0, 0, 0.7)); }
+    -webkit-filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5)); }
 
 @media only screen and (max-width: 1300px) {
   .header .main-menu li {

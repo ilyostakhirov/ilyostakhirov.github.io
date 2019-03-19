@@ -1108,16 +1108,15 @@ hr.dot {
     z-index: 25;
     cursor: pointer;    
     background: url(../img/envelope.svg) no-repeat;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
     transition: all .3s;
     
     svg{
-       filter: drop-shadow( 0 0 24px rgba(0, 0, 0, 0.35));
+       filter: drop-shadow( 0 0 10px rgba(0, 0, 0, 0.2));
+       transition: all .3s;
 
     }
     &:hover svg{
-        filter: drop-shadow( 0 0 40px rgba(0, 0, 0, 0.7));
+        filter: drop-shadow( 0 0 20px rgba(0, 0, 0, 0.5));
        }
 }
 

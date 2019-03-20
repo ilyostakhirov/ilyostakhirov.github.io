@@ -64,6 +64,16 @@ burger.addEventListener('click', function(e) {
     nav.classList.toggle('is-open');
 });
 
+function filterSidebar() {
+    function e() { a.addClass("open"), i.length || $("body").append('<div class="filter-overlay"></div>'), $("body").addClass("filters-open") }
+
+    function o() { a.removeClass("open"), $(document).find(".filter-overlay").remove(), $("body").removeClass("filters-open") }
+    var a = $("#flight-filters"),
+        t = $("#open-filters"),
+        i = $("body").find(".filter-overlay");
+    t.on("click", function() { a.hasClass("open") ? o() : e() }), $("body").on("click", ".filter-overlay", function() { o() })
+}
+filterSidebar();
 $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip({ html: true });
 

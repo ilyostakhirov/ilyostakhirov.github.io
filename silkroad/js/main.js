@@ -78,7 +78,7 @@ $(document).ready(function() {
 
     //add new section
     $('body').on('click', '.add-route-btn', function() {
-
+        $('.back-date').hide();
         //increment
         sectionsCount++;
         //loop through each input
@@ -104,9 +104,10 @@ $(document).ready(function() {
     //remove section
     $('.repeateble-items').on('click', '.remove', function() {
         //fade out section
+        $('.back-date').show();
         $(this).parent().fadeOut(300, function() {
             //remove parent element (main section)
-            $(this).parent().empty();
+            $(this).empty();
             return false;
         });
         return false;

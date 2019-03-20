@@ -908,8 +908,8 @@ img {
 
 .remove {
   position: absolute;
-  right: 5px;
-  top: -10px;
+  right: 15px;
+  top: 5px;
   background-color: #d16666;
   border-radius: 50%;
   width: 21px;
@@ -1050,7 +1050,9 @@ img {
       position: absolute;
       width: 100%;
       text-align: center;
-      top: 2px; }
+      top: 2px;
+      font-size: 12px;
+      color: #575757; }
     .segment-route .route-path img {
       position: relative;
       z-index: 10; }
@@ -1139,8 +1141,12 @@ hr.dot {
   border-bottom-color: #e7d435; }
 
 .ticket-links a {
-  font-size: 13px;
-  color: #4396bd; }
+  font-size: 12px;
+  color: #000000;
+  text-decoration: underline; }
+  .ticket-links a img {
+    margin-right: 5px;
+    vertical-align: -3px; }
   .ticket-links a:first-child {
     margin-right: 15px; }
 
@@ -1165,6 +1171,65 @@ hr.dot {
   .jivo:hover svg {
     -webkit-filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
     filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5)); }
+
+.bd-example-modal .modal {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  z-index: 1;
+  display: block; }
+
+.bd-example-modal .modal-dialog {
+  left: auto;
+  margin-right: auto;
+  margin-left: auto; }
+
+.fligts-reg {
+  margin-bottom: 20px; }
+  .fligts-reg span {
+    background-color: #989898;
+    border-radius: 10px;
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px 0; }
+
+.yellow-modal .modal-dialog {
+  max-width: 1100px; }
+  .yellow-modal .modal-dialog .modal-content {
+    border: none; }
+    .yellow-modal .modal-dialog .modal-content .modal-header {
+      background-color: #e7d435;
+      border: none; }
+      .yellow-modal .modal-dialog .modal-content .modal-header .modal-title {
+        color: #000;
+        font-size: 20px; }
+      .yellow-modal .modal-dialog .modal-content .modal-header .close {
+        font-size: 2rem;
+        font-weight: 400;
+        color: #000;
+        opacity: 1; }
+    .yellow-modal .modal-dialog .modal-content .modal-footer {
+      background-color: #e7d435;
+      color: #000;
+      font-size: 14px;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      border: none; }
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #4396bd; }
 
 @media only screen and (max-width: 1300px) {
   .header .main-menu li {

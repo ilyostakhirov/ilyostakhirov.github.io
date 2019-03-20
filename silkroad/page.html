@@ -55,7 +55,7 @@
     <div class="top-filter ">
         <div class="container">
             <div class="search-item row">
-                <div class="form-group col-md-2">
+                <div class="form-group col-md-3">
                     <img src="img/from.svg" width="16" height="22" alt="">
                     <div class="form-wrap">
                         <input type="text" placeholder="Откуда" class="form-control flexdatalist" data-data="countries.json" data-search-in='name' data-visible-properties='["name","capital","iso3"]' data-selection-required='true' data-min-length="1" name="country_name_capital_continent">
@@ -73,7 +73,7 @@
                         <input placeholder="Дата вылета" type='text' data="datepicker" class="datepicker-here form-control" />
                     </div>
                 </div>
-                <div class="form-group col-md-2">
+                <div class="form-group back-date col-md-2">
                     <img src="img/calendar-l.svg" width="24" height="19" alt="">
                     <div class="form-wrap">
                         <input placeholder="Обратно" type='text' data="datepicker" class="datepicker-here form-control" />
@@ -81,6 +81,29 @@
                 </div>
                 <div class="col-md-2"> <a class="add-route-btn" href="#">Добавить ещё маршрут</a></div>
             </div>
+            <div style="display: none;" class="search-item row repeatable-form">
+                                    <div class="form-group col-md-3">
+                                        <img src="img/from.svg" width="16" height="22" alt="">
+                                        <div class="form-wrap">
+                                            <input type="text" placeholder="Откуда" class="form-control flexdatalist" data-data="countries.json" data-search-in='name' data-visible-properties='["name","capital","iso3"]' data-selection-required='true' data-min-length="1" name="country_name_capital_continent">
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <img src="img/where.svg" width="16" height="22" alt="">
+                                        <div class="form-wrap">
+                                            <input type="text" placeholder="Куда" class="form-control flexdatalist" data-data="countries.json" data-search-in='name' data-visible-properties='["name","capital","iso3"]' data-selection-required='true' data-min-length="1" name="country_name_capital_continent">
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <img width="" src="img/calendar-r.svg" width="24" height="19" alt="">
+                                        <div class="form-wrap">
+                                            <input placeholder="Дата вылета" type='text' data="datepicker" class="datepicker-here form-control" />
+                                        </div>
+                                    </div>
+                                    <a href="#" class="remove"><img src="img/x.svg" alt=""></a>
+                                </div>
+                                <div class="repeateble-items">
+                                </div>
             <div class="additional-fields mt-0 mb-0">
                 <div class="item">
                     <div class="btn-group">
@@ -117,205 +140,262 @@
         </div>
     </div>
     <div class="grey-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2 pr-0 filter-sidebar">
-                <div class="inner-title mt-10 mb-45">
-                    <svg fill="#8ecce9" version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 207 207">
-                        <path d="M53 207l-1-1-29-31v-2l2-18-1-3-11-12-1-1 11-11 4 4 1-12c1-3 0-4-2-6l-11-11 12-11 4 4 2-19c1-1 0-3-1-4L18 60C12 54 7 46 4 37L0 24v-6l1-2C3 9 9 3 16 1l2-1h6l13 4c9 3 17 8 23 14l13 14c1 1 3 2 4 1l19-2-4-4 11-12 11 11c2 2 3 3 6 2l12-1-4-4 11-11 1 1 12 11 3 1 18-2h2l31 29 1 1-83 29 1 1 35 35 3 1h24l2 1 17 16 1 1-2 1-40 23-2 2-2 2-23 40-1 2-1-1-16-17-1-2v-24l-1-3-35-35-1-1-29 83zm81-53l1 2v21l2-2 13-23 1-1 1-1 23-13 2-2h-21l-2-1-59-58-1-1 82-29-7-6-2-1-61 7-35 4-4-2-20-20c-7-6-15-11-24-12h-3c-2 0-4 2-4 4v3c1 9 6 17 12 24l20 20 2 4-4 35-7 61 1 2 6 7 29-82 1 1 58 59z" /></svg>
-                    <span>Авиабилеты</span>
-                </div>
-                <a class="collapse-title" data-toggle="collapse" href="#collapsefly" role="button" aria-expanded="false" aria-controls="collapsefly">Опции</a>
-                <div class="collapse show" id="collapsefly">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">Багаж включён в стоимость</label>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 pr-0 filter-sidebar">
+                    <div class="inner-title mt-10 mb-45">
+                        <svg fill="#8ecce9" version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 207 207">
+                            <path d="M53 207l-1-1-29-31v-2l2-18-1-3-11-12-1-1 11-11 4 4 1-12c1-3 0-4-2-6l-11-11 12-11 4 4 2-19c1-1 0-3-1-4L18 60C12 54 7 46 4 37L0 24v-6l1-2C3 9 9 3 16 1l2-1h6l13 4c9 3 17 8 23 14l13 14c1 1 3 2 4 1l19-2-4-4 11-12 11 11c2 2 3 3 6 2l12-1-4-4 11-11 1 1 12 11 3 1 18-2h2l31 29 1 1-83 29 1 1 35 35 3 1h24l2 1 17 16 1 1-2 1-40 23-2 2-2 2-23 40-1 2-1-1-16-17-1-2v-24l-1-3-35-35-1-1-29 83zm81-53l1 2v21l2-2 13-23 1-1 1-1 23-13 2-2h-21l-2-1-59-58-1-1 82-29-7-6-2-1-61 7-35 4-4-2-20-20c-7-6-15-11-24-12h-3c-2 0-4 2-4 4v3c1 9 6 17 12 24l20 20 2 4-4 35-7 61 1 2 6 7 29-82 1 1 58 59z" /></svg>
+                        <span>Авиабилеты</span>
                     </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                        <label class="custom-control-label" for="customCheck2">Обмен возможен</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck3">
-                        <label class="custom-control-label" for="customCheck3">Возврат возможен</label>
-                    </div>
-                </div>
-                <hr class="dot">
-                <a class="collapse-title"  data-toggle="collapse" href="#collapsefly1" role="button" aria-expanded="false" aria-controls="collapsefly1">Рейсы</a>
-                <div class="collapse show" id="collapsefly1">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck4">
-                        <label class="custom-control-label" for="customCheck4">Все</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck5">
-                        <label class="custom-control-label" for="customCheck5">Прямые</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck6">
-                        <label class="custom-control-label" for="customCheck6">С одной пересадкой</label>
-                    </div>
-                </div>
-                <hr class="dot">
-                <a class="collapse-title"  data-toggle="collapse" href="#collapsefly2" role="button" aria-expanded="false" aria-controls="collapsefly1">Авиакомпании</a>
-                <div class="collapse show" id="collapsefly2">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck14">
-                        <label class="custom-control-label" for="customCheck14">Turkish airlines</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck15">
-                        <label class="custom-control-label" for="customCheck15">British airlines</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck16">
-                        <label class="custom-control-label" for="customCheck16">Аэрофлот</label>
-                    </div>
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck17">
-                        <label class="custom-control-label" for="customCheck17">Korean Air</label>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-10">
-                <ul class="tabs-flight ul">
-                    <li><a class="active" href="#"><strong>Самые дешёвые</strong> (от 370 000 сўм)</a></li>
-                    <li><a href="#"><strong>Самые быстрые</strong> (от 500 000 сўм)</a></li>
-                </ul>
-                <div class="product-list">
-                    <div class="product-list-item">
-                        <div class="ribbon">
-                            <span class="ribbon-inner">Самый дешёвый</span>
+                    <a class="collapse-title" data-toggle="collapse" href="#collapsefly" role="button" aria-expanded="false" aria-controls="collapsefly">Опции</a>
+                    <div class="collapse show" id="collapsefly">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Багаж включён в стоимость</label>
                         </div>
-                        <div class="ticket_buy-col">
-                            <a class="btn btn-warning" href="#">
-                                <strong>Купить</strong>
-                                <span> 370 000 сўм</span>
-                            </a>
-                            <span>Осталось: 9 мест</span>
-                            <p>Airbus A320-100/200 Boeing 787</p>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck7">
-                                <label class="custom-control-label" for="customCheck7">Обмен</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck8">
-                                <label class="custom-control-label" for="customCheck8">Багаж</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck9">
-                                <label class="custom-control-label" for="customCheck9">Возврат</label>
-                            </div>
-                            <div class="ticket-links">
-                                <a href="#">О тарифе</a>
-                                <a href="#">Условия</a>
-                            </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                            <label class="custom-control-label" for="customCheck2">Обмен возможен</label>
                         </div>
-                        <div class="ticket_content">
-                            <div class="ticket-logo">
-                                <img src="img/uzairways-logo.png" alt="">
-                            </div>
-                            <div class="segment-route">
-                                <div class="route-start">
-                                    <div class="route__time">03:50</div>
-                                    <div class="route__city">Ташкент</div>
-                                    <div class="route__date">22 мар 2019, пт</div>
-                                </div>
-                                <div class="route-path">
-                                    <span class="text">Время в пути 9 ч. 10 мин.</span>
-                                    <a class="route-path-start" href="#"><img src="img/route-start.png" alt=""></a>
-                                    <a class="route-path-stop" data-toggle="tooltip" data-placement="bottom" data-original-title='<strong>Пересадка</strong> 2 ч 15 м<br> в аэропорту «Адлер» Сочи' href="#"><img src="img/route-stop.png" alt=""></a>
-                                    <a class="route-path-end" href="#"><img src="img/route-end.png" alt=""></a>
-                                </div>
-                                <div class="route-finish">
-                                    <div class="route__time">10:00</div>
-                                    <div class="route__city">Санкт-Петербург</div>
-                                    <div class="route__date">22 мар 2019, пт</div>
-                                </div>
-                            </div>
-                            <div class="segment-route">
-                                <div class="route-start">
-                                    <div class="route__time">03:50</div>
-                                    <div class="route__city">Ташкент</div>
-                                    <div class="route__date">22 мар 2019, пт</div>
-                                </div>
-                                <div class="route-path">
-                                    <span class="text">Время в пути 9 ч. 10 мин.</span>
-                                    <a class="route-path-start" href="#"><img src="img/route-start.png" alt=""></a>
-                                    <a class="route-path-stop" data-toggle="tooltip" data-placement="bottom" data-original-title='<strong>Пересадка</strong> 2 ч 15 м<br> в аэропорту «Адлер» Сочи' href="#"><img src="img/route-stop.png" alt=""></a>
-                                    <a class="route-path-end" href="#"><img src="img/route-end.png" alt=""></a>
-                                </div>
-                                <div class="route-finish">
-                                    <div class="route__time">10:00</div>
-                                    <div class="route__city">Санкт-Петербург</div>
-                                    <div class="route__date">22 мар 2019, пт</div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3">Возврат возможен</label>
+                        </div>
+                    </div>
+                    <hr class="dot">
+                    <a class="collapse-title" data-toggle="collapse" href="#collapsefly1" role="button" aria-expanded="false" aria-controls="collapsefly1">Рейсы</a>
+                    <div class="collapse show" id="collapsefly1">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck4">
+                            <label class="custom-control-label" for="customCheck4">Все</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck5">
+                            <label class="custom-control-label" for="customCheck5">Прямые</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck6">
+                            <label class="custom-control-label" for="customCheck6">С одной пересадкой</label>
+                        </div>
+                    </div>
+                    <hr class="dot">
+                    <a class="collapse-title" data-toggle="collapse" href="#collapsefly2" role="button" aria-expanded="false" aria-controls="collapsefly1">Авиакомпании</a>
+                    <div class="collapse show" id="collapsefly2">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck14">
+                            <label class="custom-control-label" for="customCheck14">Turkish airlines</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck15">
+                            <label class="custom-control-label" for="customCheck15">British airlines</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck16">
+                            <label class="custom-control-label" for="customCheck16">Аэрофлот</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck17">
+                            <label class="custom-control-label" for="customCheck17">Korean Air</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <ul class="tabs-flight ul">
+                        <li><a class="active" href="#"><strong>Самые дешёвые</strong> (от 370 000 сўм)</a></li>
+                        <li><a href="#"><strong>Самые быстрые</strong> (от 500 000 сўм)</a></li>
+                    </ul>
+                        <div id="usloviya" class="modal fade yellow-modal" tabindex="-1" role="dialog">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Условия тарифного плана</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="fligts-reg row">
+                                            <div class="col-sm-6 pr-0"><span>Ташкент - Сингапур (13 марта 2019, ср)</span></div>
+                                            <div class="col-sm-6"><span>Сингапур - Ташкент (13 марта 2019, ср)</span></div>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos asperiores eligendi delectus sed esse. Maiores dolorem, magni vel natus consectetur? Molestias amet iste quod asperiores dolorem, sunt atque debitis.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos asperiores eligendi delectus sed esse. Maiores dolorem, magni vel natus consectetur? Molestias amet iste quod asperiores dolorem, sunt atque debitis.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos asperiores eligendi delectus sed esse. Maiores dolorem, magni vel natus consectetur? Molestias amet iste quod asperiores dolorem, sunt atque debitis.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos asperiores eligendi delectus sed esse. Maiores dolorem, magni vel natus consectetur? Molestias amet iste quod asperiores dolorem, sunt atque debitis.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos asperiores eligendi delectus sed esse. Maiores dolorem, magni vel natus consectetur? Molestias amet iste quod asperiores dolorem, sunt atque debitis.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos asperiores eligendi delectus sed esse. Maiores dolorem, magni vel natus consectetur? Molestias amet iste quod asperiores dolorem, sunt atque debitis.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos asperiores eligendi delectus sed esse. Maiores dolorem, magni vel natus consectetur? Molestias amet iste quod asperiores dolorem, sunt atque debitis.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        * Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="product-list-item">
-                        <div class="ticket_buy-col">
-                            <a class="btn btn-warning" href="#">
-                                <strong>Купить</strong>
-                                <span> 370 000 сўм</span>
-                            </a>
-                            <span>Осталось: 9 мест</span>
-                            <p>Airbus A320-100/200 Boeing 787</p>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck10">
-                                <label class="custom-control-label" for="customCheck10">Обмен</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck11">
-                                <label class="custom-control-label" for="customCheck11">Багаж</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck12">
-                                <label class="custom-control-label" for="customCheck12">Возврат</label>
-                            </div>
-                            <div class="ticket-links">
-                                <a href="#">О тарифе</a>
-                                <a href="#">Условия</a>
+                        <div id="tarife" class="modal fade yellow-modal" tabindex="-1" role="dialog">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">О тарифе</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="fligts-reg row">
+                                            <div class="col-sm-6 pr-0"><span>Ташкент - Сингапур (13 марта 2019, ср)</span></div>
+                                            <div class="col-sm-6"><span>Сингапур - Ташкент (13 марта 2019, ср)</span></div>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos asperiores eligendi delectus sed esse. Maiores dolorem, magni vel natus consectetur? Molestias amet iste quod asperiores dolorem, sunt atque debitis.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos asperiores eligendi delectus sed esse. Maiores dolorem, magni vel natus consectetur? Molestias amet iste quod asperiores dolorem, sunt atque debitis.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos asperiores eligendi delectus sed esse. Maiores dolorem, magni vel natus consectetur? Molestias amet iste quod asperiores dolorem, sunt atque debitis.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos asperiores eligendi delectus sed esse. Maiores dolorem, magni vel natus consectetur? Molestias amet iste quod asperiores dolorem, sunt atque debitis.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos asperiores eligendi delectus sed esse. Maiores dolorem, magni vel natus consectetur? Molestias amet iste quod asperiores dolorem, sunt atque debitis.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos asperiores eligendi delectus sed esse. Maiores dolorem, magni vel natus consectetur? Molestias amet iste quod asperiores dolorem, sunt atque debitis.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos asperiores eligendi delectus sed esse. Maiores dolorem, magni vel natus consectetur? Molestias amet iste quod asperiores dolorem, sunt atque debitis.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        * Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="ticket_content">
-                            <div class="ticket-logo">
-                                <img src="img/uzairways-logo.png" alt="">
+                    <div class="product-list">
+                        <div class="product-list-item">
+                            <div class="ribbon">
+                                <span class="ribbon-inner">Самый дешёвый</span>
                             </div>
-                            <div class="segment-route">
-                                <div class="route-start">
-                                    <div class="route__time">03:50</div>
-                                    <div class="route__city">Ташкент</div>
-                                    <div class="route__date">22 мар 2019, пт</div>
+                            <div class="ticket_buy-col">
+                                <a class="btn btn-warning" href="#">
+                                    <strong>Купить</strong>
+                                    <span> 370 000 сўм</span>
+                                </a>
+                                <span>Осталось: 9 мест</span>
+                                <p>Airbus A320-100/200 Boeing 787</p>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                    <label class="custom-control-label" for="customCheck7">Обмен</label>
                                 </div>
-                                <div class="route-path">
-                                    <span class="text">Время в пути 9 ч. 10 мин.</span>
-                                    <a class="route-path-start" href="#"><img src="img/route-start.png" alt=""></a>
-                                    <a class="route-path-stop" data-toggle="tooltip" data-placement="bottom" data-original-title='<strong>Пересадка</strong> 2 ч 15 м<br> в аэропорту «Адлер» Сочи' href="#"><img src="img/route-stop.png" alt=""></a>
-                                    <a class="route-path-end" href="#"><img src="img/route-end.png" alt=""></a>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck8">
+                                    <label class="custom-control-label" for="customCheck8">Багаж</label>
                                 </div>
-                                <div class="route-finish">
-                                    <div class="route__time">10:00</div>
-                                    <div class="route__city">Санкт-Петербург</div>
-                                    <div class="route__date">22 мар 2019, пт</div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck9">
+                                    <label class="custom-control-label" for="customCheck9">Возврат</label>
+                                </div>
+                                <div class="ticket-links">
+                                    <a href="#tarife" role="button" data-toggle="modal"><img src="img/about.svg" alt="">О тарифе</a>
+                                    <a href="#usloviya" role="button" data-toggle="modal"><img src="img/check.svg" alt="">Условия</a>
                                 </div>
                             </div>
-                            <div class="segment-route">
-                                <div class="route-start">
-                                    <div class="route__time">03:50</div>
-                                    <div class="route__city">Ташкент</div>
-                                    <div class="route__date">22 мар 2019, пт</div>
+                            <div class="ticket_content">
+                                <div class="ticket-logo">
+                                    <img src="img/uzairways-logo.png" alt="">
                                 </div>
-                                <div class="route-path">
-                                    <span class="text">Время в пути 9 ч. 10 мин.</span>
-                                    <a class="route-path-start" href="#"><img src="img/route-start.png" alt=""></a>
-                                    <a class="route-path-stop" data-toggle="tooltip" data-placement="bottom" data-original-title='<strong>Пересадка</strong> 2 ч 15 м<br> в аэропорту «Адлер» Сочи' href="#"><img src="img/route-stop.png" alt=""></a>
-                                    <a class="route-path-end" href="#"><img src="img/route-end.png" alt=""></a>
+                                <div class="segment-route">
+                                    <div class="route-start">
+                                        <div class="route__time">03:50</div>
+                                        <div class="route__city">Ташкент</div>
+                                        <div class="route__date">22 мар 2019, пт</div>
+                                    </div>
+                                    <div class="route-path">
+                                        <span class="text">Время в пути 9 ч. 10 мин.</span>
+                                        <a class="route-path-start" href="#"><img src="img/route-start.png" alt=""></a>
+                                        <a class="route-path-stop" data-toggle="tooltip" data-placement="bottom" data-original-title='<strong>Пересадка</strong> 2 ч 15 м<br> в аэропорту «Адлер» Сочи' href="#"><img src="img/route-stop.png" alt=""></a>
+                                        <a class="route-path-end" href="#"><img src="img/route-end.png" alt=""></a>
+                                    </div>
+                                    <div class="route-finish">
+                                        <div class="route__time">10:00</div>
+                                        <div class="route__city">Санкт-Петербург</div>
+                                        <div class="route__date">22 мар 2019, пт</div>
+                                    </div>
                                 </div>
-                                <div class="route-finish">
-                                    <div class="route__time">10:00</div>
-                                    <div class="route__city">Санкт-Петербург</div>
-                                    <div class="route__date">22 мар 2019, пт</div>
+                                <div class="segment-route">
+                                    <div class="route-start">
+                                        <div class="route__time">03:50</div>
+                                        <div class="route__city">Ташкент</div>
+                                        <div class="route__date">22 мар 2019, пт</div>
+                                    </div>
+                                    <div class="route-path">
+                                        <span class="text">Время в пути 9 ч. 10 мин.</span>
+                                        <a class="route-path-start" href="#"><img src="img/route-start.png" alt=""></a>
+                                        <a class="route-path-stop" data-toggle="tooltip" data-placement="bottom" data-original-title='<strong>Пересадка</strong> 2 ч 15 м<br> в аэропорту «Адлер» Сочи' href="#"><img src="img/route-stop.png" alt=""></a>
+                                        <a class="route-path-end" href="#"><img src="img/route-end.png" alt=""></a>
+                                    </div>
+                                    <div class="route-finish">
+                                        <div class="route__time">10:00</div>
+                                        <div class="route__city">Санкт-Петербург</div>
+                                        <div class="route__date">22 мар 2019, пт</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-list-item">
+                            <div class="ticket_buy-col">
+                                <a class="btn btn-warning" href="#">
+                                    <strong>Купить</strong>
+                                    <span> 370 000 сўм</span>
+                                </a>
+                                <span>Осталось: 9 мест</span>
+                                <p>Airbus A320-100/200 Boeing 787</p>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck10">
+                                    <label class="custom-control-label" for="customCheck10">Обмен</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck11">
+                                    <label class="custom-control-label" for="customCheck11">Багаж</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck12">
+                                    <label class="custom-control-label" for="customCheck12">Возврат</label>
+                                </div>
+                                <div class="ticket-links">
+                                    <a href="#tarife" role="button" data-toggle="modal"><img src="img/about.svg" alt="">О тарифе</a>
+                                    <a href="#usloviya" role="button" data-toggle="modal"><img src="img/check.svg" alt="">Условия</a>
+                                </div>
+                            </div>
+                            <div class="ticket_content">
+                                <div class="ticket-logo">
+                                    <img src="img/uzairways-logo.png" alt="">
+                                </div>
+                                <div class="segment-route">
+                                    <div class="route-start">
+                                        <div class="route__time">03:50</div>
+                                        <div class="route__city">Ташкент</div>
+                                        <div class="route__date">22 мар 2019, пт</div>
+                                    </div>
+                                    <div class="route-path">
+                                        <span class="text">Время в пути 9 ч. 10 мин.</span>
+                                        <a class="route-path-start" href="#"><img src="img/route-start.png" alt=""></a>
+                                        <a class="route-path-stop" data-toggle="tooltip" data-placement="bottom" data-original-title='<strong>Пересадка</strong> 2 ч 15 м<br> в аэропорту «Адлер» Сочи' href="#"><img src="img/route-stop.png" alt=""></a>
+                                        <a class="route-path-end" href="#"><img src="img/route-end.png" alt=""></a>
+                                    </div>
+                                    <div class="route-finish">
+                                        <div class="route__time">10:00</div>
+                                        <div class="route__city">Санкт-Петербург</div>
+                                        <div class="route__date">22 мар 2019, пт</div>
+                                    </div>
+                                </div>
+                                <div class="segment-route">
+                                    <div class="route-start">
+                                        <div class="route__time">03:50</div>
+                                        <div class="route__city">Ташкент</div>
+                                        <div class="route__date">22 мар 2019, пт</div>
+                                    </div>
+                                    <div class="route-path">
+                                        <span class="text">Время в пути 9 ч. 10 мин.</span>
+                                        <a class="route-path-start" href="#"><img src="img/route-start.png" alt=""></a>
+                                        <a class="route-path-stop" data-toggle="tooltip" data-placement="bottom" data-original-title='<strong>Пересадка</strong> 2 ч 15 м<br> в аэропорту «Адлер» Сочи' href="#"><img src="img/route-stop.png" alt=""></a>
+                                        <a class="route-path-end" href="#"><img src="img/route-end.png" alt=""></a>
+                                    </div>
+                                    <div class="route-finish">
+                                        <div class="route__time">10:00</div>
+                                        <div class="route__city">Санкт-Петербург</div>
+                                        <div class="route__date">22 мар 2019, пт</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -323,7 +403,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <div class="container footer ">
         <div class="first-item">
@@ -358,9 +437,9 @@
     </div>
     <div class="jivo">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 83">
-  <path class="krug" d="M100 47H83a42 42 0 1 0-36 36c33-4 53-36 53-36zM51 82zm13-5zm-9 4zm-2 0z" fill="#fff"/>
-  <path d="M21 31a9 9 0 0 1 1-2 4 4 0 0 1 3-2h33a4 4 0 0 1 4 2 4 4 0 0 1 0 2v21a4 4 0 0 1-3 4H25a4 4 0 0 1-4-2 7 7 0 0 1 0-1V31zm4-1h1l15 15a1 1 0 0 0 2 0l15-15H25zm23 13l-4 3a4 4 0 0 1-5 0l-2-1-1-2-11 10h33zm-25 8l11-10-11-10zm37 0V32L50 42l10 10z" fill="#2189b9"/>
-</svg>
+            <path class="krug" d="M100 47H83a42 42 0 1 0-36 36c33-4 53-36 53-36zM51 82zm13-5zm-9 4zm-2 0z" fill="#fff" />
+            <path d="M21 31a9 9 0 0 1 1-2 4 4 0 0 1 3-2h33a4 4 0 0 1 4 2 4 4 0 0 1 0 2v21a4 4 0 0 1-3 4H25a4 4 0 0 1-4-2 7 7 0 0 1 0-1V31zm4-1h1l15 15a1 1 0 0 0 2 0l15-15H25zm23 13l-4 3a4 4 0 0 1-5 0l-2-1-1-2-11 10h33zm-25 8l11-10-11-10zm37 0V32L50 42l10 10z" fill="#2189b9" />
+        </svg>
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>

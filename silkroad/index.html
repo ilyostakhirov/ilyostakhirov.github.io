@@ -84,7 +84,7 @@
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane active" id="flights" role="tabpanel">
-                            <div class="tab-info wow fadeIn" data-wow-duration="1.3s" data-wow-delay="1s">
+                            <div class="tab-info">
                                 <h3>Авиабилеты</h3>
                                 <div class="search-item-main">
                                     <div class="search-item row">
@@ -108,7 +108,7 @@
                                                 <input placeholder="Дата вылета" type='text' data="datepicker" class="datepicker-here form-control" />
                                             </div>
                                         </div>
-                                        <div class="form-group col-md-2">
+                                        <div class="form-group back-date col-md-2">
                                             <img src="img/calendar-l.svg" width="24" height="19" alt="">
                                             <div class="form-wrap">
                                                 <input placeholder="Обратно" type='text' data="datepicker" class="datepicker-here form-control" />
@@ -121,26 +121,18 @@
                                         <img src="img/from.svg" width="16" height="22" alt="">
                                         <div class="form-wrap">
                                             <input type="text" placeholder="Откуда" class="form-control flexdatalist" data-data="countries.json" data-search-in='name' data-visible-properties='["name","capital","iso3"]' data-selection-required='true' data-min-length="1" name="country_name_capital_continent">
-                                            <span>Например: Самарканд, Ташкент</span>
                                         </div>
                                     </div>
                                     <div class="form-group col-md-4">
                                         <img src="img/where.svg" width="16" height="22" alt="">
                                         <div class="form-wrap">
                                             <input type="text" placeholder="Куда" class="form-control flexdatalist" data-data="countries.json" data-search-in='name' data-visible-properties='["name","capital","iso3"]' data-selection-required='true' data-min-length="1" name="country_name_capital_continent">
-                                            <span>Например: Ташкент, Самарканд</span>
                                         </div>
                                     </div>
                                     <div class="form-group col-md-2">
                                         <img width="" src="img/calendar-r.svg" width="24" height="19" alt="">
                                         <div class="form-wrap">
                                             <input placeholder="Дата вылета" type='text' data="datepicker" class="datepicker-here form-control" />
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-md-2">
-                                        <img src="img/calendar-l.svg" width="24" height="19" alt="">
-                                        <div class="form-wrap">
-                                            <input placeholder="Обратно" type='text' data="datepicker" class="datepicker-here form-control" />
                                         </div>
                                     </div>
                                     <a href="#" class="remove"><img src="img/x.svg" alt=""></a>
@@ -249,6 +241,12 @@
             <span>Служба поддержки<br> по авиабилетам</span>
             <div>(78) 140 05 55</div>
         </div>
+    </div>
+    <div class="jivo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 83">
+            <path class="krug" d="M100 47H83a42 42 0 1 0-36 36c33-4 53-36 53-36zM51 82zm13-5zm-9 4zm-2 0z" fill="#fff" />
+            <path d="M21 31a9 9 0 0 1 1-2 4 4 0 0 1 3-2h33a4 4 0 0 1 4 2 4 4 0 0 1 0 2v21a4 4 0 0 1-3 4H25a4 4 0 0 1-4-2 7 7 0 0 1 0-1V31zm4-1h1l15 15a1 1 0 0 0 2 0l15-15H25zm23 13l-4 3a4 4 0 0 1-5 0l-2-1-1-2-11 10h33zm-25 8l11-10-11-10zm37 0V32L50 42l10 10z" fill="#2189b9" />
+        </svg>
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>

@@ -57,7 +57,11 @@
                         </div>
                         <h2 class="s-heading-title mb-20">Личный данные</h2>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 form-bg">
+                                <div class="progress" data-plugin="progress">
+                        <div class="progress-bar progress-bar-success" style="width: 0;">
+                        </div>
+                      </div>
                                 <div class="form-group ">
                                     <label>Имя</label>
                                     <input type="text" class="form-control">
@@ -99,11 +103,10 @@
                             </div>
                             <div class="col-md-6 pt-10">
                                 <input type="file" name="thefile" id="thebox">
-
                                 <div class="alert alert-primary alert-w-img mt-20" role="alert">
-                  <img style="max-width: 80px;" class="mr-20" src="img/1.jpg" alt="">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                </div>
+                                    <img style="max-width: 80px;" class="mr-20" src="img/1.jpg" alt="">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </div>
                             </div>
                         </div>
                         <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -177,6 +180,30 @@
     $(function() {
         $('#thebox').picEdit({});
     });
+
+    var timer = 0,
+    perc = 0,
+    timeTotal = 2500,
+    timeCount = 1,
+    cFlag;
+
+function updateProgress(percentage) {
+    var x = (percentage/timeTotal)*100,
+        y = x.toFixed(3);
+    $('.progress-bar-success').css("width", x + "%");
+}
+
+function animateUpdate() {
+    if(perc < timeTotal) {
+        perc++;
+        updateProgress(perc);
+        timer = setTimeout(animateUpdate, timeCount);
+    }
+}
+
+$(document).ready(function() {
+animateUpdate();
+}); 
     </script>
 </body>
 

@@ -1117,3 +1117,31 @@ img{
     align-self: center;
     }
 }
+.form-bg{
+    position:relative;
+    &:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.3);
+    }
+    .progress {
+    display: -ms-flexbox;
+    display: flex;
+    height:15px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: .25rem;
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    width: calc(100% - 30px);
+    .progress-bar{
+        background-color: #5d21d2;
+    }
+}
+}

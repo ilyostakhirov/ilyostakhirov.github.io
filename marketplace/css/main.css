@@ -1335,3 +1335,32 @@ img {
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center; }
+
+.form-bg {
+  position: relative; }
+  .form-bg:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.3); }
+  .form-bg .progress {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    height: 15px;
+    overflow: hidden;
+    background-color: #ffffff;
+    -webkit-border-radius: .25rem;
+    border-radius: .25rem;
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px); }
+    .form-bg .progress .progress-bar {
+      background-color: #5d21d2; }

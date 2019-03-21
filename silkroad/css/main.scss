@@ -815,11 +815,13 @@ img {
 .repeatable-form {
     position: relative;
 }
-
+.search-item{
+    
+}
 .remove {
-    position: absolute;
-    right: 15px;
-    top: 5px;
+position: relative;
+    left: 15px;
+    top: 8px;
     background-color: #d16666;
     border-radius: 50%;
     width: 21px;
@@ -1383,6 +1385,18 @@ img {
 }
 }
 @media only screen and (max-width: 991px) {
+.repeatable-form {
+    position: relative;
+    background-color: #fff;
+    padding: 10px 0 0;
+        margin-bottom: 15px;
+}  
+.remove {
+    position: absolute;
+    right: -4px;
+    top: -10px;
+    left:inherit;
+}  
 a.top-filter-link{
     display: block;
 }
@@ -1447,6 +1461,7 @@ a.top-filter-link{
 .form-wrap {
     display: flex;
         margin-top: 5px;
+        flex-wrap: wrap;
     .custom-control{
         margin-right: 20px;
     }
@@ -1574,9 +1589,10 @@ a.top-filter-link{
     }
 
     .search-item .col-md-4,
-    .search-item .col-md-2 {
+    .search-item .col-md-2,.search-item .col-md-3 {
         flex: 0 0 50%;
         max-width: 50%;
+        margin-bottom: 15px!important;
     }
 
     .additional-fields .btn-group {
@@ -1750,9 +1766,13 @@ a.top-filter-link{
 @media only screen and (max-width: 520px) {
 
 
-
-
-    .search-item .col-md-4,
+.additional-fields .btn-group {
+    width: auto;
+}
+.top-filter .additional-fields .item:first-child {
+        justify-content: center;
+}
+    .search-item .col-md-4,.search-item .col-md-3,
     .search-item .col-md-2 {
         flex: 0 0 100%;
         max-width: 100%;

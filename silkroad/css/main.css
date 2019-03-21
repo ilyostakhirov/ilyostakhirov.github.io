@@ -907,9 +907,9 @@ img {
   position: relative; }
 
 .remove {
-  position: absolute;
-  right: 15px;
-  top: 5px;
+  position: relative;
+  left: 15px;
+  top: 8px;
   background-color: #d16666;
   border-radius: 50%;
   width: 21px;
@@ -1358,6 +1358,16 @@ a.top-filter-link {
     display: none; } }
 
 @media only screen and (max-width: 991px) {
+  .repeatable-form {
+    position: relative;
+    background-color: #fff;
+    padding: 10px 0 0;
+    margin-bottom: 15px; }
+  .remove {
+    position: absolute;
+    right: -4px;
+    top: -10px;
+    left: inherit; }
   a.top-filter-link {
     display: block; }
   .product-list-item {
@@ -1423,7 +1433,9 @@ a.top-filter-link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 5px; }
+    margin-top: 5px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
     .form-wrap .custom-control {
       margin-right: 20px; }
   .grey-bg {
@@ -1528,11 +1540,12 @@ a.top-filter-link {
     -ms-flex-positive: 1;
     flex-grow: 1; }
   .search-item .col-md-4,
-  .search-item .col-md-2 {
+  .search-item .col-md-2, .search-item .col-md-3 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
-    max-width: 50%; }
+    max-width: 50%;
+    margin-bottom: 15px !important; }
   .additional-fields .btn-group {
     width: calc(100% - 17px); }
   .touch-wrap {
@@ -1654,7 +1667,13 @@ a.top-filter-link {
     flex-direction: column; } }
 
 @media only screen and (max-width: 520px) {
-  .search-item .col-md-4,
+  .additional-fields .btn-group {
+    width: auto; }
+  .top-filter .additional-fields .item:first-child {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .search-item .col-md-4, .search-item .col-md-3,
   .search-item .col-md-2 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;

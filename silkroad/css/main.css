@@ -894,10 +894,13 @@ img {
   .close-filters svg {
     stroke: #9e9c9c; }
 
-.add-route-btn:hover {
+.top-filter .add-route-btn:hover {
   text-decoration: underline;
   -webkit-filter: brightness(0.8);
   filter: brightness(0.8); }
+
+.add-route-div .add-route-btn:hover {
+  color: #449bc4; }
 
 .custom-control:hover label {
   color: #4396bd;
@@ -905,6 +908,10 @@ img {
 
 .filter-sidebar .custom-control:hover label {
   color: #0371a5; }
+
+.touch-wrap .input-group .input-group-btn .btn:hover {
+  background-color: #177caa;
+  color: #fff; }
 
 .dropdown-item {
   font-size: 14px;

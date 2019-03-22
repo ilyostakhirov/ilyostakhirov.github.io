@@ -793,10 +793,16 @@ img {
         box-shadow: 1px 4px 12px 1px #bfbebe;
 }
 .close-filters {
-    position: absolute;
-    right: 13px;
-    top: 13px;
-    cursor:pointer;
+        position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    padding: 5px;
+    svg {
+    stroke: #9e9c9c;
+}
 }
 .dropdown-item {
     font-size: 14px;

@@ -1142,6 +1142,11 @@ img {
     border-left: .4em solid transparent;
     color: #2980a8; }
 
+.filter-sidebar .collapse-title.collapsed:before {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
+
 .filter-sidebar .collapse {
   margin: 20px 0; }
 

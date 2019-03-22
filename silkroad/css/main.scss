@@ -1093,7 +1093,9 @@ img {
             color: #2980a8;
         }
     }
-
+.collapse-title.collapsed:before{
+transform: rotate(-90deg);
+}
     .collapse {
         margin: 20px 0;
     }

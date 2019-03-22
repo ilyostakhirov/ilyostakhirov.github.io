@@ -894,6 +894,18 @@ img {
   .close-filters svg {
     stroke: #9e9c9c; }
 
+.add-route-btn:hover {
+  text-decoration: underline;
+  -webkit-filter: brightness(0.8);
+  filter: brightness(0.8); }
+
+.custom-control:hover label {
+  color: #4396bd;
+  cursor: pointer; }
+
+.filter-sidebar .custom-control:hover label {
+  color: #0371a5; }
+
 .dropdown-item {
   font-size: 14px;
   border-bottom: 1px solid #eee; }

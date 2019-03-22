@@ -84,6 +84,15 @@ body {
     color: #000;
 }
 
+a {
+    color: #449bc4;
+
+    &:hover {
+        color: #dcc71a;
+        text-decoration: none;
+    }
+}
+
 .wrap {
     background: url(../img/bg1.png) no-repeat 50% 50%;
     background-size: cover;
@@ -529,7 +538,6 @@ img {
         margin-right: 30px;
 
         a {
-            color: #449bc4;
             font-size: 14px;
             font-weight: 700;
         }
@@ -779,12 +787,17 @@ img {
     box-shadow: none;
 }
 
-.additional-fields .btn-warning:hover {
+.btn-warning:hover {
     background-color: #e7d435;
     border-color: #e7d435;
-    box-shadow: 1px 1px 9px 0px #d8d8d8;
+        box-shadow: 1px 4px 12px 1px #bfbebe;
 }
-
+.close-filters {
+    position: absolute;
+    right: 13px;
+    top: 13px;
+    cursor:pointer;
+}
 .dropdown-item {
     font-size: 14px;
     border-bottom: 1px solid #eee;
@@ -815,11 +828,11 @@ img {
 .repeatable-form {
     position: relative;
 }
-.search-item{
-    
-}
+
+.search-item {}
+
 .remove {
-position: relative;
+    position: relative;
     left: 15px;
     top: 8px;
     background-color: #d16666;
@@ -1101,6 +1114,10 @@ hr.dot {
         font-size: 12px;
         color: #000000;
         text-decoration: underline;
+        &:hover{
+            text-decoration:none;
+                color: #dcc71a;
+        }
 
         img {
             margin-right: 5px;
@@ -1227,9 +1244,10 @@ a.top-filter-link {
     img {
         margin-right: 5px;
     }
-    img{
-            filter: brightness(100);
-                max-width: 13px;
+
+    img {
+        filter: brightness(100);
+        max-width: 13px;
     }
 
     span:last-child {
@@ -1238,17 +1256,20 @@ a.top-filter-link {
         text-decoration: underline;
     }
 }
+
 .ul-img {
-li{
+    li {
         font-size: 14px;
-    line-height: 25px;
-    margin-bottom: 15px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+
+    img {
+        margin-right: 11px;
+        vertical-align: -6px;
+    }
 }
-img {
-    margin-right: 11px;
-    vertical-align: -6px;
-}
-}
+
 @media only screen and (max-width: 1300px) {
     .header .main-menu li {
         margin: 0 13px;
@@ -1376,106 +1397,130 @@ img {
         padding: 7px 0;
     }
 }
+
 @media (min-width:991px) {
     .top-filter .collapse:not(.show) {
-    display: block;
-}
-#open-filters{
-    display:none;
-}
-}
-@media only screen and (max-width: 991px) {
-.repeatable-form {
-    position: relative;
-    background-color: #fff;
-    padding: 10px 0 0;
-        margin-bottom: 15px;
-}  
-.remove {
-    position: absolute;
-    right: -4px;
-    top: -10px;
-    left:inherit;
-}  
-a.top-filter-link{
-    display: block;
-}
-.product-list-item {
-    flex-direction: column;
-        padding: 15px;
-}
-.product-list .ticket_buy-col {
-    max-width: 100%;
-    padding-right: 0;
-    border-right: none;
-    order: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-    border-top: 1px solid #ddd;
-    padding-top: 5px;
-}
-.product-list .ticket_content {
-    padding: 0;
-}
-.segment-route .route__city {
-    font-size: 12px;
-}
-.segment-route .route__time {
-    font-size: 20px;
-}
-.segment-route .route__date {
-    font-size: 11px;
-}
-.segment-route .route-path span.text {
-    font-size: 11px;
-        line-height: 1;
-}
-.fligts-reg .col-sm-6 {
-    padding: 0 15px!important;
-    margin-bottom:5px;
-}
-.fligts-reg span {
-    font-size: 12px;
-    font-weight: 700;
-    padding: 10px 0;
-}
-.jivo {
-    right: 5px;
-    bottom: 5px;
-    width: 45px;
-    height: 45px;
-}
-.product-list .ticket_buy-col .btn-warning {
-    order:2;
-        margin: 13px 0 0;
-}
-.product-list .ticket_buy-col p {
-    display:inline-block;
-    margin: 5px 0 5px 10px;
-}
-.product-list .ticket_buy-col .btn-warning strong {
-    display: inline-block; 
-}
-.form-wrap {
-    display: flex;
-        margin-top: 5px;
-        flex-wrap: wrap;
-    .custom-control{
-        margin-right: 20px;
+        display: block;
+    }
+
+    #open-filters {
+        display: none;
     }
 }
-.grey-bg{
-    padding-top:0;
-}
-.tabs-flight li a {
-    font-size: 12px;
-}
- #filter-collapse{
-    margin-bottom:20px;
- }
-#flight-filters {
+
+@media only screen and (max-width: 991px) {
+    .repeatable-form {
+        position: relative;
+        background-color: #fff;
+        padding: 10px 0 0;
+        margin-bottom: 15px;
+    }
+
+    .remove {
+        position: absolute;
+        right: -4px;
+        top: -10px;
+        left: inherit;
+    }
+
+    a.top-filter-link {
+        display: block;
+    }
+
+    .product-list-item {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .product-list .ticket_buy-col {
+        max-width: 100%;
+        padding-right: 0;
+        border-right: none;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        border-top: 1px solid #ddd;
+        padding-top: 5px;
+    }
+
+    .product-list .ticket_content {
+        padding: 0;
+    }
+
+    .segment-route .route__city {
+        font-size: 12px;
+    }
+
+    .segment-route .route__time {
+        font-size: 20px;
+    }
+
+    .segment-route .route__date {
+        font-size: 11px;
+    }
+
+    .segment-route .route-path span.text {
+        font-size: 11px;
+        line-height: 1;
+    }
+
+    .fligts-reg .col-sm-6 {
+        padding: 0 15px !important;
+        margin-bottom: 5px;
+    }
+
+    .fligts-reg span {
+        font-size: 12px;
+        font-weight: 700;
+        padding: 10px 0;
+    }
+
+    .jivo {
+        right: 5px;
+        bottom: 5px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .product-list .ticket_buy-col .btn-warning {
+        order: 2;
+        margin: 13px 0 0;
+    }
+
+    .product-list .ticket_buy-col p {
+        display: inline-block;
+        margin: 5px 0 5px 10px;
+    }
+
+    .product-list .ticket_buy-col .btn-warning strong {
+        display: inline-block;
+    }
+
+    .form-wrap {
+        display: flex;
+        margin-top: 5px;
+        flex-wrap: wrap;
+
+        .custom-control {
+            margin-right: 20px;
+        }
+    }
+
+    .grey-bg {
+        padding-top: 0;
+    }
+
+    .tabs-flight li a {
+        font-size: 12px;
+    }
+
+    #filter-collapse {
+        margin-bottom: 20px;
+    }
+
+    #flight-filters {
         position: fixed;
         width: 256px;
         background: #fff;
@@ -1501,41 +1546,45 @@ a.top-filter-link{
         -ms-transform: translateX(0);
         transform: translateX(0)
     }
-.filter-overlay {
-    background: rgba(255, 255, 255, .5);
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 99998;
-}
-#open-filters {
-    color: #fff;
-    background: #333;
-    position: fixed;
-    right: -12px;
-    top: 50%;
-    cursor: pointer;
-    z-index: 1000;
 
-    vertical-align: top;
-    transform: rotate(-90deg) translate(0, 100%);
-    border-radius: 5px 5px 0 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    padding: 5px 13px;
-    background-color: #e7d435;
-    -webkit-transition: all 0.3s linear 0s;
-    -o-transition: all 0.3s linear 0s;
-    transition: all 0.3s linear 0s;
-    color: #212529;
-    border: none;
-    cursor: pointer;
-}
+    .filter-overlay {
+        background: rgba(255, 255, 255, .5);
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 99998;
+    }
+
+    #open-filters {
+        color: #fff;
+        background: #333;
+        position: fixed;
+        right: -12px;
+        top: 50%;
+        cursor: pointer;
+        z-index: 1000;
+
+        vertical-align: top;
+        transform: rotate(-90deg) translate(0, 100%);
+        border-radius: 5px 5px 0 0;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 5px 13px;
+        background-color: #e7d435;
+        -webkit-transition: all 0.3s linear 0s;
+        -o-transition: all 0.3s linear 0s;
+        transition: all 0.3s linear 0s;
+        color: #212529;
+        border: none;
+        cursor: pointer;
+    }
+
     #open-filters {
         display: inline-block
     }
+
     .top-filter .col-md-3 {
         flex: 0 0 50%;
         max-width: 50%;
@@ -1589,10 +1638,11 @@ a.top-filter-link{
     }
 
     .search-item .col-md-4,
-    .search-item .col-md-2,.search-item .col-md-3 {
+    .search-item .col-md-2,
+    .search-item .col-md-3 {
         flex: 0 0 50%;
         max-width: 50%;
-        margin-bottom: 15px!important;
+        margin-bottom: 15px !important;
     }
 
     .additional-fields .btn-group {
@@ -1647,12 +1697,14 @@ a.top-filter-link{
     .header .right-header .lang li a {
         font-size: 13px;
     }
-    .ticket_buy-col > div{
-        text-align:center;
+
+    .ticket_buy-col>div {
+        text-align: center;
     }
+
     .segment-route .route-path {
-    margin: 0 10px;
-}
+        margin: 0 10px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1669,12 +1721,15 @@ a.top-filter-link{
         width: 100%;
         align-items: self-start;
     }
-.tabs-flight {
-    flex-direction: column;
-    li {
-    width: 100%;
-}
-}
+
+    .tabs-flight {
+        flex-direction: column;
+
+        li {
+            width: 100%;
+        }
+    }
+
     .third-item {
         position: absolute;
         right: 15px;
@@ -1766,13 +1821,16 @@ a.top-filter-link{
 @media only screen and (max-width: 520px) {
 
 
-.additional-fields .btn-group {
-    width: auto;
-}
-.top-filter .additional-fields .item:first-child {
+    .additional-fields .btn-group {
+        width: auto;
+    }
+
+    .top-filter .additional-fields .item:first-child {
         justify-content: center;
-}
-    .search-item .col-md-4,.search-item .col-md-3,
+    }
+
+    .search-item .col-md-4,
+    .search-item .col-md-3,
     .search-item .col-md-2 {
         flex: 0 0 100%;
         max-width: 100%;
@@ -1795,10 +1853,11 @@ a.top-filter-link{
 
 
 @media only screen and (max-width: 450px) {
-.page .header {
-    border: none;
-    padding: 10px 0;
-}
+    .page .header {
+        border: none;
+        padding: 10px 0;
+    }
+
     .ham {
         cursor: pointer;
         -webkit-tap-highlight-color: transparent;

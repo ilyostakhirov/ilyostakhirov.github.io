@@ -71,7 +71,7 @@ function filterSidebar() {
     var a = $("#flight-filters"),
         t = $("#open-filters"),
         i = $("body").find(".filter-overlay");
-    t.on("click", function() { a.hasClass("open") ? o() : e() }), $("body").on("click", ".filter-overlay", function() { o() })
+    t.on("click", function() { a.hasClass("open") ? o() : e() }), $("body").on("click", ".filter-overlay,.close-filters", function() { o() })
 }
 filterSidebar();
 $(document).ready(function() {

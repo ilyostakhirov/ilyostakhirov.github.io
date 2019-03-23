@@ -318,12 +318,17 @@ a {
     font-size: 14px;
     font-weight: 700;
     padding: 7px 25px;
+    transition: all .15s ease;
 }
-
+.btn:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08); 
+}
 .btn-warning {
     background-color: #e7d435;
     border-color: #e7d435;
     color: #000;
+
 }
 
 .page-wrap {

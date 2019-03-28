@@ -12,7 +12,7 @@ $amountrangeslider
   });
 
 $amount.on('input', function() {
-  $rangeslider.val(this.value).change();
+  $amountrangeslider.val(this.value).change();
 });
 
 

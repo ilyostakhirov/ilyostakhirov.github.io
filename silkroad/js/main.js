@@ -51,6 +51,13 @@ $(document).ready(function(e) {
         var concept = $(this).text();
         $('.type-fly').text(concept);
     });
+
+    $('.train-region-dropdown').find('a').click(function(e) {
+        e.preventDefault();
+        var param = $(this).attr("href").replace("#", "");
+        var concept = $(this).text();
+        $('.train-region').text(concept);
+    });
 });
 
 

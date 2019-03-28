@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Finance MarketPlace</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/picedit.min.css">
+    <link rel="stylesheet" href="css/dropzone.css">
+    <link rel="stylesheet" href="css/cropper.min.css">
+    <link rel="stylesheet" href="css/image-cropping.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -56,12 +58,13 @@
                             </div>
                         </div>
                         <h2 class="s-heading-title mb-20">Личный данные</h2>
+                        <div class="dropzone" id="myDropzone"></div>
                         <div class="row">
                             <div class="col-md-6 form-bg">
                                 <div class="progress" data-plugin="progress">
-                        <div class="progress-bar progress-bar-success" style="width: 0;">
-                        </div>
-                      </div>
+                                    <div class="progress-bar progress-bar-success" style="width: 0;">
+                                    </div>
+                                </div>
                                 <div class="form-group ">
                                     <label>Имя</label>
                                     <input type="text" class="form-control">
@@ -102,123 +105,28 @@
                                 </div>
                             </div>
                             <div class="col-md-6 pt-10">
-                                <!-- begin_picedit_box -->
-<div class="picedit_box">
-    <!-- Placeholder for messaging -->
-    <div class="picedit_message">
-         <span class="picedit_control ico-picedit-close" data-action="hide_messagebox"></span>
-        <div></div>
-    </div>
-    <!-- Picedit navigation -->
-    <div class="picedit_nav_box picedit_gray_gradient">
-        <div class="picedit_pos_elements"></div>
-       <div class="picedit_nav_elements">
-            <!-- Picedit button element begin -->
-            <div class="picedit_element">
-             <span class="picedit_control picedit_action ico-picedit-pencil" title="Pen Tool"></span>
-                 <div class="picedit_control_menu">
-                <div class="picedit_control_menu_container picedit_tooltip picedit_elm_3">
-                    <label class="picedit_colors">
-                      <span title="Black" class="picedit_control picedit_action picedit_black active" data-action="toggle_button" data-variable="pen_color" data-value="black"></span>
-                      <span title="Red" class="picedit_control picedit_action picedit_red" data-action="toggle_button" data-variable="pen_color" data-value="red"></span>
-                      <span title="Green" class="picedit_control picedit_action picedit_green" data-action="toggle_button" data-variable="pen_color" data-value="green"></span>
-                    </label>
-                    <label>
-                        <span class="picedit_separator"></span>
-                    </label>
-                    <label class="picedit_sizes">
-                      <span title="Large" class="picedit_control picedit_action picedit_large" data-action="toggle_button" data-variable="pen_size" data-value="16"></span>
-                      <span title="Medium" class="picedit_control picedit_action picedit_medium" data-action="toggle_button" data-variable="pen_size" data-value="8"></span>
-                      <span title="Small" class="picedit_control picedit_action picedit_small" data-action="toggle_button" data-variable="pen_size" data-value="3"></span>
-                    </label>
-                  </div>
-               </div>
-           </div>
-           <!-- Picedit button element end -->
-            <!-- Picedit button element begin -->
-            <div class="picedit_element">
-                <span class="picedit_control picedit_action ico-picedit-insertpicture" title="Crop" data-action="crop_open"></span>
-           </div>
-           <!-- Picedit button element end -->
-            <!-- Picedit button element begin -->
-            <div class="picedit_element">
-             <span class="picedit_control picedit_action ico-picedit-redo" title="Rotate"></span>
-                 <div class="picedit_control_menu">
-                <div class="picedit_control_menu_container picedit_tooltip picedit_elm_1">
-                    <label>
-                      <span>90° CW</span>
-                      <span class="picedit_control picedit_action ico-picedit-redo" data-action="rotate_cw"></span>
-                    </label>
-                    <label>
-                      <span>90° CCW</span>
-                      <span class="picedit_control picedit_action ico-picedit-undo" data-action="rotate_ccw"></span>
-                    </label>
-                  </div>
-               </div>
-           </div>
-           <!-- Picedit button element end -->
-           <!-- Picedit button element begin -->
-            <div class="picedit_element">
-             <span class="picedit_control picedit_action ico-picedit-arrow-maximise" title="Resize"></span>
-                 <div class="picedit_control_menu">
-                <div class="picedit_control_menu_container picedit_tooltip picedit_elm_2">
-                    <label>
-                        <span class="picedit_control picedit_action ico-picedit-checkmark" data-action="resize_image"></span>
-                        <span class="picedit_control picedit_action ico-picedit-close" data-action=""></span>
-                    </label>
-                    <label>
-                      <span>Width (px)</span>
-                      <input type="text" class="picedit_input" data-variable="resize_width" value="0">
-                    </label>
-                    <label class="picedit_nomargin">
-                        <span class="picedit_control ico-picedit-link" data-action="toggle_button" data-variable="resize_proportions"></span>
-                    </label>
-                    <label>
-                      <span>Height (px)</span>
-                      <input type="text" class="picedit_input" data-variable="resize_height" value="0">
-                    </label>
-                  </div>
-               </div>
-           </div>
-           <!-- Picedit button element end -->
-       </div>
-    </div>
-    <!-- Picedit canvas element -->
-    <div class="picedit_canvas_box">
-        <div class="picedit_painter">
-            <canvas></canvas>
-        </div>
-        <div class="picedit_canvas">
-            <canvas></canvas>
-        </div>
-        <div class="picedit_action_btns active">
-          <div class="picedit_control ico-picedit-picture" data-action="load_image"></div>
-          <div class="center">or copy/paste image here</div>
-        </div>
-    </div>
-    <!-- Picedit Video Box -->
-    <div class="picedit_video">
-        <video autoplay></video>
-        <div class="picedit_video_controls">
-            <span class="picedit_control picedit_action ico-picedit-checkmark" data-action="take_photo"></span>
-            <span class="picedit_control picedit_action ico-picedit-close" data-action="camera_close"></span>
-        </div>
-    </div>
-    <!-- Picedit draggable and resizeable div to outline cropping boundaries -->
-    <div class="picedit_drag_resize">
-        <div class="picedit_drag_resize_canvas"></div>
-        <div class="picedit_drag_resize_box">
-            <div class="picedit_drag_resize_box_corner_wrap">
-            <div class="picedit_drag_resize_box_corner"></div>
-            </div>
-            <div class="picedit_drag_resize_box_elements">
-                <span class="picedit_control picedit_action ico-picedit-checkmark" data-action="crop_image"></span>
-                <span class="picedit_control picedit_action ico-picedit-close" data-action="crop_close"></span>
-            </div>
-       </div>
-    </div>
-</div>
-<!-- end_picedit_box -->
+                                <div class="cropper-wrap">
+                                    <div class="cropper text-center" id="exampleFullCropper">
+                                        <img src="img/placeholder.png" alt="...">
+                                    </div>
+                                    <div class="cropper-toolbar text-center">
+                                        <div class="btn-group mb-20">
+                                            <button type="button" class="btn btn-primary" data-cropper-method="rotate" data-option="-90" data-toggle="tooltip" data-container="body" title="Turn Left">
+                                                <img src="img/rotate-ccw.svg" alt="">
+                                            </button>
+                                            <button type="button" class="btn btn-primary" data-cropper-method="rotate" data-option="90" data-toggle="tooltip" data-container="body" title="Turn Right">
+                                                <img src="img/rotate-cw.svg" alt="">
+                                            </button>
+                                            <label class="btn btn-primary mb-0" data-toggle="tooltip" for="inputImage" data-container="body" title="Upload File">
+                                                <input type="file" class="hidden-xs-up" id="inputImage" name="file" accept="image/*">
+                                                <img src="img/image.svg" alt="">
+                                            </label>
+                                            <button type="button" class="btn btn-primary" data-cropper-method="setDragMode" data-option="crop" data-toggle="tooltip" data-container="body" title="Crop">
+                                                <img src="img/check.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="alert alert-primary alert-w-img mt-20" role="alert">
                                     <img style="max-width: 80px;" class="mr-20" src="img/1.jpg" alt="">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -240,12 +148,19 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="text-center mt-30">
+                        <div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck1">
+  <label class="custom-control-label" for="customCheck1">Я ознакомлен и согласен с <a href="#">условиями публичной оферты</a></label>
+</div>
+</div>
                         <div class="mt-30 d-flex justify-content-between">
                             <a class="btn btn-secondary btn-lg" href="#"><svg class="mr-5 ml--9" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="square" stroke-linejoin="arcs">
                                     <path d="M15 18l-6-6 6-6" /></svg><span>Назад</span></a>
                             <a class="btn btn-primary btn-lg" href="#"><span>Дальше</span><svg class="ml-5 mr--9" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="square" stroke-linejoin="arcs">
                                     <path d="M9 18l6-6-6-6" /></svg></a>
                         </div>
+
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -289,44 +204,38 @@
             <div class="copyright"><img src="img/sqb.png" alt="">При поддержке Узпромстройбанка</div>
         </div>
     </div>
+    <div style="display: none" class="spinner-wrap">
+    <div class="spinner"></div>
+    </div>
     <script src='js/jquery.min.js'></script>
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/picedit.min.js"></script>
+    <script src="js/cropper.min.js"></script>
+    <script src="js/dropzone.js"></script>
+    <script src="js/image-cropping.min.js"></script>
     <script type="text/javascript">
-$(function() {
-        $('.picedit_box').picEdit({
-            imageUpdated: function(img){
-            },
-            formSubmitted: function(){
-            },
-            redirectUrl: false,
-            defaultImage: false
-        });
-    });
-
     var timer = 0,
-    perc = 0,
-    timeTotal = 2500,
-    timeCount = 1,
-    cFlag;
+        perc = 0,
+        timeTotal = 2500,
+        timeCount = 1,
+        cFlag;
 
-function updateProgress(percentage) {
-    var x = (percentage/timeTotal)*100,
-        y = x.toFixed(3);
-    $('.progress-bar-success').css("width", x + "%");
-}
-
-function animateUpdate() {
-    if(perc < timeTotal) {
-        perc++;
-        updateProgress(perc);
-        timer = setTimeout(animateUpdate, timeCount);
+    function updateProgress(percentage) {
+        var x = (percentage / timeTotal) * 100,
+            y = x.toFixed(3);
+        $('.progress-bar-success').css("width", x + "%");
     }
-}
 
-$(document).ready(function() {
-animateUpdate();
-}); 
+    function animateUpdate() {
+        if (perc < timeTotal) {
+            perc++;
+            updateProgress(perc);
+            timer = setTimeout(animateUpdate, timeCount);
+        }
+    }
+
+    $(document).ready(function() {
+        animateUpdate();
+    });
     </script>
 </body>
 

@@ -1581,6 +1581,13 @@ a.top-filter-link {
     margin-bottom: 1rem;
     color: #212529;
 }
+
+.back-date{
+    display: none!important;
+}
+.back-date.active{
+    display: flex!important;
+}
 @media (min-width:991px) {
     .top-filter .collapse:not(.show) {
         display: block;
@@ -1600,6 +1607,10 @@ a.top-filter-link {
         flex: 0 0 30%;
         max-width: 30%;
     }
+    .train-check {
+    order: -1;
+    margin-right: auto;
+}
 }
 
 @media only screen and (max-width: 991px) {

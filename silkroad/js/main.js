@@ -61,7 +61,7 @@ $(document).ready(function(e) {
 });
 
 
-
+$('.selectpicker').selectpicker();
 
 let burger = document.getElementById('burger'),
     nav = document.getElementById('main-nav');

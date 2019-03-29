@@ -724,13 +724,53 @@ img {
       margin-top: 5px;
       display: block; }
 
-.form-control {
+.form-control, .bootstrap-select .btn-light {
   background-color: #fff;
   border: 1px solid #bbb;
   border-radius: 7px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.11);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.11);
   font-size: 14px; }
+
+.bootstrap-select .btn {
+  padding: .375rem .75rem; }
+  .bootstrap-select .btn:hover {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; }
+  .bootstrap-select .btn .filter-option-inner-inner {
+    color: #495057;
+    font-weight: 400; }
+
+.search-item .dropdown-toggle::after {
+  display: none; }
+
+.search-item .bootstrap-select .dropdown-toggle .filter-option {
+  margin: 0;
+  padding: 0; }
+
+.search-item .bootstrap-select .dropdown-menu.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 5px; }
+  .search-item .bootstrap-select .dropdown-menu.show li {
+    width: 33%;
+    text-align: center; }
+
+.search-item .bootstrap-select .dropdown-menu li a {
+  background-color: #177caa;
+  border-radius: 5px;
+  margin: 2px 4px;
+  padding: 2px 4px;
+  color: #fff;
+  border: none;
+  width: auto; }
+  .search-item .bootstrap-select .dropdown-menu li a span {
+    margin: 0;
+    color: #fff; }
 
 .flexdatalist-results li {
   position: relative; }
@@ -1538,13 +1578,16 @@ a.top-filter-link {
   margin-bottom: 1rem;
   color: #212529; }
 
-.back-date {
+#train .back-date {
   display: none !important; }
 
-.back-date.active {
+#train .back-date.active {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important; }
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: 100%; }
 
 @media (min-width: 991px) {
   .top-filter .collapse:not(.show) {

@@ -1641,15 +1641,22 @@ a.top-filter-link {
     .close-filters {
         display: none;
     }
-.tab-info{
+    .search-item.row{
+        margin:0 -10px;
+    }
+.tab-pane{
     .search-item .col-md-2 {
         flex: 0 0 20%;
         max-width: 20%;
+            padding-right: 10px;
+    padding-left: 10px;
     }
 
     .search-item .col-md-4 {
         flex: 0 0 30%;
         max-width: 30%;
+            padding-right: 10px;
+    padding-left: 10px;
     }
     }
     .train-check {

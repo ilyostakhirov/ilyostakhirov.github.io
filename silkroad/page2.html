@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ru" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Utravel - Покупка билетов в Узбекистане</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/datepicker.min.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.flexdatalist.min.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.bootstrap-touchspin.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="page">
+    <div class="wrap">
+        <div class="container">
+            <div class="header wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
+                <a class="logo" href="#">
+                    <img src="img/logo.svg" alt="">
+                    <span>Путешествуй <br>в удовольствие</span>
+                </a>
+                <ul class="main-menu ul">
+                    <li><a class="active" href="#">Главная</a></li>
+                    <li><a href="#">Авиабилеты</a></li>
+                    <li><a href="#">Ж/д билеты</a></li>
+                    <li><a href="#">Туры</a></li>
+                    <li><a href="#">Гостиницы</a></li>
+                </ul>
+                <div class="right-header">
+                    <ul class="lang ul">
+                        <li class="active"><a href="#">РУС</a></li>
+                        <li><a href="#">UZB</a></li>
+                    </ul>
+                    <a class="btn btn-warning" href="#">Войти</a>
+                    <svg id="burger" class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                        <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                        <path class="line middle" d="m 30,50 h 40" />
+                        <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                    </svg>
+                </div>
+            </div>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a class="active" href="#">Главная</a></li>
+                    <li><a href="#">Авиабилеты</a></li>
+                    <li><a href="#">Ж/д билеты</a></li>
+                    <li><a href="#">Туры</a></li>
+                    <li><a href="#">Гостиницы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="container mt-50 mb-35">
+        <div class="row ">
+            <div class="col-lg-5">
+                <div class="d-flex align-items-center">
+                    <div>
+                        <svg class="fly-1" version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38">
+                            <path d="M28 38l6-6-1-4h1l2-2-2-2h-1v-3l2-2-2-2-1 1v-5l3-2 2-4 1-3V3c0-1-1-3-3-3h-1l-3 1-4 2-2 3h-5l1-1-2-2-2 2h-3V4l-2-2-2 2v1L6 4l-6 6 15 5-6 7H3l-3 3 8 5 5 8 3-3v-6l7-6 5 15zM13 28v4l-3-4-4-3h4l11-11L6 8l1-1 12 1 6 1h1l3-4 5-2h1v1l-2 5-4 3v1l1 6 1 12-1 1-6-15-11 11z" /></svg>
+                    </div>
+                    <strong class="title-strong ml-20">Оформление билетов <br> Ташкент - Сингапур за 780 USD</strong>
+                </div>
+            </div>
+            <div class="col-lg-7 mt-sm-30">
+                <ul class="ul trigl-ul">
+                    <li>Вылет 20 марта в 07:45 из Ташкента в Сингапур Багаж включен в стоимость, обмен билета со сбором, возврат билета со сбором. Пересадка в Куала-Лумпуре</li>
+                    <li>Вылет 29 марта в 11:45 из Сингапура в Ташкент Багаж включен в стоимость, обмен билета со сбором, возврат билета со сбором. Пересадка в Куала-Лумпуре</li>
+                    <li>Перелет осуществляет авиакомпания Узбекистон Хаво Йуллари</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row pt-20">
+            <div class="col-lg-7 pr-40 pr-sm-15">
+                <div class="segment-route mt-10">
+                    <div class="route-start">
+                        <div class="route__time">03:50</div>
+                        <div class="route__city">Ташкент</div>
+                        <div class="route__date">22 мар 2019, пт</div>
+                    </div>
+                    <div class="route-path">
+                        <span class="text">Время в пути 9 ч. 10 мин.</span>
+                        <a class="route-path-start" href="#"><img src="img/route-start.png" alt=""></a>
+                        <a class="route-path-stop" data-toggle="tooltip" data-placement="bottom" data-original-title='<strong>Пересадка</strong> 2 ч 15 м<br> в аэропорту «Адлер» Сочи' href="#"><img src="img/route-stop.png" alt=""></a>
+                        <a class="route-path-end" href="#"><img src="img/route-end.png" alt=""></a>
+                    </div>
+                    <div class="route-finish">
+                        <div class="route__time">10:00</div>
+                        <div class="route__city">Санкт-Петербург</div>
+                        <div class="route__date">22 мар 2019, пт</div>
+                    </div>
+                </div>
+                <div class="segment-route mt-30">
+                    <div class="route-start">
+                        <div class="route__time">03:50</div>
+                        <div class="route__city">Ташкент</div>
+                        <div class="route__date">22 мар 2019, пт</div>
+                    </div>
+                    <div class="route-path">
+                        <span class="text">Время в пути 9 ч. 10 мин.</span>
+                        <a class="route-path-start" href="#"><img src="img/route-start.png" alt=""></a>
+                        <a class="route-path-stop" data-toggle="tooltip" data-placement="bottom" data-original-title='<strong>Пересадка</strong> 2 ч 15 м<br> в аэропорту «Адлер» Сочи' href="#"><img src="img/route-stop.png" alt=""></a>
+                        <a class="route-path-end" href="#"><img src="img/route-end.png" alt=""></a>
+                    </div>
+                    <div class="route-finish">
+                        <div class="route__time">10:00</div>
+                        <div class="route__city">Санкт-Петербург</div>
+                        <div class="route__date">22 мар 2019, пт</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 mt-sm-30">
+                <h3 class="s-title mt-10"><img src="img/check2.svg" alt="">Тариф</h3>
+                <ul class="ul ul-img mt-15">
+                    <li>
+                        <img src="img/check1.svg" alt="">
+                        <span><strong>Ручная кладь:</strong> 8 кг для взрослого </span>
+                    </li>
+                    <li>
+                        <img src="img/check1.svg" alt="">
+                        <span><strong>Багаж:</strong> 20 кг для взрослого </span>
+                    </li>
+                    <li>
+                        <img src="img/check1.svg" alt="">
+                        <span><strong>Обмен билета со сбором</strong> </span>
+                    </li>
+                    <li>
+                        <img src="img/check1.svg" alt="">
+                        <span><strong>Возврат билета со сбором</strong></span>
+                    </li>
+                </ul>
+                <a href="#"><u>Подробно о ручной клади и багаже</u></a>
+            </div>
+        </div>
+    </div>
+    <div class="bg-logo">
+        <div class="container">
+            <div class="black-title mb-20">
+                Заполните поля
+            </div>
+            <div class="add-form">
+                <div class="form-group">
+                    <label class="pl-25">Фамилия</label>
+                    <div class="form-wrap">
+                        <img src="img/user.svg" alt="">
+                        <input type="text" class="form-control" placeholder="Введите фамилию">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Имя</label>
+                    <div class="form-wrap">
+                        <input type="text" class="form-control" placeholder="Введите имя">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="">Пол</label>
+                    <div class="form-wrap">
+                        <select class="selectpicker" title="Выберите пол">
+                            <option>Мужской</option>
+                            <option>Женский</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="pl-25">Дата рождения</label>
+                    <div class="form-wrap">
+                        <img width="15" src="img/calendar.svg" alt="">
+                        <input placeholder="Выберите дату" type='text' data="datepicker" class="datepicker-here form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="pl-25">Серия и номер паспорта</label>
+                    <div class="form-wrap">
+                        <img width="15" src="img/password.svg" alt="">
+                        <input type="text" class="form-control" placeholder="___ _________">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="pl-25">Срок документа</label>
+                    <div class="form-wrap">
+                        <img width="15" src="img/calendar.svg" alt="">
+                        <input placeholder="Выберите дату" type='text' data="datepicker" class="datepicker-here form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="pl-25">Телефон</label>
+                    <div class="form-wrap">
+                        <img width="15" src="img/tel.svg" alt="">
+                        <input placeholder="+998" type='text' class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="add_user mt-10">Добавить пассажира</a>
+
+<div class="d-flex mt-30 f-sm-col">
+    <div class="l-text mr-50">Стоимость билета с учётом всех<br> сборов и комиссий 780 USD</div>
+    <a class="btn-lg btn btn-warning align-self-center mt-sm-30" href="#">Перейти к оплате</a>
+</div>
+        </div>
+    </div>
+    <div class="container footer ">
+        <div class="first-item">
+            <a class="f-logo" href="#"><img src="img/logo-f.svg" alt=""></a>
+            <ul class="social ul">
+                <li><a href="#"><img src="img/fb.png" alt=""></a></li>
+                <li><a href="#"><img src="img/te.png" alt=""></a></li>
+                <li><a href="#"><img src="img/in.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="second-item ">
+            <ul class="ul footer-menu">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Правовая информация</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <p>ГУП “Центр управления проектами электронного правительства и цифровой экономики <br>
+                при Национальном агентстве проектного управления при Президенте Республики Узбекистан”</p>
+        </div>
+        <div class="third-item">
+            <ul class="footer-logoes ul">
+                <li><img src="img/visa.png" alt=""></li>
+                <li><img src="img/mastercard.png" alt=""></li>
+                <li><img class="mt-5" src="img/uzcard1.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="tel">
+            <span>Служба поддержки<br> по авиабилетам</span>
+            <div>(78) 140 05 55</div>
+        </div>
+    </div>
+    <div class="jivo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 83">
+            <path class="krug" d="M100 47H83a42 42 0 1 0-36 36c33-4 53-36 53-36zM51 82zm13-5zm-9 4zm-2 0z" fill="#fff" />
+            <path d="M21 31a9 9 0 0 1 1-2 4 4 0 0 1 3-2h33a4 4 0 0 1 4 2 4 4 0 0 1 0 2v21a4 4 0 0 1-3 4H25a4 4 0 0 1-4-2 7 7 0 0 1 0-1V31zm4-1h1l15 15a1 1 0 0 0 2 0l15-15H25zm23 13l-4 3a4 4 0 0 1-5 0l-2-1-1-2-11 10h33zm-25 8l11-10-11-10zm37 0V32L50 42l10 10z" fill="#2189b9" />
+        </svg>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/datepicker.min.js"></script>
+    <script src="js/jquery.flexdatalist.min.js"></script>
+    <script src="js/jquery.bootstrap-touchspin.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

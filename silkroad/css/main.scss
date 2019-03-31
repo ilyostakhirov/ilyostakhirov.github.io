@@ -1546,7 +1546,8 @@ a.top-filter-link {
     }
 
 }
-a.add_user{
+
+a.add_user {
     background: url(../img/add-user.svg) no-repeat 0 6px;
     color: black;
     font-size: 16px;
@@ -1554,24 +1555,29 @@ a.add_user{
     text-decoration: underline;
     padding: 5px 0 0 30px;
     display: inline-block;
-    &:hover{
-        text-decoration:none;
+
+    &:hover {
+        text-decoration: none;
     }
 }
-.l-text{
-font-size: 24px;
-line-height: 36px; 
+
+.l-text {
+    font-size: 24px;
+    line-height: 36px;
 }
+
 .btn-lg {
     padding: 13px 30px;
     font-size: 18px;
     font-weight: 700;
 }
-.bg-logo{
+
+.bg-logo {
     padding: 35px 0;
     background-size: cover;
-    background:#f2f2f2 url(../img/logo-u.svg) no-repeat 100% 70%;
+    background: #f2f2f2 url(../img/logo-u.svg) no-repeat 100% 70%;
 }
+
 @media only screen and (max-width: 1300px) {
     .header .main-menu li {
         margin: 0 13px;
@@ -2036,19 +2042,23 @@ h3.s-title {
 }
 
 @media only screen and (max-width: 991px) {
-  .add-form .form-group {
-    width: 50%;
-    .form-wrap{
-        flex-wrap: nowrap;
-        margin:0;
+    .add-form .form-group {
+        width: 50%;
+
+        .form-wrap {
+            flex-wrap: nowrap;
+            margin: 0;
+        }
     }
-}  
-.mt-sm-30{
-    margin-top:30px;
-}
-.pr-sm-15{
-    padding-right: 15px!important;
-}
+
+    .mt-sm-30 {
+        margin-top: 30px;
+    }
+
+    .pr-sm-15 {
+        padding-right: 15px !important;
+    }
+
     .steps {
         flex-direction: column;
     }
@@ -2500,24 +2510,28 @@ h3.s-title {
     .additional-fields {
         flex-direction: column;
     }
+
     .l-text {
-    font-size: 18px;
-    line-height: 25px;
-}
+        font-size: 18px;
+        line-height: 25px;
+    }
 }
 
 @media only screen and (max-width: 520px) {
 
-.title-strong {
-    font-size: 18px;
-    line-height: 23px;
-}
-ul.trigl-ul li {
-    font-size:14px;
-}
-.f-sm-col{
-    flex-direction: column;
-}
+    .title-strong {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    ul.trigl-ul li {
+        font-size: 14px;
+    }
+
+    .f-sm-col {
+        flex-direction: column;
+    }
+
     .additional-fields .btn-group {
         width: auto;
     }

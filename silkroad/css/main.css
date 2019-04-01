@@ -2282,7 +2282,9 @@ h3.s-title {
   .search-item .form-group img {
     width: 22px; }
   .footer .footer-logoes li:not(:first-child) {
-    margin-left: 10px; } }
+    margin-left: 10px; }
+  .add-form .form-group {
+    width: 100%; } }
 
 @media only screen and (max-width: 450px) {
   .page .header {

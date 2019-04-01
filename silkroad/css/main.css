@@ -1079,8 +1079,8 @@ img {
 .train-item {
   background: #fff url(../img/train.svg) no-repeat 100% 100%; }
   .train-item .ticket_buy-col {
-    max-width: 250px;
-    width: 250px;
+    max-width: 200px;
+    width: 200px;
     padding-right: 20px;
     border-right: 1px solid #bbbbbb; }
   .train-item .ticket_content {
@@ -1089,13 +1089,24 @@ img {
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    padding-right: 0; }
     .train-item .ticket_content .segment-route {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       width: 100%;
-      margin: 0; }
+      margin: 0;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .train-item .ticket_content .segment-route .route-path {
+        -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+        order: -1;
+        width: 100%;
+        margin: 0 40px 0 0; }
+      .train-item .ticket_content .segment-route .route-finish {
+        margin-left: auto; }
 
 .page-tab {
   border-bottom: 2px solid #e0e0e0;

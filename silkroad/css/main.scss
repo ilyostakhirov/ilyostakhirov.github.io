@@ -1022,8 +1022,8 @@ img {
     background: #fff url(../img/train.svg) no-repeat 100% 100%;
 
     .ticket_buy-col {
-        max-width: 250px;
-        width: 250px;
+        max-width: 200px;
+        width: 200px;
         padding-right: 20px;
         border-right: 1px solid #bbbbbb;
     }
@@ -1031,6 +1031,7 @@ img {
     .ticket_content {
         display: flex;
         align-items: center;
+        padding-right: 0;
 
         .segment-route {
             display: -webkit-box;
@@ -1038,6 +1039,15 @@ img {
             display: flex;
             width: 100%;
             margin: 0;
+            flex-wrap: wrap;
+            .route-path{
+            order: -1;
+            width: 100%;
+            margin:0 40px 0 0;
+            }
+            .route-finish{
+              margin-left: auto;  
+            }
         }
     }
 }
@@ -2004,6 +2014,7 @@ h3.s-title {
         margin-right: 12px;
     }
 }
+
 
 @media (min-width:991px) {
     .top-filter .collapse:not(.show) {

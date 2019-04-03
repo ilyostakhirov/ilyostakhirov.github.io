@@ -2015,7 +2015,66 @@ h3.s-title {
     }
 }
 
-
+.user-info-table{
+    th{
+        font-size:12px;
+        font-weight:400!important;
+    }
+    td{
+        font-weight:700;
+        font-size:17px;
+    }
+}
+table.kvitansiya_table{
+    border:2px solid #449bc4;
+    thead{
+        th{
+                background-color: #449bc4;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 400;
+        }
+    }
+    tbody{
+        
+        td{
+            padding: 10px 15px;
+            span{
+                display:inline-block;
+                font-size: 15px;
+                width: 100px;
+            }
+            strong{
+                display:inline-block;
+                 font-size: 18px;
+            }
+        }
+    }
+    tfoot{
+        border-top:1px dashed #000;
+        th{
+            padding: 10px 15px;
+            font-size: 18px;
+            strong{
+font-size: 20px;
+            }
+        }
+    }
+}
+.f18{
+    font-size:18px;
+}
+.blue-b-r{
+   background-color: #449bc4;
+   border-radius:10px;
+  padding: 15px 25px;
+   display:flex; 
+       align-items: center;
+    justify-content: space-between;
+    font-size: 17px;
+    color: #fff;
+}
 @media (min-width:991px) {
     .top-filter .collapse:not(.show) {
         display: block;

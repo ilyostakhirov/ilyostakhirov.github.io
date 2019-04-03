@@ -1888,6 +1888,58 @@ h3.s-title {
     vertical-align: -7px;
     margin-right: 12px; }
 
+.user-info-table th {
+  font-size: 12px;
+  font-weight: 400 !important; }
+
+.user-info-table td {
+  font-weight: 700;
+  font-size: 17px; }
+
+table.kvitansiya_table {
+  border: 2px solid #449bc4; }
+  table.kvitansiya_table thead th {
+    background-color: #449bc4;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 400; }
+  table.kvitansiya_table tbody td {
+    padding: 10px 15px; }
+    table.kvitansiya_table tbody td span {
+      display: inline-block;
+      font-size: 15px;
+      width: 100px; }
+    table.kvitansiya_table tbody td strong {
+      display: inline-block;
+      font-size: 18px; }
+  table.kvitansiya_table tfoot {
+    border-top: 1px dashed #000; }
+    table.kvitansiya_table tfoot th {
+      padding: 10px 15px;
+      font-size: 18px; }
+      table.kvitansiya_table tfoot th strong {
+        font-size: 20px; }
+
+.f18 {
+  font-size: 18px; }
+
+.blue-b-r {
+  background-color: #449bc4;
+  border-radius: 10px;
+  padding: 15px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 17px;
+  color: #fff; }
+
 @media (min-width: 991px) {
   .top-filter .collapse:not(.show) {
     display: block; }

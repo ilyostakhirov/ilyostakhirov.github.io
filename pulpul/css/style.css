@@ -1,0 +1,215 @@
+/*--------------------------------------------------------------
+✍️ FONTS
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:700,900');
+
+.wrapper-content {
+    color: #F0CEA0;
+}
+
+/* wrapperTitle */
+.wrapper-content__title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2vw;
+    visibility: hidden;
+}
+
+/* wrapperPrgph */
+.container-txt {
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    /*visibility: hidden;*/
+}
+
+.container-txt__line {
+    position: relative;
+    visibility: hidden;
+}
+
+.p-content {
+/*     position: relative; */
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1vw;
+}
+.bg-small{
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    bottom: 0;
+}
+.iphone{
+    position:absolute;
+    /*right: 30%;*/
+    top: 50%;
+    width: 363px;
+    height: 727px;
+    /*transform: translate3d(181px, -50%, 0);*/
+    background: url(../img/iphone.png) center center no-repeat;
+    background-size: cover;
+}
+/*--------------------------------------------------------------
+🚧 GLOBAL LAYOUT
+--------------------------------------------------------------*/
+/*General*/
+html,
+body {
+    min-height: 100%;
+	min-height: 100vh;
+	overflow-x: hidden;
+    margin: 0;
+}
+
+/*header & footer*/
+#masthead,
+#colophon {
+    position: relative;
+    z-index: 1;
+    background: rgba(0,0,0,0.2);
+}
+
+.section {
+    /*height: calc(100vh - 136px);*/
+    background: #29335C;
+}
+
+/* Wrappers */
+.wrapper-content {
+    position: relative;
+    z-index: 2;
+    top: calc(-136px / 2); /*the menu height/2 */
+    width: 60%;
+    max-height: 100%;
+    border: 1px solid transparent;
+
+    margin: 0 auto;
+    background: transparent;
+    text-align: center;
+    overflow: visible;
+}
+
+
+/*--------------------------------------------------------------
+✍️ EACH SECTION
+--------------------------------------------------------------*/
+/*COMMON*/
+/*circles*/
+.circles {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    top: calc(50% - 68px); /*the menu height/2 */
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    left: 50%;
+}
+
+/*SECTION #1*/
+/*circles*/
+.circles-intro {
+    height: 0;
+    mix-blend-mode: difference;
+}
+
+/* SECTION 2️⃣ */
+/*circles*/
+#circle-left,
+#circle-right {
+    mix-blend-mode: difference;
+/*     transition: all 0.3s ease-in-out; */
+}
+
+/* hover 🚀 */
+/* #section-2 .fp-tableCell:hover #circle-left {
+    left: 5% !important;
+    transform: translate(0, -50%);
+}
+
+#section-2 .fp-tableCell:hover #circle-right {
+    left: -5% !important;
+    transform: translate(0, -50%);
+} */
+
+/* SECTION #3 */
+#circle-grow {
+    width: 0;
+    height: 0;
+}
+
+/* SECTION #4 */
+/* #circle-border {
+    width: 50%;
+    height: 50%;
+    fill: #F3A712;
+    stroke: #F0CEA0;
+    stroke-width : 5;
+} */
+
+.piechart {
+    width: 50%;
+    height: 50%;
+}
+
+#circle-piechart {
+/*     width: 50%; */
+/*     height: 50%; */
+    fill: transparent;
+    stroke-width:31.8309886184;
+    stroke-dasharray: 0,0,0,99;
+    stroke-dashoffset: 25;
+    stroke:red;
+}
+
+/* SECTION #5 */
+.circles-radar {
+    width: 50%;
+    height: 50%;
+    fill: transparent;
+}
+
+/*--------------------------------------------------------------
+🐛 FULLPAGE LIB UI
+--------------------------------------------------------------*/
+/* Navigation __ common */
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: #F0CEA0;
+    transition: all 0.3s ease-in-out;
+}
+
+#fp-nav ul li:nth-child(1) a span {
+    background: lightblue;
+}
+
+#fp-nav ul li:nth-child(2) a span {
+    background: green;
+}
+
+#fp-nav ul li:nth-child(3) a span {
+    background: #DB2B39;
+}
+
+#fp-nav ul li:nth-child(4) a span {
+    background: #F3A712;
+}
+
+#fp-nav ul li:nth-child(5) a span {
+    background: transparent;
+    border: 0.5px solid white;
+}
+
+/* Navigation __ active & hover */
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+    background: #F3A712;
+}
+
+/* Tooltips */
+#fp-nav ul li .fp-tooltip {
+    color: #F0CEA0;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}

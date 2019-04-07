@@ -1,195 +1,110 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html class="no-js wide wow-animation" lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <title>wip2 / Fullpage.js + GSAP</title>
-  
-  
-  <link rel='stylesheet' href='https://tmp.pixelmort.top/js/fullpage.js/jquery.fullpage.css'>
-
-      <link rel="stylesheet" href="css/style.css">
-
-  
+    <title>PulPul</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
-
-  <div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main">
-
-		<!-- Barba wrapper -->
-		<div id="barba-wrapper">
-			<div class="barba-container">
-
-				<div id="fullpage">
-
-					<!-- SECTION 1️⃣ -->
-					<section id="section-1"class="section active">
-						<!-- circles -->
-						<div id="circle-intro-1" class="bg-small"></div>
-                        <div id="iphone" class="iphone">
-                            
+<body class="width-100">
+    <div class="page">
+        <header class="animated fadeInLeft fast  delay-2s">
+            <nav>
+                <div class="container-fluid">
+                    <a href="#" class="logo"><img src="img/logo.svg" alt=""></a>
+                    <div class="top-menu">
+                        <a class="lang mr-30" href="#">UZ</a>
+                        <a class="btn btn-white" href="#">Cкачать</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="no-inset full-screen">
+            <div class="swiper-container swiper-vertical-pagination swiper-container-vertical">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-home cover-background">
+                        <div class="info-wrap">
+                            <div data-swiper-animation="fadeIn" data-duration="1s" data-delay="0.6s" class="iphone"></div>
+                            <div  class="text-slide">
+                                <h3 data-swiper-animation="fadeInUp" data-duration="2s" data-delay="0.1s">Новое-новое <br>приложение <strong>PulPul</strong></h3>
+                                <p data-swiper-animation="fadeInUp" data-duration="1s" data-delay="0.2s">это современное средство для управления <br>
+                                    вашими финансами на банковских картах</p>
+                                <div class="btns-link">
+                                  <a data-swiper-animation="fadeInUp" data-duration="1s" data-delay="0.7s" href="#"><img src="img/appstore.svg" alt=""></a>
+                                  <a data-swiper-animation="fadeInUp" data-duration="1s" data-delay="0.8s" href="#"><img src="img/googleplay.svg" alt=""></a>
+                                </div>    
+                            </div>
                         </div>
-						<!-- content wrapper -->
-						<div class="wrappers wrapper-content">
-                            <!-- title -->
-							<h2 id="title-1" class="wrapper-content__title">Новое-новое<br> приложение PulPul</h2>
-                            <!-- paragraph -->
-                            <div class="container-txt">
-                                <div class="container-txt__line">
-                                    <span class="p-content">это современное средство для управления</span>
-                                </div>
-                                
-                                <div class="container-txt__line">
-                                    <span class="p-content">вашими финансами на банковских картах</span>
-                                </div>
+                        <div  data-swiper-animation="heightGrow" data-duration="0.2s" data-delay="0.1s"  class="slide-sidebar"></div>
+                    </div>
+                    <div class="swiper-slide swiper-first cover-background">
+                        <div class="info-wrap">
+                            <div data-swiper-animation="fadeIn" data-duration="1s" data-delay="0.6s" class="iphone"></div>
+                            <div class="text-slide">
+                                <h3 data-swiper-animation="fadeInUp" data-duration="2s" data-delay="0.1s">Удобная-удобная <br>навигация в <strong>PulPul</strong></h3>
+                                <p data-swiper-animation="fadeInUp" data-duration="1s" data-delay="0.2s">для быстрого доступа к последним <br>платежам и переводам</p>
                             </div>
-						</div>
-					</section>
-
-					<!-- SECTION 2️⃣ -->
-					<section id="section-2"class="section">
-                         <div class="iphone">
-                            
                         </div>
-						<!-- circles -->
-						<svg id="circle-left" class="circles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 406 406">
-							<circle class="st0" cx="203" cy="203" r="202.5"/>
-						</svg>
-						<svg id="circle-right" class="circles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 406 406">
-							<circle class="st0" cx="203" cy="203" r="202.5"/>
-						</svg>
-						<!-- content wrapper -->
-						<div id="wrapper-content-2" class="wrappers wrapper-content">
-                            <!-- title -->
-							<h2 class="wrapper-content__title hover-2">Section 2</h2>
-                            <!-- paragraph -->
-                            <div class="container-txt hover-2">
-                                <div class="container-txt__line">
-                                    <span class="p-content">Lorem ipsum dolor sit amet, consectetur</span>
-                                </div>
-                                
-                                <div class="container-txt__line">
-                                    <span class="p-content">adipisicing elit. Ab cumque, recusandae</span>
-                                </div>
-                                
-                                <div class="container-txt__line">
-                                    <span class="p-content">earum ratione, provident vel.</span>
-                                </div>
+                        <div  data-swiper-animation="heightGrow" data-duration="0.2s" data-delay="0.1s"  class="slide-sidebar"></div>
+                    </div>
+                    <div class="swiper-slide swiper-second cover-background">
+                        <div class="info-wrap">
+                            <div data-swiper-animation="fadeIn" data-duration="1s" data-delay="0.6s" class="iphone"></div>
+                            <div data-swiper-animation="fadeIn" data-duration=".5s" data-delay="1s" class="text-slide">
+                                <h3 data-swiper-animation="fadeInUp" data-duration="2s" data-delay="0.1s">Умные-умные <br>P2P-переводы по контакту</h3>
+                                <p data-swiper-animation="fadeInUp" data-duration="1s" data-delay="0.2s">с возможностью запроса/перевода в долг, <br>
+                                    а также возврата полученных в долг средств</p>
                             </div>
-						</div>
-					</section>
-
-					<!-- SECTION 3️⃣ -->
-					<section id="section-3"class="section">
-                        <!-- circles -->
-                        <svg id="circle-grow" class="circles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 406 406">
-							<circle class="st0" cx="203" cy="203" r="202.5"/>
-						</svg>
-                        <!-- content wrapper -->
-						<div id="wrapper-content-3"  class="wrappers wrapper-content">
-                            <!-- title -->
-							<h2 class="wrapper-content__title hover-3">Section 3</h2>
-                            <!-- paragraph -->
-                            <div class="container-txt hover-3">
-                                <div class="container-txt__line">
-                                    <span class="p-content">Lorem ipsum dolor sit amet, consectetur</span>
-                                </div>
-                                
-                                <div class="container-txt__line">
-                                    <span class="p-content">adipisicing elit. Ab cumque, recusandae</span>
-                                </div>
-                                
-                                <div class="container-txt__line">
-                                    <span class="p-content">earum ratione, provident vel.</span>
-                                </div>
+                        </div>
+                        <div  data-swiper-animation="heightGrow" data-duration="0.2s" data-delay="0.1s"  class="slide-sidebar"></div>
+                    </div>
+                    <div class="swiper-slide swiper-third cover-background">
+                        <div class="info-wrap">
+                            <div data-swiper-animation="fadeIn" data-duration="1s" data-delay="0.6s" class="iphone"></div>
+                            <div data-swiper-animation="fadeIn" data-duration=".5s" data-delay="1s" class="text-slide">
+                                <h3 data-swiper-animation="fadeInUp" data-duration="2s" data-delay="0.1s">Дели-дели <br>счет между друзьями в <strong>PulPul</strong></h3>
+                                <p data-swiper-animation="fadeInUp" data-duration="1s" data-delay="0.2s">после совместного обеда или для сбора <br>средств на подарок (совместной покупке)</p>
                             </div>
-						</div>
-					</section>
-
-					<!-- SECTION 4️⃣ -->
-					<section id="section-4"class="section ">
-                        <!-- circles -->
-<!--                         <svg id="circle-border" class="circles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 406 406">
-							<circle id="circle-path" class="st0" cx="203" cy="203" r="202.5"/>
-						</svg> -->
-                        <svg class="circles piechart" viewBox="0 0 63.6619772368 63.6619772368">
-                            <circle id="circle-piechart" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
-                        </svg>
-						<!-- content wrapper -->
-						<div id="wrapper-content-4" class="wrappers wrapper-content">
-                            <!-- title -->
-							<h2 class="wrapper-content__title">Section 4</h2>
-                            <!-- paragraph -->
-                            <div class="container-txt">
-                                <div class="container-txt__line">
-                                    <span class="p-content">Lorem ipsum dolor sit amet, consectetur</span>
-                                </div>
-                                
-                                <div class="container-txt__line">
-                                    <span class="p-content">adipisicing elit. Ab cumque, recusandae</span>
-                                </div>
-                                
-                                <div class="container-txt__line">
-                                    <span class="p-content">earum ratione, provident vel.</span>
-                                </div>
+                        </div>
+                        <div  data-swiper-animation="heightGrow" data-duration="0.2s" data-delay="0.1s"  class="slide-sidebar"></div>
+                    </div>
+                    <div class="swiper-slide swiper-fourth cover-background">
+                        <div class="info-wrap">
+                            <div data-swiper-animation="fadeIn" data-duration="1s" data-delay="0.6s" class="iphone"></div>
+                            <div class="text-slide">
+                                <h3 data-swiper-animation="fadeInUp" data-duration="2s" data-delay="0.1s">Покупай-покупай <br>товары и оплачивай услуги <br>не выходя из приложения <strong>PulPul</strong></h3>
+                                <p data-swiper-animation="fadeInUp" data-duration="1s" data-delay="0.2s">Например, вы можете приобрести авиабилеты <br>
+                                    с помощью сервиса abquick.uz</p>
                             </div>
-						</div>
-					</section>
-
-					<!-- SECTION 5️⃣ -->
-					<section id="section-5"class="section">
-                        <!-- circles -->
-                        <svg id="circle-radar-1" class="circles circles-radar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 406 406">
-							<circle id="circle-path" class="st0" cx="203" cy="203" r="202.5"/>
-						</svg>
-                        <svg id="circle-radar-2" class="circles circles-radar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 406 406">
-							<circle id="circle-path" class="st0" cx="203" cy="203" r="202.5"/>
-						</svg>
-                        <svg id="circle-radar-3" class="circles circles-radar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 406 406">
-							<circle id="circle-path" class="st0" cx="203" cy="203" r="202.5"/>
-						</svg>
-                        <svg id="circle-radar-4" class="circles circles-radar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 406 406">
-							<circle id="circle-path" class="st0" cx="203" cy="203" r="202.5"/>
-						</svg>
-						<!-- content wrapper -->
-						<div id="wrapper-content-5" class="wrappers wrapper-content">
-                            <!-- title -->
-							<h2 class="wrapper-content__title">Section 5</h2>
-                            <!-- paragraph -->
-                            <div class="container-txt">
-                                <div class="container-txt__line">
-                                    <span class="p-content">Lorem ipsum dolor sit amet, consectetur</span>
-                                </div>
-                                
-                                <div class="container-txt__line">
-                                    <span class="p-content">adipisicing elit. <a href=#>Ab cumque</a>, recusandae</span>
-                                </div>
-                                
-                                <div class="container-txt__line">
-                                    <span class="p-content">earum ratione, provident vel.</span>
-                                </div>
+                        </div>
+                        <div  data-swiper-animation="heightGrow" data-duration="0.2s" data-delay="0.1s"  class="slide-sidebar"></div>
+                    </div>
+                    <div class="swiper-slide swiper-fifth cover-background">
+                        <div class="info-wrap">
+                            <div data-swiper-animation="fadeIn" data-duration="1s" data-delay="0.6s" class="iphone"></div>
+                            <div class="text-slide">
+                                <h3 data-swiper-animation="fadeInUp" data-duration="2s" data-delay="0.1s">Контролируй-контролируй <br>свои расходы и доходы с помощью функции «Бюджет»</h3>
+                                <p data-swiper-animation="fadeInUp" data-duration="1s" data-delay="0.2s">для быстрого доступа к последним
+                                    платежам и переводам</p>
                             </div>
-						</div>
-					</section>
-				</div>
-
-			</div> <!-- .barba-container -->
-		</div> <!-- #barba-wrapper -->
-	</main><!-- #main -->
-</div><!-- #primary -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-<script src='https://tmp.pixelmort.top/js/fullpage.js/jquery.fullPage.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
-
-  
-
-    <script  src="js/index.js"></script>
-
-
-
-
+                        </div>
+                        <div  data-swiper-animation="heightGrow" data-duration="0.2s" data-delay="0.1s"  class="slide-sidebar"></div>
+                    </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination-white"></div>
+            </div>
+        </section>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/SwiperAnimation.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

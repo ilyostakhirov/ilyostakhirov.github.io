@@ -2075,6 +2075,95 @@ font-size: 20px;
     font-size: 17px;
     color: #fff;
 }
+
+@mixin matrix($x, $y, $angle){
+  -ms-transform: translate($x,$y) rotate($angle);
+  -moz-transform: translate($x,$y) rotate($angle);
+  -webkit-transform: translate($x,$y) rotate($angle);
+  transform: translate($x,$y) rotate($angle);
+}
+body{
+  background: #232B2F;
+}
+
+.loader {
+    background: rgba(68, 155, 196, 0.71);
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+.flight{
+  width:200px;
+  height:100px;
+  background:url(../img/airliner.png) center no-repeat;
+  background-size:100%;
+  position:fixed;
+  bottom:-8px;
+  right:0;
+  &.run{
+    animation: landFlight linear 5s;
+  }
+}
+.runway{
+  width:95%;
+  height:1px;
+  border-top:1px dotted #eee;
+  background:#333;
+  position:fixed;
+  bottom:5px;
+  right:0;
+  .runwayNo{
+    position:absolute;
+    border:1px dotted #eee;
+    width:50px;
+    color: #fff;
+    bottom:23px;
+    left:-30px;
+    text-align:center;
+    padding:5px 0;
+    &:after{
+      position:absolute;
+      height:20px;
+      width:10px;
+      border:1px dotted #fff;
+      content:'';
+      bottom:-23px;
+      left:18px;
+    }
+  }
+}
+@keyframes landFlight {
+    0% { 
+      @include matrix(0,0, 0deg);
+    }
+    20% { 
+      @include matrix(-400px,-1px, 0deg);
+    }
+    30% { 
+      @include matrix(-450px,-2px, 0deg);
+    }
+    38% {
+       @include matrix(-500px,-5px, 10deg);
+    }
+    39% {
+       @include matrix(-510px,-10px, 15deg);
+    }
+    40% {
+       @include matrix(-520px,-12px, 20deg);
+    }
+    50% {
+      @include matrix(-600px,-50px, 20deg);
+    }
+    60% {
+      @include matrix(-700px,-100px, 20deg);
+    }
+    100% {
+      @include matrix(-2000px,-750px, 20deg);
+    }
+}
 @media (min-width:991px) {
     .top-filter .collapse:not(.show) {
         display: block;

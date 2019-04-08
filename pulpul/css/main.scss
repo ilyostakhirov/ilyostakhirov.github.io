@@ -269,7 +269,7 @@ header {
     transition: transform 350ms cubic-bezier(.591,-.623,.251,1.74),-webkit-transform 350ms cubic-bezier(.591,-.623,.251,1.74);
     &:hover{
             transform: scale(1.05);
-            box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.4);
+            box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.2);
     }
 }
 

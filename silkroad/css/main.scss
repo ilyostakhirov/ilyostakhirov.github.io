@@ -2082,15 +2082,19 @@ font-size: 20px;
   -webkit-transform: translate($x,$y) rotate($angle);
   transform: translate($x,$y) rotate($angle);
 }
+.loading{
+        filter: blur(3px);
+}
 .loader {
-    background: rgba(68, 155, 196, 0.71);
+    background: rgba(255, 255, 255, 0.3);
     z-index: 999;
     position: fixed;
     left: 0;
     right: 0;
-    bottom: 0;
     top: 0;
-    height: 100%;
+    height: 100vh;
+     filter: blur(0);
+
 } 
 .flight{
   width:200px;
@@ -2100,9 +2104,12 @@ font-size: 20px;
   position:fixed;
   bottom:-8px;
   right:0;
-  &.run{
+  display: none;
+
+}
+.run .flight{
     animation: landFlight linear 5s;
-  }
+    display: block;
 }
 .runway{
   width:95%;

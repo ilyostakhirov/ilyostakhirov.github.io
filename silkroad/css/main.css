@@ -1940,15 +1940,20 @@ table.kvitansiya_table {
   font-size: 17px;
   color: #fff; }
 
+.loading {
+  -webkit-filter: blur(3px);
+  filter: blur(3px); }
+
 .loader {
-  background: rgba(68, 155, 196, 0.71);
+  background: rgba(255, 255, 255, 0.3);
   z-index: 999;
   position: fixed;
   left: 0;
   right: 0;
-  bottom: 0;
   top: 0;
-  height: 100%; }
+  height: 100vh;
+  -webkit-filter: blur(0);
+  filter: blur(0); }
 
 .flight {
   width: 200px;
@@ -1957,10 +1962,13 @@ table.kvitansiya_table {
   background-size: 100%;
   position: fixed;
   bottom: -8px;
-  right: 0; }
-  .flight.run {
-    -webkit-animation: landFlight linear 5s;
-    animation: landFlight linear 5s; }
+  right: 0;
+  display: none; }
+
+.run .flight {
+  -webkit-animation: landFlight linear 5s;
+  animation: landFlight linear 5s;
+  display: block; }
 
 .runway {
   width: 95%;

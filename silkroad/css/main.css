@@ -1943,11 +1943,12 @@ table.kvitansiya_table {
 .loader {
   background: rgba(68, 155, 196, 0.71);
   z-index: 999;
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
-  top: 0; }
+  top: 0;
+  height: 100%; }
 
 .flight {
   width: 200px;

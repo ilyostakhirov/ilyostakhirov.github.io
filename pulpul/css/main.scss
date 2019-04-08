@@ -264,6 +264,13 @@ header {
     padding: 7px 25px;
     font-size: 17px;
     color: #000;
+        box-shadow: 0 4px 50px 0 rgba(0,0,0,.2);
+            letter-spacing: .5px;
+    transition: transform 350ms cubic-bezier(.591,-.623,.251,1.74),-webkit-transform 350ms cubic-bezier(.591,-.623,.251,1.74);
+    &:hover{
+            transform: scale(1.05);
+            box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.4);
+    }
 }
 
 .swiper-container-vertical>.swiper-pagination-bullets {
@@ -364,7 +371,11 @@ header {
 
     img {
         height: 60px;
+        transition: transform 350ms cubic-bezier(.591,-.623,.251,1.74),-webkit-transform 350ms cubic-bezier(.591,-.623,.251,1.74);
     }
+a:hover img{
+    transform: scale(1.02);
+}
 
     a {
         display: inline-block;

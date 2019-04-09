@@ -338,7 +338,8 @@ body {
   transform: translate3d(150px, -50%, 0); }
 
 .swiper-home .info-wrap {
-  margin-left: 50px; }
+  margin-left: 50px;
+  width: 100%; }
 
 .swiper-home .text-slide {
   margin-left: 16%; }

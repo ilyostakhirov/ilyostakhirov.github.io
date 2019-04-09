@@ -340,6 +340,9 @@ body {
 .swiper-home .info-wrap {
   margin-left: 50px; }
 
+.swiper-home .text-slide {
+  margin-left: 16%; }
+
 .slide-sidebar {
   position: absolute;
   left: 0;

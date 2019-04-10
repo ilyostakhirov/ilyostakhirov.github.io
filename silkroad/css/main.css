@@ -1074,7 +1074,14 @@ img {
   -ms-flex-positive: 1;
   flex-grow: 1;
   padding-left: 20px;
-  padding-right: 40px; }
+  padding-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 .train-item {
   background: #fff url(../img/train.svg) no-repeat 100% 100%; }
@@ -1084,9 +1091,6 @@ img {
     padding-right: 20px;
     border-right: 1px solid #bbbbbb; }
   .train-item .ticket_content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -1096,7 +1100,6 @@ img {
       display: -ms-flexbox;
       display: flex;
       width: 100%;
-      margin: 0;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
       .train-item .ticket_content .segment-route .route-path {
@@ -1168,7 +1171,8 @@ img {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin: auto 0; }
   .segment-route .route-path {
     position: relative;
     -webkit-box-flex: 1;
@@ -2089,6 +2093,20 @@ table.kvitansiya_table {
     -moz-transform: translate(-2000px, -750px) rotate(20deg);
     -webkit-transform: translate(-2000px, -750px) rotate(20deg);
     transform: translate(-2000px, -750px) rotate(20deg); } }
+
+.not-found {
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+  font-size: 16px; }
+  .not-found h3 {
+    color: #449bc4;
+    font-size: 24px;
+    line-height: 36px; }
+  .not-found ul {
+    text-align: left; }
+    .not-found ul li {
+      font-weight: 400; }
 
 @media (min-width: 991px) {
   .top-filter .collapse:not(.show) {

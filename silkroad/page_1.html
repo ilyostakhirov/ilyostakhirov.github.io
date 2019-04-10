@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ru" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Utravel - Покупка билетов в Узбекистане</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/datepicker.min.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.flexdatalist.min.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.bootstrap-touchspin.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="page">
+    <div class="wrap">
+        <div class="container">
+            <div class="header wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
+                <a class="logo" href="#">
+                    <img src="img/logo.svg" alt="">
+                    <span>Путешествуй <br>в удовольствие</span>
+                </a>
+                <ul class="main-menu ul">
+                    <li><a class="active" href="#">Главная</a></li>
+                    <li><a href="#">Авиабилеты</a></li>
+                    <li><a href="#">Ж/д билеты</a></li>
+                    <li><a href="#">Туры</a></li>
+                    <li><a href="#">Гостиницы</a></li>
+                </ul>
+                <div class="right-header">
+                    <ul class="lang ul">
+                        <li class="active"><a href="#">РУС</a></li>
+                        <li><a href="#">UZB</a></li>
+                    </ul>
+                    <a class="btn btn-warning" href="#">Войти</a>
+                    <svg id="burger" class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                        <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                        <path class="line middle" d="m 30,50 h 40" />
+                        <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                    </svg>
+                </div>
+            </div>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a class="active" href="#">Главная</a></li>
+                    <li><a href="#">Авиабилеты</a></li>
+                    <li><a href="#">Ж/д билеты</a></li>
+                    <li><a href="#">Туры</a></li>
+                    <li><a href="#">Гостиницы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="top-filter ">
+        <div class="container">
+            <a class="top-filter-link" data-toggle="collapse" href="#filter-collapse" role="button" aria-expanded="false" aria-controls="filter-collapse">
+                <span>Ташкент</span><img src="img/arrow-right.svg" alt=""><span>Москва</span> <img src="img/calendar-r.svg" alt=""><span>20 марта, среда</span> <img src="img/adult.svg" alt=""><span>1 взрослый</span><span>Эконом</span>
+                <span>Изменить</span>
+            </a>
+            <div id="filter-collapse" class="top-filter-wrap collapse">
+                <div class="search-item row">
+                    <div class="form-group col-md-3">
+                        <img src="img/from.svg" width="16" height="22" alt="">
+                        <div class="form-wrap">
+                            <input type="text" placeholder="Откуда" class="form-control flexdatalist" data-data="countries.json" data-search-in='name' data-visible-properties='["name","capital","iso3"]' data-selection-required='true' data-min-length="1" name="country_name_capital_continent">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <img src="img/where.svg" width="16" height="22" alt="">
+                        <div class="form-wrap">
+                            <input type="text" placeholder="Куда" class="form-control flexdatalist" data-data="countries.json" data-search-in='name' data-visible-properties='["name","capital","iso3"]' data-selection-required='true' data-min-length="1" name="country_name_capital_continent">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <img width="" src="img/calendar-r.svg" width="24" height="19" alt="">
+                        <div class="form-wrap">
+                            <input placeholder="Дата вылета" type='text' data="datepicker" class="datepicker-here form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group back-date col-md-2">
+                        <img src="img/calendar-l.svg" width="24" height="19" alt="">
+                        <div class="form-wrap">
+                            <input placeholder="Обратно" type='text' data="datepicker" class="datepicker-here form-control" />
+                        </div>
+                    </div>
+                    <div class="col-md-2"> <a class="add-route-btn" href="#">Добавить ещё маршрут</a></div>
+                </div>
+                <div style="display: none;" class="search-item row repeatable-form">
+                    <div class="form-group col-md-3">
+                        <img src="img/from.svg" width="16" height="22" alt="">
+                        <div class="form-wrap">
+                            <input type="text" placeholder="Откуда" class="form-control flexdatalist" data-data="countries.json" data-search-in='name' data-visible-properties='["name","capital","iso3"]' data-selection-required='true' data-min-length="1" name="country_name_capital_continent">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <img src="img/where.svg" width="16" height="22" alt="">
+                        <div class="form-wrap">
+                            <input type="text" placeholder="Куда" class="form-control flexdatalist" data-data="countries.json" data-search-in='name' data-visible-properties='["name","capital","iso3"]' data-selection-required='true' data-min-length="1" name="country_name_capital_continent">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <img width="" src="img/calendar-r.svg" width="24" height="19" alt="">
+                        <div class="form-wrap">
+                            <input placeholder="Дата вылета" type='text' data="datepicker" class="datepicker-here form-control" />
+                        </div>
+                    </div>
+                    <a href="#" class="remove"><img src="img/x.svg" alt=""></a>
+                </div>
+                <div class="repeateble-items">
+                </div>
+                <div class="additional-fields mt-0 mb-0">
+                    <div class="item">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                                <span class="type-fly">Эконом</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+                                <a href="#" class="dropdown-item">Эконом</a>
+                                <a href="#" class="dropdown-item">Бизнес</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img width="23" src="img/adult.svg" alt="">
+                        <div class="touch-wrap">
+                            <input class="touch-spin adults" name="adults_count" type="text" value="1">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img width="18" src="img/children.svg" alt="">
+                        <div class="touch-wrap">
+                            <input class="touch-spin children" name="children_count" type="text" value="1">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img width="16px" src="img/baby.svg" alt="">
+                        <div class="touch-wrap">
+                            <input class="touch-spin baby" name="baby_count" type="text" value="1">
+                        </div>
+                    </div>
+                    <div class="item"><a class="btn btn-warning" href="#">Найти билеты</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grey-bg">
+        <div class="container">
+        	<div class="not-found">
+        	<img style="width: 137px;" src="img/no_data.svg" alt="">
+        	<h3>Билеты не найдены</h3>
+            <p>Это могло произойти из-за следующих причин:</p>
+            <ul class="trigl-ul ul"><li>В этот аэропорт не летают самолеты.</li><li>Слишком поздние даты. Проверьте год вылета или прилета.</li><li>На эти даты все билеты куплены. Попробуйте поискать на соседние даты или воспользоваться    
+            </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container footer ">
+        <div class="first-item">
+            <a class="f-logo" href="#"><img src="img/logo-f.svg" alt=""></a>
+            <ul class="social ul">
+                <li><a href="#"><img src="img/fb.png" alt=""></a></li>
+                <li><a href="#"><img src="img/te.png" alt=""></a></li>
+                <li><a href="#"><img src="img/in.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="second-item ">
+            <ul class="ul footer-menu">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Правовая информация</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <p>ГУП “Центр управления проектами электронного правительства и цифровой экономики <br>
+                при Национальном агентстве проектного управления при Президенте Республики Узбекистан”</p>
+        </div>
+        <div class="third-item">
+            <ul class="footer-logoes ul">
+                <li><img src="img/visa.png" alt=""></li>
+                <li><img src="img/mastercard.png" alt=""></li>
+                <li><img class="mt-5" src="img/uzcard1.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="tel">
+            <span>Служба поддержки<br> по авиабилетам</span>
+            <div>(78) 140 05 55</div>
+        </div>
+    </div>
+    <div class="jivo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 83">
+            <path class="krug" d="M100 47H83a42 42 0 1 0-36 36c33-4 53-36 53-36zM51 82zm13-5zm-9 4zm-2 0z" fill="#fff" />
+            <path d="M21 31a9 9 0 0 1 1-2 4 4 0 0 1 3-2h33a4 4 0 0 1 4 2 4 4 0 0 1 0 2v21a4 4 0 0 1-3 4H25a4 4 0 0 1-4-2 7 7 0 0 1 0-1V31zm4-1h1l15 15a1 1 0 0 0 2 0l15-15H25zm23 13l-4 3a4 4 0 0 1-5 0l-2-1-1-2-11 10h33zm-25 8l11-10-11-10zm37 0V32L50 42l10 10z" fill="#2189b9" />
+        </svg>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/datepicker.min.js"></script>
+    <script src="js/jquery.flexdatalist.min.js"></script>
+    <script src="js/jquery.bootstrap-touchspin.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+     <script src="js/jquery.inputmask.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

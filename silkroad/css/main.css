@@ -2108,6 +2108,18 @@ table.kvitansiya_table {
     .not-found ul li {
       font-weight: 400; }
 
+.ticket-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .ticket-logo img {
+    max-height: 30px;
+    max-width: 150px;
+    margin-right: 30px; }
+
 @media (min-width: 991px) {
   .top-filter .collapse:not(.show) {
     display: block; }

@@ -2156,6 +2156,11 @@ table.kvitansiya_table {
     max-width: 100px;
     margin-right: 15px;
     margin-bottom: 10px; }
+  .ribbon {
+    position: static;
+    height: 40px; }
+  .ribbon:before {
+    display: none; }
   .add-form .form-group {
     width: 50%; }
     .add-form .form-group .form-wrap {

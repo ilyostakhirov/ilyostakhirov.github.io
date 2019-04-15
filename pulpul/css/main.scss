@@ -17,7 +17,11 @@ $fourth-slide-bg:linear-gradient(#10bfbf 0%, #4044c9 100%);
 $fourth-side-bg:#2538AE;
 $fifth-slide-bg:linear-gradient(#37f1a0 0%, #38855d 100%);
 $fifth-side-bg:#096B40;
-
+$sixth-slide-bg:linear-gradient( 135deg, #3B2667 10%, #BC78EC 100%);
+$sixth-side-bg:#45257b;
+$seventh-slide-bg:linear-gradient( 135deg, #FF9D6C 10%, #BB4E75 100%);;
+$seventh-side-bg:#d05944;
+$contact-slide-bg:#003f70;
 @font-face {
     font-family: 'SF UI Display';
     src: url('../fonts/sfu-medium.woff') format('woff'),
@@ -148,7 +152,29 @@ body {
         background: $fifth-side-bg;
     }
 }
+.swiper-sixth {
+    background: $sixth-slide-bg;
 
+    .slide-sidebar {
+        background: $sixth-side-bg;
+    }
+}
+.swiper-seventh {
+    background: $seventh-slide-bg;
+
+    .slide-sidebar {
+        background: $seventh-side-bg;
+    }
+}
+.swiper-contact {
+    background: $contact-slide-bg;
+    .info-wrap{
+        margin: auto;
+        .text-slide {
+            text-align: center;
+        }
+    }
+}
 a {
     color: #fff;
 
@@ -347,8 +373,6 @@ header {
     margin-left: calc(25% + 230px);
 
     .text-slide {
-        text-align: left;
-
         text-align: left;
 
         h3 {

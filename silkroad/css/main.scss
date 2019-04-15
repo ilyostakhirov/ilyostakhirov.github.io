@@ -580,7 +580,7 @@ img {
         .form-wrap {
             flex-grow: 1;
 
-            span {
+            &>small {
                 color: #000;
                 font-size: 12px;
                 margin-top: 5px;
@@ -588,6 +588,7 @@ img {
 
             }
         }
+
     }
 }
 
@@ -649,6 +650,40 @@ img {
             color: #fff;
         }
     }
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: 1px solid #bbb;
+    height: 35px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #495057;
+    line-height: 35px;
+    padding-left: 12px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 34px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 30px;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #177caa;
+    color: #64b2d5;
+
+    .city-text,
+    .city-id {
+        color: #64b2d5;
+    }
+}
+
+.select2-container {
+    /* width: 100%; */
 }
 
 .flexdatalist-results li {
@@ -1040,13 +1075,15 @@ img {
             display: flex;
             width: 100%;
             flex-wrap: wrap;
-            .route-path{
-            order: -1;
-            width: 100%;
-            margin:0 40px 0 0;
+
+            .route-path {
+                order: -1;
+                width: 100%;
+                margin: 0 40px 0 0;
             }
-            .route-finish{
-              margin-left: auto;  
+
+            .route-finish {
+                margin-left: auto;
             }
         }
     }
@@ -2016,76 +2053,89 @@ h3.s-title {
     }
 }
 
-.user-info-table{
-    th{
-        font-size:12px;
-        font-weight:400!important;
+.user-info-table {
+    th {
+        font-size: 12px;
+        font-weight: 400 !important;
     }
-    td{
-        font-weight:700;
-        font-size:17px;
+
+    td {
+        font-weight: 700;
+        font-size: 17px;
     }
 }
-table.kvitansiya_table{
-    border:2px solid #449bc4;
-    thead{
-        th{
-                background-color: #449bc4;
-    color: #fff;
-    padding: 10px 15px;
-    font-size: 18px;
-    font-weight: 400;
+
+table.kvitansiya_table {
+    border: 2px solid #449bc4;
+
+    thead {
+        th {
+            background-color: #449bc4;
+            color: #fff;
+            padding: 10px 15px;
+            font-size: 18px;
+            font-weight: 400;
         }
     }
-    tbody{
-        
-        td{
+
+    tbody {
+
+        td {
             padding: 10px 15px;
-            span{
-                display:inline-block;
+
+            span {
+                display: inline-block;
                 font-size: 15px;
                 width: 100px;
             }
-            strong{
-                display:inline-block;
-                 font-size: 18px;
+
+            strong {
+                display: inline-block;
+                font-size: 18px;
             }
         }
     }
-    tfoot{
-        border-top:1px dashed #000;
-        th{
+
+    tfoot {
+        border-top: 1px dashed #000;
+
+        th {
             padding: 10px 15px;
             font-size: 18px;
-            strong{
-font-size: 20px;
+
+            strong {
+                font-size: 20px;
             }
         }
     }
 }
-.f18{
-    font-size:18px;
+
+.f18 {
+    font-size: 18px;
 }
-.blue-b-r{
-   background-color: #449bc4;
-   border-radius:10px;
-  padding: 15px 25px;
-   display:flex; 
-       align-items: center;
+
+.blue-b-r {
+    background-color: #449bc4;
+    border-radius: 10px;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
     font-size: 17px;
     color: #fff;
 }
 
-@mixin matrix($x, $y, $angle){
-  -ms-transform: translate($x,$y) rotate($angle);
-  -moz-transform: translate($x,$y) rotate($angle);
-  -webkit-transform: translate($x,$y) rotate($angle);
-  transform: translate($x,$y) rotate($angle);
+@mixin matrix($x, $y, $angle) {
+    -ms-transform: translate($x, $y) rotate($angle);
+    -moz-transform: translate($x, $y) rotate($angle);
+    -webkit-transform: translate($x, $y) rotate($angle);
+    transform: translate($x, $y) rotate($angle);
 }
-.loading{
-        filter: blur(3px);
+
+.loading {
+    filter: blur(3px);
 }
+
 .loader {
     background: rgba(255, 255, 255, 0.3);
     z-index: 999;
@@ -2094,111 +2144,323 @@ font-size: 20px;
     right: 0;
     top: 0;
     height: 100vh;
-     filter: blur(0);
-
-} 
-.flight{
-  width:200px;
-  height:100px;
-  background:url(../img/airliner.png) center no-repeat;
-  background-size:100%;
-  position:fixed;
-  bottom:-8px;
-  right:0;
-  display: none;
+    filter: blur(0);
 
 }
-.run .flight{
+
+.flight {
+    width: 200px;
+    height: 100px;
+    background: url(../img/airliner.png) center no-repeat;
+    background-size: 100%;
+    position: fixed;
+    bottom: -8px;
+    right: 0;
+    display: none;
+
+}
+
+.run .flight {
     animation: landFlight linear 5s;
     display: block;
 }
-.runway{
-  width:95%;
-  height:1px;
-  border-top:1px dotted #eee;
-  background:#333;
-  position:fixed;
-  bottom:5px;
-  right:0;
-  .runwayNo{
-    position:absolute;
-    border:1px dotted #eee;
-    width:50px;
-    color: #fff;
-    bottom:23px;
-    left:-30px;
-    text-align:center;
-    padding:5px 0;
-    &:after{
-      position:absolute;
-      height:20px;
-      width:10px;
-      border:1px dotted #fff;
-      content:'';
-      bottom:-23px;
-      left:18px;
-    }
-  }
-}
-@keyframes landFlight {
-    0% { 
-      @include matrix(0,0, 0deg);
-    }
-    20% { 
-      @include matrix(-400px,-1px, 0deg);
-    }
-    30% { 
-      @include matrix(-450px,-2px, 0deg);
-    }
-    38% {
-       @include matrix(-500px,-5px, 10deg);
-    }
-    39% {
-       @include matrix(-510px,-10px, 15deg);
-    }
-    40% {
-       @include matrix(-520px,-12px, 20deg);
-    }
-    50% {
-      @include matrix(-600px,-50px, 20deg);
-    }
-    60% {
-      @include matrix(-700px,-100px, 20deg);
-    }
-    100% {
-      @include matrix(-2000px,-750px, 20deg);
-    }
-}
-.not-found{
-    text-align: center;
-    max-width: 500px;
-    margin: auto;
-    font-size:16px;
-    h3{
-    color: #449bc4;
-        font-size: 24px;
-    line-height: 36px;
-    }
-    p{
 
-    }
-    ul{
-        text-align:left;
-        li{
-                font-weight: 400;
+.runway {
+    width: 95%;
+    height: 1px;
+    border-top: 1px dotted #eee;
+    background: #333;
+    position: fixed;
+    bottom: 5px;
+    right: 0;
+
+    .runwayNo {
+        position: absolute;
+        border: 1px dotted #eee;
+        width: 50px;
+        color: #fff;
+        bottom: 23px;
+        left: -30px;
+        text-align: center;
+        padding: 5px 0;
+
+        &:after {
+            position: absolute;
+            height: 20px;
+            width: 10px;
+            border: 1px dotted #fff;
+            content: '';
+            bottom: -23px;
+            left: 18px;
         }
     }
 }
-.ticket-logo{
+
+@keyframes landFlight {
+    0% {
+        @include matrix(0, 0, 0deg);
+    }
+
+    20% {
+        @include matrix(-400px, -1px, 0deg);
+    }
+
+    30% {
+        @include matrix(-450px, -2px, 0deg);
+    }
+
+    38% {
+        @include matrix(-500px, -5px, 10deg);
+    }
+
+    39% {
+        @include matrix(-510px, -10px, 15deg);
+    }
+
+    40% {
+        @include matrix(-520px, -12px, 20deg);
+    }
+
+    50% {
+        @include matrix(-600px, -50px, 20deg);
+    }
+
+    60% {
+        @include matrix(-700px, -100px, 20deg);
+    }
+
+    100% {
+        @include matrix(-2000px, -750px, 20deg);
+    }
+}
+
+.not-found {
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    font-size: 16px;
+
+    h3 {
+        color: #449bc4;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    p {}
+
+    ul {
+        text-align: left;
+
+        li {
+            font-weight: 400;
+        }
+    }
+}
+
+.select2-results__option {
+    font-size: 14px;
+    line-height: 20px;
+    position: relative;
+    padding: 8px 15px;
+
+    .city-text {
+        color: #3a3838;
+    }
+
+    .city-id {
+        display: block;
+        position: absolute;
+        top: 8px;
+        color: #90a4ae;
+        right: 15px;
+        font-size: 12px;
+    }
+}
+
+.ticket-logo {
     display: flex;
     align-items: center;
-    flex-wrap:wrap; 
-    img{
-        max-height:30px;
-        max-width:150px;
+    flex-wrap: wrap;
+
+    img {
+        max-height: 30px;
+        max-width: 150px;
         margin-right: 30px;
     }
 }
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    display: block;
+    padding: 0;
+}
+.select2-container--default .select2-search--inline .select2-search__field {
+    padding: .375rem .75rem;
+    margin:0;
+}
+.success-checkmark {
+    width: 80px;
+    height: 115px;
+    margin: 0 auto;
+
+    .check-icon {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        border-radius: 50%;
+        box-sizing: content-box;
+        border: 4px solid #4CAF50;
+
+        &::before {
+            top: 3px;
+            left: -2px;
+            width: 30px;
+            transform-origin: 100% 50%;
+            border-radius: 100px 0 0 100px;
+        }
+
+        &::after {
+            top: 0;
+            left: 30px;
+            width: 60px;
+            transform-origin: 0 50%;
+            border-radius: 0 100px 100px 0;
+            animation: rotate-circle 4.25s ease-in;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            height: 100px;
+            position: absolute;
+            background: #f2f2f2;
+            transform: rotate(-45deg);
+        }
+
+        .icon-line {
+            height: 5px;
+            background-color: #4CAF50;
+            display: block;
+            border-radius: 2px;
+            position: absolute;
+            z-index: 10;
+
+            &.line-tip {
+                top: 46px;
+                left: 14px;
+                width: 25px;
+                transform: rotate(45deg);
+                animation: icon-line-tip 0.75s;
+            }
+
+            &.line-long {
+                top: 38px;
+                right: 8px;
+                width: 47px;
+                transform: rotate(-45deg);
+                animation: icon-line-long 0.75s;
+            }
+        }
+
+        .icon-circle {
+            top: -4px;
+            left: -4px;
+            z-index: 10;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: absolute;
+            box-sizing: content-box;
+            border: 4px solid rgba(76, 175, 80, .5);
+        }
+
+        .icon-fix {
+            top: 8px;
+            width: 5px;
+            left: 26px;
+            z-index: 1;
+            height: 85px;
+            position: absolute;
+            transform: rotate(-45deg);
+            background-color: #f2f2f2;
+        }
+    }
+}
+
+@keyframes rotate-circle {
+    0% {
+        transform: rotate(-45deg);
+    }
+
+    5% {
+        transform: rotate(-45deg);
+    }
+
+    12% {
+        transform: rotate(-405deg);
+    }
+
+    100% {
+        transform: rotate(-405deg);
+    }
+}
+
+@keyframes icon-line-tip {
+    0% {
+        width: 0;
+        left: 1px;
+        top: 19px;
+    }
+
+    54% {
+        width: 0;
+        left: 1px;
+        top: 19px;
+    }
+
+    70% {
+        width: 50px;
+        left: -8px;
+        top: 37px;
+    }
+
+    84% {
+        width: 17px;
+        left: 21px;
+        top: 48px;
+    }
+
+    100% {
+        width: 25px;
+        left: 14px;
+        top: 45px;
+    }
+}
+
+@keyframes icon-line-long {
+    0% {
+        width: 0;
+        right: 46px;
+        top: 54px;
+    }
+
+    65% {
+        width: 0;
+        right: 46px;
+        top: 54px;
+    }
+
+    84% {
+        width: 55px;
+        right: 0px;
+        top: 35px;
+    }
+
+    100% {
+        width: 47px;
+        right: 8px;
+        top: 38px;
+    }
+}
+
 @media (min-width:991px) {
     .top-filter .collapse:not(.show) {
         display: block;
@@ -2235,20 +2497,214 @@ font-size: 20px;
     }
 }
 
+.alert-box {
+    .title-strong {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 17px;
+        margin: 20px 0;
+    }
+}
+.success-page{
+    .title-strong {
+        color: #4caf50;
+    }
+}
+.error-page {
+    .title-strong {
+           color: #f27474;
+    }
+}
+
+.sa {
+    width: 140px;
+    height: 140px;
+    padding: 26px;
+    margin: auto;
+
+    &-error {
+        border-radius: 50%;
+        border: 4px solid #F27474;
+        box-sizing: content-box;
+        height: 80px;
+        padding: 0;
+        position: relative;
+        background-color: #f2f2f2;
+        width: 80px;
+        animation: animateErrorIcon .5s;
+
+        &:after,
+        &:before {
+            background: #f2f2f2;
+            content: '';
+            height: 120px;
+            position: absolute;
+            transform: rotate(45deg);
+            width: 60px;
+        }
+
+        &:before {
+            border-radius: 40px 0 0 40px;
+            width: 26px;
+            height: 80px;
+            top: -17px;
+            left: 5px;
+            transform-origin: 60px 60px;
+            transform: rotate(-45deg);
+        }
+
+        &:after {
+            border-radius: 0 120px 120px 0;
+            left: 30px;
+            top: -11px;
+            transform-origin: 0 60px;
+            transform: rotate(-45deg);
+            animation: rotatePlaceholder 4.25s ease-in;
+        }
+
+        &-x {
+            display: block;
+            position: relative;
+            z-index: 2;
+        }
+
+        &-placeholder {
+            border-radius: 50%;
+            border: 4px solid rgba(200, 0, 0, .2);
+            box-sizing: content-box;
+            height: 80px;
+            left: -4px;
+            position: absolute;
+            top: -4px;
+            width: 80px;
+            z-index: 2;
+        }
+
+        &-fix {
+            background-color: #f2f2f2;
+            height: 90px;
+            left: 28px;
+            position: absolute;
+            top: 8px;
+            transform: rotate(-45deg);
+            width: 5px;
+            z-index: 1;
+        }
+
+        &-left,
+        &-right {
+            border-radius: 2px;
+            display: block;
+            height: 5px;
+            position: absolute;
+            z-index: 2;
+            background-color: #F27474;
+            top: 37px;
+            width: 47px;
+        }
+
+        &-left {
+            left: 17px;
+            transform: rotate(45deg);
+            animation: animateXLeft .75s;
+        }
+
+        &-right {
+            right: 16px;
+            transform: rotate(-45deg);
+            animation: animateXRight .75s;
+        }
+    }
+}
+
+@keyframes rotatePlaceholder {
+
+    0%,
+    5% {
+        transform: rotate(-45deg);
+    }
+
+    100%,
+    12% {
+        transform: rotate(-405deg);
+    }
+}
+
+@keyframes animateErrorIcon {
+    0% {
+        transform: rotateX(100deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes animateXLeft {
+
+    0%,
+    65% {
+        left: 82px;
+        top: 95px;
+        width: 0;
+    }
+
+    84% {
+        left: 14px;
+        top: 33px;
+        width: 47px;
+    }
+
+    100% {
+        left: 17px;
+        top: 37px;
+        width: 47px;
+    }
+}
+
+@keyframes animateXRight {
+
+    0%,
+    65% {
+        right: 82px;
+        top: 95px;
+        width: 0;
+    }
+
+    84% {
+        right: 14px;
+        top: 33px;
+        width: 47px;
+    }
+
+    100% {
+        right: 16px;
+        top: 37px;
+        width: 47px;
+    }
+}
+
 @media only screen and (max-width: 991px) {
     .ticket-logo img {
-    max-height: 20px;
-    max-width: 100px;
-    margin-right: 15px;
-    margin-bottom: 10px;
-}
-.ribbon {
-    position: static;
-    height: 40px;
-}
-.ribbon:before{
-    display:none;
-}
+        max-height: 20px;
+        max-width: 100px;
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+
+    .ribbon {
+        position: static;
+        height: 40px;
+    }
+
+    .ribbon:before {
+        display: none;
+    }
+
     .add-form .form-group {
         width: 50%;
 
@@ -2763,9 +3219,10 @@ font-size: 20px;
     .footer .footer-logoes li:not(:first-child) {
         margin-left: 10px;
     }
-.add-form .form-group {
-    width: 100%; 
-}
+
+    .add-form .form-group {
+        width: 100%;
+    }
 }
 
 

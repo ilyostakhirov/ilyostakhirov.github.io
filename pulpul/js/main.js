@@ -25,4 +25,4 @@ var mySwiper = new Swiper('.swiper-vertical-pagination', {
     }
 })
 
-AOS.init();
+

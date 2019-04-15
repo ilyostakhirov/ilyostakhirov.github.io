@@ -130,7 +130,4 @@ $(document).ready(function() {
         return false;
     });
 
-
-$(".phone").inputmask({ "mask": "+\\9\\98 (99) 999-99-99" });
-$(".password").inputmask({ "mask": "AA 999 99 99" });
 });

@@ -1233,7 +1233,7 @@ img {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin: 0 20px 0 30px; }
+    margin: 0 20px; }
     .segment-route .route-path span.text {
       position: absolute;
       width: 100%;
@@ -2384,6 +2384,9 @@ table.kvitansiya_table {
     width: 47px;
     right: 8px;
     top: 38px; } }
+
+.route-start, .route-finish {
+  width: 140px; }
 
 @media (min-width: 991px) {
   .top-filter .collapse:not(.show) {

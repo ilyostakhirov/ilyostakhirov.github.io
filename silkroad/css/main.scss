@@ -1184,7 +1184,7 @@ position: absolute;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 0 20px 0 30px;
+        margin: 0 20px;
 
         span.text {
             position: absolute;
@@ -2478,7 +2478,9 @@ table.kvitansiya_table {
         top: 38px;
     }
 }
-
+.route-start,.route-finish {
+    width: 140px;
+}
 @media (min-width:991px) {
     .top-filter .collapse:not(.show) {
         display: block;

@@ -2298,6 +2298,7 @@ table.kvitansiya_table {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 
     img {
         max-height: 30px;
@@ -2479,6 +2480,7 @@ table.kvitansiya_table {
 }
 .route-start,.route-finish {
     width: 150px;
+        margin-bottom: 15px;
 }
 @media (min-width:991px) {
     .top-filter .collapse:not(.show) {

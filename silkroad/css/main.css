@@ -792,13 +792,32 @@ img {
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
   background-color: #177caa;
-  color: #64b2d5; }
+  color: #fff; }
   .select2-container--default .select2-results__option--highlighted[aria-selected] .city-text,
   .select2-container--default .select2-results__option--highlighted[aria-selected] .city-id {
-    color: #64b2d5; }
+    color: #fff; }
 
-.select2-container {
-  /* width: 100%; */ }
+.select2-container .select2-selection--multiple {
+  min-height: 35px; }
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: transparent;
+  border: none;
+  float: none;
+  padding: 6px 12px;
+  margin: 0; }
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice + li {
+  display: none; }
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  color: transparent !important; }
 
 .flexdatalist-results li {
   position: relative; }

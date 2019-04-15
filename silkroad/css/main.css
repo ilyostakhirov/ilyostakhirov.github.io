@@ -2389,6 +2389,9 @@ table.kvitansiya_table {
   width: 150px;
   margin-bottom: 15px; }
 
+.route-start {
+  text-align: right; }
+
 @media (min-width: 991px) {
   .top-filter .collapse:not(.show) {
     display: block; }

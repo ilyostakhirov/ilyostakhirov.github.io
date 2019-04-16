@@ -458,9 +458,9 @@ header {
     align-items: center; }
 
 header nav.bg {
-  background-color: #003d6d;
-  -webkit-box-shadow: -2px 2px 4px #011c3194;
-  box-shadow: -2px 2px 4px #011c3194; }
+  background-color: rgba(0, 61, 109, 0.8);
+  -webkit-box-shadow: -2px 2px 4px rgba(1, 28, 49, 0.6);
+  box-shadow: -2px 2px 4px rgba(1, 28, 49, 0.6); }
 
 .full-screen {
   overflow: hidden; }
@@ -729,7 +729,8 @@ header nav.bg {
     padding: 0 20px; }
   .swiper-container-vertical > .swiper-pagination-bullets {
     right: 20px; }
-  body, .btn-white {
+  body,
+  .btn-white {
     font-size: 15px; }
   header .container-fluid {
     margin-top: 20px; }
@@ -814,7 +815,8 @@ header nav.bg {
   .top-menu .btn-white {
     padding: 5px 10px;
     margin-left: 15px !important; }
-  body, .btn-white {
+  body,
+  .btn-white {
     font-size: 14px; }
   header .container-fluid {
     -webkit-box-align: center;
@@ -835,10 +837,10 @@ header nav.bg {
     text-align: center;
     line-height: 1.4; }
   .footer ul li {
-    margin-left: 10px; }
+    margin-left: 15px; }
   .footer ul {
     text-align: center;
-    margin-top: 10px; }
+    margin-top: 5px; }
   .btns-link a:first-child {
     margin-right: 10px; }
   .swiper-contact .info-wrap .text-slide {

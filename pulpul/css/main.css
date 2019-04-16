@@ -698,8 +698,8 @@ header nav.bg {
     margin-left: -webkit-calc(25% + 170px);
     margin-left: calc(25% + 170px); }
   .swiper-home .info-wrap {
-    margin-right: -webkit-calc(25% + 110px);
-    margin-right: calc(25% + 110px); } }
+    margin-right: -webkit-calc(25% + 140px);
+    margin-right: calc(25% + 140px); } }
 
 @media only screen and (max-width: 1300px) {
   .info-wrap .text-slide br {

@@ -240,7 +240,7 @@ a {
         margin: 0 auto;
 
         li {
-            margin: 0 30px;
+            margin: 0 20px; 
 
             &:first-child {
                 margin-left: 0;
@@ -273,7 +273,23 @@ a {
 
     .right-header {
         display: flex;
-
+        .dropdown{
+            align-self: center;
+            margin-right: 30px;
+            .dropdown-toggle{
+                color:#fff;
+            }
+            .dropdown-item {
+    display: block;
+    width: 100%;
+    text-align:center;
+        border-bottom: none;
+}
+    
+    .dropdown-menu {
+    min-width: 60px;  
+        margin-left: -20px;
+}    }
         .btn {
             align-self: center;
         }

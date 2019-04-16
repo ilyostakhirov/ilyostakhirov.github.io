@@ -490,7 +490,8 @@ a {
         display: block;
         width: 100%;
         text-align: center;
-        border-bottom: none; }
+        border-bottom: none;
+        padding: .25rem 1.2rem; }
       .header .right-header .dropdown .dropdown-menu {
         min-width: 60px;
         margin-left: -20px; }

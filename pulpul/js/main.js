@@ -8,37 +8,69 @@ var checkSlide = function() {
 };
 
 var swiperAnimation = new SwiperAnimation();
-mySwiper = new Swiper('.swiper-vertical-pagination', {
-    pagination: ".swiper-pagination-white",
-    direction: "vertical",
-    slidesPerView: 1,
-    spaceBetween: 0,
-    effect: 'fade',
-    mousewheelControl: true,
-    speed: 1000,
-    mousewheel: {
-        releaseOnEdges: true,
-    },
-    touchReleaseOnEdges: true,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    on: {
-      init: function () {
-        swiperAnimation.init(this).animate();
-        checkSlide();
-      },
-      transitionStart: function () {
-        swiperAnimation.init(this).animate();
-        checkSlide();
-      }
+
+var mySwiper = undefined;
+
+function initSwiper() {
+    var screenWidth = $(window).width();
+    if (screenWidth > 768 && mySwiper == undefined) {
+        mySwiper = new Swiper('.swiper-vertical-pagination', {
+            pagination: ".swiper-pagination-white",
+            direction: "vertical",
+            slidesPerView: 1,
+            spaceBetween: 0,
+            effect: 'fade',
+            mousewheelControl: true,
+            speed: 1000,
+            mousewheel: {
+                releaseOnEdges: true,
+            },
+            touchReleaseOnEdges: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            on: {
+                init: function() {
+                    swiperAnimation.init(this).animate();
+                    checkSlide();
+                },
+                transitionStart: function() {
+                    swiperAnimation.init(this).animate();
+                    checkSlide();
+                }
+            }
+        });
+    } else if (screenWidth > 991 && mySwiper != undefined) {
+        mySwiper.destroy();
+        mySwiper = undefined;
+        jQuery('.swiper-wrapper').removeAttr('style');
+        jQuery('.swiper-slide').removeAttr('style');
     }
+}
+
+//Swiper plugin initialization
+initSwiper();
+
+//Swiper plugin initialization on window resize
+$(window).on('resize', function() {
+    initSwiper();
+});
+
+$(function() {
+    $('.download-btn').click(function(e) {
+        e.preventDefault()
+        mySwiper.slideTo(9, 1000, false);
+    })
 })
 
-$(function(){
-  $('.download-btn').click(function(e){
-    e.preventDefault()
-     mySwiper.slideTo(9,1000,false );
-  })
-})
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 100) {
+        $("header nav").addClass("bg");
+    } else {
+        $("header nav").removeClass("bg");
+    }
+});

@@ -1385,6 +1385,15 @@ ul.ul-img-2 {
     height: 21px;
     margin-right: 25px; }
 
+.order-ul li {
+  border-bottom: 1px dashed #afafaf;
+  padding: 6px 0px; }
+  .order-ul li span {
+    display: block;
+    color: #4396bd; }
+  .order-ul li strong {
+    font-size: 15px; }
+
 .filter-sidebar .collapse-title {
   color: #000;
   font-size: 16px; }

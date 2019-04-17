@@ -1356,7 +1356,19 @@ li{
         margin-right: 25px;
     }
 }
-
+.order-ul{
+    li{
+           border-bottom: 1px dashed #afafaf;
+    padding: 6px 0px;
+        span{
+                display: block;
+    color: #4396bd;
+        }
+        strong{
+            font-size: 15px;
+        }
+    }
+}
 .filter-sidebar {
 
     .collapse-title {

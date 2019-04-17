@@ -458,9 +458,9 @@ header {
     align-items: center; }
 
 header nav.bg {
-  background-color: rgba(0, 61, 109, 0.8);
-  -webkit-box-shadow: -2px 2px 4px rgba(1, 28, 49, 0.6);
-  box-shadow: -2px 2px 4px rgba(1, 28, 49, 0.6); }
+  background-color: #003d6d;
+  -webkit-box-shadow: 0 0 4px #011c31;
+  box-shadow: 0 0 4px #011c31; }
 
 .full-screen {
   overflow: hidden; }

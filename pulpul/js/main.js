@@ -1,12 +1,3 @@
-$(".download-btn").hide();
-var checkSlide = function() {
-    if ($('.swiper-home').hasClass("swiper-slide-active") || $('.swiper-contact').hasClass("swiper-slide-active")) {
-        $(".download-btn").hide();
-    } else {
-        $(".download-btn").show();
-    }
-};
-
 var swiperAnimation = new SwiperAnimation();
 
 var mySwiper = undefined;
@@ -14,6 +5,21 @@ var mySwiper = undefined;
 function initSwiper() {
     var screenWidth = $(window).width();
     if (screenWidth > 768 && mySwiper == undefined) {
+        $(".download-btn").hide();
+        var checkSlide = function() {
+            if ($('.swiper-home').hasClass("swiper-slide-active") || $('.swiper-contact').hasClass("swiper-slide-active")) {
+                $(".download-btn").hide();
+            } else {
+                $(".download-btn").show();
+            }
+        };
+        $(function() {
+            $('.download-btn').click(function(e) {
+                e.preventDefault()
+                mySwiper.slideTo(9, 1000, false);
+            })
+        })
+
         mySwiper = new Swiper('.swiper-vertical-pagination', {
             pagination: ".swiper-pagination-white",
             direction: "vertical",
@@ -38,10 +44,13 @@ function initSwiper() {
                 transitionStart: function() {
                     swiperAnimation.init(this).animate();
                     checkSlide();
+                },
+                resize: function() {
+                    mySwiper.update();
                 }
             }
         });
-    } else if (screenWidth > 991 && mySwiper != undefined) {
+    } else if (screenWidth > 768 && mySwiper != undefined) {
         mySwiper.destroy();
         mySwiper = undefined;
         jQuery('.swiper-wrapper').removeAttr('style');
@@ -57,12 +66,6 @@ $(window).on('resize', function() {
     initSwiper();
 });
 
-$(function() {
-    $('.download-btn').click(function(e) {
-        e.preventDefault()
-        mySwiper.slideTo(9, 1000, false);
-    })
-})
 
 
 $(window).scroll(function() {
@@ -73,4 +76,10 @@ $(window).scroll(function() {
     } else {
         $("header nav").removeClass("bg");
     }
+});
+
+$(".download-btn").on("click", function() {
+    $('html, body').animate({
+        scrollTop: $(".swiper-contact").offset().top
+    }, 1000);
 });

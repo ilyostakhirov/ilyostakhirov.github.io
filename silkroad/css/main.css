@@ -1203,6 +1203,27 @@ img {
   justify-content: center;
   margin-top: -23px; }
 
+ul.ul-img-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  ul.ul-img-2 img {
+    margin-right: 7px; }
+  ul.ul-img-2 li {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding-right: 15px;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 10px; }
+
 .page-tab {
   border-bottom: 2px solid #e0e0e0;
   padding-left: 15px; }
@@ -1282,11 +1303,12 @@ img {
     margin: 0 20px; }
     .segment-route .route-path span.text {
       position: absolute;
-      width: 100%;
+      width: 80%;
       text-align: center;
       top: 2px;
       font-size: 12px;
-      color: #575757; }
+      color: #575757;
+      left: 10%; }
     .segment-route .route-path img {
       position: relative;
       z-index: 10; }
@@ -1307,6 +1329,19 @@ img {
   .segment-route .route__date {
     color: #a6a6a6;
     font-size: 12px; }
+    .segment-route .route__date strong {
+      color: #000;
+      font-weight: 700;
+      font-size: 15px; }
+
+.route__city-name {
+  font-size: 20px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 400; }
+
+.route__airport {
+  font-size: 15px; }
 
 .custom-control {
   margin-bottom: 6px; }
@@ -1318,6 +1353,22 @@ img {
 .custom-control-label::before,
 .custom-control-label::after {
   top: 1px; }
+
+.section-divider {
+  height: 0;
+  border-top: 1px solid #DDD;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px; }
+  .section-divider span {
+    background: #f2f2f2;
+    display: inline-block;
+    position: relative;
+    padding: 0 17px;
+    top: -11px;
+    color: #4396bd;
+    font-size: 16px;
+    font-weight: 700; }
 
 .inner-title {
   display: -webkit-box;

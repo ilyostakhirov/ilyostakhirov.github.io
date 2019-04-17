@@ -240,7 +240,7 @@ a {
         margin: 0 auto;
 
         li {
-            margin: 0 20px; 
+            margin: 0 20px;
 
             &:first-child {
                 margin-left: 0;
@@ -273,25 +273,30 @@ a {
 
     .right-header {
         display: flex;
-        .dropdown{
+
+        .dropdown {
             align-self: center;
             margin-right: 30px;
-            .dropdown-toggle{
-                color:#fff;
-            }
-            .dropdown-item {
-    display: block;
-    width: 100%;
-    text-align:center;
-        border-bottom: none;
-            padding: .25rem 1.2rem;
-}
-    
-    .dropdown-menu {
-    min-width: 60px;  
 
-        margin-left: -20px;
-}    }
+            .dropdown-toggle {
+                color: #fff;
+            }
+
+            .dropdown-item {
+                display: block;
+                width: 100%;
+                text-align: center;
+                border-bottom: none;
+                padding: .25rem 1.2rem;
+            }
+
+            .dropdown-menu {
+                min-width: 60px;
+
+                margin-left: -20px;
+            }
+        }
+
         .btn {
             align-self: center;
         }
@@ -699,27 +704,31 @@ img {
         color: #fff;
     }
 }
+
 .select2-container .select2-selection--multiple {
     min-height: 35px;
 }
+
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
     background-color: transparent;
     border: none;
     float: none;
-padding: 6px 12px;
+    padding: 6px 12px;
     margin: 0;
 }
-.select2-container--default .select2-selection--multiple .select2-selection__choice+li{
-    display:none;
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice+li {
+    display: none;
 }
+
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
-position: absolute;
+    position: absolute;
     right: 0;
     left: 0;
     top: 0;
     bottom: 0;
     margin: 0;
-    color: transparent!important;
+    color: transparent !important;
 }
 
 .flexdatalist-results li {
@@ -1053,7 +1062,7 @@ position: absolute;
 
         .btn-warning {
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             line-height: 20px;
 
             strong {
@@ -1066,6 +1075,15 @@ position: absolute;
                 color: #000;
                 font-size: 14px;
             }
+        }
+
+        .btn-warning+div {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .custom-control {
+            margin-bottom: 0;
         }
 
         span {
@@ -1121,9 +1139,29 @@ position: absolute;
                 margin-left: auto;
             }
         }
+
+
     }
 }
-
+.plane-list {
+            text-align:center;
+            li {
+                    display: inline-block;
+    background: url(../img/plane11.svg) no-repeat 0 0;
+    padding: 0 0 0 27px;
+    margin: 0 10px;
+            }
+        }
+        .not-found {
+    text-align: center;    
+    font-size: 16px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -23px;
+}
 .page-tab {
     border-bottom: 2px solid #e0e0e0;
     padding-left: 15px;
@@ -2324,14 +2362,17 @@ table.kvitansiya_table {
         margin-right: 30px;
     }
 }
+
 .select2-container--default .select2-selection--multiple .select2-selection__rendered {
     display: block;
     padding: 0;
 }
+
 .select2-container--default .select2-search--inline .select2-search__field {
     padding: .375rem .75rem;
-    margin:0;
+    margin: 0;
 }
+
 .success-checkmark {
     width: 80px;
     height: 115px;
@@ -2496,13 +2537,17 @@ table.kvitansiya_table {
         top: 38px;
     }
 }
-.route-start,.route-finish {
+
+.route-start,
+.route-finish {
     width: 150px;
-        margin-bottom: 15px;
+    margin-bottom: 15px;
 }
+
 .route-start {
     text-align: right;
 }
+
 @media (min-width:991px) {
     .top-filter .collapse:not(.show) {
         display: block;
@@ -2549,14 +2594,16 @@ table.kvitansiya_table {
         margin: 20px 0;
     }
 }
-.success-page{
+
+.success-page {
     .title-strong {
         color: #4caf50;
     }
 }
+
 .error-page {
     .title-strong {
-           color: #f27474;
+        color: #f27474;
     }
 }
 

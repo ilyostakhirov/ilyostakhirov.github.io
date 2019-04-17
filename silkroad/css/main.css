@@ -1111,7 +1111,7 @@ img {
   border-right: 1px solid #bbbbbb; }
   .product-list .ticket_buy-col .btn-warning {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     line-height: 20px; }
     .product-list .ticket_buy-col .btn-warning strong {
       display: block;
@@ -1120,6 +1120,11 @@ img {
       font-weight: 400;
       color: #000;
       font-size: 14px; }
+  .product-list .ticket_buy-col .btn-warning + div {
+    text-align: center;
+    margin-bottom: 5px; }
+  .product-list .ticket_buy-col .custom-control {
+    margin-bottom: 0; }
   .product-list .ticket_buy-col span {
     color: #a6a6a6;
     font-size: 12px; }
@@ -1170,6 +1175,33 @@ img {
         margin: 0 40px 0 0; }
       .train-item .ticket_content .segment-route .route-finish {
         margin-left: auto; }
+
+.plane-list {
+  text-align: center; }
+  .plane-list li {
+    display: inline-block;
+    background: url(../img/plane11.svg) no-repeat 0 0;
+    padding: 0 0 0 27px;
+    margin: 0 10px; }
+
+.not-found {
+  text-align: center;
+  font-size: 16px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: -23px; }
 
 .page-tab {
   border-bottom: 2px solid #e0e0e0;
@@ -2400,7 +2432,8 @@ table.kvitansiya_table {
     right: 8px;
     top: 38px; } }
 
-.route-start, .route-finish {
+.route-start,
+.route-finish {
   width: 150px;
   margin-bottom: 15px; }
 

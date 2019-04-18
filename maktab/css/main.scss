@@ -3538,14 +3538,23 @@ button:disabled,
 }
 
 /* Panel (Banner) */
-
+@keyframes move-background {
+  from {
+    background-position: 0 0;
+  }
+  to { 
+    background-position: -400px 0;
+  }
+}
 .panel.banner {
     align-items: stretch;
     width: 130vw;
     background: url(../img/school-l.jpg) no-repeat;
     justify-content: flex-start;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
+    animation:move-background 40s linear 1;
 
     .content {
         padding: 3.5rem 3.5rem 2rem 3.5rem;

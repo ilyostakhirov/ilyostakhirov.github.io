@@ -3001,6 +3001,17 @@ button:disabled,
     background-color: #323459; } }
 
 /* Panel (Banner) */
+@-webkit-keyframes move-background {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: -400px 0; } }
+@keyframes move-background {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: -400px 0; } }
+
 .panel.banner {
   -webkit-box-align: stretch;
   -webkit-align-items: stretch;
@@ -3014,7 +3025,10 @@ button:disabled,
   justify-content: flex-start;
   -webkit-background-size: cover;
   background-size: cover;
-  position: relative; }
+  background-attachment: fixed;
+  position: relative;
+  -webkit-animation: move-background 40s linear 1;
+  animation: move-background 40s linear 1; }
   .panel.banner .content {
     padding: 3.5rem 3.5rem 2rem 3.5rem;
     display: -webkit-box;

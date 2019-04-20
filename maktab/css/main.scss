@@ -37,8 +37,6 @@
         url('../fonts/roboto-condensed-v17-latin_cyrillic-700.svg#RobotoCondensed') format('svg');
 }
 
-@import url(font-awesome.min.css);
-
 html,
 body,
 div,
@@ -1746,9 +1744,9 @@ input[type="reset"].special,
 input[type="button"].special,
 button.special,
 .button.special {
-    background-color: white;
+    background-color: #d5c88d;
     box-shadow: none;
-    color: #2e2b37 !important;
+    color: #000000 !important;
 }
 
 input[type="submit"].special.color1,
@@ -3534,12 +3532,16 @@ button:disabled,
 
 /* Panel (Banner) */
 @keyframes move-background {
-    from {
+    0% {
         background-position: 0 0;
     }
 
-    to {
+    50% {
         background-position: -400px 0;
+    }
+
+    100%{
+       background-position: 0 0; 
     }
 }
 
@@ -3551,7 +3553,7 @@ button:disabled,
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    animation: move-background 40s linear 1;
+    animation: move-background 40s linear infinite;
 
     .content {
         padding: 3.5rem 3.5rem 2rem 3.5rem;
@@ -3770,7 +3772,48 @@ button:disabled,
         }
     }
 }
+.panel.application{
+    width:100vw;
+    background:url(../img/or-bg.png) 100% 0 no-repeat, url(../img/contact-bg.jpg) 0 100% no-repeat;
+    background-color: #fff;
+    .content{
+        display:flex;
+        .logo-last{
+                background-color: rgba(0, 0, 0, 0.6);
+            display:flex;
+            align-items: center;
+            padding: 2rem;
+            a{
 
+            }
+            img{
+
+            }
+        }
+        .text{
+            display:flex;
+            align-items: center;  
+            div{
+            padding-left:4rem;
+            }
+            h3.title-w{
+                color:#595959;
+                margin-left: 0;
+
+            }
+            p{
+                color:#5b5b5b;
+                margin:1.5rem 0;
+                font-size: 1.3rem;
+                line-height:1.1;
+            }
+            a{
+               font-size: 1rem;
+               font-weight: 500;     
+            }
+        }
+    }
+}
 .title-w {
     font-size: 3rem;
     margin-left: 1rem;

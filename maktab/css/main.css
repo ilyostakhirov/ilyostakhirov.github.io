@@ -1,4 +1,3 @@
-@import url(font-awesome.min.css);
 @font-face {
   font-family: 'Roboto Condensed';
   font-style: normal;
@@ -1504,10 +1503,10 @@ input[type="reset"].special,
 input[type="button"].special,
 button.special,
 .button.special {
-  background-color: white;
+  background-color: #d5c88d;
   -webkit-box-shadow: none;
   box-shadow: none;
-  color: #2e2b37 !important; }
+  color: #000000 !important; }
 
 input[type="submit"].special.color1,
 input[type="reset"].special.color1,
@@ -3001,15 +3000,19 @@ button:disabled,
 
 /* Panel (Banner) */
 @-webkit-keyframes move-background {
-  from {
+  0% {
     background-position: 0 0; }
-  to {
-    background-position: -400px 0; } }
+  50% {
+    background-position: -400px 0; }
+  100% {
+    background-position: 0 0; } }
 @keyframes move-background {
-  from {
+  0% {
     background-position: 0 0; }
-  to {
-    background-position: -400px 0; } }
+  50% {
+    background-position: -400px 0; }
+  100% {
+    background-position: 0 0; } }
 
 .panel.welcome {
   -webkit-box-align: stretch;
@@ -3026,8 +3029,8 @@ button:disabled,
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  -webkit-animation: move-background 40s linear 1;
-  animation: move-background 40s linear 1; }
+  -webkit-animation: move-background 40s linear infinite;
+  animation: move-background 40s linear infinite; }
   .panel.welcome .content {
     padding: 3.5rem 3.5rem 2rem 3.5rem;
     display: -webkit-box;
@@ -3238,6 +3241,49 @@ button:disabled,
           margin-bottom: 0; }
         .panel.news .content .news-wrap .item:last-child {
           margin-right: 0; }
+
+.panel.application {
+  width: 100vw;
+  background: url(../img/or-bg.png) 100% 0 no-repeat, url(../img/contact-bg.jpg) 0 100% no-repeat;
+  background-color: #fff; }
+  .panel.application .content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .panel.application .content .logo-last {
+      background-color: rgba(0, 0, 0, 0.6);
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 2rem; }
+    .panel.application .content .text {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .panel.application .content .text div {
+        padding-left: 4rem; }
+      .panel.application .content .text h3.title-w {
+        color: #595959;
+        margin-left: 0; }
+      .panel.application .content .text p {
+        color: #5b5b5b;
+        margin: 1.5rem 0;
+        font-size: 1.3rem;
+        line-height: 1.1; }
+      .panel.application .content .text a {
+        font-size: 1rem;
+        font-weight: 500; }
 
 .title-w {
   font-size: 3rem;

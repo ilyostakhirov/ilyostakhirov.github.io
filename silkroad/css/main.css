@@ -1664,13 +1664,13 @@ a.top-filter-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   margin: 0 -10px; }
   .add-form .form-group {
     width: 25%;
     padding: 0 10px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    -ms-flex-negative: 1;
+    flex-shrink: 1; }
     .add-form .form-group label {
       color: #535353;
       font-size: 14px;
@@ -2740,6 +2740,11 @@ table.kvitansiya_table {
     right: 16px;
     top: 37px;
     width: 47px; } }
+
+@media only screen and (max-width: 1200px) {
+  .add-form {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; } }
 
 @media only screen and (max-width: 991px) {
   .ticket-logo img {

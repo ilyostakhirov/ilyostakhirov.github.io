@@ -1699,13 +1699,13 @@ a.top-filter-link {
 
 .add-form {
     display: flex;
-    flex-wrap: wrap;
     margin: 0 -10px;
 
     .form-group {
         width: 25%;
         padding: 0 10px;
         margin-bottom: 15px;
+        flex-shrink: 1;
 
         label {
             color: #535353;
@@ -2834,7 +2834,11 @@ table.kvitansiya_table {
         width: 47px;
     }
 }
-
+@media only screen and (max-width: 1200px) {
+    .add-form {
+    flex-wrap: wrap;
+}
+}
 @media only screen and (max-width: 991px) {
     .ticket-logo img {
         max-height: 20px;

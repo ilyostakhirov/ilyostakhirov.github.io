@@ -2637,6 +2637,8 @@ body.is-loading #wrapper {
       width: 100%;
       margin-bottom: 20px;
       padding: 20px; }
+      .panel.mission .content .box-w-logo h3 {
+        text-align: left; }
       .panel.mission .content .box-w-logo p {
         font-size: 1.4rem; }
     .panel.mission .content .box-blue-bg {
@@ -2721,10 +2723,13 @@ body.is-loading #wrapper {
           color: #fff; }
   a.logo img {
     max-width: 50px; }
-  .header .right-header .search-btn, .ham {
+  .header .right-header .search-btn,
+  .ham {
     margin-left: 1rem; }
   .title-w {
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+  .title-w, .title_border {
+    text-align: center; } }
 
 @media screen and (max-width: 480px) {
   #wrapper {

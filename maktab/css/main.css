@@ -1971,21 +1971,6 @@ button:disabled,
     height: auto; } }
 
 /* Panel (Banner) */
-@-webkit-keyframes move-background {
-  0% {
-    background-position: 0 0; }
-  50% {
-    background-position: -400px 0; }
-  100% {
-    background-position: 0 0; } }
-@keyframes move-background {
-  0% {
-    background-position: 0 0; }
-  50% {
-    background-position: -400px 0; }
-  100% {
-    background-position: 0 0; } }
-
 .ul {
   list-style: none;
   padding: none;
@@ -2012,10 +1997,10 @@ button:disabled,
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(transparent));
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, transparent 100%); }
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%); }
   .header a {
     text-decoration: none;
     display: inline-block; }
@@ -2377,23 +2362,9 @@ strong {
   flex-shrink: 1;
   height: 100%; }
 
-@media screen and (orientation: portrait) {
-  #page-wrapper {
-    padding-left: 2rem;
-    padding-right: 2rem; } }
-
-@media screen and (min-aspect-ratio: 16 / 7) {
-  #page-wrapper {
-    padding: 6vh; } }
-
-@media screen and (min-aspect-ratio: 16 / 6) {
-  #page-wrapper {
-    padding: 0; } }
-
 @media screen and (max-width: 736px) {
   #page-wrapper {
-    height: auto;
-    padding: 1rem; } }
+    height: auto; } }
 
 @media screen and (max-width: 480px) {
   #page-wrapper {
@@ -2559,6 +2530,20 @@ body.is-loading #wrapper {
     font-size: 1.1vmax; } }
 
 @media screen and (max-width: 736px) {
+  @-webkit-keyframes move-background {
+    0% {
+      background-position: 0 0; }
+    50% {
+      background-position: -200px 0; }
+    100% {
+      background-position: 0 0; } }
+  @keyframes move-background {
+    0% {
+      background-position: 0 0; }
+    50% {
+      background-position: -200px 0; }
+    100% {
+      background-position: 0 0; } }
   .ham {
     display: block; }
   html {

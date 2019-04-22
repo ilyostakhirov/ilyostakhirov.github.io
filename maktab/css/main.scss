@@ -2317,19 +2317,7 @@ button:disabled,
 }
 
 /* Panel (Banner) */
-@keyframes move-background {
-    0% {
-        background-position: 0 0;
-    }
 
-    50% {
-        background-position: -400px 0;
-    }
-
-    100% {
-        background-position: 0 0;
-    }
-}
 
 .ul {
     list-style: none;
@@ -2737,26 +2725,17 @@ strong {
 
 @media screen and (orientation: portrait) {
 
-    #page-wrapper {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
 
 }
 
 @media screen and (min-aspect-ratio: 16 / 7) {
 
-    #page-wrapper {
-        padding: 6vh;
-    }
+
 
 }
 
 @media screen and (min-aspect-ratio: 16 / 6) {
 
-    #page-wrapper {
-        padding: 0;
-    }
 
 }
 
@@ -2764,7 +2743,6 @@ strong {
 
     #page-wrapper {
         height: auto;
-        padding: 1rem;
     }
 
 }
@@ -2947,10 +2925,23 @@ body.is-loading #wrapper {
 }
 
 @media screen and (max-width: 736px) {
+  @keyframes move-background {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: -200px 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
     .ham {
         display: block;
     }
-
+ 
     html {
         font-size: 12px;
     }

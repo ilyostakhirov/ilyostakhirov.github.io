@@ -531,14 +531,7 @@ hr {
   h5 {
     font-size: 0.9rem; }
   h6 {
-    font-size: 0.7rem; }
-  h1 br,
-  h2 br,
-  h3 br,
-  h4 br,
-  h5 br,
-  h6 br {
-    display: none; } }
+    font-size: 0.7rem; } }
 
 @media screen and (max-width: 360px) {
   html {
@@ -2150,7 +2143,8 @@ button:disabled,
       z-index: 3; }
       .panel.mission .content .box-w-logo img {
         height: auto;
-        width: 30rem; }
+        width: 30rem;
+        max-width: 100%; }
       .panel.mission .content .box-w-logo p {
         color: #000;
         font-size: 1.1rem;
@@ -2331,8 +2325,7 @@ button:disabled,
         font-weight: 500; }
 
 .title-w {
-  font-size: 3rem;
-  margin-left: 1rem; }
+  font-size: 3rem; }
 
 strong {
   font-weight: 700; }
@@ -2434,9 +2427,7 @@ strong {
   transition-delay: 0.25s;
   cursor: default;
   position: relative;
-  height: 100%;
-  -webkit-box-shadow: 0 2rem 4rem 0.25rem rgba(46, 43, 55, 0.575);
-  box-shadow: 0 2rem 4rem 0.25rem rgba(46, 43, 55, 0.575); }
+  height: 100%; }
 
 #wrapper > .scrollZone {
   position: fixed;
@@ -2571,8 +2562,7 @@ body.is-loading #wrapper {
   .ham {
     display: block; }
   html {
-    font-size: 13pt;
-    font-size: 1.1vmax; }
+    font-size: 12px; }
   #main-menu {
     display: block;
     position: fixed;
@@ -2581,7 +2571,7 @@ body.is-loading #wrapper {
     left: 0;
     bottom: 0;
     text-align: center;
-    background: rgba(58, 106, 196, 0.8);
+    background: rgba(58, 106, 196, 0.9);
     opacity: 0;
     z-index: -1;
     visibility: hidden;
@@ -2612,7 +2602,7 @@ body.is-loading #wrapper {
     -webkit-justify-content: center;
     justify-content: center; }
     #main-menu.is-open ul.main-menu li a {
-      font-size: 3rem; }
+      font-size: 2rem; }
   .panel.welcome .content img {
     display: none; }
   #wrapper {
@@ -2623,9 +2613,7 @@ body.is-loading #wrapper {
     -webkit-box-direction: normal;
     flex-direction: column;
     height: auto;
-    margin: 0 0 5rem 0;
-    -webkit-box-shadow: 0 0.25rem 1.5rem 0.25rem rgba(46, 43, 55, 0.5);
-    box-shadow: 0 0.25rem 1.5rem 0.25rem rgba(46, 43, 55, 0.5); }
+    margin: 0; }
   #wrapper > .scrollZone {
     display: none; }
   #wrapper > .copyright {
@@ -2636,7 +2624,122 @@ body.is-loading #wrapper {
     -moz-transform: translateY(1rem);
     -webkit-transform: translateY(1rem);
     -ms-transform: translateY(1rem);
-    transform: translateY(1rem); } }
+    transform: translateY(1rem); }
+  .panel {
+    width: 100vw !important;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .panel.welcome {
+    height: 100vh;
+    width: 100vw; }
+    .panel.welcome br {
+      display: none; }
+    .panel.welcome .content {
+      width: 100%;
+      padding-top: 80px; }
+    .panel.welcome .banner-title {
+      position: static;
+      margin-top: auto; }
+  .panel.mission .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-right: 0; }
+    .panel.mission .content .box-w-logo {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 20px; }
+      .panel.mission .content .box-w-logo p {
+        font-size: 1.4rem; }
+    .panel.mission .content .box-blue-bg {
+      width: 100%;
+      padding: 20px; }
+      .panel.mission .content .box-blue-bg h3 {
+        padding-left: 0;
+        font-size: 2.3rem; }
+  .panel.education {
+    width: 100%;
+    background-image: none; }
+    .panel.education .content {
+      padding: 20px; }
+      .panel.education .content .features {
+        width: auto;
+        margin: 0 -20px; }
+        .panel.education .content .features .item {
+          width: 50%;
+          padding: 0 20px; }
+          .panel.education .content .features .item span {
+            font-size: 1.2rem; }
+      .panel.education .content .gallery-grey {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-bottom: 0; }
+        .panel.education .content .gallery-grey .item {
+          width: 50%;
+          margin: 0; }
+          .panel.education .content .gallery-grey .item img {
+            height: 110px;
+            width: 100%; }
+  .panel.news .content {
+    margin: 0;
+    padding: 20px; }
+    .panel.news .content .news-wrap {
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .panel.news .content .news-wrap .item {
+        width: 100%;
+        margin: 0 0 20px; }
+        .panel.news .content .news-wrap .item h4 {
+          height: auto; }
+        .panel.news .content .news-wrap .item p {
+          font-size: 1.3rem; }
+  .panel.application {
+    background: #3a6ac4 url(../img/logo-b.png) 100% 100% no-repeat;
+    -webkit-background-size: 25rem 25rem;
+    background-size: 25rem;
+    padding-bottom: 30px; }
+    .panel.application .content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+      align-content: center; }
+      .panel.application .content .logo-last {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        background-color: transparent; }
+      .panel.application .content .text {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center; }
+        .panel.application .content .text div {
+          padding: 0; }
+        .panel.application .content .text h3.title-w {
+          color: #fff; }
+        .panel.application .content .text p {
+          color: #fff; }
+  a.logo img {
+    max-width: 50px; }
+  .header .right-header .search-btn, .ham {
+    margin-left: 1rem; }
+  .title-w {
+    font-size: 2.5rem; } }
 
 @media screen and (max-width: 480px) {
   #wrapper {

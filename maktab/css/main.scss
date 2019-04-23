@@ -2485,14 +2485,14 @@ button:disabled,
     position: relative;
 }
 
-img.grayscale {
+img.grayscale,.box-w-logo img {
       filter: grayscale(100%);
     -webkit-filter: grayscale(100%);  /* For         Webkit browsers */
     filter: gray;  /* For IE 6 - 9 */
     -webkit-transition: all .6s ease;
 }
 
-img.grayscale:hover {
+img.grayscale:hover,.box-w-logo img:hover {
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
     filter: none;

@@ -2852,6 +2852,8 @@ body.is-loading #wrapper {
       width: 100%;
       margin-bottom: 20px;
       padding: 20px; }
+      .panel.mission .content .box-w-logo img {
+        max-width: 100%; }
       .panel.mission .content .box-w-logo h3 {
         text-align: left; }
       .panel.mission .content .box-w-logo p {

@@ -1554,7 +1554,7 @@ button,
     background-color: transparent;
     border: 0;
     border-radius: 1.3rem;
-    color: #fff !important;
+    color: #fff;
     cursor: pointer;
     display: inline-block;
     font-size: 1.3rem;
@@ -1574,7 +1574,11 @@ button:hover,
 .button:hover {
     outline: none;
 }
-
+.button:hover {
+    outline: none;
+    background-color:#fff;
+    color:#bf5e5e;
+}
 input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active,
@@ -2466,25 +2470,10 @@ button:disabled,
 /* Panel */
 
 .panel {
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
     display: flex;
-    -moz-flex-grow: 0;
-    -webkit-flex-grow: 0;
-    -ms-flex-grow: 0;
     flex-grow: 0;
-    -moz-flex-shrink: 0;
-    -webkit-flex-shrink: 0;
-    -ms-flex-shrink: 0;
     flex-shrink: 0;
-    -moz-justify-content: center;
-    -webkit-justify-content: center;
-    -ms-justify-content: center;
     justify-content: center;
-    -moz-align-items: stretch;
-    -webkit-align-items: stretch;
-    -ms-align-items: stretch;
     align-items: stretch;
     height: 100%;
     overflow-x: hidden;
@@ -2495,13 +2484,21 @@ button:disabled,
     position: relative;
 }
 
+img.grayscale {
+      filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);  /* For         Webkit browsers */
+    filter: gray;  /* For IE 6 - 9 */
+    -webkit-transition: all .6s ease;
+}
 
+img.grayscale:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    filter: none;
+}
 @media screen and (max-width: 736px) {
 
     .panel {
-        -moz-flex-direction: column;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
         flex-direction: column;
         height: auto;
     }
@@ -2670,7 +2667,6 @@ button:disabled,
             img {
                 height: auto;
                 width: 30rem;
-                max-width: 100%;
             }
 
             p {

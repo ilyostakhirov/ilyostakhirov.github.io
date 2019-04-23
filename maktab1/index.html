@@ -6,13 +6,11 @@
     <meta name="robots" content="noindex, nofollow" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
-    <div class="header animated fadeInDown fast">
+    <div class="header">
         <a class="logo" href="#"><img src="img/logo-s.png" alt=""></a>
         <div id="main-menu">
             <ul class="main-menu ul">
@@ -38,33 +36,31 @@
             </svg>
         </div>
     </div>
-    <!-- Wrapper -->
-    <div class="swiper-container">
-    	<div class="swiper-wrapper">
-        <section class="panel welcome swiper-slide">
-            <div  class="content">
+    <div id="wrapper">
+        <section class="panel welcome">
+            <div class="content">
                 <div>
-                    <img data-delay="0.5s" data-swiper-animation="fadeInLeft" data-duration="1s" src="img/logo.png" alt=""></div>
-                <p data-delay="1s" data-swiper-animation="fadeInRight" data-duration="1s">Президентские школы - многопрофильные<br> инновационные образовательные комплексы,<br> обучение в которых ведется с двух до<br> восемнадцати лет в билингвальной среде</p>
+                    <img src="img/logo.png" alt=""></div>
+                <p>Президентские школы - многопрофильные<br> инновационные образовательные комплексы,<br> обучение в которых ведется с двух до<br> восемнадцати лет в билингвальной среде</p>
                 <div>
-                    <a data-delay="1.2s" data-swiper-animation="fadeInDown" data-duration="1s" href="#application" class="button">Подать заявку на поступление</a>
+                    <a href="#application" class="button">Подать заявку на поступление</a>
                 </div>
             </div>
-            <div data-delay="2.2s" data-swiper-animation="fadeInRight" data-duration="1s" class="banner-title">
+            <div class="banner-title">
                 <p>"We have to muture the youth worthy our<br>
                     great ancestors and legacy they left upon us"</p>
                 <strong>Shavkat Mirziyoev</strong>
             </div>
         </section>
-        <section class="panel mission swiper-slide" id="mission">
+        <section class="panel mission" id="mission">
             <div class="content">
                 <div class="box-w-logo">
-                    <img  data-delay="1s" data-swiper-animation="fadeInUp" data-duration="1s" src="img/photo/1-l.jpg" alt="">
-                    <h3  data-delay="1.1s" data-swiper-animation="fadeInDown" data-duration="1s" class="title_border">Наша мисия</h3>
-                    <p  data-delay="1.2s" data-swiper-animation="fadeIn" data-duration="1s">«Подготовка будущих лидеров нации, учеников которые будут побеждать на международных олимпиадах, конкурсах и поступают в лучшие вузы мира»
+                    <img class="grayscale" src="img/photo/1-l.jpg" alt="">
+                    <h3 class="title_border">Наша мисия</h3>
+                    <p>«Подготовка будущих лидеров нации, учеников которые будут побеждать на международных олимпиадах, конкурсах и поступают в лучшие вузы мира»
                         «Мы воспитываем лидеров, конкурентоспособных на мировой арене труда»</p>
                 </div>
-                <div data-delay="0.5s" data-swiper-animation="fadeIn" data-duration="1s" class="box-blue-bg">
+                <div class="box-blue-bg">
                     <h3>Организация деятельности</h3>
                     <ul class="ul">
                         <li>Принимаются ученики с 5 класса после тщательного отбора и селекции одаренных учеников из общеобразовательных школ региона</li>
@@ -75,10 +71,10 @@
                 </div>
             </div>
         </section>
-        <section class="panel education swiper-slide" id="education">
+        <section class="panel education" id="education">
             <div class="content">
-                <h3 data-delay="0s" data-swiper-animation="fadeInUp" data-duration="1s" class="title_border">Обучение</h3>
-                <div data-swiper-animation="fadeIn" data-duration="1s" class="features">
+                <h3 class="title_border">Обучение</h3>
+                <div class="features">
                     <div class="item">
                         <img src="img/icon1.svg" alt="">
                         <span>Обучение естественным и точным наукам, робототехнике, информационным технологиям и др. с применением передовых педагогических технологий</span>
@@ -105,46 +101,46 @@
                     </div>
                 </div>
                 <div class="gallery-grey">
-                    <a  data-delay="1s" data-swiper-animation="fadeInUp" data-duration="1s" class="item" href="#"><img src="img/photo/1.jpg" alt=""></a>
-                    <a data-delay="1.1s" data-swiper-animation="fadeInUp" data-duration="1s" class="item" href="#"><img src="img/photo/2.jpg" alt=""></a>
-                    <a data-delay="1.2s" data-swiper-animation="fadeInUp" data-duration="1s" class="item" href="#"><img src="img/photo/3.jpg" alt=""></a>
-                    <a data-delay="1.3s" data-swiper-animation="fadeInUp" data-duration="1s" class="item" href="#"><img src="img/photo/4.jpg" alt=""></a>
+                    <a class="item" href="#"><img class="grayscale" src="img/photo/1.jpg" alt=""></a>
+                    <a class="item" href="#"><img class="grayscale" src="img/photo/2.jpg" alt=""></a>
+                    <a class="item" href="#"><img class="grayscale" src="img/photo/3.jpg" alt=""></a>
+                    <a class="item" href="#"><img class="grayscale" src="img/photo/4.jpg" alt=""></a>
                 </div>
             </div>
         </section>
-        <section class="panel news swiper-slide" id="news">
+        <section class="panel news" id="news">
             <div class="content">
-                <h3  data-delay="0.5s" data-swiper-animation="fadeInDown" data-duration="1s" class="title-w">Учебная программа: STEAM образование</h3>
+                <h3 class="title-w">Учебная программа: STEAM образование</h3>
                 <div class="news-wrap">
-                    <div data-delay="1s" data-swiper-animation="fadeInUp" data-duration="1s" class="item">
+                    <div class="item">
                         <img src="img/photo/news1.jpg" alt="">
                         <h4><strong>Science</strong><br>Естественные науки</h4>
                         <p>Лучшие британские методики и современные технологии для детей с 2 до 6 лет
                             Билингвальное обучение с носителями английского языка — метод полного погружения в языковую среду
                             Занятия на русском языке во второй половине учебного дня разработаны и выстроены с учетом ФГОС</p>
                     </div>
-                    <div data-delay="1.2s" data-swiper-animation="fadeInUp" data-duration="1s" class="item">
+                    <div class="item">
                         <img src="img/photo/news2.jpg" alt="">
                         <h4><strong>Technology</strong><br>Технологии</h4>
                         <p>Лучшие британские методики и современные технологии для детей с 2 до 6 лет
                             Билингвальное обучение с носителями английского языка — метод полного погружения в языковую среду
                             Занятия на русском языке во второй половине учебного дня разработаны и выстроены с учетом ФГОС</p>
                     </div>
-                    <div data-delay="1.4s" data-swiper-animation="fadeInUp" data-duration="1s" class="item">
+                    <div class="item">
                         <img src="img/photo/news3.jpg" alt="">
                         <h4><strong>Engineering</strong><br>Инженерные технологии</h4>
                         <p>Лучшие британские методики и современные технологии для детей с 2 до 6 лет
                             Билингвальное обучение с носителями английского языка — метод полного погружения в языковую среду
                             Занятия на русском языке во второй половине учебного дня разработаны и выстроены с учетом ФГОС</p>
                     </div>
-                    <div data-delay="1.6s" data-swiper-animation="fadeInUp" data-duration="1s" class="item">
+                    <div class="item">
                         <img src="img/photo/news4.jpg" alt="">
                         <h4><strong>Art</strong><br>Искусство</h4>
                         <p>Лучшие британские методики и современные технологии для детей с 2 до 6 лет
                             Билингвальное обучение с носителями английского языка — метод полного погружения в языковую среду
                             Занятия на русском языке во второй половине учебного дня разработаны и выстроены с учетом ФГОС</p>
                     </div>
-                    <div data-delay="1.8s" data-swiper-animation="fadeInUp" data-duration="1s" class="item">
+                    <div class="item">
                         <img src="img/photo/news5.jpg" alt="">
                         <h4><strong>Mathematics</strong><br>Математика</h4>
                         <p>Лучшие британские методики и современные технологии для детей с 2 до 6 лет
@@ -154,24 +150,23 @@
                 </div>
             </div>
         </section>
-        <section class="panel application swiper-slide" id="application">
+        <section class="panel application" id="application">
             <div class="content">
                 <div class="logo-last">
-                    <a  data-delay="0.5s" data-swiper-animation="fadeInDown" data-duration="1s" href="#">
+                    <a href="#">
                         <img src="img/logo.png" alt="">
                     </a>
                 </div>
                 <div class="text">
                     <div>
-                        <h3  data-delay="1s" data-swiper-animation="fadeInRight" data-duration="1s" class="title-w">Подайте заявку</h3>
-                        <p  data-delay="1.1s" data-swiper-animation="fadeIn" data-duration="1s">Для подачи заявки перейдите<br>
+                        <h3 class="title-w">Подайте заявку</h3>
+                        <p>Для подачи заявки перейдите<br>
                             в систему регистрации в Президентс</p>
-                        <a  data-delay="1.2s" data-swiper-animation="fadeInUp" data-duration="1s" href="#" class="button special">Заполнить форму заявки</a>
+                        <a href="#" class="button special">Заполнить форму заявки</a>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
     </div>
     <div class="search">
         <button id="btn-search-close" class="btn btn--search-close" aria-label="Close search form"><svg class="icon icon--cross" id="icon-cross" viewBox="0 0 24 24" width="100%" height="100%">
@@ -184,8 +179,7 @@
     </div>
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/SwiperAnimation.min.js"></script>
+    <script src="js/skel.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

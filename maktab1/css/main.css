@@ -2141,8 +2141,7 @@ button:disabled,
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  height: 100vh;
-  width: auto;
+  height: 100%;
   overflow-x: hidden;
   overflow-y: auto; }
 
@@ -2198,10 +2197,10 @@ img.grayscale:hover {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(transparent));
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, transparent 100%); }
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%); }
   .header a {
     text-decoration: none;
     display: inline-block; }
@@ -2264,7 +2263,10 @@ img.grayscale:hover {
   justify-content: flex-start;
   -webkit-background-size: cover;
   background-size: cover;
-  position: relative; }
+  background-attachment: fixed;
+  position: relative;
+  -webkit-animation: move-background 40s linear infinite;
+  animation: move-background 40s linear infinite; }
   .panel.welcome .content {
     padding: 3.5rem 3.5rem 2rem 3.5rem;
     display: -webkit-box;
@@ -2735,7 +2737,7 @@ body.is-loading #wrapper {
     font-size: 10pt;
     font-size: 1.1vmax; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 736px) {
   @-webkit-keyframes move-background {
     0% {
       background-position: 0 0; }
@@ -2768,35 +2770,32 @@ body.is-loading #wrapper {
     visibility: hidden;
     -webkit-transition: all .375s;
     -o-transition: all .375s;
-    transition: all .375s;
-    height: 100vh; }
+    transition: all .375s; }
   #main-menu.is-open {
     opacity: 1;
     z-index: 100;
     visibility: visible; }
   #main-menu.is-open ul.main-menu {
     display: -webkit-inline-box;
-    display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
     display: inline-flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
     height: 93%;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
     -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center; }
-    #main-menu.is-open ul.main-menu li {
-      margin-bottom: 15px; }
-      #main-menu.is-open ul.main-menu li a {
-        font-size: 2rem; }
+    #main-menu.is-open ul.main-menu li a {
+      font-size: 2rem; }
   .panel.welcome .content img {
     display: none; }
   #wrapper {
@@ -2814,8 +2813,6 @@ body.is-loading #wrapper {
     display: block;
     width: 100%;
     text-align: center; }
-  .header .right-header .lang {
-    font-size: 16px; }
   body.is-loading #wrapper {
     -moz-transform: translateY(1rem);
     -webkit-transform: translateY(1rem);
@@ -2836,8 +2833,7 @@ body.is-loading #wrapper {
       padding-top: 80px; }
     .panel.welcome .banner-title {
       position: static;
-      margin-top: auto;
-      text-align: left; }
+      margin-top: auto; }
   .panel.mission .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2894,12 +2890,10 @@ body.is-loading #wrapper {
       flex-wrap: wrap; }
       .panel.news .content .news-wrap .item {
         width: 100%;
-        margin: 0 0 20px;
-        text-align: center; }
+        margin: 0 0 20px; }
         .panel.news .content .news-wrap .item h4 {
           height: auto; }
         .panel.news .content .news-wrap .item p {
-          text-align: left;
           font-size: 1.3rem; }
   .panel.application {
     background: #3a6ac4 url(../img/logo-b.png) 100% 100% no-repeat;

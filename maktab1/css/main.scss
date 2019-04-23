@@ -2475,8 +2475,7 @@ button:disabled,
     flex-shrink: 0;
     justify-content: center;
     align-items: stretch;
-    height: 100vh;    
-    width: auto;
+    height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -2598,7 +2597,9 @@ img.grayscale:hover {
     background: url(../img/school-l.jpg) no-repeat;
     justify-content: flex-start;
     background-size: cover;
-    position: relative; 
+    background-attachment: fixed;
+    position: relative;
+    animation: move-background 40s linear infinite;
 
     .content {
         padding: 3.5rem 3.5rem 2rem 3.5rem;
@@ -3101,7 +3102,7 @@ body.is-loading #wrapper {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 736px) {
     @keyframes move-background {
         0% {
             background-position: 0 0;
@@ -3136,8 +3137,9 @@ body.is-loading #wrapper {
         opacity: 0;
         z-index: -1;
         visibility: hidden;
+        -webkit-transition: all .375s;
+        -o-transition: all .375s;
         transition: all .375s;
-            height: 100vh;
     }
 
     #main-menu.is-open {
@@ -3147,17 +3149,23 @@ body.is-loading #wrapper {
     }
 
     #main-menu.is-open ul.main-menu {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
         display: inline-flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         height: 93%;
-        align-items: flex-start;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
 
-        li {
-                margin-bottom: 15px;
-            a {
+        li a {
             font-size: 2rem;
-        }
         }
     }
 
@@ -3183,9 +3191,7 @@ body.is-loading #wrapper {
         width: 100%;
         text-align: center;
     }
-.header .right-header .lang {
-    font-size: 16px;
-}
+
     body.is-loading #wrapper {
         -moz-transform: translateY(1rem);
         -webkit-transform: translateY(1rem);
@@ -3214,7 +3220,6 @@ body.is-loading #wrapper {
         .banner-title {
             position: static;
             margin-top: auto;
-            text-align:left;
         }
     }
 
@@ -3299,14 +3304,12 @@ body.is-loading #wrapper {
                 .item {
                     width: 100%;
                     margin: 0 0 20px;
-                        text-align: center;
 
                     h4 {
                         height: auto;
                     }
 
                     p {
-                            text-align: left;
                         font-size: 1.3rem;
                     }
                 }

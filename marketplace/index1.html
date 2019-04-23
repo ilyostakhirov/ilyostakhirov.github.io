@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-
+ 
 <body>
     <div class="header">
         <div class="container align d-flex">
-            <a class="logo" href=""><img src="img/logo-w.png" alt=""></a>
+            <a class="logo" href=""><img src="img/logo.png" alt=""></a>
             <div class="header_right  d-flex">
                 <div class="lang">
                     <span class="active" href="#">Рус</span> / <a href="#">Uzb</a>
                 </div>
-                <a class="btn btn-primary" href="#">Войти</a>
+                <a class="btn btn-primary btn-line" href="#">Войти</a>
             </div>
         </div>
     </div>
@@ -121,53 +121,64 @@
             </div>
         </div>
     </div>
-    <div class="section dark-bg">
+    <div id="microloan" class="section dark-bg">
         <div class="container">
-            <h3 class="heading-title">Выберите цель получения кредита:</h3>
-            <div class="type-credit">
-                <div class="item">
-                    <a href="#">
-                        <div class="icon">
-                            <svg version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91 114">
-                                <path d="M21 67a118 118 0 0 0 50 15l1 1 12 2c4 0 5-5 1-6a837 837 0 0 0-11-3v-4l2-16 13-2v-2l-15-1-3 2v4l-5-2-6-4c-4-2-9-1-14-1h-8l-5 1-1 3-2-2-3-4c-2-2-4-5-7-6-2 0-6 0-6 3v3l-6-2c-4-1-7 1-7 5 1 4 5 6 8 8l12 8zm4-15l1 1h-2l-6-3-1-4c3-1 7 4 8 6zM6 51c0-2 1-1 2-1l3 2 15 6c4 2 9 3 14 3h17c3 0 3-4 0-4H40l-4-1v-2h21c3 0 5 3 8 5l5 2a63 63 0 0 0-1 16l-14-2a148 148 0 0 1-45-21l-4-3zM21 29l1 8c3 5 11 4 16 5h10c2-1 5-1 6-3 2-2 1-5 2-8v-9l3-1c2 0 2-4 0-4h-7c1-3 1-6-1-8-2-3-8-2-12-2-3 0-9-1-11 2-3 2-3 6-3 9h-8v2l4 1v8zm10 7c-2-1-4-1-4-3l-1-2h5v5zm3-14h8v5h-8v-5zm5 14h-4v-5h1l6 1v4h-3zm11-3l-1 3h-3v-4h5l-1 1zm1-11v6l-6-1v-5h6zM31 12l5-1h3l8 1c2 0 2 3 2 5l-11 1h-8l1-6zm0 10v5l-5 1-2-7 7 1z" />
-                            </svg>
+            <h3 class="heading-title">Получить микрозайм</h3>
+            <div class="credit-block row">
+                <div class="col-md-8">
+                    <div class="credit-block__form">
+                        <div class="rang-item mb-20">
+                            <div class="rang-text-wrap">
+                                <div>Сколько вам нужно?</div>
+                                <div class="rang-text-input">
+                                    <input type="number" id="amount-input" value="0" min="0" max="100">
+                                    <span>сум</span>
+                                </div>
+                            </div>
+                            <input type="range" id="amount-range" value="0" step="500000" min="1000000" max="18000000">
+                            <div class="limit-wrap">
+                                <div>1 000 000 сум</div>
+                                <div>18 000 000 сум</div>
+                            </div>
                         </div>
-                        <div class="type-credit_desc">Покупка товаров и услуг<strong>(потребительский)</strong></div>
-                    </a>
+                        <div class="rang-item mb-20">
+                            <div class="rang-text-wrap">
+                                <div>На какой срок?</div>
+                                <div class="rang-text-input">
+                                    <input type="number" id="months-input" value="0" min="0" max="100">
+                                    <span>месяц</span>
+                                </div>
+                            </div>
+                            <input type="range" id="months-range" value="0" step="1" min="1" max="36">
+                            <div class="limit-wrap">
+                                <div>1 месяц</div>
+                                <div>36 месяцев</div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                        <a class="btn btn-primary btn-lg" href="#"><span>Дальше</span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="square" stroke-linejoin="arcs"><path d="M9 18l6-6-6-6"/></svg></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="item">
-                    <a href="#">
-                        <div class="icon">
-                            <svg class="microzaym" version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                                <path d="M74 49V11h-8v6h-3c-2-3-8-12-14-12h-2c-9-1-15-1-16 1v3l3 3h-4s-4 1-4 6l3 4c-1 1-2 3-1 5l1 2-2 4 2 5v6c0 1 1 2 4 2l-4 4c-10 8-8 21-6 30l1 6v5l3-1h2a77 77 0 0 0 36 0h3l2 1 1-5 1-6c1-9 3-22-7-30l-4-4v-1h5v4h8zm-5-35h2v32h-2V14zm-6 38c9 7 7 19 6 27l-1 8h-4a75 75 0 0 1-34 0h-3l-1-8c-2-8-3-20 5-27l6-5 13 1 8-1 5 5zm-3-10l-1 1c-4 4-15 2-21 1l-5-1h-2l1-4h2v-3c-3 0-4-2-4-3l1-2h2v-2l-3-3 1-3 2 1 1-3-5-3 1-3h8l4 2 1-3c-2-1-9-4-10-6 2-2 11-1 14-1l2 1c3 0 9 7 11 11l1 1h5v21l-6 1z" />
-                                <path d="M56 56v-3h-7v-3h-3v3h-3l-3 1a5 5 0 0 0-2 3l-1 2v2l1 2v2l2 1h6v8h-7v3h7v3h3v-3h3c3 0 5-2 5-5v-3c0-3-2-5-5-5h-3v-8h7zm-4 11c1 0 2 0 2 2v3l-2 2h-3v-8h3zm-6-3h-3l-1-1h-1v-1l-1-1v-2l1-1v-1l2-1h3v8z" />
-                            </svg>
+                <div class="col-md-4">
+                    <div class="credit-block__desc">
+                        <div class="credit-block__desc-item">
+                            <div>Сумма:</div>
+                            <div><strong>2 000 000</strong><small>сум</small></div>
                         </div>
-                        <div class="type-credit_desc">Просто деньги на карту<strong>(микрозайм)</strong></div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <div class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="1 -172 576 575">
-                                <path d="M240 87h38v19h-38zm0 0" />
-                                <path d="M568 58l-65-9A329 329 0 0 0 332 0h-11c-55 1-108 14-156 40l-33 18C93 59 55 69 22 88 8 96 0 110 0 126v57c0 5 4 9 10 9h32a57 57 0 0 0 108 0h257a57 57 0 0 0 108 0h7l31-13c14-5 23-19 23-34V68c0-5-4-9-8-10zM134 181a38 38 0 1 1-76-15 38 38 0 0 1 76 15zm173-8H154a58 58 0 1 0-116 0H19v-47c0-9 5-17 13-21 31-18 66-28 102-28h173zm0-115H172l2-1c41-22 87-35 133-37zm19-38h6c39 0 77 7 113 21l-17 17H326zm172 161a38 38 0 1 1-75-15 38 38 0 0 1 75 15zm59-94h-29v19h29v39c0 8-4 14-11 16l-28 12v-3-3-3l-1-3-1-2v-3l-1-3-1-2-1-3-2-2-1-3-2-2-1-2-2-3-2-1-2-3-2-1-2-2-2-2-2-2-3-1-2-1-2-2-3-1-3-1-2-1-3-1h-3l-3-1h-8c-32 0-58 25-58 57h-77V77h106c3 0 5-1 7-3l25-24a308 308 0 0 1 34 18l59 8zm0 0" />
-                            </svg>
+                        <div class="credit-block__desc-item">
+                            <div>Срок:</div>
+                            <div><strong>12</strong><small>месяцев</small></div>
                         </div>
-                        <div class="type-credit_desc">Покупка автомобиля <strong>(автокредит)</strong></div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <div class="icon">
-                            <svg class="ipoteka" version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <circle cx="303" cy="93" r="12" />
-                                <path d="M509 329a77 77 0 0 0-92-13l-48 23c-14 6-29 9-43 10 7-10 11-22 11-35s-10-23-23-23H194c-31 0-59 13-79 36l-41 47c-7-8-17-13-27-13H12a12 12 0 1 0 0 23h35c6 0 11 5 11 12v69c0 7-5 12-11 12H12a12 12 0 1 0 0 23h35c19 0 34-15 34-35v-65l51-58c16-18 38-28 62-28h120c0 19-15 35-35 35h-70a12 12 0 1 0 0 23h113c19 0 39-4 56-12l50-23c17-10 37-9 53 0l-97 73c-18 14-40 22-62 25l-164 18-14 1h-28a12 12 0 1 0 0 23h28l16-1 164-18c27-3 53-13 74-29l109-82a12 12 0 0 0 2-18zM460 100l-18-12V23c0-6-5-11-11-11h-47c-6 0-12 5-12 11v22l-42-26a54 54 0 0 0-55 0l-130 81c-11 6-17 17-17 29v11c0 6 5 11 12 11h23v105a12 12 0 1 0 23 0V140c0-7-5-12-11-12h-24c1-4 3-7 6-9l130-80c9-5 22-5 31 0l130 80c3 2 5 5 6 9h-23c-7 0-12 5-12 12v139a12 12 0 1 0 23 0V151h23c7 0 12-5 12-11v-11c0-12-6-23-17-29zm-41-26l-24-14 1-2V35h23v39z" />
-                                <path d="M291 151h-70c-6 0-12 5-12 12v93a12 12 0 1 0 24 0v-81h46v46a12 12 0 1 0 0 23v12a12 12 0 1 0 24 0v-93c0-7-6-12-12-12zM384 151h-58c-7 0-12 5-12 12v70c0 6 5 11 12 11h58c6 0 12-5 12-11v-70c0-7-6-12-12-12zm-12 70h-35v-46h35v46z" />
-                            </svg>
+                        <div class="credit-block__desc-item">
+                            <div>Ежемесячный платёж:</div>
+                            <div><strong>700 000</strong><small>сум</small></div>
                         </div>
-                        <div class="type-credit_desc">Покупка квартиры или дома <strong>(ипотека)</strong></div>
-                    </a>
+                        <div class="credit-block__desc-item">
+                            <div>К возврату:</div>
+                            <div><strong>2 100 000</strong><small>сум</small></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -175,15 +186,15 @@
     <div class="footer">
         <div class="container">
             <div class="d-flex">
-                <a class="logo" href="#"><img src="img/logo.png" alt=""></a>
-                <ul>
-                    <li><a href="#">Политика конфиденциальности</a></li>
-                    <li><a href="#">Публичная оферта</a></li>
-                    <li><a href="#">Разработчикам</a></li>
-                </ul>
-                <div class="footer__contacts">
-                    <div class="footer__contacts-phone">+998 71 123 45 67</div>
-                </div>
+            <a class="logo" href="#"><img src="img/logo.png" alt=""></a>
+            <ul>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Публичная оферта</a></li>
+                <li><a href="#">Разработчикам</a></li>
+            </ul>
+            <div class="footer__contacts">
+                <div class="footer__contacts-phone">+998 71 123 45 67</div>
+            </div>
             </div>
         </div>
     </div>

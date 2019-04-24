@@ -2149,7 +2149,8 @@ button:disabled,
 .panel > * {
   position: relative; }
 
-img.grayscale, .box-w-logo img {
+img.grayscale,
+.box-w-logo img {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   /* For         Webkit browsers */
@@ -2157,7 +2158,8 @@ img.grayscale, .box-w-logo img {
   /* For IE 6 - 9 */
   -webkit-transition: all .6s ease; }
 
-img.grayscale:hover, .box-w-logo img:hover {
+img.grayscale:hover,
+.box-w-logo img:hover {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
   filter: none; }
@@ -2198,10 +2200,10 @@ img.grayscale:hover, .box-w-logo img:hover {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(transparent));
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, transparent 100%); }
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%); }
   .header a {
     text-decoration: none;
     display: inline-block; }
@@ -2736,6 +2738,8 @@ body.is-loading #wrapper {
     font-size: 1.1vmax; } }
 
 @media screen and (max-width: 768px) {
+  [data-swiper-animation] {
+    visibility: visible !important; }
   @-webkit-keyframes move-background {
     0% {
       background-position: 0 0; }
@@ -2944,7 +2948,8 @@ body.is-loading #wrapper {
     margin-left: 1rem; }
   .title-w {
     font-size: 2.5rem; }
-  .title-w, .title_border {
+  .title-w,
+  .title_border {
     text-align: center; } }
 
 @media screen and (max-width: 480px) {

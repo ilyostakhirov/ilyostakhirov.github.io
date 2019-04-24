@@ -9,6 +9,8 @@ var swiper = new Swiper('.swiper-container', {
     freeModeMomentum: true,
     speed:500,
     simulateTouch: true,
+    touchReleaseOnEdges: true,
+    allowTouchMove: true,
     on: {
       init: function () {
         swiperAnimation.init(this).animate();
@@ -19,12 +21,15 @@ var swiper = new Swiper('.swiper-container', {
     },
     breakpoints: {
         768: {
-          
+          direction: 'vertical',
+          mousewheel: true,
+          allowTouchMove: true,
         }
-      }
+      },
+      
+      
 });
-
-
+ 
 
 
 let burger = document.getElementById('burger'),

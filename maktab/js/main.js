@@ -4,8 +4,11 @@ var swiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
     slidesPerView: 'auto',
     mousewheel: true,
+    keyboard: true,
     freeMode: true,
-    // freeModeMomentum: false,
+    freeModeMomentum: true,
+    speed:500,
+    simulateTouch: true,
     on: {
       init: function () {
         swiperAnimation.init(this).animate();

@@ -2488,6 +2488,8 @@ img.grayscale:hover,
         padding-left: 45px; }
       .panel.mission .content .box-blue-bg ul li {
         background: url(../img/list.svg) no-repeat 0 50%;
+        -webkit-background-size: 28px 28px;
+        background-size: 28px;
         padding-left: 45px;
         font-size: 1.4rem;
         line-height: 1.3;

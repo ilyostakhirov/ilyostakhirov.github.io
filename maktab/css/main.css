@@ -2265,8 +2265,7 @@ button:disabled,
   align-items: stretch;
   height: 100vh;
   width: auto;
-  overflow-x: hidden;
-  overflow-y: auto; }
+  overflow: hidden; }
 
 .panel > * {
   position: relative; }

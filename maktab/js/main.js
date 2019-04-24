@@ -19,7 +19,7 @@ var swiper = new Swiper('.swiper-container', {
     },
     breakpoints: {
         768: {
-          direction: 'vertical',
+          
         }
       }
 });

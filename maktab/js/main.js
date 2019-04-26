@@ -7,29 +7,29 @@ var swiper = new Swiper('.swiper-container', {
     keyboard: true,
     freeMode: true,
     freeModeMomentum: true,
-    speed:500,
+    speed: 500,
     simulateTouch: true,
     touchReleaseOnEdges: true,
     allowTouchMove: true,
     on: {
-      init: function () {
-        swiperAnimation.init(this).animate();
-      },
-      slideChange: function () {
-        swiperAnimation.init(this).animate();
-      }
+        init: function() {
+            swiperAnimation.init(this).animate();
+        },
+        slideChange: function() {
+            swiperAnimation.init(this).animate();
+        }
     },
     breakpoints: {
         768: {
-          direction: 'vertical',
-          mousewheel: true,
-          allowTouchMove: true,
+            direction: 'vertical',
+            mousewheel: true,
+            allowTouchMove: true,
         }
-      },
-      
-      
+    },
+
+
 });
- 
+
 
 
 let burger = document.getElementById('burger'),
@@ -80,3 +80,11 @@ burger.addEventListener('click', function(e) {
     init();
 
 })(window);
+
+
+$(function() {
+    $('#application').click(function(e) {
+        e.preventDefault()
+        swiper.slideTo(5, 1000, false);
+    })
+})

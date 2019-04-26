@@ -2218,6 +2218,8 @@ body.page {
       font-size: 1.38rem;
       line-height: 1.4;
       margin: 3rem 0; }
+  .panel.welcome .button {
+    border: 2px solid #fff; }
   .panel.welcome .banner-title {
     background-color: #595959;
     color: #fff;

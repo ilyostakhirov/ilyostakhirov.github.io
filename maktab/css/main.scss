@@ -1500,6 +1500,43 @@ table.alt tfoot {
     border-top: 0;
 }
 
+@-webkit-keyframes ArrowRightAnimation {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    to {
+        -webkit-transform: translateX(.5rem);
+        transform: translateX(.5rem)
+    }
+}
+
+@keyframes ArrowRightAnimation {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    to {
+        -webkit-transform: translateX(.5rem);
+        transform: translateX(.5rem)
+    }
+}
+.arrow-right {
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: ArrowRightAnimation;
+    animation-timing-function: ease;
+    cursor: pointer;
+    display: inline-block;
+        position: fixed!important;
+    right: 60px;
+    bottom: 60px;
+    transition: all .3s ease;    
+    align-self: flex-end;
+} 
 /* Button */
 
 input[type="submit"],
@@ -1529,7 +1566,14 @@ button,
     outline: none;
     line-height: 1;
 }
-
+.btn-line{
+    border:2px solid #d5c88d;
+    background-color: #fff;
+    color:#000;
+}
+.ml-20{
+    margin-left:20px;
+}
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
@@ -1541,7 +1585,7 @@ button:hover,
 .button:hover {
     outline: none;
     background-color: #fff;
-    color: #bf5e5e;
+    color: #000;
 }
 
 input[type="submit"]:active,

@@ -2945,6 +2945,9 @@ strong {
 }
 
 @media screen and (max-width: 768px) {
+    .arrow-right{
+        display:none;
+    }
     body.home {
         overflow: auto;
     }

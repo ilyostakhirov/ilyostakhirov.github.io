@@ -85,7 +85,7 @@ burger.addEventListener('click', function(e) {
 $(function() {
     $('#application').click(function(e) {
         e.preventDefault()
-        swiper.slideTo(5, 1000, false);
+        swiper.slideTo(4, 1000, false);
     })
 
     $('.arrow-right').click(function(e) {

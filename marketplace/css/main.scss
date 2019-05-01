@@ -1001,6 +1001,7 @@ label.label-content {
     padding: 25px;
     display: flex;
     flex-direction: column;
+    position:relative;
 
     label {
         font-size: 11px !important;
@@ -1031,7 +1032,17 @@ label.label-content {
         width: 110px;
     }
 }
-
+.l-title,.s-title {
+    font-size: 19px;
+    line-height: 1;
+    small {
+    color: #888888;
+        font-size: 80%;
+}
+}
+.s-title {
+    font-size: 16px;
+}
 .cards {
     max-width: 350px;
     margin: 20px auto;
@@ -1550,7 +1561,17 @@ img {
     -ms-flex-line-pack: center;
     align-content: center;
 }
-
+.owner {
+    text-align: right;
+    width: calc(100% - 170px);
+    position: absolute;
+    bottom: 22px;
+    right: 20px;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 @media (max-width: 1200px) {
     .how-block__item__desc {
         span {

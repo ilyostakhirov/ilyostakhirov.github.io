@@ -591,12 +591,19 @@ header nav.bg {
   height: 600px;
   -webkit-transform: translate3d(-150px, -50%, 0);
   transform: translate3d(-150px, -50%, 0);
-  background: url(../img/iphone.png) center center no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-  z-index: 99;
-  -webkit-filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.5));
-  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.5)); }
+  z-index: 99; }
+  .iphone .iphone-frame {
+    position: relative;
+    z-index: 2;
+    width: 100%; }
+  .iphone .iphone-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 87%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
 
 .info-wrap {
   z-index: 99;

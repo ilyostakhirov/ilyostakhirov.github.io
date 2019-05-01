@@ -94,12 +94,14 @@ body {
         right: 25%;
         left: inherit;
         transform: translate3d(150px, -50%, 0);
+
     }
 
     .info-wrap {
         margin-left: 50px;
         width: 100%;
         margin-right: calc(25% + 230px);
+
     }
 
     .text-slide {
@@ -230,8 +232,8 @@ header {
 }
 
 header nav.bg {
-    background-color:#003d6d;
-    box-shadow:0 0 4px #011c31;
+    background-color: #003d6d;
+    box-shadow: 0 0 4px #011c31;
 }
 
 .full-screen {
@@ -378,10 +380,24 @@ header nav.bg {
     width: 300px;
     height: 600px;
     transform: translate3d(-150px, -50%, 0);
-    background: url(../img/iphone.png) center center no-repeat;
-    background-size: cover;
+    // background: url(../img/iphone.png) center center no-repeat;
+    // background-size: cover;
     z-index: 99;
-    filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.5));
+
+    // filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.5));
+    .iphone-frame {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+    }
+
+    .iphone-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 87%;
+        transform: translate(-50%, -50%);
+    }
 
 }
 

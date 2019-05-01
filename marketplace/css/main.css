@@ -1213,7 +1213,8 @@ label.label-content {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  position: relative; }
   .card-item-block label {
     font-size: 11px !important;
     text-transform: uppercase;
@@ -1232,6 +1233,16 @@ label.label-content {
     background: url(../img/data.svg) no-repeat #fff 4px 5px;
     padding: .375rem .75rem .375rem 42px;
     width: 110px; }
+
+.l-title, .s-title {
+  font-size: 19px;
+  line-height: 1; }
+  .l-title small, .s-title small {
+    color: #888888;
+    font-size: 80%; }
+
+.s-title {
+  font-size: 16px; }
 
 .cards {
   max-width: 350px;
@@ -1729,6 +1740,19 @@ img {
   -ms-flex-line-pack: center;
   -webkit-align-content: center;
   align-content: center; }
+
+.owner {
+  text-align: right;
+  width: -webkit-calc(100% - 170px);
+  width: calc(100% - 170px);
+  position: absolute;
+  bottom: 22px;
+  right: 20px;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis; }
 
 @media (max-width: 1200px) {
   .how-block__item__desc span {

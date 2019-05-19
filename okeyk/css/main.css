@@ -492,7 +492,9 @@ h3 {
     flex: 0 0 50%;
     max-width: 50%; }
   .logo img {
-    width: 110px; } }
+    width: 110px; }
+  .social {
+    text-align: center; } }
 
 @media screen and (max-width: 400px) {
   .banner .container .okeyk img {

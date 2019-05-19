@@ -14,3 +14,27 @@ $(document).ready(function() {
     });
 
 });
+
+
+var galleryFeed = new Instafeed({
+  get: "user",
+  userId: 8754392922,
+  accessToken: "8754392922.62ea906.3ec00db88a8f4aedb429fe3927b81cd8",
+  resolution: "standard_resolution",
+  useHttp: "true",
+  limit: 10,
+  template: '<li><a target="_blank" href="{{link}}"><img src="{{image}}" class="img-responsive"></a></li>',
+  target: "instafeed-gallery-feed",
+  after: function() {
+    // disable button if no more results to load
+    if (!this.hasNext()) {
+      btnInstafeedLoad.setAttribute('disabled', 'disabled');
+    }
+  },
+});
+galleryFeed.run();
+
+var btnInstafeedLoad = document.getElementById("btn-instafeed-load");
+btnInstafeedLoad.addEventListener("click", function() {
+  galleryFeed.next()
+});

@@ -18,8 +18,8 @@ $(document).ready(function() {
 
 var galleryFeed = new Instafeed({
   get: "user",
-  userId: 8754392922,
-  accessToken: "8754392922.62ea906.3ec00db88a8f4aedb429fe3927b81cd8",
+  userId: 13565335973,
+  accessToken: "13565335973.1677ed0.30a2a6838f964ea99ece71512f71a60d",
   resolution: "standard_resolution",
   useHttp: "true",
   limit: 10,

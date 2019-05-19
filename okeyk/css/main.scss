@@ -108,6 +108,10 @@ img{
         }
     }
 }
+html:lang(ru) .banner{
+background: url(../img/banner_ru.jpg) no-repeat 50% 0;
+background-size: cover;
+}
 .gift-block{
     margin-top: 10px;
     background: url(../img/gift-bg.jpg) 50% 0 no-repeat;

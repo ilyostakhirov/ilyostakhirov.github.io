@@ -133,6 +133,9 @@ h3{
     padding-bottom: 30px;
     li{
         margin-bottom: 20px;
+        a{
+                text-decoration: underline;
+            }
     }
 }
 .results{
@@ -150,6 +153,7 @@ h3{
             flex:0 0 20%;
             max-width:20%;
             padding:10px;
+
         }
     }
 }

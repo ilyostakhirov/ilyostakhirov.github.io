@@ -1,0 +1,396 @@
+$spaceamounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100);
+$sides: (top, bottom, left, right);
+$red: #BC2E31;
+
+/* open-sans-regular - cyrillic_latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v16-cyrillic_latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+        url('../fonts/open-sans-v16-cyrillic_latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/open-sans-v16-cyrillic_latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/open-sans-v16-cyrillic_latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/open-sans-v16-cyrillic_latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/open-sans-v16-cyrillic_latin-regular.svg#OpenSans') format('svg');
+    /* Legacy iOS */
+}
+
+/* open-sans-600 - cyrillic_latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/open-sans-v16-cyrillic_latin-600.eot');
+    /* IE9 Compat Modes */
+    src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
+        url('../fonts/open-sans-v16-cyrillic_latin-600.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/open-sans-v16-cyrillic_latin-600.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/open-sans-v16-cyrillic_latin-600.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/open-sans-v16-cyrillic_latin-600.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/open-sans-v16-cyrillic_latin-600.svg#OpenSans') format('svg');
+    /* Legacy iOS */
+}
+
+strong {
+    font-weight: 600;
+}
+
+@each $space in $spaceamounts {
+    @each $side in $sides {
+        .m#{str-slice($side, 0, 1)}-#{$space} {
+            margin-#{$side}: #{$space}px !important;
+        }
+
+        .p#{str-slice($side, 0, 1)}-#{$space} {
+            padding-#{$side}: #{$space}px !important;
+        }
+    }
+}
+
+.p-20 {
+    padding: 10px 20px;
+}
+
+body {
+    position: relative;
+    color: #313131;
+    font-size: 15px;
+}
+
+.ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 73px;
+}
+
+.header {
+    background-color: #F15C4C;
+    text-align: center;
+
+    a.logo {
+        margin: 7px 0 8px;
+        display: inline-block;
+    }
+}
+
+a.user {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    img {
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        object-fit: contain;
+    }
+
+    div {
+        line-height: 1;
+        margin-left: 10px;
+
+        strong {
+            display: block;
+            color: #313131;
+            margin-bottom: 2px;
+        }
+
+        span {
+            color: #8B8B8B;
+            font-size: 13px;
+        }
+    }
+}
+
+.title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    color: #f15c4c;
+}
+
+.b-t {
+    border-top: 1px solid #eeedf5;
+}
+
+.b-b {
+    border-bottom: 1px solid #eeedf5;
+}
+
+.s-title {
+    font-weight: 600;
+
+}
+
+table.product-list {
+    width: 100%;
+
+    thead {
+        border-bottom: 1px solid #eeedf5;
+
+        td {
+            font-size: 13px;
+            font-weight: 600;
+            padding: 10px 0;
+        }
+    }
+
+    tbody {
+        td {
+            padding: 10px 0;
+            font-size: 13px;
+
+            &.product-img {
+                padding-left: 20px;
+                padding-right: 10px;
+                width: 38px;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    object-fit: cover;
+                    border-radius: 5px;
+                    border: 1px solid #ddd;
+                }
+            }
+
+            &.product-count {
+                text-align: right;
+                padding-right: 10px;
+            }
+
+            &.product-title {
+                font-weight: 600;
+            }
+
+            &.product-price {
+                text-align: right;
+                padding-right: 20px;
+            }
+
+        }
+    }
+}
+
+.total-table {
+    width: 100%;
+
+    td {
+        font-size: 13px;
+        text-align: center;
+
+        &:first-child {
+            font-weight: 600;
+            text-align: left;
+            color: #9fa9b4;
+        }
+
+        &:last-child {
+            text-align: right;
+            font-weight: 600;
+        }
+    }
+
+}
+
+.btn {
+    font-size: 13px;
+}
+
+.btn-primary {
+    background-color: #F15C4C;
+    border-color: #F15C4C;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: #F15C4C;
+        border-color: #F15C4C;
+    }
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    background-color: #F15C4C;
+    border-color: #F15C4C;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.navigation {
+    background: #f1f5f8;
+    box-shadow: 0px -3px 3px rgba(30, 30, 30, 0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    ul {
+        display: flex;
+
+        li {
+            flex-grow: 1;
+
+            a {
+                text-align: center;
+                display: block;
+                padding: 10px 20px;
+
+                svg {
+                    width: 24px;
+                    height: 24px;
+                    display: inline-block;
+                    fill: #c5c5c5;
+                }
+
+                span {
+                    display: block;
+                    font-weight: 600;
+                    font-size: 15px;
+                    color: #c5c5c5;
+
+                }
+
+                &.active {
+                    svg {
+                        fill: #F15C4C;
+                    }
+
+                    span {
+                        color: #F15C4C;
+                    }
+                }
+
+                &:hover {
+                    text-decoration: none;
+                    background-color: #eaeaea;
+
+                    svg {
+                        fill: #F15C4C;
+                    }
+
+                    span {
+                        color: #F15C4C;
+                    }
+                }
+            }
+
+            &:last-child {
+                a {
+                    svg {
+                        width: 29px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tabs {
+    a {
+        font-size: 13px;
+        color: #313131;
+        display: inline-block;
+        padding: 4px 15px;
+        text-decoration: none;
+
+        &.active {
+            border-radius: 12px;
+            background: #FFE0DD;
+        }
+    }
+}
+
+.history {
+    .item {
+        padding: 10px 20px;
+        border-bottom: 1px solid #eeedf5;
+
+        .history_info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            margin-bottom: 5px;
+            line-height: 19px;
+
+            .date {
+                font-weight: 600;
+                background: url(../img/check.svg) no-repeat 0 2px;
+                padding-left: 25px;
+                background-size: 16px;
+            }
+
+            .sum {}
+        }
+
+        table {
+            margin-left: 25px;
+
+            td {
+                font-size: 13px;
+
+                &:first-child {
+                    font-weight: 600;
+                    color: #9fa9b4;
+
+                }
+            }
+        }
+    }
+}
+
+.pay {
+    .item {
+        border-bottom: 1px solid #eeedf5;
+        padding: 10px 20px;
+
+        .sum {
+            display: block;
+            font-weight: 600;
+        }
+
+        .date {
+            font-weight: 600;
+            font-size: 14px;
+            color: #9fa9b4;
+
+        }
+        &.paid{
+                background:#edf5e8 url(../img/check.svg) no-repeat 20px 13px;
+            padding-left: 44px;
+            border-bottom: 1px solid #eeedf5;
+        }
+    }
+    .total{
+        border-bottom: 1px solid #eeedf5;
+        padding: 10px 20px;
+        display:none;
+        .float-right{
+            font-weight:600;
+        }
+
+    }
+}

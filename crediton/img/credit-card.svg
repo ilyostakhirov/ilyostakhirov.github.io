@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29" height="20">
+  <g data-name="Group 17">
+    <g data-name="Group 16">
+      <path data-name="Path 19" d="M26 0H3a3 3 0 0 0-3 3v13a3 3 0 0 0 3 4h23a3 3 0 0 0 3-4V3a3 3 0 0 0-3-3zm2 17a2 2 0 0 1-2 1H3a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h23a2 2 0 0 1 2 2v13z" fill="#b5b5b5"/>
+    </g>
+  </g>
+  <g data-name="Group 19">
+    <g data-name="Group 18">
+      <path data-name="Path 20" d="M29 4H1a1 1 0 0 0-1 0v4a1 1 0 0 0 1 1h28a1 1 0 0 0 0-1V4zm-1 3H1V5h27v2z" fill="#b5b5b5"/>
+    </g>
+  </g>
+  <g data-name="Group 21">
+    <g data-name="Group 20">
+      <path data-name="Path 21" d="M12 12H4a1 1 0 1 0 0 1h8a1 1 0 1 0 0-1z" fill="#b5b5b5"/>
+    </g>
+  </g>
+  <g data-name="Group 23">
+    <g data-name="Group 22">
+      <path data-name="Path 22" d="M12 15H4a1 1 0 0 0 0 1h8a1 1 0 0 0 0-1z" fill="#b5b5b5"/>
+    </g>
+  </g>
+  <g data-name="Group 25">
+    <g data-name="Group 24">
+      <path data-name="Path 23" d="M24 11h-1a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2zm0 3a1 1 0 0 1 0 1h-1a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 1 0 1z" fill="#b5b5b5"/>
+    </g>
+  </g>
+</svg>

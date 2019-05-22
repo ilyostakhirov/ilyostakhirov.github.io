@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+  <g data-name="Group 2">
+    <g data-name="Group 1">
+      <path data-name="Path 1" d="M23 8a2 2 0 0 0-3 0l-2 2V4a2 2 0 0 0 0-1l-2-2a2 2 0 0 0-2-1H2a2 2 0 0 0-2 2v20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6l5-6a2 2 0 0 0 0-2zm-9-7a1 1 0 0 1 1 1l2 2h-3zm3 21a1 1 0 0 1-1 0H2a1 1 0 0 1-1 0V2a1 1 0 0 1 1-1h11v4a1 1 0 0 0 0 1h4v5l-2 2-1 1-1 3a1 1 0 0 0 0 1l3-1a1 1 0 0 0 1 0zm-2-7l1 1h-2l1-1zm2 0l-1-1 4-4 1 1zm5-5l-1-1a1 1 0 1 1 1 0z" fill="#f15c4c"/>
+    </g>
+  </g>
+  <g data-name="Group 4">
+    <g data-name="Group 3">
+      <path data-name="Path 2" d="M13 7H4a1 1 0 1 0 0 1h9a1 1 0 1 0 0-1z" fill="#f15c4c"/>
+    </g>
+  </g>
+  <g data-name="Group 6">
+    <g data-name="Group 5">
+      <path data-name="Path 3" d="M11 10H4a1 1 0 1 0 0 1h7a1 1 0 0 0 0-1z" fill="#f15c4c"/>
+    </g>
+  </g>
+  <g data-name="Group 8">
+    <g data-name="Group 7">
+      <path data-name="Path 4" d="M11 13H4a1 1 0 1 0 0 1h7a1 1 0 0 0 0-1z" fill="#f15c4c"/>
+    </g>
+  </g>
+  <g data-name="Group 10">
+    <g data-name="Group 9">
+      <path data-name="Path 5" d="M11 15H4a1 1 0 0 0 0 2h7a1 1 0 0 0 0-2z" fill="#f15c4c"/>
+    </g>
+  </g>
+  <g data-name="Group 12">
+    <g data-name="Group 11">
+      <path data-name="Path 6" d="M13 20H9a1 1 0 0 0 0 1h4a1 1 0 1 0 0-1z" fill="#f15c4c"/>
+    </g>
+  </g>
+</svg>

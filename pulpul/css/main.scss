@@ -628,6 +628,9 @@ header nav.bg {
 }
 
 @media only screen and (max-width: 900px) {
+    .mousey{
+        display:none;
+    }
     .info-wrap .text-slide h3 {
         font-size: 33px;
         margin-bottom: 15px;

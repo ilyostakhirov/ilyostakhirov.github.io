@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Paymo</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/scrollbar.css" />
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div style="display: flex;" class="loader-wrap">
+        <div class="loading"></div>
+    </div>
+    <div class="container">
+        <h1 class="text-center mt-10 mb-20">Онлайн перевод из Узбекистана в Таджикистан<br>
+            с карты UzCard на Корти Миллй</h1>
+       
+        <div class="text-center mb-30">
+            <div class="check-box mt-20">
+                            <table class="table print-table">
+                                <tbody><tr>
+                                    <td>ID транзакции</td>
+                                    <td><strong>564</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>ID поставщика: </td>
+                                    <td><strong>158</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>ID терминала:</td>
+                                    <td><strong>12545</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Номер инвойса:</td>
+                                    <td><strong>25545</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Сумма платежа:</td>
+                                    <td><strong>2 000 000 сум</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Дата платежа: </td>
+                                    <td><strong>21.05.2018   12:38:54</strong></td>
+                                </tr>
+                            </tbody></table>
+                            <hr>
+                            <div class="text-center">
+                                <a href="#" class="print"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#5360c7" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg> Печать чека</a>
+                            </div>
+                        </div>
+        </div>
+        
+        <p class="text-center mb-30">
+            <a class="btn btn-secondary mr-30" href="#">Назад</a>
+            <button type="button" class="btn btn-warning">Закрыть</button>
+        </p>
+        <div class="clearfix footer-last">
+            <p class="float-left">
+                © 2019 - Группа компаний PAYMO | Все права защищены
+                <br>
+                Телефон технической поддержки: (+99871) 231-0170
+            </p>
+            <a class="float-right" href="https://paymo.uz"><img src="img/paymo.png" alt=""></a>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder.min.js"></script>
+    <script src="js/scrollbar.js"></script>
+    <script src='js/jquery.inputmask.js'></script>
+    <script src="js/main.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.btn-warning').click(function() {
+            $('#code1').popover({
+            trigger: 'manual',
+            position: 'bottom',
+            title: 'Example',
+            content: 'Popover example for SO'
+        });
+         $('#code1').popover('show');   
+        });
+        $( "#code1" ).focus(function() {
+          $('#code1').popover('hide');
+        });
+        
+    });
+    </script>
+</body>
+
+</html>

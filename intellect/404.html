@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Intellect</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-select.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/jquery-ui.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/media.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="error404">
+            <div class="container">
+                <div class="col-md-6 nopade pl100 another404">
+                    <div class="oranger f60 bold">404</div>
+                    <div class="geo f18 lh2 p30">
+                        <br>Ошибонька вышла :(
+                        <br>Такой страницы не существует.
+                        <br>Зато ссылки справа работают.
+                    </div>
+                    <div class="error_log">
+                        <img src="img/logo.png">
+                        <span class="geo f13 opa_name">Топливораздаточные модули, КАЗС, <br>Мини АЗС, оптовые поставки дизтоплива.</span>
+                    </div>
+                    <div class="geo f15 opa_name2">По любым вопросам: </div>
+                    <div class="bold f19 oranger p30">mail@intellect4g.ru</div>
+                    <div class="medium f14 brown">Реквизиты ООО «Академия АЗС Джи»: </div>
+                    <div class="opa_name2 f14">Юр. адрес: 119136, Россия, Москва, Воробьевское шоссе 6 ОГРН: 1107847147210 ИНН: 7842430624 КПП: 772901001 </div>
+                </div>
+                <div class="col-md-6 nopade ">
+                    <div class="pl200">
+                        <ul class="menu_404">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">О производстве</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Сертификаты и патенты</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Клиенты</a></li>
+                            <li><a href="#">Карьера</a></li>
+                            <li><a href="#">Новости и статьи</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade call_modal" id="myModalCall" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="call_box">
+                    <div class="call_title">Заказать обратный звонок</div>
+                    <div class="call_form">
+                        <span>Ваше имя</span>
+                        <input type="text" class="form-control" placeholder="Введите ваше имя">
+                    </div>
+                    <div class="call_form">
+                        <span>Номер телефона</span>
+                        <input type="text" class="form-control" placeholder="+7 (___) ___-__-__ ">
+                    </div>
+                    <div class="centre"><a href="#" class="call_link">Перезвоните мне</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade img_modal" id="myModalImg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <div class="call_box">
+                    <img src="img/crazy5.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-2.1.3.min.js"> </script>
+    <script src="js/jquery-ui.js"> </script>
+    <script src="js/bootstrap.min.js"> </script>
+    <script src="js/bootstrap-select.js"> </script>
+    <script src="js/i18n/defaults-*.min.js"></script>
+    <script src="js/owl.carousel.js"> </script>
+    <script src="js/scroll.js"> </script>
+    <script src="js/sly.js"> </script>
+    <script src="js/main.js"> </script>
+    <script type="text/javascript">
+        // -------------------------------------------------------------
+        //   Force Centered Navigation
+        // -------------------------------------------------------------
+        (function () {
+            var $frame = $('#crazy');
+            var $wrap  = $frame.parent();
+
+            // Call Sly on frame
+            $frame.sly({
+                horizontal: 1,
+                itemNav: 'basic',
+                smart: 1,
+                activateMiddle: 1,
+                activateOn: 'click',
+                mouseDragging: 1,
+                touchDragging: 1,
+                releaseSwing: 1,
+                startAt: 0,
+                scrollBar: $wrap.find('.scrollbar'),
+                scrollBy: 1,
+                speed: 300,
+                elasticBounds: 1,
+                easing: 'easeOutExpo',
+                dragHandle: 1,
+                dynamicHandle: 1,
+                clickBar: 1,
+
+                // Cycling
+                cycleBy: 'items',
+                cycleInterval: 5000,
+                pauseOnHover: 1,
+
+                // Buttons
+                prev: $wrap.find('.prev'),
+                next: $wrap.find('.next')
+            });
+        }());
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Paymo</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/scrollbar.css" />
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mt-10 mb-20">Онлайн перевод из Узбекистана в Таджикистан<br>
+            с карты UzCard на Корти Миллй</h1>
+        <div class="cards-wrap">
+            <div class="card-item card-item-1">
+                <div class="card-item-block flex-s-card">
+                    <div class="form-group ">
+                        <label for="card1">Номер карты отправителя</label>
+                        <input type="text" class="form-control is-invalid uzcard cardnum" id="card1" placeholder="8600 0000 0000 0000">
+                    </div>
+                    <div class="form-group mb-0">
+                        <label for="card1-1">Срок действия карты</label>
+                        <input id="exdate" data-inputmask="'mask': '99/99'" type="text" class="form-control is-invalid" id="card1-1" placeholder="мм/гг">
+                    </div>
+                    <div style="display: block;" class="invalid-feedback mt-auto">
+			          Lorem ipsum dolor sit amet.
+			        </div>
+                </div>
+            </div>
+            <div class="card-item card-item-2 ">
+                <div class="card-item-block flex-s-card">
+                    <div class="form-group">
+                        <label for="card2">Номер карты получателя</label>
+                        <input type="text" class="form-control milli cardnum" id="card2" placeholder="8600 0000 0000 0000">
+                    </div>
+                    <div class="form-group">
+                        <label for="card2">Номер телефона получателя</label>
+                        <input type="text" class="form-control" placeholder="+000 000 000 000">
+                    </div>
+                    <label class="custom-control material-switch mb-0">
+                        <span class="material-switch-control-description">По номеру карту</span>
+                        <input type="checkbox" class="material-switch-control-input">
+                        <span class="material-switch-control-indicator"></span>
+                        <span class="material-switch-control-description">По номеру телефона</span>
+                    </label>
+                </div>
+            </div>
+            
+        </div>
+        <div class="text-center mt-30 mb-20">
+            <div class="d-flex pay-amount mb-20">
+                <div class="d-flex m-auto">
+                    <div class="form-group mb-0 text-left mr-30">
+                        <label for="card2">Сумма перевода</label>
+                        <div class="d-flex align-items-center">
+                            <input type="text" class="form-control mr-10" placeholder="0">
+                            <span>сум</span>
+                        </div>
+                    </div>
+                    <div class="form-group mb-0 text-left">
+                        <label for="card2">Сумма перевода</label>
+                        <div class="d-flex align-items-center">
+                            <input type="text" class="form-control mr-10" placeholder="0">
+                            <span>сомони</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="commission">
+                Сумма с комиссией (1%): <strong>10 000</strong> сум<br>
+                Курс: <strong>1</strong> сомони = <strong>10</strong> сум
+            </div>
+        </div>
+        <p class="text-center mb-30">
+            <button type="button" class="btn btn-warning">Продолжить</button>
+        </p>
+        <div class="clearfix footer-last">
+            <p class="float-left">
+                © 2019 - Группа компаний PAYMO | Все права защищены
+                <br>
+                Телефон технической поддержки: (+99871) 231-0170
+            </p>
+            <a class="float-right" href="https://paymo.uz"><img src="img/paymo.png" alt=""></a>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder.min.js"></script>
+    <script src="js/scrollbar.js"></script>
+    <script src='js/jquery.inputmask.js'></script>
+    <script src="js/main.js"></script>
+    <script>
+    (function($) {
+        $(window).on("load", function() {
+            $(".modal-body").mCustomScrollbar({
+                theme: "dark"
+            });
+        });
+    })(jQuery);
+    </script>
+</body>
+
+</html>

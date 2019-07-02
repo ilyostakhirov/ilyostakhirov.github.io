@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/utilities.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="inner">
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md fixed-top">
+            <div class="container align-items-stretch">
+                <ul class="main-menu mr-auto">
+                    <li class="active">
+                        <a href="#">
+                                <i class="glyph-icon flaticon-transfer"></i>
+                                <span>Переводы</span>
+                            </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                                <i class="glyph-icon flaticon-credit-card"></i>
+                                <span>Карты</span>
+                            </a>
+                    </li>
+                </ul>
+                <div class="right-header d-flex align-items-stretch">
+                    <div class="tel d-flex justify-content-center flex-column">
+                        <strong class="mb-5">+998 71 231-19-00</strong>
+                        <span>Служба поддержки</span>
+                    </div>
+                    <ul class="lang d-flex align-items-center">
+                        <li class="active"><a href="#">RU</a></li>
+                        <li><a href="#">UZ</a></li>
+                    </ul>
+                    <a href="#" class="log-out">
+                            <i class="glyph-icon flaticon-logout"></i>
+                            <span>Выход</span>
+                        </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Begin page content -->
+    <main class="container">
+        <div class="inner-container">
+            <div class="modal oplata-modal fade modal-fade-in-scale-up" id="exampleModal1" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header justify-content-start">
+                            <h5 class="modal-title text-center font-size-20">Для получения перевода укажите карта Uzcard</h5>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Выберете карту:</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>860031******7062</option>
+                                    <option>860031******7062</option>
+                                    <option>860031******7062</option>
+                                    <option>860031******7062</option>
+                                    <option>860031******7062</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-footer text-center">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Отменить</button>
+                            <button type="button" class="btn btn-primary">Получить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal oplata-modal fade modal-fade-in-scale-up" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header justify-content-start">
+                            <h5 class="modal-title text-center font-size-20">Для получения перевода укажите карта Uzcard</h5>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <input autofocus type="tel" id="card" class="form-control" autocomplete="off" placeholder="8600 0000 0000 0000">
+                            </div>
+                            <div class="checkbox-custom m-0 checkbox-primary">
+                                <input type="checkbox" id="inputChecked11" checked="">
+                                <label for="inputChecked11">Автоматический зачислить на эту карту при следующем переводе</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer text-center">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Отменить</button>
+                            <button type="button" class="btn btn-primary">Получить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="mt-40 mb-20">Новые</h3>
+            <div class="box-shadow item new-item d-flex mb-10">
+                <div class="item-desc">
+                    <h4>Иван Петров</h4>
+                    <span>Вчера в 14:02</span>
+                </div>
+                <div class="sum d-flex align-items-center">
+                    $ 100
+                </div>
+                <a href="#exampleModal1" data-toggle="modal" role="button" class="btn d-flex align-items-center">Получить</a>
+            </div>
+            <div class="box-shadow item new-item d-flex mb-10">
+                <div class="item-desc">
+                    <h4>Иван Петров</h4>
+                    <span>Вчера в 14:02</span>
+                </div>
+                <div class="sum d-flex align-items-center">
+                    $ 100
+                </div>
+                <a href="#exampleModal" data-toggle="modal" role="button" class="btn d-flex align-items-center">Получить</a>
+            </div>
+            <h3 class="mt-40 mb-20">История</h3>
+            <div class="box-shadow item old-item d-flex mb-10">
+                <div class="item-desc">
+                    <h4>Иван Петров</h4>
+                    <span>Вчера в 14:02</span>
+                </div>
+                <div class="info-sum">
+                    <strong>$ 100</strong>
+                    <div class="green mt-5">
+                        <i class="glyph-icon flaticon-checked mr-5"></i> Получено
+                    </div>
+                </div>
+            </div>
+            <div class="box-shadow item old-item d-flex mb-10">
+                <div class="item-desc">
+                    <h4>Иван Петров</h4>
+                    <span>Вчера в 14:02</span>
+                </div>
+                <div class="info-sum">
+                    <strong>$ 100</strong>
+                    <div class="red mt-5">
+                        <i class="glyph-icon flaticon-checked mr-5"></i> Отказано
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container d-flex">
+            <ul class="footer-link">
+                <li><a href="#">Вопросы - ответы</a></li>
+                <li><a href="#">Условия использования</a></li>
+            </ul>
+            <div class="footer-logo">
+                <a href="#"><img src="img/mc.png" alt=""></a>
+                <a href="#"><img src="img/ofb.png" alt=""></a>
+                <a href="#"><img src="img/paymo.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.inputmask.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

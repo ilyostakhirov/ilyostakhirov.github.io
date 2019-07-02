@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/utilities.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="inner">
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md fixed-top">
+            <div class="container align-items-stretch">
+                <ul class="main-menu mr-auto">
+                    <li class="active">
+                        <a href="#">
+                                <i class="glyph-icon flaticon-transfer"></i>
+                                <span>Переводы</span>
+                            </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                                <i class="glyph-icon flaticon-credit-card"></i>
+                                <span>Карты</span>
+                            </a>
+                    </li>
+                </ul>
+                <div class="right-header d-flex align-items-stretch">
+                    <div class="tel d-flex justify-content-center flex-column">
+                        <strong class="mb-5">+998 71 231-19-00</strong>
+                        <span>Служба поддержки</span>
+                    </div>
+                    <ul class="lang d-flex align-items-center">
+                        <li class="active"><a href="#">RU</a></li>
+                        <li><a href="#">UZ</a></li>
+                    </ul>
+                    <a href="#" class="log-out">
+                            <i class="glyph-icon flaticon-logout"></i>
+                            <span>Выход</span>
+                        </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Begin page content -->
+    <main class="container">
+        <h3 class="mt-40 mb-20">Карты</h3>
+        <div class="modal oplata-modal fade modal-fade-in-scale-up" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-start">
+                        <h5 class="modal-title font-size-25">Добавить карту</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <input autofocus type="tel" id="card" class="form-control" autocomplete="off" placeholder="8600 0000 0000 0000">
+                        </div>
+                        <div class="checkbox-custom m-0 checkbox-primary">
+                            <input type="checkbox" id="inputChecked11" checked="">
+                            <label for="inputChecked11">Автоматический зачислить на эту карту при следующем переводе</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Отменить</button>
+                        <button type="button" class="btn btn-primary">Сохранить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card-item-wrap">
+                    <div class="card-top">
+                        <div class="checkbox-custom m-0 checkbox-primary">
+                            <input type="checkbox" id="inputChecked" checked="">
+                            <label for="inputChecked">Авто Зачисления</label>
+                        </div>
+                        <div class="dropdown">
+                            <a data-toggle="dropdown" href="#" aria-expanded="false" role="button">
+                                    <i class="glyph-icon flaticon-show-more-button-with-three-dots" aria-hidden="true"></i>
+                                </a>
+                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon glyph-icon flaticon-pencil-edit-button" aria-hidden="true"></i> Редактировать</a>
+                                <a class="dropdown-item" href="#delatecard" role="button" data-toggle="modal"><i class="icon glyph-icon flaticon-rubbish-bin" aria-hidden="true"></i> Удалить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-ower">
+                        Ilyos Takhirov
+                    </div>
+                    <div class="card-num">3128 **** **** 3457</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-item-wrap">
+                    <div class="card-top">
+                        <div class="checkbox-custom m-0 checkbox-primary">
+                            <input type="checkbox" id="inputChecked1" checked="">
+                            <label for="inputChecked1">Авто Зачисления</label>
+                        </div>
+                        <div class="dropdown">
+                            <a data-toggle="dropdown" href="#" aria-expanded="false" role="button">
+                                    <i class="glyph-icon flaticon-show-more-button-with-three-dots" aria-hidden="true"></i>
+                                </a>
+                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                <a class="dropdown-item" href="javascript:void(0)" role="menuitem"><i class="icon glyph-icon flaticon-pencil-edit-button" aria-hidden="true"></i> Редактировать</a>
+                                <a class="dropdown-item" href="#delatecard" role="button" data-toggle="modal"><i class="icon glyph-icon flaticon-rubbish-bin" aria-hidden="true"></i> Удалить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-ower">
+                        Ilyos Takhirov
+                    </div>
+                    <div class="card-num">3128 **** **** 3457</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <a href="#exampleModal" data-toggle="modal" role="button" class="card-item-wrap add-card">
+                        <span class="glyph-icon flaticon-add-card"></span>
+                        <strong>Добавить карту</strong>
+                    </a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container d-flex">
+            <ul class="footer-link">
+                <li><a href="#">Вопросы - ответы</a></li>
+                <li><a href="#">Условия использования</a></li>
+            </ul>
+            <div class="footer-logo">
+                <a href="#"><img src="img/mc.png" alt=""></a>
+                <a href="#"><img src="img/ofb.png" alt=""></a>
+                <a href="#"><img src="img/paymo.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.inputmask.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

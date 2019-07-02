@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>УЗ-ДОНГВОН КО</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <ul class="nav navbar-nav nav-lang">
+                <li><a href="#" title="">EN</a></li>
+                <li><a href="#" title="">RU</a></li>
+                <li class="active"><a href="#" title="">UZ</a></li>
+            </ul>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Korxona xaqida</a>
+                    </li>
+                    <li>
+                        <a href="#">Maxsulotlar</a>
+                    </li>
+                    <li>
+                        <a href="#">Sifat</a>
+                    </li>
+                    <li>
+                        <a href="#">Interaktiv xizmatlar </a>
+                    </li>
+                    <li>
+                        <a href="#">Ochiq Ma’lumotlar</a>
+                    </li>
+                    <li>
+                        <a href="#">Me’yoriy xujjatlar</a>
+                    </li>
+                    <li>
+                        <a href="#">Murojaat uchun</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav pull-right navbar-nav nav-search">
+                <li class="dropdown keep-open">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+                    <div class="dropdown-menu">
+                        <div id="custom-search-input">
+                            <div class="input-group col-md-12">
+                                <input type="text" class="  search-query form-control" placeholder="Излаш ..." />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-danger" type="button">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown keep-open">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-eye-open"></i></a>
+                    <div class="dropdown-menu" style="padding:12px;">
+                        <div class="specialViewArea">
+                            <ul>
+                                <li>
+                                    <div class="squareBox spcNormal" data-toggle="tooltip" data-placement="bottom" title="Оддий кўриниш"><img src="img/g.png" alt=""></div>
+                                </li>
+                                <li>
+                                    <div class="squareBox spcWhiteAndBlack" data-toggle="tooltip" data-placement="bottom" title="Оқ-қора кўриниш"><img src="img/g.png" alt=""></div>
+                                </li>
+                                <li>
+                                    <div data-toggle="tooltip" data-placement="bottom" title="Шрифтни катталаштириш" class="squareBox ">
+                                        <a href="#" id="incfont"><img src="img/a-l.png" alt=""></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div data-toggle="tooltip" data-placement="bottom" title="Шрифтни кичкиналаштириш" class="squareBox ">
+                                        <a href="#" id="decfont"><img src="img/a-m.png" alt=""></a>
+                                    </div>
+                                </li>
+                                <li><a class="gerb" href="#" title="">| Gerb</a><a class="flag" href="#" title="">| Bayroq</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <header class="business-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="slider">
+                    	<a href="#" class="logo">УЗ-ДОНГВОН КО.</a>
+                        <img class="bgfade" src="img/slider.png" height="433" width="867" alt="">
+                        <img class="bgfade" src="img/slider1.png" height="433" width="867" alt="">
+                    </div>
+                    <div class="carstab">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a data-toggle="tab" href="#car1"><img src="img/car1.png" alt=""><span>Damas</span></a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#car2"><img src="img/car2.png" alt=""><span>Matiz </span></a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#car3"><img src="img/car3.png" alt=""><span>Nexia</span></a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#car4"><img src="img/car4.png" alt=""><span>Aveo</span></a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#car5"><img src="img/car5.png" alt=""><span>Gentra</span></a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="car1" class="tab-pane fade in active">
+                                <ul class="zapchasi clearfix">
+                                    <li>
+                                        <a href="#" title="">
+                                            <span>Ovoz so’ndirgich </span>
+                                            <img src="img/z1.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <span>Panel qisimlari </span>
+                                            <img src="img/z2.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <span>Zarbga qarshi <br>eshik to’siqlari</span>
+                                            <img src="img/z3.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <span>Sport jixozlari </span>
+                                            <img src="img/z1.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="car2" class="tab-pane fade">
+                                <ul class="zapchasi clearfix">
+                                    <li>
+                                        <a href="#" title="">
+                                            <span>Ovoz so’ndirgich </span>
+                                            <img src="img/z1.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <span>Panel qisimlari </span>
+                                            <img src="img/z2.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <span>Zarbga qarshi <br>eshik to’siqlari</span>
+                                            <img src="img/z3.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <span>Sport jixozlari </span>
+                                            <img src="img/z1.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="car3" class="tab-pane fade">
+                                <ul class="zapchasi clearfix">
+                                    <li>
+                                        <a href="#" title="">
+                                            <span>Ovoz so’ndirgich </span>
+                                            <img src="img/z1.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <span>Panel qisimlari </span>
+                                            <img src="img/z2.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <span>Zarbga qarshi <br>eshik to’siqlari</span>
+                                            <img src="img/z3.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <span>Sport jixozlari </span>
+                                            <img src="img/z1.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="car4" class="tab-pane fade">
+                                <ul class="zapchasi clearfix">
+                                    <li>
+                                        <a href="#" title="">
+                                            <span>Ovoz so’ndirgich </span>
+                                            <img src="img/z1.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <span>Panel qisimlari </span>
+                                            <img src="img/z2.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <span>Zarbga qarshi <br>eshik to’siqlari</span>
+                                            <img src="img/z3.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <span>Sport jixozlari </span>
+                                            <img src="img/z1.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="car5" class="tab-pane fade">
+                                <ul class="zapchasi clearfix">
+                                    <li>
+                                        <a href="#" title="">
+                                            <span>Ovoz so’ndirgich </span>
+                                            <img src="img/z1.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <span>Panel qisimlari </span>
+                                            <img src="img/z2.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <span>Zarbga qarshi <br>eshik to’siqlari</span>
+                                            <img src="img/z3.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="">
+                                            <span>Sport jixozlari </span>
+                                            <img src="img/z1.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="top-tab
+ m-t-20">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a style="line-height: 37px;" data-toggle="tab" href="#tab1">Qayta aloqa</a></li>
+                            <li><a data-toggle="tab" href="#tab2">Ko’p beriladigan <br>savollar</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="tab1" class="tab-pane fade in active clearfix">
+                                <div class="form-group">
+                                    <input type="text" placeholder="F.I.O" class="form-control input-md">
+                                </div>
+                                <div class="form-group">
+                                    <select name="selectbasic" class="form-control">
+                                        <option value="1">Aloqa mavzusi</option>
+                                        <option value="2">Aloqa mavzusi</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" name="textarea">Aloqa matni</textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Elektron manzilingiz" class="form-control input-md">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Telefon raqamingiz" class="form-control input-md">
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-7">
+                                        <div class="checkbox">
+                                            <label for="checkboxes-0">
+                                                <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1"> Yuridik shaxsdan
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="checkboxes-1">
+                                                <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2"> Jismoniy shaxsdan
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <a href="#" class="btn btn-default">Yuborish</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab2" class="tab-pane fade">
+                                <div class="form-group">
+                                    <input type="text" placeholder="F.I.O" class="form-control input-md">
+                                </div>
+                                <div class="form-group">
+                                    <select name="selectbasic" class="form-control">
+                                        <option value="1">Aloqa mavzusi</option>
+                                        <option value="2">Aloqa mavzusi</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" name="textarea">Aloqa matni</textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Elektron manzilingiz" class="form-control input-md">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Telefon raqamingiz" class="form-control input-md">
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-7">
+                                        <div class="checkbox">
+                                            <label for="checkboxes-0">
+                                                <input type="checkbox" name="checkboxes" value="1"> Yuridik shaxsdan
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label for="checkboxes-1">
+                                                <input type="checkbox" name="checkboxes" value="2"> Jismoniy shaxsdan
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <a href="#" class="btn btn-default">Yuborish</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <div class="title1 clearfix">E’lonlar <a href="#" class="pull-right">Arxiv</a></div>
+                        <ul>
+                            <li>
+                                <span class="date">03-10-2015</span>
+                                <a href="#">Уз-донгвон ко. ishbilarmon yoshlarni ishga taklif etadi</a></li>
+                            <li>
+                                <span class="date">03-10-2015</span>
+                                <a href="#">Уз-донгвон ко. ishbilarmon yoshlarni ishga taklif etadi</a></li>
+                            <li>
+                                <span class="date">03-10-2015</span>
+                                <a href="#">Уз-донгвон ко. ishbilarmon yoshlarni ishga taklif etadi</a></li>
+                            <li>
+                                <span class="date">03-10-2015</span>
+                                <a href="#">Уз-донгвон ко. ishbilarmon yoshlarni ishga taklif etadi</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row content">
+            <div class="col-md-6 m-t-10 b-r">
+                <div class="title">Korxona haqida</div>
+                <div class="text p-t-10">
+                    Мисол учун... Расмий веб-сайтда жойлаштирилган асосий ахборотлардан фойдаланиш эркин ва бепул бўлиши керак. Базавий ахборот хизматларидан ташқари, давлат ва хўжалик бошқаруви органи, маҳаллий давлат ҳокимияти органи расмий веб-сайт орқали қонун ҳужжатларида белгиланган тартибда пулли асосда қўшимча хизматлар кўрсатиши мумкин. маҳаллий давлат ҳокимияти органи расмий веб-сайт орқали қонун ...
+                </div>
+                <p class="text-right"><a class="readmore" href="#" title="">Batafsil</a></p>
+                <hr>
+                <div class="m-t-10">
+                    <div class="clearfix">
+                        <div class="title pull-left">avtosanoat yangiliklari</div>
+                        <a href="#" class="pull-right abt" title="">Arxiv</a>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="img/pic1.png" height="86" width="128" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="media-heading"><a href="#" title="">Мисол учун Авто саноат оламидаги янгиликлар 
+мавзуси кискартириб жойлаштирилиши керак..</a></div>
+                            <p>Мисол учун Авто саноат оламидаги янгиликлар матинлари кискача холати, янгилик мавзусига босилгандан сунг батафсил матинни укиш мумкин...</p>
+                            <span class="date">08-10-2015</span>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="img/pic1.png" height="86" width="128" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="media-heading"><a href="#" title="">Мисол учун Авто саноат оламидаги янгиликлар 
+мавзуси кискартириб жойлаштирилиши керак..</a></div>
+                            <p>Мисол учун Авто саноат оламидаги янгиликлар матинлари кискача холати, янгилик мавзусига босилгандан сунг батафсил матинни укиш мумкин...</p>
+                            <span class="date">08-10-2015</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 m-t-10">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="title">mediateka</div>
+                        <div class="tabs m-t-10">
+                            <ul class="nav nav-tabs">
+                                <li><a data-toggle="tab" href="#sectionB">Foto</a></li>
+                                <li class="active"><a data-toggle="tab" href="#sectionA">Video</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="sectionA" class="tab-pane fade in active">
+                                    <img class="img-responsive" src="img/video.png" alt="">
+                                    <a href="#" title="">Мисол учун видео мавзу Корхонамиз ишлаш 
+фаолиятидан видео лавха Мисол учун видео мавзу
+Корхонамиз ишлаш фаолиятидан видео лавха</a>
+                                </div>
+                                <div id="sectionB" class="tab-pane fade">
+                                    <img class="img-responsive" src="img/video.png" alt="">
+                                    <a href="#" title="">Мисол учун видео мавзу Корхонамиз ишлаш 
+фаолиятидан видео лавха Мисол учун видео мавзу
+Корхонамиз ишлаш фаолиятидан видео лавха</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="title">Murojaatlar statistikasi</div>
+                        <div class="statabs tabs m-t-10">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#sectione">Jismoniy shaxslar</a></li>
+                                <li><a data-toggle="tab" href="#sectiond">Yuridik shaxslar</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="sectiond" class="tab-pane fade in active">
+                                    <table class="table statable">
+                                        <tr>
+                                            <td class="datet blue">arizalarning
+                                                <br> umumiy soni</td>
+                                            <td class="num blue">2.365 ta </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="datet green">yakunlangan
+                                                <br> arizalar
+                                            </td>
+                                            <td class="num green">92% </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="datet orange">bajarilish
+                                                <br> jarayonidagi arizalar</td>
+                                            <td class="num orange">8% </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div id="sectione" class="tab-pane fade">
+                                    <table class="table statable">
+                                        <tr>
+                                            <td class="datet blue">arizalarning
+                                                <br> umumiy soni</td>
+                                            <td class="num blue">2.365 ta </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="datet green">yakunlangan
+                                                <br> arizalar
+                                            </td>
+                                            <td class="num green">92% </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="datet orange">bajarilish
+                                                <br> jarayonidagi arizalar</td>
+                                            <td class="num orange">8% </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="title">Hamkorlar</div>
+                <ul class="partners m-t-10">
+                    <li>
+                        <a href="#" title=""><img src="img/partners.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#" title=""><img src="img/partners.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#" title=""><img src="img/partners.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#" title=""><img src="img/partners.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#" title=""><img src="img/partners.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#" title=""><img src="img/partners.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+    <footer class="footer">
+        <div class="container clearfix">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="tel">
+                        <span>Ishonch telefon raqami</span>
+                        <strong>998 00 123-45-67</strong>
+                    </div>
+                </div>
+                <div class="col-md-6 brl">
+                    <ul class="footer-menu clearfix">
+                        <li><a href="#">Bosh saxifa</a></li>
+                        <li><a href="#">Sifat menejmenti</a></li>
+                        <li><a href="#">Korxona tarixi</a></li>
+                        <li><a href="#">Mediateka</a></li>
+                        <li><a href="#">Me’yoriy xujjatlar</a></li>
+                        <li><a href="#">Mukofotlar</a></li>
+                        <li><a href="#">Laboratoriya</a></li>
+                        <li><a href="#">Interaktiv xizmatlar</a></li>
+                        <li><a href="#">Raxbariyat</a></li>
+                        <li><a href="#">Hamkorlar</a></li>
+                        <li><a href="#">Bo’sh ish o’rinlari</a></li>
+                        <li><a href="#">Murojaat uchun</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="copyright">
+                        <span>© 2015 “УЗ-ДОНГВОН КО”</span>
+                        <p>При использовании материалов сайта ссылка на веб-сайт www.uzdwn.uz обязательна</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

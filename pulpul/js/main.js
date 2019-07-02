@@ -16,7 +16,7 @@ function initSwiper() {
         $(function() {
             $('.download-btn').click(function(e) {
                 e.preventDefault()
-                mySwiper.slideTo(9, 1000, false);
+                mySwiper.slideTo(9, 600, false);
             })
         })
 
@@ -27,7 +27,8 @@ function initSwiper() {
             spaceBetween: 0,
             effect: 'fade',
             mousewheelControl: true,
-            speed: 1000,
+            mousewheelForceToAxis: true,
+            speed: 600,
             mousewheel: {
                 releaseOnEdges: true,
             },

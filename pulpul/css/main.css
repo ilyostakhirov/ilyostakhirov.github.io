@@ -430,7 +430,7 @@ a {
 header {
   width: 100%;
   position: relative;
-  z-index: 10001; }
+  z-index: 1000; }
   header .logo img {
     width: 170px; }
   header nav {
@@ -922,3 +922,10 @@ header nav.bg {
     margin-bottom: 10px; }
   .info-wrap .text-slide p {
     font-size: 14px; } }
+
+.modal-title {
+  color: #000; }
+
+@media (min-width: 1200px) {
+  .modal-xl {
+    max-width: 836px; } }

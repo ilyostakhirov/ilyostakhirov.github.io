@@ -742,6 +742,9 @@ header nav.bg {
 .footer ul li:first-child {
   margin-left: 0; }
 
+.modal-body iframe {
+  max-width: 100%; }
+
 @media only screen and (max-width: 1700px) {
   .info-wrap .text-slide h3 {
     font-size: 50px;
@@ -839,8 +842,8 @@ header nav.bg {
     text-align: center;
     margin-top: 20px; }
   .iphone {
-    width: 140px;
-    height: 282px;
+    width: 185px;
+    height: 370px;
     -webkit-transform: translate3d(0, 0, 0) !important;
     transform: translate3d(0, 0, 0) !important;
     position: static; }
@@ -874,7 +877,17 @@ header nav.bg {
     height: auto;
     overflow: auto; }
   .swiper-vertical-pagination .swiper-slide {
-    min-height: auto; }
+    min-height: auto !important;
+    height: auto !important;
+    -webkit-transition-duration: 600ms !important;
+    -o-transition-duration: 600ms !important;
+    transition-duration: 600ms !important;
+    opacity: 1 !important;
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important; }
+  [data-swiper-animation] {
+    visibility: visible !important; }
   .swiper-container {
     overflow: auto;
     position: static; }
@@ -890,7 +903,10 @@ header nav.bg {
     -ms-flex-align: center;
     align-items: center;
     margin-top: 0;
-    padding: 10px 15px; }
+    padding: 10px 15px;
+    background-color: rgba(0, 63, 112, 0.8); }
+  .swiper-pagination {
+    display: none; }
   .swiper-vertical-pagination .swiper-slide.swiper-contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

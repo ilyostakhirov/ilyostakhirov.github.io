@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="uz">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PulPul</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header" class="header header-blue">
+        <div class="container">
+            <div class="header-top pb-15">
+                <div class="user" style="background-image: url(img/user.jpg);"></div>
+                <div class="logo"><img src="img/logo.svg" alt=""></div>
+                <a class="logout" href="#">Выход</a>
+            </div>
+            <ul id="nav" class="nav nav-tabs nav-tabs-line">
+                <li class="nav-item"><a class="nav-link active" href="#">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Добавить товар</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Список товаров</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="title mt-30 mb-30">Добавить товар</div>
+        <div class="box">
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Наименование:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Фото товара:</label>
+                <div class="col-sm-10">
+<div class="custom-file">
+    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+    <label class="custom-file-label" for="inputGroupFile01">Выберите картинку</label>
+  </div>
+
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Категории:</label>
+                <div class="col-sm-10">
+                    <select class="custom-select">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Активност:</label>
+                <div class="col-sm-10">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Цена:</label>
+                <div class="col-sm-10">
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <div class="input-group-append">
+                            <span class="input-group-text">пулов</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Описание:</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+            </div>
+             <div class="form-group row">
+                <div class="col-sm-10 offset-sm-2">
+                     <button type="button" class="btn btn-primary">Сохранить</button>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

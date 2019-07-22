@@ -45,17 +45,11 @@ function initSwiper() {
                 transitionStart: function() {
                     swiperAnimation.init(this).animate();
                     checkSlide();
-                },
-                resize: function() {
-                    mySwiper.update();
                 }
             }
         });
     } else if (screenWidth > 768 && mySwiper != undefined) {
-        mySwiper.destroy();
-        mySwiper = undefined;
-        jQuery('.swiper-wrapper').removeAttr('style');
-        jQuery('.swiper-slide').removeAttr('style');
+       
     }
 }
 

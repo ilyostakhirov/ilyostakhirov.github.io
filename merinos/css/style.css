@@ -4005,10 +4005,13 @@ html:not(.mac-os) .button-zakaria.button-default-outline-3:after {
 
 .button-lg {
     padding: 9px 25px;
-    font-size: 14px;
-    line-height: 2
+    font-size: 17px;
+    line-height: 1
 }
-
+.button-lg i{
+    font-size: 20px;
+    margin-right: 5px;
+}
 @media(min-width:768px) {
     .button-lg {
         padding: 14px 45px
@@ -6318,7 +6321,9 @@ textarea.textarea-lg {
 
 .breadcrumbs-custom-footer {
     padding: 15px 0;
-    background: #f9faf9
+    background: #f9faf9;
+        border-top: 1px solid #e1e1e1;
+            border-bottom: 1px solid #e1e1e1;
 }
 
 .breadcrumbs-custom-path {
@@ -6345,7 +6350,7 @@ textarea.textarea-lg {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 2;
     font-weight: 600;
     letter-spacing: .13em;
@@ -9990,7 +9995,7 @@ html [class*=section-].section-top-0 {
     }
 
     .section-sm.section-first {
-        padding-top: 100px
+            padding-top: 50px;
     }
 
     .section-sm.section-last {
@@ -10043,7 +10048,7 @@ html [class*=section-].section-top-0 {
 
 @media(min-width:1600px) {
     .section-xxl {
-        padding: 120px 0
+        padding: 50px 0
     }
 
     .section-inset-1 {
@@ -12147,7 +12152,8 @@ html.tablet .ui-to-top {
 
 .rd-navbar-static .rd-nav-item.active .rd-nav-link {
     color: #0064a2;
-    background: 0 0
+    background: 0 0;
+    font-weight: 700;
 }
 
 .rd-navbar-static .rd-nav-item.active>.rd-navbar-submenu-toggle {
@@ -17063,7 +17069,7 @@ html.rd-navbar-fixed-linked .page {
     .tabs-horizontal.tabs-line .nav-link {
         padding-top: 0;
         padding-bottom: 16px;
-        font-size: 14px
+        font-size: 17px
     }
 
     .tabs-horizontal.tabs-line .nav-link::after {
@@ -20791,9 +20797,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .slick-product-figure img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    height: 500px;
     transform: none;
-    transition: inherit
+    transition: inherit;
+    object-fit: contain;
 }
 
 .child-carousel .slick-product-figure {
@@ -20802,7 +20814,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .child-carousel .slick-product-figure img {
-    will-change: transform
+    will-change: transform;
+    width: 100%;
+    max-height: 100px;
+    display: block;
+    margin: auto;
+    object-fit: contain;
 }
 
 .child-carousel .slick-product-figure:hover {
@@ -21360,4 +21377,11 @@ display: block;
 }
 .rd-navbar-static .rd-navbar-search-2.active .rd-navbar-search-toggle{
     border:none;
+}
+.list-shop-filter a{
+font-size: 17px;
+}
+.list-shop-filter a.active{
+        color: #000;
+    font-weight: bold;
 }

@@ -21,9 +21,9 @@ function myFunction() {
     $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
 
     $('.accordion a').click(function(j) {
-        var dropDown = $(this).closest('li').find('p');
+        var dropDown = $(this).closest('li').find('div');
 
-        $(this).closest('.accordion').find('p').not(dropDown).slideUp();
+        $(this).closest('.accordion').find('div').not(dropDown).slideUp();
 
         if ($(this).hasClass('active')) {
             $(this).removeClass('active');

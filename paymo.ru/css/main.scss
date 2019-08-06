@@ -88,6 +88,20 @@
      }
  }
 
+ ul.checked_ul {
+     li {
+         position: relative;
+         font-size: 18px;
+         line-height: 33px;
+         color: #000;
+         padding-left: 41px;
+         margin-bottom: 26px;
+         background: url(../img/check_blue.svg) no-repeat 0 10px;
+
+
+     }
+ }
+
  @each $space in $spaceamounts {
      @each $side in $sides {
          .m#{str-slice($side, 0, 1)}-#{$space} {
@@ -723,6 +737,10 @@
      background: radial-gradient(493.00px at 50% 50%, #FFFFFF 0%, #F3F7FE 100%);
  }
 
+ .blue-bg-gradient {
+     background: radial-gradient(320.50px at 50% 50%, rgba(54, 103, 189, 0.9) 0%, #3667BD 100%);
+ }
+
  .kupit-img {
      margin-left: -90px;
  }
@@ -772,6 +790,33 @@
      }
  }
 
+ .connecting-items {
+     text-align: center;
+
+     .col-md-3:before {
+         content: "";
+         width: 11px;
+         height: 16px;
+         background: url(../img/right.svg) no-repeat;
+         position: absolute;
+         background-size: cover;
+         right: 0;
+         top: 40px;
+     }
+.col-md-3:last-child:before{
+    display:none;
+}
+     .icon {
+         margin-bottom: 25px;
+     }
+
+     .title {
+         font-weight: 500;
+         font-size: 18px;
+         line-height: 28px;
+     }
+ }
+
  .list li {
      display: table-cell;
      position: relative;
@@ -797,6 +842,8 @@
 
          &:hover {
              text-decoration: none;
+             text-shadow: 0 0 .65px #000, 0 0 .65px #000;
+             color: #000;
          }
      }
 
@@ -866,6 +913,13 @@
      color: #000000;
  }
 
+ .title_small {
+     font-weight: bold;
+     font-size: 24px;
+     line-height: 36px;
+     color: #000000;
+ }
+
  .nav-tabs-horizontal {
      max-width: 1070px;
      margin: 0 auto;
@@ -906,12 +960,16 @@
              border-radius: 0;
              text-align: center;
 
+             &:hover {
+                 text-shadow: 0 0 .65px #000, 0 0 .65px #000;
+                 color: #000;
+             }
+
              &.active {
                  text-shadow: 0 0 .65px #000, 0 0 .65px #000;
                  color: #000;
                  background-color: transparent;
                  border-bottom: 2px solid $brandblue;
-                 font-weight: 700;
              }
          }
      }
@@ -1181,6 +1239,23 @@
  .irs--flat .irs-grid-text {
      color: #999;
      display: none;
+ }
+
+ .slider-clients .swiper-slide {
+     width: auto;
+     margin: 0 20px;
+     padding: 20px 0;
+
+     a {
+         background: #FFFFFF;
+         box-shadow: 0px 7px 17px rgba(71, 84, 106, 0.08);
+         border-radius: 6px;
+         display: block;
+         padding: 0 40px;
+         height: 93px;
+         display: flex;
+         align-items: center;
+     }
  }
 
  .tarif-wrap {

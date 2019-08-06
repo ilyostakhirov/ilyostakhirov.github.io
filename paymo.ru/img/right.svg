@@ -1,8 +1,8 @@
-<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg  width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
-<rect y="16" width="16" height="16" transform="rotate(-90 0 16)" fill="#C4C4C4"/>
+<rect y="16" width="16" height="16" transform="rotate(-90 0 16)" fill="#fff"/>
 </mask>
 <g mask="url(#mask0)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M5.61932 3.11032C5.47425 2.95938 5.24827 2.96386 5.10795 3.12049C4.96762 3.27712 4.96361 3.52937 5.09883 3.6917L9.02754 8.07668L5.09883 12.3087C4.96361 12.4706 4.96763 12.7232 5.10795 12.8799C5.24827 13.0361 5.47425 13.0406 5.61932 12.8896L10 8.07669L5.61932 3.11032Z" fill="black" stroke="black" stroke-width="0.3"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.61932 3.11032C5.47425 2.95938 5.24827 2.96386 5.10795 3.12049C4.96762 3.27712 4.96361 3.52937 5.09883 3.6917L9.02754 8.07668L5.09883 12.3087C4.96361 12.4706 4.96763 12.7232 5.10795 12.8799C5.24827 13.0361 5.47425 13.0406 5.61932 12.8896L10 8.07669L5.61932 3.11032Z" fill="#fff" stroke="#fff" stroke-width="0.3"/>
 </g>
 </svg>

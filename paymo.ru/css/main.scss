@@ -266,7 +266,10 @@
      padding: 0;
      line-height: 1;
  }
-
+.small{
+    font-size: 12px;
+color: #47546A;
+}
  .btn {
      padding: 12px 30px;
      line-height: 1;
@@ -294,7 +297,8 @@
      // Disabled comes first so active can properly restyle
      &.disabled,
      &:disabled {
-         background-color: $lightgray
+         background-color: $lightgray;
+         border-color:$lightgray;
      }
 
      &:not(:disabled):not(.disabled):active,
@@ -861,7 +865,104 @@
          }
      }
  }
+ .contact-form{
+    max-width: 515px;
+    margin: 0 auto;
+    p{
+        font-size: 14px;
+line-height: 24px;
+color: $secondary;
+text-align: center;
+margin:20px 0 0;
+    }
+ }
+.form-row{
+    
+}
+.form-group {
+  position: relative;
+      width: 100%;
+      margin-bottom: 35px;
+}
 
+.form-control {
+  border: 0;
+  border-radius: 0;
+  padding: 40px 25px 22px;  
+  background-color: transparent;
+  position: relative;
+  z-index: 2;
+  font-size: 18px;
+  border: 1px solid #C4CBDB;
+  color: #000000;
+  border-radius: 3px;
+
+  &:hover{
+    border: 1px solid #47546A;
+  }
+  &:not(textarea) {
+    height: 64px;
+  }
+  
+  + label {
+    position: absolute;
+    z-index: 1;
+        top: 20px;
+    margin: 0;
+    transition: all 0.2s ease-in-out;
+    pointer-events: none;
+    left: 25px;
+    right: 25px;
+    color: #939AA7; 
+        font-size: 18px;
+  }
+  
+  &:focus {
+    box-shadow: none;
+    background-color: transparent;
+    border: 1px solid #26C6DA;
+  }
+  
+  &:focus {
+    + label {
+      color: #939AA7;
+    }
+  }
+  
+  &:focus, &.has-value {
+    
+    + label {
+      font-size: 0.75rem;
+    top: 10px;
+    }
+    
+  }
+  
+}
+
+// Position labels for when javascript is disabled
+.no-js {
+  .form-control + label {
+    font-size: 0.75rem;
+    top: 0;
+  }
+}
+
+.form-row {
+  .form-control {
+    + label {
+      left: 25px;
+    right: 25px;
+    }
+  }
+}
+
+
+
+// Remove Bootstrap 4 height from select
+select.form-control:not([size]):not([multiple]) {
+  height: 44px;
+}
  .scroller {
      text-align: center;
      cursor: pointer;

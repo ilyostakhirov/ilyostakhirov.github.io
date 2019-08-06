@@ -554,7 +554,6 @@
         </div>
         <div class="slider-clients swiper-container">
             <div class="swiper-wrapper">
-                
                 <div class="swiper-slide">
                     <a href="#"><img src="img/logo-client/onegin.png" alt=""></a>
                 </div>
@@ -637,6 +636,38 @@
             </div>
         </div>
     </section>
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="h2">Оставьте заявку</div>
+                <p>Наши менеджеры помогут вам с подбором тарифа и подключением</p>
+            </div>
+            <div class="contact-form">
+                <div class="text-right mb-20">
+                    <span class="small">* Обязательные поля</span>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="input1">
+                    <label for="input1">Ваше имя*</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="input1">
+                    <label for="input1">ИНН/название компании*</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="input1">
+                    <label for="input1">Номер телефона*</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="input1">
+                    <label for="input1">Сайт компании</label>
+                </div>
+                <a href="#" class="btn btn-primary btn-lg btn-block disabled">Оставить заявку</a>
+                <p>Нажимая кнопку «Оставить заявку» я подтверждаю свое ознакомление 
+и согласие с  <a href="#">условиями обработки и использования персональных данных</a></p>
+            </div>
+        </div>
+    </section>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -700,7 +731,7 @@
         loop: true,
         autoplay: {
             delay: 1000,
-          },
+        },
         pagination: {
             el: null
         },
@@ -710,6 +741,26 @@
         keyboard: {
             enabled: true
         },
+    });
+
+    function checkValue(element) {
+        // check if the input has any value (if we've typed into it)
+        if ($(element).val())
+            $(element).addClass('has-value');
+        else
+            $(element).removeClass('has-value');
+    }
+
+    $(document).ready(function() {
+        // Run on page load
+        $('.form-control').each(function() {
+            checkValue(this);
+        })
+        // Run on input exit
+        $('.form-control').blur(function() {
+            checkValue(this);
+        });
+
     });
     </script>
 </body>

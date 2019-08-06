@@ -869,12 +869,14 @@
  .nav-tabs-horizontal {
      max-width: 1070px;
      margin: 0 auto;
-     .tab-pane{
-        margin-top: 50px;
-        p{
-          font-size: 18px;
-color: #000000;  
-        }
+
+     .tab-pane {
+         margin-top: 50px;
+
+         p {
+             font-size: 18px;
+             color: #000000;
+         }
      }
  }
 
@@ -1085,11 +1087,13 @@ color: #000000;
      height: 4px;
      background-color: #D6DBE4;
      border-radius: 4px;
-         margin-right: 17px;
+     margin-right: 17px;
  }
-.irs--flat .irs-grid-pol:nth-last-child(2) {
-    left: calc(100% - 3px)!important;
-}
+
+ .irs--flat .irs-grid-pol:nth-last-child(2) {
+     left: calc(100% - 3px) !important;
+ }
+
  .irs--flat .irs-bar {
      top: 25px;
      height: 4px;
@@ -1224,10 +1228,11 @@ color: #000000;
              font-weight: 500;
              font-size: 56px;
              margin: 0 0 15px;
-             height:86px;
-             &.sm-text{
-                font-size: 32px;
-                line-height: 77px;
+             height: 86px;
+
+             &.sm-text {
+                 font-size: 32px;
+                 line-height: 77px;
              }
          }
 

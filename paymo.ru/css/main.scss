@@ -15,24 +15,30 @@
 
  @font-face {
      font-family: 'Lato';
-     src: url('../fonts/Lato-Bold.woff2') format('woff2'),
-         url('../fonts/Lato-Bold.woff') format('woff');
+     src: url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+         url('../fonts/lato-bold-webfont.woff') format('woff');
      font-weight: bold;
      font-style: normal;
  }
 
+
+
+
  @font-face {
      font-family: 'Lato';
-     src: url('../fonts/Lato-Medium.woff2') format('woff2'),
-         url('../fonts/Lato-Medium.woff') format('woff');
+     src: url('../fonts/lato-medium-webfont.woff2') format('woff2'),
+         url('../fonts/lato-medium-webfont.woff') format('woff');
      font-weight: 500;
      font-style: normal;
  }
 
+
+
+
  @font-face {
      font-family: 'Lato';
-     src: url('../fonts/Lato-Regular.woff2') format('woff2'),
-         url('../fonts/Lato-Regular.woff') format('woff');
+     src: url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lato-regular-webfont.woff') format('woff');
      font-weight: normal;
      font-style: normal;
  }
@@ -55,7 +61,7 @@
      /* Legacy iOS */
  }
 
- p {
+ a p {
      color: $secondary;
      font-size: 18px;
      line-height: 33px;
@@ -266,10 +272,12 @@
      padding: 0;
      line-height: 1;
  }
-.small{
-    font-size: 12px;
-color: #47546A;
-}
+
+ .small {
+     font-size: 12px;
+     color: #47546A;
+ }
+
  .btn {
      padding: 12px 30px;
      line-height: 1;
@@ -298,7 +306,7 @@ color: #47546A;
      &.disabled,
      &:disabled {
          background-color: $lightgray;
-         border-color:$lightgray;
+         border-color: $lightgray;
      }
 
      &:not(:disabled):not(.disabled):active,
@@ -357,6 +365,10 @@ color: #47546A;
 
  .header .dropdown-menu-right {
      top: 70px;
+ }
+
+ .navbar .main-menu .dropdown-menu li {
+     background-color: #fff;
  }
 
  .dropdown-menu.dropdown-menu1 {
@@ -801,15 +813,17 @@ color: #47546A;
          content: "";
          width: 11px;
          height: 16px;
-         background: url(../img/right.svg) no-repeat;
+         background: url(../img/right-w.svg) no-repeat;
          position: absolute;
          background-size: cover;
          right: 0;
          top: 40px;
      }
-.col-md-3:last-child:before{
-    display:none;
-}
+
+     .col-md-3:last-child:before {
+         display: none;
+     }
+
      .icon {
          margin-bottom: 25px;
      }
@@ -865,104 +879,114 @@ color: #47546A;
          }
      }
  }
- .contact-form{
-    max-width: 515px;
-    margin: 0 auto;
-    p{
-        font-size: 14px;
-line-height: 24px;
-color: $secondary;
-text-align: center;
-margin:20px 0 0;
-    }
+
+ .contact-form {
+     max-width: 515px;
+     margin: 0 auto;
+
+     p {
+         font-size: 14px;
+         line-height: 24px;
+         color: $secondary;
+         text-align: center;
+         margin: 20px 0 0;
+     }
  }
-.form-row{
-    
-}
-.form-group {
-  position: relative;
-      width: 100%;
-      margin-bottom: 35px;
-}
 
-.form-control {
-  border: 0;
-  border-radius: 0;
-  padding: 40px 25px 22px;  
-  background-color: transparent;
-  position: relative;
-  z-index: 2;
-  font-size: 18px;
-  border: 1px solid #C4CBDB;
-  color: #000000;
-  border-radius: 3px;
+ .form-row {}
 
-  &:hover{
-    border: 1px solid #47546A;
-  }
-  &:not(textarea) {
-    height: 64px;
-  }
-  
-  + label {
-    position: absolute;
-    z-index: 1;
-        top: 20px;
-    margin: 0;
-    transition: all 0.2s ease-in-out;
-    pointer-events: none;
-    left: 25px;
-    right: 25px;
-    color: #939AA7; 
-        font-size: 18px;
-  }
-  
-  &:focus {
-    box-shadow: none;
-    background-color: transparent;
-    border: 1px solid #26C6DA;
-  }
-  
-  &:focus {
-    + label {
-      color: #939AA7;
-    }
-  }
-  
-  &:focus, &.has-value {
-    
-    + label {
-      font-size: 0.75rem;
-    top: 10px;
-    }
-    
-  }
-  
-}
+ .form-group {
+     position: relative;
+     width: 100%;
+     margin-bottom: 35px;
+ }
 
-// Position labels for when javascript is disabled
-.no-js {
-  .form-control + label {
-    font-size: 0.75rem;
-    top: 0;
-  }
-}
+ .form-control {
+     border: 0;
+     border-radius: 0;
+     padding: 40px 25px 22px;
+     background-color: transparent;
+     position: relative;
+     z-index: 2;
+     font-size: 18px;
+     border: 1px solid #C4CBDB;
+     color: #000000;
+     border-radius: 3px;
 
-.form-row {
-  .form-control {
-    + label {
-      left: 25px;
-    right: 25px;
-    }
-  }
-}
+     &:hover {
+         border: 1px solid #47546A;
+     }
+
+     &:not(textarea) {
+         height: 64px;
+     }
+
+     +label {
+         position: absolute;
+         z-index: 1;
+         top: 20px;
+         margin: 0;
+         transition: all 0.2s ease-in-out;
+         pointer-events: none;
+         left: 25px;
+         right: 25px;
+         color: #939AA7;
+         font-size: 18px;
+     }
+
+     &:focus {
+         box-shadow: none;
+         background-color: transparent;
+         border: 1px solid #26C6DA;
+         color: #000;
+     }
+
+     &:focus {
+         +label {
+             color: #939AA7;
+         }
+     }
+
+     &:focus,
+     &.has-value {
+
+         +label {
+             font-size: 12px;
+             top: 10px;
+         }
+
+     }
+
+ }
+
+ // Position labels for when javascript is disabled
+ .no-js {
+     .form-control+label {
+         font-size: 0.75rem;
+         top: 0;
+     }
+ }
+
+ .form-row {
+     .form-control {
+         +label {
+             left: 25px;
+             right: 25px;
+         }
+     }
+ }
 
 
 
-// Remove Bootstrap 4 height from select
-select.form-control:not([size]):not([multiple]) {
-  height: 44px;
-}
+ // Remove Bootstrap 4 height from select
+ select.form-control:not([size]):not([multiple]) {
+     height: 44px;
+ }
+.main-menu .dropdown-menu li a.dropdown-item {
+         text-transform: uppercase;
+         padding: 10px 0;
+             font-size: 14px;
+     }
  .scroller {
      text-align: center;
      cursor: pointer;
@@ -1379,7 +1403,6 @@ select.form-control:not([size]):not([multiple]) {
              font-size: 48px;
              line-height: 47px;
              color: #161A22;
-             font-family: 'Helvetica Neue';
              margin-top: 28px;
              margin-bottom: 36px;
          }
@@ -1440,6 +1463,79 @@ select.form-control:not([size]):not([multiple]) {
              border-width: 17.5px 0 17.5px 15px;
              border-color: transparent transparent transparent #c4cbdb;
          }
+     }
+ }
+
+ .footer {
+     border-top: 1px solid #DDE0E6;
+     padding-top: 63px;
+
+     .f-logo {
+         margin-bottom: 56px;
+
+         img {
+             width: 100px;
+         }
+     }
+
+     .row {
+
+         .col {
+             flex: 0 0 20%;
+             max-width: 20%;
+         }
+
+         .col-2 {
+             flex: 0 0 40%;
+             max-width: 40%;
+         }
+     }
+
+     .label-heading {
+         text-transform: uppercase;
+         font-size: 12px;
+         margin-bottom: 32px;
+         font-weight: 400;
+     }
+
+     ul {
+         list-style: none;
+         padding: 0;
+         margin: 0;
+
+         li {
+             font-size: 12px;
+             line-height: 20px;
+             text-transform: uppercase;
+             color: #000000;
+             margin-bottom: 23px;
+
+             a {
+                 color: #000000;
+                 display: block;
+             }
+
+             span {
+                 font-size: 14px;
+                 color: #939AA7;
+                 text-transform: none;
+                 display: block;
+             }
+         }
+     }
+
+     .row.mt-40 {
+         ul li a {
+             text-transform: none;
+             font-size: 18px;
+             margin-bottom: 15px;
+         }
+     }
+     .social{
+        a{
+            display:inline-block;
+                margin-right: 30px;
+        }
      }
  }
 

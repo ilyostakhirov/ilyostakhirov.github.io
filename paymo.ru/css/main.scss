@@ -1395,6 +1395,10 @@
          height: 93px;
          display: flex;
          align-items: center;
+         img{
+            width: auto;
+            height:auto;
+         }
      }
  }
 
@@ -1484,7 +1488,12 @@
          }
      }
  }
+.secure-wrap{
+.illustration{
+    margin: 0 120px;
+}
 
+}
  .footer {
      border-top: 1px solid #DDE0E6;
      padding: 63px 0 23px;

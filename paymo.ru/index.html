@@ -151,22 +151,22 @@
             </div>
             <div class="row features-items">
                 <div class="col-md-3">
-                    <div class="icon"><img src="img/np_bill.svg" alt=""></div>
+                    <div class="icon"><img src="img/np_bill.png" alt=""></div>
                     <div class="title">Низкие тарифы</div>
                     <p>Максимально гибкая тарифная сетка с учетом пожеланий и отзывов клиентов</p>
                 </div>
                 <div class="col-md-3">
-                    <div class="icon"><img src="img/np_differentiate.svg" alt=""></div>
+                    <div class="icon"><img src="img/np_differentiate.png" alt=""></div>
                     <div class="title">Индивидуальные решения</div>
                     <p>Наши решения и фреймы универсальны и легко настраиваются под ваш дизайн</p>
                 </div>
                 <div class="col-md-3">
-                    <div class="icon"><img src="img/np_gift.svg" alt=""></div>
+                    <div class="icon"><img src="img/np_gift.png" alt=""></div>
                     <div class="title">Без абонентской платы</div>
                     <p>Платите только за успешные транзакции. Подключение и обслуживание – 0 руб.</p>
                 </div>
                 <div class="col-md-3">
-                    <div class="icon"><img src="img/np_security.svg" alt=""></div>
+                    <div class="icon"><img src="img/np_security.png" alt=""></div>
                     <div class="title">Безопасность</div>
                     <p>Соответствие высшим стандартам безопасности PCI DSS 3.2.1. Собственные антифрод-решения</p>
                 </div>
@@ -475,22 +475,22 @@
             <div class="text-center mb-100">
                 <img src="img/bezopasnost.png" alt="">
             </div>
-            <div class="row">
-                <div class="col-md-4">
+            <div class="row justify-content-center secure-wrap">
+                <div class="illustration-desc">
                     <div class="title_small  mb-40">PCI DSS 3.2.1.</div>
                     <ul class="ul checked_ul">
                         <li>Собственные антифрод-решения</li>
                         <li>Мониторинг транзакций</li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="illustration">
                     <img src="img/secure.svg" alt="">
                 </div>
-                <div class="col-md-4">
+                <div class="illustration-desc">
                     <div class="title_small  mb-40">СООТВЕТСТВИЕ <br>ВСЕМ СТАНДАРТАМ</div>
                     <ul class="ul checked_ul">
                         <li>Сертификат THAWTE</li>
-                        <li>Собственная система токенизации для защиты от мошенничества</li>
+                        <li>Собственная система<br> токенизации для защиты<br> от мошенничества</li>
                     </ul>
                 </div>
             </div>
@@ -816,24 +816,23 @@
 
 
     var swiper = new Swiper('.slider-clients', {
-        allowTouchMove: true,
+        allowTouchMove: false,
         slidesPerView: 'auto',
         grabCursor: true,
         spaceBetween: 0,
-        keyboardControl: true,
-        speed: 1000,
         loop: true,
+        freeMode: true, 
+        speed: 2000,      
         autoplay: {
-            delay: 1000,
+            delay: 0,
         },
-        pagination: {
-            el: null
-        },
+        keyboardControl: false,
         mousewheel: {
-            enable: true
-        },
+            invert: false,
+            forceToAxis: false,
+          },
         keyboard: {
-            enabled: true
+            enabled: false
         },
     });
 

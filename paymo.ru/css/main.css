@@ -1396,6 +1396,9 @@ select.form-control:not([size]):not([multiple]) {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center; }
+    .slider-clients .swiper-slide a img {
+      width: auto;
+      height: auto; }
 
 .tarif-wrap {
   border: 1px solid #C4CBDB;
@@ -1481,6 +1484,9 @@ select.form-control:not([size]):not([multiple]) {
       border-style: solid;
       border-width: 17.5px 0 17.5px 15px;
       border-color: transparent transparent transparent #c4cbdb; }
+
+.secure-wrap .illustration {
+  margin: 0 120px; }
 
 .footer {
   border-top: 1px solid #DDE0E6;

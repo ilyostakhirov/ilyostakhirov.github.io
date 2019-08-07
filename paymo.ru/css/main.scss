@@ -15,8 +15,8 @@
 
  @font-face {
      font-family: 'Lato';
-     src: url('../fonts/lato-bold-webfont.woff2') format('woff2'),
-         url('../fonts/lato-bold-webfont.woff') format('woff');
+     src: url('../fonts/lato-bold.woff2') format('woff2'),
+         url('../fonts/lato-bold.woff') format('woff');
      font-weight: bold;
      font-style: normal;
  }
@@ -26,8 +26,8 @@
 
  @font-face {
      font-family: 'Lato';
-     src: url('../fonts/lato-medium-webfont.woff2') format('woff2'),
-         url('../fonts/lato-medium-webfont.woff') format('woff');
+     src: url('../fonts/lato-medium.woff2') format('woff2'),
+         url('../fonts/lato-medium.woff') format('woff');
      font-weight: 500;
      font-style: normal;
  }
@@ -37,13 +37,21 @@
 
  @font-face {
      font-family: 'Lato';
-     src: url('../fonts/lato-regular-webfont.woff2') format('woff2'),
-         url('../fonts/lato-regular-webfont.woff') format('woff');
+     src: url('../fonts/lato-regular.woff2') format('woff2'),
+         url('../fonts/lato-regular.woff') format('woff');
      font-weight: normal;
      font-style: normal;
  }
 
- /* open-sans-regular - cyrillic_latin */
+ @font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
  @font-face {
      font-family: 'Helvetica Neue';
      font-style: normal;
@@ -226,9 +234,16 @@
                  letter-spacing: 1px;
                  text-transform: uppercase;
                  padding: 28px 0;
-
+                 display:block;
+                &:before{
+                    display: block;
+                    content: attr(title);
+                    font-weight: bold;
+                    height: 0;
+                    visibility: hidden;
+                }
                  @include hover-focus {
-                     text-shadow: 0 0 .65px #000, 0 0 .65px #000;
+                     font-weight: bold;
                  }
 
                  &.disabled {
@@ -240,7 +255,7 @@
              .active>.nav-link,
              .nav-link.show,
              .nav-link.active {
-                 text-shadow: 0 0 .65px #000, 0 0 .65px #000;
+                 font-weight: bold;
              }
 
              .dropdown-toggle::after {
@@ -387,7 +402,7 @@
          border-bottom: 1px solid #D6DBE4;
 
          &:hover {
-             text-shadow: 0 0 .65px #000, 0 0 .65px #000;
+             font-weight: bold;
              background-color: transparent;
          }
 
@@ -440,7 +455,7 @@
                      position: relative;
 
                      &.active {
-                         text-shadow: 0 0 .65px #000, 0 0 .65px #000;
+                         font-weight: bold;
                          color: #000;
                          background-color: transparent;
 
@@ -456,7 +471,7 @@
 
                      &:hover,
                      &:active {
-                         text-shadow: 0 0 .65px #000, 0 0 .65px #000;
+                         font-weight: bold;
                          background-color: transparent;
                          color: #000;
                          outline: none;
@@ -860,13 +875,13 @@
 
          &:hover {
              text-decoration: none;
-             text-shadow: 0 0 .65px #000, 0 0 .65px #000;
+             font-weight: bold;
              color: #000;
          }
      }
 
      a.active {
-         text-shadow: 0 0 .65px #000, 0 0 .65px #000;
+         font-weight: bold;
          color: #000;
 
          &:before {
@@ -1086,12 +1101,12 @@
              text-align: center;
 
              &:hover {
-                 text-shadow: 0 0 .65px #000, 0 0 .65px #000;
+                 font-weight: bold;
                  color: #000;
              }
 
              &.active {
-                 text-shadow: 0 0 .65px #000, 0 0 .65px #000;
+                 font-weight: bold;
                  color: #000;
                  background-color: transparent;
                  border-bottom: 2px solid $brandblue;
@@ -1399,12 +1414,16 @@
              color: #677797;
          }
 
-         .js-result {
+         .sum {
              font-size: 48px;
              line-height: 47px;
              color: #161A22;
              margin-top: 28px;
              margin-bottom: 36px;
+             strong{
+                font-family: 'Roboto';
+                font-weight:normal;
+             }
          }
      }
 
@@ -1468,7 +1487,7 @@
 
  .footer {
      border-top: 1px solid #DDE0E6;
-     padding-top: 63px;
+     padding: 63px 0 23px;
 
      .f-logo {
          margin-bottom: 56px;

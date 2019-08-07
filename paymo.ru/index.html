@@ -30,47 +30,47 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav main-menu mr-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Организациям ">
                             Организациям
                         </a>
                         <ul class="dropdown-menu flexMenu1" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Интернет-магазины</a></li>
-                            <li><a class="dropdown-item" href="#">ЖКХ Компании</a></li>
-                            <li><a class="dropdown-item" href="#">Финансовые организации</a></li>
-                            <li><a class="dropdown-item" href="#">Госплатежи</a></li>
+                            <li><a class="dropdown-item" href="#" title="Интернет-магазины">Интернет-магазины</a></li>
+                            <li><a class="dropdown-item" href="#" title="ЖКХ Компании">ЖКХ Компании</a></li>
+                            <li><a class="dropdown-item" href="#" title="Финансовые организации">Финансовые организации</a></li>
+                            <li><a class="dropdown-item" href="#" title="Госплатежи">Госплатежи</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Решения</a>
+                        <a class="nav-link" href="#" title="Решения">Решения</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Тарифы</a>
+                        <a class="nav-link" href="#" title="Тарифы">Тарифы</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="n avbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="n avbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Разработчикам ">
                             Разработчикам
                         </a>
                         <ul class="dropdown-menu flexMenu2" aria-labelledby="navbarDropdown1">
-                            <li><a class="dropdown-item" href="#">Документация, API</a></li>
-                            <li><a class="dropdown-item" href="#">Модули CMS</a></li>
-                            <li><a class="dropdown-item" href="#">Мобильный SDK</a></li>
-                            <li><a class="dropdown-item" href="#">Тестовые платежи</a></li>
+                            <li><a class="dropdown-item" href="#" title="Документация, API">Документация, API</a></li>
+                            <li><a class="dropdown-item" href="#" title="Модули CMS">Модули CMS</a></li>
+                            <li><a class="dropdown-item" href="#" title="Мобильный SDK">Мобильный SDK</a></li>
+                            <li><a class="dropdown-item" href="#" title="Тестовые платежи">Тестовые платежи</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Плательщикам ">
                             Плательщикам
                         </a>
                         <ul class="dropdown-menu flexMenu3" aria-labelledby="navbarDropdown2">
-                            <li><a class="dropdown-item" href="#">Погашение кредитов</a></li>
-                            <li><a class="dropdown-item" href="#">Переводы с карты на карту</a></li>
-                            <li><a class="dropdown-item" href="#">Переводы по номеру телефона</a></li>
-                            <li><a class="dropdown-item" href="#">Международные переводы</a></li>
-                            <li><a class="dropdown-item" href="#">Paymo.market</a></li>
+                            <li><a class="dropdown-item" href="#" title="Погашение кредитов">Погашение кредитов</a></li>
+                            <li><a class="dropdown-item" href="#" title="Переводы с карты на карту">Переводы с карты на карту</a></li>
+                            <li><a class="dropdown-item" href="#" title="Переводы по номеру телефона">Переводы по номеру телефона</a></li>
+                            <li><a class="dropdown-item" href="#" title="Международные переводы">Международные переводы</a></li>
+                            <li><a class="dropdown-item" href="#" title="Paymo.market">Paymo.market</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">54-ФЗ</a>
+                        <a class="nav-link" href="#" title="54-ФЗ">54-ФЗ</a>
                     </li>
                 </ul>
                 <ul class="topul ul">
@@ -428,7 +428,7 @@
                         <div class="tarif-wrap">
                             <div class="tarif-range">
                                 <span class="secondary">Оборот в месяц</span>
-                                <div class="js-result"></div>
+                                <div class="sum"><span></span><strong> ₽</strong></div>
                                 <input type="text" class="js-range-slider" id="demo_2" name="my_range" value="" />
                             </div>
                             <div class="tarif-percent">
@@ -646,7 +646,7 @@
                 <p>Наши менеджеры помогут вам с подбором тарифа и подключением</p>
             </div>
             <div class="contact-form">
-                <div class="text-right mb-20">
+                <div class="text-right mb-20">                   
                     <span class="small">* Обязательные поля</span>
                 </div>
                 <div class="form-group">
@@ -779,44 +779,35 @@
     <script src='js/swiper.min.js'></script>
     <script src="js/main.js"></script>
     <script>
-    var $result = $(".js-result");
+    var $result = $(".sum span");
     var $percent = $(".percent");
     $("#demo_2").ionRangeSlider({
         type: "single",
         grid: true,
         values: [
-            "0", "1 000 000 ₽", "2 500 000 ₽", "5 000 000 ₽", "от 5 000 000 ₽"
+            "0", "1 000 000", "2 500 000", "5 000 000", "от 5 000 000"
         ],
         from: 1,
         to: 4,
         onStart: function(data) {
             $result.text(data.from_value);
-            if (data.from_value === "1 000 000 ₽") {
+            if (data.from_value === "1 000 000") {
                 $percent.text("3,5 %");
                 $(".percent").addClass('lg-text').removeClass('sm-text');
-            } else if (data.from_value === "2 500 000 ₽") {
-                $percent.text("3 %");
-                $(".percent").addClass('lg-text').removeClass('sm-text');
-            } else if (data.from_value === "5 000 000 ₽") {
-                $percent.text("2,5 %");
-                $(".percent").addClass('lg-text').removeClass('sm-text');
-            } else if (data.from_value === "от 5 000 000 ₽") {
-                $percent.text("Индивидуальная");
-                $(".percent").addClass('sm-text').removeClass('lg-text');
             }
         },
         onChange: function(data) {
             $result.text(data.from_value);
-            if (data.from_value === "1 000 000 ₽") {
+            if (data.from_value === "1 000 000") {
                 $percent.text("3,5 %");
                 $(".percent").addClass('lg-text').removeClass('sm-text');
-            } else if (data.from_value === "2 500 000 ₽") {
+            } else if (data.from_value === "2 500 000") {
                 $percent.text("3 %");
                 $(".percent").addClass('lg-text').removeClass('sm-text');
-            } else if (data.from_value === "5 000 000 ₽") {
+            } else if (data.from_value === "5 000 000") {
                 $percent.text("2,5 %");
                 $(".percent").addClass('lg-text').removeClass('sm-text');
-            } else if (data.from_value === "от 5 000 000 ₽") {
+            } else if (data.from_value === "от 5 000 000") {
                 $percent.text("Индивидуальная");
                 $(".percent").addClass('sm-text').removeClass('lg-text');
             }

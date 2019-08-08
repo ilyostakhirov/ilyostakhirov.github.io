@@ -1848,6 +1848,12 @@ ul.checked_ul.horizontal_checked {
       display: none; }
     .footer .row.mt-40 .col, .footer .row.mt-40 .col-2 {
       padding: 0 20px; }
+  ul.checked_ul.horizontal_checked {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
   #collapsedmenu .col {
     border-bottom: 1px solid #DDE0E6;
     padding: 0; }

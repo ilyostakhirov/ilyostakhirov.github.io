@@ -1992,7 +1992,9 @@ ul.checked_ul.horizontal_checked{
             }
         }
     }
-
+ul.checked_ul.horizontal_checked {
+    flex-direction: column;
+}
     #collapsedmenu {
         .col {
             border-bottom: 1px solid #DDE0E6;

@@ -434,7 +434,7 @@
                             <div class="tarif-percent">
                                 <div>
                                     <span>Комиссия </span>
-                                    <div class="percent">Индивидуальная</div>
+                                    <div class="percent"></div>
                                     <a href="#" class="btn btn-md btn-primary">Узнать больше</a>
                                 </div>
                             </div>
@@ -443,19 +443,19 @@
                             <li>Гибкая система тарифов 0,65-3,5%</li>
                             <li>Подключение и обслужвание - 0 руб.</li>
                             <li>Индивидуальные решения</li>
-                        </ul>
+                        </ul>                        
                     </div>
                     <div class="tab-pane" id="tarif2" role="tabpanel">
                         <div class="tarif-wrap">
                             <div class="tarif-range">
                                 <span class="secondary">Оборот в месяц</span>
-                                <div class="sum"><span></span><strong> ₽</strong></div>
+                                <div class="sum"><span>1 000 000</span><strong> ₽</strong></div>
                                 <input type="text" class="js-range-slider" id="tarif2_range" name="tarif2_range" value="" />
                             </div>
                             <div class="tarif-percent">
                                 <div>
                                     <span>Комиссия </span>
-                                    <div class="percent">Индивидуальная</div>
+                                    <div class="percent">1,5 %</div>
                                     <a href="#" class="btn btn-md btn-primary">Узнать больше</a>
                                 </div>
                             </div>
@@ -828,20 +828,14 @@
         }
     });
 
+
+
     $("#tarif2_range").ionRangeSlider({
         type: "single",
         grid: true,
         values: ["0", "1 000 000", "10 000 000", "30 000 000", "50 000 000", "от 50 000 000"],
         from: 1,
-        to: 6,
-        onStart: function(data) {
-            $result2.text(data.from_value);
-            console.log(data);
-            if (data.from_value === "1 000 000") {
-                $percent2.text("1,5 %");
-                $("#tarif2 .percent").addClass('sm-text').removeClass('sm-text');
-            }
-        },
+        to: 5,
         onChange: function(data) {
             $result2.text(data.from_value);
             if (data.from_value === "1 000 000") {

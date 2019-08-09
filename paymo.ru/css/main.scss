@@ -1918,18 +1918,6 @@ ul.checked_ul.horizontal_checked {
         }
     }
 
-    //      .nav.nav-tabs::-webkit-scrollbar {
-    //   width: 1px;
-    //   height:1px;
-    // }
-
-    // .nav.nav-tabs::-webkit-scrollbar-thumb {
-    //   background: #8F8686; 
-    // }
-
-    // .nav.nav-tabs::-webkit-scrollbar-track {
-    //   background: #DDE0E6; 
-    // }
     .nav-tabs .nav-item {
         margin-bottom: 0;
     }
@@ -2069,4 +2057,27 @@ ul.checked_ul.horizontal_checked {
             }
         }
     }
+}
+@media (max-width: 600px) {
+.frame:after {
+display:none;
+}
+}
+@media (max-width: 500px) {
+.frame:after {
+display:none;
+}
+.frame .btn.btn-md {
+    padding: 10px 28px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 115px;
+}
+.frame img {
+    width: 272px;
+    height: 500px;
+}
 }

@@ -1901,3 +1901,22 @@ ul.checked_ul.horizontal_checked {
           transform: rotate(180deg); }
     #collapsedmenu .col ul {
       padding: 13px 40px 0; } }
+
+@media (max-width: 600px) {
+  .frame:after {
+    display: none; } }
+
+@media (max-width: 500px) {
+  .frame:after {
+    display: none; }
+  .frame .btn.btn-md {
+    padding: 10px 28px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 115px; }
+  .frame img {
+    width: 272px;
+    height: 500px; } }

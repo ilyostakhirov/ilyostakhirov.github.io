@@ -1725,7 +1725,11 @@ ul.checked_ul.horizontal_checked {
     -webkit-box-ordinal-group: 4;
     -webkit-order: 3;
     -ms-flex-order: 3;
-    order: 3; }
+    order: 3;
+    -webkit-box-pack: start;
+    -webkit-justify-content: start;
+    -ms-flex-pack: start;
+    justify-content: start; }
   .kupit-img {
     margin-left: 0; }
   .tarif-wrap {
@@ -1919,4 +1923,6 @@ ul.checked_ul.horizontal_checked {
     bottom: 115px; }
   .frame img {
     width: 272px;
-    height: 500px; } }
+    height: 500px; }
+  .sm-img {
+    max-width: 190px; } }

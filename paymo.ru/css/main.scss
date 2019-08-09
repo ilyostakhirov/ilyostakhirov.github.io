@@ -1832,6 +1832,7 @@ ul.checked_ul.horizontal_checked {
 
     .img-col {
         order: 3;
+        justify-content: start;
     }
 
     .kupit-img {
@@ -2079,5 +2080,8 @@ display:none;
 .frame img {
     width: 272px;
     height: 500px;
+}
+.sm-img{
+        max-width: 190px;
 }
 }

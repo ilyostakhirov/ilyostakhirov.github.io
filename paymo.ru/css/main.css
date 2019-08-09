@@ -1456,6 +1456,29 @@ ul.checked_ul.horizontal_checked {
     display: inline-block;
     margin-right: 30px; }
 
+.frame {
+  position: relative; }
+  .frame img {
+    width: 346px;
+    height: 609px; }
+  .frame .btn.btn-md {
+    padding: 20px 45px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 140px; }
+  .frame:after {
+    content: "";
+    width: 87px;
+    height: 128px;
+    background: url(../img/kupit.svg) no-repeat;
+    display: block;
+    position: absolute;
+    left: -113px;
+    bottom: 160px; }
+
 @media screen and (min-width: 1100px) {
   .footer ul {
     height: auto !important; }
@@ -1845,7 +1868,8 @@ ul.checked_ul.horizontal_checked {
       display: none; }
     .footer .f-logo {
       display: none; }
-    .footer .row.mt-40 .col, .footer .row.mt-40 .col-2 {
+    .footer .row.mt-40 .col,
+    .footer .row.mt-40 .col-2 {
       padding: 0 20px; }
   ul.checked_ul.horizontal_checked {
     -webkit-box-orient: vertical;

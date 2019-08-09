@@ -1239,13 +1239,16 @@ select.form-control:not([size]):not([multiple]) {
         }
     }
 }
-ul.checked_ul.horizontal_checked{
-    display:flex;
+
+ul.checked_ul.horizontal_checked {
+    display: flex;
     justify-content: space-between;
-    li{
-        color:$secondary;
+
+    li {
+        color: $secondary;
     }
 }
+
 .tarif-wrap {
     border: 1px solid #C4CBDB;
     border-radius: 10px;
@@ -1427,10 +1430,39 @@ ul.checked_ul.horizontal_checked{
     }
 }
 
+.frame {
+    position: relative;
+
+    img {
+        width: 346px;
+        height: 609px;
+    }
+
+    .btn.btn-md {
+        padding: 20px 45px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 140px;
+    }
+
+    &:after {
+        content: "";
+        width: 87px;
+        height: 128px;
+        background: url(../img/kupit.svg) no-repeat;
+        display: block;
+        position: absolute;
+        left: -113px;
+        bottom: 160px;
+    }
+}
+
 @media screen and (min-width: 1100px) {
     .footer ul {
-    height: auto !important;
-}
+        height: auto !important;
+    }
+
     .navbar .main-menu {
         margin-left: 140px;
 
@@ -1987,15 +2019,20 @@ ul.checked_ul.horizontal_checked{
             display: none;
 
         }
-        .row.mt-40{
-            .col,.col-2{
+
+        .row.mt-40 {
+
+            .col,
+            .col-2 {
                 padding: 0 20px;
             }
         }
     }
-ul.checked_ul.horizontal_checked {
-    flex-direction: column;
-}
+
+    ul.checked_ul.horizontal_checked {
+        flex-direction: column;
+    }
+
     #collapsedmenu {
         .col {
             border-bottom: 1px solid #DDE0E6;
@@ -2021,12 +2058,13 @@ ul.checked_ul.horizontal_checked {
                     }
 
                     &[aria-expanded="true"]:before {
-                            transform: rotate(180deg);
+                        transform: rotate(180deg);
                     }
 
                 }
             }
-            ul{
+
+            ul {
                 padding: 13px 40px 0;
             }
         }

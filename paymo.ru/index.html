@@ -151,22 +151,22 @@
             </div>
             <div class="row features-items">
                 <div class="col-lg-3">
-                    <div class="icon"><img src="img/np_bill.png" alt=""></div>
+                    <div class="icon"><img src="img/why/1.svg" alt=""></div>
                     <div class="title">Низкие тарифы</div>
                     <p>Максимально гибкая тарифная сетка с учетом пожеланий и отзывов клиентов</p>
                 </div>
                 <div class="col-lg-3">
-                    <div class="icon"><img src="img/np_differentiate.png" alt=""></div>
+                    <div class="icon"><img src="img/why/2.svg" alt=""></div>
                     <div class="title">Индивидуальные решения</div>
                     <p>Наши решения и фреймы универсальны и легко настраиваются под ваш дизайн</p>
                 </div>
                 <div class="col-lg-3">
-                    <div class="icon"><img src="img/np_gift.png" alt=""></div>
+                    <div class="icon"><img src="img/why/3.svg" alt=""></div>
                     <div class="title">Без абонентской платы</div>
                     <p>Платите только за успешные транзакции. Подключение и обслуживание – 0 руб.</p>
                 </div>
                 <div class="col-lg-3">
-                    <div class="icon"><img src="img/np_security.png" alt=""></div>
+                    <div class="icon"><img src="img/why/4.svg" alt=""></div>
                     <div class="title">Безопасность</div>
                     <p>Соответствие высшим стандартам безопасности PCI DSS 3.2.1. Собственные антифрод-решения</p>
                 </div>
@@ -374,7 +374,10 @@
                 </p>
             </div>
             <div class="d-flex justify-content-center">
-                <img class="kupit-img" src="img/pics/kupit.png" alt="">
+                <div class="frame">
+                    <img src="img/kupit.png" alt="">
+                    <a href="#" class="btn btn-primary btn-md">Купить</a>
+                </div>
             </div>
         </div>
     </section>
@@ -428,13 +431,13 @@
                         <div class="tarif-wrap">
                             <div class="tarif-range">
                                 <span class="secondary">Оборот в месяц</span>
-                                <div class="sum"><span></span><strong> ₽</strong></div>
+                                <div class="sum"><span>1 000 000</span><strong> ₽</strong></div>
                                 <input type="text" class="js-range-slider" id="tarif1_range" name="tarif1_range" value="" />
                             </div>
                             <div class="tarif-percent">
                                 <div>
                                     <span>Комиссия </span>
-                                    <div class="percent"></div>
+                                    <div class="percent">3,5 %</div>
                                     <a href="#" class="btn btn-md btn-primary">Узнать больше</a>
                                 </div>
                             </div>
@@ -443,7 +446,7 @@
                             <li>Гибкая система тарифов 0,65-3,5%</li>
                             <li>Подключение и обслужвание - 0 руб.</li>
                             <li>Индивидуальные решения</li>
-                        </ul>                        
+                        </ul>
                     </div>
                     <div class="tab-pane" id="tarif2" role="tabpanel">
                         <div class="tarif-wrap">
@@ -459,7 +462,7 @@
                                     <a href="#" class="btn btn-md btn-primary">Узнать больше</a>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
                     <div class="tab-pane" id="tarif3" role="tabpanel">
                         <div class="text-center">
@@ -792,116 +795,6 @@
     <script src='js/ion.rangeSlider.min.js'></script>
     <script src='js/swiper.min.js'></script>
     <script src="js/main.js"></script>
-    <script>
-    var $result1 = $("#tarif1 .sum span");
-    var $percent1 = $("#tarif1 .percent");
-    var $result2 = $("#tarif2 .sum span");
-    var $percent2 = $("#tarif2 .percent");
-    $("#tarif1_range").ionRangeSlider({
-        type: "single",
-        grid: true,
-        values: ["0", "1 000 000", "2 500 000", "5 000 000", "от 5 000 000"],
-        from: 1,
-        to: 5,
-        onStart: function(data) {
-            $result1.text(data.from_value);
-            if (data.from_value === "1 000 000") {
-                $percent1.text("3,5 %");
-                $("#tarif1 .percent").addClass('lg-text').removeClass('sm-text');
-            }
-        },
-        onChange: function(data) {
-            $result1.text(data.from_value);
-            if (data.from_value === "1 000 000") {
-                $percent1.text("3,5 %");
-                $("#tarif1 .percent").addClass('lg-text').removeClass('sm-text');
-            } else if (data.from_value === "2 500 000") {
-                $percent1.text("3 %");
-                $("#tarif1 .percent").addClass('lg-text').removeClass('sm-text');
-            } else if (data.from_value === "5 000 000") {
-                $percent1.text("2,5 %");
-                $("#tarif1 .percent").addClass('lg-text').removeClass('sm-text');
-            } else if (data.from_value === "от 5 000 000") {
-                $percent1.text("Индивидуальная");
-                $("#tarif1 .percent").addClass('sm-text').removeClass('lg-text');
-            }
-        }
-    });
-
-
-
-    $("#tarif2_range").ionRangeSlider({
-        type: "single",
-        grid: true,
-        values: ["0", "1 000 000", "10 000 000", "30 000 000", "50 000 000", "от 50 000 000"],
-        from: 1,
-        to: 5,
-        onChange: function(data) {
-            $result2.text(data.from_value);
-            if (data.from_value === "1 000 000") {
-                $percent2.text("1,5 %");
-                $("#tarif2 .percent").addClass('lg-text').removeClass('sm-text');
-            } else if (data.from_value === "10 000 000") {
-                $percent2.text("1,3 %");
-                $("#tarif2 .percent").addClass('lg-text').removeClass('sm-text');
-            } else if (data.from_value === "30 000 000") {
-                $percent2.text("1 %");
-                $("#tarif2 .percent").addClass('lg-text').removeClass('sm-text');
-            } else if (data.from_value === "50 000 000") {
-                $percent2.text("0,8 %");
-                $("#tarif2 .percent").addClass('sm-text').removeClass('lg-text');
-            } else if (data.from_value === "от 50 000 000") {
-                $percent2.text("Индивидуальная");
-                $("#tarif2 .percent").addClass('sm-text').removeClass('lg-text');
-            } else if (data.from_value === "0") {
-                $percent2.text("1,5 %");
-                $("#tarif2 .percent").addClass('sm-text').removeClass('sm-text');
-            }
-        }
-    });
-
-
-    var swiper = new Swiper('.slider-clients', {
-        allowTouchMove: false,
-        slidesPerView: 'auto',
-        grabCursor: true,
-        spaceBetween: 0,
-        loop: true,
-        freeMode: true,
-        speed: 2000,
-        autoplay: {
-            delay: 0,
-        },
-        keyboardControl: false,
-        mousewheel: {
-            invert: false,
-            forceToAxis: false,
-        },
-        keyboard: {
-            enabled: false
-        },
-    });
-
-    function checkValue(element) {
-        // check if the input has any value (if we've typed into it)
-        if ($(element).val())
-            $(element).addClass('has-value');
-        else
-            $(element).removeClass('has-value');
-    }
-
-    $(document).ready(function() {
-        // Run on page load
-        $('.form-control').each(function() {
-            checkValue(this);
-        })
-        // Run on input exit
-        $('.form-control').blur(function() {
-            checkValue(this);
-        });
-
-    });
-    </script>
 </body>
 
 </html>

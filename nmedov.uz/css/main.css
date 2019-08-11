@@ -738,7 +738,7 @@ background: url(../img/prev.svg) no-repeat;
 .brands-slider .slick-next::before, .brands-slider .slick-prev::before{
 display: none;
 }
-.brands-slider .slick-prev:hover, .brands-slider .slick-prev:focus, .brands-slider .slick-next:hover, .brands-slider .slick-next:focus {
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
 outline: none;
 }
 .news{

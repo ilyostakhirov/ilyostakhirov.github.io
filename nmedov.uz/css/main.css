@@ -107,15 +107,18 @@ top: 110%;
     -webkit-box-shadow: -1px 2.8px 18px rgba(0, 0, 0, .27);
     box-shadow: -1px 2.8px 18px rgba(0, 0, 0, .27);
     position: relative;
-    padding: 0 40px;
+    padding: 0 60px;
     z-index: 999
 }
 
 .logo {
-    margin: 10px 0
+    margin: auto
 }
 
 @media (min-width:700px) {
+	.button_container{
+    display: none;
+}
     .main-menu {
         margin: auto;
         padding: 0;
@@ -181,14 +184,17 @@ top: 110%;
         color: #fff;
         background-color: #b8271d;
     }
-    .main-menu>li>a span,.main-menu>li>a::after{
+    .main-menu>li>a span{
         transition: all .3s;
     }
-    .main-menu>li>a:hover span,.main-menu>li>a.dropdown-toggle:hover::after{
+    .main-menu>li>a::after{
+    	display: none;
+    }
+    .main-menu>li>a:hover span{
             transform: translateY(-8px);
             display: inline-block;
     }
-     .main-menu>li.active>a span,.main-menu>li.show>a span,.main-menu>li.show>a.dropdown-toggle::after{
+     .main-menu>li.active>a span,.main-menu>li.show>a span{
             transform: translateY(8px);
             display: inline-block;
     }
@@ -212,7 +218,7 @@ top: 110%;
 }
 
 .header_settings {
-    margin: auto 0
+    margin: auto
 }
 
 .header_settings>div {
@@ -606,13 +612,8 @@ a {
     color: #d52323;
     font-weight: 700;
     z-index: 100;
-    font-size: 23px;
+    font-size: 18px;
     line-height: 1.6;
-    max-height: 110px;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden
 }
 
 .post-module .post-content .sub_title {
@@ -764,6 +765,29 @@ outline: none;
 .brands-slider{
     border: 5px solid #f7cf58;
 }
+.brands-slider .item div{
+	height: 380px;
+	display: flex;
+	flex-direction: column;
+	padding: 20px 20px 40px;
+}
+.brands-slider .item div .brand-logo{
+	margin-bottom: 20px;
+}
+.brands-slider .item div .brand-product{
+	    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transform: translateY(0);
+    transition: all 0.3s;
+}
+.brands-slider .item div .brand-product:hover{
+	transform: translateY(-5px);
+}
+.brands-slider .item div .brand-product img{
+	    max-height: 230px;
+}
 .brands-slider .item a{
     text-align: center;
     display: inline-block;
@@ -771,7 +795,7 @@ outline: none;
 .brands-slider .item img{
     width: auto;
     max-width: 100%;
-
+	display: inline-block;
 }
 .fix-title-top.p_r {
     opacity: 0;
@@ -3551,7 +3575,7 @@ ul.f-menu.f-menu-logo li:first-child{
   font-size: 75px;
   font-weight: bold;
   line-height: 1;
-  opacity: .75;
+  opacity: .4;
   color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -617,42 +617,60 @@
             </form>
         </div>
     </div>
-            <div class="slick-slider js-slick">
-                <div class="photo is-animating" style="background-image: url('img/sliders/1.jpg');">
-                    <img src="img/sliders/1.jpg" alt="">
-                </div>
-                <div class="photo" style="background-image: url('img/sliders/2.jpg');">
-                    <img src="img/sliders/1.jpg" alt="">
-                </div>
-                <div class="photo" style="background-image: url('img/sliders/3.jpg');">
-                    <img src="img/sliders/1.jpg" alt="">
-                </div>
-                <div class="photo" style="background-image: url('img/sliders/4.jpg');">
-                    <img src="img/sliders/1.jpg" alt="">
-                </div>
+    <div class="slick-slider js-slick">
+        <div class="photo is-animating" style="background-image: url('img/sliders/1.jpg');">
+            <img src="img/sliders/1.jpg" alt="">
+        </div>
+        <div class="photo" style="background-image: url('img/sliders/2.jpg');">
+            <img src="img/sliders/1.jpg" alt="">
+        </div>
+        <div class="photo" style="background-image: url('img/sliders/3.jpg');">
+            <img src="img/sliders/1.jpg" alt="">
+        </div>
+        <div class="photo" style="background-image: url('img/sliders/4.jpg');">
+            <img src="img/sliders/1.jpg" alt="">
+        </div>
+    </div>
+    <div class="brands-slider">
+        <div class="item">
+            <div>
+                <a class="brand-logo" href="#"><img src="img/c4ca4238a0b923820dcc509a6f75849b.png" alt=""></a>
+                <a class="brand-product" href="#"><img src="img/18d8042386b79e2c279fd162df0205c8.png" alt=""></a>
             </div>
-			<div class="mlr-60">	
-            <div class="brands-slider">
-            	<div class="item">
-            		<a href="#"><img src="img/18d8042386b79e2c279fd162df0205c8.jpg" alt=""></a>
-            	</div>
-            	<div class="item">
-            		<a href="#"><img src="img/18d8042386b79e2c279fd162df0205c8.jpg" alt=""></a>
-            	</div>
-            	<div class="item">
-            		<a href="#"><img src="img/18d8042386b79e2c279fd162df0205c8.jpg" alt=""></a>
-            	</div>
-            	<div class="item">
-            		<a href="#"><img src="img/18d8042386b79e2c279fd162df0205c8.jpg" alt=""></a>
-            	</div>
-            	<div class="item">
-            		<a href="#"><img src="img/18d8042386b79e2c279fd162df0205c8.jpg" alt=""></a>
-            	</div>
-            	<div class="item">
-            		<a href="#"><img src="img/18d8042386b79e2c279fd162df0205c8.jpg" alt=""></a>
-            	</div>
+        </div>
+        <div class="item">
+            <div>
+                <a class="brand-logo" href="#"><img src="img/42f67899577a939f5882aabdd14c3a1c.png" alt=""></a>
+                <a class="brand-product" href="#"><img src="img/c54de9379c6f64bf185ce6ea9df9c0af.png" alt=""></a>
             </div>
-            <div class="news">
+        </div>
+        <div class="item">
+            <div>
+                <a class="brand-logo" href="#"><img src="img/a87ff679a2f3e71d9181a67b7542122c.png" alt=""></a>
+                <a class="brand-product" href="#"><img src="img/2283335d8d12b21001439091e74f5028.png" alt=""></a>
+            </div>
+        </div>
+        <div class="item">
+            <div>
+                <a class="brand-logo" href="#"><img src="img/c4ca4238a0b923820dcc509a6f75849b.png" alt=""></a>
+                <a class="brand-product" href="#"><img src="img/18d8042386b79e2c279fd162df0205c8.png" alt=""></a>
+            </div>
+        </div>
+        <div class="item">
+            <div>
+                <a class="brand-logo" href="#"><img src="img/42f67899577a939f5882aabdd14c3a1c.png" alt=""></a>
+                <a class="brand-product" href="#"><img src="img/c54de9379c6f64bf185ce6ea9df9c0af.png" alt=""></a>
+            </div>
+        </div>
+        <div class="item">
+            <div>
+                <a class="brand-logo" href="#"><img src="img/a87ff679a2f3e71d9181a67b7542122c.png" alt=""></a>
+                <a class="brand-product" href="#"><img src="img/2283335d8d12b21001439091e74f5028.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="mlr-60">
+        <div class="news">
             <h4 class="sub-title">Новости и объявления</h4>
             <div class=" row">
                 <div class="col-md-3">
@@ -704,8 +722,8 @@
                     </div>
                 </div>
             </div>
-            </div>
-            </div>
+        </div>
+    </div>
     <div class="footer">
         <div class="clearfix footer-top">
             <div class="f-title">Лучшая идея. Лучший мир.</div>
@@ -856,11 +874,11 @@
         });
     });
     $('.brands-slider').slick({
-	  slidesToShow: 3,
-	  slidesToScroll: 1,
-	  autoplay: true,
-	  autoplaySpeed: 2000,
-	});
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
     $("[data-toggle=popover]").each(function(i, obj) {
         $(this).popover({
             html: true,

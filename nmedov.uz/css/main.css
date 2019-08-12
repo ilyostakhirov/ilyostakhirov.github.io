@@ -2388,11 +2388,6 @@ ul.side-menu.ul.is_stuck {
         font-size: 19px;
         line-height: 1.3em
     }
-    .post-module .post-content .title {
-        font-size: 21px;
-        line-height: 1.4;
-        max-height: 93px
-    }
     .f-logo {
         display: none!important
     }
@@ -2481,11 +2476,6 @@ ul.side-menu.ul.is_stuck {
         font-size: 15px;
         margin-bottom: 0
     }
-    .post-module .post-content .title {
-        font-size: 17px;
-        line-height: 1.4;
-        max-height: 77px
-    }
     .news-item-title {
         font-size: 17px;
         line-height: 1.4
@@ -2519,9 +2509,22 @@ ul.side-menu.ul.is_stuck {
     #sequence.seq {
         height: 360px
     }
+    .brands-slider .slick-list {
+    margin: 0 100px;
+}
+.brands-slider .item div {
+    height: 300px;
+}
+.brands-slider .item div .brand-product img {
+    max-height: 170px;
+}
 }
 
 @media (max-width:800px) {
+	.mlr-60 {
+    position: relative;
+    margin: 0 20px;
+}
     .brands li {
         margin-right: 5px;
         margin-bottom: 5px
@@ -2607,11 +2610,6 @@ ul.side-menu.ul.is_stuck {
     figure.logos-item img {
         max-width: 50%;
         max-height: 90%
-    }
-    .post-module,
-    .product-slider.seq {
-        height: 70vh;
-        min-height: 470px
     }
     .news-item,
     figure.logos-item {
@@ -2799,6 +2797,9 @@ a.new-captcha {
 }
 
 @media (max-width:720px) {
+	.header_settings {
+    margin: auto 20px;
+}
     .product-desc,
     .section .col-sm-6 {
         margin-bottom: 20px
@@ -3137,6 +3138,9 @@ a.new-captcha {
 }
 
 @media (max-width:600px) {
+	.js-slick .photo {
+    height: 250px;
+}
     #sequence.seq .seq-model,
     .s-m-20 {
         margin-top: 20px
@@ -3214,11 +3218,6 @@ a.new-captcha {
         height: 300px;
         width: 100%;
         z-index: 99
-    }
-    .post-module,
-    .product-slider.seq {
-        height: 375px;
-        min-height: 375px
     }
     .post-module .post-content .description {
         height: 62px;
@@ -3703,18 +3702,4 @@ ul.f-menu.f-menu-logo li:first-child{
     visibility: hidden;
         display: inline;
     width: auto;
-}
-.photo.is-animating {
-}
-.photo:before {
-  content: "";
-  display: block;
-}
-.photo * > {
-  display: block;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
 }

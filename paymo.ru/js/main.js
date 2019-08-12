@@ -198,19 +198,15 @@ $(document).ready(function() {
         spaceBetween: 0,
         loop: true,
         freeMode: true,
-        speed: 2000,
+        speed: 1000,
         autoplay: {
             delay: 0,
-        },
-        keyboardControl: false,
-        mousewheel: {
-            invert: false,
-            forceToAxis: false,
         },
         keyboard: {
             enabled: false
         },
     });
+    swiper.mousewheel.disable();
 
     function checkValue(element) {
         // check if the input has any value (if we've typed into it)

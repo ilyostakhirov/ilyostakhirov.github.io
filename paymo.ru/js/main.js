@@ -179,7 +179,7 @@ $(document).ready(function() {
                 $("#tarif2 .percent").addClass('lg-text').removeClass('sm-text');
             } else if (data.from_value === "50 000 000") {
                 $percent2.text("0,8 %");
-                $("#tarif2 .percent").addClass('sm-text').removeClass('lg-text');
+                $("#tarif2 .percent").addClass('lg-text').removeClass('sm-text');
             } else if (data.from_value === "от 50 000 000") {
                 $percent2.text("Индивидуальная");
                 $("#tarif2 .percent").addClass('sm-text').removeClass('lg-text');

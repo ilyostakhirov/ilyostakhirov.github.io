@@ -198,7 +198,7 @@ $(document).ready(function() {
         spaceBetween: 0,
         loop: true,
         freeMode: true,
-        speed: 50000,
+        speed: 100000,
         autoplay: {
             delay: 0,
         },

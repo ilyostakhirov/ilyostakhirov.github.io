@@ -168,9 +168,9 @@ $(document).ready(function() {
         grid: true,
         values: ["0", "1 000 000", "10 000 000", "30 000 000", "50 000 000", "от 50 000 000"],
         from: 1,
-        to: 5,
+        to: 6,
         from_min: 1,      
-        from_max: 5, 
+        from_max: 6, 
         onChange: function(data) {
             $result2.text(data.from_value);
             if (data.from_value === "1 000 000") {

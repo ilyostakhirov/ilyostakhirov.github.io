@@ -1111,6 +1111,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .irs--flat.irs-with-grid {
     height: 60px;
+        margin: 0 -17px;
 }
 
 .irs-grid .irs-grid-pol:first-child {
@@ -1122,7 +1123,7 @@ select.form-control:not([size]):not([multiple]) {
     height: 4px;
     background-color: #D6DBE4;
     border-radius: 4px;
-    margin-right: 17px;
+    margin:0 17px;
 }
 
 .irs--flat .irs-grid-pol:nth-last-child(2) {
@@ -1133,6 +1134,7 @@ select.form-control:not([size]):not([multiple]) {
     top: 25px;
     height: 4px;
     background-color: $brandblue;
+    margin-left: 17px;
 }
 
 .irs--flat .irs-bar--single {
@@ -1152,6 +1154,7 @@ select.form-control:not([size]):not([multiple]) {
     background: #FFFFFF;
     box-shadow: 0px 4px 10px rgba(165, 182, 207, 0.32);
     border-radius: 100%;
+        margin-left: 2px;
 }
 
 .irs--flat .irs-handle>i:first-child {
@@ -1220,7 +1223,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .slider-clients .swiper-slide {
     width: auto;
-    margin: 0 20px;
+    margin: 0;
     padding: 20px 0;
     display: flex; 
         flex-direction: column;
@@ -1237,7 +1240,8 @@ select.form-control:not([size]):not([multiple]) {
         height: 93px;
         display: flex;
         align-items: center;
-            margin-right: 30px;
+        justify-content: center;
+        margin-right: 30px;
 
         img {
             width: auto;
@@ -1946,9 +1950,7 @@ ul.checked_ul.horizontal_checked {
         margin-top: -11px;
     }
 
-    .irs--flat.irs-with-grid {
-        margin-right: -15px;
-    }
+ 
 
     .secure-section .mb-100 {
         display: none;

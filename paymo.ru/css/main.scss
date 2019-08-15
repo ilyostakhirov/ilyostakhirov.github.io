@@ -1467,6 +1467,7 @@ ul.checked_ul.horizontal_checked {
         display: block;
         color: $secondary;
         margin-bottom: 20px;
+            text-transform: uppercase;
     }
 
     .connecting-items .col-lg-3:before {
@@ -1476,7 +1477,7 @@ ul.checked_ul.horizontal_checked {
     .without-arrow.connecting-items .col-lg-3:before{
         display:none;
     }
-    p {
+    p { 
         color: #000;
     }
 

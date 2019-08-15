@@ -67,6 +67,596 @@ a {
     padding: 10px;
 }
 
+$color-red-error: rgb(185, 74, 72) !default;
+$color-green-success: #28a745;
+$color-grey-arrow: rgba(204, 204, 204, 0.2) !default;
+
+$width-default: 100% !default; // 3 960px-grid columns
+
+$zindex-select-dropdown: 1060 !default; // must be higher than a modal background (1050)
+
+//** Placeholder text color
+$input-color-placeholder: #999 !default;
+$input-alt-color-placeholder: rgba(255, 255, 255, 0.5) !default;
+
+$input-padding-y-sm: .25rem !default;
+$input-padding-x-sm: .5rem !default;
+
+$input-padding-y-lg: 0.5rem !default;
+$input-padding-x-lg: 1rem !default;
+
+// Mixins
+@mixin cursor-disabled() {
+    cursor: not-allowed;
+}
+
+@mixin box-sizing($fmt) {
+    -webkit-box-sizing: $fmt;
+    -moz-box-sizing: $fmt;
+    box-sizing: $fmt;
+}
+
+@mixin box-shadow($fmt) {
+    -webkit-box-shadow: $fmt;
+    box-shadow: $fmt;
+}
+
+@function fade($color, $amnt) {
+    @if $amnt>1 {
+        $amnt: $amnt / 100; // convert to percentage if int
+    }
+
+    @return rgba($color, $amnt);
+}
+
+// Rules
+select.bs-select-hidden,
+.bootstrap-select>select.bs-select-hidden,
+select.selectpicker {
+    display: none !important;
+}
+
+.select-wrap {
+
+    .btn-light:not(:disabled):not(.disabled).active,
+    .btn-light:not(:disabled):not(.disabled):active {
+        color: #212529;
+        background-color: #fff;
+        border-color: #C4CBDB;
+    }
+
+    .show>.btn-light.dropdown-toggle {
+        color: #000000;
+        background-color: #fff;
+        border-color: #26C6DA;
+    }
+
+    .btn-light:not(:disabled):not(.disabled).active:focus,
+    .btn-light:not(:disabled):not(.disabled):active:focus,
+    .show>.btn-light.dropdown-toggle:focus,
+    .btn-light:focus {
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+.bootstrap-select {
+    width: 220px \0;
+    /*IE9 and below*/
+    vertical-align: middle;
+
+    .dropdown-menu {
+        min-width: 10rem;
+        padding: 0;
+        margin: -1px 0 0;
+        font-size: 1rem;
+        color: #212529;
+        background-color: #fff;
+        border: 1px solid #C4CBDB;
+        border-radius: 0 0 3px 3px;
+
+        &[x-placement="top-start"] {
+            border-radius: 3px 3px 0 0;
+        }
+    }
+
+    // The selectpicker button
+    >.dropdown-toggle {
+        position: relative;
+        width: 100%;
+        // necessary for proper positioning of caret in Bootstrap 4 (pushes caret to the right)
+        text-align: right;
+        white-space: nowrap;
+        // force caret to be vertically centered for Bootstrap 4 multi-line buttons
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 28px 25px 4px;
+        background-color: #fff;
+        font-size: 18px;
+        border: 1px solid #C4CBDB;
+        color: #000000;
+        border-radius: 3px;
+        height: 70px;
+        text-transform: inherit;
+        font-weight: 400;
+        &::after{
+                border: none;
+    background: url(../img/arrow.svg) no-repeat 0 0;
+    width: 10px;
+    height: 6px;
+    position: absolute;
+    right: 28px;
+    top: 30px;
+        }
+        &.show &:after {
+            margin-top: -1px;
+        }
+
+        &.bs-placeholder {
+
+            &,
+            &:hover,
+            &:focus,
+            &:active {
+                color: $input-color-placeholder;
+            }
+
+            &.btn-primary,
+            &.btn-secondary,
+            &.btn-success,
+            &.btn-danger,
+            &.btn-info,
+            &.btn-dark {
+
+                &,
+                &:hover,
+                &:focus,
+                &:active {
+                    color: $input-alt-color-placeholder;
+                }
+            }
+        }
+    }
+
+    >select {
+        position: absolute !important;
+        bottom: 0;
+        left: 50%;
+        display: block !important;
+        width: 0.5px !important;
+        height: 100% !important;
+        padding: 0 !important;
+        opacity: 0 !important;
+        border: none;
+        z-index: 0 !important;
+
+        &.mobile-device {
+            top: 0;
+            left: 0;
+            display: block !important;
+            width: 100% !important;
+            z-index: 2 !important;
+        }
+    }
+
+    // Error display
+    .has-error & .dropdown-toggle,
+    .error & .dropdown-toggle,
+    &.is-invalid .dropdown-toggle,
+    .was-validated & .selectpicker:invalid+.dropdown-toggle {
+        border-color: $color-red-error;
+    }
+
+    &.is-valid .dropdown-toggle,
+    .was-validated & .selectpicker:valid+.dropdown-toggle {
+        border-color: $color-green-success;
+    }
+
+    &.fit-width {
+        width: auto !important;
+    }
+
+    &:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+        width: $width-default;
+    }
+}
+
+// The selectpicker components
+.bootstrap-select {
+    &.form-control {
+        margin-bottom: 0;
+        padding: 0;
+        border: none;
+
+        :not(.input-group)>&:not([class*="col-"]) {
+            width: 100%;
+        }
+
+        &.input-group-btn {
+            float: none;
+            z-index: auto;
+        }
+    }
+
+    .form-inline &,
+    .form-inline &.form-control:not([class*="col-"]) {
+        width: auto;
+    }
+
+    &:not(.input-group-btn),
+    &[class*="col-"] {
+        float: none;
+        display: inline-block;
+        margin-left: 0;
+    }
+
+    // Forces the pull to the right, if necessary
+    &,
+    &[class*="col-"],
+    .row &[class*="col-"] {
+        &.dropdown-menu-right {
+            float: right;
+        }
+    }
+
+    .form-inline &,
+    .form-horizontal &,
+    .form-group & {
+        margin-bottom: 0;
+    }
+
+    .form-group-lg &.form-control,
+    .form-group-sm &.form-control {
+        padding: 0;
+
+        .dropdown-toggle {
+            height: 100%;
+            font-size: inherit;
+            line-height: inherit;
+            border-radius: inherit;
+        }
+    }
+
+    &.form-control-sm .dropdown-toggle,
+    &.form-control-lg .dropdown-toggle {
+        font-size: inherit;
+        line-height: inherit;
+        border-radius: inherit;
+    }
+
+    &.form-control-sm .dropdown-toggle {
+        padding: $input-padding-y-sm $input-padding-x-sm;
+    }
+
+    &.form-control-lg .dropdown-toggle {
+        padding: $input-padding-y-lg $input-padding-x-lg;
+    }
+
+    // Set the width of the live search (and any other form control within an inline form)
+    // see https://github.com/silviomoreto/bootstrap-select/issues/685
+    .form-inline & .form-control {
+        width: 100%;
+    }
+
+    &.disabled,
+    >.disabled {
+        @include cursor-disabled();
+
+        &:focus {
+            outline: none !important;
+        }
+    }
+
+    &.bs-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 0 !important;
+        padding: 0 !important;
+
+        .dropdown-menu {
+            z-index: $zindex-select-dropdown;
+        }
+    }
+
+    // The selectpicker button
+    .dropdown-toggle {
+        .filter-option {
+            position: static;
+            top: 0;
+            left: 0;
+            float: left;
+            height: 100%;
+            width: 100%;
+            text-align: left;
+            overflow: hidden;
+            flex: 0 1 auto; // for IE10
+
+            @at-root .bs3#{&} {
+                padding-right: inherit;
+            }
+
+            @at-root .input-group .bs3-has-addon#{&} {
+                position: absolute;
+                padding-top: inherit;
+                padding-bottom: inherit;
+                padding-left: inherit;
+                float: none;
+
+                .filter-option-inner {
+                    padding-right: inherit;
+                }
+            }
+        }
+
+        .filter-option-inner-inner {
+            overflow: hidden;
+        }
+
+        // used to expand the height of the button when inside an input group
+        .filter-expand {
+            width: 0 !important;
+            float: left;
+            opacity: 0 !important;
+            overflow: hidden;
+        }
+
+        .caret {
+            position: absolute;
+            top: 50%;
+            right: 12px;
+            margin-top: -2px;
+            vertical-align: middle;
+        }
+    }
+
+    .input-group &.form-control .dropdown-toggle {
+        border-radius: inherit;
+    }
+
+    &[class*="col-"] .dropdown-toggle {
+        width: 100%;
+    }
+
+    // The selectpicker dropdown
+    .dropdown-menu {
+        min-width: 100%;
+        @include box-sizing(border-box);
+
+        >.inner:focus {
+            outline: none !important;
+        }
+
+        &.inner {
+            position: static;
+            float: none;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            border-radius: 0;
+            box-shadow: none;
+        }
+
+        li {
+            position: relative;
+            border-bottom: 1px solid #C4CBDB;
+
+            &:last-child {
+                border: none;
+            }
+
+            &.active small {
+                color: $input-alt-color-placeholder !important;
+            }
+
+            &.disabled a {
+                @include cursor-disabled();
+            }
+
+            a {
+                cursor: pointer;
+                user-select: none;
+                padding: 17px 24px;
+                font-weight: 400;
+                color: #000;
+                font-size: 18px;
+
+                &.active,&:active {
+                    background-color: #fff;
+                    color: 000;
+                }
+
+                &.opt {
+                    position: relative;
+                    padding-left: 2.25em;
+                }
+
+                span.check-mark {
+                    display: none;
+                }
+
+                span.text {
+                    display: inline-block;
+                }
+            }
+
+            small {
+                padding-left: 0.5em;
+            }
+        }
+
+        .notify {
+            position: absolute;
+            bottom: 5px;
+            width: 96%;
+            margin: 0 2%;
+            min-height: 26px;
+            padding: 3px 5px;
+            background: rgb(245, 245, 245);
+            border: 1px solid rgb(227, 227, 227);
+            @include box-shadow(inset 0 1px 1px fade(rgb(0, 0, 0), 5));
+            pointer-events: none;
+            opacity: 0.9;
+            @include box-sizing(border-box);
+        }
+    }
+
+    .no-results {
+        padding: 3px;
+        background: #f5f5f5;
+        margin: 0 5px;
+        white-space: nowrap;
+    }
+
+    &.fit-width .dropdown-toggle {
+        .filter-option {
+            position: static;
+            display: inline;
+            padding: 0;
+            width: auto;
+        }
+
+        .filter-option-inner,
+        .filter-option-inner-inner {
+            display: inline;
+        }
+
+        .bs-caret:before {
+            content: '\00a0';
+        }
+
+        .caret {
+            position: static;
+            top: auto;
+            margin-top: -1px;
+        }
+    }
+
+    &.show-tick .dropdown-menu {
+        .selected span.check-mark {
+            position: absolute;
+            display: inline-block;
+            right: 21px;
+            background: url(../img/check_blue.svg) no-repeat 0 8px;
+            top: 14px;
+            width: 18px;
+            height: 23px;
+        }
+
+        li a span.text {
+            margin-right: 34px;
+        }
+    }
+    
+}
+
+.bootstrap-select.show-menu-arrow {
+
+    &.open>.dropdown-toggle,
+    &.show>.dropdown-toggle {
+        z-index: ($zindex-select-dropdown + 1);
+    }
+
+    .dropdown-toggle .filter-option {
+        &:before {
+            content: '';
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            border-bottom: 7px solid $color-grey-arrow;
+            position: absolute;
+            bottom: -4px;
+            left: 9px;
+            display: none;
+        }
+
+        &:after {
+            content: '';
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-bottom: 6px solid white;
+            position: absolute;
+            bottom: -4px;
+            left: 10px;
+            display: none;
+        }
+    }
+
+    &.dropup .dropdown-toggle .filter-option {
+        &:before {
+            bottom: auto;
+            top: -4px;
+            border-top: 7px solid $color-grey-arrow;
+            border-bottom: 0;
+        }
+
+        &:after {
+            bottom: auto;
+            top: -4px;
+            border-top: 6px solid white;
+            border-bottom: 0;
+        }
+    }
+
+    &.pull-right .dropdown-toggle .filter-option {
+        &:before {
+            right: 12px;
+            left: auto;
+        }
+
+        &:after {
+            right: 13px;
+            left: auto;
+        }
+    }
+
+    &.open>.dropdown-toggle .filter-option,
+    &.show>.dropdown-toggle .filter-option {
+
+        &:before,
+        &:after {
+            display: block;
+        }
+    }
+}
+
+.bs-searchbox,
+.bs-actionsbox,
+.bs-donebutton {
+    padding: 4px 8px;
+}
+
+.bs-actionsbox {
+    width: 100%;
+    @include box-sizing(border-box);
+
+    & .btn-group button {
+        width: 50%;
+    }
+}
+
+.bs-donebutton {
+    float: left;
+    width: 100%;
+    @include box-sizing(border-box);
+
+    & .btn-group button {
+        width: 100%;
+    }
+}
+
+.bs-searchbox {
+    &+.bs-actionsbox {
+        padding: 0 8px 4px;
+    }
+
+    & .form-control {
+        margin-bottom: 0;
+        width: 100%;
+        float: none;
+    }
+}
+
 ul.dot {
     li {
         position: relative;
@@ -84,6 +674,29 @@ ul.dot {
 
         }
     }
+}
+
+.select-wrap {
+
+    .select-label {
+        position: absolute;
+        z-index: 1;
+        top: 24px;
+        margin: 0;
+        transition: all 0.2s ease-in-out;
+        pointer-events: none;
+        left: 25px;
+        right: 25px;
+        color: #939AA7;
+        font-size: 18px;
+    }
+
+}
+
+.valid .select-label {
+    font-size: 12px;
+    top: 10px;
+    color: #939AA7;
 }
 
 ul.checked_ul {
@@ -1467,17 +2080,19 @@ ul.checked_ul.horizontal_checked {
         display: block;
         color: $secondary;
         margin-bottom: 20px;
-            text-transform: uppercase;
+        text-transform: uppercase;
     }
 
     .connecting-items .col-lg-3:before {
         background: url(../img/arrow-g.svg) no-repeat;
         background-size: contain;
     }
-    .without-arrow.connecting-items .col-lg-3:before{
-        display:none;
+
+    .without-arrow.connecting-items .col-lg-3:before {
+        display: none;
     }
-    p { 
+
+    p {
         color: #000;
     }
 
@@ -1509,6 +2124,58 @@ ul.checked_ul.horizontal_checked {
         }
     }
 }
+
+.full-container {
+    background-size: contain;
+    display: block;
+    align-items: center;
+}
+
+.full-inner {
+    display: block;
+    height: calc(100vh - 108px);
+    width: 100%;
+}
+
+.full-two-pane {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .illustration-div {
+        background-image: radial-gradient(circle at 0 0, #ffffff, rgba(255, 255, 255, 0)), radial-gradient(circle at 0 0, #f3f7fe, #e3edfe);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+
+    .text-div {
+        flex: 0 0 60%;
+        max-width: 60%;
+            margin: 40px 0;
+    }
+}
+
+.full-two-pane>div {
+    flex: 1;
+}
+
+.full-two-pane>div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+
+@media (min-width: 768px) {
+    .full-container {}
+
+    .full-two-pane>div:last-child {
+    }
+}
+
+
 
 @media screen and (min-width: 1100px) {
     .footer ul {
@@ -1754,6 +2421,17 @@ ul.checked_ul.horizontal_checked {
 }
 
 @media (max-width: 1100px) {
+    .full-two-pane>div:first-child {
+    display:none;
+}
+    .full-two-pane>div:last-child {
+        flex: 0 0 100%;
+    max-width: 100%;
+}
+.full-inner {
+    display: block;
+    height: auto; 
+}
     .lg_br {
         display: none;
     }

@@ -1136,18 +1136,19 @@ h1 {
         height: 100%;
         padding: 30px;
         border-radius: 12px;
-  box-shadow: 0 14px 48px 0 rgba(165, 182, 207, 0.2);
-  background-color: #ffffff;
+        box-shadow: 0 14px 48px 0 rgba(165, 182, 207, 0.2);
+        background-color: #ffffff;
         text-align: center;
         transition: box-shadow .3s ease-out, transform .3s ease-out, opacity .2s ease-out;
         transition-delay: .1s;
         transform: translateZ(0);
 
         &:hover {
-                transform: translateY(-10px);
-                .title{
-                    color:#3667bd;
-                }
+            transform: translateY(-10px);
+
+            .title {
+                color: #3667bd;
+            }
         }
     }
 
@@ -1168,6 +1169,21 @@ h1 {
         line-height: 1.7;
         color: $secondary;
         margin-bottom: 0;
+    }
+}
+
+.about_promo {
+    position: relative;
+
+    &::before {
+        content: "";
+        background: url(../img/frame_about.svg) no-repeat;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-size: cover;
     }
 }
 
@@ -1311,7 +1327,10 @@ img {
         }
     }
 }
-
+.mw-515{
+    max-width: 515px;
+    margin: 0 auto;
+}
 .contact-form {
     max-width: 515px;
     margin: 0 auto;
@@ -1330,7 +1349,7 @@ img {
 .form-group {
     position: relative;
     width: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 .form-control {
@@ -2165,7 +2184,7 @@ ul.checked_ul.horizontal_checked {
     .text-div {
         flex: 0 0 60%;
         max-width: 60%;
-        margin: 40px 0;
+        margin: 70px 0 0;
     }
 }
 
@@ -2184,9 +2203,11 @@ ul.checked_ul.horizontal_checked {
         display: block;
     }
 }
-.mb-35{
+
+.mb-35 {
     margin-bottom: 35px;
 }
+
 .contacts {
     display: flex;
 
@@ -2221,6 +2242,88 @@ ul.checked_ul.horizontal_checked {
     font-size: 22px !important;
 }
 
+.box-white {
+    border-radius: 10px;
+    border: solid 1px #f3f7fc;
+    background-color: #ffffff;
+    height: 100%;
+    padding: 30px;
+
+    .box-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #161a22;
+        margin-bottom: 16px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.8;
+        color: #161a22;
+        margin: 0 0 20px 0;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.doc-items {
+    .item {
+        border-radius: 10px;
+        box-shadow: 0 14px 48px 0 rgba(165, 182, 207, 0.2);
+        background-color: #ffffff;
+        padding: 20px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transition-delay: .1s;
+        transform: translateZ(0);
+            transition: box-shadow .3s ease-out, transform .3s ease-out, opacity .2s ease-out, -webkit-box-shadow .3s ease-out, -webkit-transform .3s ease-out;
+
+        &:hover {
+            transform: translateY(-10px);
+            text-decoration:none;
+            .title{
+                    color: #3667bd;
+            }
+        }
+
+        .icon {
+            margin-right: 18px;
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: 500;
+            color: #000000;
+        }
+
+        span {
+            font-size: 16px;
+            color: #939aa7;
+            display: block;
+            margin-top: 10px;
+        }
+    }
+}
+.b-b{
+
+}
+.box-icon-text{
+    display:flex;
+    align-items: flex-start;
+
+    img{
+        margin-right: 15px;
+    }
+    div{
+        font-size: 18px;
+  font-weight: 500;
+  line-height: 1.83;
+  color: #161a22;
+    }
+}
 @media (min-width: 768px) {
     .full-container {}
 
@@ -2473,19 +2576,24 @@ ul.checked_ul.horizontal_checked {
 }
 
 @media (max-width: 1100px) {
-
+.box-icon-text {
+width: 100%;
+padding: 30px;
+}
     .full-two-pane>div:first-child {
         display: none;
     }
+
     .contacts {
-    flex-direction: column;
-}
-.contacts .first-col {
-    padding-right: 0;
-    margin-right: 0;
-    border-right: none;
-    margin-bottom: 35px;
-}
+        flex-direction: column;
+    }
+
+    .contacts .first-col {
+        padding-right: 0;
+        margin-right: 0;
+        border-right: none;
+        margin-bottom: 35px;
+    }
 
     .full-two-pane>div:last-child {
         flex: 0 0 100%;

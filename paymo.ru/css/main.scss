@@ -1,4 +1,4 @@
-$spaceamounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 75, 90, 100);
+$spaceamounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 75, 80, 90, 100);
 $sides: (top, bottom, left, right);
 $primary: #000000;
 $secondary: #47546a;
@@ -180,15 +180,17 @@ select.selectpicker {
         height: 70px;
         text-transform: inherit;
         font-weight: 400;
-        &::after{
-                border: none;
-    background: url(../img/arrow.svg) no-repeat 0 0;
-    width: 10px;
-    height: 6px;
-    position: absolute;
-    right: 28px;
-    top: 30px;
+
+        &::after {
+            border: none;
+            background: url(../img/arrow.svg) no-repeat 0 0;
+            width: 10px;
+            height: 6px;
+            position: absolute;
+            right: 28px;
+            top: 30px;
         }
+
         &.show &:after {
             margin-top: -1px;
         }
@@ -462,7 +464,8 @@ select.selectpicker {
                 color: #000;
                 font-size: 18px;
 
-                &.active,&:active {
+                &.active,
+                &:active {
                     background-color: #fff;
                     color: 000;
                 }
@@ -548,7 +551,7 @@ select.selectpicker {
             margin-right: 34px;
         }
     }
-    
+
 }
 
 .bootstrap-select.show-menu-arrow {
@@ -1120,6 +1123,12 @@ h1 {
 
 }
 
+.h1 {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 1.2;
+
+}
 
 
 .features-items {
@@ -2154,7 +2163,7 @@ ul.checked_ul.horizontal_checked {
     .text-div {
         flex: 0 0 60%;
         max-width: 60%;
-            margin: 40px 0;
+        margin: 40px 0;
     }
 }
 
@@ -2167,12 +2176,53 @@ ul.checked_ul.horizontal_checked {
     align-items: center;
 }
 
+.map {
+    iframe {
+        width: 100%;
+        display: block;
+    }
+}
+.mb-35{
+    margin-bottom: 35px;
+}
+.contacts {
+    display: flex;
+
+    .first-col {
+        padding-right: 135px;
+        margin-right: 135px;
+        border-right: 1px solid #dadfe7;
+    }
+
+    .contact-item {
+        display: flex;
+
+        .icon {
+            margin-right: 25px;
+            width: 40px;
+        }
+
+        .info {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #000000;
+        }
+
+        p {
+            margin-top: 10px;
+            color: #000000;
+        }
+    }
+}
+
+.f-22 {
+    font-size: 22px !important;
+}
 
 @media (min-width: 768px) {
     .full-container {}
 
-    .full-two-pane>div:last-child {
-    }
+    .full-two-pane>div:last-child {}
 }
 
 
@@ -2421,17 +2471,30 @@ ul.checked_ul.horizontal_checked {
 }
 
 @media (max-width: 1100px) {
+
     .full-two-pane>div:first-child {
-    display:none;
+        display: none;
+    }
+    .contacts {
+    flex-direction: column;
 }
+.contacts .first-col {
+    padding-right: 0;
+    margin-right: 0;
+    border-right: none;
+    margin-bottom: 35px;
+}
+
     .full-two-pane>div:last-child {
         flex: 0 0 100%;
-    max-width: 100%;
-}
-.full-inner {
-    display: block;
-    height: auto; 
-}
+        max-width: 100%;
+    }
+
+    .full-inner {
+        display: block;
+        height: auto;
+    }
+
     .lg_br {
         display: none;
     }

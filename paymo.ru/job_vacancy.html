@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Paymo</title>
+    <script src="js/modernizr.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
 
@@ -89,63 +91,80 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <div class="h1 mt-70 mb-50">Контакты</div>
-        <div class="contacts mb-70">
-            <div class="first-col">
-                <div class="contact-item mb-35">
-                    <div class="icon"><img src="img/contacts/icon_mobile.svg" alt=""></div>
-                    <div class="info">
-                        <strong>Номера телефонов</strong>
-                        <p>8 (800) 301-06-44<br>8 (495) 369-60-67</p>
-                    </div>
-                </div>
-                <div class="contact-item mb-35">
-                    <div class="icon"><img src="img/contacts/icon_support.svg" alt=""></div>
-                    <div class="info">
-                        <strong>Служба поддержки плательщиков</strong>
-                        <p>support@paymo.ru</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon"><img src="img/contacts/icon_support2.svg" alt=""></div>
-                    <div class="info">
-                        <strong>Подключение <br>и сотрудничество</strong>
-                        <p>hello@paymo.ru</p>
-                    </div>
-                </div>
+    <section class="">
+        <div class="container center_promo mt-70">
+            <div class="promo_text">
+                <h1>Присоединяйтесь к команде PAYMO</h1>
+                <p>По мере активного роста компании мы находимся в поиске опытных, увлеченных работой сотрудников, <br class="lg_br">
+                    которые смогут внести вклад в развитие компании и платежной индустрии в целом.</p>
             </div>
-            <div class="last-col">
-                <div class="contact-item mb-35">
-                    <div class="icon"><img src="img/contacts/icon_documents.svg" alt=""></div>
-                    <div class="info">
-                        <strong>Реквизиты</strong>
-                        <p>ООО «Инновационные платежные технологии»<br>
-                            <strong>ОГРН:</strong> 1147746809924<br>
-                            <strong>ИНН/КПП:</strong> 7722849318/770801001
-                        </p>
-                    </div>
-                </div>
-                <div class="contact-item mb-35">
-                    <div class="icon"><img src="img/contacts/icon_adress.svg" alt=""></div>
-                    <div class="info">
-                        <strong>Адрес нашего офиса</strong>
-                        <p>Москва, Россия, 119019<br>Филипповский переулок, 13 стр. 1</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon"></div>
-                    <div class="info">
-                        <strong class="f-22"><a href="#">Напишите нам</a>, если у вас есть вопросы</strong>
-                    </div>
-                </div>
-                
+            <div class="promo_img mb-70">
+                <img width="100%" src="img/illustration_vacancy.svg" alt="">
             </div>
         </div>
-    </div>
-    <div class="map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A982da7f17b1f508312163497726bea82b672efc61badd0fa6b105e991d9d03dc&amp;source=constructor" width="1280" height="450" frameborder="0"></iframe>
-    </div>
+    </section>
+    <section class="mb-100 mt-40">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="box-icon-text">
+                    <img src="img/icon_document.svg" alt="">
+                    <div>Трудоустройство <br>по ТК РФ</div>
+                </div>
+                <div class="box-icon-text">
+                    <img src="img/icon_office.svg" alt="">
+                    <div>Офис в центре Москвы<br>Недалеко от метро</div>
+                </div>
+                <div class="box-icon-text">
+                    <img src="img/icon_career-growth.svg" alt="">
+                    <div>Карьерный рост </div>
+                </div>
+                <div class=" box-icon-text">
+                    <img src="img/icon_party.svg" alt="">
+                    <div>Корпоративы <br>и мероприятия</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section bordered">
+        <div class="container">
+            <div class="section-header">
+                <div class="h2">Открытые вакансии</div>
+            </div>
+            <div class="row doc-items job-items">
+                <div class="col-lg-6 mb-30">
+                    <a href="#" class="item">
+                        <div class="title">QA Engineer/тестировщик</div>
+                    </a>
+                </div>
+                <div class="col-lg-6 mb-30">
+                    <a href="#" class="item">
+                        <div class="title">Специалист технической поддержки (Support)</div>
+                    </a>
+                </div>
+                <div class="col-lg-6 mb-30">
+                    <a href="#" class="item">
+                        <div class="title">Product manager</div>
+                    </a>
+                </div>
+                <div class="col-lg-6 mb-30">
+                    <a href="#" class="item">
+                        <div class="title">Менеджер по работе с клиентами</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="section">
+        <div class="container">
+            <div class="job_alert">
+                <div>
+                    Если вы хотите у нас работать, но не нашли подходящей вакансии, отправляйте свое резюме на <a href="#">work@paymo.ru</a> 
+                </div>
+                <img src="img/illustration_send.svg" alt="">
+            </div>
+        </div>
+    </section>
+   
     <footer class="footer">
         <div class="container">
             <div class="f-logo">
@@ -249,6 +268,11 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/flexmenu.min.js"></script>
+    <script src='js/ion.rangeSlider.min.js'></script>
+    <script src='js/swiper.min.js'></script>
+    <script src='js/tab.js'></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1184,7 +1184,7 @@ h1 {
         bottom: 0;
         top: 0;
         background-size: cover;
-            background-position: 0 100%;
+        background-position: 0 100%;
     }
 }
 
@@ -1328,10 +1328,12 @@ img {
         }
     }
 }
-.mw-515{
+
+.mw-515 {
     max-width: 515px;
     margin: 0 auto;
 }
+
 .contact-form {
     max-width: 515px;
     margin: 0 auto;
@@ -2164,8 +2166,15 @@ ul.checked_ul.horizontal_checked {
 
 .full-inner {
     display: block;
-    height: calc(100vh - 108px);
+    min-height: calc(100vh - 108px);
+    height: 100%;
     width: 100%;
+}
+
+.help-title {
+    font-size: 20px;
+    color: #161a22;
+    margin-bottom: 13px;
 }
 
 .full-two-pane {
@@ -2280,13 +2289,14 @@ ul.checked_ul.horizontal_checked {
         align-items: center;
         transition-delay: .1s;
         transform: translateZ(0);
-            transition: box-shadow .3s ease-out, transform .3s ease-out, opacity .2s ease-out, -webkit-box-shadow .3s ease-out, -webkit-transform .3s ease-out;
+        transition: box-shadow .3s ease-out, transform .3s ease-out, opacity .2s ease-out, -webkit-box-shadow .3s ease-out, -webkit-transform .3s ease-out;
 
         &:hover {
             transform: translateY(-10px);
-            text-decoration:none;
-            .title{
-                    color: #3667bd;
+            text-decoration: none;
+
+            .title {
+                color: #3667bd;
             }
         }
 
@@ -2308,23 +2318,153 @@ ul.checked_ul.horizontal_checked {
         }
     }
 }
-.b-b{
 
-}
-.box-icon-text{
-    display:flex;
-    align-items: flex-start;
+.b-b {}
 
-    img{
-        margin-right: 15px;
+.box-icon-text {
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-right: 20px;
     }
-    div{
+
+    div {
         font-size: 18px;
-  font-weight: 500;
-  line-height: 1.83;
-  color: #161a22;
+        font-weight: 500;
+        line-height: 1.6;
+        color: #161a22;
     }
 }
+
+.page {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #000000;
+
+    p {
+        font-size: 20px;
+        line-height: 1.6;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 50px;
+        margin-bottom: 35px;
+    }
+
+    ul {
+        padding-left: 18px;
+
+        li {
+            margin-bottom: 32px;
+        }
+    }
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile+label {
+    border-radius: 3px;
+    border: dashed 2px #c4cbdb;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 16px 30px;
+    margin: 0;
+}
+
+.no-js .inputfile+label {
+    display: none;
+}
+
+.inputfile:focus+label,
+.inputfile.has-focus+label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile+label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.f-14 {
+    font-size: 14px;
+}
+
+.inputfile+label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+.center_promo {
+    text-align: center;
+
+    p {
+        font-size: 20px;
+        line-height: 1.8;
+        color: #000000;
+        margin: 23px 0 98px;
+    }
+}
+
+.job-items {
+    .item {
+        padding: 44px 50px;
+    }
+}
+
+.job_alert {
+    display: flex;
+    align-items: center;
+
+    div {
+        border-radius: 6px;
+        box-shadow: 0 14px 48px 0 rgba(165, 182, 207, 0.2);
+        background-color: #ffffff;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: #000000;
+        padding: 50px;
+        margin-top: 118px;
+        z-index: 2;
+
+        a {
+            font-weight: bold;
+        }
+
+
+    }
+
+    img {
+        margin-left: -127px;
+        z-index: 1;
+    }
+}
+
 @media (min-width: 768px) {
     .full-container {}
 
@@ -2577,10 +2717,17 @@ ul.checked_ul.horizontal_checked {
 }
 
 @media (max-width: 1100px) {
-.box-icon-text {
-width: 100%;
-padding: 30px;
+    .job_alert img {
+    display:none;
 }
+.job_alert div {
+    margin-top: 0;
+}
+    .box-icon-text {
+        width: 100%;
+        padding: 30px;
+    }
+
     .full-two-pane>div:first-child {
         display: none;
     }
@@ -2722,7 +2869,7 @@ padding: 30px;
 
     .row.features-items .col-lg-3 {
         margin-bottom: 50px;
-        text-align:center;
+        text-align: center;
 
         &:last-child {
             margin-bottom: 0

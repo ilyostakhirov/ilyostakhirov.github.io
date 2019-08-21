@@ -2165,7 +2165,9 @@ ul.checked_ul.horizontal_checked {
         }
     }
 }
-
+.secondary{
+    color:$secondary;
+}
 .full-container {
     background-size: contain;
     display: block;
@@ -2173,22 +2175,70 @@ ul.checked_ul.horizontal_checked {
 }
 
 .full-inner {
-    display: block;
+    display: flex;
     min-height: calc(100vh - 108px);
     height: 100%;
     width: 100%;
+    justify-content: stretch;
 }
+#show_pwd {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 999;
+    cursor:pointer;
+        width: 24px;
+  height: 24px;
+  background: url(../img/open_eye.svg) no-repeat;
+  border:none;
+  outline:none;
 
+}
+#show_pwd.hide_password{
+   background: url(../img/close_eye.svg) no-repeat; 
+}
 .help-title {
     font-size: 20px;
     color: #161a22;
     margin-bottom: 13px;
 }
-
+.box-shadow{
+    border-radius: 12px;
+  box-shadow: 0 14px 48px 0 rgba(165, 182, 207, 0.2);
+  background-color: #ffffff;
+  padding:40px;
+}
+ h6{
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;  
+  }
+.ol-num{
+        list-style: none;
+    counter-reset: my-awesome-counter;
+    margin: 0;
+    padding: 0;
+  li{
+    counter-increment: my-awesome-counter;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 1.5;
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 20px;
+    &::before{
+           content: counter(my-awesome-counter) ". ";
+    margin-right: 20px;
+    position: absolute;
+    left: 0;
+    }
+  }
+}
 .full-two-pane {
-    height: 100%;
     display: flex;
     flex-direction: row;
+    width: 100%;
 
     .illustration-div {
         background-image: radial-gradient(circle at 0 0, #ffffff, rgba(255, 255, 255, 0)), radial-gradient(circle at 0 0, #f3f7fe, #e3edfe);
@@ -2197,6 +2247,7 @@ ul.checked_ul.horizontal_checked {
         align-items: center;
         flex: 0 0 40%;
         max-width: 40%;
+        padding:0 40px;
     }
 
     .text-div {
@@ -2481,6 +2532,14 @@ ul.checked_ul.horizontal_checked {
 }
 .list.l-p li:first-child {
     padding-left: 0;
+}
+.clients-logo{
+    .item{
+        padding:0 15px;
+        a{
+            padding:0 45px;
+        }
+    }
 }
 @media (min-width: 768px) {
     .full-container {}

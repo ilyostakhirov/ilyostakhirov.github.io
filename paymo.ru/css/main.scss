@@ -2225,6 +2225,12 @@ ul.checked_ul.horizontal_checked {
   font-weight: bold;
   color: #000000;  
   }
+  .pb-32 {
+    padding-bottom: 32px;
+}
+.mt-43 {
+    margin-top: 43px!important;
+}
 .ol-num{
         list-style: none;
     counter-reset: my-awesome-counter;
@@ -2244,6 +2250,9 @@ ul.checked_ul.horizontal_checked {
     margin-right: 20px;
     position: absolute;
     left: 0;
+    }
+    &:last-child{
+        margin-bottom: 0;
     }
   }
 }
@@ -2681,6 +2690,9 @@ border-bottom:none;
     .product-body-down{
         width: 100%;
     }
+}
+.mb-52{
+    margin-bottom: 52px!important;
 }
 @media (min-width: 768px) {
     .full-container {}

@@ -1098,9 +1098,20 @@ h1 {
 }
 
 .section {
-    padding: 130px 0;
+    padding: 113px 0;
 }
-
+.mb-37 {
+    margin-bottom: 37px!important;
+}
+.mb-24 {
+    margin-bottom: 32px!important;
+}
+.p-8773{
+        padding: 87px 73px 84px!important;
+}
+.p-4373{
+        padding: 43px 73px!important;
+}
 .section-header {
     text-align: center;
     margin-bottom: 70px;
@@ -2219,17 +2230,36 @@ ul.checked_ul.horizontal_checked {
     border-radius: 12px;
     box-shadow: 0 14px 48px 0 rgba(165, 182, 207, 0.2);
     background-color: #ffffff;
-    padding: 40px;
+    padding: 50px 48px 40px;
+    .m-title{
+        line-height: 1;
+    }
 }
+.btn-lgg {
+    padding: 24px 57px;
+}
+.p-9755{
+    padding: 97px 55px 92px!important;
 
+}
+.btn-mdd {
+    padding: 17px 18px 13px;
+}
+.mt-115 {
+    margin-top: 115px!important;
+}
 .mt-120 {
     margin-top: 120px;
 }
-
+.pb-15 {
+    padding-bottom: 15px!important;
+}
 .mb-120 {
     margin-bottom: 120px;
 }
-
+.mb-42 {
+    margin-bottom: 42px;
+}
 .pt-120 {
     padding-top: 120px;
 }
@@ -2237,7 +2267,12 @@ ul.checked_ul.horizontal_checked {
 .pb-120 {
     padding-bottom: 120px;
 }
-
+.ll-title {
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 1.43;
+    color: #000000;
+}
 .l-title {
     font-size: 40px;
     font-weight: bold;
@@ -2281,18 +2316,23 @@ ul.checked_ul.horizontal_checked {
         }
     }
 }
-
+.mlr-32{
+    margin-left:32px!important;
+    margin-right:32px!important;
+}
 .p-64 {
     padding: 64px !important;
 }
-
+.p-7236{
+    padding: 72px 36px!important;
+}
 .w-boxes {
     display: flex;
 
     .item {
         flex: 0 0 50%;
         max-width: 50%;
-        padding: 0 32px;
+        padding: 0 36px;
 
         >div {
             background: #fff;
@@ -2320,7 +2360,9 @@ ul.checked_ul.horizontal_checked {
         }
     }
 }
-
+.p-9977{
+        padding: 93px 0 77px!important;
+}
 .static {
     max-width: 775px;
     margin: 0 auto;
@@ -2329,7 +2371,7 @@ ul.checked_ul.horizontal_checked {
     .item {
         flex: 0 0 50%;
         max-width: 50%;
-        padding: 0 25px;
+        padding: 0 20px;
 
         .heading {
             font-size: 18px;
@@ -2356,14 +2398,20 @@ ul.checked_ul.horizontal_checked {
         }
 
         >div {
-            background: #fff;
+            background:url(../img/card.svg) no-repeat;
+            background-size: cover;
             height: 100%;
-            padding: 49px 34px 47px;
+            padding: 49px 30px 47px;
             border-radius: 10px;
         }
     }
 }
-
+.p-5155{
+        padding: 51px 55px;
+}
+.mb-33 {
+    margin-bottom: 33px!important;
+}
 .blue-pattern {
     background: url(../img/blue-bg.svg) no-repeat;
     background-size: cover;
@@ -2654,7 +2702,9 @@ h6 {
         color: #161a22;
     }
 }
-
+.mb-36{
+    margin-bottom: 36px!important;
+}
 .page {
     font-size: 20px;
     line-height: 1.6;
@@ -2664,7 +2714,7 @@ h6 {
         font-size: 20px;
         line-height: 1.6;
         color: #000000;
-        margin-bottom: 30px;
+        margin-bottom: 33px;
     }
 
     h4 {
@@ -2865,7 +2915,10 @@ h6 {
             padding: 70px;
         }
 
-        span.secondary {}
+        span.secondary {
+                margin-bottom: 10px;
+    display: block;
+        }
 
         h5 {
             font-size: 32px;
@@ -2882,8 +2935,8 @@ h6 {
 
                 &:last-child {
                     border-left: 1px solid #dfe3ea;
-                    padding-left: 20px;
-                    margin-left: 20px;
+                    padding-left: 25px;
+                    margin-left: 25px;
                 }
             }
         }
@@ -2900,7 +2953,7 @@ h6 {
     }
 
     .product-body-down {
-        padding: 40px 70px;
+        padding: 32px 70px;
         border-top: 1px solid #dfe3ea;
         display: flex;
         justify-content: space-between;
@@ -2915,7 +2968,7 @@ h6 {
 
 .product.product-1 {
     .product-body {
-        width: 520px;
+        width: 500px;
         flex-grow: 0;
         border: solid 1px #e4e9f1;
         background-color: rgba(194, 215, 251, 0.2);
@@ -2925,11 +2978,15 @@ h6 {
 
         .product-body-up {
             flex-grow: 1;
+            padding: 56px;
+        }
+        .product-body-down{
+    padding: 52px 56px;
         }
 
         .img {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 56px;
         }
     }
 

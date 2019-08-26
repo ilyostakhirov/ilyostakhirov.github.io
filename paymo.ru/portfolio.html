@@ -5,11 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Paymo</title>
+    <script src="js/modernizr.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="portfolio">
     <div class="topbar">
         <div class="container-fluid d-flex">
             <ul class="topul ul ml-auto">
@@ -89,118 +91,125 @@
             </div>
         </nav>
     </header>
-    <section class="section bordered p-0">
-    <div class="container">
-       <div class="ll-title mt-80 mb-24">Тарифы</div>
-        <div class="page mb-80">
-            <p class="mb-60">Мы предлагаем максимально гибкую тарифную сетку, <br>которая разрабатывалась с учетом пожеланий и отзывов наших клиентов. </p>
-            <div class="row mm-20">
-                <div class="col-lg-6 plr-20 mb-40">
-                    <div class="box-shadow  pb-30 h-100">
-                        <div class="m-title mb-20">Интернет-магазины</div>
-                        <table class="table mb-0">
-                            <tr>
-                                <th>Оборот компании</th>
-                                <th style="width: 255px">Комиссия </th>
-                            </tr>
-                            <tr>
-                                <td>до 1 000 000 </td>
-                                <td>3,5 %</td>
-                            </tr>
-                            <tr>
-                                <td>до 2 500 000 </td>
-                                <td>3 %</td>
-                            </tr>
-                            <tr>
-                                <td>до 5 000 000 </td>
-                                <td>2,5 %</td>
-                            </tr>
-                            <tr>
-                                <td>от 5 000 000 </td>
-                                <td><a class="btn btn-primary btn-mdd" href="#">Индивидуальный тариф</a></td>
-                            </tr>
-                        </table>
+    <section class="portfolio_section">
+        <div class="container">
+            <div class="promo_text">
+                <h1 class="mb-25">Портфолио</h1>
+                <p class="mb-50">Перед вами примеры разработанных нами приложений. Мы разрабатываем<br>
+                    мобильные, десктопные и веб-приложения, занимаемся их поддержкой<br>
+                    и доработками: обновление новых версий, внедрение дополнительных<br>
+                    сервисов и доработка существующей функциональности.</p>
+                <a class="btn btn-primary btn-lg" href="#">Оставить заявку</a>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio_section1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 div_text">
+                    <div class="l-title mb-40">Приложение PulPul <br>(PAYMO UZBEKISTAN)</div>
+                    <p class="mb-40">Мобильное приложение для управления финансами на банковских картах Uzcard и Humo, разработанное дочерней структурой PAYMO для пользователей в Узбекистане.</p>
+                    <ul>
+                        <li>Денежные переводы любому человеку из вашего списка контактов с возможностью перевода средств в долг а также их быстрого возврата</li>
+                        <li>Возможность делить счёт между друзьями после совместного обеда/покупки</li>
+                        <li>Оплата различных услуг: мобильная связь, госуслуги и штрафы, коммунальные услуги и многое другое</li>
+                        <li>Покупка товаров авиабилетов </li>
+                        <li>Погашение кредитов </li>
+                        <li>Контроль расходов с помощью функции «Бюджет» с быстрым доступом к последним платежам и переводам </li>
+                        <li>Бонусная программа за активное использование приложения </li>
+                    </ul>
+                    <div class="btns mt-50">
+                        <a class="mr-25" href="#"><img src="img/portfolio/apple-pay.svg" alt=""></a>
+                        <a href="#"><img src="img/portfolio/google-play.svg" alt=""></a>
                     </div>
                 </div>
-                <div class="col-lg-6 plr-20  mb-40">
-                    <div class="box-shadow pb-30 h-100">
-                        <div class="m-title mb-20">ЖКХ компании</div>
-                        <table class="table mb-0">
-                            <tr>
-                                <th>Оборот компании</th>
-                                <th style="width: 255px">Комиссия </th>
-                            </tr>
-                            <tr>
-                                <td>до 1 000 000 </td>
-                                <td>1,5 %</td>
-                            </tr>
-                            <tr>
-                                <td>до 10 000 000 </td>
-                                <td>1,3 %</td>
-                            </tr>
-                            <tr>
-                                <td>до 30 000 000 </td>
-                                <td>1 %</td>
-                            </tr>
-                            <tr>
-                                <td>до 50 000 000 </td>
-                                <td>0,8 %</td>
-                            </tr>
-                            <tr>
-                                <td>от 50 000 000 </td>
-                                <td><a class="btn btn-primary btn-mdd" href="#">Индивидуальный тариф</a></td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <div class="col-lg-6 plr-20 mb-40">
-                    <div class="box-shadow h-100">
-                        <div class="m-title mb-5">Финансовые организации и госплатежи</div>
-                        <p>Принимая во внимание особенности различных сфер бизнеса,
-                            мы всегда готовы предложить индивидуальное решение. </p>
-                            <a class="btn btn-primary btn-mdd" href="#">Индивидуальный тариф</a>
+                <div class="col-lg-6 div_img ">
+                    <div class="app1">
+                        <img src="img/portfolio/pulpul.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-    <section class="section">
+    </section>
+    <section class="portfolio_section2">
         <div class="container">
-            <div class="section-header">
-                <div class="h2">Оставьте заявку</div>
-                <p>Наши менеджеры помогут вам с подбором тарифа и подключением</p>
+            <div class="row">
+                <div class="col-lg-6 div_img ">
+                    <div class="app2">
+                        <img src="img/portfolio/screen_rusfin.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 div_text">
+                    <div class="l-title mb-40">Приложение для Русфинанс Банка</div>
+                    <p class="mb-40">Русфинанс Банк является дочерней компанией ПАО РОСБАНК и специализируется на выдаче потребительских кредитов по всей России.</p>
+                    <p><strong>Нами разработано мобильное приложение для всех основных услуг банк</strong></p>
+                    <ul>
+                        <li>Погашение кредитов в мобильном приложении </li>
+                        <li>Уведомление о предстоящих платежах </li>
+                        <li>График платежей по каждому кредиту </li>
+                        <li>Услуга частичного и полного досрочного погашения </li>
+                        <li>Получение информации о зачислении платежа на счет </li>
+                        <li>Все последние новости и акции банка в удобном формате </li>
+                        <li>Оформление запросов и справок онлайн </li>
+                        <li>Поиск наиболее удобного отделения или терминала</li>
+                    </ul>
+                    <div class="btns mt-50">
+                        <a class="mr-25" href="#"><img src="img/portfolio/apple-pay.svg" alt=""></a>
+                        <a href="#"><img src="img/portfolio/google-play.svg" alt=""></a>
+                    </div>
+                </div>
             </div>
-            <div class="contact-form">
-                <div class="text-right mb-20">
-                    <span class="small">* Обязательные поля</span>
+        </div>
+    </section>
+    <section class="portfolio_section3">
+        <div class="container">
+            <div class="div_text">
+                <div class="l-title mb-40">Приложение для планшетов Delta Touch&Pay</div>
+                <p class="mb-40">С помощью приложения клиенту предоставляется возможность оплатить с карты любого банка:<br>
+                    Все расходы по ипотечной сделке (оплата всех комиссий в один клик),
+                    cтраховую премию, <br>
+                    отправку квитанции об оплате на e-mail..</p>
+            </div>
+            <div class="div_img">
+                <div class="app3">
+                    <img src="img/portfolio/touchpay.png" alt="">
                 </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="input1">
-                    <label for="input1">Ваше имя*</label>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio_section4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 div_text">
+                    <div class="l-title mb-40">Приложение для Банка ДельтаКредит</div>
+                    <p class="mb-40">Банк ДельтаКредит – первый коммерческий банк в России, специализировавшийся
+                        на ипотечном кредитовании. Нами было разработано мобильное приложение
+                        для погашения ипотечных кредитов Банка ДельтаКредит.</p>
+                    <p><strong>В мобильном приложении были реализованы сервисы:</strong></p>
+                    <ul>
+                        <li>Подачи заявки на ипотечный кредит онлайн</li>
+                        <li>Досрочного (частичное и полное) погашения кредита</li>
+                        <li>Оформление необходимых запросов и справок.</li>
+                        <li>Информация по расположению и времени работы отделений банка</li>
+                        <li>Другая справочная информация по услугам банка</li>
+                    </ul>
+                    <div class="btns mt-50">
+                        <a class="mr-25" href="#"><img src="img/portfolio/apple-pay.svg" alt=""></a>
+                        <a href="#"><img src="img/portfolio/google-play.svg" alt=""></a>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="input1">
-                    <label for="input1">ИНН/название компании*</label>
+                <div class="col-lg-6 div_img ">
+                    <div class="app1">
+                        <img src="img/portfolio/screen_rusfin1.png" alt="">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="input1">
-                    <label for="input1">Номер телефона*</label>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="input1">
-                    <label for="input1">Сайт компании</label>
-                </div>
-                <a href="#" class="btn btn-primary btn-lg btn-block disabled">Оставить заявку</a>
-                <p>Нажимая кнопку «Оставить заявку», я подтверждаю свое ознакомление
-                    и согласие с <a href="#">условиями обработки и использования</a> персональных данных</p>
             </div>
         </div>
     </section>
     <footer class="footer">
         <div class="container">
             <div class="f-logo">
-                <a href="#"><img src="img/logo.svg" alt=""></a>
+                <a href="#"><img src="img/logo-w.svg" alt=""></a>
             </div>
             <div id="collapsedmenu" role="tablist" aria-multiselectable="false" class="row mb-40 ">
                 <div class="col">
@@ -289,9 +298,9 @@
                 <div class="col-2">
                     <h6 class="label-heading">Наши социальные сети</h6>
                     <div class="social">
-                        <a href="#"><img src="img/VK.svg" alt=""></a>
-                        <a href="#"><img src="img/facebook.svg" alt=""></a>
-                        <a href="#"><img src="img/instagram.svg" alt=""></a>
+                        <a href="#"><img src="img/VK-w.svg" alt=""></a>
+                        <a href="#"><img src="img/facebook-w.svg" alt=""></a>
+                        <a href="#"><img src="img/instagram-w.svg" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -300,6 +309,10 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/flexmenu.min.js"></script>
+    <script src='js/ion.rangeSlider.min.js'></script>
+    <script src='js/swiper.min.js'></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

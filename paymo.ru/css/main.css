@@ -3131,7 +3131,8 @@ h6 {
     background: url(../img/portfolio/illustration_1.svg) -241px 73px no-repeat, url(../img/portfolio/illustration_2.svg) 100% -97px no-repeat;
     padding: 140px 0 273px; }
   .portfolio section p {
-    color: #fff; }
+    color: #fff;
+    line-height: 33px; }
   .portfolio section ul {
     padding: 0;
     list-style: none; }

@@ -99,7 +99,7 @@
                     мобильные, десктопные и веб-приложения, занимаемся их поддержкой<br>
                     и доработками: обновление новых версий, внедрение дополнительных<br>
                     сервисов и доработка существующей функциональности.</p>
-                <a class="btn btn-primary btn-lg" href="#">Оставить заявку</a>
+                <a href="#send-modal" data-toggle="modal" class="btn btn-primary btn-lg" href="#">Оставить заявку</a>
             </div>
         </div>
     </section>
@@ -306,6 +306,66 @@
             </div>
         </div>
     </footer>
+    <div id="send-modal" class="modal form-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="img/close.svg" alt="">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="section-header">
+                        <div class="h2">Оставьте заявку</div>
+                        <p>Оставьте заявку на разработку, и наши сотрудники <br>
+                            свяжутся с вами в ближайшее время.</p>
+                    </div>
+                    <div class="contact-form mb-75">
+                        <div class="text-right mb-20">
+                            <span class="small">* Обязательные поля</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="input1">
+                            <label for="input1">Ваше имя*</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="input3">
+                            <label for="input3">Номер телефона*</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="input4">
+                            <label for="input4">Название компании*</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="input5">
+                            <label for="input5">Сайт компании*</label>
+                        </div>
+                        <a href="#success-modal" data-toggle="modal" class="btn btn-primary btn-lg btn-block close-modal-form">Оставить заявку</a>
+                        <p class="mt-30">Нажимая кнопку «Оставить заявку», я подтверждаю свое ознакомление
+                            и согласие с <a href="#">условиями обработки и использования</a> персональных данных</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="success-modal" class="modal form-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="img/close.svg" alt="">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="send_illustration" src="img/illustration_sent1.svg" alt="">
+                    <div class="section-header mb-66">
+                        <div class="l-title mb-50">Заявка на разработку<br> отправлена!</div>
+                        <a href="#" class="btn btn-primary btn-lg">Вернуться на сайт</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -313,6 +373,11 @@
     <script src='js/ion.rangeSlider.min.js'></script>
     <script src='js/swiper.min.js'></script>
     <script src="js/main.js"></script>
+    <script>
+        $( ".close-modal-form" ).on( "click", function() {
+          $('#send-modal').modal('hide')
+        });
+    </script>
 </body>
 
 </html>

@@ -1360,6 +1360,44 @@ img {
   max-width: 100%;
   height: auto; }
 
+.modal .section-header {
+  margin-bottom: 42px; }
+  .modal .section-header .h2 {
+    color: #000;
+    font-size: 56px;
+    margin-bottom: 43px; }
+  .modal .section-header .l-title {
+    color: #000; }
+
+.modal p {
+  color: #47546a;
+  text-align: center; }
+
+.modal .contact-form {
+  max-width: 560px; }
+
+.modal-dialog {
+  left: auto;
+  margin-right: auto;
+  margin-left: auto; }
+
+.mb-66 {
+  margin-bottom: 66px !important; }
+
+.form-modal .send_illustration {
+  margin: -83px 0 25px -35px; }
+
+.form-modal .modal-dialog {
+  max-width: 722px; }
+
+.form-modal .modal-content {
+  -webkit-border-radius: 16px;
+  border-radius: 16px; }
+
+.form-modal .modal-header {
+  padding: 22px 25px 34px;
+  border: none; }
+
 .banks .item a {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 7px 17px rgba(71, 84, 106, 0.08);
@@ -1779,7 +1817,7 @@ select.form-control:not([size]):not([multiple]) {
   width: 102%;
   height: 100%;
   cursor: default;
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   z-index: 2; }
 
 .lt-ie9 .irs-disable-mask {

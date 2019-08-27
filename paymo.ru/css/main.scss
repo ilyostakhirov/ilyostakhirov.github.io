@@ -43,6 +43,7 @@ $uigreen: #000C38;
         margin-top: calc(-#{$dynamic-bottom-crop}em + #{$bottom-adjustment});
     }
 }
+
 @font-face {
     font-family: 'Lato';
     src: url("../fonts/lato-bold.eot");
@@ -96,12 +97,15 @@ a {
 .p-10 {
     padding: 10px;
 }
-.mb-110{
-    margin-bottom: 110px!important;
+
+.mb-110 {
+    margin-bottom: 110px !important;
 }
-.ptb-120{
-    padding:120px 0!important;
+
+.ptb-120 {
+    padding: 120px 0 !important;
 }
+
 $color-red-error: rgb(185, 74, 72) !default;
 $color-green-success: #28a745;
 $color-grey-arrow: rgba(204, 204, 204, 0.2) !default;
@@ -746,7 +750,7 @@ ul.checked_ul {
         padding-left: 41px;
         margin-bottom: 26px;
         background: url(../img/check_blue.svg) no-repeat 0 0;
-            padding-top: 3px;
+        padding-top: 3px;
         @include text-crop;
     }
 }
@@ -1159,7 +1163,7 @@ h1 {
     margin-bottom: 70px;
 
     .h2 {
-        margin-bottom: 35px;        
+        margin-bottom: 35px;
     }
 
     p {
@@ -1286,6 +1290,69 @@ img {
     height: auto;
 }
 
+
+
+.modal {
+
+    .section-header {
+        margin-bottom: 42px;
+
+        .h2 {
+            color: #000;
+            font-size: 56px;
+            margin-bottom: 43px;
+        }
+
+        .l-title {
+            color: #000;
+        }
+
+
+    }
+
+    p {
+        color: $secondary;
+        text-align: center;
+    }
+
+    .contact-form {
+        max-width: 560px;
+    }
+}
+
+.modal-dialog {
+    left: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.mb-66 {
+    margin-bottom: 66px !important;
+}
+
+.form-modal {
+    .send_illustration {
+        margin: -83px 0 25px -35px;
+    }
+
+    .modal-dialog {
+        max-width: 722px;
+
+    }
+
+    .modal-content {
+        border-radius: 16px;
+    }
+
+    .modal-header {
+        padding: 22px 25px 34px;
+        border: none;
+    }
+
+    .modal-body {}
+}
+
 .banks {
     .item {
 
@@ -1298,8 +1365,8 @@ img {
             height: 95px;
             justify-content: center;
             transition: box-shadow .3s ease-out, transform .3s ease-out, opacity .2s ease-out;
-        transition-delay: .1s;
-        transform: translateZ(0);
+            transition-delay: .1s;
+            transform: translateZ(0);
 
             &:hover {
                 transform: translateY(-10px);
@@ -2142,33 +2209,42 @@ ul.checked_ul.horizontal_checked {
 .f-18 {
     font-size: 18px;
 }
+
 .mt--20 {
-    margin-top: -20px!important;
+    margin-top: -20px !important;
 }
+
 .mb--60 {
-    margin-bottom: -60px!important;
+    margin-bottom: -60px !important;
 }
+
 .mb--80 {
-    margin-bottom: -80px!important;
+    margin-bottom: -80px !important;
 }
+
 .mb--70 {
-    margin-bottom: -70px!important;
+    margin-bottom: -70px !important;
 }
+
 .mb--90 {
-    margin-bottom: -90px!important;
+    margin-bottom: -90px !important;
 }
+
 .mb--94 {
-    margin-bottom: -94px!important;
+    margin-bottom: -94px !important;
 }
-.mb-48{
-    margin-bottom: 48px!important;
+
+.mb-48 {
+    margin-bottom: 48px !important;
 }
+
 .swiper-container {
     margin-bottom: -20px;
 }
+
 .frame {
     position: relative;
-        margin-bottom: -60px;
+    margin-bottom: -60px;
 
     img {
         width: 346px;
@@ -2317,9 +2393,11 @@ ul.checked_ul.horizontal_checked {
 .mt-115 {
     margin-top: 115px !important;
 }
+
 .mt-46 {
     margin-top: 46px !important;
 }
+
 .mt-120 {
     margin-top: 120px;
 }
@@ -2375,12 +2453,15 @@ ul.checked_ul.horizontal_checked {
     color: #000000;
     @include text-crop;
 }
-a.s-title{
-    display:block;
-    &:hover{
-        cursor:pointer;
+
+a.s-title {
+    display: block;
+
+    &:hover {
+        cursor: pointer;
     }
 }
+
 .rounded-items {
     display: flex;
     justify-content: center;
@@ -2503,9 +2584,11 @@ a.s-title{
 .p-5155 {
     padding: 51px 55px;
 }
+
 .p-56 {
     padding: 56px;
 }
+
 .mb-33 {
     margin-bottom: 33px !important;
 }
@@ -3271,7 +3354,8 @@ h6 {
     .div_text {
         margin-bottom: 50px;
     }
-    .mb-s-30{
+
+    .mb-s-30 {
         margin-bottom: 30px;
     }
 }
@@ -3555,9 +3639,10 @@ h6 {
 }
 
 @media (max-width: 1100px) {
-.banks .item {
-    margin-bottom: 30px;
-}
+    .banks .item {
+        margin-bottom: 30px;
+    }
+
     .promo p br,
     .l-title br,
     .h2 br,

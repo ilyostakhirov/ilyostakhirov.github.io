@@ -1530,6 +1530,11 @@ img {
   width: 100%;
   margin-bottom: 25px; }
 
+.invalid-feedback {
+  color: #DA5126;
+  font-size: 16px;
+  margin-top: 10px; }
+
 .form-control {
   border: 0;
   -webkit-border-radius: 0;
@@ -1543,13 +1548,19 @@ img {
   color: #000000;
   -webkit-border-radius: 3px;
   border-radius: 3px; }
+  .form-control.is-invalid {
+    background: #ffffff;
+    border-color: #DA5126; }
+    .form-control.is-invalid:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
   .form-control:hover {
     border: 1px solid #47546A; }
   .form-control:not(textarea) {
     height: 64px; }
   .form-control + label {
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     top: 20px;
     margin: 0;
     -webkit-transition: all 0.2s ease-in-out;

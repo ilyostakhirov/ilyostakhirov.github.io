@@ -1476,7 +1476,11 @@ img {
     width: 100%;
     margin-bottom: 25px;
 }
-
+.invalid-feedback{
+color: #DA5126;
+font-size: 16px;
+margin-top: 10px;
+}
 .form-control {
     border: 0;
     border-radius: 0;
@@ -1488,7 +1492,13 @@ img {
     border: 1px solid #C4CBDB;
     color: #000000;
     border-radius: 3px;
-
+    &.is-invalid{
+        background:#ffffff;
+        border-color:#DA5126;
+        &:focus{
+            box-shadow:none;
+        }
+    }
     &:hover {
         border: 1px solid #47546A;
     }
@@ -1499,7 +1509,7 @@ img {
 
     +label {
         position: absolute;
-        z-index: 1;
+        z-index: 3;
         top: 20px;
         margin: 0;
         transition: all 0.2s ease-in-out;

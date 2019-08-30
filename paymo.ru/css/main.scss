@@ -3000,10 +3000,9 @@ h6 {
 
 
     ul {
-        padding-left:0;
         list-style: none;
         padding: 0;
-            margin-bottom: 30px;
+        margin-bottom: 30px;
 
         li {
             margin-bottom: 20px;
@@ -3027,6 +3026,15 @@ h6 {
                 background:url(../img/stop.svg) no-repeat;
                     top: 8px;
             }
+            }
+        }
+
+        &.num-ul{
+            li{
+                    padding-left: 60px;
+                &:before {
+                    display:none;
+                }
             }
         }
         

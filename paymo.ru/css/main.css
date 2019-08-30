@@ -2960,7 +2960,6 @@ h6 {
       margin-top: -webkit-calc(-0.27222em + 0px);
       margin-top: calc(-0.27222em + 0px); }
   .page ul {
-    padding-left: 0;
     list-style: none;
     padding: 0;
     margin-bottom: 30px; }
@@ -2980,6 +2979,10 @@ h6 {
       height: 16px;
       background: url(../img/stop.svg) no-repeat;
       top: 8px; }
+    .page ul.num-ul li {
+      padding-left: 60px; }
+      .page ul.num-ul li:before {
+        display: none; }
 
 .p-r {
   position: relative; }

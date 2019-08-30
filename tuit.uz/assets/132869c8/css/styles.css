@@ -1,0 +1,1454 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&subset=cyrillic';
+
+html, body {
+    color: #747373;
+    font-family: 'Roboto', sans-serif, Arial;
+}
+
+.tt_navlist > li:hover > a,
+.tt_navlist > li.current > a,
+.tt_navlist > li.open > a {
+    background: #2c93d6 !important;
+    color: #fff !important;
+}
+
+.tt_navlist > li > a {
+    color: #fff !important;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.tt_menucol h4 a {
+    font-weight: 600;
+}
+
+.iconic-en {
+    background: rgba(0, 0, 0, 0) url("../img/bg/icons.png") no-repeat scroll -56px -46px;
+    height: 16px;
+    width: 17px;
+}
+
+.tt_breadcrumbs {
+    padding: 0;
+}
+
+.tt_sidelist {
+    padding-left: 0;
+}
+
+.tt_sidelist li a {
+    text-transform: none;
+}
+
+aside .tt_linehead h4:before {
+    background: none;
+}
+
+.tt_submenulist li a {
+    padding: 10px 10px 10px 25px;
+}
+
+.tt_fcadm .tt_imgs {
+    width: 170px;
+}
+
+.tt_imgs > img {
+    width: 100%;
+}
+
+.tt_navlist > li > .tt_simplemenu {
+    min-width: 200px;
+}
+
+.tt_navlist > li:nth-last-child(1) .tt_simplemenu, .tt_navlist > li:nth-last-child(2) .tt_simplemenu, .tt_navlist > li:nth-last-child(3) .tt_simplemenu {
+    box-shadow: 1px 2px 2px rgba(93, 93, 93, 0.45);
+    right: auto;
+    text-align: right;
+}
+
+.tt_navlist > li:nth-last-child(1) .tt_simplemenu, .tt_navlist > li:nth-last-child(2) .tt_simplemenu, .tt_navlist > li:nth-last-child(3) .tt_simplemenu {
+    text-align: left;
+}
+
+.tt_navlist > li:nth-last-child(1) > .tt_simplemenu > li.drop > a::after, .tt_navlist > li:nth-last-child(2) > .tt_simplemenu > li.drop > a::after, .tt_navlist > li:nth-last-child(3) > .tt_simplemenu > li.drop > a::after {
+    left: 8px;
+}
+
+.tt_navlist > li > a > span::after {
+    content: "";
+}
+
+.btn_bord:hover {
+    background-color: #2C93D6;
+    color: white;
+}
+
+.tt_navlist > li.has_child > a > span::after {
+    bottom: 0;
+    content: "\f0d8";
+    font-family: "icomoon" !important;
+    height: 20px;
+    left: auto;
+    margin: auto;
+    position: absolute;
+    right: -5px;
+    text-align: center;
+    top: 0;
+    transition: transform 0.25s linear 0s;
+    width: 10px;
+}
+
+@media (min-width: 992px) {
+    .menu-item-xalqaro-faoliyat,
+    .menu-item-qabul-natijalari,
+    .menu-item-on-line-resurslar,
+    .menu-item-ishlab-chiqarish-va-innovatsiya {
+        background-color: #2c93d6;
+        color: #fff;
+    }
+
+    .tt_submenu .menu-item-qabul-natijalari a,
+    .tt_submenu .menu-item-xalqaro-faoliyat a,
+    .tt_submenu .menu-item-on-line-resurslar a,
+    .tt_submenu .menu-item-ishlab-chiqarish-va-innovatsiya a {
+        color: #fff;
+    }
+
+    .tt_submenu .menu-item-qabul-natijalari h4 a,
+    .tt_submenu .menu-item-xalqaro-faoliyat h4 a,
+    .tt_submenu .menu-item-on-line-resurslar h4 a,
+    .tt_submenu .menu-item-ishlab-chiqarish-va-innovatsiya h4 a {
+        color: #fff !important;
+    }
+
+    .tt_submenu .menu-item-qabul-natijalari li a:hover,
+    .tt_submenu .menu-item-xalqaro-faoliyat li a:hover,
+    .tt_submenu .menu-item-on-line-resurslar li a:hover,
+    .tt_submenu .menu-item-ishlab-chiqarish-va-innovatsiya li a:hover {
+        background: #fff;
+        color: #2c93d6;
+    }
+}
+
+@media (min-width: 768px) {
+    .tt_navlist > li:nth-last-child(1),
+    .tt_navlist > li:nth-last-child(2),
+    .tt_navlist > li:nth-last-child(3) {
+        position: static;
+    }
+}
+
+.jq-selectbox.jqselect, #appeal-type-styler {
+    padding: 0;
+    border-color: transparent;
+}
+
+.tt_paglist li a, .tt_paglist li span {
+    display: block;
+    color: #9d9c9c;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 8px 11px;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #9d9c9c;
+    transition: color 0.25s linear, border-color 0.25s linear, background 0.25s linear;
+}
+
+.tt_paglist li.active a, .tt_paglist li.disabled {
+    cursor: not-allowed;
+}
+
+.tt_paglist li:hover a,
+.tt_paglist li.active a {
+    color: #fff;
+    border-color: #2c93d6;
+    background: #2c93d6;
+}
+
+input#contactform-verifycode {
+    margin-top: 7px;
+}
+
+.help-block {
+    position: absolute;
+    right: 0px;
+    top: 63px;
+    font-size: 13px;
+}
+
+textarea + .help-block {
+    top: 3px;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+    font-size: 18px;
+    line-height: 1.33333;
+    padding: 10px 26px;
+    border: 1px solid;
+}
+
+.input-lg {
+    border-radius: 1px;
+    height: 47px;
+}
+
+.tt_fcadm {
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.tt_gallerylnk img.img-responsive, .tt_glv img.img-responsive {
+    min-width: 100%;
+    max-width: 0;
+}
+
+/* video gallery */
+
+.tt_glv {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    display: block;
+    margin-bottom: 35px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 2px 0px #5d5d5d;
+}
+
+.tt_glv:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: #2c93d6;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #fff;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.tt_glv:after {
+    content: "";
+    width: 35px;
+    height: 35px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    color: #fff;
+    z-index: 6;
+    font-size: 35px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.25s linear;
+}
+
+.tt_glv:hover:before {
+    opacity: 0.85;
+}
+
+.tt_glv:hover:after {
+    opacity: 1;
+}
+
+.video-player {
+    padding-bottom: 25px;
+}
+
+.video-player video {
+    width: 100%;
+    height: auto;
+}
+
+.field-appeal-upload .help-block {
+    position: static;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.tt_facultitem:hover h4 {
+    /* color: #fff; */
+}
+
+.tt_facultitem h4 {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.tt_newsblock .tt_newsitem .tt_newstxt h3,
+.tt_newsblock .tt_newsitem .tt_newstxt .dates,
+.tt_fcadm .tt_txts h4,
+.tt_fclines b,
+.tt_fcadm .tt_txts h3,
+.tt_linehead h1, .tt_linehead h2, .tt_linehead h3, .tt_linehead h4, .tt_linehead h5, .tt_linehead h6 {
+    font-family: 'Open Sans', sans-serif, Arial;
+}
+
+.tt_newsitem.sm .tt_newstxt h3 {
+    font-size: 14px;
+    height: 34px;
+}
+
+.tt_newstxt p {
+    line-height: 20px;
+}
+
+.tt_slidetxt {
+    font-family: 'Open Sans', sans-serif, Arial;
+}
+
+.tt_servdescr {
+    font-size: 14px;
+    color: #7f7f7f;
+}
+
+.tt_logotype span {
+    font-family: 'Roboto', sans-serif, Arial;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: normal;
+}
+
+.tt_logotype {
+    margin-top: 10px;
+}
+
+.tt_logotype img {
+    margin-right: 10px;
+}
+
+.tp-dottedoverlay {
+    opacity: 0.1;
+}
+
+.tt_fclines span.dblock{
+    padding-left: 21px;
+}
+
+textarea.form-control {
+    border-radius: 2px;
+}
+
+.tt_mediatxt p {
+    line-height: 20px;
+}
+
+.medium-insert-images figure img, .mediumInsert figure img {
+    width: 100%;
+}
+
+.tt_sidelist li a {
+    line-height: 20px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.tt_sidelist a:last-child {
+    border-bottom: none;
+}
+
+.form-group {
+    position: relative;
+}
+
+.cf .help-block {
+    font-size: 12px;
+    right: 0px;
+    top: 32px;
+}
+
+.cf textarea + .help-block {
+    top: -22px;
+}
+
+.tt_map_bot ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+input#contactform-verifycode {
+    margin-top: 0px;
+}
+
+.tt_map_bot ul li img {
+    border: medium none;
+    float: right;
+    height: 50px;
+    margin-top: -2px;
+}
+
+.tt_map_bot ul li {
+    text-transform: none;
+}
+
+.field-contactform-verifycode .help-block {
+    visibility: hidden;
+}
+
+.field-contactform-verifycode li .help-block {
+    visibility: visible;
+    padding-right: 15px;
+}
+
+.tt_map {
+    margin-top: 30px;
+}
+
+.tt_content {
+    margin-bottom: 10px;
+}
+
+.tt_map_cont {
+    border-left: 1px solid #e3e3e3;
+    margin-left: 5px;
+    padding-left: 30px;
+}
+
+form .btn {
+    height: 40px;
+}
+
+#contactform-content {
+    height: 156px !important;
+    max-height: none !important;
+}
+
+.tt_fcimg img {
+    width: 100% !important;
+}
+
+.tt_paglist li {
+    display: inline-block;
+}
+
+.tt_newsdet a.btn {
+    text-align: right;
+    float: right;
+}
+
+.tt_newsblock .tt_newstxt h3 {
+    font-size: 20px;
+    height: auto;
+}
+
+.tt_newsblock .tt_newstxt .dates {
+    display: block;
+    color: #bebebe;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+ul.appeal-captcha li:nth-child(2) input {
+    width: 100%;
+}
+
+#appeal-form #appeal-upload {
+    padding: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.form-control, .inp, input[type="text"], input[type="password"], input[type="file"] {
+    height: 40px;
+}
+
+input[type="file"], select {
+    padding: 5px 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dbdbdb;
+    border-radius: 0;
+    font-size: 15px;
+    color: #807f7f;
+    border-radius: 2px;
+    box-shadow: none;
+    transition: 0.25s linear;
+}
+
+label {
+    font-weight: normal;
+}
+
+.panel-heading, .panel {
+    border-radius: 0;
+}
+
+.field-appeal-verifycode img {
+    margin-top: -6px;
+}
+
+.field-appeal-verifycode .btn {
+    width: 100%;
+}
+
+.field-appeal-verifycode input + .help-block {
+    white-space: nowrap;
+    top: 35px;;
+}
+
+.stat li span {
+    margin-top: 5px;
+}
+
+.stat li {
+    border-bottom: 1px dashed #e3e3e3;
+    padding: 8px 4px;
+}
+
+.page-content p {
+    text-align: justify;
+}
+
+.page-content center p {
+    text-align: center;
+}
+
+.page-content table tr:hover td {
+    background-color: #ddd;
+}
+
+.page-content table tr {
+    height: auto !important;
+    width: auto !important;
+}
+
+.page-content table td {
+    height: auto !important;
+    width: auto !important;
+    padding: 8px 8px;
+    border: 1px solid #ddd;
+}
+
+.page-content table {
+    width: 100% !important;
+    border: none;
+}
+
+.page-content a {
+    cursor: pointer;
+}
+
+.tt_copyright small {
+    text-transform: none;
+}
+
+.tt_copyright p {
+    line-height: 30px;
+}
+
+.tt_copyright {
+    padding: 6px 0;
+}
+
+.tt_symbolist a span {
+    line-height: 23px;
+    font-size: 12px;
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+.contrast img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.contrast .tt_newsitem:hover a,
+.contrast .tt_mediaicon:hover .tt_mediatxt h3 a,
+.contrast .tt_fclines a,
+.contrast .tt_breadcrumbs li a {
+    color: #0f0f0f !important;
+    border-bottom-color: #0f0f0f !important;
+}
+
+.contrast .tt_servcol .tt_servicon.bottom .tt_servlnk:hover:before {
+    border-top-color: #0f0f0f !important;
+    border-right-color: #0f0f0f !important;
+
+}
+
+.contrast .icon-arrow-up, .contrast .toTop {
+    background-color: #0f0f0f !important;
+    border-color: #0f0f0f !important;
+}
+
+.contrast .tt_sidelist li.current a,
+.contrast .tt_sidelist li:hover a,
+.contrast .tt_owl_bnr:hover .owl-item .item .btn.gray,
+.contrast .tt_mediaicon:hover a.lnks,
+.contrast .tt_servicon:hover a.tt_servlnk,
+.contrast .btn:hover,
+.contrast .dropdown:hover a,
+.contrast .dropdown:hover .tt_simplemenu,
+.contrast .dropdown:hover .tt_subody,
+.contrast .dropdown:hover .tt_menucol,
+.contrast .dropdown:hover h4,
+.contrast .tt_newsitem:hover .btn,
+.contrast .tt_facultitem:hover,
+.contrast .btn.blue {
+    background-color: #3c3c3c !important;
+    color: white !important;
+    border-color: #3c3c3c !important;
+}
+
+.contrast .tp-bgimg, .contrast .slotslide,
+.contrast .iconic,
+.contrast .icon,
+.contrast .tt_owlpartn .owl-item .item:hover img {
+    -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -o-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(100%);
+    filter: gray;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+
+}
+
+.tt_navlist > li > a{
+    padding-bottom: 22px;
+}
+
+.tt_submenulist li a{
+    white-space: nowrap;
+}
+
+.tt_submenulist{
+    overflow: hidden;
+}
+
+.level_0 li{
+    padding: 5px;
+}
+
+.level_0>li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.level_0 >li>a{
+    text-transform: uppercase;
+    border-bottom: 1px solid #DBDBDB;
+    width: 100%;
+    display: block;
+    padding: 5px 0;
+}
+
+/* ================================== Black yellow start ==================================*/
+/* bckgrnd black*/
+html.yellow,
+html.yellow body,
+html.yellow .tt_header,
+html.yellow .btn.blue,
+html.yellow .tt_navlist > li > .tt_simplemenu > li:hover > a,
+html.yellow .tt_navlist > li > .tt_simplemenu > li.drop > ul > li > a,
+html.yellow .tt_subody,
+html.yellow .tt_sublang > li > a:hover,
+html.yellow .tt_menucol.blue .tt_submenulist li a:hover,
+html.yellow .tt_slidetxt,
+html.yellow .tp-bullets.simplebullets.round .bullet,
+html.yellow .toTop:hover,
+html.yellow .tt_newsitem,
+html.yellow .tt_linehead span,
+html.yellow .tt_servicon .tt_servlnk:hover,
+html.yellow .tt_footer,
+html.yellow .tt_soclist li a:before {
+    background: #000;
+    filter: grayscale(50%) sepia(-110%);
+}
+
+/* bckgrnd yellow*/
+html.yellow .tt_navlist > li:hover > a,
+html.yellow .tt_navlist > li.current > a,
+html.yellow .tt_navlist > li.open > a,
+html.yellow .tt_navlist > li > .tt_simplemenu,
+html.yellow .tt_navlist > li > .tt_simplemenu > li.drop > ul,
+html.yellow .tt_navlist > li > .tt_simplemenu > li.drop > ul > li > a:hover,
+html.yellow .tt_submenulist li a:hover,
+html.yellow .tt_menucol.blue,
+html.yellow .tt_symbolist > li > a:hover,
+html.yellow .tt_symbolist > li:before,
+html.yellow .tt_optionlist > li:hover > a,
+html.yellow .tt_optionlist > li.current > a,
+html.yellow .tt_optionlist > li > a.tt_topsearch.current,
+html.yellow .tt_optionlist > li > a:hover,
+html.yellow .tt_optionlist > li > a.current,
+html.yellow .tt_optionlist > li:before,
+html.yellow .tt_langlist > li:hover > a,
+html.yellow .tt_langlist > li.open > a,
+html.yellow .tt_sublang > li > a,
+html.yellow .form-control,
+html.yellow .dropdown-menu,
+html.yellow .btn.blue:hover,
+html.yellow .tp-leftarrow:hover,
+html.yellow .tp-rightarrow:hover,
+html.yellow .tp-bullets.simplebullets .bullet:hover,
+html.yellow .tp-bullets.simplebullets .bullet.selected,
+html.yellow .tt_facultitem span,
+html.yellow .tt_facultitem:hover,
+html.yellow .toTop,
+html.yellow .tt_linehead h1:before,
+html.yellow .tt_linehead h2:before,
+html.yellow .tt_linehead h3:before,
+html.yellow .tt_linehead h4:before,
+html.yellow .tt_linehead h5:before,
+html.yellow .tt_linehead h6:before,
+html.yellow .tt_newsitem .tt_figure,
+html.yellow .tt_newsitem:hover .btn.gray,
+html.yellow .tt_servdescr:before,
+html.yellow .tt_servcol .tt_servicon:hover .tt_servdescr:before,
+html.yellow .tt_servcol .tt_servicon:hover .tt_servdescr:after,
+html.yellow .tt_servdescr:after,
+html.yellow .tt_servicon .tt_servlnk,
+html.yellow .tt_servcol .tt_servicon:hover .tt_servdescr:before,
+html.yellow .tt_servcol .tt_servicon:hover .tt_servdescr:after,
+html.yellow .tt_mediaicon:hover .lnks,
+html.yellow .tt_owl_bnr:hover .owl-item .item .btn.gray,
+html.yellow .owl-theme .owl-controls .owl-buttons .owl-prev:hover,
+html.yellow .owl-theme .owl-controls .owl-buttons .owl-next:hover,
+html.yellow .tt_copyright,
+html.yellow .tt_sidelist li.current a,
+html.yellow .tt_sidelist li:hover a,
+html.yellow .inp,
+html.yellow input[type="text"],
+html.yellow input[type="password"],
+html.yellow .tt_map_bot textarea,
+html.yellow .tt_countitem:hover .tt_countcircle,
+html.yellow .tt_fcspecrline ul li:before,
+html.yellow .tt_gallerylnk:before,
+html.yellow .tt_fcsproizvline ul li .tt_spanls:before {
+    background: #ff0;
+}
+
+/* color yellow*/
+html.yellow,
+html.yellow body,
+html.yellow .tt_logotype span,
+html.yellow .btn.blue,
+html.yellow .tt_navlist > li > a,
+html.yellow .tt_navlist > li > .tt_simplemenu > li:hover > a,
+html.yellow .tt_navlist > li > .tt_simplemenu > li.drop > ul > li > a,
+html.yellow .tt_submenulist li a,
+html.yellow .tt_optionlist > li > a,
+html.yellow .tt_sublang > li > a:hover,
+html.yellow .tt_menucol.blue .tt_submenulist li a:hover,
+html.yellow .tt_slidetxt,
+html.yellow .tp-leftarrow,
+html.yellow .tp-rightarrow,
+html.yellow .tt_facultitem,
+html.yellow .toTop:hover,
+html.yellow .tt_newstxt h3 a,
+html.yellow .tt_newsdet .dates,
+html.yellow .tt_newsitem:hover .tt_newstxt h3 a,
+html.yellow .btn.gray,
+html.yellow .tt_linehead h1,
+html.yellow .tt_linehead h2,
+html.yellow .tt_linehead h3,
+html.yellow .tt_linehead h4,
+html.yellow .tt_linehead h5,
+html.yellow .tt_linehead h6,
+html.yellow .tt_newsitem:hover .alnks,
+html.yellow .alnks,
+html.yellow .tt_servdescr,
+html.yellow .tt_servicon .tt_servlnk:hover,
+html.yellow .tt_servcol .tt_servicon:hover .tt_servdescr,
+html.yellow .tt_mediaicon:hover .tt_mediatxt h3 a,
+html.yellow .tt_mediatxt h3 a,
+html.yellow .tt_mediaicon .lnks,
+html.yellow .tt_studlist li a,
+html.yellow .tt_footbl h4 a:hover,
+html.yellow .tt_footbl h4 a,
+html.yellow .tt_footer,
+html.yellow .tt_footul li a,
+html.yellow .tt_soclist li a,
+html.yellow .tt_sidelist li a,
+html.yellow .tt_breadcrumbs li a,
+html.yellow .tt_breadcrumbs li:before,
+html.yellow .tt_breadcrumbs li,
+html.yellow p,
+html.yellow .tt_map_cont,
+html.yellow .tt_map_cont a,
+html.yellow .tt_txts,
+html.yellow .tt_fcadm .tt_txts h3,
+html.yellow .tt_fclines a,
+html.yellow .tt_spcnum,
+html.yellow .tt_spcnum a,
+html.yellow .tt_spctxt,
+html.yellow .tt_spctxt h4 a,
+html.yellow .tt_countcircle,
+html.yellow .tt_countitem span,
+html.yellow .tt_fcspecrline h4,
+html.yellow .tt_fcspecrline ul li,
+html.yellow .tt_fscprepline ul li span,
+html.yellow .tt_fscprepline ul li,
+html.yellow .tt_fcsproizvline ul li,
+html.yellow .tt_fcsproizvline ul li .tt_blls span,
+html.yellow .tt_ph_gal_info h3,
+html.yellow .tt_ph_gal_info_dates {
+    color: #ff0;
+}
+
+/* color black*/
+html.yellow .tt_navlist > li:hover > a,
+html.yellow .tt_navlist > li.current > a,
+html.yellow .tt_navlist > li.open > a,
+html.yellow .tt_navlist > li > .tt_simplemenu,
+html.yellow .tt_navlist > li > .tt_simplemenu > li > a,
+html.yellow .tt_navlist > li > .tt_simplemenu > li.drop > ul > li > a:hover,
+html.yellow .tt_submenulist li a:hover,
+html.yellow .tt_menucol.blue .tt_submenulist li a,
+html.yellow .tt_optionlist > li > a:hover,
+html.yellow .tt_optionlist > li > a.txt_white:hover,
+html.yellow .tt_sublang > li > a,
+html.yellow .form-control,
+html.yellow .btn.blue:hover,
+html.yellow .tp-leftarrow:hover,
+html.yellow .tp-rightarrow:hover,
+html.yellow .tt_facultitem:hover,
+html.yellow .toTop,
+html.yellow .tt_newsitem:hover .btn.gray,
+html.yellow .tt_servicon .tt_servlnk,
+html.yellow .tt_mediaicon:hover .lnks,
+html.yellow .tt_owl_bnr:hover .owl-item .item .btn.gray,
+html.yellow .tt_sidelist li.current a,
+html.yellow .tt_sidelist li:hover a,
+html.yellow .inp,
+html.yellow input[type="text"],
+html.yellow input[type="password"],
+html.yellow .tt_map_bot textarea,
+html.yellow .tt_countitem:hover .tt_countcircle {
+    color: #000;
+}
+
+/* border yellow*/
+html.yellow .tt_subody,
+html.yellow .btn.blue,
+html.yellow .toTop,
+html.yellow .tt_newsitem:hover .btn.gray,
+html.yellow .btn.gray,
+html.yellow .tt_newsitem.sm,
+html.yellow .tt_servcol .tt_servicon.bottom .tt_servlnk:hover:before,
+html.yellow .tt_servcol .tt_servicon.top .tt_servlnk:hover:before,
+html.yellow .tt_mediaicon .lnks,
+html.yellow .owl-theme .owl-controls .owl-buttons .owl-prev,
+html.yellow .owl-theme .owl-controls .owl-buttons .owl-next,
+html.yellow .tt_owl_bnr:hover .owl-item .item .btn.gray,
+html.yellow .tt_footbl h4 a,
+html.yellow .tt_breadcrumbs li a,
+html.yellow .tt_countcircle {
+    border-color: #ff0;
+}
+
+/* border blck*/
+html.yellow .tt_sublang > li > a,
+html.yellow .tt_sublang,
+html.yellow .inp,
+html.yellow input[type="text"],
+html.yellow input[type="password"],
+html.yellow .dropdown-menu,
+html.yellow .btn.blue:hover,
+html.yellow .tp-leftarrow,
+html.yellow .tp-rightarrow {
+    border-color: #000;
+}
+
+/*bx shdw yellow*/
+html.yellow .tt_headline,
+html.yellow .tt_topline {
+    box-shadow: 0px 1px #ff0;
+}
+
+html.yellow .tt_facultline {
+    box-shadow: 0px -1px #ff0, 0px 1px #ff0;
+}
+
+html.yellow .tt_facultline .row [class*="col-"] {
+    box-shadow: -1px 0px #ff0;
+}
+
+html.yellow .tt_facultline .row [class*="col-"]:first-child,
+html.yellow .tt_newsitem.sm {
+    box-shadow: none !important;
+}
+
+html.yellow .tt_newsitem,
+html.yellow .tt_newsitem:hover {
+    box-shadow: 0px 0px 2px 1px #ff0;
+}
+
+html.yellow .tt_servicon .tt_servlnk {
+    box-shadow: 0px 0px 10px 1px rgba(255, 224, 0, 0.63);
+}
+
+/* color yellow imp*/
+html.yellow .tt_menucol h4 a,
+html.yellow .tt_owl_bnr .owl-controls .owl-buttons .owl-prev:before,
+html.yellow .tt_owl_bnr .owl-controls .owl-buttons .owl-next:after,
+html.yellow .owl-theme .owl-controls .owl-buttons .owl-prev:before,
+html.yellow .owl-theme .owl-controls .owl-buttons .owl-next:after {
+    color: #ff0 !important;
+}
+
+/* color blck imp*/
+html.yellow .tt_menucol.blue h4 a,
+html.yellow .tt_optionlist > li > a.current,
+html.yellow .owl-controls .owl-buttons .owl-prev:hover:before,
+html.yellow .owl-controls .owl-buttons .owl-next:hover:after {
+    color: #000 !important;
+}
+
+/* bckgrnd blck imp*/
+html.yellow .tt_facultitem:hover span {
+    background: #000 !important;
+}
+
+/*color white*/
+html.yellow .tt_optionlist > li > a.txt_white {
+    color: #fff
+}
+
+/*bckgrnd white*/
+html.yellow .tt_optionlist > li > a.txt_white:hover {
+    background: #fff;
+}
+
+/* ================================== Black yellow end ==================================*/
+
+/* ================================== Black white start ==================================*/
+/* bckgrnd black*/
+html.white,
+html.white body,
+html.white .tt_header,
+html.white .btn.blue,
+html.white .tt_navlist > li > .tt_simplemenu > li:hover > a,
+html.white .tt_navlist > li > .tt_simplemenu > li.drop > ul > li > a,
+html.white .tt_subody,
+html.white .tt_sublang > li > a:hover,
+html.white .tt_menucol.blue .tt_submenulist li a:hover,
+html.white .tt_slidetxt,
+html.white .tp-bullets.simplebullets.round .bullet,
+html.white .toTop:hover,
+html.white .tt_newsitem,
+html.white .tt_linehead span,
+html.white .tt_servicon .tt_servlnk:hover,
+html.white .tt_footer,
+html.white .tt_soclist li a:before {
+    background: #fff;
+    filter: grayscale(100%) invert(100%);
+}
+
+/* bckgrnd white*/
+html.white .tt_navlist > li:hover > a,
+html.white .tt_navlist > li.current > a,
+html.white .tt_navlist > li.open > a,
+html.white .tt_navlist > li > .tt_simplemenu,
+html.white .tt_navlist > li > .tt_simplemenu > li.drop > ul,
+html.white .tt_navlist > li > .tt_simplemenu > li.drop > ul > li > a:hover,
+html.white .tt_submenulist li a:hover,
+html.white .tt_menucol.blue,
+html.white .tt_symbolist > li > a:hover,
+html.white .tt_symbolist > li:before,
+html.white .tt_optionlist > li:hover > a,
+html.white .tt_optionlist > li.current > a,
+html.white .tt_optionlist > li > a.tt_topsearch.current,
+html.white .tt_optionlist > li > a:hover,
+html.white .tt_optionlist > li > a.current,
+html.white .tt_optionlist > li:before,
+html.white .tt_langlist > li:hover > a,
+html.white .tt_langlist > li.open > a,
+html.white .tt_sublang > li > a,
+html.white .form-control,
+html.white .dropdown-menu,
+html.white .btn.blue:hover,
+html.white .tp-leftarrow:hover,
+html.white .tp-rightarrow:hover,
+html.white .tp-bullets.simplebullets .bullet:hover,
+html.white .tp-bullets.simplebullets .bullet.selected,
+html.white .tt_facultitem span,
+html.white .tt_facultitem:hover,
+html.white .toTop,
+html.white .tt_linehead h1:before,
+html.white .tt_linehead h2:before,
+html.white .tt_linehead h3:before,
+html.white .tt_linehead h4:before,
+html.white .tt_linehead h5:before,
+html.white .tt_linehead h6:before,
+html.white .tt_newsitem .tt_figure,
+html.white .tt_newsitem:hover .btn.gray,
+html.white .tt_servdescr:before,
+html.white .tt_servcol .tt_servicon:hover .tt_servdescr:before,
+html.white .tt_servcol .tt_servicon:hover .tt_servdescr:after,
+html.white .tt_servdescr:after,
+html.white .tt_servicon .tt_servlnk,
+html.white .tt_servcol .tt_servicon:hover .tt_servdescr:before,
+html.white .tt_servcol .tt_servicon:hover .tt_servdescr:after,
+html.white .tt_mediaicon:hover .lnks,
+html.white .tt_owl_bnr:hover .owl-item .item .btn.gray,
+html.white .owl-theme .owl-controls .owl-buttons .owl-prev:hover,
+html.white .owl-theme .owl-controls .owl-buttons .owl-next:hover,
+html.white .tt_copyright,
+html.white .tt_sidelist li.current a,
+html.white .tt_sidelist li:hover a,
+html.white .tt_countitem:hover .tt_countcircle,
+html.white .tt_fcspecrline ul li:before,
+html.white .tt_gallerylnk:before,
+html.white .tt_fcsproizvline ul li .tt_spanls:before {
+    background: #000;
+}
+
+/* color white*/
+html.white,
+html.white body,
+html.white .tt_logotype span,
+html.white .btn.blue,
+html.white .tt_navlist > li > a,
+html.white .tt_navlist > li > .tt_simplemenu > li:hover > a,
+html.white .tt_navlist > li > .tt_simplemenu > li.drop > ul > li > a,
+html.white .tt_submenulist li a,
+html.white .tt_optionlist > li > a,
+html.white .tt_sublang > li > a:hover,
+html.white .tt_menucol.blue .tt_submenulist li a:hover,
+html.white .tt_slidetxt,
+html.white .tp-leftarrow,
+html.white .tp-rightarrow,
+html.white .tt_facultitem,
+html.white .toTop:hover,
+html.white .tt_newstxt h3 a,
+html.white .tt_newsdet .dates,
+html.white .tt_newsitem:hover .tt_newstxt h3 a,
+html.white .btn.gray,
+html.white .tt_linehead h1,
+html.white .tt_linehead h2,
+html.white .tt_linehead h3,
+html.white .tt_linehead h4,
+html.white .tt_linehead h5,
+html.white .tt_linehead h6,
+html.white .tt_newsitem:hover .alnks,
+html.white .alnks,
+html.white .tt_servdescr,
+html.white .tt_servicon .tt_servlnk:hover,
+html.white .tt_servcol .tt_servicon:hover .tt_servdescr,
+html.white .tt_mediaicon:hover .tt_mediatxt h3 a,
+html.white .tt_mediatxt h3 a,
+html.white .tt_mediaicon .lnks,
+html.white .tt_studlist li a,
+html.white .tt_footbl h4 a:hover,
+html.white .tt_footbl h4 a,
+html.white .tt_footer,
+html.white .tt_footul li a,
+html.white .tt_soclist li a,
+html.white .tt_sidelist li a,
+html.white .tt_breadcrumbs li a,
+html.white .tt_breadcrumbs li:before,
+html.white .tt_breadcrumbs li,
+html.white p,
+html.white .tt_map_cont,
+html.white .tt_map_cont a,
+html.white .tt_txts,
+html.white .tt_fcadm .tt_txts h3,
+html.white .tt_fclines a,
+html.white .tt_spcnum,
+html.white .tt_spcnum a,
+html.white .tt_spctxt,
+html.white .tt_spctxt h4 a,
+html.white .tt_countcircle,
+html.white .tt_countitem span,
+html.white .tt_fcspecrline h4,
+html.white .tt_fcspecrline ul li,
+html.white .tt_fscprepline ul li span,
+html.white .tt_fscprepline ul li,
+html.white .tt_fcsproizvline ul li,
+html.white .tt_fcsproizvline ul li .tt_blls span,
+html.white .tt_ph_gal_info h3,
+html.white .tt_ph_gal_info_dates {
+    color: #000;
+}
+
+/* color black*/
+html.white .tt_navlist > li:hover > a,
+html.white .tt_navlist > li.current > a,
+html.white .tt_navlist > li.open > a,
+html.white .tt_navlist > li > .tt_simplemenu,
+html.white .tt_navlist > li > .tt_simplemenu > li > a,
+html.white .tt_navlist > li > .tt_simplemenu > li.drop > ul > li > a:hover,
+html.white .tt_submenulist li a:hover,
+html.white .tt_menucol.blue .tt_submenulist li a,
+html.white .tt_optionlist > li > a:hover,
+html.white .tt_optionlist > li > a.txt_white:hover,
+html.white .tt_sublang > li > a,
+html.white .form-control,
+html.white .btn.blue:hover,
+html.white .tp-leftarrow:hover,
+html.white .tp-rightarrow:hover,
+html.white .tt_facultitem:hover,
+html.white .toTop,
+html.white .tt_newsitem:hover .btn.gray,
+html.white .tt_servicon .tt_servlnk,
+html.white .tt_mediaicon:hover .lnks,
+html.white .tt_owl_bnr:hover .owl-item .item .btn.gray,
+html.white .tt_sidelist li.current a,
+html.white .tt_sidelist li:hover a,
+html.white .inp,
+html.white input[type="text"],
+html.white input[type="password"],
+html.white .tt_map_bot textarea,
+html.white .tt_countitem:hover .tt_countcircle,
+html.white .tt_copyright small {
+    color: #fff;
+}
+
+/* border white*/
+html.white .tt_subody,
+html.white .btn.blue,
+html.white .toTop,
+html.white .tt_newsitem:hover .btn.gray,
+html.white .btn.gray,
+html.white .tt_newsitem.sm,
+html.white .tt_servcol .tt_servicon.bottom .tt_servlnk:hover:before,
+html.white .tt_servcol .tt_servicon.top .tt_servlnk:hover:before,
+html.white .tt_mediaicon .lnks,
+html.white .owl-theme .owl-controls .owl-buttons .owl-prev,
+html.white .owl-theme .owl-controls .owl-buttons .owl-next,
+html.white .tt_owl_bnr:hover .owl-item .item .btn.gray,
+html.white .tt_footbl h4 a,
+html.white .tt_breadcrumbs li a,
+html.white .tt_countcircle {
+    border-color: #000;
+}
+
+/* border blck*/
+html.white .tt_sublang > li > a,
+html.white .tt_sublang,
+html.white .inp,
+html.white input[type="text"],
+html.white input[type="password"],
+html.white .dropdown-menu,
+html.white .btn.blue:hover,
+html.white .tp-leftarrow,
+html.white .tp-rightarrow {
+    border-color: #fff;
+}
+
+/*bx shdw white*/
+html.white .tt_headline,
+html.white .tt_topline {
+    box-shadow: 0px 1px #000;
+}
+
+html.white .tt_facultline {
+    box-shadow: 0px -1px #000, 0px 1px #000;
+}
+
+html.white .tt_facultline .row [class*="col-"] {
+    box-shadow: -1px 0px #000;
+}
+
+html.white .tt_facultline .row [class*="col-"]:first-child,
+html.white .tt_newsitem.sm {
+    box-shadow: none !important;
+}
+
+html.white .tt_newsitem,
+html.white .tt_newsitem:hover {
+    box-shadow: 0px 0px 2px 1px #000;
+}
+
+html.white .tt_servicon .tt_servlnk {
+    box-shadow: 0px 0px 10px 1px #000;
+}
+
+/* color white imp*/
+html.white .tt_menucol h4 a,
+html.white .tt_owl_bnr .owl-controls .owl-buttons .owl-prev:before,
+html.white .tt_owl_bnr .owl-controls .owl-buttons .owl-next:after,
+html.white .owl-theme .owl-controls .owl-buttons .owl-prev:before,
+html.white .owl-theme .owl-controls .owl-buttons .owl-next:after {
+    color: #000 !important;
+}
+
+/* color blck imp*/
+html.white .tt_menucol.blue h4 a,
+html.white .tt_optionlist > li > a.current,
+html.white .owl-controls .owl-buttons .owl-prev:hover:before,
+html.white .owl-controls .owl-buttons .owl-next:hover:after {
+    color: #fff !important;
+}
+
+/* bckgrnd blck imp*/
+html.white .tt_facultitem:hover span {
+    background: #fff !important;
+}
+
+/*color white*/
+html.white .tt_optionlist > li > a.orange {
+    color: #ff0 !important;
+}
+
+/*bckgrnd white*/
+html.white .tt_optionlist > li > a.orange:hover {
+    background: #ff0 !important;
+    color: #fff !important;
+}
+
+/* ================================== Black white end ==================================*/
+
+/* ================================== Color version end ==================================*/
+/* ================================== Font size - ==================================*/
+html.font_minus .tt_logotype span {
+    font-size: 9px !important;
+}
+
+@media (min-width: 992px) {
+    html.font_minus .tt_servdescr {
+        font-size: 10px !important;
+    }
+}
+
+html.font_minus .tt_newsdet .dates {
+    font-size: 10px !important;
+}
+
+@media (min-width: 992px) {
+    html.font_minus .tt_facultitem h4 {
+        font-size: 11px !important;
+    }
+}
+
+html.font_minus .tt_newsitem.sm .tt_newstxt h3,
+html.font_minus .tt_footul,
+html.font_minus .tt_copyright small {
+    font-size: 11px !important;
+}
+
+html.font_minus .tt_optionlist > li > a.txt_min,
+html.font_minus .tt_optionlist > li > a,
+html.font_minus .tt_navlist > li > a > span,
+html.font_minus .tt_navlist > li:nth-last-child(1) > .tt_simplemenu > li > a,
+html.font_minus .tt_navlist > li:nth-last-child(2) > .tt_simplemenu > li > a,
+html.font_minus .tt_navlist > li:nth-last-child(3) > .tt_simplemenu > li > a,
+html.font_minus .tt_navlist > li > .tt_simplemenu > li.drop > ul > li > a,
+html.font_minus .tt_submenulist li a,
+html.font_minus .tt_newstxt p,
+html.font_minus .btn,
+html.font_minus .tt_owl_bnr .owl-item .item .tt_txts p,
+html.font_minus .tt_breadcrumbs,
+html.font_minus .tt_fclines b {
+    font-size: 12px !important;
+}
+
+html.font_minus .tt_newstxt h3,
+html.font_minus .tt_sidelist li a,
+html.font_minus .tt_fcadm .tt_txts,
+html.font_minus small,
+html.font_minus .small {
+    font-size: 13px !important;
+}
+
+html.font_minus .btn_slide,
+html.font_minus .tt_mediatxt p,
+html.font_minus .tt_studlist,
+html.font_minus .tt_footbl h4,
+html.font_minus .tt_content,
+html.font_minus .tt_fcadm .tt_txts h4,
+html.font_minus .tt_spcnum {
+    font-size: 14px !important;
+}
+
+html.font_minus .tt_optionlist > li > a.txt_max,
+html.font_minus .tt_spctxt h4,
+html.font_minus .tt_ph_gal_info h3 {
+    font-size: 15px !important;
+}
+
+html.font_minus .tt_fcspecrline h4 {
+    font-size: 16px !important;
+}
+
+html.font_minus .tt_menucol h4,
+html.font_minus .tt_slidetxt,
+html.font_minus .tt_fcadm .tt_txts h3 {
+    font-size: 17px !important;
+}
+
+html.font_minus .tt_linehead.center span {
+    font-size: 18px;
+}
+
+html.font_minus .tt_mediatxt h3,
+html.font_minus .tt_linehead h3 {
+    font-size: 19px;
+}
+
+html.font_minus .tt_linehead h1 {
+    font-size: 23px;
+}
+
+html.font_minus .tt_mediaicon .lnks {
+    font-size: 33px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+}
+
+html.font_minus .tt_soclist ul li a {
+    font-size: 34px;
+    height: 34px;
+    width: 34px;
+}
+
+/* ================================== Font size -  end ==================================*/
+/* ================================== Font size + ==================================*/
+html.font_plus .tt_logotype span {
+    font-size: 13px !important;
+}
+
+@media (min-width: 992px) {
+    html.font_plus .tt_servdescr {
+        font-size: 14px !important;
+    }
+}
+
+html.font_plus .tt_newsdet .dates {
+    font-size: 14px !important;
+}
+
+@media (min-width: 992px) {
+    html.font_plus .tt_facultitem h4 {
+        font-size: 15px !important;
+    }
+}
+
+html.font_plus .tt_newsitem.sm .tt_newstxt h3,
+html.font_plus .tt_footul,
+html.font_plus .tt_copyright small {
+    font-size: 15px !important;
+}
+
+html.font_plus .tt_optionlist > li > a.txt_min,
+html.font_plus .tt_optionlist > li > a,
+html.font_plus .tt_navlist > li > a > span,
+html.font_plus .tt_navlist > li:nth-last-child(1) > .tt_simplemenu > li > a,
+html.font_plus .tt_navlist > li:nth-last-child(2) > .tt_simplemenu > li > a,
+html.font_plus .tt_navlist > li:nth-last-child(3) > .tt_simplemenu > li > a,
+html.font_plus .tt_navlist > li > .tt_simplemenu > li.drop > ul > li > a,
+html.font_plus .tt_submenulist li a,
+html.font_plus .tt_newstxt p,
+html.font_plus .btn,
+html.font_plus .tt_owl_bnr .owl-item .item .tt_txts p,
+html.font_plus .tt_breadcrumbs,
+html.font_plus .tt_fclines b {
+    font-size: 16px !important;
+}
+
+html.font_plus .tt_newstxt h3,
+html.font_plus .tt_sidelist li a,
+html.font_plus .tt_fcadm .tt_txts,
+html.font_plus small,
+html.font_plus .small {
+    font-size: 15px !important;
+}
+
+html.font_plus .btn_slide,
+html.font_plus .tt_mediatxt p,
+html.font_plus .tt_studlist,
+html.font_plus .tt_footbl h4,
+html.font_plus .tt_content,
+html.font_plus .tt_fcadm .tt_txts h4,
+html.font_plus .tt_spcnum {
+    font-size: 18px !important;
+}
+
+html.font_plus .tt_optionlist > li > a.txt_max,
+html.font_plus .tt_spctxt h4,
+html.font_plus .tt_ph_gal_info h3 {
+    font-size: 19px !important;
+}
+
+html.font_plus .tt_fcspecrline h4 {
+    font-size: 20px !important;
+}
+
+html.font_plus .tt_menucol h4,
+html.font_plus .tt_slidetxt,
+html.font_plus .tt_fcadm .tt_txts h3 {
+    font-size: 21px !important;
+}
+
+html.font_plus .tt_linehead.center span {
+    font-size: 25px;
+}
+
+html.font_plus .tt_mediatxt h3,
+html.font_plus .tt_linehead h3 {
+    font-size: 23px;
+}
+
+html.font_plus .tt_linehead h1 {
+    font-size: 27px;
+}
+
+html.font_plus .tt_mediaicon .lnks {
+    font-size: 37px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+}
+
+html.font_plus .tt_soclist ul li a {
+    font-size: 38px;
+    height: 34px;
+    width: 34px;
+}
+
+/* ================================== Font size -+  end ==================================*/
+.tt_soclist {
+    padding: 0;
+}
+
+#sharer a {
+    border: none;
+    font-size: 1.3em;
+    margin-left: 0;
+    padding: 0;
+}
+
+.jssocials-share-facebook .jssocials-share-link:hover {
+    color: #3b5998;
+}
+.jssocials-share-twitter .jssocials-share-link:hover {
+    color: #00a9ed;
+}
+.jssocials-share-googleplus .jssocials-share-link:hover {
+    color: #cd1111;
+}
+.jssocials-share-email .jssocials-share-link:hover {
+    color: #ff6600;
+}
+.jssocials-share-whatsapp .jssocials-share-link:hover {
+    color: #43d854;
+}
+.jssocials-share-telegram .jssocials-share-link:hover {
+    color: #0088cc;
+}
+
+html.yellow .tt_sidebar {
+    background: black;
+}
+
+html.yellow .tt_sidebar .panel, html.yellow .tt_sidebar .panel-default {
+    background: black;
+    border: yellow 1px solid;
+}

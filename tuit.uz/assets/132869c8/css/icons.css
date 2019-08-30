@@ -1,0 +1,311 @@
+@charset "utf-8";
+
+/* ================================== Icons Start ================================== */
+
+[class^="icon-"], 
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-social-tw:before {
+    content: "\e900";
+}
+.icon-social-fb:before {
+    content: "\e901";
+}
+.icon-social-gp:before {
+    content: "\e902";
+}
+.icon-social-mwm:before {
+    content: "\e920";
+}
+.icon-social-ok:before {
+    content: "\e905";
+}
+.icon-social-inst:before {
+    content: "\e904";
+}
+.icon-social-newinst:before {
+    content: "\e921";
+}
+.icon-social-sk:before {
+    content: "\e922";
+}
+.icon-social-vk:before {
+    content: "\e906";
+}
+.icon-social-yt:before {
+    content: "\e907";
+}
+.icon-social-vb:before {
+    content: "\e938";
+}
+.icon-social-tg:before {
+    content: "\ea95";
+}
+.icon-social-rss:before {
+    content: "\e903";
+}
+.icon-schema:before {
+    content: "\e908";
+}
+.icon-console:before {
+    content: "\e90c";
+}
+.icon-statistic:before {
+    content: "\e909";
+}
+.icon-antenna:before {
+    content: "\e90a";
+}
+.icon-handbook:before {
+    content: "\e90b";
+}
+.icon-cameraroll:before {
+    content: "\e90d";
+}
+.icon-phones:before {
+    content: "\e90e";
+}
+.icon-phones2:before {
+    content: "\e90f";
+}
+.icon-manager:before {
+    content: "\e910";
+}
+.icon-acm:before {
+    content: "\e911";
+}
+.icon-auditorium:before {
+    content: "\e912";
+}
+.icon-telegram:before {
+    content: "\e913";
+}
+.icon-peoples:before {
+    content: "\e914";
+}
+.icon-study:before {
+    content: "\e915";
+}
+.icon-e-study:before {
+    content: "\e916";
+}
+.icon-notice:before {
+    content: "\e917";
+}
+.icon-enrollee:before {
+    content: "\e919";
+}
+.icon-medal:before {
+    content: "\e91a";
+}
+.icon-newspaper:before {
+    content: "\e91b";
+}
+.icon-student:before {
+    content: "\e91c";
+}
+.icon-researchers:before {
+    content: "\e91d";
+}
+.icon-chair:before {
+    content: "\e91e";
+}
+.icon-scienceparer:before {
+    content: "\e91f";
+}
+.icon-text-max:before {
+    content: "\e918";
+}
+.icon-text-min:before {
+    content: "\e923";
+}
+.icon-settings:before {
+    content: "\e926";
+}
+.icon-sign:before {
+    content: "\e927";
+}
+.icon-marks:before {
+    content: "\e928";
+}
+.icon-crane:before {
+    content: "\e929";
+}
+.icon-business:before {
+    content: "\e92a";
+}
+.icon-calling:before {
+    content: "\e92b";
+}
+.icon-case:before {
+    content: "\e92c";
+}
+.icon-internet:before {
+    content: "\e92d";
+}
+.icon-multimedia:before {
+    content: "\e92e";
+}
+.icon-computer:before {
+    content: "\e92f";
+}
+.icon-search-result:before {
+    content: "\e930";
+}
+.icon-symbols:before {
+    content: "\e931";
+}
+.icon-technol:before {
+    content: "\e932";
+}
+.icon-circle-left:before {
+    content: "\ea44";
+}
+.icon-circle-right:before {
+    content: "\ea42";
+}
+.icon-contrast:before {
+    content: "\e9d5";
+}
+.icon-checked:before {
+    content: "\ea10";
+}
+.icon-phone:before {
+    content: "\e942";
+}
+.icon-clock:before {
+    content: "\e94e";
+}
+.icon-quotes-left:before {
+    content: "\e977";
+}
+.icon-quotes-right:before {
+    content: "\e978";
+}
+.icon-compsoni:before {
+    content: "\e93a";
+}
+.icon-laptops:before {
+    content: "\e93b";
+}
+.icon-servers:before {
+    content: "\e93c";
+}
+.icon-electrdoska:before {
+    content: "\e93d";
+}
+.icon-social-gml:before {
+    content: "\e924";
+}
+.icon-social-ml:before {
+    content: "\e925";
+}
+.icon-social-wup:before {
+    content: "\e934";
+}
+.icon-envelope-o:before {
+    content: "\e933";
+}
+.icon-angle-left:before {
+    content: "\f104";
+}
+.icon-angle-right:before {
+    content: "\f105";
+}
+.icon-angle-up:before {
+    content: "\f106";
+}
+.icon-angle-down:before {
+    content: "\f107";
+}
+.icon-caret-left:before {
+    content: "\f0d9";
+}
+.icon-caret-right:before {
+    content: "\f0da";
+}
+.icon-caret-up:before {
+    content: "\f0d8";
+}
+.icon-caret-down:before {
+    content: "\f0d7";
+}
+.icon-close:before {
+    content: "\f00d";
+}
+.icon-arrow-up:before {
+    content: "\f062";
+}
+.icon-search-left:before {
+    content: "\f003";
+}
+.icon-search-right:before {
+    content: "\f002";
+}
+.icon-desktop:before {
+    content: "\e939";
+}
+
+
+
+
+i.iconic{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.iconic-flag{
+    width: 29px;
+    height: 23px;
+    background: url("../img/bg/icons.png") -4px -1px no-repeat;
+}
+
+.iconic-gerb{
+    width: 29px;
+    height: 23px;
+    background: url("../img/bg/icons.png") -2px -31px no-repeat;
+}
+
+.iconic-gimn{
+    width: 29px;
+    height: 23px;
+    background: url("../img/bg/icons.png") -1px -61px no-repeat;
+}
+
+.iconic-ru {
+    width: 17px;
+    height: 16px;
+    background: url("../img/bg/icons.png") -58px -4px no-repeat;
+}
+
+.iconic-uz {
+    width: 17px;
+    height: 16px;
+    background: url("../img/bg/icons.png") -53px -25px no-repeat;
+}
+
+.iconic-eng {
+    width: 17px;
+    height: 16px;
+    background: url("../img/bg/icons.png") -56px -46px no-repeat;
+}
+
+.iconic-map {
+    width: 17px;
+    height: 16px;
+    background: url('../img/bg/sitemap.png') no-repeat;
+    background-size: contain;
+}

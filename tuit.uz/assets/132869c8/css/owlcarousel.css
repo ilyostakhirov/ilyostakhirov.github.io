@@ -1,0 +1,520 @@
+
+/* =================================== Core Owl Carousel  ======================================= */
+
+.owl-slider-wrapper{
+  position: relative;
+}
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/* display none until init */
+.owl-carousel{
+  display: none;
+  position: static;
+  width: 100%;
+  -ms-touch-action: pan-y;
+}
+
+.md_owl_slides{
+  margin-bottom: 0px;
+}
+
+.owl-carousel .owl-wrapper{
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+  
+.owl-carousel .owl-item{
+  float: left;
+  cursor: default;
+}
+
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+  cursor: pointer;
+}
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+/*.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}*/
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+/* =================================== Theme ======================================= */
+
+.owl-theme .owl-controls{
+  margin-top: 0;
+  text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons .owl-prev,
+.owl-theme .owl-controls .owl-buttons .owl-next{
+    font-family: 'icomoon' !important;
+    line-height: 36px;
+    font-size: 30px;
+    color: #fff;
+    z-index: 25;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    bottom: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 50%;
+    margin: auto !important;
+    transition: background 0.25s linear, box-shadow 0.25s linear;
+    position: absolute;
+    color: transparent;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.15);
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev:hover,
+.owl-theme .owl-controls .owl-buttons .owl-next:hover{
+    background: #a9a9a9;
+    box-shadow: none;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+  left: 0;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next{
+  right: 0;
+  letter-spacing: -3px;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev:before{
+    content: "\f104";
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next:after{
+  content: "\f105";
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev:before,
+.owl-theme .owl-controls .owl-buttons .owl-next:after{
+  position: absolute;
+  width: 13px;
+  height: 38px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  color: #a9a9a9 !important;
+  transition: color 0.25s linear;
+}
+
+.owl-controls .owl-buttons .owl-prev:hover:before,
+.owl-controls .owl-buttons .owl-next:hover:after{
+  color: #fff !important;
+}
+
+
+.tt_owl_bnr .owl-controls .owl-buttons .owl-prev, 
+.tt_owl_bnr .owl-controls .owl-buttons .owl-next{
+    background: transparent !important;
+    border-width: 0;
+    top: -25%;
+    box-shadow: none;
+    opacity: 0;
+    transition: opacity 0.25s linear;
+}
+
+.tt_owl_bnr .owl-controls .owl-buttons .owl-prev:before, 
+.tt_owl_bnr .owl-controls .owl-buttons .owl-next:after{
+    color: #fff !important;
+    text-shadow: 1px 3px 0px #000;
+    transition: opacity 0.25s linear;
+}
+
+.tt_owl_bnr .owl-controls .owl-buttons .owl-prev:hover:before, 
+.tt_owl_bnr .owl-controls .owl-buttons .owl-next:hover:after{
+  opacity: 0.6;
+}
+
+.tt_owl_bnr:hover .owl-controls .owl-buttons .owl-prev,
+.tt_owl_bnr:hover .owl-controls .owl-buttons .owl-next{
+  opacity: 1;
+}
+/* Styling Pagination*/
+
+
+.owl-theme .owl-controls .owl-pagination{
+  bottom: 20px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+
+}
+
+.owl-theme .owl-controls .owl-page{
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 8px;
+  vertical-align: middle;
+}
+.owl-theme .owl-controls .owl-page span{
+  display: block;
+  width: 15px;
+  height: 15px;/*IE7 fix*/
+  opacity: 1;
+  border-radius: 100%;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.25s linear;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #222;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls .owl-page:hover span{
+  background: #bbb;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+  height: auto;
+  width: auto;
+  color: #FFF;
+  padding: 2px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+  min-height: 150px;
+  background: url("../img/bg/fancybox_loading.gif") no-repeat center center;
+}
+
+
+/* ================================== Customize bnr ================================== */
+
+.im_slideowl{
+  position: relative;
+}
+
+.im_itemslider{
+  margin-bottom: 55px;
+}
+
+.im_thumbs{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../img/bg/silvgr_bg.png") center bottom repeat-x;
+  background-size: contain;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 21px 35px -25px #000;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.im_thumbs .owl-item .item{
+    display: block;
+    text-align: center;
+    color: #000;
+    font-family: 'MyriadPro-Semibold', Arial, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    padding-top: 22px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 22px;
+    border-right-width: 1px;
+    border-right-style: dotted;
+    border-right-color: #c5c5c5;
+    transition: 0.25s linear;
+}
+
+.im_thumbs .owl-item:last-child .item{
+    border-right-color: transparent;
+}
+
+.im_thumbs .owl-item .item span{
+
+}
+
+.im_thumbs .owl-item:hover .item,
+.im_thumbs .owl-item.current .item{
+  color: #52a550;
+}
+
+.im_thumbs .owl-item:hover.item span,
+.im_thumbs .owl-item.current .item span{
+
+}
+
+
+
+/* ================================== Customize Prod Small ================================== */
+
+.md_owl_prodsm .owl-wrapper-outer{
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e6e6e6;
+}
+
+.md_owl_prodsm .owl-item{
+  position: relative;
+  cursor: default;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #e6e6e6;
+}
+
+.md_owl_prodsm .owl-item:last-child{
+  border-left-width: 0px;
+}
+
+
+.md_owl_prodsm .owl-item .item{
+  text-decoration: none;
+  display: block;
+  color: #131313;
+}
+
+.md_owl_prodsm .md_img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.25s linear;
+}
+
+.md_owl_prodsm .owl-item .item:hover .md_img{
+  opacity: 0.75;
+}
+
+.md_owl_prodsm .md_txt {
+    position: absolute;
+    display: block;
+    color: #131313;
+    background: transparent;
+    z-index: 1;
+    margin: auto;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'proxima_nova_rgbold', Arial, sans-serif;
+    text-transform: uppercase;
+    bottom: 18px;
+    right: 15px;
+    max-width: 135px;
+}
+
+
+/* =================================== Owl Carousel CSS3 Transitions ======================================= */
+
+
+.owl-origin {
+  -webkit-perspective: 1200px;
+  -webkit-perspective-origin-x : 50%;
+  -webkit-perspective-origin-y : 50%;
+  -moz-perspective : 1200px;
+  -moz-perspective-origin-x : 50%;
+  -moz-perspective-origin-y : 50%;
+  perspective : 1200px;
+}
+/* fade */
+.owl-fade-out {
+  z-index: 10;
+  -webkit-animation: fadeOut .7s both ease;
+  -moz-animation: fadeOut .7s both ease;
+  animation: fadeOut .7s both ease;
+}
+.owl-fade-in {
+  -webkit-animation: fadeIn .7s both ease;
+  -moz-animation: fadeIn .7s both ease;
+  animation: fadeIn .7s both ease;
+}
+/* backSlide */
+.owl-backSlide-out {
+  -webkit-animation: backSlideOut 1s both ease;
+  -moz-animation: backSlideOut 1s both ease;
+  animation: backSlideOut 1s both ease;
+}
+.owl-backSlide-in {
+  -webkit-animation: backSlideIn 1s both ease;
+  -moz-animation: backSlideIn 1s both ease;
+  animation: backSlideIn 1s both ease;
+}
+/* goDown */
+.owl-goDown-out {
+  -webkit-animation: scaleToFade .7s ease both;
+  -moz-animation: scaleToFade .7s ease both;
+  animation: scaleToFade .7s ease both;
+}
+.owl-goDown-in {
+  -webkit-animation: goDown .6s ease both;
+  -moz-animation: goDown .6s ease both;
+  animation: goDown .6s ease both;
+}
+/* scaleUp */
+.owl-fadeUp-in {
+  -webkit-animation: scaleUpFrom .5s ease both;
+  -moz-animation: scaleUpFrom .5s ease both;
+  animation: scaleUpFrom .5s ease both;
+}
+
+.owl-fadeUp-out {
+  -webkit-animation: scaleUpTo .5s ease both;
+  -moz-animation: scaleUpTo .5s ease both;
+  animation: scaleUpTo .5s ease both;
+}
+/* Keyframes */
+/*empty*/
+@-webkit-keyframes empty {
+  0% {opacity: 1}
+}
+@-moz-keyframes empty {
+  0% {opacity: 1}
+}
+@keyframes empty {
+  0% {opacity: 1}
+}
+@-webkit-keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
+@keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes fadeOut {
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
+@-moz-keyframes fadeOut {
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
+@keyframes fadeOut {
+  0% { opacity:1; }
+  100% { opacity:0; }
+}
+@-webkit-keyframes backSlideOut {
+  25% { opacity: .5; -webkit-transform: translateZ(-500px); }
+  75% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(-200%); }
+  100% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(-200%); }
+}
+@-moz-keyframes backSlideOut {
+  25% { opacity: .5; -moz-transform: translateZ(-500px); }
+  75% { opacity: .5; -moz-transform: translateZ(-500px) translateX(-200%); }
+  100% { opacity: .5; -moz-transform: translateZ(-500px) translateX(-200%); }
+}
+@keyframes backSlideOut {
+  25% { opacity: .5; transform: translateZ(-500px); }
+  75% { opacity: .5; transform: translateZ(-500px) translateX(-200%); }
+  100% { opacity: .5; transform: translateZ(-500px) translateX(-200%); }
+}
+@-webkit-keyframes backSlideIn {
+  0%, 25% { opacity: .5; -webkit-transform: translateZ(-500px) translateX(200%); }
+  75% { opacity: .5; -webkit-transform: translateZ(-500px); }
+  100% { opacity: 1; -webkit-transform: translateZ(0) translateX(0); }
+}
+@-moz-keyframes backSlideIn {
+  0%, 25% { opacity: .5; -moz-transform: translateZ(-500px) translateX(200%); }
+  75% { opacity: .5; -moz-transform: translateZ(-500px); }
+  100% { opacity: 1; -moz-transform: translateZ(0) translateX(0); }
+}
+@keyframes backSlideIn {
+  0%, 25% { opacity: .5; transform: translateZ(-500px) translateX(200%); }
+  75% { opacity: .5; transform: translateZ(-500px); }
+  100% { opacity: 1; transform: translateZ(0) translateX(0); }
+}
+@-webkit-keyframes scaleToFade {
+  to { opacity: 0; -webkit-transform: scale(.8); }
+}
+@-moz-keyframes scaleToFade {
+  to { opacity: 0; -moz-transform: scale(.8); }
+}
+@keyframes scaleToFade {
+  to { opacity: 0; transform: scale(.8); }
+}
+@-webkit-keyframes goDown {
+  from { -webkit-transform: translateY(-100%); }
+}
+@-moz-keyframes goDown {
+  from { -moz-transform: translateY(-100%); }
+}
+@keyframes goDown {
+  from { transform: translateY(-100%); }
+}
+
+@-webkit-keyframes scaleUpFrom {
+  from { opacity: 0; -webkit-transform: scale(1.5); }
+}
+@-moz-keyframes scaleUpFrom {
+  from { opacity: 0; -moz-transform: scale(1.5); }
+}
+@keyframes scaleUpFrom {
+  from { opacity: 0; transform: scale(1.5); }
+}
+
+@-webkit-keyframes scaleUpTo {
+  to { opacity: 0; -webkit-transform: scale(1.5); }
+}
+@-moz-keyframes scaleUpTo {
+  to { opacity: 0; -moz-transform: scale(1.5); }
+}
+@keyframes scaleUpTo {
+  to { opacity: 0; transform: scale(1.5); }
+}

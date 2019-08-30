@@ -954,12 +954,19 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">Онлайн оплата контракта</h4>
       </div>
-      <div class="modal-body">
-        <iframe src="https://pays.uz/dynamic_tuit" width="568" height="568" frameborder="0"></iframe>
+      <div class="modal-body" style="padding: 0">
+        <iframe src="https://pays.uz/dynamic_tuit" width="598" height="598" frameborder="0"></iframe>
       </div>
     </div>
   </div>
 </div>
+<style>
+	@media screen and (max-width: 991px) {
+	    #onlinepay iframe{
+	    	max-width: 100%;
+	    }
+	}
+</style>
     <script src="assets/61cc7630/jquery.js"></script>
     <script src="assets/acd06050/js/bootstrap.js"></script>
     <script src="assets/5bcc2e30/yii.js"></script>

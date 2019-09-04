@@ -1297,20 +1297,34 @@ img {
     max-width: 100%;
     height: auto;
 }
-
+.w-500{
+    max-width: 500px;    
+}
 .card-icon {
     border-radius: 10px;
     box-shadow: 0 1px 5px 0 rgba(53, 70, 80, 0.15);
     border: solid 1px #f3f7fc;
-    background: #ffffff url(../img/star.svg) no-repeat 32px 31px;
+    background: #ffffff url(../img/star.svg) no-repeat 32px 28px;
     padding: 32px 32px 32px 90px;
     font-size: 18px;
     font-weight: bold;
     color: #000000;
     @include text-crop($line-height: 1.8);
+    min-height: 90px;
 
 }
-
+.error-404{
+        height: 330px;
+        overflow:hidden;
+   img{
+         margin-top: -125px;
+   } 
+}
+.card-icon.card-one{
+    &::before{
+        margin:0;
+    }
+}
 .modal {
 
     .section-header {
@@ -3262,7 +3276,11 @@ a.active:parent {
         td {}
     }
 }
-
+.logo-cms{
+    img{
+        margin:0 35px 45px 0;
+    }
+}
 .plr-20 {
     padding: 0 20px;
 }
@@ -3507,7 +3525,12 @@ a.active:parent {
 .app2 {
     background-size: contain;
 }
-
+.error-page{
+    display:flex;
+    justify-content: center;
+    margin-top: 116px;
+    padding: 0 20px;
+}
 @media (max-width: 1100px) {
 
     .portfolio {
@@ -4325,6 +4348,15 @@ a.active:parent {
     .frame:after {
         display: none;
     }
+    .error-404 img {
+     margin-top: 0; 
+}
+.error-404 {
+    height: auto;
+}
+.w-500 {
+    padding: 0 20px;
+}
 }
 
 @media (max-width: 500px) {

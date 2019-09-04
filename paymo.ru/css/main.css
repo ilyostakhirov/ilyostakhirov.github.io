@@ -1366,18 +1366,22 @@ img {
   max-width: 100%;
   height: auto; }
 
+.w-500 {
+  max-width: 500px; }
+
 .card-icon {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   -webkit-box-shadow: 0 1px 5px 0 rgba(53, 70, 80, 0.15);
   box-shadow: 0 1px 5px 0 rgba(53, 70, 80, 0.15);
   border: solid 1px #f3f7fc;
-  background: #ffffff url(../img/star.svg) no-repeat 32px 31px;
+  background: #ffffff url(../img/star.svg) no-repeat 32px 28px;
   padding: 32px 32px 32px 90px;
   font-size: 18px;
   font-weight: bold;
   color: #000000;
-  line-height: 1.8; }
+  line-height: 1.8;
+  min-height: 90px; }
   .card-icon::before, .card-icon::after {
     content: '';
     display: block;
@@ -1389,6 +1393,15 @@ img {
   .card-icon::after {
     margin-top: -webkit-calc(-0.52222em + 0px);
     margin-top: calc(-0.52222em + 0px); }
+
+.error-404 {
+  height: 330px;
+  overflow: hidden; }
+  .error-404 img {
+    margin-top: -125px; }
+
+.card-icon.card-one::before {
+  margin: 0; }
 
 .modal .section-header {
   margin-bottom: 42px; }
@@ -3156,6 +3169,9 @@ a.active:parent {
 .table tr th {
   font-weight: bold; }
 
+.logo-cms img {
+  margin: 0 35px 45px 0; }
+
 .plr-20 {
   padding: 0 20px; }
 
@@ -3370,6 +3386,18 @@ a.active:parent {
 .app2 {
   -webkit-background-size: contain;
   background-size: contain; }
+
+.error-page {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 116px;
+  padding: 0 20px; }
 
 @media (max-width: 1100px) {
   .portfolio #collapsedmenu .col .label-heading a:before {
@@ -3957,7 +3985,13 @@ a.active:parent {
 
 @media (max-width: 600px) {
   .frame:after {
-    display: none; } }
+    display: none; }
+  .error-404 img {
+    margin-top: 0; }
+  .error-404 {
+    height: auto; }
+  .w-500 {
+    padding: 0 20px; } }
 
 @media (max-width: 500px) {
   .frame:after {

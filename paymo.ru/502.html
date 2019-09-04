@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Paymo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="error-page">
+        <div>
+            <img src="img/502_illustration.svg" alt="">
+            <div class="section-header mt-80">
+                    <div class="h2 ">Ведутся технические работы</div>
+                    <p>Сайт будет доступен через некоторое время.</p>
+                </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flexmenu.min.js"></script>
+    <script src='js/ion.rangeSlider.min.js'></script>
+    <script src='js/swiper.min.js'></script>
+    <script src="js/main.js"></script>
+    <script>
+    function change() {
+        var x = document.getElementById("pwd");
+        var btn = document.getElementById("show_pwd");
+        if (x.type === "password") {
+            x.type = "text";
+            btn.className = " hide_password";
+        } else {
+            x.type = "password";
+            btn.className = "";
+        }
+    }
+    </script>
+</body>
+
+</html>

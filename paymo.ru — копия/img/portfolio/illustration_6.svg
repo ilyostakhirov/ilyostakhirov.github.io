@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="275" height="222" fill="none" viewBox="0 0 275 222">
+    <path fill="url(#a)" d="M45.026 221.238L0 143.472h90.053l-45.026 77.766zM4.922 146.179l40.105 69.399 40.106-69.399H4.921z"/>
+    <path fill="url(#b)" d="M86.363 79.488L224.149 0v158.976L86.363 79.488zm132.865-71.12L96.451 79.241l122.777 70.875V8.367z"/>
+    <path fill="#fff" d="M274.478 56.99L110.242 221.256l.522.522L275 57.511l-.522-.522z"/>
+    <defs>
+        <radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="matrix(269.945 0 0 269.996 -69.301 67.43)" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E600FF"/>
+            <stop offset=".298" stop-color="#90F"/>
+            <stop offset=".639" stop-color="#4700FF"/>
+            <stop offset=".882" stop-color="#1400FF"/>
+            <stop offset="1" stop-color="#00F"/>
+        </radialGradient>
+        <radialGradient id="b" cx="0" cy="0" r="1" gradientTransform="matrix(0 477.526 -477.436 0 358.284 -123.039)" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E600FF"/>
+            <stop offset=".354" stop-color="#F0579A"/>
+            <stop offset=".67" stop-color="#F89F47"/>
+            <stop offset=".892" stop-color="#FDCC14"/>
+            <stop offset="1" stop-color="#FD0"/>
+        </radialGradient>
+    </defs>
+</svg>

@@ -1,5 +1,43 @@
 $(document).ready(function() {
 
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('.header-wrap').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('.header-wrap').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('.header-wrap').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+
 
 
     $(window).on('load resize', function() {
@@ -8,21 +46,7 @@ $(document).ready(function() {
             $('.flexMenu2').flexMenu({
                 undo: true
             });
-        } else {
-            function toggleDropdown(e) {
-                const _d = $(e.target).closest('.main-menu .dropdown'),
-                    _m = $('.dropdown-menu', _d);
-                setTimeout(function() {
-                    const shouldOpen = e.type !== 'click' && _d.is(':hover');
-                    _m.toggleClass('show', shouldOpen);
-                    _d.toggleClass('show', shouldOpen);
-                    $('[data-toggle="dropdown"]', _d).attr('aria-expanded', shouldOpen);
-                }, e.type === 'mouseleave' ? 300 : 0);
-            }
-
-            $('body')
-                .on('mouseenter mouseleave', '.main-menu .dropdown', toggleDropdown)
-                .on('click', '.main-menu .dropdown-menu a', toggleDropdown);
+        } else {            
 
             $('.flexMenu1').flexMenu({
                 showOnHover: true,

@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Paymo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#spy" data-offset="250">
+    <div class="topbar">
+        <div class="container-fluid d-flex">
+            <ul class="topul ul ml-auto">
+                <li><a href="#">8 (800) 301 06 44</a></li>
+                <li><a href="#">8 (495) 369-60-67</a></li>
+                <li><a href="#">Задать вопрос</a></li>
+            </ul>
+        </div>
+    </div>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="img/logo.svg" alt=""></a>
+            <button class="navbar-toggler btn-menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav main-menu mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Организациям ">
+                            Организациям
+                        </a>
+                        <ul class="dropdown-menu flexMenu1" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#" title="Интернет-магазины">Интернет-магазины</a></li>
+                            <li><a class="dropdown-item" href="#" title="ЖКХ Компании">ЖКХ Компании</a></li>
+                            <li><a class="dropdown-item" href="#" title="Финансовые организации">Финансовые организации</a></li>
+                            <li><a class="dropdown-item" href="#" title="Госплатежи">Госплатежи</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" title="Решения">Решения</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" title="Тарифы">Тарифы</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="n avbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Разработчикам ">
+                            Разработчикам
+                        </a>
+                        <ul class="dropdown-menu flexMenu2" aria-labelledby="navbarDropdown1">
+                            <li><a class="dropdown-item" href="#" title="Документация, API">Документация, API</a></li>
+                            <li><a class="dropdown-item" href="#" title="Модули CMS">Модули CMS</a></li>
+                            <li><a class="dropdown-item" href="#" title="Мобильный SDK">Мобильный SDK</a></li>
+                            <li><a class="dropdown-item" href="#" title="Тестовые платежи">Тестовые платежи</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Плательщикам ">
+                            Плательщикам
+                        </a>
+                        <ul class="dropdown-menu flexMenu3" aria-labelledby="navbarDropdown2">
+                            <li><a class="dropdown-item" href="#" title="Погашение кредитов">Погашение кредитов</a></li>
+                            <li><a class="dropdown-item" href="#" title="Переводы с карты на карту">Переводы с карты на карту</a></li>
+                            <li><a class="dropdown-item" href="#" title="Переводы по номеру телефона">Переводы по номеру телефона</a></li>
+                            <li><a class="dropdown-item" href="#" title="Международные переводы">Международные переводы</a></li>
+                            <li><a class="dropdown-item" href="#" title="Paymo.market">Paymo.market</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" title="54-ФЗ">54-ФЗ</a>
+                    </li>
+                </ul>
+                <ul class="topul ul">
+                    <li><a href="#">8 (800) 301 06 44</a></li>
+                    <li><a href="#">8 (495) 369-60-67</a></li>
+                    <li><a href="#">Задать вопрос</a></li>
+                </ul>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="loginDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Войти
+                    </button>
+                    <div class="dropdown-menu dropdown-menu1 dropdown-menu-right" aria-labelledby="loginDropdown">
+                        <span class="dropdown-menu-arrow"></span>
+                        <a class="dropdown-item" href="#">Войти как плательщик</a>
+                        <a class="dropdown-item" href="#">Войти как организация</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="l-title mt-63 mb-78">Работа с системой</div>
+        <div class="row">
+            <div id="spy" class="col-lg-3 p-r">
+                <ul class="flex-column submenu ul">
+                    <a class="nav-link" href="#scroll">Отслеживание операций</a>
+                    <a class="nav-link" href="#scroll1">Поиск операций</a>
+                    <a class="nav-link has-child" href="#scroll3">Состояние операции</a>
+                        <nav class="nav nav-pills flex-column submenu_ul">
+                            <a class="nav-link" href="#scroll3-1">Возврат</a>
+                            <a class="nav-link" href="#scroll3-2">Рекурренты</a>
+                            <a class="nav-link" href="#scroll3-3">Реестры</a>
+                            <a class="nav-link" href="#scroll3-4">Финансовая отчетность</a>
+                            <a class="nav-link" href="#scroll3-5">Выплаты на карту</a>
+                        </nav>
+                        <a class="nav-link" href="#scroll4">Статистика</a>
+                        <a class="nav-link has-child" href="#scroll5">Настройки аккаунта</a>
+                        <nav class="nav nav-pills flex-column submenu_ul">
+                            <a class="nav-link" href="#scroll5-1">Безопасность</a>
+                            <a class="nav-link" href="#scroll5-2">Отправка реестра</a>
+                        </nav>
+                        <a class="nav-link" href="#scroll6">Поддержка</a>
+                    </ </ul> </div> <div class="col-lg-9" data-spy="scroll" data-target="#spy">
+                    <div class="page mb-70">
+                        <div id="scroll">
+                            <h3 class="mt-0">Отслеживание операций</h3>
+                            <p>В разделе «Операции» вы можете отслеживать ваши финансовые операции.
+                                У каждой операции есть свой id и номер заказа, по которым вы можете их идентифицировать.</p>
+                            <img class="mb-45" src="img/system/system.png" alt="">
+                            <hr>
+                        </div>
+                        <div id="scroll1">
+                            <h3>Поиск операций</h3>
+                            <p>Поиск операции осуществляется с помощью фильтров. Вы можете отсортировать операции, реализованные конкретным магазином, по типу и статусу платежа. </p>
+                            <ol>
+                                <li>Нажмите кнопку «Применить фильтр», и окно покажет количество операций, отвечающих заданным параметрам.</li>
+                                <li>Вы можете посмотреть операции за конкретный промежуток времени, просто выберите нужные даты в окне «Период».</li>
+                            </ol>
+                            <img class="mb-45" src="img/system/system1.png" alt="">
+                            <hr>
+                        </div>
+                        <div id="scroll3">
+                            <h3>Состояние операции</h3>
+                            <p>Отслеживайте статус каждой операции в вашем кабинете. Успешным и неуспешным платежам
+                                будет присвоен соответсвующий статус.</p>
+                            <img class="mb-45" src="img/system/system2.png" alt="">
+                            <hr>
+                        </div>
+                        <div id="scroll3-1">
+                            <h3>Возврат</h3>
+                            <p>Если вы хотите осуществить возврат денежных средств, нажмите на кнопку ВОЗВРАТ в строке с операцией.</p>
+                            <img class="mb-45" src="img/system/system3.png" alt="">
+                            <hr>
+                        </div>
+                        <div id="scroll3-2">
+                            <h3>Рекурренты</h3>
+                            <p>Если покупатель подписан на автоплатеж, в данном разделе можно редактировать период и сумму.</p>
+                            <hr>
+                        </div>
+                        <div id="scroll3-3">
+                            <h3>Реестры</h3>
+                            <p>В данном разделе можно скачать реестры, они автоматически создаются за те дни, когда у вас были операции.</p>
+                            <img class="mb-45" src="img/system/system4.png" alt="">
+                            <hr>
+                        </div>
+                        <div id="scroll3-4">
+                            <h3>Финансовая отчетность</h3>
+                            <p>При использовании услуги «Выставление счетов по sms», в разделе «Финансовая отчетность» можно сформировать отчет за 1 месяц, где будет указано сколько было отправлено sms и на номера каких операторов.</p>
+                            <img class="mb-45" src="img/system/system5.png" alt="">
+                            <hr>
+                        </div>
+                        <div id="scroll3-5">
+                            <h3>Выплаты на карту</h3>
+                            <p>Данный раздел доступен только для категорий: </p>
+                            <ul>
+                                <li>«Денежные переводы»</li>
+                                <li>«Погашение кредитов» </li>
+                                <li>«Пополнение карты» </li>
+                                <li>«Электронные деньги»</li>
+                            </ul>
+                            <img class="mb-45" src="img/system/system6.png" alt="">
+                            <hr>
+                        </div>
+                        <div id="scroll4">
+                            <h3>Статистика</h3>
+                            <p>В разделе «Статистика» предложены два графика:</p>
+                            <ul>
+                                <li>График-кривая показывает количество продаж, реализованных вашим магазином, в зависимости от месяца;</li>
+                            </ul>
+                            <img class="mb-45" src="img/system/system7.png" alt="">
+                            <ul>
+                                <li>График-диаграмма наглядно показывает используемые способы оплаты в процентном соотношении.</li>
+                            </ul>
+                            <img class="mb-45" src="img/system/system8.png" alt="">
+                            <p>Вы можете посмотреть графики за сегодня, неделю, месяц или выбрать произвольный промежуток
+                                времени на календаре. Нажмите на кнопку ПРИМЕНИТЬ ФИЛЬТР.</p>
+                            <hr>
+                        </div>
+                        <div id="scroll5">
+                            <h3>Настройка аккаунта</h3>
+                            <p>Вы можете настроить доступы для менеджеров.</p>
+                            <ol>
+                                <li>Выберите в боковом меню «Настройки». Выберите раздел «Доступы».</li>
+                            </ol>
+                            <img class="mb-45" src="img/system/system9.png" alt="">
+                            <ol start="2">
+                                <li>Добавьте нового менеджера, нажав на кнопку <strong>«Добавить нового менеджера»</strong>.</li>
+                                <li>Заполните поля «Логин менеджера», «E-mail менеджера» и «Магазин».
+                                    Выберите один из трёх доступов:</li>
+                            </ol>
+                            <ul>
+                                <li>Полный доступ</li>
+                                <li>Чтение истории</li>
+                                <li>Чтение и возврат</li>
+                            </ul>
+                            <img class="mb-45" src="img/system/system10.png" alt="">
+                            <ol start="4">
+                                <li>Нажмите СОХРАНИТЬ , и данные о доступе к системе будут отправлены
+                                    на электронную почту нового менеджера.</li>
+                            </ol>
+                            <p>Все менеджеры магазинов будут показаны в разделе «Доступы». <br>
+                                Вы можете изменить доступ к управлению магазином у каждого менеджера, <br>
+                                нажав на кнопку «Настройки». Удалить менеджера можно, нажав на кнопку «Удалить».</p>
+                            <hr>
+                        </div>
+                        <div id="scroll5-1">
+                            <h3>Безопасность</h3>
+                            <ol>
+                                <li>Если вы хотите изменить пароль, зайдите в раздел «Безопасность», введите новый пароль
+                                    и старый пароль в соответствующие окна.</li>
+                                <li>Нажмите кнопку СМЕНИТЬ ПАРОЛЬ , и при правильном вводе данных пароль будет изменен.</li>
+                            </ol>
+                            <img class="mb-45" src="img/system/system11.png" alt="">
+                            <hr>
+                        </div>
+                        <div id="scroll5-2">
+                            <h3>Отправка реестров</h3>
+                            <ol>
+                                <li>Поставьте галочку рядом с надписью «Включить отправку реестров»</li>
+                                <li>Выберите формат реестра.</li>
+                                <li>Выберите настройки архивирования.</li>
+                                <li>Введите e-mail адрес отправки реестров (можно добавить несколько адресов)</li>
+                            </ol>
+                            <ul>
+                                <li>ежедневно</li>
+                                <li>в будни</li>
+                                <li>выборочно – можно отметить определённые дни галочкой.</li>
+                            </ul>
+                            <ol start="5">
+                                <li>Выберите дни отправки реестров. Нажмите кнопку СОХРАНИТЬ.</li>
+                            </ol>
+                            <img class="mb-45" src="img/system/system12.png" alt="">
+                            <hr>
+                        </div>
+                        <div id="scroll6">
+                            <h3>Поддержка</h3>
+                            <p>Если у вас возникли вопросы, зайдите в раздел «Поддержка» и заполните поле «Запрос».
+                                Вы можете ввести дополнительный e-mail. Нажмите кнопку ОТПРАВИТЬ , и ваш запрос будет отправлен
+                                в службу поддержки.</p>
+                            <img class="mb-45" src="img/system/system13.png" alt="">
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="f-logo">
+                <a href="#"><img src="img/logo.svg" alt=""></a>
+            </div>
+            <div id="collapsedmenu" role="tablist" aria-multiselectable="false" class="row mb-40 ">
+                <div class="col">
+                    <h6 role="tab" id="heading1" class="label-heading"><a role="button" data-toggle="collapse" data-parent="#collapsedmenu" href="#collapse1" aria-expanded="false" aria-controls="collapse1"><strong>Организациям:</strong></a></h6>
+                    <ul class="collapse" id="collapse1" role="tabpanel" aria-labelledby="heading1">
+                        <li><a href="#">Интернет-магазины</a></li>
+                        <li><a href="#">ЖКХ компании</a></li>
+                        <li><a href="#">Финансовые организации</a></li>
+                        <li><a href="#">Госплатежи</a></li>
+                        <li><a href="#">Тарифы</a></li>
+                        <li><a href="#">54-ФЗ (онлайн-кассы)</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h6 role="tab" id="heading2" class="label-heading"><a role="button" data-toggle="collapse" data-parent="#collapsedmenu" href="#collapse2" aria-expanded="false" aria-controls="collapse2"><strong>Плательщикам:</strong></a></h6>
+                    <ul class="collapse" id="collapse2" role="tabpanel" aria-labelledby="heading2">
+                        <li><a href="#">Погашение кредитов</a></li>
+                        <li><a href="#">Переводы с карты на карту по России</a></li>
+                        <li><a href="#">Переводы по номеру телефона</a></li>
+                        <li><a href="#">Международные денежные переводы</a></li>
+                        <li><a href="#">PAYMO.MARKET</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h6 role="tab" id="heading3" class="label-heading"><a role="button" data-toggle="collapse" data-parent="#collapsedmenu" href="#collapse3" aria-expanded="false" aria-controls="collapse3"><strong>Разработчикам:</strong></a></h6>
+                    <ul class="collapse" id="collapse3" role="tabpanel" aria-labelledby="heading3">
+                        <li><a href="#">Документация, API</a></li>
+                        <li><a href="#">Модули CMS</a></li>
+                        <li><a href="#">Мобильный SDK</a></li>
+                        <li><a href="#">Тестовые платежи</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h6 role="tab" id="heading4" class="label-heading"><a role="button" data-toggle="collapse" data-parent="#collapsedmenu" href="#collapse4" aria-expanded="false" aria-controls="collapse4"><strong>Справка и поддержка:</strong></a></h6>
+                    <ul class="collapse" id="collapse4" role="tabpanel" aria-labelledby="heading4">
+                        <li><a href="#">Инструкция</a></li>
+                        <li><a href="#">Работа с системой</a></li>
+                        <li><a href="#">Требования и ограничения</a></li>
+                        <li><a href="#">Оферта</a></li>
+                        <li><a href="#">Ответы на вопросы</a></li>
+                        <li><a href="#">Термины</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h6 role="tab" id="heading5" class="label-heading"><a role="button" data-toggle="collapse" data-parent="#collapsedmenu" href="#collapse5" aria-expanded="false" aria-controls="collapse5"><strong>О компании:</strong></a></h6>
+                    <ul class="collapse" id="collapse5" role="tabpanel" aria-labelledby="heading5">
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">партнерская программа</a></li>
+                        <li><a href="#">Портфолио</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">PAYMO Узбекистан</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row mt-40">
+                <div class="col">
+                    <h6 class="label-heading">СВЯЖИТЕСЬ С НАМИ</h6>
+                    <ul>
+                        <li>
+                            <a href="#">hello@paymo.ru</a>
+                            <span>Вопросы о сотрудничестве</span>
+                        </li>
+                        <li>
+                            <a href="#">support@paymo.ru</a>
+                            <span>Вопросы о проведении платежей</span>
+                        </li>
+                        <li>
+                            <a href="#">work@paymo.ru</a>
+                            <span>Вопросы о вакансиях</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h6 class="label-heading">ЗВОНИТЕ ПО ЛЮБЫМ ВОПРОСАМ</h6>
+                    <ul>
+                        <li>
+                            <a href="#">8 (800) 301 06 44</a>
+                        </li>
+                        <li>
+                            <a href="#">8 (495) 369-60-67</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h6 class="label-heading">Наши социальные сети</h6>
+                    <div class="social">
+                        <a href="#"><img src="img/VK.svg" alt=""></a>
+                        <a href="#"><img src="img/facebook.svg" alt=""></a>
+                        <a href="#"><img src="img/instagram.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

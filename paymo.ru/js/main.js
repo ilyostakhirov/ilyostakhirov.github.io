@@ -7,6 +7,7 @@ $(document).ready(function() {
 
     $(window).scroll(function(event) {
         didScroll = true;
+        $(".main-menu .dropdown-toggle").dropdown('hide')
     });
 
     setInterval(function() {

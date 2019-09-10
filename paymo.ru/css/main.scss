@@ -3673,7 +3673,9 @@ a.active:parent {
     .footer ul {
         height: auto !important;
     }
-
+.main-menu .dropdown-menu.flexMenu-popup li a.dropdown-item:after,.navbar .main-menu .dropdown > .dropdown-menu > li.dropdown-menu-arrow {
+    display:none;
+}
     .navbar .main-menu {
         margin-left: 80px;
 
@@ -3700,7 +3702,6 @@ a.active:parent {
             border-top: 1px solid #D6DBE4;
             border-radius: 0;
             margin-top: 0;
-
             li {
                 float: left;
                 position: relative;
@@ -3710,7 +3711,6 @@ a.active:parent {
                 }
 
                 a.dropdown-item {
-                    padding: 6px 0;
                     text-transform: uppercase;
                     position: relative;
 

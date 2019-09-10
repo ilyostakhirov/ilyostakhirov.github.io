@@ -39,7 +39,50 @@ $(document).ready(function() {
         lastScrollTop = st;
     }
 
+    function submenu() {
+        $('.flexMenu1').flexMenu({
+            showOnHover: true,
+            linkText: "•••",
+            linkTitle: "Показать еще",
+            linkTextAll: "Меню",
+            linkTitleAll: "Развернуть меню",
+            popupClass: 'dropdown-menu dropdown-menu1',
+            cutoff: 1,
+            threshold: 1
+        });
+        $('.flexMenu2').flexMenu({
+            showOnHover: true,
+            linkText: "•••",
+            linkTitle: "Показать еще",
+            linkTextAll: "Меню",
+            linkTitleAll: "Развернуть меню",
+            popupClass: 'dropdown-menu dropdown-menu1',
+            cutoff: 1,
+            threshold: 1
+        });
+        $('.flexMenu3').flexMenu({
+            showOnHover: true,
+            linkText: "•••",
+            linkTitle: "Показать еще",
+            linkTextAll: "Меню",
+            linkTitleAll: "Развернуть меню",
+            popupClass: 'dropdown-menu dropdown-menu1',
+            cutoff: 1,
+            threshold: 1
+        });
 
+        $(document).mouseup(function(e) {
+            var div = $(".flexMenu-viewMore");
+            if (!div.is(e.target) &&
+                div.has(e.target).length === 0) {
+                $('.flexMenu-popup').hide();
+                $('.flexMenu-viewMore').removeClass('active');
+            }
+        });
+    }
+    $(document).ready(submenu);
+
+ 	$(window).resize(submenu);
 
     $(window).on('load resize', function() {
         var window_width = $(window).width();
@@ -49,45 +92,7 @@ $(document).ready(function() {
             });
         } else {
 
-            $('.flexMenu1').flexMenu({
-                showOnHover: true,
-                linkText: "•••",
-                linkTitle: "Показать еще",
-                linkTextAll: "Меню",
-                linkTitleAll: "Развернуть меню",
-                popupClass: 'dropdown-menu dropdown-menu1',
-                cutoff: 1,
-                threshold: 1
-            });
-            $('.flexMenu2').flexMenu({
-                showOnHover: true,
-                linkText: "•••",
-                linkTitle: "Показать еще",
-                linkTextAll: "Меню",
-                linkTitleAll: "Развернуть меню",
-                popupClass: 'dropdown-menu dropdown-menu1',
-                cutoff: 1,
-                threshold: 1
-            });
-            $('.flexMenu3').flexMenu({
-                showOnHover: true,
-                linkText: "•••",
-                linkTitle: "Показать еще",
-                linkTextAll: "Меню",
-                linkTitleAll: "Развернуть меню",
-                popupClass: 'dropdown-menu dropdown-menu1',
-                cutoff: 1,
-                threshold: 1
-            });
 
-            $(document).mouseup(function(e) {
-                var div = $(".flexMenu-viewMore");
-                if (!div.is(e.target) &&
-                    div.has(e.target).length === 0) {
-                    $('.flexMenu-popup').hide();
-                    $('.flexMenu-viewMore').removeClass('active');
-                }
-            });
 
         }
     });

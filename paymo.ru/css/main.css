@@ -1906,7 +1906,7 @@ select.form-control:not([size]):not([multiple]) {
   width: 102%;
   height: 100%;
   cursor: default;
-  background: rgba(0, 0, 0, 0);
+  background: transparent;
   z-index: 2; }
 
 .lt-ie9 .irs-disable-mask {
@@ -3483,6 +3483,8 @@ a.active:parent {
 @media screen and (min-width: 1100px) {
   .footer ul {
     height: auto !important; }
+  .main-menu .dropdown-menu.flexMenu-popup li a.dropdown-item:after, .navbar .main-menu .dropdown > .dropdown-menu > li.dropdown-menu-arrow {
+    display: none; }
   .navbar .main-menu {
     margin-left: 80px; }
     .navbar .main-menu a {
@@ -3513,7 +3515,6 @@ a.active:parent {
         .navbar .main-menu .dropdown-menu li:not(:last-child) {
           margin-right: 54px; }
         .navbar .main-menu .dropdown-menu li a.dropdown-item {
-          padding: 6px 0;
           text-transform: uppercase;
           position: relative; }
           .navbar .main-menu .dropdown-menu li a.dropdown-item.active {

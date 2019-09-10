@@ -1559,7 +1559,8 @@ img {
     display: block;
     position: relative;
     font-size: 12px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    line-height: 1; }
     .list li a:hover {
       text-decoration: none;
       font-weight: bold;

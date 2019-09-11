@@ -1660,6 +1660,16 @@ img {
     font-size: 12px;
     top: 10px; }
 
+.form-control.inputtel:hover {
+  color: #fff; }
+
+.form-control.inputtel:focus {
+  color: #000; }
+
+.form-control.inputtel:focus + label {
+  font-size: 12px;
+  top: 10px; }
+
 .no-js .form-control + label {
   font-size: 0.75rem;
   top: 0; }
@@ -1906,7 +1916,7 @@ select.form-control:not([size]):not([multiple]) {
   width: 102%;
   height: 100%;
   cursor: default;
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   z-index: 2; }
 
 .lt-ie9 .irs-disable-mask {

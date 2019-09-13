@@ -3605,7 +3605,24 @@ a.active:parent {
     margin-top: 116px;
     padding: 0 20px;
 }
+.iphone{
+    position:relative;
+    width: 338px;
+    display:inline-block;
+}
 
+  .iphone-frame {
+    position: relative;
+    z-index: 2;
+    width: 100%; }
+  .iphone-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 91%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
 @media (max-width: 1100px) {
 
     .portfolio {

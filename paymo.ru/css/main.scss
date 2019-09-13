@@ -1708,10 +1708,13 @@ select.form-control:not([size]):not([multiple]) {
 .text-col {
     display: flex;
     align-items: center;
-
+    .l-title{
+        margin-bottom: 40px;
+    }
     .title_sub {
         margin-bottom: 25px;
     }
+
 
     p {
         margin-bottom: 40px;

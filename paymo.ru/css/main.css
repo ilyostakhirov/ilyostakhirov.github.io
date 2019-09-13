@@ -1730,6 +1730,8 @@ select.form-control:not([size]):not([multiple]) {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
+  .text-col .l-title {
+    margin-bottom: 40px; }
   .text-col .title_sub {
     margin-bottom: 25px; }
   .text-col p {

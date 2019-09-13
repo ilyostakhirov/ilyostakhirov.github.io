@@ -796,8 +796,7 @@ body {
 h1 {
     font-weight: bold;
     font-size: 56px;
-    line-height: 1.4;
-    @include text-crop;
+    @include text-crop($line-height: 1.4);
 }
 
 .ul {
@@ -1211,7 +1210,7 @@ h1 {
     margin-bottom: 70px;
 
     .h2 {
-        margin-bottom: 35px;
+        margin-bottom: 48px;
     }
 
     p {
@@ -1224,15 +1223,13 @@ h1 {
 .h2 {
     font-weight: bold;
     font-size: 40px;
-    line-height: 1.2;
-    @include text-crop($top-adjustment: 2px);
+    @include text-crop($line-height: 1.2);
 
 }
 
 .h1 {
     font-weight: bold;
     font-size: 56px;
-    line-height: 1.2;
     @include text-crop($line-height: 1.2);
 }
 
@@ -1265,17 +1262,16 @@ h1 {
     .title {
         font-weight: bold;
         font-size: 20px;
-        line-height: 1.3;
+        @include text-crop($line-height: 1.6);
         color: #000000;
         margin-bottom: 20px;
     }
 
     p {
         font-size: 18px;
-        line-height: 1.7;
         color: $secondary;
         margin-bottom: 0;
-        @include text-crop;
+        @include text-crop($line-height: 1.8);
     }
 }
 
@@ -1479,8 +1475,7 @@ img {
     .title {
         font-weight: 500;
         font-size: 18px;
-        line-height: 28px;
-        @include text-crop;
+        @include text-crop($line-height: 1.8);
     }
 }
 
@@ -1541,11 +1536,10 @@ img {
 
     p {
         font-size: 14px;
-        line-height: 24px;
         color: $secondary;
         text-align: center;
         margin: 20px 0 0;
-        @include text-crop;
+        @include text-crop($line-height: 24px);
     }
 }
 
@@ -2531,17 +2525,15 @@ ul.checked_ul.horizontal_checked {
 .ll-title {
     font-size: 56px;
     font-weight: bold;
-    line-height: 1.4;
     color: #000000;
-    @include text-crop;
+    @include text-crop($line-height: 1.4);
 }
 
 .l-title {
     font-size: 40px;
     font-weight: bold;
-    line-height: 1.5;
     color: #000000;
-    @include text-crop;
+    @include text-crop($line-height: 1.5);
 }
 
 .mt-84 {
@@ -2563,17 +2555,15 @@ ul.checked_ul.horizontal_checked {
 .m-title {
     font-size: 32px;
     font-weight: bold;
-    line-height: 1.5;
     color: #000000;
-    @include text-crop;
+    @include text-crop($line-height: 1.5);
 }
 
 .s-title {
     font-size: 26px;
     font-weight: bold;
-    line-height: 1.6;
     color: #000000;
-    @include text-crop;
+    @include text-crop($line-height: 1.6);
 }
 
 a.s-title {
@@ -3052,7 +3042,6 @@ h6 {
         margin-top: 60px;
         margin-bottom: 22px;
         font-weight: bold;
-        @include text-crop;
     }
 
     ol {
@@ -3071,7 +3060,6 @@ h6 {
         font-weight: bold;
         margin-top: 50px;
         margin-bottom: 35px;
-        @include text-crop;
     }
 
 
@@ -3406,6 +3394,10 @@ a.active:parent {
 
             li {
                 margin: 0;
+                padding: 0;
+                &:before{
+                    display:none;
+                }
 
                 &:last-child {
                     border-left: 1px solid #dfe3ea;

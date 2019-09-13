@@ -1256,7 +1256,8 @@ h1 {
   .section-header p {
     color: #47546a;
     font-size: 18px;
-    line-height: 33px; }
+    line-height: 33px;
+    margin-bottom: 0; }
 
 .h2 {
   font-weight: bold;
@@ -1317,14 +1318,14 @@ h1 {
       color: #3667bd; }
 
 .features-items .icon {
-  margin: 10px 0 25px; }
+  margin: 10px 0 40px; }
 
 .features-items .title {
   font-weight: bold;
   font-size: 20px;
   line-height: 1.6;
   color: #000000;
-  margin-bottom: 20px; }
+  margin-bottom: 30px; }
   .features-items .title::before, .features-items .title::after {
     content: '';
     display: block;
@@ -1530,7 +1531,7 @@ img {
   .connecting-items .col-lg-3:last-child:before {
     display: none; }
   .connecting-items .icon {
-    margin-bottom: 25px; }
+    margin-bottom: 45px; }
   .connecting-items .title {
     font-weight: 500;
     font-size: 18px;
@@ -2299,8 +2300,8 @@ ul.checked_ul.horizontal_checked {
   position: relative;
   margin-bottom: -60px; }
   .frame img {
-    width: 346px;
-    height: 609px; }
+    width: 438px;
+    height: 710px; }
   .frame .btn.btn-md {
     padding: 20px 45px;
     position: absolute;
@@ -2308,7 +2309,7 @@ ul.checked_ul.horizontal_checked {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    bottom: 140px; }
+    bottom: 187px; }
   .frame:after {
     content: "";
     width: 87px;
@@ -2316,8 +2317,8 @@ ul.checked_ul.horizontal_checked {
     background: url(../img/kupit.svg) no-repeat;
     display: block;
     position: absolute;
-    left: -113px;
-    bottom: 160px; }
+    left: -47px;
+    bottom: 215px; }
 
 .section2 {
   padding: 120px 0;

@@ -11,7 +11,7 @@
         });
 
         window.addEventListener('test', null, options);
-    } catch(err) {}
+    } catch (err) {}
 
     let DIRECTION = null;
 
@@ -27,7 +27,7 @@
         return direction() === 'rtl';
     }
 
-    $(function () {
+    $(function() {
         /*
         // Touch Click
         */
@@ -36,7 +36,7 @@
 
             let touchStartData = null;
 
-            const onTouchstart = function(event){
+            const onTouchstart = function(event) {
                 const originalEvent = event.originalEvent;
 
                 if (originalEvent.touches.length !== 1) {
@@ -50,7 +50,7 @@
                     timestamp: (new Date).getTime(),
                 };
             };
-            const onTouchEnd = function(event){
+            const onTouchEnd = function(event) {
                 const originalEvent = event.originalEvent;
 
                 if (
@@ -86,7 +86,7 @@
 
         // call this in touchstart/touchend event handler
         function preventTouchClick() {
-            const onClick = function(event){
+            const onClick = function(event) {
                 event.preventDefault();
 
                 document.removeEventListener('click', onClick);
@@ -408,7 +408,7 @@
                 }
             }
         };
-        $('.menu').each(function(){
+        $('.menu').each(function() {
             new CMenu($(this));
         });
 
@@ -456,28 +456,28 @@
                 }
             });
         }
-        CIndicator.prototype.toggle = function(){
+        CIndicator.prototype.toggle = function() {
             if (this.isOpen()) {
                 this.close();
             } else {
                 this.open();
             }
         };
-        CIndicator.prototype.onMouseenter = function(){
+        CIndicator.prototype.onMouseenter = function() {
             this.element.addClass('indicator--hover');
 
             if (this.trigger === 'hover') {
                 this.open();
             }
         };
-        CIndicator.prototype.onMouseleave = function(){
+        CIndicator.prototype.onMouseleave = function() {
             this.element.removeClass('indicator--hover');
 
             if (this.trigger === 'hover') {
                 this.close();
             }
         };
-        CIndicator.prototype.onTransitionend = function(event){
+        CIndicator.prototype.onTransitionend = function(event) {
             if (
                 this.dropdown.is(event.target) &&
                 event.originalEvent.propertyName === 'visibility' &&
@@ -486,7 +486,7 @@
                 this.element.removeClass('indicator--display');
             }
         };
-        CIndicator.prototype.onClick = function(event){
+        CIndicator.prototype.onClick = function(event) {
             if (this.trigger !== 'click') {
                 return;
             }
@@ -497,16 +497,16 @@
 
             this.toggle();
         };
-        CIndicator.prototype.onGlobalClick = function(event){
+        CIndicator.prototype.onGlobalClick = function(event) {
             // check that the click was outside the element
             if (this.element.not($(event.target).closest('.indicator')).length) {
                 this.close();
             }
         };
-        CIndicator.prototype.isOpen = function(){
+        CIndicator.prototype.isOpen = function() {
             return this.element.is('.indicator--open');
         };
-        CIndicator.prototype.open = function(){
+        CIndicator.prototype.open = function() {
             this.element.addClass('indicator--display');
             this.element.width(); // force reflow
             this.element.addClass('indicator--open');
@@ -518,10 +518,10 @@
 
             this.dropdown.css('maxHeight', (viewportHeight - dropdownTop - paddingBottom) + 'px');
         };
-        CIndicator.prototype.close = function(){
+        CIndicator.prototype.close = function() {
             this.element.removeClass('indicator--open');
         };
-        CIndicator.prototype.closeImmediately = function(){
+        CIndicator.prototype.closeImmediately = function() {
             this.element.removeClass('indicator--open');
             this.element.removeClass('indicator--display');
         };
@@ -559,7 +559,7 @@
                     this.body.css('height', this.fixedHeight + 'px');
                 }
 
-                this.linksWrapper.on('transitionend', function (event) {
+                this.linksWrapper.on('transitionend', function(event) {
                     if (event.originalEvent.propertyName === 'height') {
                         $(this).css('height', '');
                         $(this).closest('.departments').removeClass('departments--transition');
@@ -861,7 +861,7 @@
                         const departmentsBottom = departments ? departments.body.offset().top + departments.body.outerHeight() : 0;
 
                         if (departments && departmentsMode === 'fixed' && departmentsBottom > navPanelBottom) {
-                            positionWhenToFix = positionWhenToStick = function () {
+                            positionWhenToFix = positionWhenToStick = function() {
                                 return departmentsBottom;
                             };
                         } else {
@@ -870,16 +870,16 @@
                                     return navPanelTop;
                                 };
                             } else {
-                                positionWhenToFix = function () {
+                                positionWhenToFix = function() {
                                     return shown ? navPanelTop : navPanelBottom;
                                 };
-                                positionWhenToStick = function () {
+                                positionWhenToStick = function() {
                                     return navPanelBottom;
                                 };
                             }
                         }
 
-                        window.addEventListener('scroll', onScroll, passiveSupported ? {passive: true} : false);
+                        window.addEventListener('scroll', onScroll, passiveSupported ? { passive: true } : false);
 
                         onScroll();
                     } else {
@@ -896,7 +896,7 @@
                             closeAllSubmenus();
                         }
 
-                        window.removeEventListener('scroll', onScroll, passiveSupported ? {passive: true} : false);
+                        window.removeEventListener('scroll', onScroll, passiveSupported ? { passive: true } : false);
                     }
                 };
 
@@ -987,7 +987,7 @@
                         positionWhenToFix = mobileHeader.offset().top;
                         positionWhenToStick = positionWhenToFix + (mode === 'alwaysOnTop' ? 0 : mobileHeader.outerHeight());
 
-                        window.addEventListener('scroll', onScroll, passiveSupported ? {passive: true} : false);
+                        window.addEventListener('scroll', onScroll, passiveSupported ? { passive: true } : false);
 
                         onScroll();
                     } else {
@@ -998,7 +998,7 @@
                             shown = false;
                         }
 
-                        window.removeEventListener('scroll', onScroll, passiveSupported ? {passive: true} : false);
+                        window.removeEventListener('scroll', onScroll, passiveSupported ? { passive: true } : false);
                     }
                 };
 
@@ -1009,6 +1009,7 @@
                 }
 
                 onMediaChange();
+
             }
         });
     });

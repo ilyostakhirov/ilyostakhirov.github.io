@@ -1,4 +1,4 @@
-(function ($) {
+(function($) {
     "use strict";
 
     let DIRECTION = null;
@@ -18,7 +18,7 @@
     /*
     // initialize custom numbers
     */
-    $(function () {
+    $(function() {
         $('.input-number').customNumber();
     });
 
@@ -26,9 +26,9 @@
     /*
     // product tabs
     */
-    $(function () {
-        $('.product-tabs').each(function (i, element) {
-            $('.product-tabs__list', element).on('click', '.product-tabs__item', function (event) {
+    $(function() {
+        $('.product-tabs').each(function(i, element) {
+            $('.product-tabs__list', element).on('click', '.product-tabs__item', function(event) {
                 event.preventDefault();
 
                 const tab = $(this);
@@ -76,18 +76,18 @@
         $('.block-brands__slider .owl-carousel').owlCarousel({
             nav: true,
             navText: [
-    "<i class='fas fa-chevron-left'></i>",
-    "<i class='fas fa-chevron-right'></i>"
-  ],
+                "<i class='fas fa-chevron-left'></i>",
+                "<i class='fas fa-chevron-right'></i>"
+            ],
             dots: false,
             loop: true,
             rtl: isRTL(),
             responsive: {
-                1200: {items: 6},
-                992: {items: 5},
-                768: {items: 4},
-                576: {items: 3},
-                0: {items: 2}
+                1200: { items: 6 },
+                992: { items: 5 },
+                768: { items: 4 },
+                576: { items: 3 },
+                0: { items: 2 }
             }
         });
     });
@@ -110,15 +110,15 @@
                 'grid-nl': {
 
                     responsive: {
-                        992: {items: 3},
-                        768: {items: 2},
-                        0: {items: 1}
+                        992: { items: 3 },
+                        768: { items: 2 },
+                        0: { items: 1 }
                     }
                 },
                 'list-sm': {
                     responsive: {
-                        992: {items: 2},
-                        0: {items: 1}
+                        992: { items: 2 },
+                        0: { items: 1 }
                     }
                 }
             };
@@ -145,9 +145,9 @@
             dots: true,
             rtl: isRTL(),
             responsive: {
-                768: {items: 3, margin: 32},
-                380: {items: 2, margin: 24},
-                0: {items: 1}
+                768: { items: 3, margin: 32 },
+                380: { items: 2, margin: 24 },
+                0: { items: 1 }
             }
         });
     });
@@ -201,11 +201,11 @@
         }
     };
 
-    $(function () {
+    $(function() {
         const modal = $('#quickview-modal');
 
         modal.on('shown.bs.modal', function() {
-            modal.find('.product').each(function () {
+            modal.find('.product').each(function() {
                 const gallery = $(this).find('.product-gallery');
 
                 if (gallery.length > 0) {
@@ -240,43 +240,43 @@
             const layoutOptions = {
                 'grid-4': {
                     responsive: {
-                        1200: {items: 4, margin: 14},
-                        992:  {items: 4, margin: 10},
-                        768:  {items: 3, margin: 10},
-                        576:  {items: 2, margin: 10},
-                        475:  {items: 2, margin: 10},
-                        0:    {items: 1}
+                        1200: { items: 4, margin: 14 },
+                        992: { items: 4, margin: 10 },
+                        768: { items: 3, margin: 10 },
+                        576: { items: 2, margin: 10 },
+                        475: { items: 2, margin: 10 },
+                        0: { items: 1 }
                     }
                 },
                 'grid-4-sm': {
                     responsive: {
-                        1200: {items: 4, margin: 14},
-                        992:  {items: 3, margin: 10},
-                        768:  {items: 3, margin: 10},
-                        576:  {items: 2, margin: 10},
-                        475:  {items: 2, margin: 10},
-                        0:    {items: 1}
+                        1200: { items: 4, margin: 14 },
+                        992: { items: 3, margin: 10 },
+                        768: { items: 3, margin: 10 },
+                        576: { items: 2, margin: 10 },
+                        475: { items: 2, margin: 10 },
+                        0: { items: 1 }
                     }
                 },
                 'grid-5': {
                     responsive: {
-                        1200: {items: 5, margin: 12},
-                        992:  {items: 4, margin: 10},
-                        768:  {items: 3, margin: 10},
-                        576:  {items: 2, margin: 10},
-                        475:  {items: 2, margin: 10},
-                        0:    {items: 1}
+                        1200: { items: 5, margin: 12 },
+                        992: { items: 4, margin: 10 },
+                        768: { items: 3, margin: 10 },
+                        576: { items: 2, margin: 10 },
+                        475: { items: 2, margin: 10 },
+                        0: { items: 1 }
                     }
                 },
                 'horizontal': {
                     items: 3,
                     responsive: {
-                        1200: {items: 3, margin: 14},
-                        992:  {items: 3, margin: 10},
-                        768:  {items: 2, margin: 10},
-                        576:  {items: 1},
-                        475:  {items: 1},
-                        0:    {items: 1}
+                        1200: { items: 3, margin: 14 },
+                        992: { items: 3, margin: 10 },
+                        768: { items: 2, margin: 10 },
+                        576: { items: 1 },
+                        475: { items: 1 },
+                        0: { items: 1 }
                     }
                 },
             };
@@ -306,16 +306,24 @@
                     let items = block.find('.owl-carousel .owl-item:not(".cloned") .block-products-carousel__column');
 
                     /*** this is ONLY_FOR_DEMO! / start */
-                    /**/ const itemsArray = items.get();
-                    /**/ const newItemsArray = [];
                     /**/
-                    /**/ while (itemsArray.length > 0) {
-                    /**/     const randomIndex = Math.floor(Math.random() * itemsArray.length);
-                    /**/     const randomItem = itemsArray.splice(randomIndex, 1)[0];
+                    const itemsArray = items.get();
                     /**/
-                    /**/     newItemsArray.push(randomItem);
-                    /**/ }
-                    /**/ items = $(newItemsArray);
+                    const newItemsArray = [];
+                    /**/
+                    /**/
+                    while (itemsArray.length > 0) {
+                        /**/
+                        const randomIndex = Math.floor(Math.random() * itemsArray.length);
+                        /**/
+                        const randomItem = itemsArray.splice(randomIndex, 1)[0];
+                        /**/
+                        /**/
+                        newItemsArray.push(randomItem);
+                        /**/
+                    }
+                    /**/
+                    items = $(newItemsArray);
                     /*** this is ONLY_FOR_DEMO! / end */
 
                     block.find('.owl-carousel')
@@ -360,37 +368,37 @@
         const layoutOptions = {
             standard: {
                 responsive: {
-                    1200: {items: 5},
-                    992: {items: 4},
-                    768: {items: 3},
-                    480: {items: 5},
-                    380: {items: 4},
-                    0: {items: 3}
+                    1200: { items: 5 },
+                    992: { items: 4 },
+                    768: { items: 3 },
+                    480: { items: 5 },
+                    380: { items: 4 },
+                    0: { items: 3 }
                 }
             },
             sidebar: {
                 responsive: {
-                    768: {items: 4},
-                    480: {items: 5},
-                    380: {items: 4},
-                    0: {items: 3}
+                    768: { items: 4 },
+                    480: { items: 5 },
+                    380: { items: 4 },
+                    0: { items: 3 }
                 }
             },
             columnar: {
                 responsive: {
-                    768: {items: 4},
-                    480: {items: 5},
-                    380: {items: 4},
-                    0: {items: 3}
+                    768: { items: 4 },
+                    480: { items: 5 },
+                    380: { items: 4 },
+                    0: { items: 3 }
                 }
             },
             quickview: {
                 responsive: {
-                    1200: {items: 5},
-                    768: {items: 4},
-                    480: {items: 5},
-                    380: {items: 4},
-                    0: {items: 3}
+                    1200: { items: 5 },
+                    768: { items: 4 },
+                    480: { items: 5 },
+                    380: { items: 4 },
+                    0: { items: 3 }
                 }
             }
         };
@@ -401,22 +409,22 @@
         const carousel = gallery.find('.product-gallery__carousel .owl-carousel');
 
         image
-            .owlCarousel({items: 1, dots: false, rtl: isRTL()})
+            .owlCarousel({ items: 1, dots: false, rtl: isRTL() })
             .on('changed.owl.carousel', syncPosition);
 
         carousel
-            .on('initialized.owl.carousel', function () {
+            .on('initialized.owl.carousel', function() {
                 carousel.find('.product-gallery__carousel-item').eq(0).addClass('product-gallery__carousel-item--active');
             })
             .owlCarousel($.extend({}, options, layoutOptions[layout]));
 
-        carousel.on('click', '.owl-item', function(e){
+        carousel.on('click', '.owl-item', function(e) {
             e.preventDefault();
 
             image.data('owl.carousel').to($(this).index(), 300, true);
         });
 
-        function syncPosition (el) {
+        function syncPosition(el) {
             let current = el.item.index;
 
             carousel
@@ -438,7 +446,7 @@
     };
 
     $(function() {
-        $('.product').each(function () {
+        $('.product').each(function() {
             const gallery = $(this).find('.product-gallery');
 
             if (gallery.length > 0) {
@@ -451,11 +459,11 @@
     /*
     // Checkout payment methods
     */
-    $(function () {
-        $('[name="checkout_payment_method"]').on('change', function () {
+    $(function() {
+        $('[name="checkout_payment_method"]').on('change', function() {
             const currentItem = $(this).closest('.payment-methods__item');
 
-            $(this).closest('.payment-methods__list').find('.payment-methods__item').each(function (i, element) {
+            $(this).closest('.payment-methods__list').find('.payment-methods__item').each(function(i, element) {
                 const links = $(element);
                 const linksContent = links.find('.payment-methods__item-container');
 
@@ -479,7 +487,7 @@
             });
         });
 
-        $('.payment-methods__item-container').on('transitionend', function (event) {
+        $('.payment-methods__item-container').on('transitionend', function(event) {
             if (event.originalEvent.propertyName === 'height') {
                 $(this).css('height', '');
             }
@@ -490,12 +498,12 @@
     /*
     // collapse
     */
-    $(function () {
-        $('[data-collapse]').each(function (i, element) {
+    $(function() {
+        $('[data-collapse]').each(function(i, element) {
             const collapse = element;
             const openedClass = $(element).data('collapse-opened-class');
 
-            $('[data-collapse-trigger]', collapse).on('click', function () {
+            $('[data-collapse-trigger]', collapse).on('click', function() {
                 const item = $(this).closest('[data-collapse-item]');
                 const content = item.children('[data-collapse-content]');
                 const itemParents = item.parents();
@@ -521,7 +529,7 @@
                 }
             });
 
-            $('[data-collapse-content]', collapse).on('transitionend', function (event) {
+            $('[data-collapse-content]', collapse).on('transitionend', function(event) {
                 if (event.originalEvent.propertyName === 'height') {
                     $(this).css('height', '');
                 }
@@ -533,8 +541,8 @@
     /*
     // price filter
     */
-    $(function () {
-        $('.filter-price').each(function (i, element) {
+    $(function() {
+        $('.filter-price').each(function(i, element) {
             const min = $(element).data('min');
             const max = $(element).data('max');
             const from = $(element).data('from');
@@ -556,7 +564,7 @@
                 $(element).find('.filter-price__max-value')[0]
             ];
 
-            slider.noUiSlider.on('update', function (values, handle) {
+            slider.noUiSlider.on('update', function(values, handle) {
                 titleValues[handle].innerHTML = values[handle];
             });
         });
@@ -566,7 +574,7 @@
     /*
     // mobilemenu
     */
-    $(function () {
+    $(function() {
         const body = $('body');
         const mobilemenu = $('.mobilemenu');
 
@@ -599,15 +607,15 @@
     /*
     // tooltips
     */
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip({trigger: 'hover'});
+    $(function() {
+        $('[data-toggle="tooltip"]').tooltip({ trigger: 'hover' });
     });
 
 
     /*
     // layout switcher
     */
-    $(function () {
+    $(function() {
         $('.layout-switcher__button').on('click', function() {
             const layoutSwitcher = $(this).closest('.layout-switcher');
             const productsView = $(this).closest('.products-view');
@@ -625,7 +633,7 @@
     /*
     // offcanvas filters
     */
-    $(function () {
+    $(function() {
         const body = $('body');
         const blockSidebar = $('.block-sidebar');
         const mobileMedia = matchMedia('(max-width: 991px)');
@@ -667,5 +675,10 @@
                 mobileMedia.addListener(onChangeMedia);
             }
         }
+
+        $(".back-menu").on("click", function() {
+                    $('.departments__submenu').removeClass('departments__submenu--open');
+                    $('.departments__item').removeClass('departments__item--hover');
+                });
     });
 })(jQuery);

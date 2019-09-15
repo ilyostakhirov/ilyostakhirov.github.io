@@ -74,7 +74,11 @@
     */
     $(function() {
         $('.block-brands__slider .owl-carousel').owlCarousel({
-            nav: false,
+            nav: true,
+            navText: [
+    "<i class='fas fa-chevron-left'></i>",
+    "<i class='fas fa-chevron-right'></i>"
+  ],
             dots: false,
             loop: true,
             rtl: isRTL(),

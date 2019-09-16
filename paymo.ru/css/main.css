@@ -2861,6 +2861,9 @@ h6 {
     .contacts .contact-item .icon {
       margin-right: 25px;
       width: 40px; }
+      .contacts .contact-item .icon img {
+        max-width: 40px;
+        width: 40px; }
     .contacts .contact-item .info {
       font-size: 20px;
       line-height: 1.5;
@@ -3495,7 +3498,8 @@ a.active:parent {
 @media screen and (min-width: 1100px) {
   .footer ul {
     height: auto !important; }
-  .main-menu .dropdown-menu.flexMenu-popup li a.dropdown-item:after, .navbar .main-menu .dropdown > .dropdown-menu > li.dropdown-menu-arrow {
+  .main-menu .dropdown-menu.flexMenu-popup li a.dropdown-item:after,
+  .navbar .main-menu .dropdown > .dropdown-menu > li.dropdown-menu-arrow {
     display: none; }
   .navbar .main-menu {
     margin-left: 80px; }
@@ -3666,9 +3670,33 @@ a.active:parent {
     font-size: 18px;
     margin-bottom: 10px; } }
 
+@media (min-width: 1100px) {
+  .sh-m {
+    display: none; } }
+
 @media (max-width: 1100px) {
+  .h-m {
+    display: none; }
+  .sh-m {
+    display: inline-block; }
+  .footer .row.mt-40 .col-2:last-child {
+    margin-top: 10px; }
+  .clients-logo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
   .banks .item {
     margin-bottom: 30px; }
+  .blue-pattern.ptb-120 {
+    padding: 30px 15px !important; }
+  .box-shadow .table.mb-0 td,
+  .box-shadow .table.mb-0 th {
+    white-space: nowrap;
+    padding-right: 20px; }
+  .box-shadow .table.mb-0 tr:last-child td {
+    border-bottom: 1px dashed #eff1f4; }
   .promo p br,
   .l-title br,
   .h2 br,
@@ -3696,8 +3724,18 @@ a.active:parent {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
-    padding: 0 25px;
+    padding: 0;
     margin-bottom: 30px; }
+  .p-7236 {
+    padding: 30px 30px !important; }
+  .w-boxes .item:last-child {
+    margin-bottom: 0; }
+  .w-boxes .item .info {
+    font-size: 20px; }
+  .blue-pattern .w-boxes .item .image {
+    margin-right: 0; }
+  .btn {
+    line-height: 1.8; }
   .w-boxes .item .image {
     margin-bottom: 20px; }
   .static,
@@ -3798,13 +3836,23 @@ a.active:parent {
     padding: 15px; }
   h1 {
     font-size: 32px; }
-  .btn-lg {
-    padding: 20px 10px; }
+  .btn-lg, .btn-md, .frame .btn.btn-md {
+    padding: 10px 25px; }
   .header .navbar-light .main-menu .nav-item {
     margin: 0;
     border-bottom: 1px solid #D6DBE4; }
   .header .navbar-light .main-menu .nav-link {
     padding: 23px 0; }
+  .promo .row {
+    padding: 60px 0 !important; }
+  .promo_text {
+    margin: 0 !important; }
+    .promo_text h1 {
+      margin-top: 0 !important; }
+    .promo_text p {
+      margin: 25px 0 !important; }
+    .promo_text .btn {
+      margin-bottom: 0 !important; }
   body {
     padding-top: 0; }
   .topbar {
@@ -3992,7 +4040,17 @@ a.active:parent {
   ul.checked_ul {
     margin-bottom: 40px; }
     ul.checked_ul li {
-      margin-bottom: 10px; }
+      margin-bottom: 25px; }
+  ul.checked_ul.horizontal_checked li {
+    margin-bottom: 25px; }
+  .static .item .percent {
+    font-size: 36px; }
+  .static .item .percent small {
+    font-size: 20px; }
+  .static .item span {
+    font-size: 14px; }
+  .static .item > div {
+    padding: 34px 24px 34px; }
   .connecting-items .col-lg-3:before {
     content: "";
     width: 11px;
@@ -4074,8 +4132,8 @@ a.active:parent {
     transform: translateX(-50%);
     bottom: 115px; }
   .frame img {
-    width: 272px;
-    height: 500px; }
+    width: 277px;
+    height: 450px; }
   .sm-img {
     max-width: 190px; } }
 

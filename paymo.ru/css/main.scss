@@ -1606,7 +1606,7 @@ img {
         border: 1px solid #26C6DA;
         color: #000;
     }
- 
+
     &:focus {
         +label {
             color: #939AA7;
@@ -1624,6 +1624,7 @@ img {
     }
 
 }
+
 .form-control.inputtel:hover {
     color: #fff;
 }
@@ -1631,10 +1632,12 @@ img {
 .form-control.inputtel:focus {
     color: #000;
 }
-.form-control.inputtel:focus + label {
+
+.form-control.inputtel:focus+label {
     font-size: 12px;
     top: 10px;
-} 
+}
+
 // Position labels for when javascript is disabled
 .no-js {
     .form-control+label {
@@ -1709,9 +1712,11 @@ select.form-control:not([size]):not([multiple]) {
 .text-col {
     display: flex;
     align-items: center;
-    .l-title{
+
+    .l-title {
         margin-bottom: 40px;
     }
+
     .title_sub {
         margin-bottom: 25px;
     }
@@ -2351,8 +2356,8 @@ ul.checked_ul.horizontal_checked {
     margin-bottom: -60px;
 
     img {
-            width: 438px;
-    height: 710px;
+        width: 438px;
+        height: 710px;
     }
 
     .btn.btn-md {
@@ -2360,7 +2365,7 @@ ul.checked_ul.horizontal_checked {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-            bottom: 187px;
+        bottom: 187px;
     }
 
     &:after {
@@ -2371,7 +2376,7 @@ ul.checked_ul.horizontal_checked {
         display: block;
         position: absolute;
         left: -47px;
-    bottom: 215px;
+        bottom: 215px;
     }
 }
 
@@ -2896,6 +2901,11 @@ h6 {
         .icon {
             margin-right: 25px;
             width: 40px;
+
+            img {
+                max-width: 40px;
+                width: 40px;
+            }
         }
 
         .info {
@@ -3399,8 +3409,9 @@ a.active:parent {
             li {
                 margin: 0;
                 padding: 0;
-                &:before{
-                    display:none;
+
+                &:before {
+                    display: none;
                 }
 
                 &:last-child {
@@ -3605,24 +3616,29 @@ a.active:parent {
     margin-top: 116px;
     padding: 0 20px;
 }
-.iphone{
-    position:relative;
+
+.iphone {
+    position: relative;
     width: 338px;
-    display:inline-block;
+    display: inline-block;
 }
 
-  .iphone-frame {
+.iphone-frame {
     position: relative;
     z-index: 2;
-    width: 100%; }
-  .iphone-video {
+    width: 100%;
+}
+
+.iphone-video {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 91%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+}
+
 @media (max-width: 1100px) {
 
     .portfolio {
@@ -3696,9 +3712,12 @@ a.active:parent {
     .footer ul {
         height: auto !important;
     }
-.main-menu .dropdown-menu.flexMenu-popup li a.dropdown-item:after,.navbar .main-menu .dropdown > .dropdown-menu > li.dropdown-menu-arrow {
-    display:none;
-}
+
+    .main-menu .dropdown-menu.flexMenu-popup li a.dropdown-item:after,
+    .navbar .main-menu .dropdown>.dropdown-menu>li.dropdown-menu-arrow {
+        display: none;
+    }
+
     .navbar .main-menu {
         margin-left: 80px;
 
@@ -3725,6 +3744,7 @@ a.active:parent {
             border-top: 1px solid #D6DBE4;
             border-radius: 0;
             margin-top: 0;
+
             li {
                 float: left;
                 position: relative;
@@ -3948,9 +3968,48 @@ a.active:parent {
     }
 }
 
+@media (min-width: 1100px) {
+    .sh-m {
+        display: none;
+    }
+}
+
 @media (max-width: 1100px) {
+    .h-m {
+        display: none;
+    }
+
+    .sh-m {
+        display: inline-block;
+    }
+
+    .footer .row.mt-40 .col-2:last-child {
+        margin-top: 10px;
+    }
+
+    .clients-logo {
+        flex-direction: column;
+    }
+
     .banks .item {
         margin-bottom: 30px;
+    }
+
+    .blue-pattern.ptb-120 {
+        padding: 30px 15px !important;
+    }
+
+    .box-shadow .table.mb-0 {
+
+        td,
+        th {
+            white-space: nowrap;
+            padding-right: 20px;
+        }
+
+        tr:last-child td {
+            border-bottom: 1px dashed #eff1f4;
+        }
     }
 
     .promo p br,
@@ -3981,8 +4040,28 @@ a.active:parent {
     .w-boxes .item {
         flex: 0 0 100%;
         max-width: 100%;
-        padding: 0 25px;
+        padding: 0;
         margin-bottom: 30px;
+    }
+
+    .p-7236 {
+        padding: 30px 30px !important;
+    }
+
+    .w-boxes .item:last-child {
+        margin-bottom: 0;
+    }
+
+    .w-boxes .item .info {
+        font-size: 20px;
+    }
+
+    .blue-pattern .w-boxes .item .image {
+        margin-right: 0;
+    }
+
+    .btn {
+        line-height: 1.8;
     }
 
     .w-boxes .item .image {
@@ -4092,16 +4171,20 @@ a.active:parent {
 
     .navbar-collapse {
         border-top: 1px solid #D6DBE4;
-        .main-menu{
-        margin:15px 20px 25px!important;
+
+        .main-menu {
+            margin: 15px 20px 25px !important;
         }
-        .topul{
-        margin:0 20px!important;
+
+        .topul {
+            margin: 0 20px !important;
         }
-        >.dropdown{
-            margin:0 20px 40px;
+
+        >.dropdown {
+            margin: 0 20px 40px;
         }
     }
+
     .navbar-collapse {
         border-top: 1px solid #D6DBE4;
     }
@@ -4133,8 +4216,8 @@ a.active:parent {
         font-size: 32px;
     }
 
-    .btn-lg {
-        padding: 20px 10px;
+    .btn-lg,.btn-md,.frame .btn.btn-md {
+        padding: 10px 25px;
     }
 
     .header .navbar-light .main-menu .nav-item {
@@ -4145,7 +4228,21 @@ a.active:parent {
     .header .navbar-light .main-menu .nav-link {
         padding: 23px 0;
     }
-
+    .promo .row{
+        padding: 60px 0!important;
+    }
+.promo_text{
+    margin:0!important;
+    h1{
+        margin-top: 0!important;
+    }
+    p{
+        margin:25px 0!important;
+    }
+    .btn{
+        margin-bottom: 0!important;
+    }
+}
     body {
         padding-top: 0;
     }
@@ -4383,9 +4480,29 @@ a.active:parent {
         margin-bottom: 40px;
 
         li {
-            margin-bottom: 10px;
+            margin-bottom: 25px;
 
         }
+    }
+
+    ul.checked_ul.horizontal_checked li {
+        margin-bottom: 25px;
+    }
+
+    .static .item .percent {
+        font-size: 36px;
+    }
+
+    .static .item .percent small {
+        font-size: 20px;
+    }
+
+    .static .item span {
+        font-size: 14px;
+    }
+
+    .static .item>div {
+        padding: 34px 24px 34px;
     }
 
     .connecting-items .col-lg-3:before {
@@ -4508,8 +4625,8 @@ a.active:parent {
     }
 
     .frame img {
-        width: 272px;
-        height: 500px;
+    width: 277px;
+    height: 450px;
     }
 
     .sm-img {

@@ -783,7 +783,9 @@ ul.checked_ul {
 .container {
     position: relative;
 }
-
+ul.dropdown-menu.show {
+    z-index: 10001;
+}
 body {
     position: relative;
     color: $primary;

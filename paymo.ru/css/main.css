@@ -918,6 +918,9 @@ ul.checked_ul li {
 .container {
   position: relative; }
 
+ul.dropdown-menu.show {
+  z-index: 10001; }
+
 body {
   position: relative;
   color: #000000;

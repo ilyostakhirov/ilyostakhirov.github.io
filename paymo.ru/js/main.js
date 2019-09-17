@@ -7,7 +7,7 @@ $(document).ready(function() {
         var topPos = $(this).scrollTop();
 
         // if user scrolls down - show scroll to top button
-        if (topPos > 100) {
+        if (topPos > 1000) {
             $(scrollTop).addClass('active');
 
         } else {

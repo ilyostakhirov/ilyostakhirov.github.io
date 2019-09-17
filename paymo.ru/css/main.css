@@ -926,6 +926,9 @@ body {
   background-color: #fff;
   padding-top: 107px; }
 
+body.opened_submenu {
+  padding-top: 162px; }
+
 h1 {
   font-weight: bold;
   font-size: 56px;

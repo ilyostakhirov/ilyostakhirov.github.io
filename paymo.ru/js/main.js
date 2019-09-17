@@ -25,35 +25,22 @@ $(document).ready(function() {
 
     }); // click() scroll top EMD
 
-    // var didScroll;
-    // var lastScrollTop = 0;
-    // var delta = 5;
-    // var navbarHeight = $('.header-wrap').outerHeight();
-
-    // $(window).scroll(function(event) {
-    //     didScroll = true;
-    //     $(".main-menu .dropdown-toggle").dropdown('hide')
-    // });
-
-    // setInterval(function() {
-    //     if (didScroll) {
-    //         hasScrolled();
-    //         didScroll = false;
-    //     }
-    // }, 250);
-
-    var didScroll;
     var hideHeader;
+    var didScroll;
     var lastScrollTop = 0;
     var delta = 5;
-    var navbarHeight = $('.header-wrap').outerHeight();​
+    var navbarHeight = $('.header-wrap').outerHeight();
+
     $(window).scroll(function(event) {
         didScroll = true;
         $(".main-menu .dropdown-toggle").dropdown('hide')
-    });​
+    });
+
     $('#spy .nav-link').on('click', function(e) {
-        hideHeader = true;​
-        var target = $(e.target).attr('href');​
+        hideHeader = true;
+
+        var target = $(e.target).attr('href');
+
         $(window).on('activate.bs.scrollspy', function(e, obj) {
             if (obj.relatedTarget === target) {
                 setTimeout(function() {
@@ -62,16 +49,15 @@ $(document).ready(function() {
                 }, 1000)
             }
         });
-    });​
+
+    });
+
     setInterval(function() {
         if (didScroll && !hideHeader) {
             hasScrolled();
             didScroll = false;
         }
     }, 250);
-
-
-
 
 
     function hasScrolled() {

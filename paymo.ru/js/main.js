@@ -1,5 +1,30 @@
 $(document).ready(function() {
 
+    var scrollTop = $(".scrollTop");
+
+    $(window).scroll(function() {
+        // declare variable
+        var topPos = $(this).scrollTop();
+
+        // if user scrolls down - show scroll to top button
+        if (topPos > 100) {
+            $(scrollTop).addClass('active');
+
+        } else {
+            $(scrollTop).removeClass('active');
+        }
+
+    }); // scroll END
+
+    //Click event to scroll to top
+    $(scrollTop).click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 200);
+        return false;
+
+    }); // click() scroll top EMD
+
     var didScroll;
     var lastScrollTop = 0;
     var delta = 5;
@@ -82,7 +107,7 @@ $(document).ready(function() {
     }
     $(document).ready(submenu);
 
- 	$(window).resize(submenu);
+    $(window).resize(submenu);
 
     $(window).on('load resize', function() {
         var window_width = $(window).width();

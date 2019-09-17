@@ -3449,6 +3449,45 @@ a.active:parent {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
+.scrollTop {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  right: 50px;
+  bottom: 50px;
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04);
+  z-index: 99;
+  border: 1px solid #ececec;
+  -webkit-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .scrollTop svg {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    margin-top: -5px; }
+
+.scrollTop:hover {
+  transform: translate3d(0, -5px, 0);
+  -webkit-transform: translate3d(0, -5px, 0); }
+
 @media (max-width: 1100px) {
   .portfolio #collapsedmenu .col .label-heading a:before {
     background: url(../img/arrow-w.svg) no-repeat 0 0; }
@@ -3862,7 +3901,9 @@ a.active:parent {
     display: none; }
   .mb--80 {
     margin-bottom: 0 !important; }
-  .btn-lg, .btn-md, .frame .btn.btn-md {
+  .btn-lg,
+  .btn-md,
+  .frame .btn.btn-md {
     padding: 10px 25px; }
   .header .navbar-light .main-menu .nav-item {
     margin: 0;

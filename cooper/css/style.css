@@ -5954,12 +5954,15 @@ a.read-all {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
     padding-left: 65px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .footer-contact li a {
+      color: #fff; }
   .footer-contact li:first-child {
     background: url(../img/tel.svg) no-repeat;
     min-height: 47px; }

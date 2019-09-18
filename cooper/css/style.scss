@@ -5841,9 +5841,12 @@ screen and (-ms-high-contrast:active) {
     li {
 
         display: flex;
-        align-items: center;
         padding-left: 65px;
         margin-bottom: 15px;
+        flex-direction: column;
+        a{
+            color:#fff;
+        }
     }
 
     li:first-child {

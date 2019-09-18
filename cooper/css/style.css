@@ -7509,7 +7509,8 @@ a.read-all {
   box-shadow: inset 0 0 0 2px #f2f2f2;
   padding: 12px;
   -webkit-border-radius: 2px;
-  border-radius: 2px; }
+  border-radius: 2px;
+  background-color: #fff; }
 
 .product-gallery__carousel-item--active {
   -webkit-box-shadow: inset 0 0 0 2px #55974d;

@@ -2689,8 +2689,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
   background-color: white;
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.08);
   -webkit-transition: opacity .2s ease-out, -webkit-box-shadow .3s ease-out, -webkit-transform .3s ease-out;
   transition: opacity .2s ease-out, -webkit-box-shadow .3s ease-out, -webkit-transform .3s ease-out;
   -o-transition: box-shadow .3s ease-out, transform .3s ease-out, opacity .2s ease-out;

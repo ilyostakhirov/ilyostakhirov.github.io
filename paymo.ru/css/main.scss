@@ -756,9 +756,9 @@ ul.checked_ul {
         color: #000;
         padding-left: 41px;
         margin-bottom: 26px;
-        background: url(../img/check_blue.svg) no-repeat 0 0;
-        padding-top: 3px;
-        @include text-crop;
+        background: url(../img/check_blue.svg) no-repeat 0 7px;
+        line-height: 28px;
+            height: 28px;
     }
 }
 
@@ -1439,7 +1439,7 @@ img {
 .banks {
     .item {
 
-        a {
+        a,div {
             background: #FFFFFF;
             box-shadow: 0px 7px 17px rgba(71, 84, 106, 0.08);
             border-radius: 6px;
@@ -1447,13 +1447,7 @@ img {
             align-items: center;
             height: 95px;
             justify-content: center;
-            transition: box-shadow .3s ease-out, transform .3s ease-out, opacity .2s ease-out;
-            transition-delay: .1s;
-            transform: translateZ(0);
-
-            &:hover {
-                transform: translateY(-10px);
-            }
+            transition: box-shadow .3s ease-out, transform .3s ease-out, opacity .2s ease-out;            
         }
     }
 }
@@ -4016,6 +4010,9 @@ a.active:parent {
 }
 
 @media (max-width: 1100px) {
+    body.opened_submenu{
+    padding-top: 0;
+}
     .h-m {
         display: none;
     }

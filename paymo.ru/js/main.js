@@ -216,6 +216,7 @@ $(document).ready(function() {
         speed: 100000,
         autoplay: {
             delay: 0,
+            disableOnInteraction: false
         },
         keyboard: {
             enabled: false

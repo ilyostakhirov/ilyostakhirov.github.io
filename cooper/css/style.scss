@@ -12648,6 +12648,9 @@ screen and (-ms-high-contrast:active) {
 }
 
 @media (max-width: 768px) {
+    .cart-table__column .btn{
+        margin:10px 10px 0 0!important; 
+    }
     .add-new {
         margin-top: 10px;
     }

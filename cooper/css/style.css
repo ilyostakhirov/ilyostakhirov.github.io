@@ -1069,7 +1069,9 @@ h6 {
 
 .btn.btn-svg-icon {
   padding: 0;
-  position: relative; }
+  position: relative;
+  line-height: 30px;
+  text-align: center; }
 
 .btn.btn-svg-icon svg {
   position: absolute;
@@ -6833,7 +6835,7 @@ a.read-all {
   .cart-table__column--image img {
     width: 80px; }
   .cart-table__column--price {
-    width: 200px;
+    width: 300px;
     text-align: right; }
   .cart-table__column--quantity {
     text-align: center;

@@ -6833,7 +6833,10 @@ a.read-all {
     width: 1px;
     text-align: center; }
   .cart-table__column--image img {
-    width: 80px; }
+    width: 50px;
+    height: 50px;
+    -o-object-fit: contain;
+    object-fit: contain; }
   .cart-table__column--price {
     width: 300px;
     text-align: right; }

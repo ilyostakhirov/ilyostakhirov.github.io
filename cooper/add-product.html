@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Электронная кооперационная биржа</title>
     <link rel="stylesheet" href="vendor/bootstrap-4.2.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/owl-carousel-2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/select2/css/select2.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -241,33 +241,185 @@
                         </ol>
                     </nav>
                 </div>
-                <div class="row mt-30">
+                <div class="page-header__title mt-20 mb-10">
+                    <h1>Кабинет пользователя</h1>
+                </div>
+                <div class="row">
                     <div class="col-12 col-lg-3 d-flex">
                         <div class="account-nav flex-grow-1">
                             <ul class="mt-20">
-                                <li class="account-nav__item"><a href="№">Реквизиты</a></li>
-                                <li class="account-nav__item account-nav__item--active"><a href="№">Каталог</a></li>
-                                <li class="account-nav__item"><a href="№">Понравившиеся товары</a></li>
-                                <li class="account-nav__item"><a href="№">Заключенные договора</a></li>
-                                <li class="account-nav__item"><a href="№">Договара на потверждении</a></li>
-                                <li class="account-nav__item"><a href="№">Чат</a></li>
+                                <li class="account-nav__item"><a href="№"><img src="img/icons/icon1.svg" alt=""><span>Реквизиты</span></a></li>
+                                <li class="account-nav__item account-nav__item--active"><a href="№"><img src="img/icons/icon2.svg" alt=""><span>Каталог</span></a></li>
+                                <li class="account-nav__item"><a href="№"><img src="img/fav.svg" alt=""><span>Понравившиеся товары</span></a></li>
+                                <li class="account-nav__item"><a href="№"><img src="img/icons/icon3.svg" alt=""><span>Заключенные договора</span></a></li>
+                                <li class="account-nav__item"><a href="№"><img src="img/icons/icon4.svg" alt=""><span>Договара на потверждении</span></a></li>
+                                <li class="account-nav__item"><a href="№"><img src="img/icons/icon5.svg" alt=""><span>Чат</span></a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-9 mt-4 mt-lg-0">
+                    <div class="col-12 col-lg-9 mt-4 mt-lg-0 mb-30">
                         <div class="card">
                             <div class="card-header">
                                 <h5>Каталог</h5>
                             </div>
                             <div class="card-divider"></div>
-                            <div class="card-body">
-                                <div class="row no-gutters">
-                                    <div class="col-12 col-lg-7 col-xl-6">
-                                        <div class="form-group"><label for="profile-first-name">First Name</label> <input type="text" class="form-control" id="profile-first-name" placeholder="First Name"></div>
-                                        <div class="form-group"><label for="profile-last-name">Last Name</label> <input type="text" class="form-control" id="profile-last-name" placeholder="Last Name"></div>
-                                        <div class="form-group"><label for="profile-email">Email Address</label> <input type="email" class="form-control" id="profile-email" placeholder="Email Address"></div>
-                                        <div class="form-group"><label for="profile-phone">Phone Number</label> <input type="text" class="form-control" id="profile-phone" placeholder="Phone Number"></div>
-                                        <div class="form-group mt-5 mb-0"><button class="btn btn-primary">Save</button></div>
+                            <div class="card-body ">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Модель: </label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Категория товара: </label>
+                                    <div class="col-md-7">
+                                        <select class="js-select2" name="state">
+                                            <option value="AL">Выбрать категорию товара</option>
+                                            <option value="WY">Wyoming</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <a class="add-new" href="#">Предложить новую<br> категорию</a>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Подкатегория товара:</label>
+                                    <div class="col-md-7">
+                                        <select class="js-select2" name="state">
+                                            <option value="AL">Выбрать категорию товара</option>
+                                            <option value="WY">Wyoming</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <a class="add-new" href="#">Предложить новую<br> категорию</a>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Единицы измерения:</label>
+                                    <div class="col-md-7">
+                                        <select class="js-select2" name="state">
+                                            <option value="AL">Выбрать единицу измерения</option>
+                                            <option value="WY">Wyoming</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Размеры: </label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Модель: </label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Материал: </label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Срок гарантии: </label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Место выпуска: </label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Код ТНВЕД: </label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Минимальный заказ: </label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Максимальный заказ:</label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Цена: </label>
+                                    <div class="col-md-7">
+                                        <div class="flex-wrap d-flex">
+                                            <div class="d-flex align-items-center mr-30">
+                                                <span class="mr-15 label-text">от</span>
+                                                <input placeholder="Количество" type="text" class="form-control m-w-170">
+                                            </div>
+                                            <div class="d-flex align-items-center flex-fill">
+                                                <span class="mr-15 label-text">Цена:</span>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 ">
+                                        <a class="add-new" href="#">Добавить цену</a>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Готово к отгрузке:</label>
+                                    <div class="col-md-7">
+                                        <div class="d-flex align-items-center">
+                                            <div class="custom-control custom-checkbox mr-5">
+                                                <input type="checkbox" class="custom-control-input" checked="checked" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1"></label>
+                                            </div>
+                                            <input placeholder="Количество" type="text" class="form-control m-w-170">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Тип доставки:</label>
+                                    <div class="col-md-7">
+                                        <select class="js-select2" name="state">
+                                            <option value="AL">Выбрать</option>
+                                            <option value="WY">Wyoming</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Описание продукта:</label>
+                                    <div class="col-md-7">
+                                        <textarea class="form-control" rows="3"></textarea>
+                                    </div>
+                                </div>
+                                 <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Фотографии товара:</label>
+                                    <div class="col-md-7">
+                                       <div class="d-flex thumbs-img mt-4 ">
+                                            <div class="mr-3">
+                                                <img src="images/botinka/1.jpg" alt="img">
+                                            </div>
+                                            <div class="mr-3">
+                                                <img src="images/botinka/2.jpg" alt="img">
+                                            </div>
+                                            <div class="mr-3">
+                                                <img src="images/botinka/3.jpg" alt="img">
+                                            </div>
+                                            <div class="file-input position-relative">
+                                                <i class="fas fa-plus-circle"></i>
+                                                <input type="file">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label"></label>
+                                    <div class="col-md-7 text-right">
+                                       <a class="btn btn-primary btn-lg" href="">Сохранить</a>
                                     </div>
                                 </div>
                             </div>
@@ -335,16 +487,16 @@
     </footer><!-- site__footer / end -->
     <script src="vendor/jquery-3.3.1/jquery.min.js"></script>
     <script src="vendor/bootstrap-4.2.1/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/owl-carousel-2.3.4/owl.carousel.min.js"></script>
-    <script src="vendor/nouislider-12.1.0/nouislider.min.js"></script>
+    <script src="vendor/select2/js/select2.min.js"></script>
     <script src="js/number.js"></script>
     <script src="js/main.js"></script>
     <script src="js/header.js"></script>
-    <!--  <script src="vendor/svg4everybody-2.1.9/svg4everybody.min.js"></script>
-    <script>
-    svg4everybody();
-    </script> -->
     <link rel="stylesheet" href="vendor/fontawesome-5.6.1/css/all.min.css">
+    <script>
+    $(document).ready(function() {
+        $('.js-select2').select2();
+    });
+    </script>
 </body>
 
 </html>

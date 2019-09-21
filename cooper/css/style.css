@@ -11751,7 +11751,9 @@ a.read-all {
   .cart__totals-footer {
     font-size: 18px; }
   .btn.btn-xl {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .btn.btn-sm {
+    height: auto; } }
 
 @media (max-width: 768px) {
   .cart-table__column .btn {

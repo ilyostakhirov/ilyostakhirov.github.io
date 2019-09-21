@@ -12645,6 +12645,9 @@ screen and (-ms-high-contrast:active) {
     .btn.btn-xl {
         font-size: 18px;
     }
+    .btn.btn-sm {
+    height: auto;
+}
 }
 
 @media (max-width: 768px) {

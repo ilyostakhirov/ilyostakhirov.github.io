@@ -12132,7 +12132,8 @@ p.date.text-center span {
   color: #fff;
   background-color: #3e8ef7;
   -webkit-border-radius: .286rem;
-  border-radius: .286rem; }
+  border-radius: .286rem;
+  text-align: right; }
 
 .chat-content:before {
   position: absolute;
@@ -12170,7 +12171,8 @@ p.date.text-center span {
   float: left;
   margin: 0 0 10px 20px;
   color: #76838f;
-  background-color: #dfe9ef; }
+  background-color: #dfe9ef;
+  text-align: left; }
 
 .chat-left .chat-content:before {
   right: auto;

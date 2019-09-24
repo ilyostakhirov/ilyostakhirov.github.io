@@ -12425,7 +12425,7 @@ screen and (-ms-high-contrast:active) {
 
 .app-message-chats {
     height: calc(100% - 96px);
-        height: calc(100vh - 176px);
+    height: calc(100vh - 176px);
     overflow-y: auto;
     text-align: center;
     background-color: #fff;
@@ -12454,9 +12454,11 @@ screen and (-ms-high-contrast:active) {
     color: #fff;
     text-align: left;
 }
+
 .app-message-chats .chat.chat-left .time {
     color: #a3afb7;
 }
+
 p.date.text-center span {
     display: inline-block;
     background-color: #e8e8e8;
@@ -12464,22 +12466,29 @@ p.date.text-center span {
     border-radius: 18px;
     font-size: 13px;
 }
+
 .app-message-input {
     position: relative;
     padding: 30px;
     padding-right: 110px;
     background-color: #f3f7f9;
 }
-.page-aside-scroll::-webkit-scrollbar,.app-message-chats::-webkit-scrollbar  {
-  width: 5px;
+
+.page-aside-scroll::-webkit-scrollbar,
+.app-message-chats::-webkit-scrollbar {
+    width: 5px;
 }
- 
-.page-aside-scroll::-webkit-scrollbar-track,.app-message-chats::-webkit-scrollbar-track {
-  background: #ddd;
+
+.page-aside-scroll::-webkit-scrollbar-track,
+.app-message-chats::-webkit-scrollbar-track {
+    background: #ddd;
 }
-.page-aside-scroll::-webkit-scrollbar-thumb,.app-message-chats::-webkit-scrollbar-thumb {
-  background: #bbbbbb; 
+
+.page-aside-scroll::-webkit-scrollbar-thumb,
+.app-message-chats::-webkit-scrollbar-thumb {
+    background: #bbbbbb;
 }
+
 .app-message-input .message-input {
     position: relative;
 }
@@ -13058,7 +13067,7 @@ p.date.text-center span {
     .page-aside-left .page-aside+.page-main {
         margin-left: 55px;
         position: fixed;
-        top:0;
+        top: 0;
     }
 
     .app-message-input {
@@ -13801,6 +13810,111 @@ p.date.text-center span {
     box-shadow: 2.5px 3.2px 35px rgba(0, 0, 0, 0.17);
 }
 
+.title-m {
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: block;
+
+    .btn {
+            border: 2px solid #55974d;
+    color: #000;
+    background-color: white;
+    padding: 6px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    }
+
+    input[type=file] {
+        font-size: 100px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+    }
+}
+
+.login-page {
+    .nav-tabs-horizontal {
+        max-width: 560px;
+        margin: 0 auto 50px;
+
+        .nav-tabs {
+            border: none;
+
+
+            .nav-item {
+                .nav-link {
+                    font-size: 18px;
+                    color: #787878;
+                    padding: 15px 35px;
+                    &:hover{
+                        border-color:transparent;
+                    }
+
+                    &.active {
+                        box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.17);
+                        border: none;
+                        border-radius: 11px 11px 0 0;
+                        color: #000;
+                        position: relative;
+
+                        &:before {
+                            content: "";
+                            width: 100%;
+                            height: 16px;
+                            background-color: #fff;
+                            position: absolute;
+                            bottom: -16px;
+                            z-index: 99;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .tab-content {
+            background: #fff url(../img/login-bg.png) no-repeat 100% 100%;
+            box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.17);
+            padding: 50px;
+            border-radius: 11px;
+
+            .tab-pane {
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0 auto;
+                    max-width: 250px;
+
+                    li {
+                        position: relative;
+                        border-bottom: 1px solid #909090;
+                        padding: 15px 15px 15px 45px;
+                        min-height: 40px;
+
+                        span {
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            font-size: 18px;
+                            text-decoration: underline;
+                            color: #909090;
+                            transform: translate(0, -50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1200px) {
     .products-list[data-layout=grid-4-full] .products-list__item {
         width: -webkit-calc(33.3333% - 20px);
@@ -14123,6 +14237,16 @@ p.date.text-center span {
 }
 
 @media (max-width: 768px) {
+    .login-page .nav-tabs-horizontal .nav-tabs .nav-item .nav-link {
+    font-size: 17px;
+    padding: 7px 14px;
+}
+.login-page .nav-tabs-horizontal .tab-content {
+    padding: 30px;
+}
+.login-page .nav-tabs-horizontal .tab-content .tab-pane ul {
+    max-width:100%;
+}
     .cart-table__column .btn {
         margin: 10px 10px 0 0 !important;
     }

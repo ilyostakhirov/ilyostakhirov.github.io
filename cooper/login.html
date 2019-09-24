@@ -230,48 +230,62 @@
             </div>
         </header>
         <div class="site__body">
-            <div class="container">
-                <div class="title">Авторизация</div>
-              <div class="nav-tabs-horizontal nav-tabs-inverse">
-              <ul class="nav nav-tabs nav-tabs-solid" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <a class="nav-link active" data-toggle="tab" href="#login1"
-                    aria-controls="login1" role="tab">
-                  с помощью ЭЦП
-                </a>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <a class="nav-link" data-toggle="tab" href="#login2" aria-controls="login2"
-                    role="tab">
-                  через xarid.uz
-                </a>
-                </li>
-              </ul>
-              <div class="tab-content">
-                <div class="tab-pane active" id="login1" role="tabpanel">
-                  <img src="img/login.svg" alt="">
-                  <h4>Пройдите авторизацию<br> с помощью ЭЦП</h4>
-                  <p>Для того, чтобы Вы могли пользоваться системой, присим пройти авторизацию с помощью Вашей Электронной цифровой подписи</p>
-                  <ul>
-                      <li>
-                        <div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
-  <label class="custom-control-label" for="customCheck1">Согласен с <a href="#">офертой</a></label>
-</div> 
-                      </li>
-                      <li>
-                          <a href="#" class="btn btn-outline"><img src="img/esp.svg" alt="">Загрузить ЭЦП</a>
-                      </li>
-                      <li>
-                          <a href="#" class="btn btn-primary">Войти в систему</a>
-                      </li>
-                  </ul>
+            <div class="container login-page">
+                <div class="title-m text-center mt-50 mb-50">Авторизация</div>
+                <div class="nav-tabs-horizontal nav-tabs-inverse">
+                    <ul class="nav nav-tabs nav-tabs-solid" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" data-toggle="tab" href="#login1" aria-controls="login1" role="tab">
+                                с помощью ЭЦП
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" data-toggle="tab" href="#login2" aria-controls="login2" role="tab">
+                                через xarid.uz
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="login1" role="tabpanel">
+                            <div class="text-center mb-40">
+                                <img src="img/login.svg" class="mb-20" alt="">
+                                <h5 class="mb-20">Пройдите авторизацию<br> с помощью ЭЦП</h5>
+                                <p>Для того, чтобы Вы могли пользоваться системой, присим пройти авторизацию с помощью Вашей Электронной цифровой подписи</p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <span class="num">1</span>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
+                                        <label class="custom-control-label" for="customCheck1">Согласен с <a href="#">офертой</a></label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="num">2</span>
+                                    <div class="upload-btn-wrapper">
+                                        <button class="btn btn-block"><img class="mr-15" src="img/esp.svg" alt="">Загрузить ЭЦП</button>
+                                        <input type="file" name="myfile" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="num">3</span>
+                                    <a href="#" class="btn btn-primary btn-block">Войти в систему</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" id="login2" role="tabpanel">
+                            <div class="text-center mb-40">
+                                <img src="img/login.svg" class="mb-20" alt="">
+                                <h5 class="mb-20">Пройдите авторизацию<br> через xarid.uz</h5>
+                            </div>
+                            <form>
+                                <div class="form-group"><label>Имя пользователя</label> <input type="text" class="form-control"></div>
+                                <div class="form-group"><label>Пароль</label> <input type="password" class="form-control" placeholder=""> </div>
+                                <button type="submit" class="btn btn-primary mt-2">Войти</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="tab-pane" id="login2" role="tabpanel">
-                  
-                </div>
-              </div>
-            </div>
             </div>
         </div><!-- .block-products-carousel -->
     </div>

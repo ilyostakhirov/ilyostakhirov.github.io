@@ -11564,7 +11564,8 @@ a.read-all {
 .app-message-chats {
   height: -webkit-calc(100% - 96px);
   height: calc(100% - 96px);
-  padding: 20px 30px;
+  height: -webkit-calc(100vh - 176px);
+  height: calc(100vh - 176px);
   overflow-y: auto;
   text-align: center;
   background-color: #fff; }
@@ -11612,7 +11613,7 @@ p.date.text-center span {
   background: #ddd; }
 
 .page-aside-scroll::-webkit-scrollbar-thumb, .app-message-chats::-webkit-scrollbar-thumb {
-  background: #666; }
+  background: #bbbbbb; }
 
 .app-message-input .message-input {
   position: relative; }

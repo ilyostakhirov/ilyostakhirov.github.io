@@ -629,6 +629,27 @@ h6 {
 .account-nav__item a:hover {
   background-color: #f7f7f7; }
 
+.fillter-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px; }
+  .fillter-block > .form-control {
+    width: 200px; }
+
+.input-daterange {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 30px 0 0; }
+  .input-daterange .form-control {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    margin-left: -1px;
+    border: 1px solid #ced4da; }
+
 .account-nav ul li a {
   font-size: 16px;
   color: #000000;
@@ -639,6 +660,15 @@ h6 {
   margin-bottom: 10px; }
   .account-nav ul li a span {
     margin-left: 15px; }
+    .account-nav ul li a span.badge {
+      -webkit-border-radius: 100%;
+      border-radius: 100%;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+      margin-top: -16px;
+      margin-left: 5px; }
 
 .account-nav ul li.account-nav__item--active a {
   -webkit-border-radius: 11px;
@@ -1156,12 +1186,20 @@ h6 {
   border-color: #55974d;
   background: #55974d; }
 
+.btbb {
+  -webkit-border-radius: 11px 0 0 11px !important;
+  border-radius: 11px 0 0 11px !important; }
+
+.brbb {
+  -webkit-border-radius: 0 11px 11px 0 !important;
+  border-radius: 0 11px 11px 0 !important; }
+
 .btn {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   font-size: 14px;
   font-weight: 300;
-  padding: 9px 39px;
+  padding: 7px 39px;
   height: auto; }
 
 .btn-primary {
@@ -1541,7 +1579,7 @@ h6 {
 .select2-container--default .select2-selection--single {
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  border: 1px solid #a8a8a8;
+  border: 1px solid #ced4da;
   border-width: 1px;
   -webkit-border-radius: 11px;
   border-radius: 11px;
@@ -12686,6 +12724,12 @@ p.date.text-center span {
     display: none; } }
 
 @media (max-width: 992px) {
+  .fillter-block {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .fillter-block .input-daterange {
+      margin-bottom: 20px; }
   .chat-content {
     margin: 0 10px 10px 0;
     padding: 8px; }

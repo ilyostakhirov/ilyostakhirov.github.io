@@ -324,7 +324,22 @@ h6 {
 .account-nav__item a:hover {
     background-color: #f7f7f7
 }
-
+.fillter-block{
+    display:flex;
+    margin:30px;
+    >.form-control{
+        width: 200px;
+    }
+}
+.input-daterange{
+    display:flex;
+    margin:0 30px 0 0;
+.form-control{
+    border-radius:0;
+        margin-left: -1px;
+        border: 1px solid #ced4da;
+}
+}
 .account-nav ul {
     li {
         a {
@@ -335,7 +350,14 @@ h6 {
 
             span {
                 margin-left: 15px;
+               &.badge{
+                border-radius:100%;
+                align-self: center;
+                margin-top: -16px;
+    margin-left: 5px;
+               } 
             }
+
 
 
         }
@@ -895,12 +917,17 @@ screen and (-ms-high-contrast:active) {
     border-color: #55974d;
     background: #55974d
 }
-
+.btbb{
+    border-radius:11px 0 0 11px!important;
+}
+.brbb{
+    border-radius:0 11px 11px 0!important;
+}
 .btn {
     border-radius: 10px;
     font-size: 14px;
     font-weight: 300;
-    padding: 9px 39px;
+    padding: 7px 39px;
     height: auto;
 }
 
@@ -1336,7 +1363,7 @@ screen and (-ms-high-contrast:active) {
 .form-control,
 .select2-container--default .select2-selection--single {
     border-radius: 2px;
-    border: 1px solid rgb(168, 168, 168);
+    border: 1px solid #ced4da;
     border-width: 1px;
     border-radius: 11px;
     height: calc(2.25rem + 2px);
@@ -13997,6 +14024,12 @@ p.date.text-center span {
 }
 
 @media (max-width: 992px) {
+    .fillter-block {
+    flex-wrap: wrap;
+    .input-daterange{
+        margin-bottom: 20px;
+    }
+}
     .chat-content {
         margin: 0 10px 10px 0;
         padding: 8px;

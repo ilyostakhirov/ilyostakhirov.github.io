@@ -12623,6 +12623,8 @@ p.date.text-center span {
         border-bottom: 1px solid #909090;
         padding: 15px 15px 15px 45px;
         min-height: 40px; }
+        .login-page .nav-tabs-horizontal .tab-content .tab-pane ul li:last-child {
+          border: none; }
         .login-page .nav-tabs-horizontal .tab-content .tab-pane ul li span {
           position: absolute;
           left: 0;

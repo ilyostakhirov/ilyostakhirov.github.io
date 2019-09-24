@@ -13898,6 +13898,9 @@ p.date.text-center span {
                         border-bottom: 1px solid #909090;
                         padding: 15px 15px 15px 45px;
                         min-height: 40px;
+                        &:last-child{
+                            border:none;
+                        }
 
                         span {
                             position: absolute;

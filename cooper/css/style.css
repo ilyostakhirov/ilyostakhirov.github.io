@@ -11544,7 +11544,8 @@ a.read-all {
   -webkit-border-radius: 0;
   border-radius: 0; }
 
-.app-message-list .list-group .list-group-item:hover, .app-message-list .list-group .list-group-item.active {
+.app-message-list .list-group .list-group-item:hover,
+.app-message-list .list-group .list-group-item.active {
   background-color: #d9e9ff; }
 
 .app-message-list .list-group .list-group-item.active:after {
@@ -11636,7 +11637,9 @@ a.read-all {
   .app-message .page {
     height: -webkit-calc(100vh - 66px);
     height: calc(100vh - 66px);
-    margin: 0 -15px; } }
+    margin: 0 -15px;
+    z-index: 99;
+    position: fixed; } }
 
 @media (min-width: 1600px) {
   .app-message .page {
@@ -11757,7 +11760,9 @@ a.read-all {
   -o-transition: visibility .1s ease, top .3s ease, left .5s ease, right .5s ease;
   transition: visibility .1s ease, top .3s ease, left .5s ease, right .5s ease; }
 
-.page-aside .list-group-item.active, .page-aside .list-group-item.active:focus, .page-aside .list-group-item.active:hover {
+.page-aside .list-group-item.active,
+.page-aside .list-group-item.active:focus,
+.page-aside .list-group-item.active:hover {
   z-index: 0; }
 
 .page-aside-left .page-aside {
@@ -11890,12 +11895,14 @@ a.read-all {
 .page-aside .list-group-item .item-right {
   float: right; }
 
-.page-aside .list-group-item:hover, .page-aside .list-group-item:focus {
+.page-aside .list-group-item:hover,
+.page-aside .list-group-item:focus {
   color: #3e8ef7;
   background-color: #f3f7f9;
   border: 0; }
 
-.page-aside .list-group-item:hover > .icon, .page-aside .list-group-item:focus > .icon {
+.page-aside .list-group-item:hover > .icon,
+.page-aside .list-group-item:focus > .icon {
   color: #3e8ef7; }
 
 .page-aside .list-group-item.active {
@@ -11905,12 +11912,14 @@ a.read-all {
 .page-aside .list-group-item.active > .icon {
   color: #3e8ef7; }
 
-.page-aside .list-group-item.active:hover, .page-aside .list-group-item.active:focus {
+.page-aside .list-group-item.active:hover,
+.page-aside .list-group-item.active:focus {
   color: #3e8ef7;
   background-color: #f3f7f9;
   border: 0; }
 
-.page-aside .list-group-item.active:hover > .icon, .page-aside .list-group-item.active:focus > .icon {
+.page-aside .list-group-item.active:hover > .icon,
+.page-aside .list-group-item.active:focus > .icon {
   color: #3e8ef7; }
 
 .page-aside .list-group.has-actions .list-group-item {
@@ -12015,7 +12024,8 @@ a.read-all {
     padding: 7px 12px; }
     .app-message-input .message-input-btn img {
       width: 21px; }
-  .site-menubar-changing .page-aside, .site-menubar-open .page-aside {
+  .site-menubar-changing .page-aside,
+  .site-menubar-open .page-aside {
     height: 100%; }
   .page-aside .page-aside-inner {
     height: 100%;
@@ -12028,7 +12038,8 @@ a.read-all {
     width: 260px; }
     .page-aside.open .input-search {
       display: block; }
-  .site-menubar-changing .page-aside.open, .site-menubar-open .page-aside.open {
+  .site-menubar-changing .page-aside.open,
+  .site-menubar-open .page-aside.open {
     visibility: hidden; }
   .page-aside.open .page-aside-switch .fa-chevron-right {
     display: none; }
@@ -12037,7 +12048,9 @@ a.read-all {
   .page-aside-left .page-aside {
     left: -260px; }
   .page-aside-left .page-aside + .page-main {
-    margin-left: 55px; }
+    margin-left: 55px;
+    position: fixed;
+    top: 0; }
   .app-message-input {
     padding: 15px;
     padding-right: 67px; }
@@ -12386,7 +12399,8 @@ a.read-all {
   line-height: 2em;
   vertical-align: middle; }
 
-.icon-stack-1x, .icon-stack-2x {
+.icon-stack-1x,
+.icon-stack-2x {
   position: absolute;
   left: 0;
   width: 100%;
@@ -12404,22 +12418,30 @@ a.read-all {
 .icon-color {
   color: rgba(55, 71, 79, 0.4); }
 
-.icon-color:hover, .icon-color:focus {
+.icon-color:hover,
+.icon-color:focus {
   color: rgba(55, 71, 79, 0.6); }
 
-.icon-color.active, .icon-color:active {
+.icon-color.active,
+.icon-color:active {
   color: #37474f; }
 
 .icon-color-alt {
   color: rgba(55, 71, 79, 0.6); }
 
-.icon-color-alt:hover, .icon-color-alt:focus {
+.icon-color-alt:hover,
+.icon-color-alt:focus {
   color: rgba(55, 71, 79, 0.8); }
 
-.icon-color-alt.active, .icon-color-alt:active {
+.icon-color-alt.active,
+.icon-color-alt:active {
   color: #37474f; }
 
-:root-rotate-90, :root-rotate-180, :root-rotate-270, :root-flip-horizontal, :root-flip-vertical {
+:root-rotate-90,
+:root-rotate-180,
+:root-rotate-270,
+:root-flip-horizontal,
+:root-flip-vertical {
   -webkit-filter: none;
   filter: none; }
 

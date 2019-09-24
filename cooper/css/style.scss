@@ -12449,19 +12449,37 @@ screen and (-ms-high-contrast:active) {
 }
 
 .app-message-chats .chats .time {
-    margin: 40px 0;
+    margin: 0;
     font-size: 12px;
-    color: #a3afb7;
-    text-align: center;
+    color: #fff;
+    text-align: left;
 }
-
+.app-message-chats .chat.chat-left .time {
+    color: #a3afb7;
+}
+p.date.text-center span {
+    display: inline-block;
+    background-color: #e8e8e8;
+    padding: 3px 10px;
+    border-radius: 18px;
+    font-size: 13px;
+}
 .app-message-input {
     position: relative;
     padding: 30px;
     padding-right: 110px;
     background-color: #f3f7f9;
 }
-
+.page-aside-scroll::-webkit-scrollbar,.app-message-chats::-webkit-scrollbar  {
+  width: 5px;
+}
+ 
+.page-aside-scroll::-webkit-scrollbar-track,.app-message-chats::-webkit-scrollbar-track {
+  background: #ddd;
+}
+.page-aside-scroll::-webkit-scrollbar-thumb,.app-message-chats::-webkit-scrollbar-thumb {
+  background: #666; 
+}
 .app-message-input .message-input {
     position: relative;
 }

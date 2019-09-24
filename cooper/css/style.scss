@@ -12510,7 +12510,8 @@ screen and (-ms-high-contrast:active) {
 
 @media (max-width: 479px) {
   .app-message .page {
-    height: calc(100vh - 120px);
+    height: calc(100vh - 66px);
+    margin:0 -15px;
   }
 }
 
@@ -12939,7 +12940,7 @@ screen and (-ms-high-contrast:active) {
 @media (max-width: 767px) {
     .app-message-chats {
     padding: 15px;
-        height: calc(100% - 10px);
+        height: calc(100% - 66px);
 }
   .page-aside {
     position: fixed;
@@ -13011,7 +13012,7 @@ screen and (-ms-high-contrast:active) {
   }
 
   .page-aside-left .page-aside + .page-main {
-    margin-left: 35px;
+    margin-left: 55px;
   }
   .app-message-input {
     padding: 15px;

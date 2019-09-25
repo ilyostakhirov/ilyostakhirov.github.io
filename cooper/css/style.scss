@@ -8916,7 +8916,9 @@ screen and (min-width:480px) and (-ms-high-contrast:active) {
         -ms-flex-order: 1;
         order: 1
     }
-
+.shop-layout__sidebar.comp-info {
+        order: 0
+    }
     .shop-layout--sidebar--end .shop-layout__sidebar,
     .shop-layout--sidebar--start .shop-layout__sidebar {
         margin-left: 0;

@@ -8554,6 +8554,11 @@ a.read-all {
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     order: 1; }
+  .shop-layout__sidebar.comp-info {
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0; }
   .shop-layout--sidebar--end .shop-layout__sidebar,
   .shop-layout--sidebar--start .shop-layout__sidebar {
     margin-left: 0;

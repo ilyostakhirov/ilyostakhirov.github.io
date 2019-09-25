@@ -13250,7 +13250,12 @@ p.date.text-center span {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
-    flex: 0 0 100%; } }
+    flex: 0 0 100%; }
+  .compare-table .btn-primary {
+    margin-bottom: 10px; }
+  .btn.btn-sm {
+    padding: .375rem 10px;
+    font-size: 11px; } }
 
 @media (max-width: 500px) {
   .fillter-block .input-daterange {

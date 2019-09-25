@@ -14555,6 +14555,13 @@ p.date.text-center span {
         max-width: 100%;
         flex: 0 0 100%;
     }
+    .compare-table .btn-primary{
+        margin-bottom: 10px;
+    }
+    .btn.btn-sm {
+    padding: .375rem 10px;
+        font-size: 11px;
+}
 }
 
 @media (max-width: 500px) {

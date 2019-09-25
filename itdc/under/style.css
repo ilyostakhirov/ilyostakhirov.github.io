@@ -559,7 +559,10 @@ body.mrs-white .morph-button-modal-2 .morph-content {
   top: 50%;
   visibility: visible;
   width: 70%;
+  text-align: center;
 }
+.marshall-content
+
 .marshall-button-group {
   margin-top: 40px;
   position: relative;
@@ -1678,7 +1681,7 @@ canvas.fireworks {
 }
 .big_title {
   color: #5ab030;
-  font-size: 3.5em;
+  font-size: 3em;
 }
 .short_description {
   margin: 35px auto auto;

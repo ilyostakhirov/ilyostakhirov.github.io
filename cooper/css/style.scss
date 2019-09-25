@@ -718,7 +718,7 @@ h6 {
 .breadcrumb-item {
     position: relative;
     padding-left: 0;
-    padding-right: 30px
+    padding-right: .5rem;
 }
 
 .breadcrumb-item a {
@@ -732,11 +732,11 @@ h6 {
 
 .breadcrumb-item+.breadcrumb-item {
     padding-left: 0;
-    padding-right: 30px
+    padding-right: .5rem;
 }
 
 .breadcrumb-item+.breadcrumb-item:before {
-    display: none
+    
 }
 
 .breadcrumb-item.active {
@@ -5722,11 +5722,12 @@ screen and (-ms-high-contrast:active) {
         .input-group-btn {
             .btn {
                 font-size: 14px;
-                padding: 9px 33px;
+                padding: 12px 33px;
+                border:none;
                 border-right: 1px solid #eee;
                 box-shadow: none;
                 height: auto;
-                border-radius: 0;
+                border-radius: 10px 0 0 10px;
             }
 
             .dropdown-menu {
@@ -9909,6 +9910,7 @@ screen and (min-width:480px) and (-ms-high-contrast:active) {
 
 .block-brands__slider {
     padding: 0 50px;
+    margin-bottom: 30px;
 }
 
 .block-brands__item {
@@ -13877,6 +13879,8 @@ p.date.text-center span {
 
 
             .nav-item {
+                width: 50%;
+    text-align: center;
                 .nav-link {
                     font-size: 18px;
                     color: #787878;

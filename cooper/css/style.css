@@ -13179,7 +13179,9 @@ p.date.text-center span {
       display: none; }
   .search .input-group .input-group-btn .btn {
     font-size: 13px;
-    padding: 9px 8px; }
+    padding: 12px 8px; }
+  .fillter-block .btn {
+    margin-top: 20px; }
   .btn {
     padding: 9px 15px; }
   .site__footer .footer-links__title {
@@ -13251,6 +13253,8 @@ p.date.text-center span {
     flex: 0 0 100%; } }
 
 @media (max-width: 500px) {
+  .fillter-block .input-daterange {
+    margin-right: 0; }
   .logo span {
     font-size: 12px;
     line-height: 1.1;

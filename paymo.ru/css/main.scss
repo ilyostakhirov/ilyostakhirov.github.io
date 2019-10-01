@@ -898,6 +898,7 @@ h1 {
                 text-transform: uppercase;
                 padding: 29px 0;
                 display: block;
+                    outline: none;
 
                 &:before {
                     display: block;
@@ -972,6 +973,7 @@ h1 {
 }
 .main-menu .dropdown-menu li a.dropdown-item:hover,.header .navbar-light .main-menu .nav-link:hover {
     color: #000!important;
+        outline: none;
 }
 
 .main-menu .dropdown-menu li a.dropdown-item:active:after,.main-menu .dropdown-menu li a.dropdown-item.active:after {
@@ -1109,7 +1111,7 @@ h1 {
 }
 
 .btn-menu {
-    position: relative;
+    position: absolute;
     background: transparent;
     cursor: pointer;
     width: 25px;
@@ -1121,7 +1123,8 @@ h1 {
     transition: all ease .238s;
     border: none;
     outline: none;
-    margin-right: 25px;
+    right: 25px;
+    top: 11px;
 
     &:focus {
         outline: none;
@@ -3688,12 +3691,14 @@ a.active:parent {
         }
 
         .portfolio_section4,
-        .portfolio_section3,
         .portfolio_section2,
         .portfolio_section {
             background: none;
             padding: 0;
             margin-bottom: 100px;
+        }
+        .portfolio_section2,.portfolio_section3{
+            margin-bottom: 0;
         }
     }
 
@@ -3718,6 +3723,9 @@ a.active:parent {
 
     .mb-s-30 {
         margin-bottom: 30px;
+    }
+    .mb-s-40 {
+        margin-bottom: 40px;
     }
 }
 
@@ -4009,6 +4017,9 @@ a.active:parent {
 }
 
 @media (max-width: 1100px) {
+    .col-lg-7.div_text.pl-75 {
+    padding: 25px!important;
+}
     body.opened_submenu{
     padding-top: 0;
 }
@@ -4038,14 +4049,16 @@ a.active:parent {
 
     .box-shadow .table.mb-0 {
 
-        td,
-        th {
+        td:first-child,
+        th:first-child {
             white-space: nowrap;
             padding-right: 20px;
+                width: 100%;
         }
 
         tr:last-child td {
-            border-bottom: 1px dashed #eff1f4;
+                border-bottom: none;
+    padding-bottom: 0;
         }
     }
 
@@ -4091,6 +4104,7 @@ a.active:parent {
 
     .w-boxes .item .info {
         font-size: 20px;
+        text-align: center;
     }
 
     .blue-pattern .w-boxes .item .image {
@@ -4291,6 +4305,9 @@ a.active:parent {
 
     .mt-s-40 {
         margin-top: 40px;
+    }
+    .mt-s-30 {
+        margin-top: 30px;
     }
 
     .p-9755 {
@@ -4649,7 +4666,10 @@ a.active:parent {
     ul.checked_ul.horizontal_checked {
         flex-direction: column;
     }
-
+.scrollTop {
+    right: 15px;
+    bottom: 15px;
+}
     #collapsedmenu {
         .col {
             border-bottom: 1px solid #DDE0E6;
@@ -4662,6 +4682,9 @@ a.active:parent {
                     padding: 20px;
                     display: block;
                     position: relative;
+                    span{
+                        display:none;
+                    }
 
                     &:before {
                         display: inline-block;

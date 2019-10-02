@@ -488,6 +488,19 @@ h6 {
 h6 {
   font-size: 16px; }
 
+.alert > :last-child {
+  margin-bottom: 0; }
+
+.alert ul {
+  padding-left: 13px; }
+
+.alert ul li {
+  padding-left: 7px; }
+
+.alert {
+  -webkit-border-radius: 11px;
+  border-radius: 11px; }
+
 .document {
   border: 2px solid #f0f0f0;
   -webkit-border-radius: 2px;
@@ -725,8 +738,8 @@ h6 {
 
 .alert {
   border: none;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 11px;
+  border-radius: 11px;
   font-size: 15px;
   line-height: 20px;
   padding: .75rem 1rem; }

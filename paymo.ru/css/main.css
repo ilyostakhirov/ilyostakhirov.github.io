@@ -4065,8 +4065,6 @@ a.active:parent {
     -ms-transform: translateX(-50%) rotate(90deg);
     transform: translateX(-50%) rotate(90deg);
     margin-top: -11px; }
-  .secure-section .mb-100 {
-    display: none; }
   .illustration-desc {
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;

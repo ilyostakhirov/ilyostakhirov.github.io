@@ -7100,7 +7100,8 @@ a.read-all {
   min-width: 180px;
   max-width: 180px;
   text-align: center;
-  vertical-align: top; }
+  vertical-align: top;
+  background-color: #fff; }
 
 .compare-table td,
 .compare-table th {
@@ -12666,6 +12667,39 @@ p.date.text-center span {
     left: 0;
     top: 0;
     opacity: 0; }
+
+.compare-categories {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  -webkit-border-radius: .25rem;
+  border-radius: .25rem; }
+  .compare-categories li:first-child a {
+    margin-left: 0;
+    -webkit-border-top-left-radius: .215rem;
+    border-top-left-radius: .215rem;
+    -webkit-border-bottom-left-radius: .215rem;
+    border-bottom-left-radius: .215rem; }
+  .compare-categories li:last-child a {
+    -webkit-border-top-right-radius: .215rem;
+    border-top-right-radius: .215rem;
+    -webkit-border-bottom-right-radius: .215rem;
+    border-bottom-right-radius: .215rem; }
+  .compare-categories li.active a {
+    color: #55974d; }
+  .compare-categories li a {
+    position: relative;
+    display: block;
+    padding: .643rem 1.072rem;
+    margin-left: -1px;
+    line-height: 1.571429;
+    color: #76838f;
+    background-color: #fff;
+    border: 1px solid #e4eaec;
+    font-size: 13px; }
 
 .login-page .nav-tabs-horizontal {
   max-width: 560px;

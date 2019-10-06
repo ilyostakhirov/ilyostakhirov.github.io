@@ -143,18 +143,23 @@ h6 {
 h6 {
     font-size: 16px
 }
+
 .alert>:last-child {
     margin-bottom: 0;
 }
+
 .alert ul {
     padding-left: 13px;
 }
+
 .alert ul li {
     padding-left: 7px;
 }
+
 .alert {
     border-radius: 11px;
 }
+
 .document {
     border: 2px solid #f0f0f0;
     border-radius: 2px;
@@ -7220,7 +7225,9 @@ screen and (-ms-high-contrast:active) {
     min-width: 180px;
     max-width: 180px;
     text-align: center;
-    vertical-align: top
+    vertical-align: top;
+    background-color: #fff
+
 }
 
 .compare-table td,
@@ -13931,6 +13938,48 @@ p.date.text-center span {
     }
 }
 
+.compare-categories {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: .25rem;
+
+    li {
+        &:first-child {
+            a {
+                margin-left: 0;
+                border-top-left-radius: .215rem;
+                border-bottom-left-radius: .215rem;
+            }
+
+        }
+
+        &:last-child {
+            a {
+                border-top-right-radius: .215rem;
+                border-bottom-right-radius: .215rem;
+            }
+        }
+        &.active{
+            a {
+                color:#55974d;
+            }
+        }
+
+        a {
+            position: relative;
+            display: block;
+            padding: .643rem 1.072rem;
+            margin-left: -1px;
+            line-height: 1.571429;
+            color: #76838f;
+            background-color: #fff;
+            border: 1px solid #e4eaec;
+            font-size: 13px;
+        }
+    }
+}
+
 .login-page {
     .nav-tabs-horizontal {
         max-width: 560px;
@@ -14455,9 +14504,11 @@ p.date.text-center span {
         font-size: 13px;
         padding: 12px 8px;
     }
-.fillter-block .btn{
-    margin-top:20px;
-}
+
+    .fillter-block .btn {
+        margin-top: 20px;
+    }
+
     .btn {
         padding: 9px 15px;
     }
@@ -14566,19 +14617,22 @@ p.date.text-center span {
         max-width: 100%;
         flex: 0 0 100%;
     }
-    .compare-table .btn-primary{
+
+    .compare-table .btn-primary {
         margin-bottom: 10px;
     }
+
     .btn.btn-sm {
-    padding: .375rem 10px;
+        padding: .375rem 10px;
         font-size: 11px;
-}
+    }
 }
 
 @media (max-width: 500px) {
     .fillter-block .input-daterange {
-    margin-right: 0;
-}
+        margin-right: 0;
+    }
+
     .logo span {
         font-size: 12px;
         line-height: 1.1;

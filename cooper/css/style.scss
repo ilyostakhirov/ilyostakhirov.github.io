@@ -7227,7 +7227,6 @@ screen and (-ms-high-contrast:active) {
     text-align: center;
     vertical-align: top;
     background-color: #fff
-
 }
 
 .compare-table td,
@@ -13960,9 +13959,10 @@ p.date.text-center span {
                 border-bottom-right-radius: .215rem;
             }
         }
-        &.active{
+
+        &.active {
             a {
-                color:#55974d;
+                color: #55974d;
             }
         }
 
@@ -14641,5 +14641,17 @@ p.date.text-center span {
 
     .nav-panel__indicators {
         display: none;
+    }
+}
+
+marquee {
+    background-color: #fff;
+    padding: 8px;
+    display: flex;
+        border-bottom: 1px solid #e0e0e0;
+
+    span {
+        margin:0 100px;
+        color: #f00;
     }
 }

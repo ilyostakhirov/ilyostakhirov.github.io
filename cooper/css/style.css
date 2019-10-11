@@ -4499,7 +4499,12 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
   color: inherit;
   -webkit-transition: color .15s;
   -o-transition: color .15s;
-  transition: color .15s; }
+  transition: color .15s;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden; }
 
 .megamenu__links a:hover {
   color: #55974d; }

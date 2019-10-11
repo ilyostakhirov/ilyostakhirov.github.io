@@ -4378,7 +4378,11 @@ screen and (-ms-high-contrast:active) {
 
 .megamenu__links a {
     color: inherit;
-    transition: color .15s
+    transition: color .15s;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    display:block;
+    overflow:hidden;
 }
 
 .megamenu__links a:hover {

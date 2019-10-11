@@ -6732,9 +6732,6 @@ a.read-all {
   border-collapse: separate;
   border-spacing: 0; }
 
-.cart-table__product-name {
-  color: inherit; }
-
 .cart-table__options {
   list-style: none;
   padding: 0;

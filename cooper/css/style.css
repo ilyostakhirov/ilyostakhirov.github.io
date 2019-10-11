@@ -12834,6 +12834,12 @@ p.date.text-center span {
     border: 1px solid #e4eaec;
     font-size: 13px; }
 
+.btn-icon {
+  padding: .715rem;
+  line-height: 1em;
+  width: 40px;
+  text-align: center; }
+
 .orders-ul {
   list-style: none;
   margin: 0 0 30px;

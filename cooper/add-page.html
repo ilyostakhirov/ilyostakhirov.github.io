@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Электронная кооперационная биржа</title>
     <link rel="stylesheet" href="vendor/bootstrap-4.2.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/owl-carousel-2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js"></script>
 </head>
 
 <body>
@@ -235,76 +236,66 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Мои заказы</li>
+                            <li class="breadcrumb-item active" aria-current="page">Каталог</li>
                         </ol>
                     </nav>
                 </div>
                 <div class="page-header__title mt-20 mb-30">
-                    <h1>Мои заказы</h1>
+                    <h1>Кабинет пользователя</h1>
                 </div>
-                <div class="orders-ul">
-                    <li><a href="#">Ожидается платёж (1)</a></li>
-                    <li><a href="#">Ожидается отправка (0) </a></li>
-                    <li><a href="#">Завершение заказы (5)</a></li>
-                </div>
-                <div class="cart block">
-                    <table class="cart__table cart-table">
-                        <thead class="cart-table__head">
-                            <tr class="cart-table__row">
-                                <th class="cart-table__column cart-table__column--image"></th>
-                                <th class="cart-table__column cart-table__column--product">Продукт</th>
-                                <th class="cart-table__column cart-table__column--price">Цена</th>
-                                <th class="cart-table__column cart-table__column--quantity">Количество</th>
-                                <th class="cart-table__column cart-table__column--total">Сумма</th>
-                                <th class="cart-table__column cart-table__column--remove"></th>
-                            </tr>
-                        </thead>
-                        <tbody class="cart-table__body">
-                            <tr class="cart-table__row">
-                                <td class="cart-table__column cart-table__column--image"><a href=""><img src="images/botinka/1.jpg" alt=""></a></td>
-                                <td class="cart-table__column cart-table__column--product"><a href="" class="cart-table__product-name">Спец ботинки для работы в кратере</a><br>
-                                    <small>Производитель: <a href="#">ООО «Кафолат пойавзал»</a></small>
-                                    <br>
-                                    <small>Тип вывоза: Самавывоз</small>
-                                </td>
-                                <td class="cart-table__column cart-table__column--price" data-title="Цена">5 168 900 сум / шт.</td>
-                                <td class="cart-table__column cart-table__column--quantity" data-title="Количество">
-                                    <div class="input-number"><input class="form-control input-number__input" type="number" min="1" value="2">
-                                        <div class="input-number__add"></div>
-                                        <div class="input-number__sub"></div>
+                <div class="row">
+                    <div class="col-12 col-lg-3 d-flex">
+                        <div class="account-nav flex-grow-1">
+                            <ul class="mt-20">
+                                <li class="account-nav__item"><a href="№"><img src="img/icons/icon1.svg" alt=""><span>Реквизиты</span></a></li>
+                                <li class="account-nav__item "><a href="№"><img src="img/icons/icon2.svg" alt=""><span>Каталог</span></a></li>
+                                <li class="account-nav__item"><a href="№"><img src="img/fav.svg" alt=""><span>Понравившиеся товары</span></a></li>
+                                <li class="account-nav__item"><a href="№"><img src="img/icons/icon3.svg" alt=""><span>Заключенные договора</span></a></li>
+                                <li class="account-nav__item"><a href="№"><img src="img/icons/icon4.svg" alt=""><span>Договара на потверждении</span></a></li>
+                                <li class="account-nav__item"><a href="№"><img src="img/icons/icon5.svg" alt=""><span>Чат</span></a></li>
+                                <li class="account-nav__item account-nav__item--active"><a href="№"><img src="img/icons/bell.svg" alt=""><span>Оповещения</span> <span class="badge badge-pill badge-success">3</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-9 mt-4 mt-lg-0 mb-40">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Добавить страницу</h5>
+                            </div>
+                            <div class="card-divider"></div>
+                            <div class="card-body">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Название: </label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control">
                                     </div>
-                                </td>
-                                <td class="cart-table__column cart-table__column--total" data-title="Сумма">5 168 900 сум / шт.</td>
-                                <td class="cart-table__column cart-table__column--remove"><button type="button" class="btn btn-light btn-sm btn-svg-icon"><svg width="12px" height="12px">
-                                            <use xlink:href="images/sprite.svg#cross-12"></use>
-                                        </svg></button></td>
-                            </tr>
-                            <tr class="cart-table__row">
-                                <td class="cart-table__column cart-table__column--image"><a href=""><img src="images/botinka/1.jpg" alt=""></a></td>
-                                <td class="cart-table__column cart-table__column--product"><a href="" class="cart-table__product-name">Спец ботинки для работы в кратере</a><br>
-                                    <small>Производитель: <a href="#">ООО «Кафолат пойавзал»</a></small>
-                                    <br>
-                                    <small>Тип вывоза: Самавывоз</small>
-                                </td>
-                                <td class="cart-table__column cart-table__column--price" data-title="Цена">5 168 900 сум / шт.</td>
-                                <td class="cart-table__column cart-table__column--quantity" data-title="Количество">
-                                    <div class="input-number"><input class="form-control input-number__input" type="number" min="1" value="2">
-                                        <div class="input-number__add"></div>
-                                        <div class="input-number__sub"></div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Текст:</label>
+                                    <div class="col-md-9">
+                                        <textarea class="form-control"  name="content" id="editor" row="10"></textarea>
                                     </div>
-                                </td>
-                                <td class="cart-table__column cart-table__column--total" data-title="Сумма">5 168 900 сум / шт.</td>
-                                <td class="cart-table__column cart-table__column--remove"><button type="button" class="btn btn-light btn-sm btn-svg-icon"><svg width="12px" height="12px">
-                                            <use xlink:href="images/sprite.svg#cross-12"></use>
-                                        </svg></button></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Статус:</label>
+                                    <div class="col-md-9">
+                                        <div class="custom-control custom-checkbox mr-5">
+                                                <input type="checkbox" class="custom-control-input" checked="checked" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1">
+                                                    Публиковать
+                                                </label>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="float-right">
+                            <button type="button" class="btn btn-primary">Сохранить</button>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div><!-- .block-products-carousel -->
-    </div>
-    </div>
     </div>
     <footer class="site__footer">
         <div class="site-footer">
@@ -362,16 +353,21 @@
     </footer><!-- site__footer / end -->
     <script src="vendor/jquery-3.3.1/jquery.min.js"></script>
     <script src="vendor/bootstrap-4.2.1/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/owl-carousel-2.3.4/owl.carousel.min.js"></script>
-    <script src="vendor/nouislider-12.1.0/nouislider.min.js"></script>
     <script src="js/number.js"></script>
     <script src="js/main.js"></script>
     <script src="js/header.js"></script>
-    <!--  <script src="vendor/svg4everybody-2.1.9/svg4everybody.min.js"></script>
-    <script>
-    svg4everybody();
-    </script> -->
+
     <link rel="stylesheet" href="vendor/fontawesome-5.6.1/css/all.min.css">
+<script>
+                        ClassicEditor
+                                .create( document.querySelector( '#editor' ) )
+                                .then( editor => {
+                                        console.log( editor );
+                                } )
+                                .catch( error => {
+                                        console.error( error );
+                                } );
+                </script>
 </body>
 
 </html>

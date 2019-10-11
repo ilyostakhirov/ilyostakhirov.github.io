@@ -13978,7 +13978,20 @@ p.date.text-center span {
         }
     }
 }
-
+.orders-ul{
+    list-style: none;
+    margin:0 0 30px;
+border:1px solid #ebebeb;
+background-color: #fff;
+padding: 10px;
+    li{
+display:inline-block;
+margin-right: 30px;
+    }
+}
+.ck-content.ck-editor__editable {
+    min-height: 300px;
+} 
 .login-page {
     .nav-tabs-horizontal {
         max-width: 560px;

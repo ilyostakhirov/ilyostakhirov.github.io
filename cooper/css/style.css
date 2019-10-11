@@ -12834,6 +12834,19 @@ p.date.text-center span {
     border: 1px solid #e4eaec;
     font-size: 13px; }
 
+.orders-ul {
+  list-style: none;
+  margin: 0 0 30px;
+  border: 1px solid #ebebeb;
+  background-color: #fff;
+  padding: 10px; }
+  .orders-ul li {
+    display: inline-block;
+    margin-right: 30px; }
+
+.ck-content.ck-editor__editable {
+  min-height: 300px; }
+
 .login-page .nav-tabs-horizontal {
   max-width: 560px;
   margin: 0 auto 50px; }

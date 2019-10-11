@@ -12933,7 +12933,8 @@ p.date.text-center span {
   .mobilemenu {
     -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
-    flex-shrink: 0; }
+    flex-shrink: 0;
+    margin-right: auto; }
   .mobilemenu__content {
     display: -webkit-box;
     display: -webkit-flex;
@@ -12945,6 +12946,8 @@ p.date.text-center span {
     display: none; } }
 
 @media (max-width: 992px) {
+  marquee {
+    display: none; }
   .fillter-block {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;

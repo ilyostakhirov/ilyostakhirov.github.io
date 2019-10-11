@@ -14122,6 +14122,7 @@ p.date.text-center span {
 
     .mobilemenu {
         flex-shrink: 0;
+        margin-right: auto;
     }
 
     .mobilemenu__content {
@@ -14141,6 +14142,9 @@ p.date.text-center span {
 }
 
 @media (max-width: 992px) {
+    marquee{
+        display:none;
+    }
     .fillter-block {
         flex-wrap: wrap;
 

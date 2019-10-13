@@ -56996,12 +56996,7 @@ p {
 	display: none;
 }
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
-    color: #000;
-    margin-top: 60px;
+    margin-top: 30px;
     flex-direction: column;
 }
 .slide-2 .row .col-md-6:first-child{
@@ -57018,5 +57013,8 @@ header a.logo img{
 }
 ul.lang li {
     margin-left: 15px;
+}
+.mb-50 {
+    margin-bottom: 30px!important;
 }
 }

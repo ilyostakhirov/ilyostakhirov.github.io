@@ -6070,15 +6070,22 @@ a.read-all {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
     .footer-contact li a {
       color: #fff; }
   .footer-contact li:first-child {
     background: url(../img/tel.svg) no-repeat;
     min-height: 47px; }
-  .footer-contact li:last-child {
+  .footer-contact li:nth-child(2) {
     min-height: 33px;
     background: url(../img/email.svg) no-repeat; }
+  .footer-contact li:last-child {
+    min-height: 46px;
+    background: url(../img/telegram.svg) no-repeat; }
 
 .site-footer__copyright {
   font-size: 14px; }

@@ -5970,6 +5970,7 @@ screen and (-ms-high-contrast:active) {
         padding-left: 65px;
         margin-bottom: 15px;
         flex-direction: column;
+        justify-content: center;
 
         a {
             color: #fff;
@@ -5981,10 +5982,14 @@ screen and (-ms-high-contrast:active) {
         min-height: 47px;
 
     }
-
-    li:last-child {
+    li:nth-child(2) {
         min-height: 33px;
         background: url(../img/email.svg) no-repeat;
+    }
+
+    li:last-child {
+        min-height: 46px;
+        background: url(../img/telegram.svg) no-repeat;
     }
 }
 

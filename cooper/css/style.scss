@@ -14094,6 +14094,17 @@ margin-right: 30px;
         }
     }
 }
+marquee {
+    background-color: #fff;
+    padding: 8px;
+    display: flex;
+        border-bottom: 1px solid #e0e0e0;
+
+    span {
+        margin:0 100px;
+        color: #f00;
+    }
+}
 
 @media (max-width: 1200px) {
     .products-list[data-layout=grid-4-full] .products-list__item {
@@ -14176,7 +14187,7 @@ margin-right: 30px;
 
 @media (max-width: 992px) {
     marquee{
-        display:none;
+        display:none!important;
     }
     .fillter-block {
         flex-wrap: wrap;
@@ -14680,14 +14691,3 @@ margin-right: 30px;
     }
 }
 
-marquee {
-    background-color: #fff;
-    padding: 8px;
-    display: flex;
-        border-bottom: 1px solid #e0e0e0;
-
-    span {
-        margin:0 100px;
-        color: #f00;
-    }
-}

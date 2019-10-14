@@ -4384,7 +4384,11 @@ screen and (-ms-high-contrast:active) {
     display:block;
     overflow:hidden;
 }
-
+.badge-large {
+    padding: 8px 15px;
+    border-radius: 7px;
+    font-size: 14px;
+} 
 .megamenu__links a:hover {
     color: #55974d
 }
@@ -6747,7 +6751,8 @@ screen and (-ms-high-contrast:active) {
 .cart-table {
     width: 100%;
     border-collapse: separate;
-    border-spacing: 0
+    border-spacing: 0;
+    background-color: #fff;
 }
 
 .cart-table__product-name {

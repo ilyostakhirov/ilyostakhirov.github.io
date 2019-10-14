@@ -4506,6 +4506,12 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
   display: block;
   overflow: hidden; }
 
+.badge-large {
+  padding: 8px 15px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  font-size: 14px; }
+
 .megamenu__links a:hover {
   color: #55974d; }
 
@@ -6735,7 +6741,8 @@ a.read-all {
 .cart-table {
   width: 100%;
   border-collapse: separate;
-  border-spacing: 0; }
+  border-spacing: 0;
+  background-color: #fff; }
 
 .cart-table__options {
   list-style: none;

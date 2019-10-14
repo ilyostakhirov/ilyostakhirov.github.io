@@ -677,8 +677,49 @@
         }
 
         $(".back-menu").on("click", function() {
-                    $('.departments__submenu').removeClass('departments__submenu--open');
-                    $('.departments__item').removeClass('departments__item--hover');
-                });
+            $('.departments__submenu').removeClass('departments__submenu--open');
+            $('.departments__item').removeClass('departments__item--hover');
+        });
+    });
+
+    jQuery(document).ready(function($) {
+        //update these values if you change these breakpoints in the style.css file (or _layout.scss if you use SASS)
+        var MqM = 768,
+            MqL = 1024;
+
+        var faqsSections = $('.cd-faq-group'),
+            faqTrigger = $('.cd-faq-trigger'),
+            faqsContainer = $('.cd-faq-items'),
+            closeFaqsContainer = $('.cd-close-panel');
+
+
+        //close faq lateral panel - mobile only
+        $('body').bind('click touchstart', function(event) {
+            if ($(event.target).is('body.cd-overlay') || $(event.target).is('.cd-close-panel')) {
+                closePanel(event);
+            }
+        });
+        faqsContainer.on('swiperight', function(event) {
+            closePanel(event);
+        });
+
+        //show faq content clicking on faqTrigger
+        faqTrigger.on('click', function(event) {
+            event.preventDefault();
+            if (!$(this).next('.cd-faq-content').parent('li').hasClass('content-visible')) {
+                $('.cd-faq-group li').removeClass('content-visible');
+                $('.cd-faq-content').hide(200);
+            }
+            $(this).next('.cd-faq-content').slideToggle(200).end().parent('li').toggleClass('content-visible');
+        });
+
+
+
+        function closePanel(e) {
+            e.preventDefault();
+            faqsContainer.removeClass('slide-in').find('li').show();
+            closeFaqsContainer.removeClass('move-left');
+            $('body').removeClass('cd-overlay');
+        }
     });
 })(jQuery);

@@ -13039,9 +13039,90 @@ marquee {
     margin: 0 100px;
     color: #f00; }
 
+.table-fill {
+  background: white;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border-collapse: collapse;
+  margin: auto;
+  max-width: 800px;
+  padding: 5px;
+  width: 100%;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  -webkit-animation: float 5s infinite;
+  animation: float 5s infinite; }
+  .table-fill th {
+    color: #fff;
+    background: #059746;
+    border-bottom: 4px solid #9ea7af;
+    border-right: 1px solid #fff;
+    font-size: 23px;
+    font-weight: 100;
+    padding: 24px;
+    text-align: left;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    vertical-align: middle; }
+  .table-fill th:first-child {
+    -webkit-border-top-left-radius: 3px;
+    border-top-left-radius: 3px; }
+  .table-fill th:last-child {
+    -webkit-border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
+    border-right: none; }
+  .table-fill tr {
+    border-top: 1px solid #C1C3D1;
+    border-bottom-: 1px solid #C1C3D1;
+    color: #666B85;
+    font-size: 16px;
+    font-weight: normal; }
+  .table-fill tr:hover td {
+    background: #565656;
+    color: #FFFFFF;
+    border-top: 1px solid #565656; }
+  .table-fill tr:first-child {
+    border-top: none; }
+  .table-fill tr:last-child {
+    border-bottom: none; }
+  .table-fill tr:nth-child(odd) td {
+    background: #EBEBEB; }
+  .table-fill tr:nth-child(odd):hover td {
+    background: #565656; }
+  .table-fill tr:last-child td:first-child {
+    -webkit-border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px; }
+  .table-fill tr:last-child td:last-child {
+    -webkit-border-bottom-right-radius: 3px;
+    border-bottom-right-radius: 3px; }
+  .table-fill td {
+    background: #FFFFFF;
+    padding: 20px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 18px;
+    border-right: 1px solid #C1C3D1; }
+  .table-fill td:first-child {
+    font-weight: bold; }
+  .table-fill td:last-child {
+    border-right: 0px; }
+  .table-fill th.text-left {
+    text-align: left; }
+  .table-fill th.text-center {
+    text-align: center; }
+  .table-fill th.text-right {
+    text-align: right; }
+  .table-fill td.text-left {
+    text-align: left; }
+  .table-fill td.text-center {
+    text-align: center; }
+  .table-fill td.text-right {
+    text-align: right; }
+
 .filter-form .form-control {
-  font-size: 13px;
-  margin-right: 10px; }
+  font-size: 13px; }
+  .filter-form .form-control:first-child {
+    margin-right: 10px; }
 
 .filter-form .btn {
   font-size: 13px;

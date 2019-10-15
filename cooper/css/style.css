@@ -459,7 +459,7 @@ label {
   margin-bottom: .25rem; }
 
 h1 {
-  font-size: 36px; }
+  font-size: 32px; }
 
 h1,
 h2 {
@@ -13038,6 +13038,14 @@ marquee {
   marquee span {
     margin: 0 100px;
     color: #f00; }
+
+.filter-form .form-control {
+  font-size: 13px;
+  margin-right: 10px; }
+
+.filter-form .btn {
+  font-size: 13px;
+  padding: 7px 15px; }
 
 @media (max-width: 1200px) {
   .products-list[data-layout=grid-4-full] .products-list__item {

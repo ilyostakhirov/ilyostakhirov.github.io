@@ -106,7 +106,7 @@ label {
 }
 
 h1 {
-    font-size: 36px
+    font-size: 32px
 }
 
 h1,
@@ -14211,7 +14211,17 @@ marquee {
         color: #f00;
     }
 }
+.filter-form{
+    .form-control{
+        font-size: 13px;
+        margin-right: 10px;
+    }
+    .btn{
+        font-size: 13px;
+            padding: 7px 15px;
 
+    }
+}
 @media (max-width: 1200px) {
     .products-list[data-layout=grid-4-full] .products-list__item {
         width: -webkit-calc(33.3333% - 20px);

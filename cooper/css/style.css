@@ -4036,8 +4036,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
   background: rgba(0, 0, 0, 0.05); }
 
 .departments__item-arrow {
-  top: -webkit-calc(50% - 5px);
-  top: calc(50% - 5px);
+  top: 10px;
   position: absolute;
   fill: rgba(0, 0, 0, 0.3);
   right: 14px;

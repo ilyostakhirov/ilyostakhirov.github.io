@@ -4401,9 +4401,23 @@ screen and (-ms-high-contrast:active) {
 }
 
 .megamenu__links--level--0>.megamenu__item {
-    padding: 1px 0
+    padding: 1px 0;
 }
-
+.megamenu__item{
+    margin-bottom:5px;
+}
+.megamenu__links.megamenu__links--level--1 .megamenu__item.all-cat{
+font-weight:bold;
+text-transform:uppercase;
+margin-bottom:20px;
+border-top:1px solid #eee;
+margin-top:10px;
+padding-top: 10px;
+a{
+    color:inherit;
+    font-size:12px;
+}
+}
 .megamenu__links--level--0>.megamenu__item>a {
     font-weight: 700
 }
@@ -14224,7 +14238,19 @@ marquee {
         color: #f00;
     }
 }
-
+.departments__links{
+&::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+&::-webkit-scrollbar-track {
+  background: #ddd;
+}
+ 
+&::-webkit-scrollbar-thumb {
+  background: #666; 
+}
+}
 .table-fill {
     background: white;
     border-radius: 3px;

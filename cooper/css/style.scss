@@ -6077,15 +6077,33 @@ screen and (-ms-high-contrast:active) {
 }
 
 .site-footer__widgets {
-    padding: 48px 0 54px
+    padding: 48px 0 30px
 }
 
 .site-footer__bottom {
     border-top: 2px solid #fff;
     text-align: center;
-    padding: 40px;
-}
+    padding: 20px 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo-footer{
 
+    }
+    .itdc{
+        font-size: 14px;
+        color:#fff;
+        img{
+            width:60px;
+            margin-left:20px;
+        }
+    }
+}
+.map{
+    iframe{
+        width: 100%;
+    }
+}
 .footer-contact {
     list-style: none;
     padding: 0;

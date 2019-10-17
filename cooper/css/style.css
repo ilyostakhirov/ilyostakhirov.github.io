@@ -6155,12 +6155,33 @@ a.read-all {
   color: #ffffff; }
 
 .site-footer__widgets {
-  padding: 48px 0 54px; }
+  padding: 48px 0 30px; }
 
 .site-footer__bottom {
   border-top: 2px solid #fff;
   text-align: center;
-  padding: 40px; }
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .site-footer__bottom .itdc {
+    font-size: 14px;
+    color: #fff; }
+    .site-footer__bottom .itdc img {
+      width: 60px;
+      margin-left: 20px; }
+
+.map iframe {
+  width: 100%; }
 
 .footer-contact {
   list-style: none;

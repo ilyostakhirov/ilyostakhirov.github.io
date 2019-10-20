@@ -6079,6 +6079,7 @@ screen and (-ms-high-contrast:active) {
     background: #242424;
     color: #ffffff;
     .logo {
+        margin-top: 40px;
         img {
             filter: brightness(0) invert(1);
         }
@@ -6091,8 +6092,8 @@ screen and (-ms-high-contrast:active) {
     .itdc {
         color: #fff;
         display: flex;
-        align-items: center;
-        margin-top: 40px;
+        align-items: flex-end;
+        margin-top: 20px;
         font-size:14px;
 
         img {

@@ -6109,22 +6109,24 @@ a.read-all {
 .site-footer {
   background: #242424;
   color: #ffffff; }
-  .site-footer .logo img {
-    -webkit-filter: brightness(0) invert(1);
-    filter: brightness(0) invert(1); }
-  .site-footer .logo span {
-    color: #fff; }
+  .site-footer .logo {
+    margin-top: 40px; }
+    .site-footer .logo img {
+      -webkit-filter: brightness(0) invert(1);
+      filter: brightness(0) invert(1); }
+    .site-footer .logo span {
+      color: #fff; }
   .site-footer .itdc {
     color: #fff;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-top: 40px;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    margin-top: 20px;
     font-size: 14px; }
     .site-footer .itdc img {
       width: 60px;

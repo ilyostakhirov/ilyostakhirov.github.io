@@ -2654,7 +2654,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-top: 10px; }
+  padding-top: 10px;
+  margin-right: 30px; }
 
 .post-card--layout--list.post-card--size--nl .post-card__image {
   width: 250px;

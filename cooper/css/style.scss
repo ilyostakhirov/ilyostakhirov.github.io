@@ -2425,19 +2425,13 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
 }
 
 .post-card--layout--list.post-card--size--nl .post-card__info {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding-top: 10px;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .post-card--layout--list.post-card--size--nl .post-card__image {
-    width: 250px;
-    -ms-flex-negative: 0;
+    width: 180px;
     flex-shrink: 0;
-    margin-right: 30px;
+    margin-right: 20px;
     border-radius: 10px 0 0 10px;
     overflow:hidden;
 }
@@ -2471,6 +2465,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
  
 .post-card--layout--list.post-card--size--nl .post-card__name {
     margin-top: 20px;
+    margin-bottom: 15px;
     font-size: 21px;
     line-height: 24px;
     font-weight:bold;
@@ -2478,13 +2473,12 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
 }
 
 .post-card--layout--list.post-card--size--nl .post-card__content {
-    margin-top: 15px;
     font-size: 16px
 }
 
 .post-card--layout--list.post-card--size--nl .post-card__read-more {
     display: block;
-    margin: 14px 0 30px;
+    margin: 20px 0;
 
 }
 

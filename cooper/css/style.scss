@@ -2422,8 +2422,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
-    -ms-flex-align: start;
-    align-items: flex-start
 }
 
 .post-card--layout--list.post-card--size--nl .post-card__info {
@@ -2435,10 +2433,12 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
 }
 
 .post-card--layout--list.post-card--size--nl .post-card__image {
-    width: 350px;
+    width: 250px;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    margin-right: 30px
+    margin-right: 30px;
+    border-radius: 10px 0 0 10px;
+    overflow:hidden;
 }
 
 .post-card--layout--list.post-card--size--nl .post-card__category {
@@ -2467,21 +2467,24 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
     background: currentColor;
     left: 9px
 }
-
+ 
 .post-card--layout--list.post-card--size--nl .post-card__name {
-    margin-top: 6px;
-    font-size: 18px;
-    line-height: 24px
+    margin-top: 20px;
+    font-size: 21px;
+    line-height: 24px;
+    font-weight:bold;
+    color:inherit;
 }
 
 .post-card--layout--list.post-card--size--nl .post-card__content {
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 16px
 }
 
 .post-card--layout--list.post-card--size--nl .post-card__read-more {
     display: block;
-    margin-top: 14px
+    margin: 14px 0 30px;
+
 }
 
 @media (min-width:768px) and (max-width:1199px) {
@@ -10002,8 +10005,9 @@ screen and (min-width:480px) and (-ms-high-contrast:active) {
 
 .posts-list--layout--list .posts-list__item {
     width: 100%;
-    margin: 20px 0
-}
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: rgba(45, 45, 45, 0.05) 0px 2px 20px, rgba(49, 49, 49, 0.05) 0px 4px 4px, rgba(42, 42, 42, 0.05) 0px 8px 8px, rgba(32, 32, 32, 0.05) 0px 16px 16px, rgba(49, 49, 49, 0.05) 0px 32px 32px, rgba(35, 35, 35, 0.05) 0px 64px 64px;}
 
 .posts-list--layout--grid2 .posts-list__item {
     width: calc(50% - 30px)

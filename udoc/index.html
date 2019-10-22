@@ -6,61 +6,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Udoc</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="header">
-        <nav class="navbar navbar-expand-lg container">
-            <a class="logo" href="#"><img src="img/logo.svg" width="106" height="43" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">О системе </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Преимущества</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Контакты</a>
-                    </li>
-                </ul>
-                <ul class="right-menu">
-                    <li><a href="#"><span>Зарегистрироваться</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#526069" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M5 12h13M12 5l7 7-7 7" /></svg></a></li>
-                    <li class="blue-bg"><a href="#"><span>Войти</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#526069" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M5 12h13M12 5l7 7-7 7" /></svg></a></li>
-                </ul>
-            </div>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Русский
-                </button>
-                <div class="dropdown-menu dropdown-menu-border" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">O'zbekcha</a>
-                    <a class="dropdown-item" href="#">English</a>
+    <div class="header fadeInDown wow" data-wow-duration="1s" data-wow-delay="0.5s">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <a class="logo" href="#"><img src="img/logo.svg" width="106" height="43" alt=""></a>                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">О системе </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Преимущества</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="right-menu">
+                        <li><a href="#"><span>Зарегистрироваться</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#526069" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h13M12 5l7 7-7 7" /></svg></a></li>
+                        <li class="blue-bg"><a href="#"><span>Войти</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#526069" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h13M12 5l7 7-7 7" /></svg></a></li>
+                    </ul>
                 </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Русский
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-border" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">O'zbekcha</a>
+                        <a class="dropdown-item" href="#">English</a>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg id="burger" class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                        <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"></path>
+                        <path class="line middle" d="m 30,50 h 40"></path>
+                        <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"></path>
+                    </svg>
+                </button>
             </div>
         </nav>
     </div>
     <div class="slider">
-    	<div class="container">
-    		<div class="item">
-    			<img src="img/logo.svg" width="241" height="98" alt="">
-    			<h1>U-doc - удобство и безопасность</h1>
-    			<p>Единая система документрооборота предназначена для легкого доступа всех <br>пользователей к различным информационным системам электронного правительства. <br>OneID обеспечивает безопасность и конфиденциальность ваших данных.</p>
-    			<a href="#" class="btn btn-primary btn-lg">Заключить договор</a>
-    		</div>
-    		<div class="left-bg"></div>
-    		<div class="right-bg"></div>
-    	</div>
+        <div class="container">
+            <div class="item">
+                <img class="fadeInUp wow" data-wow-duration="1s" data-wow-delay="0.5s" src="img/logo.svg" width="241" height="98" alt="">
+                <h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">U-doc - удобство и безопасность</h1>
+                <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">Единая система документрооборота предназначена для легкого доступа всех <br>пользователей к различным информационным системам электронного правительства. <br>OneID обеспечивает безопасность и конфиденциальность ваших данных.</p>
+                <a href="#" data-wow-duration="1s" data-wow-delay="1.1s" class="btn btn-primary btn-lg wow fadeInUp">Заключить договор</a>
+            </div>
+        </div>
+        <div class="left-bg wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s"></div>
+        <div class="right-bg wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s"></div>
+    </div>
+    <div class="container">
+        <h5 class="title-m">Описание</h5>
+        <div class="row features mb-30">
+            <div class="col-md-6 col-lg-3 fadeInDown wow" data-wow-duration="1s" data-wow-delay="0.2s">
+                <div class="features-item">
+                    <div class="text-right"><span class="icon-1"></span></div>
+                    <h4>Договор-<br> онлайн</h4>
+                    <p>Заключайте договора в режиме реального времени</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 fadeInDown wow" data-wow-duration="1s" data-wow-delay="0.4s">
+                <div class="features-item">
+                    <div class="text-right"><span class="icon-2"></span></div>
+                    <h4>подписание<br> договоров</h4>
+                    <p>Удалённое подписание договоров с помощью Электронной цифровой подписи</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 fadeInDown wow" data-wow-duration="1s" data-wow-delay="0.6s">
+                <div class="features-item">
+                    <div class="text-right"><span class="icon-3"></span></div>
+                    <h4>Система<br> ролей</h4>
+                    <p>Удобная система ролей поможет каждному сотруднику нести ответственность за проделанную работу</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 fadeInDown wow" data-wow-duration="1s" data-wow-delay="0.8s">
+                <div class="features-item">
+                    <div class="text-right"><span class="icon-4"></span></div>
+                    <h4>База<br> организаций</h4>
+                    <p>Находите новых партнёров в базе данных организаций</p>
+                </div>
+            </div>
+        </div>
+        <h5 class="title-m">Преимущества</h5>
+        <div class="row features mb-90">
+            <div class="col-md-6 col-lg-3">
+                <div class="features-item features-item-green fadeInDown wow" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="text-right"><span class="icon-5"></span></div>
+                    <h4>Полноценная Система<br>документооборота</h4>
+                    <p>Первая межведомственная полноценная система документооборота</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="features-item features-item-green fadeInDown wow" data-wow-duration="1s" data-wow-delay="0.4s">
+                    <div class="text-right"><span class="icon-6"></span></div>
+                    <h4>Экономия<br> Времени</h4>
+                    <p>Данная система помогает Вам экономить Ваше время</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="features-item features-item-green fadeInDown wow" data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="text-right"><span class="icon-7"></span></div>
+                    <h4>Сокращение<br> бумажных расходов</h4>
+                    <p>Экономьте место в своём шкафу - храните документы в электронном</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="features-item features-item-green fadeInDown wow" data-wow-duration="1s" data-wow-delay="0.8s">
+                    <div class="text-right"><span class="icon-8"></span></div>
+                    <h4>Финансовые<br> отчёты</h4>
+                    <p>Получите полный отчёт о финансовом состоянии компании</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gray-bg-image">
+        <div class="container wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+            <div class="text-side">
+                <h5 class="title-m mb-20">Попробуйте и Вы приятно удивитесь!</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                <a href="#" class="btn btn-primary btn-lg">Заключить договор</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+            <a href="#"><img src="img/logo-f.svg" width="123" height="50" alt=""></a>
+            <p>ⓒ 2019 Единая система документрооборота Республики Узбекистан.<br>
+                Город Ташкенn, Улица Первая, дом 10, квартира 1. Тел.: +998 71 123 45 67 </p>
+            <a href="#">info@somedomein.uz</a>
+        </div>
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

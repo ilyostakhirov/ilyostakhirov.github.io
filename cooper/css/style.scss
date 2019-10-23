@@ -6167,11 +6167,25 @@ screen and (-ms-high-contrast:active) {
 .site-footer__payments img {
     max-width: 100%
 }
-
+ 
 .site-footer__widget+.site-footer__widget {
     margin-top: 24px
 }
-
+.error-page{
+   margin:100px 0;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   text-align:center;
+   h1{
+        font-size: 3em;
+    font-weight: 400;
+   }
+   p{
+    font-size: 18px;
+    line-height: 1.8
+   }
+}
 @media (max-width:767px) {
     .site-footer__widgets {
         padding-bottom: 48px

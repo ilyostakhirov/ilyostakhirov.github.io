@@ -6238,6 +6238,28 @@ a.read-all {
 .site-footer__widget + .site-footer__widget {
   margin-top: 24px; }
 
+.error-page {
+  margin: 100px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center; }
+  .error-page h1 {
+    font-size: 3em;
+    font-weight: 400; }
+  .error-page p {
+    font-size: 18px;
+    line-height: 1.8; }
+
 @media (max-width: 767px) {
   .site-footer__widgets {
     padding-bottom: 48px; }

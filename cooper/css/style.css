@@ -3617,7 +3617,11 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
   right: 3px; }
 
 .typography {
-  line-height: 1.625; }
+  line-height: 1.625;
+  font-size: 15px; }
+  .typography h5 {
+    font-size: 17px;
+    margin-top: 0; }
 
 .typography a:hover {
   text-decoration: underline; }
@@ -3628,11 +3632,12 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
 .typography h4,
 .typography h5,
 .typography h6 {
-  margin-top: 1.75em;
-  margin-bottom: .75em; }
+  margin-top: 0;
+  margin-bottom: 10px; }
 
 .typography p {
-  margin-bottom: 1.5em; }
+  margin-bottom: 20px;
+  font-size: 15px; }
 
 .typography ol,
 .typography ul {

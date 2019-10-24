@@ -3468,7 +3468,15 @@ screen and (-ms-high-contrast:active) {
 }
 
 .typography {
-    line-height: 1.625
+    line-height: 1.625;
+    font-size: 15px;
+    h5{
+        font-size: 17px;
+        margin-top: 0;
+    }
+    p{
+        
+    }
 }
 
 .typography a:hover {
@@ -3481,12 +3489,13 @@ screen and (-ms-high-contrast:active) {
 .typography h4,
 .typography h5,
 .typography h6 {
-    margin-top: 1.75em;
-    margin-bottom: .75em
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .typography p {
-    margin-bottom: 1.5em
+    margin-bottom: 20px;
+    font-size: 15px;
 }
 
 .typography ol,

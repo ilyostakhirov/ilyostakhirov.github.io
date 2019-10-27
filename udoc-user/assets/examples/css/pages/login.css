@@ -1,0 +1,234 @@
+body{
+	background:#16a8a5 url("img/bg.png") no-repeat 0 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+.layout-full .page {
+    padding: 0;
+    margin: 0!important;
+    min-height: -webkit-calc(100vh - 61px);
+    min-height: calc(100vh - 61px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+        align-items: center;
+}
+.page-login-v3 .panel {
+    width: 875px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+border-radius: 3px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.11);
+margin:25px 0;
+    border-radius: 190px;
+    position: relative;
+    overflow: hidden;
+}
+.page-login-v3 .panel:after{
+    background: url(img/login-bg.png) no-repeat 100% 100% #fff;
+    position: absolute;
+    width: 425px;
+    height: 361px;
+    content: " ";
+    display: block;
+    right: -89px;
+    bottom: -35px;
+    z-index: 1;
+}
+.login-footer{
+    border-top: 2px solid #fff;
+    padding: 5px 50px;
+}
+.page-login-v3 .panel .panel-body {
+    padding: 40px 75px;
+}
+.layout-full .page {
+    height: 100%;
+}
+.page-login-v3 .panel .brand-text {
+color: #55c0be;
+font-size: 16px;
+font-weight: 400;
+text-transform: uppercase;
+    margin-bottom:0;
+}
+.page-login-v3 .panel .panel-body .col-lg-6{
+    padding: 50px 40px;
+    position: relative;
+    z-index: 9;
+}
+.page-login-v3 .panel .brand{
+    border-right: 2px solid #16a8a5;
+}
+.page-login-v3 .panel h3{
+color: #16a8a5;
+font-size: 20px!important;
+font-weight: 300;
+margin:0 0 30px;
+text-align: left;
+line-height:1;
+}
+.page-login-v3 form {
+    margin: 0
+}
+.input-group-addon {
+    padding: .429rem 1.2rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+    background-color: #57abd2;
+    border: 1px solid #57abd2;
+    border-radius: 15px 0 0 15px;
+}
+.input-group-addon.green-bg{
+    background-color: #16a8a5;
+    border: 1px solid #16a8a5;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #57abd2;
+
+padding: .429rem 2rem;
+}
+.btn,.form-control{
+   border-radius: 15px; 
+}
+.page-login-v3 form a {
+    margin-left: 20px
+}
+
+.page-login-v3 form .form-material.floating+.page-login-v3 form .form-material.floating {
+    margin-top: 30px
+}
+
+.page-login-v3 form .form-material label {
+    color: #a3afb7;
+    font-weight: 300
+}
+
+
+a.forget{
+    background: url(img/checkbox.png) no-repeat 0px 3px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+    padding-left: 32px;
+    line-height: 25px;
+    display: inline-block;
+}
+a.forget span{
+	text-decoration:underline;
+}
+a.forget:hover span,a.forget:hover{
+    text-decoration:none;
+}
+.login-footer,.login-footer a{
+    color: #fff;
+}
+.tel{
+    background: url(img/tel.png) no-repeat 0 1px;
+    padding-left: 50px;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.tel span{
+    font-size:20px;
+}
+.login-footer .float-left a{
+   font-size: 14px;
+text-decoration: underline;
+margin:0 20px;
+display: inline-block;
+}
+.login-footer .float-left a:hover{
+    text-decoration:none;
+}
+.login-footer .float-left a:first-child{
+    margin-left:0;
+}
+.login-footer .float-left {
+    margin-top: 13px;
+}
+@media (max-width:992px) {
+.page-login-v3 .panel .panel-body {
+     padding: 20px; 
+}
+.page-login-v3 .panel {
+    width: 100%;
+    border-radius:15px;
+}
+.page-login-v3 .panel .panel-body .col-lg-6 {
+    padding: 20px;
+    z-index: 9;
+}
+.page-login-v3 .panel .brand {
+    border-right: none;    
+}
+.page-login-v3 .panel h3 {
+    margin:0 0 30px;
+    text-align: center;
+    border-top: 1px solid #16a8a5;
+    padding-top:20px;
+}
+.page-login-v3 .panel .panel-body .login-block.col-lg-6 {
+    padding-top: 0;
+}
+.login-footer {
+    padding: 5px 15px;
+}
+.login-footer .float-left a {
+    font-size: 13px;
+    margin: 0 10px;
+}
+.tel {
+    font-size: 12px;
+    text-align: left;
+}
+.layout-full .page {
+    min-height: -webkit-calc(100vh - 106px);
+    min-height: calc(100vh - 106px);
+}
+}
+@media (max-width:767px) {
+    .page-login-v3 .page-content {
+        padding:20px
+    }
+    .page-login-v3 .panel {
+        width: auto;
+        padding: 10px;
+        margin-top:0;
+    }
+    .page-login-v3 .panel .panel-body {
+        padding: 10px
+    }
+    .login-footer .float-right,.login-footer .float-left {
+    float: none!important;
+}
+.login-footer .float-right{
+    margin-top:10px;
+}
+.btn-primary.mt-20{
+    margin-top:0!important;
+}
+.login-footer{
+    text-align:center;
+}
+.login-footer .float-right,.login-footer .float-left  {
+    float: none!important;
+    display:inline-block;
+}
+.login-footer .float-right{
+    margin-top:5px;
+}
+.login-footer .float-left {
+    margin-top: 5px;
+}
+.btn {
+    padding: .429rem 12px;
+}
+}

@@ -386,7 +386,15 @@ body {
 .site-menubar-footer>a span {
     margin-right: 10px;
 }
-
+.site-menubar-fold .site-menubar-footer>a span {
+    margin-right: 10px;
+    display: block;
+    margin-right: 0;
+    margin-bottom: 6px;
+}
+.site-menubar-fold .site-menubar-footer>a.fold-show {
+    font-size: 12px;
+}
 .navbar-toolbar-right .nav-item {
     border-left: 1px solid #f1f1f1;
 }
@@ -527,7 +535,7 @@ body {
 
 .site-menu>.site-menu-item.hover>a,
 .site-menu>.site-menu-item:hover>a {
-    background-color: #00b7f4;
+    background-color: #40b977;
 }
 
 .site-menu>.site-menu-item.hover>a span,
@@ -537,7 +545,7 @@ body {
 
 .site-menu>.site-menu-item.hover>a:after,
 .site-menu>.site-menu-item:hover>a:after {
-    background-color: #00b7f4;
+    background-color: #40b977;
 }
 
 .site-menu>.site-menu-item.hover>a .site-menu-icon,
@@ -1260,8 +1268,8 @@ body.site-gridmenu-active {
 }
 
 #myChart {
-    height: 300px;
-    max-width: 800px;
+    height: 300px!important;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -1971,7 +1979,8 @@ ul.accordion li a:hover {
 
 .site-menubar-fold .site-menu>.site-menu-item>a {
     height: 60px;
-    line-height: 60px
+    line-height: 60px;
+        font-size: 11px;
 }
 
 .site-menubar-fold .site-menu>.site-menu-item>a .site-menu-icon,
@@ -2001,7 +2010,7 @@ ul.accordion li a:hover {
 
 .site-menubar-fold .site-menu>.site-menu-item>a .site-menu-icon {
     margin-right: 0;
-    font-size: 24px;
+    font-size: 31px;
     visibility: visible;
     opacity: 1
 }

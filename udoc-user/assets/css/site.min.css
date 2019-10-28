@@ -108,50 +108,48 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-16:before {
+  content: "\e904";
+}
+.icon-17:before {
+  content: "\e90c";
+}
 .icon-1:before {
-    content: "\e900";
+  content: "\e900";
 }
-
 .icon-2:before {
-    content: "\e901";
+  content: "\e901";
 }
-
 .icon-3:before {
-    content: "\e902";
+  content: "\e902";
 }
-
 .icon-4:before {
-    content: "\e903";
+  content: "\e903";
 }
-
 .icon-6:before {
-    content: "\e905";
+  content: "\e905";
 }
-
 .icon-7:before {
-    content: "\e906";
+  content: "\e906";
 }
-
 .icon-8:before {
-    content: "\e907";
+  content: "\e907";
 }
-
 .icon-9:before {
-    content: "\e908";
+  content: "\e908";
 }
-
 .icon-10:before {
-    content: "\e909";
+  content: "\e909";
 }
-
 .icon-11:before {
-    content: "\e90a";
+  content: "\e90a";
 }
-
 .icon-12:before {
-    content: "\e90b";
+  content: "\e90b";
 }
-
+.btn-outline {
+    border-width: 2px;
+}
 .h1,
 .h2,
 .h3,
@@ -192,7 +190,32 @@ h6 {
         margin-left: 90px;
     }
 }
-
+.company-list{
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+.company-list li{
+  color: #000000;
+  font-size: 12px;
+  line-height: 1;
+  padding: 10px;
+}
+.company-list li.active{
+  background-color: #00b7f4;
+}
+.company-list li span{
+  color: #000000;
+  font-size: 12px;
+}
+.company-list li strong{
+  color: #63c690;
+  display: block;
+  margin-top: 5px;
+}
+.company-list li.active span,.company-list li.active strong{
+color: #fff;
+}
 .logo-side {
     background: url(../images/logo.png) no-repeat;
     padding: 5px 0 5px 57px;
@@ -1039,7 +1062,7 @@ body.site-gridmenu-active {
 
 .user span {
     display: block;
-    color: #00b7f4;
+    color: #000;
     font-size: 16px;
 }
 
@@ -1048,7 +1071,12 @@ body.site-gridmenu-active {
     font-size: 12px;
     font-weight: 400;
 }
-
+.user .btn-link{
+  color: #00b7f4;
+}
+.user .btn-link[aria-expanded="true"] .wb-chevron-down:before{
+      content: "";
+}
 .page {
     position: relative;
     min-height: calc(100% - 60px);

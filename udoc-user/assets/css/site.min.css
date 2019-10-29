@@ -596,7 +596,7 @@ body {
 }
 
 .site-menubar-fold .user span,
-.site-menubar-fold .user small {
+.site-menubar-fold .user small,.site-menubar-fold .user small,.site-menubar-fold .user .collapse.show,.site-menubar-fold .user .btn-link  {
     display: none;
 }
 

@@ -383,12 +383,9 @@
   exports.run = run;
   exports.getInstance = getInstance;
 });
-
-
-$('.toggle').click(function(e) {
-    e.preventDefault();
-  
-    var $this = $(this);
+$('.accordion').on('click', '.toggle', function(e) {
+  e.preventDefault();
+  var $this = $(this);
     $('.toggle').removeClass('active');
     $this.addClass('active');
   

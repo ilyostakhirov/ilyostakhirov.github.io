@@ -243,9 +243,13 @@
                                         </svg></button>
                                 </div>
                                 <div class="block-sidebar__item">
+
                                     <div class="widget-filters widget widget-filters--offcanvas--mobile" data-collapse data-collapse-opened-class="filter--opened">
                                         <h4 class="widget-filters__title widget__title">ФИЛЬТР</h4>
                                         <div class="widget-filters__list">
+                                        	<div class="widget-filters__item">	
+                                        	<div class="widget-filters__actions d-flex p-0"><button class="btn btn-primary btn-sm">Применить</button> <button class="btn btn-secondary btn-sm">Сбросить</button></div>
+                                        	</div>
                                             <div class="widget-filters__item">
                                                 <div class="filter filter--opened" data-collapse-item><button type="button" class="filter__title" data-collapse-trigger>Категории <svg class="filter__arrow" width="12px" height="7px">
                                                             <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
@@ -306,15 +310,23 @@
                                                 </div>
                                             </div>
                                             <div class="widget-filters__item">
+                                                <div class="filter__title">Поиск</div>
+                                                    <div class="search search-full mt-20">
+                                                        <div class="input-group ">
+                                                            <input type="text" placeholder="Введите название товара" class="form-control">
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="widget-filters__item">
                                                 <div class="filter filter--opened" data-collapse-item><button type="button" class="filter__title" data-collapse-trigger>Цена <svg class="filter__arrow" width="12px" height="7px">
                                                             <use xlink:href="images/sprite.svg#arrow-rounded-down-12x7"></use>
                                                         </svg></button>
                                                     <div class="filter__body" data-collapse-content>
                                                         <div class="filter__container">
                                                             <div class="d-flex filter-form">
-                                                                    <input type="text" class="form-control" placeholder="От">
-                                                                    <input type="text" class="form-control" placeholder="До">
-                                                                </div>
+                                                                <input type="text" class="form-control" placeholder="От">
+                                                                <input type="text" class="form-control" placeholder="До">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -326,9 +338,9 @@
                                                     <div class="filter__body" data-collapse-content>
                                                         <div class="filter__container">
                                                             <div class="d-flex filter-form">
-                                                                    <input type="text" class="form-control" placeholder="От">
-                                                                    <input type="text" class="form-control" placeholder="До">
-                                                                </div>
+                                                                <input type="text" class="form-control" placeholder="От">
+                                                                <input type="text" class="form-control" placeholder="До">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -340,7 +352,8 @@
                                                     <div class="filter__body" data-collapse-content>
                                                         <div class="filter__container">
                                                             <div class="filter-list">
-                                                                <div class="filter-list__list"><label class="filter-list__item"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                <div class="filter-list__list">
+                                                                    <label class="filter-list__item"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
                                                                                     <use xlink:href="images/sprite.svg#check-9x7"></use>
                                                                                 </svg> </span></span><span class="filter-list__title">СП ООО "GRAND ROAD TASHKENT" </span></label> <label class="filter-list__item"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox" checked="checked"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
                                                                                     <use xlink:href="images/sprite.svg#check-9x7"></use>
@@ -352,7 +365,63 @@
                                                                                     <use xlink:href="images/sprite.svg#check-9x7"></use>
                                                                                 </svg> </span></span><span class="filter-list__title">ООО "PENETRON TASHKENT" </span></label> <label class="filter-list__item"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox" checked="checked"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
                                                                                     <use xlink:href="images/sprite.svg#check-9x7"></use>
-                                                                                </svg> </span></span><span class="filter-list__title">ООО «Universal Plast Montaj Engineering» </span></label></div>
+                                                                                </svg> </span></span><span class="filter-list__title">ООО «Universal Plast Montaj Engineering» </span></label>
+                                                                    <div class="collapse" id="collapseExample">
+                                                                        <label class="filter-list__item"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                                        <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                                                    </svg> </span></span><span class="filter-list__title">СП ООО "GRAND ROAD TASHKENT" </span></label> <label class="filter-list__item"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox" checked="checked"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                                        <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                                                    </svg> </span></span><span class="filter-list__title">OOO LIDERSNAB </span></label> <label class="filter-list__item filter-list__item--disabled"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox" checked="checked"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                                        <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                                                    </svg> </span></span><span class="filter-list__title">СП ООО "ALFA TEAM ALLIANCE"</span></label> <label class="filter-list__item filter-list__item--disabled"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox" checked="checked"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                                        <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                                                    </svg> </span></span><span class="filter-list__title">СП ООО "GRAND ROAD TASHKENT"</span></label> <label class="filter-list__item"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox" checked="checked"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                                        <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                                                    </svg> </span></span><span class="filter-list__title">ООО "PENETRON TASHKENT" </span></label> <label class="filter-list__item"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox" checked="checked"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                                        <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                                                    </svg> </span></span><span class="filter-list__title">ООО «Universal Plast Montaj Engineering» </span></label>
+                                                                        <label class="filter-list__item"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                                        <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                                                    </svg> </span></span><span class="filter-list__title">СП ООО "GRAND ROAD TASHKENT" </span></label> <label class="filter-list__item"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox" checked="checked"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                                        <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                                                    </svg> </span></span><span class="filter-list__title">OOO LIDERSNAB </span></label> <label class="filter-list__item filter-list__item--disabled"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox" checked="checked"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                                        <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                                                    </svg> </span></span><span class="filter-list__title">СП ООО "ALFA TEAM ALLIANCE"</span></label> <label class="filter-list__item filter-list__item--disabled"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox" checked="checked"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                                        <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                                                    </svg> </span></span><span class="filter-list__title">СП ООО "GRAND ROAD TASHKENT"</span></label> <label class="filter-list__item"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox" checked="checked"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                                        <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                                                    </svg> </span></span><span class="filter-list__title">ООО "PENETRON TASHKENT" </span></label> <label class="filter-list__item"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox" checked="checked"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                                        <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                                                    </svg> </span></span><span class="filter-list__title">ООО «Universal Plast Montaj Engineering» </span></label>
+                                                                        <label class="filter-list__item"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                                        <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                                                    </svg> </span></span><span class="filter-list__title">СП ООО "GRAND ROAD TASHKENT" </span></label> <label class="filter-list__item"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox" checked="checked"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                                        <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                                                    </svg> </span></span><span class="filter-list__title">OOO LIDERSNAB </span></label> <label class="filter-list__item filter-list__item--disabled"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox" checked="checked"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                                        <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                                                    </svg> </span></span><span class="filter-list__title">СП ООО "ALFA TEAM ALLIANCE"</span></label> <label class="filter-list__item filter-list__item--disabled"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox" checked="checked"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                                        <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                                                    </svg> </span></span><span class="filter-list__title">СП ООО "GRAND ROAD TASHKENT"</span></label> <label class="filter-list__item"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox" checked="checked"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                                        <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                                                    </svg> </span></span><span class="filter-list__title">ООО "PENETRON TASHKENT" </span></label> <label class="filter-list__item"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox" checked="checked"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                                        <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                                                    </svg> </span></span><span class="filter-list__title">ООО «Universal Plast Montaj Engineering» </span></label>
+                                                                        <label class="filter-list__item"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                                        <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                                                    </svg> </span></span><span class="filter-list__title">СП ООО "GRAND ROAD TASHKENT" </span></label> <label class="filter-list__item"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox" checked="checked"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                                        <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                                                    </svg> </span></span><span class="filter-list__title">OOO LIDERSNAB </span></label> <label class="filter-list__item filter-list__item--disabled"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox" checked="checked"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                                        <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                                                    </svg> </span></span><span class="filter-list__title">СП ООО "ALFA TEAM ALLIANCE"</span></label> <label class="filter-list__item filter-list__item--disabled"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox" checked="checked"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                                        <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                                                    </svg> </span></span><span class="filter-list__title">СП ООО "GRAND ROAD TASHKENT"</span></label> <label class="filter-list__item"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox" checked="checked"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                                        <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                                                    </svg> </span></span><span class="filter-list__title">ООО "PENETRON TASHKENT" </span></label> <label class="filter-list__item"><span class="filter-list__input input-check"><span class="input-check__body"><input class="input-check__input" type="checkbox" checked="checked"> <span class="input-check__box"></span> <svg class="input-check__icon" width="9px" height="7px">
+                                                                                        <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                                                    </svg> </span></span><span class="filter-list__title">ООО «Universal Plast Montaj Engineering» </span></label>
+                                                                    </div>
+                                                                </div>
+                                                                <a class="btn btn-block btn-link showall" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-chevron-down"></i><span>Показать все</span></a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -695,9 +764,9 @@
     <script src="js/main.js"></script>
     <script src="js/header.js"></script>
     <!--  <script src="vendor/svg4everybody-2.1.9/svg4everybody.min.js"></script>
-    <script>
-    svg4everybody();
-    </script> -->
+<script>
+svg4everybody();
+</script> -->
     <link rel="stylesheet" href="vendor/fontawesome-5.6.1/css/all.min.css">
 </body>
 

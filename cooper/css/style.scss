@@ -2433,7 +2433,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
     flex-shrink: 0;
     margin-right: 20px;
     border-radius: 10px 0 0 10px;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .post-card--layout--list.post-card--size--nl .post-card__category {
@@ -2462,14 +2462,14 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
     background: currentColor;
     left: 9px
 }
- 
+
 .post-card--layout--list.post-card--size--nl .post-card__name {
     margin-top: 20px;
     margin-bottom: 15px;
     font-size: 21px;
     line-height: 24px;
-    font-weight:bold;
-    color:inherit;
+    font-weight: bold;
+    color: inherit;
 }
 
 .post-card--layout--list.post-card--size--nl .post-card__content {
@@ -3470,13 +3470,13 @@ screen and (-ms-high-contrast:active) {
 .typography {
     line-height: 1.625;
     font-size: 15px;
-    h5{
+
+    h5 {
         font-size: 17px;
         margin-top: 0;
     }
-    p{
-        
-    }
+
+    p {}
 }
 
 .typography a:hover {
@@ -3783,7 +3783,47 @@ screen and (-ms-high-contrast:active) {
 }
 
 .filter-list__list {
-    margin: -8px 0
+    margin: -8px 0;
+    max-height: 400px;
+    overflow-y: auto;
+
+}
+
+.filter-list__list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.filter-list__list::-webkit-scrollbar-track {
+    background: #ddd;
+}
+
+.filter-list__list::-webkit-scrollbar-thumb {
+    background: #bbbbbb;
+}
+
+.showall.btn-link {
+    color: #55974d;
+    font-weight: bold;
+    margin-top: 10px;
+
+    i {
+        margin-right: 5px;
+    }
+
+    &[aria-expanded="true"] {
+        span{
+            display:none;
+
+        }
+        &:after{
+        content: "Cкрыть";
+        
+    }
+
+        i::before {
+            content: "\f077";
+        }
+    }
 }
 
 .filter-list__item {
@@ -6085,8 +6125,10 @@ screen and (-ms-high-contrast:active) {
 .site-footer {
     background: #242424;
     color: #ffffff;
+
     .logo {
         margin-top: 40px;
+
         img {
             filter: brightness(0) invert(1);
         }
@@ -6101,7 +6143,7 @@ screen and (-ms-high-contrast:active) {
         display: flex;
         align-items: flex-end;
         margin-top: 20px;
-        font-size:14px;
+        font-size: 14px;
 
         img {
             width: 60px;
@@ -6176,25 +6218,29 @@ screen and (-ms-high-contrast:active) {
 .site-footer__payments img {
     max-width: 100%
 }
- 
+
 .site-footer__widget+.site-footer__widget {
     margin-top: 24px
 }
-.error-page{
-   margin:50px 0;
-   display:flex;
-   align-items: center;
-   justify-content: center;
-   text-align:center;
-   h1{
+
+.error-page {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    h1 {
         font-size: 3em;
-    font-weight: 400;
-   }
-   p{
-    font-size: 18px;
-    line-height: 1.8
-   }
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.8
+    }
 }
+
 @media (max-width:767px) {
     .site-footer__widgets {
         padding-bottom: 48px
@@ -10025,7 +10071,8 @@ screen and (min-width:480px) and (-ms-high-contrast:active) {
     width: 100%;
     margin: 15px 0;
     border-radius: 10px;
-    box-shadow: rgba(45, 45, 45, 0.05) 0px 2px 20px, rgba(49, 49, 49, 0.05) 0px 4px 4px, rgba(42, 42, 42, 0.05) 0px 8px 8px, rgba(32, 32, 32, 0.05) 0px 16px 16px, rgba(49, 49, 49, 0.05) 0px 32px 32px, rgba(35, 35, 35, 0.05) 0px 64px 64px;}
+    box-shadow: rgba(45, 45, 45, 0.05) 0px 2px 20px, rgba(49, 49, 49, 0.05) 0px 4px 4px, rgba(42, 42, 42, 0.05) 0px 8px 8px, rgba(32, 32, 32, 0.05) 0px 16px 16px, rgba(49, 49, 49, 0.05) 0px 32px 32px, rgba(35, 35, 35, 0.05) 0px 64px 64px;
+}
 
 .posts-list--layout--grid2 .posts-list__item {
     width: calc(50% - 30px)
@@ -14524,15 +14571,18 @@ marquee {
 
 @media (max-width: 992px) {
     .site-footer .itdc {
-    margin-top: 10px;
-}
-.site-footer .itdc img {
-    width: 47px;
-    margin-left: 15px;
-}
-.site-footer .logo {
-    margin: 0 auto 10px 0;
-}
+        margin-top: 10px;
+    }
+
+    .site-footer .itdc img {
+        width: 47px;
+        margin-left: 15px;
+    }
+
+    .site-footer .logo {
+        margin: 0 auto 10px 0;
+    }
+
     marquee {
         display: none !important;
     }

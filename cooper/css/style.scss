@@ -2618,21 +2618,23 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
     z-index: 2;
     position: absolute;
     border: none;
-    font-size: 27px;
-    text-transform: uppercase;
-    padding: 7px;
     cursor: pointer;
     top: 147px;
-    background: transparent;
-    color: #fff;
-    transition: background-color .2s, color .2s;
-    right: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 2px;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 0
+    right:10px;
+    color: #387c30;
+    transition: all .2s;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.5); 
+        font-size: 18px;  
+        opacity:0;
 }
-
+.product-card:hover .product-card__fav{
+    opacity: 1;
+}
 
 @supports (-ms-ime-align:auto) {
     .product-card__fav svg {

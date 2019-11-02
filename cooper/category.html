@@ -768,6 +768,12 @@
 svg4everybody();
 </script> -->
     <link rel="stylesheet" href="vendor/fontawesome-5.6.1/css/all.min.css">
+    <script>
+        $('.product-card__fav').on('click', function(event) {
+            event.preventDefault();
+            $(this).find("i").addClass('fas').removeClass('far');
+        });
+    </script>
 </body>
 
 </html>

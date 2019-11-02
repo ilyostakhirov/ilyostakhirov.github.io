@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Udoc</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="page">
+    <div class="header fadeInDown wow" data-wow-duration="1s" data-wow-delay="0.5s">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <a class="logo" href="#"><img src="img/logo.svg" width="106" height="43" alt=""></a>                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">О системе </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Преимущества</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="right-menu">
+                        <li><a href="#"><span>Зарегистрироваться</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#526069" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h13M12 5l7 7-7 7" /></svg></a></li>
+                        <li class="blue-bg"><a href="#"><span>Войти</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#526069" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h13M12 5l7 7-7 7" /></svg></a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Русский
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-border" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">O'zbekcha</a>
+                        <a class="dropdown-item" href="#">English</a>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg id="burger" class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                        <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"></path>
+                        <path class="line middle" d="m 30,50 h 40"></path>
+                        <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </div>
+    <div class="container content-block login-page">
+        <div class="nav-tabs-horizontal nav-tabs-inverse">
+                    <ul class="nav nav-tabs nav-tabs-solid" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" data-toggle="tab" href="#login1" aria-controls="login1" role="tab">
+                                Авторизация
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" data-toggle="tab" href="#login2" aria-controls="login2" role="tab">
+                                Регистрация
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="login1" role="tabpanel">
+                            <form>
+                                <div class="form-group"><input type="password" class="form-control" placeholder="Введите пароль*"> </div>
+                                <button type="submit" class="btn btn-primary mt-2">Войти</button>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="login2" role="tabpanel">
+                            <form>
+                                <div class="form-group"><label>Имя пользователя</label> <input type="text" class="form-control"></div>
+                                <div class="form-group"><label>Пароль</label> <input type="password" class="form-control" placeholder=""> </div>
+                                
+                                <span class="help-text text-center">* - Поля, обязательные для заполнения</span>
+                                <button type="submit" class="btn btn-primary mt-2">Войти в систему</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    </div>   
+    <div class="footer">
+        <div class="container wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+            <a href="#"><img src="img/logo-f.svg" width="123" height="50" alt=""></a>
+            <p>ⓒ 2019 Единая система документрооборота Республики Узбекистан.<br>
+                Город Ташкенn, Улица Первая, дом 10, квартира 1. Тел.: +998 71 123 45 67 </p>
+            <a href="#">info@somedomein.uz</a>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

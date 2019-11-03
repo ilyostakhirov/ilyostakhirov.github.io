@@ -7,7 +7,6 @@
     <title>Электронная кооперационная биржа</title>
     <link rel="stylesheet" href="vendor/bootstrap-4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/select2/css/select2.min.css">
-    <link rel="stylesheet" href="css/dropify.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -247,8 +246,8 @@
                     <div class="col-12 col-lg-3 d-flex">
                         <div class="account-nav flex-grow-1">
                             <ul class="mt-20">
-                                <li class="account-nav__item account-nav__item--active"><a href="№"><img src="img/icons/icon1.svg" alt=""><span>Реквизиты</span></a></li>
-                                <li class="account-nav__item "><a href="№"><img src="img/icons/icon2.svg" alt=""><span>Каталог</span></a></li>
+                                <li class="account-nav__item"><a href="№"><img src="img/icons/icon1.svg" alt=""><span>Реквизиты</span></a></li>
+                                <li class="account-nav__item account-nav__item--active"><a href="№"><img src="img/icons/icon2.svg" alt=""><span>Каталог</span></a></li>
                                 <li class="account-nav__item"><a href="№"><img src="img/fav.svg" alt=""><span>Понравившиеся товары</span></a></li>
                                 <li class="account-nav__item"><a href="№"><img src="img/icons/icon3.svg" alt=""><span>Заключенные договора</span></a></li>
                                 <li class="account-nav__item"><a href="№"><img src="img/icons/icon4.svg" alt=""><span>Договара на потверждении</span></a></li>
@@ -259,105 +258,166 @@
                     <div class="col-12 col-lg-9 mt-4 mt-lg-0 mb-40">
                         <div class="card">
                             <div class="card-header">
-                                <h5>Реквизиты</h5>
+                                <h5>Каталог</h5>
                             </div>
                             <div class="card-divider"></div>
                             <div class="card-body ">
                                 <div class="form-group row">
-                                    <label class="col-md-4 col-form-label">Название на узбекском: </label>
-                                    <div class="col-md-8">
+                                    <label class="col-md-3 col-form-label">Модель: </label>
+                                    <div class="col-md-7">
                                         <input type="text" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-md-4 col-form-label">Расчетного счета: </label>
-                                    <div class="col-md-8">
-                                        <div class="d-flex align-items-center">
-                                            <div class="mr-20">
-                                                <div class="custom-control custom-checkbox mr-5">
-                                                    <input type="checkbox" class="custom-control-input" checked="checked" id="customCheck1">
-                                                    <label class="custom-control-label" for="customCheck1"></label>
-                                                </div>
-                                            </div>
-                                            <div class="flex-grow-1">
-                                                 <input type="text" class="form-control">
-                                            </div>
-                                            <div class="ml-20">
-                                                <a href="#" class="btn btn-primary btn-svg-icon ">
-                                                <i class="fas fa-plus"></i>
-                                            </a>
-                                            </div>
-                                           
-                                        </div>
-                                    </div>    
-                                    <div class="col-md-8 offset-md-4 mt-20">
-                                        <div class="d-flex align-items-center">
-                                            <div class="mr-20">
-                                                <div class="custom-control custom-checkbox mr-5">
-                                                    <input type="checkbox" class="custom-control-input"  id="customCheck2">
-                                                    <label class="custom-control-label" for="customCheck2"></label>
-                                                </div>
-                                            </div>
-                                            <div class="flex-grow-1">
-                                                 <input type="text" class="form-control">
-                                            </div>
-                                            <div class="ml-20">
-                                                <a href="#" class="btn btn-secondary btn-svg-icon ">
-                                                <i class="fas fa-trash"></i>
-                                            </a>
-                                            </div>
-                                           
-                                        </div>
-                                    </div>                                 
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-4 col-form-label">Регион: </label>
-                                    <div class="col-md-8">
+                                    <label class="col-md-3 col-form-label">Категория товара: </label>
+                                    <div class="col-md-7">
                                         <select class="js-select2" name="state">
-                                            <option value="AL"></option>
-                                            <option value="WY"></option>
+                                            <option value="AL">Выбрать категорию товара</option>
+                                            <option value="WY">Wyoming</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <a class="add-new" href="#">Предложить новую<br> категорию</a>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Подкатегория товара:</label>
+                                    <div class="col-md-7">
+                                        <select class="js-select2" name="state">
+                                            <option value="AL">Выбрать категорию товара</option>
+                                            <option value="WY">Wyoming</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <a class="add-new" href="#">Предложить новую<br> категорию</a>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Единицы измерения:</label>
+                                    <div class="col-md-7">
+                                        <select class="js-select2" name="state">
+                                            <option value="AL">Выбрать единицу измерения</option>
+                                            <option value="WY">Wyoming</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-md-4 col-form-label">Район:</label>
-                                    <div class="col-md-8">
-                                        <select class="form-control">
-                                            <option></option>
-                                            <option></option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-4 col-form-label">Сфера организации: </label>
-                                    <div class="col-md-8">
+                                    <label class="col-md-3 col-form-label">Размеры: </label>
+                                    <div class="col-md-7">
                                         <input type="text" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-md-4 col-form-label">Адрес:</label>
-                                    <div class="col-md-8">
-                                        <textarea class="form-control" value="" rows="3"></textarea>
+                                    <label class="col-md-3 col-form-label">Модель: </label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-md-4 col-form-label">Лого: </label>
-                                    <div class="col-md-8">
-                                        <input type="file" class="dropify" data-allowed-file-extensions="jpg png" />
+                                    <label class="col-md-3 col-form-label">Материал: </label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-md-4 col-form-label">Местоположение на карте: </label>
-                                    <div class="col-md-8">
-                                        <div class="map">
-                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11991.080781535138!2d69.25198195!3d41.292105649999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8afca01533fd%3A0xfa35746eb31d9610!2zMTEg0YPQu9C40YbQsCDQkdC-0LHRg9GA0LAsINCi0LDRiNC60LXQvdGCLCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1571312846789!5m2!1sru!2s" width="600" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                    <label class="col-md-3 col-form-label">Срок гарантии: </label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Место выпуска: </label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Код ТНВЕД: </label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Минимальный заказ: </label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Максимальный заказ:</label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Цена: </label>
+                                    <div class="col-md-7">
+                                        <div class="flex-wrap d-flex">
+                                            <div class="d-flex align-items-center mr-30">
+                                                <span class="mr-15 label-text">от</span>
+                                                <input placeholder="Количество" type="text" class="form-control m-w-170">
+                                            </div>
+                                            <div class="d-flex align-items-center flex-fill">
+                                                <span class="mr-15 label-text">Цена:</span>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 ">
+                                        <a class="add-new" href="#">Добавить цену</a>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Готово к отгрузке:</label>
+                                    <div class="col-md-7">
+                                        <div class="d-flex align-items-center">
+                                            <div class="custom-control custom-checkbox mr-5">
+                                                <input type="checkbox" class="custom-control-input" checked="checked" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1"></label>
+                                            </div>
+                                            <input placeholder="Количество" type="text" class="form-control m-w-170">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-md-4 col-form-label"></label>
-                                    <div class="col-md-8 text-right">
-                                        <a class="btn btn-primary btn-lg" href="">Сохранить</a>
+                                    <label class="col-md-3 col-form-label">Тип доставки:</label>
+                                    <div class="col-md-7">
+                                        <select class="js-select2" name="state">
+                                            <option value="AL">Выбрать</option>
+                                            <option value="WY">Wyoming</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Описание продукта:</label>
+                                    <div class="col-md-7">
+                                        <textarea class="form-control" rows="3"></textarea>
+                                    </div>
+                                </div>
+                                 <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Фотографии товара:</label>
+                                    <div class="col-md-7">
+                                       <div class="d-flex thumbs-img mt-4 ">
+                                            <div class="mr-3">
+                                                <img src="images/botinka/1.jpg" alt="img">
+                                            </div>
+                                            <div class="mr-3">
+                                                <img src="images/botinka/2.jpg" alt="img">
+                                            </div>
+                                            <div class="mr-3">
+                                                <img src="images/botinka/3.jpg" alt="img">
+                                            </div>
+                                            <div class="file-input position-relative">
+                                                <i class="fas fa-plus-circle"></i>
+                                                <input type="file">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label"></label>
+                                    <div class="col-md-7 text-right">
+                                       <a class="btn btn-primary btn-lg" href="">Сохранить</a>
                                     </div>
                                 </div>
                             </div>
@@ -374,7 +434,7 @@
             <div class="container">
                 <div class="site-footer__widgets">
                     <div class="row">
-                        <div class="col-6 col-md-4 col-lg-3">
+                        <div class="col-6 col-md-3 col-lg-3">
                             <div class="site-footer__widget footer-links">
                                 <h5 class="footer-links__title">Общая информация</h5>
                                 <ul class="footer-links__list">
@@ -384,7 +444,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 col-lg-3">
+                        <div class="col-6 col-md-3 col-lg-3">
                             <div class="site-footer__widget footer-links">
                                 <h5 class="footer-links__title">Страницы</h5>
                                 <ul class="footer-links__list">
@@ -395,7 +455,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 col-lg-3">
+                        <div class="col-6 col-md-3 col-lg-3">
                             <div class="site-footer__widget footer-links">
                                 <h5 class="footer-links__title">Инструкция</h5>
                                 <ul class="footer-links__list">
@@ -406,7 +466,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-6 col-md-4 col-lg-3">
+                        <div class="col-6 col-md-3 col-lg-3">
                             <div class="site-footer__widget ">
                                 <h5 class="footer-links__title">Контакты</h5>
                                 <ul class="footer-contact">
@@ -426,7 +486,6 @@
     <script src="vendor/jquery-3.3.1/jquery.min.js"></script>
     <script src="vendor/bootstrap-4.2.1/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/select2/js/select2.min.js"></script>
-    <script src="js/dropify.min.js"></script>
     <script src="js/number.js"></script>
     <script src="js/main.js"></script>
     <script src="js/header.js"></script>
@@ -434,7 +493,6 @@
     <script>
     $(document).ready(function() {
         $('.js-select2').select2();
-        $('.dropify').dropify();
     });
     </script>
 </body>

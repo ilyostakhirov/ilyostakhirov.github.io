@@ -511,7 +511,7 @@ body.page{
 .login-page {
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     .nav-tabs-horizontal {
         max-width: 460px;
         margin: 0 auto 50px;
@@ -531,6 +531,7 @@ body.page{
                     font-size: 18px;
                     color: #787878;
                     padding: 15px 35px;
+                    border-bottom:2px solid #eee;
 
                     &:hover {
                         border-color: transparent;

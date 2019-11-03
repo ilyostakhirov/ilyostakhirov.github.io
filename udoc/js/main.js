@@ -35,10 +35,17 @@ setInterval(function() {
     }
 }, 250);
 
-wow = new WOW(
-  {
+wow = new WOW({
     animateClass: 'animated',
     offset: 100
-  }
-);
+});
 wow.init();
+
+$('.login-page .nav-item').on('click', function() {
+    if ($(this).find('.reg-link').length !== 0) {
+        $(".bg-login").addClass('reg-active')
+    }
+    else {
+        $(".bg-login").removeClass('reg-active')
+    }
+});

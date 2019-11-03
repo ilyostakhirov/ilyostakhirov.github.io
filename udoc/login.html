@@ -14,7 +14,7 @@
     <div class="header fadeInDown wow" data-wow-duration="1s" data-wow-delay="0.5s">
         <nav class="navbar navbar-expand-lg ">
             <div class="container">
-                <a class="logo" href="#"><img src="img/logo.svg" width="106" height="43" alt=""></a>                
+                <a class="logo" href="#"><img src="img/logo.svg" width="106" height="43" alt=""></a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
@@ -54,39 +54,68 @@
         </nav>
     </div>
     <div class="container content-block login-page">
-        <div class="bg-login"></div>
+        <div class="bg-login">
+            <img src="img/login.png" class="login-img" alt="">
+            <img src="img/reg.png" class="reg-img" alt="">
+        </div>
         <div class="nav-tabs-horizontal nav-tabs-inverse">
-                    <ul class="nav nav-tabs nav-tabs-solid" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link active" data-toggle="tab" href="#login1" aria-controls="login1" role="tab">
-                                Авторизация
-                            </a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" data-toggle="tab" href="#login2" aria-controls="login2" role="tab">
-                                Регистрация
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="login1" role="tabpanel">
-                            <form>
-                                <div class="form-group"><input type="password" class="form-control" placeholder="Введите пароль*"> </div>
-                                <button type="submit" class="btn btn-primary mt-2">Войти</button>
-                            </form>
-                        </div>
-                        <div class="tab-pane" id="login2" role="tabpanel">
-                            <form>
-                                <div class="form-group"><label>Имя пользователя</label> <input type="text" class="form-control"></div>
-                                <div class="form-group"><label>Пароль</label> <input type="password" class="form-control" placeholder=""> </div>
-                                
-                                <span class="help-text text-center">* - Поля, обязательные для заполнения</span>
-                                <button type="submit" class="btn btn-primary mt-2">Войти в систему</button>
-                            </form>
+            <ul class="nav nav-tabs nav-tabs-solid" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active login-link" data-toggle="tab" href="#login1" aria-controls="login1" role="tab">
+                        Авторизация
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link reg-link" data-toggle="tab" href="#login2" aria-controls="login2" role="tab">
+                        Регистрация
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="login1" role="tabpanel">
+                    <div class="text-center mb-45">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Авторизация для сотрудника</label>
                         </div>
                     </div>
+                    <div class="form-group">
+                        <select class="custom-select">
+                            <option>Выбрать ключ*</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <p class="help-text text-center mt-20">Укажите ключ электронно-цифровой подписи</p>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Введите пароль*">
+                        <p class="text-center help-text mt-20">* - Поля, обязательные для заполнения</p>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Войти в систему</button>
+                    </div>
                 </div>
-    </div>   
+                <div class="tab-pane" id="login2" role="tabpanel">
+                    <div class="form-group">
+                        <select class="custom-select">
+                            <option>Укажите ключ*</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Введите пароль*">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" placeholder="Введите номер телефона*">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Адрес э-почты">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="footer">
         <div class="container wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
             <a href="#"><img src="img/logo-f.svg" width="123" height="50" alt=""></a>
@@ -100,7 +129,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
-    
 </body>
 
 </html>

@@ -44,8 +44,20 @@ wow.init();
 $('.login-page .nav-item').on('click', function() {
     if ($(this).find('.reg-link').length !== 0) {
         $(".bg-login").addClass('reg-active')
-    }
-    else {
+    } else {
         $(".bg-login").removeClass('reg-active')
+    }
+});
+
+var ckbox = $('#employeeCheck');
+
+$('input').on('click', function() {
+    if (ckbox.is(':checked')) {
+        $('.esp').hide('fast');
+        $('.emploee').show('fast');
+         
+    } else {
+        $('.emploee').hide('fast');
+         $('.esp').show('fast');
     }
 });

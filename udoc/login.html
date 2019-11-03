@@ -75,15 +75,27 @@
                 <div class="tab-pane active" id="login1" role="tabpanel">
                     <div class="text-center mb-45">
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="customCheck1">
-                            <label class="custom-control-label" for="customCheck1">Авторизация для сотрудника</label>
+                            <input type="checkbox" class="custom-control-input" id="employeeCheck">
+                            <label class="custom-control-label" for="employeeCheck">Авторизация для сотрудника</label>
                         </div>
                     </div>
+                    <div class="esp">
+                        <div class="form-group">
+                        <select class="custom-select">
+                            <option>Укажите ключ*</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <p class="text-center help-text mt-20">Укажите ключ электронно-цифровой подписи</p>
+                    </div>
+                    </div>
+                    <div class="emploee" style="display: none">
                     <div class="form-group">
                         <input type="password" class="form-control" placeholder="ID компании*">
                     </div>
                     <div class="form-group">
                         <input type="password" class="form-control" placeholder="Введите логин*">
+                    </div>
                     </div>
                     <div class="form-group">
                         <input type="password" class="form-control" placeholder="Введите пароль*">

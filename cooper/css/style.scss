@@ -7040,6 +7040,10 @@ screen and (-ms-high-contrast:active) {
 
         a {
             color: #000;
+            &.active{
+                    color: #55974d;
+                font-weight:bold;
+            }
         }
 
         &:first-child {

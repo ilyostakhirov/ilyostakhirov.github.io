@@ -1287,6 +1287,9 @@ img {
   .login-page .nav-tabs-horizontal .nav-tabs {
     padding: 15px 20px;
   }
+  .btn {
+    padding: 10px 15px;
+  }
   .login-page .nav-tabs-horizontal .tab-content {
     padding: 10px 20px 20px;
   }

@@ -2614,7 +2614,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
     width: 100%;
 }
 
-.product-card__fav {
+.product-card__fav,.product-card_whish {
     z-index: 2;
     position: absolute;
     border: none;
@@ -2629,10 +2629,13 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
     text-align: center;
     background: #fff;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,.5); 
-        font-size: 18px;  
+        font-size: 17px;  
         opacity:0;
 }
-.product-card:hover .product-card__fav{
+.product-card_whish{
+    right:54px;
+}
+.product-card:hover .product-card__fav,.product-card:hover .product-card_whish{
     opacity: 1;
 }
 
@@ -7722,7 +7725,6 @@ screen and (-ms-high-contrast:active) {
 }
 
 .product__meta a {
-    color: inherit;
     transition: color .2s
 }
 

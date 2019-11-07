@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="global/vendor/asscrollable/asScrollable.css">
     <link rel="stylesheet" href="global/vendor/bootstrap-datepicker/bootstrap-datepicker.css">
     <link rel="stylesheet" href="global/vendor/select2/select2.css">
-    <link rel="stylesheet" href="global/vendor/icheck/icheck.css">
     <link rel="stylesheet" href="global/vendor/ionrangeslider/ionrangeslider.css">
+    <link rel="stylesheet" href="global/vendor/datatables.net-bs4/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="global/vendor/webui-popover/webui-popover.min.css">
     <link rel="stylesheet" href="assets/css/site.min.css">
     <link rel="stylesheet" href="global/fonts/web-icons/web-icons.min.css">
     <script src="global/vendor/breakpoints/breakpoints.js"></script>
@@ -320,7 +321,7 @@
                             <a class="panel-action  panel-collapse" data-toggle="" aria-hidden="true"><span>Свернуть <i class="icon wb-chevron-up-mini ml-10"></i></span><span>Показать <i class="icon wb-chevron-down-mini ml-10"></i></span></a>
                         </div>
                     </div>
-                    <div class="panel-body pt-0">
+                    <div class="panel-body pt-0 pb-0">
                         <div class="row">
                             <div class="form-group col-md-3">
                                 <label class="form-control-label">Номер договора</label>
@@ -328,7 +329,10 @@
                             </div>
                             <div class="form-group col-md-3">
                                 <label class="form-control-label">Статус договора</label>
-                                <select class="form-control" data-plugin="select2">
+                                <select class="form-control n-search">
+                                    <option>Действующий, Исполненный</option>
+                                    <option>Действующий, Исполненный</option>
+                                    <option>Действующий, Исполненный</option>
                                     <option>Действующий, Исполненный</option>
                                 </select>
                             </div>
@@ -336,17 +340,27 @@
                                 <label class="form-control-label">Партнёры</label>
                                 <select class="form-control" data-plugin="select2">
                                     <option>ООО «Coca-Cola LTD», ЧП «KAVSAR»</option>
+                                    <option>ООО «Coca-Cola LTD», ЧП «KAVSAR»</option>
+                                    <option>ООО «Coca-Cola LTD», ЧП «KAVSAR»</option>
+                                    <option>ООО «Coca-Cola LTD», ЧП «KAVSAR»</option>
                                 </select>
                             </div>
                             <div class="form-group col-md-3">
                                 <label class="form-control-label">Тип договора</label>
-                                <select class="form-control" data-plugin="select2">
+                                <select class="form-control n-search">
+                                    <option>Исходящий</option>
+                                    <option>Исходящий</option>
+                                    <option>Исходящий</option>
+                                    <option>Исходящий</option>
                                     <option>Исходящий</option>
                                 </select>
                             </div>
                             <div class="form-group col-md-3">
                                 <label class="form-control-label">Тип предмета товара</label>
-                                <select class="form-control" data-plugin="select2">
+                                <select class="form-control n-search">
+                                    <option>Товар</option>
+                                    <option>Товар</option>
+                                    <option>Товар</option>
                                     <option>Товар</option>
                                 </select>
                             </div>
@@ -375,19 +389,299 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <label class="form-control-label">Предмет договора</label>
-                                <select class="form-control" data-plugin="select2">
+                                <select class="form-control  n-search">
+                                    <option>Товар</option>
+                                    <option>Товар</option>
+                                    <option>Товар</option>
                                     <option>Товар</option>
                                 </select>
                             </div>
                             <div class="form-group col-md-6">
                                 <label class="form-control-label">Сумма договора</label>
-                                <input type="text" id="irs_3" name="irsExample" data-plugin="ionRangeSlider" data-type="double" data-min=10000 data-max=100000000 data-from=100000 data-to=10000000 />
+                                <input type="text" id="irs_3" name="irsExample" data-plugin="ionRangeSlider" data-type="double" data-min=10000 data-max=100000000 data-from=10000 data-to=100000000 />
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="panel-body container-fluid">
-                    dfgdfg
+                <div class="table-actions">
+                    <div class="btns">
+                        <a href="#" class="btn btn-icon btn-primary btn-outline mr-15" >
+                    <i class="icon wb-refresh" aria-hidden="true"></i>
+                  </a>
+                        <a href="#" class="btn btn-outline btn-default mr-15"><i class="icon wb-edit mr-10"></i>Подписать договор</a>
+                        <a href="#" class="btn btn-outline btn-default mr-15"><i class="icon wb-order mr-10"></i>Протокол</a>
+                        <a href="#" class="btn btn-outline btn-default mr-15"><i class="icon wb-upload mr-10"></i>Поделиться</a>
+                    </div>
+                    <div class="actions">
+                        <select class="form-control n-search">
+                            <option>Действия</option>
+                            <option>Изменить</option>
+                            <option>Удалить в корзину</option>
+                        </select>
+                        <span class="v-l"></span>
+                        <a href="#" class="btn btn-default">Выполнить</a>
+                    </div>
+                </div>
+                <div id="PopoverTable" hidden>
+                    <table class="table table-bordered">
+                      <tbody>
+                        <tr>
+                          <td>Доверенность</td>
+                          <td>5</td>
+                        </tr>
+                        <tr>
+                          <td>Счёт на оплату</td>
+                          <td>7</td>
+                        </tr>
+                        <tr>
+                          <td>Счёт фактура</td>
+                          <td>14</td>
+                        </tr>
+                        <tr>
+                          <td>АКТ</td>
+                          <td>14</td>
+                        </tr>
+                        <tr>
+                          <td>ТТН</td>
+                          <td>5</td>
+                        </tr>
+                        <tr>
+                          <td>Срок окончания</td>
+                          <td>30.10.2019</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                <div class="dataTable-wrap">
+                    <div class="table-responsive ">
+                        <table id="datatable-dogovar" data-plugin="selectable" data-row-selectable="true" class="table table-hover dataTable table-striped w-full" >
+                            <thead>
+                                <tr>
+                                    <th class="no-sort"></th>
+                                    <th>ID</th>
+                                    <th>№ договора</th>
+                                    <th>Дата закл-я</th>
+                                    <th>Партнер</th>
+                                    <th>Предмет</th>
+                                    <th>Сумма</th>
+                                    <th>Тип</th>
+                                    <th>Статус</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="checkbox-custom checkbox-primary">
+                            <input class="selectable-item" type="checkbox" id="row-1" value="1">
+                            <label for="row-1"></label>
+                          </span></td>
+                                    <td><span>101</span></td>
+                                    <td><span><span>2342-234-19</span></td>
+                                    <td><span>12.12.2018</span><small>до 30.12.2019</small></td>
+                                    <td><span>OOO "Coca-Cola LTD"</span><small>+99891 123-45-67</small></td>
+                                    <td><span>Напитки газ...</span><small>35шт</small></td>
+                                    <td><span>520 000 000</span><small>сўм</small></td>
+                                    <td><span>Исходящий</span><small>2х сторонний</small></td>
+                                    <td><span class="badge badge-lg badge-primary">Создан</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="checkbox-custom checkbox-primary">
+                            <input class="selectable-item" type="checkbox" id="row-2" value="2">
+                            <label for="row-2"></label>
+                          </span></td>
+                                    <td><span>101</span></td>
+                                    <td><span>2342-234-19</span></td>
+                                    <td><span>12.12.2018</span><small>до 30.12.2019</small></td>
+                                    <td><span>OOO "Coca-Cola LTD"</span><small>+99891 123-45-67</small></td>
+                                    <td><span>Напитки газ...</span><small>35шт</small></td>
+                                    <td><span>520 000 000</span><small>сўм</small></td>
+                                    <td><span>Исходящий</span><small>2х сторонний</small></td>
+                                    <td><span class="badge badge-lg badge-success">Одобрен</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="checkbox-custom checkbox-primary">
+                            <input class="selectable-item" type="checkbox" id="row-3" value="3">
+                            <label for="row-3"></label>
+                          </span></td>
+                                    <td><span>101</span></td>
+                                    <td><span>2342-234-19</span></td>
+                                    <td><span>12.12.2018</span><small>до 30.12.2019</small></td>
+                                    <td><span>OOO "Coca-Cola LTD"</span><small>+99891 123-45-67</small></td>
+                                    <td><span>Напитки газ...</span><small>35шт</small></td>
+                                    <td><span>520 000 000</span><small>сўм</small></td>
+                                    <td><span>Исходящий</span><small>2х сторонний</small></td>
+                                    <td><span class="badge badge-lg badge-warning">Отказан</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="checkbox-custom checkbox-primary">
+                            <input class="selectable-item" type="checkbox" id="row-4" value="4">
+                            <label for="row-4"></label>
+                          </span></td>
+                                    <td><span>101</span></td>
+                                    <td><span>2342-234-19</span></td>
+                                    <td><span>12.12.2018</span><small>до 30.12.2019</small></td>
+                                    <td><span>OOO "Coca-Cola LTD"</span><small>+99891 123-45-67</small></td>
+                                    <td><span>Напитки газ...</span><small>35шт</small></td>
+                                    <td><span>520 000 000</span><small>сўм</small></td>
+                                    <td><span>Исходящий</span><small>2х сторонний</small></td>
+                                    <td><span class="badge badge-lg badge-primary">Создан</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="checkbox-custom checkbox-primary">
+                            <input class="selectable-item" type="checkbox" id="row-5" value="5">
+                            <label for="row-5"></label>
+                          </span></td>
+                                    <td><span>101</span></td>
+                                    <td><span>2342-234-19</span></td>
+                                    <td><span>12.12.2018</span><small>до 30.12.2019</small></td>
+                                    <td><span>OOO "Coca-Cola LTD"</span><small>+99891 123-45-67</small></td>
+                                    <td><span>Напитки газ...</span><small>35шт</small></td>
+                                    <td><span>520 000 000</span><small>сўм</small></td>
+                                    <td><span>Исходящий</span><small>2х сторонний</small></td>
+                                    <td><span class="badge badge-lg badge-success">Одобрен</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="checkbox-custom checkbox-primary">
+                            <input class="selectable-item" type="checkbox" id="row-6" value="6">
+                            <label for="row-6"></label>
+                          </span></td>
+                                    <td><span>101</span></td>
+                                    <td><span>2342-234-19</span></td>
+                                    <td><span>12.12.2018</span><small>до 30.12.2019</small></td>
+                                    <td><span>OOO "Coca-Cola LTD"</span><small>+99891 123-45-67</small></td>
+                                    <td><span>Напитки газ...</span><small>35шт</small></td>
+                                    <td><span>520 000 000</span><small>сўм</small></td>
+                                    <td><span>Исходящий</span><small>2х сторонний</small></td>
+                                    <td><span class="badge badge-lg badge-warning">Отказан</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="checkbox-custom checkbox-primary">
+                            <input class="selectable-item" type="checkbox" id="row-7" value="7">
+                            <label for="row-7"></label>
+                          </span></td>
+                                    <td><span>101</span></td>
+                                    <td><span>2342-234-19</span></td>
+                                    <td><span>12.12.2018</span><small>до 30.12.2019</small></td>
+                                    <td><span>OOO "Coca-Cola LTD"</span><small>+99891 123-45-67</small></td>
+                                    <td><span>Напитки газ...</span><small>35шт</small></td>
+                                    <td><span>520 000 000</span><small>сўм</small></td>
+                                    <td><span>Исходящий</span><small>2х сторонний</small></td>
+                                    <td><span class="badge badge-lg badge-primary">Создан</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="checkbox-custom checkbox-primary">
+                            <input class="selectable-item" type="checkbox" id="row-8" value="8">
+                            <label for="row-8"></label>
+                          </span></td>
+                                    <td><span>101</span></td>
+                                    <td><span>2342-234-19</span></td>
+                                    <td><span>12.12.2018</span><small>до 30.12.2019</small></td>
+                                    <td><span>OOO "Coca-Cola LTD"</span><small>+99891 123-45-67</small></td>
+                                    <td><span>Напитки газ...</span><small>35шт</small></td>
+                                    <td><span>520 000 000</span><small>сўм</small></td>
+                                    <td><span>Исходящий</span><small>2х сторонний</small></td>
+                                    <td><span class="badge badge-lg badge-success">Одобрен</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="checkbox-custom checkbox-primary">
+                            <input class="selectable-item" type="checkbox" id="row-9" value="9">
+                            <label for="row-9"></label>
+                          </span></td>
+                                    <td><span>101</span></td>
+                                    <td><span>2342-234-19</span></td>
+                                    <td><span>12.12.2018</span><small>до 30.12.2019</small></td>
+                                    <td><span>OOO "Coca-Cola LTD"</span><small>+99891 123-45-67</small></td>
+                                    <td><span>Напитки газ...</span><small>35шт</small></td>
+                                    <td><span>520 000 000</span><small>сўм</small></td>
+                                    <td><span>Исходящий</span><small>2х сторонний</small></td>
+                                    <td><span class="badge badge-lg badge-warning">Отказан</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="checkbox-custom checkbox-primary">
+                            <input class="selectable-item" type="checkbox" id="row-10" value="10">
+                            <label for="row-10"></label>
+                          </span></td>
+                                    <td><span>101</span></td>
+                                    <td><span>2342-234-19</span></td>
+                                    <td><span>12.12.2018</span><small>до 30.12.2019</small></td>
+                                    <td><span>OOO "Coca-Cola LTD"</span><small>+99891 123-45-67</small></td>
+                                    <td><span>Напитки газ...</span><small>35шт</small></td>
+                                    <td><span>520 000 000</span><small>сўм</small></td>
+                                    <td><span>Исходящий</span><small>2х сторонний</small></td>
+                                    <td><span class="badge badge-lg badge-primary">Создан</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="checkbox-custom checkbox-primary">
+                            <input class="selectable-item" type="checkbox" id="row-11" value="11">
+                            <label for="row-11"></label>
+                          </span></td>
+                                    <td><span>101</span></td>
+                                    <td><span>2342-234-19</span></td>
+                                    <td><span>12.12.2018</span><small>до 30.12.2019</small></td>
+                                    <td><span>OOO "Coca-Cola LTD"</span><small>+99891 123-45-67</small></td>
+                                    <td><span>Напитки газ...</span><small>35шт</small></td>
+                                    <td><span>520 000 000</span><small>сўм</small></td>
+                                    <td><span>Исходящий</span><small>2х сторонний</small></td>
+                                    <td><span class="badge badge-lg badge-success">Одобрен</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="checkbox-custom checkbox-primary">
+                            <input class="selectable-item" type="checkbox" id="row-12" value="12">
+                            <label for="row-12"></label>
+                          </span></td>
+                                    <td><span>101</span></td>
+                                    <td><span>2342-234-19</span></td>
+                                    <td><span>12.12.2018</span><small>до 30.12.2019</small></td>
+                                    <td><span>OOO "Coca-Cola LTD"</span><small>+99891 123-45-67</small></td>
+                                    <td><span>Напитки газ...</span><small>35шт</small></td>
+                                    <td><span>520 000 000</span><small>сўм</small></td>
+                                    <td><span>Исходящий</span><small>2х сторонний</small></td>
+                                    <td><span class="badge badge-lg badge-warning">Отказан</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="checkbox-custom checkbox-primary">
+                            <input class="selectable-item" type="checkbox" id="row-13" value="13">
+                            <label for="row-13"></label>
+                          </span></td>
+                                    <td><span>101</span></td>
+                                    <td><span>2342-234-19</span></td>
+                                    <td><span>12.12.2018</span><small>до 30.12.2019</small></td>
+                                    <td><span>OOO "Coca-Cola LTD"</span><small>+99891 123-45-67</small></td>
+                                    <td><span>Напитки газ...</span><small>35шт</small></td>
+                                    <td><span>520 000 000</span><small>сўм</small></td>
+                                    <td><span>Исходящий</span><small>2х сторонний</small></td>
+                                    <td><span class="badge badge-lg badge-primary">Создан</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="checkbox-custom checkbox-primary">
+                            <input class="selectable-item" type="checkbox" id="row-14" value="14">
+                            <label for="row-14"></label>
+                          </span></td>
+                                    <td><span>101</span></td>
+                                    <td><span>2342-234-19</span></td>
+                                    <td><span>12.12.2018</span><small>до 30.12.2019</small></td>
+                                    <td><span>OOO "Coca-Cola LTD"</span><small>+99891 123-45-67</small></td>
+                                    <td><span>Напитки газ...</span><small>35шт</small></td>
+                                    <td><span>520 000 000</span><small>сўм</small></td>
+                                    <td><span>Исходящий</span><small>2х сторонний</small></td>
+                                    <td><span class="badge badge-lg badge-success">Одобрен</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="checkbox-custom checkbox-primary">
+                            <input class="selectable-item" type="checkbox" id="row-15" value="15">
+                            <label for="row-15"></label>
+                          </span></td>
+                                    <td><span>101</span></td>
+                                    <td><span>2342-234-19</span></td>
+                                    <td><span>12.12.2018</span><small>до 30.12.2019</small></td>
+                                    <td><span>OOO "Coca-Cola LTD"</span><small>+99891 123-45-67</small></td>
+                                    <td><span>Напитки газ...</span><small>35шт</small></td>
+                                    <td><span>520 000 000</span><small>сўм</small></td>
+                                    <td><span>Исходящий</span><small>2х сторонний</small></td>
+                                    <td><span class="badge badge-lg badge-warning">Отказан</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -419,9 +713,10 @@
     <script src="global/vendor/asscrollable/jquery-asScrollable.js"></script>
     <script src="global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
     <script src="global/vendor/select2/select2.full.min.js"></script>
-    <script src="global/vendor/icheck/icheck.min.js"></script>
     <script src="global/vendor/bootstrap-datepicker/bootstrap-datepicker.js"></script>
-    
+    <script src="global/vendor/datatables.net/jquery.dataTables.js"></script>
+    <script src="global/vendor/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+    <script src="global/vendor/webui-popover/jquery.webui-popover.js"></script>
     <!-- Scripts -->
     <script src="global/js/Component.js"></script>
     <script src="global/js/Plugin.js"></script>
@@ -434,6 +729,9 @@
     <script src="assets/js/Plugin/menu.js"></script>
     <script src="assets/js/Site.js"></script>
     <script src="global/js/Plugin/ion.rangeSlider.min.js"></script>
+    <script src="global/js/Plugin/webui-popover.js"></script>
+    <script src="global/js/Plugin/asselectable.min.js"></script>
+    <script src="global/js/Plugin/selectable.min.js"></script>
     <script>
     (function(document, window, $) {
         'use strict';
@@ -442,6 +740,8 @@
             Site.run();
         });
     })(document, window, jQuery);
+
+    
     </script>
 </body>
 

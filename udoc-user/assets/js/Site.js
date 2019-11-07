@@ -413,4 +413,34 @@ $(document).ready(function(e) {
         $(this).toggleClass('active');
         $(this).closest(".panel").find('.panel-body').toggle();
     });
+    $('#datatable-dogovar').DataTable({
+        "language": {
+            "sProcessing": "Подождите...",
+            "sLengthMenu": "Показать _MENU_ записей",
+            "sZeroRecords": "Записи отсутствуют.",
+            "sInfo": "Записи с _START_ до _END_ из _TOTAL_ записей",
+            "sInfoEmpty": "Записи с 0 до 0 из 0 записей",
+            "sInfoFiltered": "(отфильтровано из _MAX_ записей)",
+            "sInfoPostFix": "",
+            "sSearch": "Поиск:",
+            "sUrl": "",
+            "oPaginate": {
+                "sFirst": "<<",
+                "sPrevious": "<",
+                "sNext": ">",
+                "sLast": ">>"
+            },
+            "oAria": {
+                "sSortAscending": ": активировать для сортировки столбца по возрастанию",
+                "sSortDescending": ": активировать для сортировки столбцов по убыванию"
+            }
+        }
+    });
+
+    $(".n-search").select2({
+            dropdownCssClass: "custom-select2"
+        });
+
+    $('#datatable-dogovar tbody tr').webuiPopover({animation:'pop',trigger:'hover', content:"<table class='info-table table-striped table'> <tbody> <tr> <td>Доверенность</td> <td>5</td> </tr> <tr> <td>Счёт на оплату</td> <td>7</td> </tr> <tr> <td>Счёт фактура</td> <td>14</td> </tr> <tr> <td>АКТ</td> <td>14</td> </tr> <tr> <td>ТТН</td> <td>5</td> </tr> <tr> <td>Срок окончания</td> <td>30.10.2019</td> </tr> </tbody></table>"});
+
 });

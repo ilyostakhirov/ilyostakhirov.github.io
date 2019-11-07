@@ -14418,7 +14418,9 @@ td.action-icons {
 .dataTable-wrap .table-striped tbody tr:nth-of-type(odd) {
     background-color: #f9f9f9;
 }
-
+.dataTable-wrap .table-striped tbody tr:hover {
+    background-color: #e9f5ff;
+}
 .page-content th>.form-control {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

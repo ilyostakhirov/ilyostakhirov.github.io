@@ -441,6 +441,6 @@ $(document).ready(function(e) {
             dropdownCssClass: "custom-select2"
         });
 
-    $('#datatable-dogovar tbody tr').webuiPopover({animation:'pop',trigger:'click', content:"<table class='info-table table-striped table'> <tbody> <tr> <td>Доверенность</td> <td>5</td> </tr> <tr> <td>Счёт на оплату</td> <td>7</td> </tr> <tr> <td>Счёт фактура</td> <td>14</td> </tr> <tr> <td>АКТ</td> <td>14</td> </tr> <tr> <td>ТТН</td> <td>5</td> </tr> <tr> <td>Срок окончания</td> <td>30.10.2019</td> </tr> </tbody></table>"});
+    // $('#datatable-dogovar tbody tr').webuiPopover({animation:'pop',trigger:'click', content:"<table class='info-table table-striped table'> <tbody> <tr> <td>Доверенность</td> <td>5</td> </tr> <tr> <td>Счёт на оплату</td> <td>7</td> </tr> <tr> <td>Счёт фактура</td> <td>14</td> </tr> <tr> <td>АКТ</td> <td>14</td> </tr> <tr> <td>ТТН</td> <td>5</td> </tr> <tr> <td>Срок окончания</td> <td>30.10.2019</td> </tr> </tbody></table>"});
 
 });

@@ -6093,7 +6093,21 @@ screen and (-ms-high-contrast:active) {
     transition: box-shadow 0.2s;
     transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
 }
-
+.other-table{
+    td{
+        text-align: left!important;
+        font-weight:bold!important;
+    }
+}
+.dogovar-wrap{
+    table td{
+        padding:3px 5px;
+    }
+}
+.modal-body.dogovar-wrap {
+    max-height: calc(100vh - 190px);
+    overflow-y: scroll;
+}
 @media (max-width:991px) {
     .footer-newsletter {
         margin-top: 42px;
@@ -15144,4 +15158,12 @@ marquee {
     left: 0;
     width: 100%;
     height: 100%;
+}
+@media (min-width: 992px){
+    .modal-lg, .modal-xl {
+    max-width: 1000px;
+}
+}
+.dogovar-box{
+    min-width: 950px;
 }

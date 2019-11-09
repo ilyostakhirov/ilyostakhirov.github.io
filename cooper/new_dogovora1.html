@@ -236,12 +236,12 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Составление нового договора</li>
+                            <li class="breadcrumb-item active" aria-current="page">Договор №21145745</li>
                         </ol>
                     </nav>
                 </div>
                 <div class="page-header__title mt-20 mb-30">
-                    <h1>Составление нового договора</h1>
+                    <h1>Договор №21145745</h1>
                 </div>
                 <div class="cart block">
                     <div class="card">
@@ -322,7 +322,11 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <h4 class="text-right mt-30"><small>Итоговая стоимость договора:</small> <strong>4 280 240 сум</strong></h4>
+                            <div class="d-md-flex justify-content-between">
+                                <h4 class="text-right mt-30"><small>Дата поставки: </small> <strong>15 20 2019</strong></h4>
+                                <h4 class="text-right mt-30"><small>Итоговая стоимость договора:</small> <strong>4 280 240 сум</strong></h4>
+                            </div>
+                            
                         </div>
                     </div>
                     <div class="row justify-content-end pt-5 mt-30">
@@ -330,6 +334,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h3 class="card-title">Заказчик</h3>
+                                     
                                     <table class="cart__totals mb-0">
                                         <thead class="cart__totals-header">
                                             <tr>
@@ -354,6 +359,10 @@
                                             </tr>
                                         </tbody>
                                     </table>
+                                    <div class="mt-20">
+                                    <button type="button" class="btn btn-success mr-20" disabled>Подписал</button>
+                                    <button type="button" class="btn btn-danger" disabled>Неоплатил</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -361,6 +370,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h3 class="card-title">Исполнитель</h3>
+                                    
                                     <table class="cart__totals mb-0">
                                         <thead class="cart__totals-header">
                                             <tr>
@@ -385,6 +395,10 @@
                                             </tr>
                                         </tbody>
                                     </table>
+                                    <div class="mt-20">
+                                    <button type="button" class="btn btn-success mr-20">Подписать</button>
+                                    <button type="button" class="btn btn-success" >Оплатить</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -622,6 +636,8 @@
                             </div>
                             <div class="modal-footer justify-content-center">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Отменить</button>
+                                <button type="button" class="btn btn-secondary">Оплатить сборы</button>
+                                <button type="button" class="btn btn-secondary">Редактировать</button>
                                 <button type="button" id="linkloginmodal" class="btn btn-primary">Подписать</button>
                             </div>
                         </div>

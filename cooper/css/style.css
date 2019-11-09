@@ -1251,6 +1251,10 @@ h6 {
   -webkit-box-shadow: none;
   box-shadow: none; }
 
+.badge.badge-lg {
+  padding: 7px 20px;
+  font-size: 12px; }
+
 .btn-secondary,
 .btn-secondary.disabled,
 .btn-secondary:disabled {

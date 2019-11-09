@@ -996,7 +996,10 @@ screen and (-ms-high-contrast:active) {
 .btn-secondary:not(:disabled):not(.disabled):active:focus {
     box-shadow: none
 }
-
+.badge.badge-lg {
+    padding: 7px 20px;
+    font-size: 12px;
+}
 .btn-secondary,
 .btn-secondary.disabled,
 .btn-secondary:disabled {

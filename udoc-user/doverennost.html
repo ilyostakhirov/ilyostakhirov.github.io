@@ -300,15 +300,15 @@
     <div class="page">
         <div class="page-header">
             <div>
-                <h1 class="page-title">Счет-фактуры</h1>
+                <h1 class="page-title">Доверенности</h1>
                 <ol class="breadcrumb mt-5">
                     <li class="breadcrumb-item"><a href="#">Пользователь</a></li>
-                    <li class="breadcrumb-item active">Счет-фактуры</li>
+                    <li class="breadcrumb-item active">Доверенности</li>
                 </ol>
             </div>
             <div class="page-header-actions ">
                 <button type="button" class="btn btn-info mr-20"><i class="icon wb-download mr-10"></i>Скачать реестр</button>
-                <button type="button" class="btn btn-success"><i class="icon wb-plus mr-10" aria-hidden="true"></i>Сгенерировать счет-фактуру</button>
+                <button type="button" class="btn btn-success"><i class="icon wb-plus mr-10" aria-hidden="true"></i>Сгенерировать доверенность</button>
             </div>
         </div>
         <div class="page-content">
@@ -323,10 +323,9 @@
                     <div class="panel-body pt-0 pb-0">
                         <div class="row">
                             <div class="form-group col-md-3">
-                                <label class="form-control-label">Номер счет фактуры</label>
+                                <label class="form-control-label">Номер доверенности</label>
                                 <input type="text" class="form-control" placeholder="">
                             </div>
-                            
                             <div class="form-group col-md-3">
                                 <label class="form-control-label">Партнёры</label>
                                 <select class="form-control" data-plugin="select2">
@@ -337,7 +336,7 @@
                                 </select>
                             </div>
                             <div class="form-group col-md-6">
-                                <label class="form-control-label">Дата</label>
+                                <label class="form-control-label">Дата выдачи</label>
                                 <div class="row">
                                     <div class="col-6 align-items-center d-flex">
                                         <strong class="mr-15">С</strong>
@@ -364,17 +363,7 @@
                                 <input type="text" class="form-control" placeholder="">
                             </div>
                             <div class="form-group col-md-3">
-                                <label class="form-control-label">Вид документа </label>
-                                <select class="form-control n-search">
-                                    <option>Исходящий</option>
-                                    <option>Исходящий</option>
-                                    <option>Исходящий</option>
-                                    <option>Исходящий</option>
-                                    <option>Исходящий</option>
-                                </select>
-                            </div>
-                             <div class="form-group col-md-6">
-                                <label class="form-control-label">Тип документа</label>
+                                <label class="form-control-label">Тип предмета договора</label>
                                 <select class="form-control n-search">
                                     <option>Товар</option>
                                     <option>Товар</option>
@@ -382,21 +371,17 @@
                                     <option>Товар</option>
                                 </select>
                             </div>
-
-                            
-                            
-                           
-                            
                             <div class="form-group col-md-3">
-                                <label class="form-control-label">Тип предмета договора </label>
-                                <select class="form-control  n-search">
-                                    <option>Товар</option>
-                                    <option>Товар</option>
-                                    <option>Товар</option>
-                                    <option>Товар</option>
+                                <label class="form-control-label">Тип документа </label>
+                                <select class="form-control n-search">
+                                    <option>Исходящий</option>
+                                    <option>Исходящий</option>
+                                    <option>Исходящий</option>
+                                    <option>Исходящий</option>
+                                    <option>Исходящий</option>
                                 </select>
                             </div>
-                             <div class="form-group col-md-3">
+                            <div class="form-group col-md-3">
                                 <label class="form-control-label">Наименование товара</label>
                                 <select class="form-control n-search" multiple="multiple">
                                     <option>Товар</option>
@@ -405,44 +390,26 @@
                                     <option>Товар</option>
                                 </select>
                             </div>
-
-                            <div class="form-group col-md-6">
-                                <label class="form-control-label">Сумма счет фактуры</label>
-                                <input type="text" id="irs_3" name="irsExample" data-plugin="ionRangeSlider" data-type="double" data-min=10000 data-max=100000000 data-from=10000 data-to=100000000 />
-                            </div>
-
-
                             <div class="form-group col-md-3">
-                                <label class="form-control-label">Номер доверенности
-</label>
-                                <input type="text" class="form-control" placeholder="Введите номе">
+                                <label class="form-control-label">Доверенное </label>
+                                <input type="text" class="form-control" placeholder="Ф.И.О">
                             </div>
                             <div class="form-group col-md-3">
-                                <label class="form-control-label">Доверенное</label>
-                                <input type="text" class="form-control" placeholder="Ф.И.О.">
+                                <label class="form-control-label">Паспорт серия</label>
+                                <input type="text" class="form-control" placeholder="">
                             </div>
-                            <div class="form-group col-md-6">
-                                <label class="form-control-label">Доверенность</label>
-                                <div class="row">
-                                    <div class="col-6 align-items-center d-flex">
-                                        <strong class="mr-15">С</strong>
-                                        <div class="input-group datepicker-input">
-                                            <span class="input-group-addon">
-                                                <i class="icon wb-calendar" aria-hidden="true"></i>
-                                            </span>
-                                            <input type="text" class="form-control" data-plugin="datepicker">
-                                        </div>
-                                    </div>
-                                    <div class="col-6 align-items-center d-flex">
-                                        <strong class="mr-15">По</strong>
-                                        <div class="input-group datepicker-input">
-                                            <span class="input-group-addon">
-                                                <i class="icon wb-calendar" aria-hidden="true"></i>
-                                            </span>
-                                            <input type="text" class="form-control" data-plugin="datepicker">
-                                        </div>
-                                    </div>
+                            <div class="form-group col-md-3">
+                                <label class="form-control-label">Дата выдачи паспорта </label>
+                                <div class="input-group datepicker-input">
+                                    <span class="input-group-addon">
+                                        <i class="icon wb-calendar" aria-hidden="true"></i>
+                                    </span>
+                                    <input type="text" class="form-control" data-plugin="datepicker">
                                 </div>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label class="form-control-label">Сумма доверенности</label>
+                                <input type="text" id="irs_3" name="irsExample" data-plugin="ionRangeSlider" data-type="double" data-min=10000 data-max=100000000 data-from=10000 data-to=100000000 />
                             </div>
                         </div>
                     </div>
@@ -453,6 +420,7 @@
                             <i class="icon wb-refresh" aria-hidden="true"></i>
                         </a>
                         <a href="#" class="btn btn-outline btn-default mr-15"><i class="icon wb-check mr-10"></i>Одобрить</a>
+                        <a href="#" class="btn btn-outline btn-default mr-15"><i class="icon wb-edit mr-10"></i>Подвердить</a>
                         <a href="#" class="btn btn-outline btn-default mr-15"><i class="icon wb-edit mr-10"></i>Подписать</a>
                         <a href="#" class="btn btn-outline btn-default mr-15"><i class="icon wb-order mr-10"></i>Протокол</a>
                     </div>
@@ -460,8 +428,8 @@
                         <select class="form-control n-search">
                             <option>Отменить действие</option>
                             <option>Возвратить </option>
-                            <option>фактура </option>
-                            <option>Редактировать </option>
+                            <option>Возвратить </option>
+                            <option>Аннулировать </option>
                         </select>
                         <span class="v-l"></span>
                         <a href="#" class="btn btn-default">Выполнить</a>
@@ -473,11 +441,11 @@
                             <thead>
                                 <tr>
                                     <th class="no-sort"></th>
-                                     <th width="90">Номер док</th>
-                                    <th width="120">Договор</th>                   
+                                    <th width="90">Номер док</th>
+                                    <th width="120">Срок действия </th>
                                     <th>Партнер</th>
-                                    <th>Вид документа</th>
-                                    <th>Сумма</th>                                   
+                                    <th>Договор </th>
+                                    <th>Кол-во</th>
                                     <th>Тип</th>
                                     <th>Статус</th>
                                 </tr>
@@ -488,181 +456,179 @@
                                             <input class="selectable-item" type="checkbox" id="row-1" value="1">
                                             <label for="row-1"></label>
                                         </span></td>
-                                    <td><span>101</span><small>09.11.2019</small></td>
-                                    <td><span>1234</span><small>09.11.2019</small></td>
-                                    <td><span>OOO "SuperStul"</span> <small>+99890111111</small></td>
-                                    <td><span>Счет-фактура</span></td>
-                                    <td><span>35 000 сум</span><small>35 шт.</small></td>
+                                    <td><span>101</span></td>
+                                    <td><span>09.11.2019</span><small>до 09.12.2019</small></td>
+                                    <td><span>ООО "Coca-cala" LTD</span> <small>+99890111111</small></td>
+                                    <td><span>123456</span><small>до 09.12.2019</small></td>
+                                    <td><small>35 шт.</small></td>
                                     <td><span>Исходящий</span></td>
-                                    <td><span class="badge badge-lg badge-primary">Активный</span></td>
+                                    <td><span class="badge badge-lg badge-primary">Одобрен</span></td>
                                 </tr>
-                                 <tr>
+                                <tr>
                                     <td><span class="checkbox-custom checkbox-primary">
                                             <input class="selectable-item" type="checkbox" id="row-1" value="1">
                                             <label for="row-1"></label>
                                         </span></td>
-                                    <td><span>101</span><small>09.11.2019</small></td>
-                                    <td><span>1234</span><small>09.11.2019</small></td>
-                                    <td><span>OOO "SuperStul"</span> <small>+99890111111</small></td>
-                                    <td><span>Счет-фактура</span></td>
-                                    <td><span>35 000 сум</span><small>35 шт.</small></td>
-                                    <td><span>Исходящий</span></td>
-                                    <td><span class="badge badge-lg badge-success">Подписан</span></td>
-                                </tr>
-                                 <tr>
-                                    <td><span class="checkbox-custom checkbox-primary">
-                                            <input class="selectable-item" type="checkbox" id="row-1" value="1">
-                                            <label for="row-1"></label>
-                                        </span></td>
-                                    <td><span>101</span><small>09.11.2019</small></td>
-                                    <td><span>1234</span><small>09.11.2019</small></td>
-                                    <td><span>OOO "SuperStul"</span> <small>+99890111111</small></td>
-                                    <td><span>Счет-фактура</span></td>
-                                    <td><span>35 000 сум</span><small>35 шт.</small></td>
+                                    <td><span>101</span></td>
+                                    <td><span>09.11.2019</span><small>до 09.12.2019</small></td>
+                                    <td><span>ООО "Coca-cala" LTD</span> <small>+99890111111</small></td>
+                                    <td><span>123456</span><small>до 09.12.2019</small></td>
+                                    <td><small>35 шт.</small></td>
                                     <td><span>Исходящий</span></td>
                                     <td><span class="badge badge-lg badge-warning">Создан</span></td>
                                 </tr>
-                                 <tr>
+                                <tr>
                                     <td><span class="checkbox-custom checkbox-primary">
                                             <input class="selectable-item" type="checkbox" id="row-1" value="1">
                                             <label for="row-1"></label>
                                         </span></td>
-                                    <td><span>101</span><small>09.11.2019</small></td>
-                                    <td><span>1234</span><small>09.11.2019</small></td>
-                                    <td><span>OOO "SuperStul"</span> <small>+99890111111</small></td>
-                                    <td><span>Счет-фактура</span></td>
-                                    <td><span>35 000 сум</span><small>35 шт.</small></td>
+                                    <td><span>101</span></td>
+                                    <td><span>09.11.2019</span><small>до 09.12.2019</small></td>
+                                    <td><span>ООО "Coca-cala" LTD</span> <small>+99890111111</small></td>
+                                    <td><span>123456</span><small>до 09.12.2019</small></td>
+                                    <td><small>35 шт.</small></td>
                                     <td><span>Исходящий</span></td>
-                                    <td><span class="badge badge-lg badge-primary">Активный</span></td>
+                                    <td><span class="badge badge-lg badge-success">Потвержден</span></td>
                                 </tr>
-                                 <tr>
+                                <tr>
                                     <td><span class="checkbox-custom checkbox-primary">
                                             <input class="selectable-item" type="checkbox" id="row-1" value="1">
                                             <label for="row-1"></label>
                                         </span></td>
-                                    <td><span>101</span><small>09.11.2019</small></td>
-                                    <td><span>1234</span><small>09.11.2019</small></td>
-                                    <td><span>OOO "SuperStul"</span> <small>+99890111111</small></td>
-                                    <td><span>Счет-фактура</span></td>
-                                    <td><span>35 000 сум</span><small>35 шт.</small></td>
+                                    <td><span>101</span></td>
+                                    <td><span>09.11.2019</span><small>до 09.12.2019</small></td>
+                                    <td><span>ООО "Coca-cala" LTD</span> <small>+99890111111</small></td>
+                                    <td><span>123456</span><small>до 09.12.2019</small></td>
+                                    <td><small>35 шт.</small></td>
                                     <td><span>Исходящий</span></td>
-                                    <td><span class="badge badge-lg badge-success">Подписан</span></td>
+                                    <td><span class="badge badge-lg badge-primary">Одобрен</span></td>
                                 </tr>
-                                 <tr>
+                                <tr>
                                     <td><span class="checkbox-custom checkbox-primary">
                                             <input class="selectable-item" type="checkbox" id="row-1" value="1">
                                             <label for="row-1"></label>
                                         </span></td>
-                                    <td><span>101</span><small>09.11.2019</small></td>
-                                    <td><span>1234</span><small>09.11.2019</small></td>
-                                    <td><span>OOO "SuperStul"</span> <small>+99890111111</small></td>
-                                    <td><span>Счет-фактура</span></td>
-                                    <td><span>35 000 сум</span><small>35 шт.</small></td>
-                                    <td><span>Исходящий</span></td>
-                                    <td><span class="badge badge-lg badge-warning">Создан</span></td>
-                                </tr>
-                                 <tr>
-                                    <td><span class="checkbox-custom checkbox-primary">
-                                            <input class="selectable-item" type="checkbox" id="row-1" value="1">
-                                            <label for="row-1"></label>
-                                        </span></td>
-                                    <td><span>101</span><small>09.11.2019</small></td>
-                                    <td><span>1234</span><small>09.11.2019</small></td>
-                                    <td><span>OOO "SuperStul"</span> <small>+99890111111</small></td>
-                                    <td><span>Счет-фактура</span></td>
-                                    <td><span>35 000 сум</span><small>35 шт.</small></td>
-                                    <td><span>Исходящий</span></td>
-                                    <td><span class="badge badge-lg badge-primary">Активный</span></td>
-                                </tr>
-                                 <tr>
-                                    <td><span class="checkbox-custom checkbox-primary">
-                                            <input class="selectable-item" type="checkbox" id="row-1" value="1">
-                                            <label for="row-1"></label>
-                                        </span></td>
-                                    <td><span>101</span><small>09.11.2019</small></td>
-                                    <td><span>1234</span><small>09.11.2019</small></td>
-                                    <td><span>OOO "SuperStul"</span> <small>+99890111111</small></td>
-                                    <td><span>Счет-фактура</span></td>
-                                    <td><span>35 000 сум</span><small>35 шт.</small></td>
-                                    <td><span>Исходящий</span></td>
-                                    <td><span class="badge badge-lg badge-success">Подписан</span></td>
-                                </tr>
-                                 <tr>
-                                    <td><span class="checkbox-custom checkbox-primary">
-                                            <input class="selectable-item" type="checkbox" id="row-1" value="1">
-                                            <label for="row-1"></label>
-                                        </span></td>
-                                    <td><span>101</span><small>09.11.2019</small></td>
-                                    <td><span>1234</span><small>09.11.2019</small></td>
-                                    <td><span>OOO "SuperStul"</span> <small>+99890111111</small></td>
-                                    <td><span>Счет-фактура</span></td>
-                                    <td><span>35 000 сум</span><small>35 шт.</small></td>
+                                    <td><span>101</span></td>
+                                    <td><span>09.11.2019</span><small>до 09.12.2019</small></td>
+                                    <td><span>ООО "Coca-cala" LTD</span> <small>+99890111111</small></td>
+                                    <td><span>123456</span><small>до 09.12.2019</small></td>
+                                    <td><small>35 шт.</small></td>
                                     <td><span>Исходящий</span></td>
                                     <td><span class="badge badge-lg badge-warning">Создан</span></td>
                                 </tr>
-                                 <tr>
+                                <tr>
                                     <td><span class="checkbox-custom checkbox-primary">
                                             <input class="selectable-item" type="checkbox" id="row-1" value="1">
                                             <label for="row-1"></label>
                                         </span></td>
-                                    <td><span>101</span><small>09.11.2019</small></td>
-                                    <td><span>1234</span><small>09.11.2019</small></td>
-                                    <td><span>OOO "SuperStul"</span> <small>+99890111111</small></td>
-                                    <td><span>Счет-фактура</span></td>
-                                    <td><span>35 000 сум</span><small>35 шт.</small></td>
+                                    <td><span>101</span></td>
+                                    <td><span>09.11.2019</span><small>до 09.12.2019</small></td>
+                                    <td><span>ООО "Coca-cala" LTD</span> <small>+99890111111</small></td>
+                                    <td><span>123456</span><small>до 09.12.2019</small></td>
+                                    <td><small>35 шт.</small></td>
                                     <td><span>Исходящий</span></td>
-                                    <td><span class="badge badge-lg badge-primary">Активный</span></td>
+                                    <td><span class="badge badge-lg badge-success">Потвержден</span></td>
                                 </tr>
-                                 <tr>
+                                <tr>
                                     <td><span class="checkbox-custom checkbox-primary">
                                             <input class="selectable-item" type="checkbox" id="row-1" value="1">
                                             <label for="row-1"></label>
                                         </span></td>
-                                    <td><span>101</span><small>09.11.2019</small></td>
-                                    <td><span>1234</span><small>09.11.2019</small></td>
-                                    <td><span>OOO "SuperStul"</span> <small>+99890111111</small></td>
-                                    <td><span>Счет-фактура</span></td>
-                                    <td><span>35 000 сум</span><small>35 шт.</small></td>
+                                    <td><span>101</span></td>
+                                    <td><span>09.11.2019</span><small>до 09.12.2019</small></td>
+                                    <td><span>ООО "Coca-cala" LTD</span> <small>+99890111111</small></td>
+                                    <td><span>123456</span><small>до 09.12.2019</small></td>
+                                    <td><small>35 шт.</small></td>
                                     <td><span>Исходящий</span></td>
-                                    <td><span class="badge badge-lg badge-success">Подписан</span></td>
+                                    <td><span class="badge badge-lg badge-primary">Одобрен</span></td>
                                 </tr>
-                                 <tr>
+                                <tr>
                                     <td><span class="checkbox-custom checkbox-primary">
                                             <input class="selectable-item" type="checkbox" id="row-1" value="1">
                                             <label for="row-1"></label>
                                         </span></td>
-                                    <td><span>101</span><small>09.11.2019</small></td>
-                                    <td><span>1234</span><small>09.11.2019</small></td>
-                                    <td><span>OOO "SuperStul"</span> <small>+99890111111</small></td>
-                                    <td><span>Счет-фактура</span></td>
-                                    <td><span>35 000 сум</span><small>35 шт.</small></td>
+                                    <td><span>101</span></td>
+                                    <td><span>09.11.2019</span><small>до 09.12.2019</small></td>
+                                    <td><span>ООО "Coca-cala" LTD</span> <small>+99890111111</small></td>
+                                    <td><span>123456</span><small>до 09.12.2019</small></td>
+                                    <td><small>35 шт.</small></td>
                                     <td><span>Исходящий</span></td>
                                     <td><span class="badge badge-lg badge-warning">Создан</span></td>
                                 </tr>
-                             
+                                <tr>
+                                    <td><span class="checkbox-custom checkbox-primary">
+                                            <input class="selectable-item" type="checkbox" id="row-1" value="1">
+                                            <label for="row-1"></label>
+                                        </span></td>
+                                    <td><span>101</span></td>
+                                    <td><span>09.11.2019</span><small>до 09.12.2019</small></td>
+                                    <td><span>ООО "Coca-cala" LTD</span> <small>+99890111111</small></td>
+                                    <td><span>123456</span><small>до 09.12.2019</small></td>
+                                    <td><small>35 шт.</small></td>
+                                    <td><span>Исходящий</span></td>
+                                    <td><span class="badge badge-lg badge-success">Потвержден</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="checkbox-custom checkbox-primary">
+                                            <input class="selectable-item" type="checkbox" id="row-1" value="1">
+                                            <label for="row-1"></label>
+                                        </span></td>
+                                    <td><span>101</span></td>
+                                    <td><span>09.11.2019</span><small>до 09.12.2019</small></td>
+                                    <td><span>ООО "Coca-cala" LTD</span> <small>+99890111111</small></td>
+                                    <td><span>123456</span><small>до 09.12.2019</small></td>
+                                    <td><small>35 шт.</small></td>
+                                    <td><span>Исходящий</span></td>
+                                    <td><span class="badge badge-lg badge-primary">Одобрен</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="checkbox-custom checkbox-primary">
+                                            <input class="selectable-item" type="checkbox" id="row-1" value="1">
+                                            <label for="row-1"></label>
+                                        </span></td>
+                                    <td><span>101</span></td>
+                                    <td><span>09.11.2019</span><small>до 09.12.2019</small></td>
+                                    <td><span>ООО "Coca-cala" LTD</span> <small>+99890111111</small></td>
+                                    <td><span>123456</span><small>до 09.12.2019</small></td>
+                                    <td><small>35 шт.</small></td>
+                                    <td><span>Исходящий</span></td>
+                                    <td><span class="badge badge-lg badge-warning">Создан</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="checkbox-custom checkbox-primary">
+                                            <input class="selectable-item" type="checkbox" id="row-1" value="1">
+                                            <label for="row-1"></label>
+                                        </span></td>
+                                    <td><span>101</span></td>
+                                    <td><span>09.11.2019</span><small>до 09.12.2019</small></td>
+                                    <td><span>ООО "Coca-cala" LTD</span> <small>+99890111111</small></td>
+                                    <td><span>123456</span><small>до 09.12.2019</small></td>
+                                    <td><small>35 шт.</small></td>
+                                    <td><span>Исходящий</span></td>
+                                    <td><span class="badge badge-lg badge-success">Потвержден</span></td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
                 <ul class="more_info">
-                     <li>
-                                <span>Доверенное лицо</span>
-                                <span>Ф.И.О</span>
-                            </li>
-                            <li>
-                                <span>Должность</span>
-                                <span>L</span>
-                            </li>
-                            <li>
-                                <span>Паспорт серия</span>
-                                <span>Ф.И.О.</span>
-                            </li>
-                            <li>
-                                <span>ИНН партнера</span>
-                                <span>134333454</span>
-                            </li>                          
+                    <li>
+                        <span>Подписан кем</span>
+                        <span>Ф.И.О</span>
+                    </li>
+                    <li>
+                        <span>Доверенность</span>
+                        <span>324234</span>
+                    </li>
+                    <li>
+                        <span>Ф.И.О. доверенность</span>
+                        <span>Ф.И.О.</span>
+                    </li>
+                    <li>
+                        <span>ИНН партнера</span>
+                        <span>134333454</span>
+                    </li>
                 </ul>
-               
             </div>
         </div>
     </div>

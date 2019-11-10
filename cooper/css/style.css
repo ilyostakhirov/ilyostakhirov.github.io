@@ -13612,4 +13612,8 @@ marquee {
 .dogovar-box {
   min-width: 950px; }
 
+.btn.disabled, .btn:disabled {
+  opacity: 0.65 !important;
+  pointer-events: none; }
+
 /*# sourceMappingURL=style.css.map */

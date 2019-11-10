@@ -15184,3 +15184,7 @@ marquee {
 .dogovar-box{
     min-width: 950px;
 }
+.btn.disabled, .btn:disabled {
+    opacity: .65!important;
+        pointer-events: none;
+}

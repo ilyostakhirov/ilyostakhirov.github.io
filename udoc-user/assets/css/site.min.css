@@ -15579,13 +15579,15 @@ hr.b-2 {
 }
 
 @media (max-width:991px) {
-    .footer-actions{
-        text-align: center!important;
+    .footer-actions {
+        text-align: center !important;
     }
-    .footer-actions > *{
-        margin-top: 10px!important;
-        margin-right: 0!important;
+
+    .footer-actions>* {
+        margin-top: 10px !important;
+        margin-right: 0 !important;
     }
+
     .documents-meta-data {
         padding: 20px 20px 20px 40px;
     }
@@ -15693,4 +15695,101 @@ hr.b-2 {
         padding: .429rem .6rem;
         font-size: 13px;
     }
+}
+
+.files-wr input {
+    display: none;
+}
+
+.files-wr {
+        padding-bottom: 10px;
+        display: flex;
+}
+
+.files-wr label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: all .2s;
+    color: grey;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.files-wr label:after {
+    font-family: "Web Icons";
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: -25px;
+    font-size: 20px;
+    line-height: 32px;
+    color: #00b7f4;
+    text-align: center;
+    transition: all .2s;
+    font-weight: 400;
+}
+
+.files-wr label:hover,
+.files-wr label:active {
+    text-decoration: none
+}
+
+.files-wr label:hover:after,
+.files-wr label:active:after {
+}
+
+.files-wr .one-file~.one-file label {
+    display: none;
+}
+
+.files-wr .one-file.error {
+    border: none;
+}
+
+.files-wr .one-file.error .file-name {
+    color: #ca4a17;
+}
+
+.files-wr .file-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+        margin-left: 55px;
+}
+
+.files-wr .file-item.hide-btn {
+    display: none;
+}
+
+.files-wr .file-name {
+    font-size: 14px;
+    line-height: 21px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 10px;
+    color: grey;
+}
+
+.files-wr .btn-del-file {
+        margin-left: 5px;
+    width: 16px;
+    min-width: 16px;
+    height: 16px;
+    line-height: 16px;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: all .2s;
+    background-color: #da6b88;
+    font-size: 12px;
+}
+
+.files-wr .btn-del-file:hover,
+.files-wr .btn-del-file:focus {
+    background-color: #ca4a17;
 }

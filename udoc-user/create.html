@@ -339,8 +339,13 @@
                                 <input type="text" class="form-control" placeholder="Укажите номер">
                             </div>
                             <div class="form-group col-md-3">
-                                <label class="form-control-label">Партнер </label>
-                                <input type="text" class="form-control" placeholder="Введите ИНН">
+                                <label class="form-control-label">Предмета договора</label>
+                                <select class="form-control n-search" multiple="multiple">
+                                    <option>Товар</option>
+                                    <option>Товар</option>
+                                    <option>Товар</option>
+                                    <option>Товар</option>
+                                </select>
                             </div>
                             <div class="form-group col-md-3">
                                 <label class="form-control-label">Дата договора</label>
@@ -361,19 +366,6 @@
                                 </div>
                             </div>
                             <div class="form-group col-md-3">
-                                <label class="form-control-label">Предмета договора</label>
-                                <select class="form-control n-search" multiple="multiple">
-                                    <option>Товар</option>
-                                    <option>Товар</option>
-                                    <option>Товар</option>
-                                    <option>Товар</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-md-3">
-                                <label class="form-control-label">Сумма </label>
-                                <input type="text" class="form-control" placeholder="">
-                            </div>
-                            <div class="form-group col-md-3">
                                 <label class="form-control-label">Тип валюты </label>
                                 <select class="form-control n-search">
                                     <option>Исходящий</option>
@@ -382,6 +374,10 @@
                                     <option>Исходящий</option>
                                     <option>Исходящий</option>
                                 </select>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label class="form-control-label">Сумма </label>
+                                <input type="text" class="form-control" placeholder="">
                             </div>
                             <div class="form-group col-md-3 d-flex">
                                 <span class="checkbox-custom checkbox-primary mt-auto">
@@ -393,6 +389,18 @@
                                 <label class="form-control-label">Партнёр (Третья сторона) </label>
                                 <input type="text" id="dogovar_type_inn" class="form-control" disabled="disabled" placeholder="Введите ИНН">
                             </div>
+                            <div class="form-group col-md-6 d-flex">
+                                <div class="files-wr mt-auto" data-count-files="1">
+                                    <div class="one-file">
+                                        <label for="file-1">Прикрепить файл</label>
+                                        <input name="file-1" id="file-1" type="file">
+                                        <div class="file-item hide-btn">
+                                            <span class="file-name"></span>
+                                            <span class="btn-del-file"><i class="icon wb-close"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -401,8 +409,8 @@
                         <div class="document-editor">
                             <textarea id="my_editor" name="ckeditor"></textarea>
                             <span class="checkbox-custom checkbox-primary mt-20">
-                                <input class="selectable-item" type="checkbox" id="row-1" value="1">
-                                <label for="row-1">Добавить перечень товаров и услуг (официально) к договору</label>
+                                <input class="selectable-item" type="checkbox" id="list-tovar" value="1">
+                                <label for="list-tovar">Добавить перечень товаров и услуг (официально) к договору</label>
                             </span>
                         </div>
                     </div>
@@ -466,6 +474,7 @@
                         </div>
                     </div>
                 </div>
+                <div id="tovar-list-table" style="display: none">	
                 <div class="d-md-flex px-20">
                     <strong class="f-16 blue mr-20">Укажите предметы договора: </strong>
                     <a href="#" class="link-icon mr-30"><span>Шаблон таблицы</span> <i class="icon wb-table" aria-hidden="true"></i></a>
@@ -521,10 +530,11 @@
                             </tbody>
                         </table>
                         <div class="text-right mt-20">
-                        	<button type="button" class="btn btn-outline btn-default mr-20"><i class="red icon wb-close mr-10"></i>Удалить выбранные</button>
-                        	<button type="button" class="btn btn-outline btn-default"><i class="icon wb-order mr-10"></i>Добавить еще поле</button>
+                            <button type="button" class="btn btn-outline btn-default mr-20"><i class="red icon wb-close mr-10"></i>Удалить выбранные</button>
+                            <button type="button" class="btn btn-outline btn-default"><i class="icon wb-order mr-10"></i>Добавить еще поле</button>
                         </div>
                     </div>
+                </div>
                 </div>
                 <div class="text-right px-20 pb-20 footer-actions">
                     <span class="checkbox-custom checkbox-primary mr-20 d-inline">
@@ -596,12 +606,21 @@
     <script>
     $(document).ready(function() {
         var ckbox = $('#dogovar_type');
+        var listTovar = $('#list-tovar');
 
         $('input').on('click', function() {
             if (ckbox.is(':checked')) {
                 $('#dogovar_type_inn').prop("disabled", false);
             } else {
                 $('#dogovar_type_inn').prop("disabled", true);
+            }
+        });
+
+        $('input').on('click', function() {
+            if (listTovar.is(':checked')) {
+                $('#tovar-list-table').show('fast');
+            } else {
+                $('#tovar-list-table').hide('fast');
             }
         });
     });
@@ -642,4 +661,5 @@
     });
     </script>
 </body>
+
 </html>

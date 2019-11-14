@@ -107,7 +107,8 @@ a:hover {
 }
 
 label {
-    margin-bottom: .25rem
+    margin-bottom: .25rem;
+    font-weight:700;
 }
 
 h1 {
@@ -472,24 +473,6 @@ h6 {
     line-height: 20px;
     padding: .75rem 1rem
 }
-
-.alert a {
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
-    color: currentColor;
-    background: hsla(0, 0%, 100%, .5);
-    border-radius: 1.5px;
-    padding: 0 3px
-}
-
-.alert a:hover {
-    background: hsla(0, 0%, 100%, .85)
-}
-
-.alert a:active {
-    background: hsla(0, 0%, 100%, .5)
-}
-
 .alert-primary {
     background: #b2d9ff;
     color: #36414d
@@ -15187,4 +15170,8 @@ marquee {
 .btn.disabled, .btn:disabled {
     opacity: .65!important;
         pointer-events: none;
+}
+.filter{
+    border-bottom:1px solid #eee;
+    margin-bottom: 30px;
 }

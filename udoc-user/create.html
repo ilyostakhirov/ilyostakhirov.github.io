@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>U-doc - Электронные документы</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="global/css/bootstrap.min.css">
+    <link rel="stylesheet" href="global/css/bootstrap-extend.min.css">
+    <link rel="stylesheet" href="global/vendor/asscrollable/asScrollable.css">
+    <link rel="stylesheet" href="global/vendor/bootstrap-datepicker/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="global/vendor/select2/select2.css">
+    <link rel="stylesheet" href="global/vendor/ionrangeslider/ionrange_slider.css">
+    <link rel="stylesheet" href="global/vendor/switchery/switchery.min.css?v4.0.2">
+    <link rel="stylesheet" href="global/vendor/datatables.net-bs4/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="assets/css/site.min.css">
+    <link rel="stylesheet" href="global/fonts/web-icons/web-icons.min.css">
+    <script src="global/vendor/breakpoints/breakpoints.js"></script>
+    <script>
+        Breakpoints();
+        </script>
+</head>
+
+<body class="animsition">
+    <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
+        <div class="navbar-container container-fluid">
+            <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+                <ul class="nav navbar-toolbar">
+                    <li>
+                        <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided" data-toggle="menubar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="hamburger-bar"></span>
+                        </button>
+                    </li>
+                    <li class="nav-item hidden-float" id="toggleMenubar">
+                        <a class="nav-link mr-30" data-toggle="menubar" href="#" role="button">
+                            <i class="icon hamburger hamburger-arrow-left">
+                                <span class="sr-only">Toggle menubar</span>
+                                <span class="hamburger-bar"></span>
+                            </i>
+                        </a>
+                    </li>
+                    <li class="d-flex m-h align-items-center">
+                        <a href="#" class="logo"><img width="86" height="35" src="assets/images/logo.svg" alt=""></a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link px-20" data-toggle="collapse" href="#" data-target="#site-navbar-search" role="button">
+                            <i class="icon wb-search f-19" aria-hidden="true"></i>
+                            <span class="sr-only">Toggle Search</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-20" data-toggle="dropdown" href="javascript:void(0)" title="Notifications" aria-expanded="false" data-animation="scale-up" role="button">
+                            <i class="icon wb-bell f-16" aria-hidden="true"></i>
+                            <span class="badge badge-pill badge-success up">5</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-media" role="menu">
+                            <div class="dropdown-menu-header">
+                                <h5>NOTIFICATIONS</h5>
+                                <span class="badge badge-round badge-danger">New 5</span>
+                            </div>
+                            <div class="list-group">
+                                <div data-role="container">
+                                    <div data-role="content">
+                                        <a class="list-group-item dropdown-item" href="javascript:void(0)" role="menuitem">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h6 class="media-heading">A new order has been placed</h6>
+                                                    <time class="media-meta" datetime="2018-06-12T20:50:48+08:00">5 hours ago</time>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="list-group-item dropdown-item" href="javascript:void(0)" role="menuitem">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h6 class="media-heading">Completed the task</h6>
+                                                    <time class="media-meta" datetime="2018-06-11T18:29:20+08:00">2 days ago</time>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="list-group-item dropdown-item" href="javascript:void(0)" role="menuitem">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h6 class="media-heading">Settings updated</h6>
+                                                    <time class="media-meta" datetime="2018-06-11T14:05:00+08:00">2 days ago</time>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="list-group-item dropdown-item" href="javascript:void(0)" role="menuitem">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h6 class="media-heading">Event started</h6>
+                                                    <time class="media-meta" datetime="2018-06-10T13:50:18+08:00">3 days ago</time>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="list-group-item dropdown-item" href="javascript:void(0)" role="menuitem">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h6 class="media-heading">Message received</h6>
+                                                    <time class="media-meta" datetime="2018-06-10T12:34:48+08:00">3 days ago</time>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-menu-footer">
+                                <a class="dropdown-menu-footer-btn" href="javascript:void(0)" role="button">
+                                    <i class="icon wb-settings" aria-hidden="true"></i>
+                                </a>
+                                <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
+                                    All notifications
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-20" data-toggle="dropdown" href="javascript:void(0)" title="Messages" aria-expanded="false" data-animation="scale-up" role="button">
+                            <i class="icon wb-envelope  f-16" aria-hidden="true"></i>
+                            <span class="badge badge-pill badge-info up">3</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-media" role="menu">
+                            <div class="dropdown-menu-header" role="presentation">
+                                <h5>MESSAGES</h5>
+                                <span class="badge badge-round badge-info">New 3</span>
+                            </div>
+                            <div class="list-group" role="presentation">
+                                <div data-role="container">
+                                    <div data-role="content">
+                                        <a class="list-group-item" href="javascript:void(0)" role="menuitem">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h6 class="media-heading">Mary Adams</h6>
+                                                    <div class="media-meta">
+                                                        <time datetime="2018-06-17T20:22:05+08:00">30 minutes ago</time>
+                                                    </div>
+                                                    <div class="media-detail">Anyways, i would like just do it</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="list-group-item" href="javascript:void(0)" role="menuitem">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h6 class="media-heading">Caleb Richards</h6>
+                                                    <div class="media-meta">
+                                                        <time datetime="2018-06-17T12:30:30+08:00">12 hours ago</time>
+                                                    </div>
+                                                    <div class="media-detail">I checheck the document. But there seems</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="list-group-item" href="javascript:void(0)" role="menuitem">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h6 class="media-heading">June Lane</h6>
+                                                    <div class="media-meta">
+                                                        <time datetime="2018-06-16T18:38:40+08:00">2 days ago</time>
+                                                    </div>
+                                                    <div class="media-detail">Lorem ipsum Id consectetur et minim</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="list-group-item" href="javascript:void(0)" role="menuitem">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h6 class="media-heading">Edward Fletcher</h6>
+                                                    <div class="media-meta">
+                                                        <time datetime="2018-06-15T20:34:48+08:00">3 days ago</time>
+                                                    </div>
+                                                    <div class="media-detail">Dolor et irure cupidatat commodo nostrud nostrud.</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-menu-footer" role="presentation">
+                                <a class="dropdown-menu-footer-btn" href="javascript:void(0)" role="button">
+                                    <i class="icon wb-settings" aria-hidden="true"></i>
+                                </a>
+                                <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
+                                    See all messages
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-toggle="dropdown" href="javascript:void(0)" data-animation="scale-up" aria-expanded="false" role="button">
+                            Русский
+                            <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu" role="menu">
+                            <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
+                                English</a>
+                            <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
+                                O'zbekcha</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Выход <i class="icon-4 ml-5" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <!-- Site Navbar Seach -->
+            <div class="collapse navbar-search-overlap" id="site-navbar-search">
+                <form role="search">
+                    <div class="form-group">
+                        <div class="input-search">
+                            <i class="input-search-icon wb-search f-21" aria-hidden="true"></i>
+                            <input type="text" class="form-control" name="site-search" placeholder="Поиск...">
+                            <button type="button" class="input-search-close icon wb-close" data-target="#site-navbar-search" data-toggle="collapse" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- End Site Navbar Seach -->
+        </div>
+    </nav>
+    <div class="site-menubar">
+        <div class="site-menubar-body">
+            <div>
+                <div>
+                    <div class="user">
+                        <img src="assets/images/avatar.png">
+                        <span>Фамилия имя</span>
+                        <div class="collapse" id="collapseExample">
+                            <ul class="company-list">
+                                <li class="active"><a href="#"><span>ООО «Кока кола компани» Физическое лицо </span><strong>Должность</strong></a></li>
+                                <li><a href="#"><span>ООО «Кока кола компани» Физическое лицо </span><strong>Должность</strong></a></li>
+                            </ul>
+                            <button type="button" class="btn btn-outline btn-info"><i class="icon wb-plus mr-10" aria-hidden="true"></i>Добавить компанию</button>
+                        </div>
+                        <a class="btn btn-block btn-link" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <i class="icon wb-chevron-down" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <ul class="site-menu" data-plugin="menu">
+                        <li class="site-menu-item">
+                            <a href="javascript:void(0)">
+                                <i class="site-menu-icon icon-8 f-21" aria-hidden="true"></i>
+                                <span class="site-menu-title">Договора</span>
+                            </a>
+                        </li>
+                        <li class="site-menu-item">
+                            <a href="#">
+                                <i class="site-menu-icon icon-7" aria-hidden="true"></i>
+                                <span class="site-menu-title">Счёт фактуры</span>
+                            </a>
+                        </li>
+                        <li class="site-menu-item">
+                            <a href="#">
+                                <i class="site-menu-icon icon-10" aria-hidden="true"></i>
+                                <span class="site-menu-title">Доверенности</span>
+                            </a>
+                        </li>
+                        <li class="site-menu-item">
+                            <a href="#">
+                                <i class="site-menu-icon icon-16" aria-hidden="true"></i>
+                                <span class="site-menu-title">Счёт на оплату</span>
+                            </a>
+                        </li>
+                        <li class="site-menu-item">
+                            <a href="#">
+                                <i class="site-menu-icon icon-11" aria-hidden="true"></i>
+                                <span class="site-menu-title">Акты выполненных работ</span>
+                            </a>
+                        </li>
+                        <li class="site-menu-item">
+                            <a href="#">
+                                <i class="site-menu-icon icon-9" aria-hidden="true"></i>
+                                <span class="site-menu-title">ТТН</span>
+                            </a>
+                        </li>
+                        <li class="site-menu-item">
+                            <a href="#">
+                                <i class="site-menu-icon icon-17" aria-hidden="true"></i>
+                                <span class="site-menu-title">Приход</span>
+                            </a>
+                        </li>
+                        <li class="site-menu-item">
+                            <a href="#">
+                                <i class="site-menu-icon icon-12" aria-hidden="true"></i>
+                                <span class="site-menu-title">Отчёты</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="site-menubar-footer">
+            <a href="javascript: void(0);" class="fold-show">
+                <span class="icon wb-settings" aria-hidden="true"></span>
+                Настройки
+            </a>
+        </div>
+    </div>
+    <!-- Page -->
+    <div class="page">
+        <div class="page-header">
+            <div>
+                <h1 class="page-title">Договора</h1>
+                <ol class="breadcrumb mt-5">
+                    <li class="breadcrumb-item"><a href="#">Пользователь</a></li>
+                    <li class="breadcrumb-item active">Договора</li>
+                </ol>
+            </div>
+            <div class="page-header-actions ">
+                <button type="button" class="btn btn-info mr-20"><i class="icon wb-download mr-10"></i>Скачать реестр</button>
+                <button type="button" class="btn btn-success"><i class="icon wb-plus mr-10" aria-hidden="true"></i>Заключить договор</button>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="panel-wide">
+                <div class="panel panel-transparent">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Фильтр</h3>
+                        <div class="panel-actions panel-actions-keep">
+                            <a class="panel-action  panel-collapse" data-toggle="" aria-hidden="true"><span>Свернуть <i class="icon wb-chevron-up-mini ml-10"></i></span><span>Показать <i class="icon wb-chevron-down-mini ml-10"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="panel-body pt-0 pb-0">
+                        <div class="row">
+                            <div class="form-group col-md-3">
+                                <label class="form-control-label">Шаблон </label>
+                                <select class="form-control n-search">
+                                    <option>Введите шаблон</option>
+                                    <option>Введите шаблон</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label class="form-control-label">Партнер </label>
+                                <input type="text" class="form-control" placeholder="Введите ИНН">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label class="form-control-label">Номер договора</label>
+                                <input type="text" class="form-control" placeholder="Укажите номер">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label class="form-control-label">Партнер </label>
+                                <input type="text" class="form-control" placeholder="Введите ИНН">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label class="form-control-label">Дата договора</label>
+                                <div class="input-group datepicker-input">
+                                    <span class="input-group-addon">
+                                        <i class="icon wb-calendar" aria-hidden="true"></i>
+                                    </span>
+                                    <input type="text" class="form-control" data-plugin="datepicker">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label class="form-control-label">Срок окончания договора</label>
+                                <div class="input-group datepicker-input">
+                                    <span class="input-group-addon">
+                                        <i class="icon wb-calendar" aria-hidden="true"></i>
+                                    </span>
+                                    <input type="text" class="form-control" data-plugin="datepicker">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label class="form-control-label">Предмета договора</label>
+                                <select class="form-control n-search" multiple="multiple">
+                                    <option>Товар</option>
+                                    <option>Товар</option>
+                                    <option>Товар</option>
+                                    <option>Товар</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label class="form-control-label">Сумма </label>
+                                <input type="text" class="form-control" placeholder="">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label class="form-control-label">Тип валюты </label>
+                                <select class="form-control n-search">
+                                    <option>Исходящий</option>
+                                    <option>Исходящий</option>
+                                    <option>Исходящий</option>
+                                    <option>Исходящий</option>
+                                    <option>Исходящий</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3 d-flex">
+                                <span class="checkbox-custom checkbox-primary mt-auto">
+                                    <input id="dogovar_type" class="selectable-item" type="checkbox" value="1">
+                                    <label for="dogovar_type">Добавить третью сторону</label>
+                                </span>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label class="form-control-label">Партнёр (Третья сторона) </label>
+                                <input type="text" id="dogovar_type_inn" class="form-control" disabled="disabled" placeholder="Введите ИНН">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="document-editor">
+                            <textarea id="my_editor" name="ckeditor"></textarea>
+                            <span class="checkbox-custom checkbox-primary mt-20">
+                                <input class="selectable-item" type="checkbox" id="row-1" value="1">
+                                <label for="row-1">Добавить перечень товаров и услуг (официально) к договору</label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pl-0">
+                        <div class="documents-meta-data js-documents-meta-data" data-target="widgettemplateform-template">
+                            <h2 class="h2 blue text-center mt-0 pt-0">Отмечаемые поля для договора</h2>
+                            <h2 class="h2 b-t-l">Общее</h2>
+                            <ul class="tags-list tags-list--compact js-meta-data clearfix">
+                                <li class="tags-list__tag" data-alias="date">
+                                    Номер договора
+                                </li>
+                                <li class="tags-list__tag" data-alias="number">
+                                    Дата договора
+                                </li>
+                                <li class="tags-list__tag" data-alias="date">
+                                    Сумма договора
+                                </li>
+                                <li class="tags-list__tag" data-alias="number">
+                                    Сумма договора с прописью
+                                </li>
+                                <li class="tags-list__tag" data-alias="number">
+                                    Подпись руководителя
+                                </li>
+                            </ul>
+                            <h2 class="h2 b-t-l">Спецификация к договору</h2>
+                            <ul class="tags-list tags-list--compact js-meta-data clearfix">
+                                <li class="tags-list__tag" data-alias="date">
+                                    Таблица спецификаций
+                                </li>
+                            </ul>
+                            <div class="d-flex b-t-l pt-20 mt-20">
+                                <label class="pt-3">2 сторона</label>
+                                <div class="mr-20 ml-20">
+                                    <input type="checkbox" id="asdasd" name="inputiCheckBasicCheckboxes" data-plugin="switchery" />
+                                </div>
+                                <label for="asdasd" class="pt-3">3 сторона</label>
+                            </div>
+                            <h2 class="h2 b-t-l">Реквизиты контрагент</h2>
+                            <ul class="tags-list tags-list--compact js-meta-data clearfix">
+                                <li class="tags-list__tag" data-alias="full_name">Полное наименование</li>
+                                <li class="tags-list__tag" data-alias="short_name">Сокращенное наименование</li>
+                                <li class="tags-list__tag" data-alias="manager.acting_on_basis">действующий...</li>
+                                <li class="tags-list__tag" data-alias="manager.acting_on_basis">Юридический адрес</li>
+                                <li class="tags-list__tag" data-alias="bank.account">Р/С</li>
+                                <li class="tags-list__tag" data-alias="bank.account">МФО</li>
+                                <li class="tags-list__tag" data-alias="bank.account">Название банка</li>
+                                <li class="tags-list__tag" data-alias="inn">ИНН</li>
+                                <li class="tags-list__tag" data-alias="kpp">ОКЭД </li>
+                                <li class="tags-list__tag" data-alias="ogrn_ogrnip">Телефон
+                                </li>
+                                <li class="tags-list__tag" data-alias="contacts.email">Электронная почта</li>
+                                <li class="tags-list__tag" data-alias="addresses.legal.region.id">Произволное поле</li>
+                            </ul>
+                            <h2 class="h2 b-t-l">Руководитель контрагента</h2>
+                            <ul class="tags-list tags-list--compact js-meta-data clearfix">
+                                <li class="tags-list__tag" data-alias="manager.surname_name_middle">Фамилия Имя Отчество</li>
+                                <li class="tags-list__tag" data-alias="manager.surname_name_middle | format.shortFio">Фамилия И. О.</li>
+                                <li class="tags-list__tag" data-alias="manager.position">Должность</li>
+                                <li class="tags-list__tag" data-alias="manager.position | case.genitive">Подпись контрагента</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-md-flex px-20">
+                    <strong class="f-16 blue mr-20">Укажите предметы договора: </strong>
+                    <a href="#" class="link-icon mr-30"><span>Шаблон таблицы</span> <i class="icon wb-table" aria-hidden="true"></i></a>
+                    <a href="#" class="link-icon"><span>Загрузить перечень товаров</span> <i class="icon wb-attach-file" aria-hidden="true"></i></a>
+                </div>
+                <div class="p-20 box-shadow dataTable-wrap ">
+                	<div class="table-responsive">
+                    <table id="datatable-dogovar1" data-plugin="selectable" data-row-selectable="true" class="table table-hover dataTable table-striped w-full">
+                        <thead>
+                            <tr>
+                                <th class="no-sort"></th>
+                                <th>Название</th>
+                                <th>Ед. измер.</th>
+                                <th>Кол-во</th>
+                                <th>Цена</th>
+                                <th>Стоимость</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="checkbox-custom checkbox-primary">
+                                        <input class="selectable-item" type="checkbox" value="1">
+                                        <label></label>
+                                    </span></td>
+                                <td><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </span></td>
+                                <td><span>шт.</span></td>
+                                <td><span>300</span></td>
+                                <td><span>50 000 532</span></td>
+                                <td><span>520 000 000</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="checkbox-custom checkbox-primary">
+                                        <input class="selectable-item" type="checkbox" value="1">
+                                        <label></label>
+                                    </span></td>
+                                <td><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </span></td>
+                                <td><span>шт.</span></td>
+                                <td><span>300</span></td>
+                                <td><span>50 000 532</span></td>
+                                <td><span>520 000 000</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="checkbox-custom checkbox-primary">
+                                        <input class="selectable-item" type="checkbox" value="1">
+                                        <label></label>
+                                    </span></td>
+                                <td><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </span></td>
+                                <td><span>шт.</span></td>
+                                <td><span>300</span></td>
+                                <td><span>50 000 532</span></td>
+                                <td><span>520 000 000</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+                <div class="text-right px-20 pb-20 footer-actions">
+                    <span class="checkbox-custom checkbox-primary mr-20 d-inline">
+                        <input id="temp" class="selectable-item" type="checkbox" value="1">
+                        <label for="temp">Сохранить как шаблон</label>
+                    </span>
+                    <button type="button" class="btn btn-outline btn-default mr-20"><i class="icon wb-order mr-10"></i>Посмотреть договор</button>
+                    <button type="button" class="btn btn-success"><i class="icon wb-check mr-10" aria-hidden="true"></i>Создать договор</button>
+                </div>
+            </div>
+        </div>
+        <!-- End Page -->
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="clearfix login-footer">
+                <div class="float-left">
+                    <a href="#">Инструкция пользователя</a>
+                    <a href="#">Обратная связь</a>
+                </div>
+                <div class="float-right">
+                    <div class="tel">
+                        Служба технической поддержки:
+                        <br>
+                        <span>+998 71 200 00 00</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Core  -->
+        <script src="global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+        <script src="global/vendor/jquery/jquery.js"></script>
+        <script src="global/vendor/popper-js/umd/popper.min.js"></script>
+        <script src="global/vendor/bootstrap/bootstrap.js"></script>
+        <script src="global/vendor/mousewheel/jquery.mousewheel.js"></script>
+        <script src="global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+        <script src="global/vendor/asscrollable/jquery-asScrollable.js"></script>
+        <script src="global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+        <script src="global/vendor/select2/select2.full.min.js"></script>
+        <script src="global/vendor/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+        <script src="global/vendor/datatables.net/jquery.dataTables.js"></script>
+        <script src="global/vendor/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+        <script src="global/vendor/ckeditor/ckeditor.js"></script>
+        <script src="global/vendor/switchery/switchery.min.js"></script>
+        <!-- Scripts -->
+        <script src="global/js/Component.js"></script>
+        <script src="global/js/Plugin.js"></script>
+        <script src="global/js/Base.js"></script>
+        <script src="global/js/Config.js"></script>
+        <script src="assets/js/Section/Menubar.js"></script>
+        <script src="assets/js/Section/GridMenu.js"></script>
+        <script src="assets/js/Section/Sidebar.js"></script>
+        <script src="assets/js/Section/PageAside.js"></script>
+        <script src="assets/js/Plugin/menu.js"></script>
+        <script src="assets/js/Site.js"></script>
+        <script src="global/js/Plugin/ion.rangeSlider.min.js"></script>
+        <script src="global/js/Plugin/asselectable.min.js"></script>
+        <script src="global/js/Plugin/selectable.min.js"></script>
+        <script src="global/js/Plugin/switchery.js"></script>
+        <script>
+        (function(document, window, $) {
+            'use strict';
+            var Site = window.Site;
+            $(document).ready(function() {
+                Site.run();
+            });
+        })(document, window, jQuery);
+        </script>
+        <script>
+        $(document).ready(function() {
+            var ckbox = $('#dogovar_type');
+
+            $('input').on('click', function() {
+                if (ckbox.is(':checked')) {
+                    $('#dogovar_type_inn').prop("disabled", false);
+                } else {
+                    $('#dogovar_type_inn').prop("disabled", true);
+                }
+            });
+        });
+        $('#datatable-dogovar1').DataTable({
+            "bPaginate": false,
+            "info": false,
+            "language": {
+                "sProcessing": "Подождите...",
+                "sLengthMenu": "Показать _MENU_ записей",
+                "sZeroRecords": "Записи отсутствуют.",
+                "sInfo": "Записи с _START_ до _END_ из _TOTAL_ записей",
+                "sInfoEmpty": "Записи с 0 до 0 из 0 записей",
+                "sInfoFiltered": "(отфильтровано из _MAX_ записей)",
+                "sInfoPostFix": "",
+                "sSearch": "Поиск:",
+                "sUrl": "",
+                "oPaginate": {
+                    "sFirst": "<<",
+                    "sPrevious": "<",
+                    "sNext": ">",
+                    "sLast": ">>"
+                },
+                "oAria": {
+                    "sSortAscending": ": активировать для сортировки столбца по возрастанию",
+                    "sSortDescending": ": активировать для сортировки столбцов по убыванию"
+                }
+            }
+        });
+        CKEDITOR.replace('ckeditor', {});
+        CKEDITOR.config.height = 520;
+        $(document).ready(function() {
+            $(".js-meta-data [data-alias]").on("click", function() {
+                var alias = $(this).data("alias");
+                var html = "<span class=\"meta-data-item\" data-alias=\"" + alias + "\">{{" + alias + "}}</span>";
+                CKEDITOR.instances.my_editor.insertHtml(html);
+            });
+
+        });
+        </script>
+</body>
+
+</html>

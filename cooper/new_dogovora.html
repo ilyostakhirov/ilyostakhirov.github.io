@@ -322,7 +322,16 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <h4 class="text-right mt-30"><small>Итоговая стоимость договора:</small> <strong>4 280 240 сум</strong></h4>
+                            <div class="d-md-flex justify-content-between">
+                            	<h4 class="text-right mt-30"><small>Дата поставки: </small> <strong>15.10.2019</strong></h4>
+                            <div class="text-right mt-30">
+                            	Для подписания договора необходимо произвести оплату:<br>
+Задаток: минимум <strong>3% (сумма)</strong><br>
+Комиссионный сбор: <strong>0.15% (сумма)</strong><br>
+<h4 class="text-right mt-5"><small>Итоговая стоимость договора:</small> <strong>4 280 240 сум</strong></h4>
+                            </div>
+                            
+                        </div>
                         </div>
                     </div>
                     <div class="row justify-content-end pt-5 mt-30">
@@ -362,12 +371,12 @@
                                 <div class="card-body">
                                     <h3 class="card-title">Исполнитель</h3>
                                     <div class="alert alert-warning">
-                                    	<p>Для того чтобы заключить договор Вам
-необходимо заполнить ваши реквизиты
-Перейдите на страницу редактирования
-реквизитов компании, чтобы указать ваши
-реквизиты</p>
-<a href="#" class="btn btn-danger">Перейти</a>
+                                        <p>Для того чтобы заключить договор Вам
+                                            необходимо заполнить ваши реквизиты
+                                            Перейдите на страницу редактирования
+                                            реквизитов компании, чтобы указать ваши
+                                            реквизиты</p>
+                                        <a href="#" class="btn btn-danger">Перейти</a>
                                     </div>
                                     <table class="cart__totals mb-0">
                                         <thead class="cart__totals-header">
@@ -386,11 +395,11 @@
                                                 <th>р\с</th>
                                                 <td class="text-left">
                                                     <select class="custom-select" id="inputGroupSelect01">
-    <option selected>Выберите р\с</option>
-    <option value="1">20202020202020202020 В Хорезмском филиале банка НацБанка МФО 00101 ЭКЕД01021</option>
-    <option value="2">20202020202020202020 В Хорезмском филиале банка НацБанка МФО 00101 ЭКЕД01021</option>
-    <option value="3">20202020202020202020 В Хорезмском филиале банка НацБанка МФО 00101 ЭКЕД01021</option>
-  </select>
+                                                        <option selected>Выберите р\с</option>
+                                                        <option value="1">20202020202020202020 В Хорезмском филиале банка НацБанка МФО 00101 ЭКЕД01021</option>
+                                                        <option value="2">20202020202020202020 В Хорезмском филиале банка НацБанка МФО 00101 ЭКЕД01021</option>
+                                                        <option value="3">20202020202020202020 В Хорезмском филиале банка НацБанка МФО 00101 ЭКЕД01021</option>
+                                                    </select>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -408,7 +417,7 @@
                             <strong class="mr-15">Укажите дату поставки</strong>
                             <input id="datepicker" width="276" autocomplete="off" />
                         </div>
-                        <a href="#modalDogovora" data-toggle="modal" class="btn btn-lg btn-primary disabled" >Просмотр договора</a>
+                        <a href="#modalDogovora" data-toggle="modal" class="btn btn-lg btn-primary disabled">Просмотр договора</a>
                     </div>
                 </div>
                 <!-- Modal -->
@@ -422,11 +431,10 @@
                             <div class="modal-body">
                                 <p class="f-13">Для того чтобы договор принял юридическую силу, его необходимо
                                     подтвердить с помощью вашей Электронной Цифровой Подписи (ЭЦП)</p>
-
                                 <div class="form-group">
                                     <strong>Укажите ЭЦП</strong>
                                     <div class="input-group mt-5">
-                                        <input type="text" class="form-control" >
+                                        <input type="text" class="form-control">
                                         <span class="input-group-btn">
                                             <button type="submit" class="btn btn-dark">Показать ЭЦП</button>
                                         </span>
@@ -721,13 +729,13 @@
     });
 
     //set button id on click to hide first modal
-$("#linkloginmodal").on( "click", function() {
-        $('#modalDogovora').modal('hide');  
-});
-//trigger next modal
-$("#linkloginmodal").on( "click", function() {
-        $('#loginModal').modal('show');  
-});
+    $("#linkloginmodal").on("click", function() {
+        $('#modalDogovora').modal('hide');
+    });
+    //trigger next modal
+    $("#linkloginmodal").on("click", function() {
+        $('#loginModal').modal('show');
+    });
     </script>
 </body>
 

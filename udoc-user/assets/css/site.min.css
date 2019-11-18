@@ -11901,7 +11901,10 @@ ul.panel-actions>li:first-child {
     background-color: #fff;
     border-color: #ff4c52
 }
-
+.flex-grow-1 {
+    -ms-flex-positive: 1!important;
+    flex-grow: 1!important;
+}
 .pearl.done:after,
 .pearl.done:before {
     background-color: #fb7657

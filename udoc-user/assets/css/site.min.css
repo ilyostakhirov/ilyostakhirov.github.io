@@ -11901,10 +11901,12 @@ ul.panel-actions>li:first-child {
     background-color: #fff;
     border-color: #ff4c52
 }
+
 .flex-grow-1 {
-    -ms-flex-positive: 1!important;
-    flex-grow: 1!important;
+    -ms-flex-positive: 1 !important;
+    flex-grow: 1 !important;
 }
+
 .pearl.done:after,
 .pearl.done:before {
     background-color: #fb7657
@@ -14371,10 +14373,17 @@ td.action-icons {
     align-items: center;
 }
 
-.form-group label {
-    font-weight: 400;
+.form-group label,
+.form-control-label {
+    font-weight: bold;
     color: #808080;
     font-size: 14px;
+}
+
+.required {
+    color: #f00;
+    display: inline-block;
+    margin-left: 3px;
 }
 
 .hide {
@@ -14456,6 +14465,7 @@ td.action-icons {
 
 .dataTable-wrap .table-striped tbody tr:hover {
     background-color: #e9f5ff;
+    cursor: pointer;
 }
 
 .page-content th>.form-control {
@@ -15705,8 +15715,8 @@ hr.b-2 {
 }
 
 .files-wr {
-        padding-bottom: 10px;
-        display: flex;
+    padding-bottom: 10px;
+    display: flex;
 }
 
 .files-wr label {
@@ -15741,8 +15751,7 @@ hr.b-2 {
 }
 
 .files-wr label:hover:after,
-.files-wr label:active:after {
-}
+.files-wr label:active:after {}
 
 .files-wr .one-file~.one-file label {
     display: none;
@@ -15760,7 +15769,7 @@ hr.b-2 {
     position: relative;
     display: flex;
     align-items: center;
-        margin-left: 55px;
+    margin-left: 55px;
 }
 
 .files-wr .file-item.hide-btn {
@@ -15778,7 +15787,7 @@ hr.b-2 {
 }
 
 .files-wr .btn-del-file {
-        margin-left: 5px;
+    margin-left: 5px;
     width: 16px;
     min-width: 16px;
     height: 16px;

@@ -369,29 +369,29 @@
                                 <label class="form-control-label">Регистроциоммьм код плательщика НДС</label>
                                 <input type="text" class="form-control" placeholder="">
                             </div>
-                            <div class="form-group col-md-12">
+                            <div class="form-group col-md-12 mb-10">
                                 <span class="checkbox-custom checkbox-primary">
-                                    <input id="dogovar_type" class="selectable-item" type="checkbox" value="1">
-                                    <label for="dogovar_type">Односторияя счет фактура</label>
+                                    <input id="oneside_dogovar" class="selectable-item" type="checkbox" checked="checked">
+                                    <label for="oneside_dogovar">Односторияя счет фактура</label>
                                 </span>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row" id="oneside_dogovar_inputs">
                             <div class="form-group col-md-3">
                                 <label class="form-control-label">Партнер </label>
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" disabled="disabled" class="form-control" placeholder="">
                             </div>
                             <div class="form-group col-md-3">
                                 <label class="form-control-label">ИНН </label>
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" disabled="disabled" class="form-control" placeholder="">
                             </div>
                             <div class="form-group col-md-3">
                                 <label class="form-control-label">Адресс </label>
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" disabled="disabled" class="form-control" placeholder="">
                             </div>
                             <div class="form-group col-md-3">
                                 <label class="form-control-label">Регистроциоммьм код плательщика НДС</label>
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" disabled="disabled" class="form-control" placeholder="">
                             </div>
                         </div>
                     </div>
@@ -477,129 +477,274 @@
                 </div>
                 <div class="px-20">
                     <div class="row">
-                        <div class="form-group col-md-3">
-                            <label class="form-control-label">Руководитель</label>
+                        <div class="form-group col-md-4">
+                            <label class="form-control-label">Руководитель<span class="required">*</span></label>
                             <select class="form-control" data-plugin="select2">
                                 <option>ФИО руководителя</option>
                             </select>
                         </div>
-                        <div class="form-group col-md-3">
-                            <label class="form-control-label">Главный бухгалтер</label>
+                        <div class="form-group col-md-4">
+                            <label class="form-control-label">Главный бухгалтер<span class="required">*</span></label>
                             <select class="form-control" data-plugin="select2">
                                 <option>ФИО руководителя</option>
                             </select>
                         </div>
-                        <div class="form-group col-md-3">
-                            <label class="form-control-label">По доверенности</label>
-                            <select class="form-control" data-plugin="select2">
-                                <option>ФИО доверенного лица</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-3 d-flex align-items-center">
+                        <div class="form-group col-md-4 d-flex align-items-center">
                             <span class="checkbox-custom checkbox-primary mt-auto">
                                 <input id="dogovar_type1" class="selectable-item" type="checkbox" value="1">
                                 <label for="dogovar_type1">Товар отпустил</label>
                             </span>
                             <div class="flex-grow-1 mt-auto ml-20">
-                                    <select class="form-control" data-plugin="select2">
-                                        <option>ФИО руководителя</option>
-                                    </select>
+                                <select class="form-control" data-plugin="select2">
+                                    <option>ФИО руководителя</option>
+                                </select>
                             </div>
                         </div>
-                        
-                        <div class="form-group col-md-3 d-flex ">
+                        <div class="form-group col-md-4">
+                            <label class="form-control-label">По доверенности</label>
+                            <select class="form-control" data-plugin="select2">
+                                <option>ФИО доверенного лица</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label class="form-control-label">Дата</label>
+                            <div class="input-group datepicker-input">
+                                <span class="input-group-addon">
+                                    <i class="icon wb-calendar" aria-hidden="true"></i>
+                                </span>
+                                <input type="text" class="form-control" data-plugin="datepicker">
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label class="form-control-label">Номер</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-4 d-flex ">
                             <span class="checkbox-custom checkbox-primary mt-auto">
-                                <input id="dogovar_type2" class="selectable-item" type="checkbox" value="1">
-                                <label for="dogovar_type2">Добавить АКТ выполненных работ</label>
+                                <input id="add_complated" class="selectable-item" type="checkbox" value="1">
+                                <label for="add_complated">Добавить АКТ выполненных работ</label>
                             </span>
                         </div>
-                        <div class="form-group col-md-3">
-                                    <label class="form-control-label">Номер телефона контрагента </label>
-                                    <input type="text" class="form-control" data-plugin="formatter" data-pattern="+998 [[99]]-[[999]]-[[9999]]">
+                        <div class="form-group col-md-4 ">
+                            <label class="form-control-label">Номер телефона контрагента </label>
+                            <input type="text" class="form-control" data-plugin="formatter" data-pattern="+998 [[99]]-[[999]]-[[9999]]">
                         </div>
                     </div>
-                    <div class="text-right px-20 pb-20 footer-actions">
-                        <span class="checkbox-custom checkbox-primary mr-20 d-inline">
-                            <input id="temp" class="selectable-item" type="checkbox" value="1">
-                            <label for="temp">Сохранить как шаблон</label>
-                        </span>
-                        <button type="button" class="btn btn-outline btn-default mr-20"><i class="icon wb-order mr-10 "></i>Посмотреть договор</button>
-                        <button type="button" class="btn btn-success"><i class="icon wb-здгы mr-10" aria-hidden="true"></i>Создать договор</button>
+                </div>
+                <div style="display: none" id="add_complated_div" class="document-editor mr-20">
+                    <hr>
+                    <div class="row mt-20">
+                        <div class="form-group col-md-4">
+                            <label class="form-control-label">Номер АКТ<span class="required">*</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label class="form-control-label">Номер договора</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label class="form-control-label">Выбереите срок</label>
+                            <div class="input-group datepicker-input">
+                                <span class="input-group-addon">
+                                    <i class="icon wb-calendar" aria-hidden="true"></i>
+                                </span>
+                                <input type="text" class="form-control" data-plugin="datepicker">
+                            </div>
+                        </div>
                     </div>
+                    <label class="form-control-label">Текст содержания АКТ</label>
+                    <textarea id="my_editor" name="ckeditor"></textarea>
+                    <div class="mt-20">
+                        <strong class="f-16 blue mb-20">Укажите перечень товаров (услуг)</strong>
+                        <div class="p-20 box-shadow dataTable-wrap mt-10 m-0">
+                            <div class="table-responsive">
+                                <table class="table table-hover dataTable table-striped w-full" data-plugin="selectable" data-row-selectable="true">
+                                    <thead>
+                                        <tr>
+                                            <th rowspan="2"></th>
+                                            <th rowspan="2" style="width: 20px!important;">№</th>
+                                            <th rowspan="2">Наименование товаров (услуг)</th>
+                                            <th class="text-center" style="width: 135px!important;" rowspan="2">Единица измерения</th>
+                                            <th class="text-center" rowspan="2">Кол-во</th>
+                                            <th class="text-center" rowspan="2">Цена</th>
+                                            <th class="text-center" style="width: 150px;" rowspan="2">Стоимость поставки</th>
+                                            <th class="text-center" colspan="2">НДС</th>
+                                            <th class="text-center" style="width: 135px!important;" rowspan="2">Cтоииость поставки с учетом НД</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-center" style="width: 150px!important;">Ставка</th>
+                                            <th class="text-center" style="width: 150px!important;">Сумма</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span class="checkbox-custom checkbox-primary">
+                                                    <input class="selectable-item" type="checkbox" value="1">
+                                                    <label></label>
+                                                </span></td>
+                                            <td>1</td>
+                                            <td>Кока Кола 1.5 л</td>
+                                            <td class="text-center">блок</td>
+                                            <td class="text-center">100</td>
+                                            <td class="text-center">4 850</td>
+                                            <td class="text-center">485 000</td>
+                                            <td class="text-center">0</td>
+                                            <td class="text-center">0</td>
+                                            <td class="text-center">485 000</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="checkbox-custom checkbox-primary">
+                                                    <input class="selectable-item" type="checkbox" value="1">
+                                                    <label></label>
+                                                </span></td>
+                                            <td>2</td>
+                                            <td>Кока Кола 1.5 л</td>
+                                            <td class="text-center">блок</td>
+                                            <td class="text-center">100</td>
+                                            <td class="text-center">4 850</td>
+                                            <td class="text-center">485 000</td>
+                                            <td class="text-center">0</td>
+                                            <td class="text-center">0</td>
+                                            <td class="text-center">485 000</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="checkbox-custom checkbox-primary">
+                                                    <input class="selectable-item" type="checkbox" value="1">
+                                                    <label></label>
+                                                </span></td>
+                                            <td>3</td>
+                                            <td>Кока Кола 1.5 л</td>
+                                            <td class="text-center">блок</td>
+                                            <td class="text-center">100</td>
+                                            <td class="text-center">4 850</td>
+                                            <td class="text-center">485 000</td>
+                                            <td class="text-center">0</td>
+                                            <td class="text-center">0</td>
+                                            <td class="text-center">485 000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="text-right mt-20">
+                                    <button type="button" class="btn btn-outline btn-default mr-20"><i class="red icon wb-close mr-10"></i>Удалить выбранные</button>
+                                    <button type="button" class="btn btn-outline btn-default"><i class="icon wb-order mr-10"></i>Добавить еще поле</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-20">
+                            <div class="form-group col-md-4">
+                                <label class="form-control-label">Ответственное лицо<span class="required">*</span></label>
+                                <select class="form-control" data-plugin="select2">
+                                    <option>ФИО лица</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label class="form-control-label">Ответственное лицо<span class="required">*</span></label>
+                                <select class="form-control" data-plugin="select2">
+                                    <option>ФИО лица</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-right px-20 pb-20 footer-actions mt-20">
+                    <span class="checkbox-custom checkbox-primary mr-20 d-inline">
+                        <input id="temp" class="selectable-item" type="checkbox" value="1">
+                        <label for="temp">Сохранить как шаблон</label>
+                    </span>
+                    <button type="button" class="btn btn-outline btn-default mr-20"><i class="icon wb-order mr-10 "></i>Посмотреть договор</button>
+                    <button type="button" class="btn btn-success"><i class="icon wb-здгы mr-10" aria-hidden="true"></i>Создать договор</button>
                 </div>
             </div>
         </div>
-        <!-- End Page -->
-        <!-- Footer -->
-        <footer class="site-footer">
-            <div class="clearfix login-footer">
-                <div class="float-left">
-                    <a href="#">Инструкция пользователя</a>
-                    <a href="#">Обратная связь</a>
-                </div>
-                <div class="float-right">
-                    <div class="tel">
-                        Служба технической поддержки:
-                        <br>
-                        <span>+998 71 200 00 00</span>
-                    </div>
+    </div>
+    <!-- End Page -->
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="clearfix login-footer">
+            <div class="float-left">
+                <a href="#">Инструкция пользователя</a>
+                <a href="#">Обратная связь</a>
+            </div>
+            <div class="float-right">
+                <div class="tel">
+                    Служба технической поддержки:
+                    <br>
+                    <span>+998 71 200 00 00</span>
                 </div>
             </div>
-        </footer>
-        <!-- Core  -->
-        <script src="global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
-        <script src="global/vendor/jquery/jquery.js"></script>
-        <script src="global/vendor/popper-js/umd/popper.min.js"></script>
-        <script src="global/vendor/bootstrap/bootstrap.js"></script>
-        <script src="global/vendor/mousewheel/jquery.mousewheel.js"></script>
-        <script src="global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
-        <script src="global/vendor/asscrollable/jquery-asScrollable.js"></script>
-        <script src="global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
-        <script src="global/vendor/select2/select2.full.min.js"></script>
-        <script src="global/vendor/bootstrap-datepicker/bootstrap-datepicker.js"></script>
-        <script src="global/vendor/datatables.net/jquery.dataTables.js"></script>
-        <script src="global/vendor/datatables.net-bs4/dataTables.bootstrap4.js"></script>
-        <script src="global/vendor/ckeditor/ckeditor.js"></script>
-        <script src="global/vendor/switchery/switchery.min.js"></script>
-        <script src="global/vendor/formatter/jquery.formatter.js"></script>
-        <!-- Scripts -->
-        <script src="global/js/Component.js"></script>
-        <script src="global/js/Plugin.js"></script>
-        <script src="global/js/Base.js"></script>
-        <script src="global/js/Config.js"></script>
-        <script src="assets/js/Section/Menubar.js"></script>
-        <script src="assets/js/Section/GridMenu.js"></script>
-        <script src="assets/js/Section/Sidebar.js"></script>
-        <script src="assets/js/Section/PageAside.js"></script>
-        <script src="assets/js/Plugin/menu.js"></script>
-        <script src="global/js/Plugin/formatter.js?v4.0.2"></script>
-        <script src="assets/js/Site.js"></script>
-        <script src="global/js/Plugin/ion.rangeSlider.min.js"></script>
-        <script src="global/js/Plugin/asselectable.min.js"></script>
-        <script src="global/js/Plugin/selectable.min.js"></script>
-        <script src="global/js/Plugin/switchery.js"></script>
-        <script>
-        (function(document, window, $) {
-            'use strict';
-            var Site = window.Site;
-            $(document).ready(function() {
-                Site.run();
-            });
-        })(document, window, jQuery);
-        </script>
-        <script>
+        </div>
+    </footer>
+    <!-- Core  -->
+    <script src="global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+    <script src="global/vendor/jquery/jquery.js"></script>
+    <script src="global/vendor/popper-js/umd/popper.min.js"></script>
+    <script src="global/vendor/bootstrap/bootstrap.js"></script>
+    <script src="global/vendor/mousewheel/jquery.mousewheel.js"></script>
+    <script src="global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+    <script src="global/vendor/asscrollable/jquery-asScrollable.js"></script>
+    <script src="global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+    <script src="global/vendor/select2/select2.full.min.js"></script>
+    <script src="global/vendor/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+    <script src="global/vendor/datatables.net/jquery.dataTables.js"></script>
+    <script src="global/vendor/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+    <script src="global/vendor/ckeditor/ckeditor.js"></script>
+    <script src="global/vendor/switchery/switchery.min.js"></script>
+    <script src="global/vendor/formatter/jquery.formatter.js"></script>
+    <!-- Scripts -->
+    <script src="global/js/Component.js"></script>
+    <script src="global/js/Plugin.js"></script>
+    <script src="global/js/Base.js"></script>
+    <script src="global/js/Config.js"></script>
+    <script src="assets/js/Section/Menubar.js"></script>
+    <script src="assets/js/Section/GridMenu.js"></script>
+    <script src="assets/js/Section/Sidebar.js"></script>
+    <script src="assets/js/Section/PageAside.js"></script>
+    <script src="assets/js/Plugin/menu.js"></script>
+    <script src="global/js/Plugin/formatter.js?v4.0.2"></script>
+    <script src="assets/js/Site.js"></script>
+    <script src="global/js/Plugin/ion.rangeSlider.min.js"></script>
+    <script src="global/js/Plugin/asselectable.min.js"></script>
+    <script src="global/js/Plugin/selectable.min.js"></script>
+    <script src="global/js/Plugin/switchery.js"></script>
+    <script>
+    (function(document, window, $) {
+        'use strict';
+        var Site = window.Site;
         $(document).ready(function() {
-                    CKEDITOR.replace('ckeditor', {});
-                    CKEDITOR.config.height = 520;
-                    $(document).ready(function() {
-                        $(".js-meta-data [data-alias]").on("click", function() {
-                            var alias = $(this).data("alias");
-                            var html = "<span class=\"meta-data-item\" data-alias=\"" + alias + "\">{{" + alias + "}}</span>";
-                            CKEDITOR.instances.my_editor.insertHtml(html);
-                        });
+            Site.run();
+        });
+    })(document, window, jQuery);
+    </script>
+    <script>
+    CKEDITOR.replace('ckeditor', {});
+    CKEDITOR.config.height = 320;
+    $(document).ready(function() {
+        $(".js-meta-data [data-alias]").on("click", function() {
+            var alias = $(this).data("alias");
+            var html = "<span class=\"meta-data-item\" data-alias=\"" + alias + "\">{{" + alias + "}}</span>";
+            CKEDITOR.instances.my_editor.insertHtml(html);
+        });
+        var ckbox_oneside = $('#oneside_dogovar');
+        var add_complated = $('#add_complated');
+        $('#oneside_dogovar').on('click', function() {
+            if (ckbox_oneside.is(':checked')) {
+                $('#oneside_dogovar_inputs input').prop("disabled", true);
+            } else {
+                $('#oneside_dogovar_inputs input').prop("disabled", false);
+            }
+        });
+        $(add_complated).on('click', function() {
+            if (add_complated.is(':checked')) {
+                $('#add_complated_div').show();
+            } else {
+                $('#add_complated_div').hide();
+            }
+        });
 
-                    });
-        </script>
+    });
+    </script>
 </body>
 
 </html>

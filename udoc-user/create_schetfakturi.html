@@ -319,13 +319,7 @@
         <div class="page-content">
             <div class="panel-wide">
                 <div class="panel panel-transparent">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Фильтр</h3>
-                        <div class="panel-actions panel-actions-keep">
-                            <a class="panel-action  panel-collapse" data-toggle="" aria-hidden="true"><span>Свернуть <i class="icon wb-chevron-up-mini ml-10"></i></span><span>Показать <i class="icon wb-chevron-down-mini ml-10"></i></span></a>
-                        </div>
-                    </div>
-                    <div class="panel-body pt-0 pb-0">
+                    <div class="panel-body pt-20 pb-0">
                         <div class="row">
                             <div class="form-group col-md-3">
                                 <label class="form-control-label">Номер с\ф </label>
@@ -355,23 +349,23 @@
                             </div>
                             <div class="form-group col-md-3">
                                 <label class="form-control-label">Исполнитель </label>
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" disabled="disabled" placeholder="Lorem ipsum dolor sit">
                             </div>
                             <div class="form-group col-md-3">
                                 <label class="form-control-label">ИНН </label>
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" disabled="disabled" placeholder="456564">
                             </div>
                             <div class="form-group col-md-3">
                                 <label class="form-control-label">Адресс </label>
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" disabled="disabled" placeholder="Lorem ipsum dolor sit">
                             </div>
                             <div class="form-group col-md-3">
                                 <label class="form-control-label">Регистроциоммьм код плательщика НДС</label>
-                                <input type="text" class="form-control" placeholder="">
+                                <input type="text" class="form-control" disabled="disabled" placeholder="Lorem ipsum dolor sit">
                             </div>
                             <div class="form-group col-md-12 mb-10">
                                 <span class="checkbox-custom checkbox-primary">
-                                    <input id="oneside_dogovar" class="selectable-item" type="checkbox" checked="checked">
+                                    <input id="oneside_dogovar" class="selectable-item" type="checkbox">
                                     <label for="oneside_dogovar">Односторияя счет фактура</label>
                                 </span>
                             </div>
@@ -379,19 +373,19 @@
                         <div class="row" id="oneside_dogovar_inputs">
                             <div class="form-group col-md-3">
                                 <label class="form-control-label">Партнер </label>
-                                <input type="text" disabled="disabled" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="">
                             </div>
                             <div class="form-group col-md-3">
                                 <label class="form-control-label">ИНН </label>
-                                <input type="text" disabled="disabled" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="">
                             </div>
                             <div class="form-group col-md-3">
                                 <label class="form-control-label">Адресс </label>
-                                <input type="text" disabled="disabled" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="">
                             </div>
                             <div class="form-group col-md-3">
                                 <label class="form-control-label">Регистроциоммьм код плательщика НДС</label>
-                                <input type="text" disabled="disabled" class="form-control" placeholder="">
+                                <input type="text" class="form-control" placeholder="">
                             </div>
                         </div>
                     </div>
@@ -427,27 +421,17 @@
                                                 <label></label>
                                             </span></td>
                                         <td>1</td>
-                                        <td>Кока Кола 1.5 л</td>
-                                        <td class="text-center">блок</td>
-                                        <td class="text-center">100</td>
-                                        <td class="text-center">4 850</td>
+                                        <td><input type="text" class="form-control" value="Кока Кола 1.5 л"></td>
+                                        <td class="text-center"><select class="form-control n-search">
+                                                <option>блок</option>
+                                                <option>блок</option>
+                                                <option>блок</option>
+                                                <option>блок</option>
+                                            </select></td>
+                                        <td class="text-center"><input type="text" class="form-control" value="100"></td>
+                                        <td class="text-center"><input type="text" class="form-control" value="4850"></td>
                                         <td class="text-center">485 000</td>
-                                        <td class="text-center">0</td>
-                                        <td class="text-center">0</td>
-                                        <td class="text-center">485 000</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span class="checkbox-custom checkbox-primary">
-                                                <input class="selectable-item" type="checkbox" value="1">
-                                                <label></label>
-                                            </span></td>
-                                        <td>2</td>
-                                        <td>Кока Кола 1.5 л</td>
-                                        <td class="text-center">блок</td>
-                                        <td class="text-center">100</td>
-                                        <td class="text-center">4 850</td>
-                                        <td class="text-center">485 000</td>
-                                        <td class="text-center">0</td>
+                                        <td class="text-center"><input type="text" class="form-control" value="0"></td>
                                         <td class="text-center">0</td>
                                         <td class="text-center">485 000</td>
                                     </tr>
@@ -456,16 +440,42 @@
                                                 <input class="selectable-item" type="checkbox" value="1">
                                                 <label></label>
                                             </span></td>
-                                        <td>3</td>
-                                        <td>Кока Кола 1.5 л</td>
-                                        <td class="text-center">блок</td>
-                                        <td class="text-center">100</td>
-                                        <td class="text-center">4 850</td>
+                                        <td>1</td>
+                                        <td><input type="text" class="form-control" value="Кока Кола 1.5 л"></td>
+                                        <td class="text-center"><select class="form-control n-search">
+                                                <option>блок</option>
+                                                <option>блок</option>
+                                                <option>блок</option>
+                                                <option>блок</option>
+                                            </select></td>
+                                        <td class="text-center"><input type="text" class="form-control" value="100"></td>
+                                        <td class="text-center"><input type="text" class="form-control" value="4850"></td>
                                         <td class="text-center">485 000</td>
-                                        <td class="text-center">0</td>
+                                        <td class="text-center"><input type="text" class="form-control" value="0"></td>
                                         <td class="text-center">0</td>
                                         <td class="text-center">485 000</td>
                                     </tr>
+                                    <tr>
+                                        <td><span class="checkbox-custom checkbox-primary">
+                                                <input class="selectable-item" type="checkbox" value="1">
+                                                <label></label>
+                                            </span></td>
+                                        <td>1</td>
+                                        <td><input type="text" class="form-control" value="Кока Кола 1.5 л"></td>
+                                        <td class="text-center"><select class="form-control n-search">
+                                                <option>блок</option>
+                                                <option>блок</option>
+                                                <option>блок</option>
+                                                <option>блок</option>
+                                            </select></td>
+                                        <td class="text-center"><input type="text" class="form-control" value="100"></td>
+                                        <td class="text-center"><input type="text" class="form-control" value="4850"></td>
+                                        <td class="text-center">485 000</td>
+                                        <td class="text-center"><input type="text" class="form-control" value="0"></td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">485 000</td>
+                                    </tr>
+                                   
                                 </tbody>
                             </table>
                             <div class="text-right mt-20">
@@ -501,23 +511,23 @@
                             </div>
                         </div>
                         <div class="form-group col-md-4">
+                            <label class="form-control-label">Номер доверенности</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
                             <label class="form-control-label">По доверенности</label>
                             <select class="form-control" data-plugin="select2">
                                 <option>ФИО доверенного лица</option>
                             </select>
                         </div>
                         <div class="form-group col-md-4">
-                            <label class="form-control-label">Дата</label>
+                            <label class="form-control-label">Дата доверенности</label>
                             <div class="input-group datepicker-input">
                                 <span class="input-group-addon">
                                     <i class="icon wb-calendar" aria-hidden="true"></i>
                                 </span>
                                 <input type="text" class="form-control" data-plugin="datepicker">
                             </div>
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label class="form-control-label">Номер</label>
-                            <input type="text" class="form-control">
                         </div>
                     </div>
                     <div class="row">
@@ -527,10 +537,6 @@
                                 <label for="add_complated">Добавить АКТ выполненных работ</label>
                             </span>
                         </div>
-                        <div class="form-group col-md-4 ">
-                            <label class="form-control-label">Номер телефона контрагента </label>
-                            <input type="text" class="form-control" data-plugin="formatter" data-pattern="+998 [[99]]-[[999]]-[[9999]]">
-                        </div>
                     </div>
                 </div>
                 <div style="display: none" id="add_complated_div" class="document-editor mr-20">
@@ -538,19 +544,19 @@
                     <div class="row mt-20">
                         <div class="form-group col-md-4">
                             <label class="form-control-label">Номер АКТ<span class="required">*</span></label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" disabled="disabled" placeholder="145546">
                         </div>
                         <div class="form-group col-md-4">
                             <label class="form-control-label">Номер договора</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" disabled="disabled" placeholder="5456">
                         </div>
                         <div class="form-group col-md-4">
-                            <label class="form-control-label">Выбереите срок</label>
+                            <label class="form-control-label">Дата договара</label>
                             <div class="input-group datepicker-input">
                                 <span class="input-group-addon">
                                     <i class="icon wb-calendar" aria-hidden="true"></i>
                                 </span>
-                                <input type="text" class="form-control" data-plugin="datepicker">
+                                <input type="text" class="form-control" data-plugin="datepicker" disabled="disabled" placeholder="19.11.2019">
                             </div>
                         </div>
                     </div>
@@ -599,7 +605,7 @@
                                                     <input class="selectable-item" type="checkbox" value="1">
                                                     <label></label>
                                                 </span></td>
-                                            <td>2</td>
+                                            <td>1</td>
                                             <td>Кока Кола 1.5 л</td>
                                             <td class="text-center">блок</td>
                                             <td class="text-center">100</td>
@@ -614,7 +620,7 @@
                                                     <input class="selectable-item" type="checkbox" value="1">
                                                     <label></label>
                                                 </span></td>
-                                            <td>3</td>
+                                            <td>1</td>
                                             <td>Кока Кола 1.5 л</td>
                                             <td class="text-center">блок</td>
                                             <td class="text-center">100</td>
@@ -639,7 +645,7 @@
                                     <option>ФИО лица</option>
                                 </select>
                             </div>
-                            <div class="form-group col-md-4">
+                            <div class="form-group col-md-4 ml-auto">
                                 <label class="form-control-label">Ответственное лицо<span class="required">*</span></label>
                                 <select class="form-control" data-plugin="select2">
                                     <option>ФИО лица</option>
@@ -653,8 +659,8 @@
                         <input id="temp" class="selectable-item" type="checkbox" value="1">
                         <label for="temp">Сохранить как шаблон</label>
                     </span>
-                    <button type="button" class="btn btn-outline btn-default mr-20"><i class="icon wb-order mr-10 "></i>Посмотреть договор</button>
-                    <button type="button" class="btn btn-success"><i class="icon wb-здгы mr-10" aria-hidden="true"></i>Создать договор</button>
+                    <button type="button" class="btn btn-outline btn-default mr-20"><i class="icon wb-order mr-10 "></i>Посмотреть счет-фактуру</button>
+                    <button type="button" class="btn btn-success"><i class="icon wb-здгы mr-10" aria-hidden="true"></i>Создать счет-фактуру</button>
                 </div>
             </div>
         </div>

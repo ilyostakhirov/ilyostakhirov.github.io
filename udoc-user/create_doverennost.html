@@ -301,53 +301,50 @@
     <div class="page">
         <div class="page-header">
             <div>
-                <h1 class="page-title">Договора</h1>
+                <h1 class="page-title">Создание доверенности</h1>
                 <ol class="breadcrumb mt-5">
                     <li class="breadcrumb-item"><a href="#">Пользователь</a></li>
-                    <li class="breadcrumb-item active">Договора</li>
+                    <li class="breadcrumb-item active">Создание доверенности</li>
                 </ol>
-            </div>
-            <div class="page-header-actions ">
-                <button type="button" class="btn btn-info mr-20"><i class="icon wb-download mr-10"></i>Скачать реестр</button>
-                <button type="button" class="btn btn-success"><i class="icon wb-plus mr-10" aria-hidden="true"></i>Заключить договор</button>
             </div>
         </div>
         <div class="page-content">
             <div class="panel-wide">
                 <div class="panel panel-transparent">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Фильтр</h3>
-                        <div class="panel-actions panel-actions-keep">
-                            <a class="panel-action  panel-collapse" data-toggle="" aria-hidden="true"><span>Свернуть <i class="icon wb-chevron-up-mini ml-10"></i></span><span>Показать <i class="icon wb-chevron-down-mini ml-10"></i></span></a>
-                        </div>
-                    </div>
-                    <div class="panel-body pt-0 pb-0">
+                    <div class="panel-body pt-20 pb-0">
                         <div class="row">
-                            <div class="form-group col-md-3">
-                                <label class="form-control-label">Шаблон </label>
-                                <select class="form-control n-search">
-                                    <option>Введите шаблон</option>
-                                    <option>Введите шаблон</option>
-                                </select>
+                            <div class="form-group col-md-4">
+                                <label class="form-control-label">Номер доверенности</label>
+                                <input type="text" class="form-control" placeholder="Введите номер доверенности">
                             </div>
-                            <div class="form-group col-md-3">
-                                <label class="form-control-label">Партнер </label>
-                                <input type="text" class="form-control" placeholder="Введите ИНН">
+                            <div class="form-group col-md-8">
+                                <label class="form-control-label">Дата выдачи и срок действия</label>
+                                <div class="row">
+                                    <div class="col-6 align-items-center d-flex">
+                                        <strong class="mr-15">С</strong>
+                                        <div class="input-group datepicker-input">
+                                            <span class="input-group-addon">
+                                                <i class="icon wb-calendar" aria-hidden="true"></i>
+                                            </span>
+                                            <input type="text" class="form-control" data-plugin="datepicker">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 align-items-center d-flex">
+                                        <strong class="mr-15">По</strong>
+                                        <div class="input-group datepicker-input">
+                                            <span class="input-group-addon">
+                                                <i class="icon wb-calendar" aria-hidden="true"></i>
+                                            </span>
+                                            <input type="text" class="form-control" data-plugin="datepicker">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-group col-md-3">
-                                <label class="form-control-label">Номер договора</label>
-                                <input type="text" class="form-control" placeholder="Укажите номер">
+                            <div class="form-group col-md-4">
+                                <label class="form-control-label">Номер договора </label>
+                                <input type="text" class="form-control" placeholder="Введите номер договора">
                             </div>
-                            <div class="form-group col-md-3">
-                                <label class="form-control-label">Предмета договора</label>
-                                <select class="form-control n-search" multiple="multiple">
-                                    <option>Товар</option>
-                                    <option>Товар</option>
-                                    <option>Товар</option>
-                                    <option>Товар</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-md-3">
+                            <div class="form-group col-md-4">
                                 <label class="form-control-label">Дата договора</label>
                                 <div class="input-group datepicker-input">
                                     <span class="input-group-addon">
@@ -356,141 +353,65 @@
                                     <input type="text" class="form-control" data-plugin="datepicker">
                                 </div>
                             </div>
-                            <div class="form-group col-md-3">
-                                <label class="form-control-label">Срок окончания договора</label>
-                                <div class="input-group datepicker-input">
-                                    <span class="input-group-addon">
-                                        <i class="icon wb-calendar" aria-hidden="true"></i>
-                                    </span>
-                                    <input type="text" class="form-control" data-plugin="datepicker">
-                                </div>
+
+                             <div class="form-group col-md-4">
+                                <label class="form-control-label">Партнер </label>
+                                <input type="text" class="form-control" placeholder="Укажите контрагента">
                             </div>
-                            <div class="form-group col-md-3">
-                                <label class="form-control-label">Тип валюты </label>
-                                <select class="form-control n-search">
-                                    <option>Исходящий</option>
-                                    <option>Исходящий</option>
-                                    <option>Исходящий</option>
-                                    <option>Исходящий</option>
-                                    <option>Исходящий</option>
+
+                            <div class="form-group col-md-4">
+                                <label class="form-control-label">Ф.И.О доверенного лицо </label>
+                                <select class="form-control" data-plugin="select2">
+                                    <option>Выберите сотрудника</option>
                                 </select>
                             </div>
-                            <div class="form-group col-md-3">
-                                <label class="form-control-label">Сумма </label>
+                            <div class="form-group col-md-4">
+                                <label class="form-control-label">Должность</label>
+                                <select class="form-control" data-plugin="select2">
+                                    <option>Выберите должность</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label class="form-control-label">Паспорт серия </label>
+                                <div class="d-flex">
+                                    <input type="text" class="form-control w-25" placeholder="AA">
+                                    <input type="text" class="form-control w-75 ml-20" placeholder="12345678">
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <div class="form-group col-md-4">
+                                <label class="form-control-label">Дата выдачи паспорта: </label>
                                 <input type="text" class="form-control" placeholder="">
                             </div>
-                            <div class="form-group col-md-3 d-flex">
-                                <span class="checkbox-custom checkbox-primary mt-auto">
-                                    <input id="dogovar_type" class="selectable-item" type="checkbox" value="1">
-                                    <label for="dogovar_type">Добавить третью сторону</label>
-                                </span>
+                            <div class="form-group col-md-4">
+                                <label class="form-control-label">Кем выдано </label>
+                                <input type="text" class="form-control" placeholder="">
                             </div>
-                            <div class="form-group col-md-3">
-                                <label class="form-control-label">Партнёр (Третья сторона) </label>
-                                <input type="text" id="dogovar_type_inn" class="form-control" disabled="disabled" placeholder="Введите ИНН">
-                            </div>
-                            <div class="form-group col-md-6 d-flex">
-                                <div class="files-wr mt-auto" data-count-files="1">
-                                    <div class="one-file">
-                                        <label for="file-1">Прикрепить файл</label>
-                                        <input name="file-1" id="file-1" type="file">
-                                        <div class="file-item hide-btn">
-                                            <span class="file-name"></span>
-                                            <span class="btn-del-file"><i class="icon wb-close"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="form-group col-md-4">
+                                <label class="form-control-label">Мобильный номер доверенного лица</label>
+                                <input type="text" class="form-control" data-plugin="formatter" data-pattern="+998 [[99]]-[[999]]-[[9999]]">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-9">
-                        <div class="document-editor">
-                            <textarea id="my_editor" name="ckeditor"></textarea>
-                            <span class="checkbox-custom checkbox-primary mt-20">
-                                <input class="selectable-item" type="checkbox" id="list-tovar" value="1">
-                                <label for="list-tovar">Добавить перечень товаров и услуг (официально) к договору</label>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="col-md-3 pl-0">
-                        <div class="documents-meta-data js-documents-meta-data" data-target="widgettemplateform-template">
-                            <h2 class="h2 blue text-center mt-0 pt-0">Отмечаемые поля для договора</h2>
-                            <h2 class="h2 b-t-l">Общее</h2>
-                            <ul class="tags-list tags-list--compact js-meta-data clearfix">
-                                <li class="tags-list__tag" data-alias="date">
-                                    Номер договора
-                                </li>
-                                <li class="tags-list__tag" data-alias="number">
-                                    Дата договора
-                                </li>
-                                <li class="tags-list__tag" data-alias="date">
-                                    Сумма договора
-                                </li>
-                                <li class="tags-list__tag" data-alias="number">
-                                    Сумма договора с прописью
-                                </li>
-                                <li class="tags-list__tag" data-alias="number">
-                                    Подпись руководителя
-                                </li>
-                            </ul>
-                            <h2 class="h2 b-t-l">Спецификация к договору</h2>
-                            <ul class="tags-list tags-list--compact js-meta-data clearfix">
-                                <li class="tags-list__tag" data-alias="date">
-                                    Таблица спецификаций
-                                </li>
-                            </ul>
-                            <div class="d-flex b-t-l pt-20 mt-20">
-                                <label class="pt-3">2 сторона</label>
-                                <div class="mr-20 ml-20">
-                                    <input type="checkbox" id="asdasd" name="inputiCheckBasicCheckboxes" data-plugin="switchery" />
-                                </div>
-                                <label for="asdasd" class="pt-3">3 сторона</label>
-                            </div>
-                            <h2 class="h2 b-t-l">Реквизиты контрагент</h2>
-                            <ul class="tags-list tags-list--compact js-meta-data clearfix">
-                                <li class="tags-list__tag" data-alias="full_name">Полное наименование</li>
-                                <li class="tags-list__tag" data-alias="short_name">Сокращенное наименование</li>
-                                <li class="tags-list__tag" data-alias="manager.acting_on_basis">действующий...</li>
-                                <li class="tags-list__tag" data-alias="manager.acting_on_basis">Юридический адрес</li>
-                                <li class="tags-list__tag" data-alias="bank.account">Р/С</li>
-                                <li class="tags-list__tag" data-alias="bank.account">МФО</li>
-                                <li class="tags-list__tag" data-alias="bank.account">Название банка</li>
-                                <li class="tags-list__tag" data-alias="inn">ИНН</li>
-                                <li class="tags-list__tag" data-alias="kpp">ОКЭД </li>
-                                <li class="tags-list__tag" data-alias="ogrn_ogrnip">Телефон
-                                </li>
-                                <li class="tags-list__tag" data-alias="contacts.email">Электронная почта</li>
-                                <li class="tags-list__tag" data-alias="addresses.legal.region.id">Произволное поле</li>
-                            </ul>
-                            <h2 class="h2 b-t-l">Руководитель контрагента</h2>
-                            <ul class="tags-list tags-list--compact js-meta-data clearfix">
-                                <li class="tags-list__tag" data-alias="manager.surname_name_middle">Фамилия Имя Отчество</li>
-                                <li class="tags-list__tag" data-alias="manager.surname_name_middle | format.shortFio">Фамилия И. О.</li>
-                                <li class="tags-list__tag" data-alias="manager.position">Должность</li>
-                                <li class="tags-list__tag" data-alias="manager.position | case.genitive">Подпись контрагента</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div id="tovar-list-table" style="display: none">	
                 <div class="d-md-flex px-20">
-                    <strong class="f-16 blue mr-20">Укажите предметы договора: </strong>
+                    <strong class="f-16 blue mr-20">Перечень материальных ценностей, подлежащих получению </strong>
                     <a href="#" class="link-icon mr-30"><span>Шаблон таблицы</span> <i class="icon wb-table" aria-hidden="true"></i></a>
                     <a href="#" class="link-icon"><span>Загрузить перечень товаров</span> <i class="icon wb-attach-file" aria-hidden="true"></i></a>
                 </div>
                 <div class="p-20 box-shadow dataTable-wrap ">
                     <div class="table-responsive">
-                        <table id="datatable-dogovar1" data-plugin="selectable" data-row-selectable="true" class="table table-hover dataTable table-striped w-full">
+                        <table data-plugin="selectable" data-row-selectable="true" class="table table-hover dataTable table-striped w-full">
                             <thead>
                                 <tr>
                                     <th class="no-sort"></th>
-                                    <th>Название</th>
+                                    <th class="no-sort">№</th>
+                                    <th>Наименование материальных ценностей</th>
                                     <th>Ед. измер.</th>
                                     <th>Кол-во</th>
-                                    <th>Цена</th>
-                                    <th>Стоимость</th>
+                                    <th style="width: 200px !important;">Кол-тво (прописью)</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -499,34 +420,32 @@
                                             <input class="selectable-item" type="checkbox" value="1">
                                             <label></label>
                                         </span></td>
-                                    <td><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </span></td>
+                                        <td> 1</td>
+                                    <td><span>Кока-кола в 1.5 литровой баклажке</span></td>
                                     <td><span>шт.</span></td>
                                     <td><span>300</span></td>
-                                    <td><span>50 000 532</span></td>
-                                    <td><span>520 000 000</span></td>
+                                    <td><span>тридцать пять</span></td>
                                 </tr>
                                 <tr>
                                     <td><span class="checkbox-custom checkbox-primary">
                                             <input class="selectable-item" type="checkbox" value="1">
                                             <label></label>
                                         </span></td>
-                                    <td><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </span></td>
+                                        <td> 2</td>
+                                    <td><span>Кока-кола в 1.5 литровой баклажке</span></td>
                                     <td><span>шт.</span></td>
                                     <td><span>300</span></td>
-                                    <td><span>50 000 532</span></td>
-                                    <td><span>520 000 000</span></td>
+                                    <td><span>тридцать пять</span></td>
                                 </tr>
                                 <tr>
-                                    <td><span class="checkbox-custom checkbox-primary">
-                                            <input class="selectable-item" type="checkbox" value="1">
-                                            <label></label>
-                                        </span></td>
-                                    <td><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </span></td>
-                                    <td><span>шт.</span></td>
+                                    <td></td>
+                                        <td></td>
+                                    <td><span>Всего</span></td>
+                                    <td><span></span></td>
                                     <td><span>300</span></td>
-                                    <td><span>50 000 532</span></td>
-                                    <td><span>520 000 000</span></td>
+                                    <td><span>тридцать пять</span></td>
                                 </tr>
+                               
                             </tbody>
                         </table>
                         <div class="text-right mt-20">
@@ -535,14 +454,31 @@
                         </div>
                     </div>
                 </div>
+                <div class="px-20">
+                    <p><strong>Подпись лица, получившего доверенность Ф.И.О. доверенного лица удостоверяем</strong></p>
+                    <hr>
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <label class="form-control-label">Руководитель<span class="required">*</span></label>
+                            <select class="form-control" data-plugin="select2">
+                                <option>ФИО руководителя</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label class="form-control-label">Главный бухгалтер<span class="required">*</span></label>
+                            <select class="form-control" data-plugin="select2">
+                                <option>ФИО руководителя</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
-                <div class="text-right px-20 pb-20 footer-actions">
+                <div class="text-right px-20 pb-20 footer-actions mt-20">
                     <span class="checkbox-custom checkbox-primary mr-20 d-inline">
                         <input id="temp" class="selectable-item" type="checkbox" value="1">
                         <label for="temp">Сохранить как шаблон</label>
                     </span>
-                    <button type="button" class="btn btn-outline btn-default mr-20"><i class="icon wb-order mr-10 "></i>Посмотреть договор</button>
-                    <button type="button" class="btn btn-success"><i class="icon wb-plus mr-10" aria-hidden="true"></i>Создать договор</button>
+                    <button type="button" class="btn btn-outline btn-default mr-20"><i class="icon wb-order mr-10 "></i>Посмотр</button>
+                    <button type="button" class="btn btn-success"><i class="icon wb-plus mr-10" aria-hidden="true"></i>Создать</button>
                 </div>
             </div>
         </div>
@@ -579,6 +515,7 @@
     <script src="global/vendor/datatables.net-bs4/dataTables.bootstrap4.js"></script>
     <script src="global/vendor/ckeditor/ckeditor.js"></script>
     <script src="global/vendor/switchery/switchery.min.js"></script>
+    <script src="global/vendor/formatter/jquery.formatter.js"></script>
     <!-- Scripts -->
     <script src="global/js/Component.js"></script>
     <script src="global/js/Plugin.js"></script>
@@ -589,6 +526,7 @@
     <script src="assets/js/Section/Sidebar.js"></script>
     <script src="assets/js/Section/PageAside.js"></script>
     <script src="assets/js/Plugin/menu.js"></script>
+    <script src="global/js/Plugin/formatter.js?v4.0.2"></script>
     <script src="assets/js/Site.js"></script>
     <script src="global/js/Plugin/ion.rangeSlider.min.js"></script>
     <script src="global/js/Plugin/asselectable.min.js"></script>
@@ -604,58 +542,29 @@
     })(document, window, jQuery);
     </script>
     <script>
-    $(document).ready(function() {
-        var ckbox = $('#dogovar_type');
-        var listTovar = $('#list-tovar');
-
-        $('input').on('click', function() {
-            if (ckbox.is(':checked')) {
-                $('#dogovar_type_inn').prop("disabled", false);
-            } else {
-                $('#dogovar_type_inn').prop("disabled", true);
-            }
-        });
-
-        $('input').on('click', function() {
-            if (listTovar.is(':checked')) {
-                $('#tovar-list-table').show('fast');
-            } else {
-                $('#tovar-list-table').hide('fast');
-            }
-        });
-    });
-    $('#datatable-dogovar1').DataTable({
-        "bPaginate": false,
-        "info": false,
-        "language": {
-            "sProcessing": "Подождите...",
-            "sLengthMenu": "Показать _MENU_ записей",
-            "sZeroRecords": "Записи отсутствуют.",
-            "sInfo": "Записи с _START_ до _END_ из _TOTAL_ записей",
-            "sInfoEmpty": "Записи с 0 до 0 из 0 записей",
-            "sInfoFiltered": "(отфильтровано из _MAX_ записей)",
-            "sInfoPostFix": "",
-            "sSearch": "Поиск:",
-            "sUrl": "",
-            "oPaginate": {
-                "sFirst": "<<",
-                "sPrevious": "<",
-                "sNext": ">",
-                "sLast": ">>"
-            },
-            "oAria": {
-                "sSortAscending": ": активировать для сортировки столбца по возрастанию",
-                "sSortDescending": ": активировать для сортировки столбцов по убыванию"
-            }
-        }
-    });
     CKEDITOR.replace('ckeditor', {});
-    CKEDITOR.config.height = 520;
+    CKEDITOR.config.height = 320;
     $(document).ready(function() {
         $(".js-meta-data [data-alias]").on("click", function() {
             var alias = $(this).data("alias");
             var html = "<span class=\"meta-data-item\" data-alias=\"" + alias + "\">{{" + alias + "}}</span>";
             CKEDITOR.instances.my_editor.insertHtml(html);
+        });
+        var ckbox_oneside = $('#oneside_dogovar');
+        var add_complated = $('#add_complated');
+        $('#oneside_dogovar').on('click', function() {
+            if (ckbox_oneside.is(':checked')) {
+                $('#oneside_dogovar_inputs input').prop("disabled", true);
+            } else {
+                $('#oneside_dogovar_inputs input').prop("disabled", false);
+            }
+        });
+        $(add_complated).on('click', function() {
+            if (add_complated.is(':checked')) {
+                $('#add_complated_div').show();
+            } else {
+                $('#add_complated_div').hide();
+            }
         });
 
     });

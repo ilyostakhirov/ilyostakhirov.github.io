@@ -14375,7 +14375,7 @@ td.action-icons {
 
 .form-group label,
 .form-control-label {
-    font-weight: bold;
+    font-weight: 500!important;
     color: #808080;
     font-size: 14px;
 }
@@ -14421,7 +14421,7 @@ td.action-icons {
     }
 }
 
-.dataTable-wrap .table tfoot th,
+.table tfoot th,
 .table thead th {
     font-weight: 700;
     color: #797979;
@@ -14429,8 +14429,8 @@ td.action-icons {
     border-bottom-width: 1px;
 }
 
-.dataTable-wrap table.dataTable td,
-.dataTable-wrap table.dataTable th {
+table.dataTable td,
+table.dataTable th {
     vertical-align: middle;
     border: none;
 }
@@ -14446,7 +14446,7 @@ td.action-icons {
     width: 80px !important;
 }
 
-.dataTable-wrap table.dataTable td span {
+ table.dataTable td span {
     display: block;
     color: #000;
     font-size: 14px;
@@ -14454,16 +14454,16 @@ td.action-icons {
     font-weight: 400;
 }
 
-.dataTable-wrap table.dataTable td small {
+table.dataTable td small {
     color: #aaa;
     font-size: 12px;
 }
 
-.dataTable-wrap .table-striped tbody tr:nth-of-type(odd) {
+.table-striped tbody tr:nth-of-type(odd) {
     background-color: #f9f9f9;
 }
 
-.dataTable-wrap .table-striped tbody tr:hover {
+.table-striped tbody tr:hover {
     background-color: #e9f5ff;
     cursor: pointer;
 }

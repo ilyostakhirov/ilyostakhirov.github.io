@@ -15827,6 +15827,12 @@ hr.b-2 {
 .dogovar-wrap table td {
     padding: 3px 5px;
 }
+.modal-backdrop {
+    z-index: 9990;
+}
+.modal {
+    z-index: 9991;
+}
 @media (min-width: 1150px) {
     .modal-lg {
         max-width: 1100px;

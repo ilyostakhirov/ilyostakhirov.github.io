@@ -1,19 +1,5 @@
  
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900|Orbitron:500,700|Ubuntu:400,500,700&display=swap');
-
-/*
-	font-family: 'Ubuntu', sans-serif;
-	font-family: 'Poppins', sans-serif;
-	font-family: 'Orbitron', sans-serif;
-*/
-
-/*** 
-
-====================================================================
-	 Resources / Css Files
-====================================================================
-
- ***/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic');
  
 @import url('fontawesome-all.css');
 @import url('flaticon.css');
@@ -54,7 +40,7 @@ body {
 	background:#ffffff;
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 a{
@@ -75,7 +61,7 @@ h1,h2,h3,h4,h5,h6 {
 	margin:0px;
 	background:none;
 	line-height:1.6em;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 input,button,select,textarea{
@@ -2357,7 +2343,7 @@ img{
 .banner-meetup .countdown{
 	position:relative;
 	text-align: center;
-	font-family: 'Orbitron', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .banner-meetup .countdown .time-counter{
@@ -5490,7 +5476,7 @@ img{
 	line-height: .9em;
 	color: #ec167f;
 	font-weight: 200;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	margin-bottom: 20px;
 }
 
@@ -6196,11 +6182,6 @@ img{
 	padding: 30px 30px;
 	box-shadow: 0 30px 20px rgba(0,0,0,.05);
 }
-
-.event-info-tabs .tabs-content .tab{
-	min-height: 155px;
-}
-
 .event-info-tabs .tabs-content h4{
 	position: relative;
 	display: block;
@@ -6247,6 +6228,7 @@ img{
 	line-height: 26px;
 	color: #616977;
 	font-weight: 400;
+	    margin: 10px 0px;
 }
 
 .event-info-tabs .tabs-content .info-list li .icon{
@@ -6959,7 +6941,7 @@ img{
 .coming-soon .cs-countdown{
 	position:relative;
 	text-align: center;
-	font-family: 'Orbitron', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .coming-soon .cs-countdown div{

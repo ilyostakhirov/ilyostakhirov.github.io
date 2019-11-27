@@ -920,11 +920,13 @@ img{
 	-ms-transition:all 600ms ease;
 	-o-transition:all 600ms ease;
 	transition:all 600ms ease;	
+	display: flex;
+    flex-grow: 1;
 }
 
 .main-header .nav-outer .main-menu{
 	position: static;
-	float: left;
+	    margin: 0 auto;
 }
 
 .main-menu .navigation{
@@ -1202,7 +1204,6 @@ img{
 .main-header .outer-box{
 	position: relative;
 	float: right;
-	margin-left: 50px;
 }
 
 .main-header .search-box-outer{

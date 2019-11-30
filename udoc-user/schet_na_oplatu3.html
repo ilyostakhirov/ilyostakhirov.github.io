@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>U-doc - Электронные документы</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="global/css/bootstrap.min.css">
+    <link rel="stylesheet" href="global/css/bootstrap-extend.min.css">
+    <link rel="stylesheet" href="global/vendor/asscrollable/asScrollable.css">
+    <link rel="stylesheet" href="global/vendor/bootstrap-datepicker/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="global/vendor/select2/select2.css">
+    <link rel="stylesheet" href="global/vendor/ionrangeslider/ionrange_slider.css">
+    <link rel="stylesheet" href="global/vendor/switchery/switchery.min.css?v4.0.2">
+    <link rel="stylesheet" href="global/vendor/datatables.net-bs4/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="assets/css/site.min.css">
+    <link rel="stylesheet" href="global/fonts/web-icons/web-icons.min.css">
+    <script src="global/vendor/breakpoints/breakpoints.js"></script>
+    <script>
+        Breakpoints();
+        </script>
+</head>
+
+<body class="animsition">
+    <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
+        <div class="navbar-container container-fluid">
+            <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+                <ul class="nav navbar-toolbar">
+                    <li>
+                        <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided" data-toggle="menubar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="hamburger-bar"></span>
+                        </button>
+                    </li>
+                    <li class="nav-item hidden-float" id="toggleMenubar">
+                        <a class="nav-link mr-30" data-toggle="menubar" href="#" role="button">
+                            <i class="icon hamburger hamburger-arrow-left">
+                                <span class="sr-only">Toggle menubar</span>
+                                <span class="hamburger-bar"></span>
+                            </i>
+                        </a>
+                    </li>
+                    <li class="d-flex m-h align-items-center">
+                        <a href="#" class="logo"><img width="86" height="35" src="assets/images/logo.svg" alt=""></a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link px-20" data-toggle="collapse" href="#" data-target="#site-navbar-search" role="button">
+                            <i class="icon wb-search f-19" aria-hidden="true"></i>
+                            <span class="sr-only">Toggle Search</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-20" data-toggle="dropdown" href="javascript:void(0)" title="Notifications" aria-expanded="false" data-animation="scale-up" role="button">
+                            <i class="icon wb-bell f-16" aria-hidden="true"></i>
+                            <span class="badge badge-pill badge-success up">5</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-media" role="menu">
+                            <div class="dropdown-menu-header">
+                                <h5>NOTIFICATIONS</h5>
+                                <span class="badge badge-round badge-danger">New 5</span>
+                            </div>
+                            <div class="list-group">
+                                <div data-role="container">
+                                    <div data-role="content">
+                                        <a class="list-group-item dropdown-item" href="javascript:void(0)" role="menuitem">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h6 class="media-heading">A new order has been placed</h6>
+                                                    <time class="media-meta" datetime="2018-06-12T20:50:48+08:00">5 hours ago</time>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="list-group-item dropdown-item" href="javascript:void(0)" role="menuitem">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h6 class="media-heading">Completed the task</h6>
+                                                    <time class="media-meta" datetime="2018-06-11T18:29:20+08:00">2 days ago</time>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="list-group-item dropdown-item" href="javascript:void(0)" role="menuitem">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h6 class="media-heading">Settings updated</h6>
+                                                    <time class="media-meta" datetime="2018-06-11T14:05:00+08:00">2 days ago</time>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="list-group-item dropdown-item" href="javascript:void(0)" role="menuitem">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h6 class="media-heading">Event started</h6>
+                                                    <time class="media-meta" datetime="2018-06-10T13:50:18+08:00">3 days ago</time>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="list-group-item dropdown-item" href="javascript:void(0)" role="menuitem">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h6 class="media-heading">Message received</h6>
+                                                    <time class="media-meta" datetime="2018-06-10T12:34:48+08:00">3 days ago</time>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-menu-footer">
+                                <a class="dropdown-menu-footer-btn" href="javascript:void(0)" role="button">
+                                    <i class="icon wb-settings" aria-hidden="true"></i>
+                                </a>
+                                <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
+                                    All notifications
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-20" data-toggle="dropdown" href="javascript:void(0)" title="Messages" aria-expanded="false" data-animation="scale-up" role="button">
+                            <i class="icon wb-envelope  f-16" aria-hidden="true"></i>
+                            <span class="badge badge-pill badge-info up">3</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-media" role="menu">
+                            <div class="dropdown-menu-header" role="presentation">
+                                <h5>MESSAGES</h5>
+                                <span class="badge badge-round badge-info">New 3</span>
+                            </div>
+                            <div class="list-group" role="presentation">
+                                <div data-role="container">
+                                    <div data-role="content">
+                                        <a class="list-group-item" href="javascript:void(0)" role="menuitem">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h6 class="media-heading">Mary Adams</h6>
+                                                    <div class="media-meta">
+                                                        <time datetime="2018-06-17T20:22:05+08:00">30 minutes ago</time>
+                                                    </div>
+                                                    <div class="media-detail">Anyways, i would like just do it</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="list-group-item" href="javascript:void(0)" role="menuitem">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h6 class="media-heading">Caleb Richards</h6>
+                                                    <div class="media-meta">
+                                                        <time datetime="2018-06-17T12:30:30+08:00">12 hours ago</time>
+                                                    </div>
+                                                    <div class="media-detail">I checheck the document. But there seems</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="list-group-item" href="javascript:void(0)" role="menuitem">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h6 class="media-heading">June Lane</h6>
+                                                    <div class="media-meta">
+                                                        <time datetime="2018-06-16T18:38:40+08:00">2 days ago</time>
+                                                    </div>
+                                                    <div class="media-detail">Lorem ipsum Id consectetur et minim</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="list-group-item" href="javascript:void(0)" role="menuitem">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h6 class="media-heading">Edward Fletcher</h6>
+                                                    <div class="media-meta">
+                                                        <time datetime="2018-06-15T20:34:48+08:00">3 days ago</time>
+                                                    </div>
+                                                    <div class="media-detail">Dolor et irure cupidatat commodo nostrud nostrud.</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-menu-footer" role="presentation">
+                                <a class="dropdown-menu-footer-btn" href="javascript:void(0)" role="button">
+                                    <i class="icon wb-settings" aria-hidden="true"></i>
+                                </a>
+                                <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
+                                    See all messages
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-toggle="dropdown" href="javascript:void(0)" data-animation="scale-up" aria-expanded="false" role="button">
+                            Русский
+                            <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu" role="menu">
+                            <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
+                                English</a>
+                            <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
+                                O'zbekcha</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Выход <i class="icon-4 ml-5" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <!-- Site Navbar Seach -->
+            <div class="collapse navbar-search-overlap" id="site-navbar-search">
+                <form role="search">
+                    <div class="form-group">
+                        <div class="input-search">
+                            <i class="input-search-icon wb-search f-21" aria-hidden="true"></i>
+                            <input type="text" class="form-control" name="site-search" placeholder="Поиск...">
+                            <button type="button" class="input-search-close icon wb-close" data-target="#site-navbar-search" data-toggle="collapse" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- End Site Navbar Seach -->
+        </div>
+    </nav>
+    <div class="site-menubar">
+        <div class="site-menubar-body">
+            <div>
+                <div>
+                    <div class="user">
+                        <img src="assets/images/avatar.png">
+                        <span>Фамилия имя</span>
+                        <div class="collapse" id="collapseExample">
+                            <ul class="company-list">
+                                <li class="active"><a href="#"><span>ООО «Кока кола компани» Физическое лицо </span><strong>Должность</strong></a></li>
+                                <li><a href="#"><span>ООО «Кока кола компани» Физическое лицо </span><strong>Должность</strong></a></li>
+                            </ul>
+                            <button type="button" class="btn btn-outline btn-info"><i class="icon wb-plus mr-10" aria-hidden="true"></i>Добавить компанию</button>
+                        </div>
+                        <a class="btn btn-block btn-link" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <i class="icon wb-chevron-down" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <ul class="site-menu" data-plugin="menu">
+                        <li class="site-menu-item">
+                            <a href="javascript:void(0)">
+                                <i class="site-menu-icon icon-8 f-21" aria-hidden="true"></i>
+                                <span class="site-menu-title">Договора</span>
+                            </a>
+                        </li>
+                        <li class="site-menu-item">
+                            <a href="#">
+                                <i class="site-menu-icon icon-7" aria-hidden="true"></i>
+                                <span class="site-menu-title">Счёт фактуры</span>
+                            </a>
+                        </li>
+                        <li class="site-menu-item">
+                            <a href="#">
+                                <i class="site-menu-icon icon-10" aria-hidden="true"></i>
+                                <span class="site-menu-title">Доверенности</span>
+                            </a>
+                        </li>
+                        <li class="site-menu-item">
+                            <a href="#">
+                                <i class="site-menu-icon icon-16" aria-hidden="true"></i>
+                                <span class="site-menu-title">Счёт на оплату</span>
+                            </a>
+                        </li>
+                        <li class="site-menu-item">
+                            <a href="#">
+                                <i class="site-menu-icon icon-11" aria-hidden="true"></i>
+                                <span class="site-menu-title">Акты выполненных работ</span>
+                            </a>
+                        </li>
+                        <li class="site-menu-item">
+                            <a href="#">
+                                <i class="site-menu-icon icon-9" aria-hidden="true"></i>
+                                <span class="site-menu-title">ТТН</span>
+                            </a>
+                        </li>
+                        <li class="site-menu-item">
+                            <a href="#">
+                                <i class="site-menu-icon icon-17" aria-hidden="true"></i>
+                                <span class="site-menu-title">Приход</span>
+                            </a>
+                        </li>
+                        <li class="site-menu-item">
+                            <a href="#">
+                                <i class="site-menu-icon icon-12" aria-hidden="true"></i>
+                                <span class="site-menu-title">Отчёты</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="site-menubar-footer">
+            <a href="javascript: void(0);" class="fold-show">
+                <span class="icon wb-settings" aria-hidden="true"></span>
+                Настройки
+            </a>
+        </div>
+    </div>
+    <!-- Page -->
+    <div class="page">
+        <div class="page-header">
+            <div>
+                <h1 class="page-title">Счет на оплату №01-5450124</h1>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="panel-wide">
+                <h3 class="text-center mb-30">СЧЕТ НА ОПЛАТУ As 12345 от 25.10.2019г. <br>к договору № 1234 от 13.10.2019г.</h3>
+                <div class="row  justify-content-center">
+                    <div class="col-md-4">
+                        <h4>Исполнитель</h4>
+                        <p><strong>ООО “Coco-Cola LTD“</strong></p>
+                        <p><strong>Адрес:</strong> Адрес ул. Яхё Гулямова, 37 дом</p>
+                        <p><strong>Расчетный счет:</strong> 20208000805122379001 в АТ "Капитал банк”</p>
+                        <p><strong>МФО:</strong> 01088</p>
+                        <p><strong>ИНН:</strong> 306710014</p>
+                        <p><strong>ОКЭД:</strong> 62010</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Заказчик</h4>
+                        <p><strong>ООО “Coco-Cola LTD“</strong></p>
+                        <p><strong>Адрес:</strong> Адрес ул. Яхё Гулямова, 37 дом</p>
+                        <p><strong>Расчетный счет:</strong> 20208000805122379001 в АТ "Капитал банк”</p>
+                        <p><strong>МФО:</strong> 01088</p>
+                        <p><strong>ИНН:</strong> 306710014</p>
+                        <p><strong>ОКЭД:</strong> 62010</p>
+                    </div>
+                </div>
+                <div id="tovar-list-table">
+                    <div class="dataTable-wrap ">
+                        <div class="table-responsive">
+                            <table class="table table-hover table-bordered dataTable table-striped w-full" data-plugin="selectable" data-row-selectable="true">
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2" style="width: 20px!important;">№</th>
+                                        <th rowspan="2">Наименование товаров (услуг)</th>
+                                        <th class="text-center" style="width: 135px!important;" rowspan="2">Единица измерения</th>
+                                        <th class="text-center" rowspan="2">Кол-во</th>
+                                        <th class="text-center" rowspan="2">Цена</th>
+                                        <th class="text-center" style="width: 150px;" rowspan="2">Стоимость поставки</th>
+                                        <th class="text-center" colspan="2">НДС</th>
+                                        <th class="text-center" style="width: 135px!important;" rowspan="2">Cтоииость поставки с учетом НД</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center" style="width: 150px!important;">Ставка</th>
+                                        <th class="text-center" style="width: 150px!important;">Сумма</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Кока Кола 1.5 л</td>
+                                        <td class="text-center">блок</td>
+                                        <td class="text-center">100</td>
+                                        <td class="text-center">4850</td>
+                                        <td class="text-center">485 000</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">485 000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Кока Кола 1.5 л</td>
+                                        <td class="text-center">блок</td>
+                                        <td class="text-center">100</td>
+                                        <td class="text-center">4850</td>
+                                        <td class="text-center">485 000</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">485 000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" colspan="5">Всего к оплате</td>
+                                        <td class="text-center">1 485 000</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">0</td>
+                                        <td class="text-center">1 485 000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h4 class="text-left mt-20">Итого к оплате: 1 445 000 сум. (один миллион четыриста сорок пять тысячи сум, Без НДС</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-20">
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            Руководитель <strong class="ml-20">Эшаное Баходир Турсуноеич</strong>
+                        </div>
+                        <div class="form-group col-md-4">
+                            Главный бухгалтер <strong class="ml-20">Эшанова Гулнора Кучкоровна</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="mt-20">Привязанные платежные документы</h4>
+             <div class="row">
+                            <div class="form-group col-md-4">
+                                <label class="form-control-label">Номер П/П:</label>
+                                <input type="text" class="form-control" placeholder="">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label class="form-control-label">Дата П/П:</label>
+                                <div class="input-group datepicker-input">
+                                            <span class="input-group-addon">
+                                                <i class="icon wb-calendar" aria-hidden="true"></i>
+                                            </span>
+                                            <input type="text" class="form-control" data-plugin="datepicker">
+                                        </div>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label class="form-control-label">Сумма П/П:</label>
+                                <input type="text" class="form-control" placeholder="">
+                            </div>
+                        </div>
+        </div>
+    </div>
+    <!-- End Page -->
+    <!-- Modal -->
+    <div id="modalDogovora" class="modal fade example-modal-lg" aria-hidden="true" aria-labelledby="exampleOptionalLarge" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-simple modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title m-auto">ДОГОВОР №154</h5>
+                    <button type="button" class="close ml-0" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body dogovar-wrap">
+                    <div class="dogovar-box">
+                        <p class="text-center"><strong>ДОГОВОР № ________ <br>
+                                на оказание услуг (выполнение работ) по результатам проведения электронных торгов на портале <br>
+                                электронной кооперации от ХХ.ХХ.ХХХX год время хх: хх: хх (ID № XXXXXX)</strong></p>
+                        <table border="0" style="width:100%">
+                            <tr>
+                                <td width="361">
+                                    г. Ташкент<br>
+                                    (место заключения договора)
+                                </td>
+                                <td width="361" class="text-right">
+                                    «ХХ» ХХ ХХХХ г.<br>
+                                    (дата заключения договора)
+                                </td>
+                            </tr>
+                        </table>
+                        <p>НАЗВАНИЕ ПРЕДПРИЯТИЯ ЗАКАЗЧИКА , являющийся заказчиком, именуемый в дальнейшем <strong>«Заказчик»</strong>, в лице Ф.И.О, действующий на основании _____________, с одной стороны и НАЗВАНИЕ ПРЕДПРИЯТИЯ ПОСТАВЩИКА именуемый дальнейшем <strong>«Поставщик»</strong>, в лице Ф.И.О, действующий на основании _____________, с другой стороны, совместно именуемые <strong>«Стороны»</strong>, по результатам проведения электронных торгов на портале электронной кооперации, заключили настоящий договор о нижеследующем.</p>
+                        <p class="text-center"><strong>1. ПРЕДМЕТ ДОГОВОРА</strong></p>
+                        <p>1.1.&nbsp;По настоящему договору Заказчик оплачивает и принимает, а Поставщик оказывает (выполняет) следующие:</p>
+                        <table class="mb-20" border="1" style="width:100%">
+                            <tr>
+                                <td width="31" class="text-center"><strong>№</strong></td>
+                                <td width="148" class="text-center"><strong>Наименование товара</strong></td>
+                                <td width="66" class="text-center"><strong>Код ТНВЭД</strong></td>
+                                <td width="85" class="text-center"><strong>Единицы измерения</strong></td>
+                                <td width="66" class="text-center"><strong>Кол-во</strong></td>
+                                <td width="66" class="text-center"><strong>Цена за ед.</strong></td>
+                                <td width="76" class="text-center"><strong>НДС</strong></td>
+                                <td width="132" class="text-center"><strong>Сумма договора</strong></td>
+                            </tr>
+                            <tr>
+                                <td width="31" class="text-center">
+                                    &nbsp;
+                                </td>
+                                <td width="148" class="text-center">&nbsp;
+                                </td>
+                                <td width="66" class="text-center">&nbsp;
+                                </td>
+                                <td width="85" class="text-center">&nbsp;
+                                </td>
+                                <td width="66" class="text-center">&nbsp;
+                                </td>
+                                <td width="66" class="text-center">&nbsp;
+                                </td>
+                                <td width="76" class="text-center">&nbsp;
+                                </td>
+                                <td width="132" class="text-center">&nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                        <p>1.2. Особые характеристики товара:</p>
+                        <table class="mb-20" border="1" cellspacing="0" cellpadding="0" style="width:100%">
+                            <tr>
+                                <td width="48%">
+                                    Функциональные характеристики </td>
+                                <td width="51%"></td>
+                            </tr>
+                            <tr>
+                                <td width="48%">Комплектность товара</td>
+                                <td width="51%"></td>
+                            </tr>
+                            <tr>
+                                <td width="48%">Наличие санитарно-эпидемиологического, фитосанитарного, ветеринарного заключения
+                                    (в случаях, предусмотренных законодательством)</td>
+                                <td width="51%"></td>
+                            </tr>
+                            <tr>
+                                <td width="48%">Номер сертификата соответствия (в случаях, предусмотренных законодательством)</td>
+                                <td width="51%"></td>
+                            </tr>
+                            <tr>
+                                <td width="48%">Место доставки товаров </td>
+                                <td width="51%"></td>
+                            </tr>
+                            <tr>
+                                <td width="48%">Тип доставки</td>
+                                <td width="51%">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td width="48%">Требования к условиям хранения
+                                </td>
+                                <td width="51%"></td>
+                            </tr>
+                            <tr>
+                                <td width="48%">Срок годности товара</td>
+                                <td width="51%"></td>
+                            </tr>
+                            <tr>
+                                <td width="48%">Гарантийное и техническое обслуживание</td>
+                                <td width="51%">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="48%">Перечень передаваемой с товаром документации</td>
+                                <td width="51%"></td>
+                            </tr>
+                        </table>
+                        <p>Общая сумма договора составляет _________________________ (сумма прописью).</p>
+                        <p class="text-center"><strong>2. ПОРЯДОК ОПЛАТЫ И СРОКИ ДОСТАВКИ ТОВАРА</strong></p>
+                        <p>2.2.&nbsp;Поставщик обязуется представить товар в течение ZZ-х рабочих дней с момента получения уведомления от РКП об оплате.</p>
+                        <p>2.4. При доставке товара производителем, Поставщик несет все расходы по транспортировке товара, если иное не установлено условиями настоящего договора.</p>
+                        <p> 2.5.&nbsp;Факт представления товара Поставщиком и его принятия Заказчиком подтверждает оформленная Поставщиком электронная счёт фактура, подписываемая Сторонами электронной цифровой подписью.</p>
+                        <p> 2.6.&nbsp;После принятия товара в течение 5 рабочего дня Заказчик обязан направить информацию Оператору, подтверждающую получение товара, на основании которой в установленном порядке осуществляется оплата на расчетный счет Поставщика.</p>
+                        <p class="text-center"><strong>3. ПРАВА И ОБЯЗАННОСТИ СТОРОН</strong></p>
+                        <p> 3.1.&nbsp;Права Заказчика:<br>
+                            требовать от Поставщика представить товара соответствующего качества в соответствии с пунктом 1.1. и 1.2. настоящего договора;<br>
+                            в случае предоставления товара ненадлежащего качества потребовать от Поставщика безвозмездного устранения недостатков;<br>
+                            возмещения нанесенного ущерба в результате неисполнения или ненадлежащего исполнения условий настоящего договора;<br>
+                            Заказчик может иметь и иные права в соответствии с законодательством.</p>
+                        <p> 3.2.&nbsp;Обязанности Заказчика:<br>
+                            обеспечить наличие на лицевом счете в РКП денежные средства в размере 100% суммы договора, в соответствии с пунктом 2.1. настоящего договора;<br>
+                            принять представленный товар в соответствии с настоящим договором;<br>
+                            после принятия товара направить информацию о принятии Оператору, в соответствии с пунктом 2.6. настоящего договора.</p>
+                        <p> 3.3.&nbsp;Поставщик вправе:<br>
+                            требовать от Заказчика возмещения нанесенного ущерба, в результате необоснованного отказа от принятия товара в соответствии с поданной заявкой.<br>
+                            Поставщик может иметь и иные права в соответствии с законодательством</p>
+                        <p> 3.4.&nbsp;Поставщик обязан:<br>
+                            представить товары Заказчику в сроки, в объеме и качестве в соответствии с настоящим договором в срок указанным пункта 2.2. настоящего договора;<br>
+                            по требованию Заказчика безвозмездно исправить все выявленные недостатки, если в процессе передачи товара (выполнения работ) Поставщик допустил отступления от условий договора;</p>
+                        <p> 3.5.&nbsp;Договор должен исполняться надлежащим образом в соответствии с условиями и требованиями настоящего договора и законодательства Республики Узбекистан.</p>
+                        <p> 3.6.&nbsp;Договор считается исполненным в том случае, если Стороны обеспечили исполнение всех принятых на себя обязательств.</p>
+                        <p class="text-center"><strong>4. ОТВЕТСТВЕННОСТЬ СТОРОН</strong></p>
+                        <p>4.1.&nbsp;Заказчик и Поставщик несут ответственность за неисполнения и нарушения условий настоящего договора в соответствии с законодательством.</p>
+                        <p>4.2. Стороны освобождаются от ответственности за частичное или полное невыполнение обязательств <br>
+                            по настоящему договору, если это невыполнение явилось следствием форс-мажорных обстоятельств, делающих невозможным выполнение настоящего договора при наличии условий, предусмотренных законодательством. </p>
+                        <p class="text-center"><strong>5. ПОРЯДОК РАЗРЕШЕНИЯ СПОРОВ</strong></p>
+                        <p>5.1. При возникновении споров и разногласий, стороны обращаются в Арбитражную службу Оператора.</p>
+                        <p> 5.2. Стороны вправе за разрешением разногласий и споров обратиться непосредственно в суд по месту нахождению истца.</p>
+                        <p> 5.3. Взаимоотношения сторон, не оговоренные в настоящем договоре, регулируются законодательством Республики Узбекистан.</p>
+                        <p class="text-center"><strong>6. СРОК ДЕЙСТВИЯ КОНТРАКТА</strong></p>
+                        <p>6.1.&nbsp;Настоящий договор вступает в силу с момента заключения настоящего договора согласно итогам электронных торгов на портале электронной кооперации и действует в срок до исполнения обязательств по настоящему договору.</p>
+                        <p>6.2.&nbsp;Истечение срока действия договора не освобождает стороны от ответственности.</p>
+                        <p class="text-center"><strong>7. ЮРИДИЧЕСКИЕ АДРЕСА И РЕКВИЗИТЫ СТОРОН</strong></p>
+                        <div class="d-flex justify-content-between">
+                            <table class="mb-30" border="1" cellspacing="0" cellpadding="0" style="width:100%">
+                                <tr>
+                                    <td class="text-center"><strong>Поставщик</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Наименование:<br>
+                                        Адрес: <br>
+                                        Тел.:<br>
+                                        e-mail:<br>
+                                        ИНН: <br>
+                                        ОКЭД: <br>
+                                        Р/С: <br>
+                                        Банк: <br>
+                                        МФО: <br>
+                                        <p>&nbsp;</p>
+                                        <p>Договор заключен с использованием ЭЦП.</p>
+                                    </td>
+                            </table>
+                            <table class="mb-30 ml-30" border="1" cellspacing="0" cellpadding="0" style="width:100%">
+                                <tr>
+                                    <td class="text-center"><strong>Поставщик</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Наименование:<br>
+                                        Адрес: <br>
+                                        Тел.:<br>
+                                        e-mail:<br>
+                                        ИНН: <br>
+                                        ОКЭД: <br>
+                                        Р/С: <br>
+                                        Банк: <br>
+                                        МФО: <br>
+                                        <p>&nbsp;</p>
+                                        <p>Договор заключен с использованием ЭЦП.</p>
+                                    </td>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        <i class="icon wb-close" aria-hidden="true"></i> Отменить</button>
+                    <button type="button" id="linkloginmodal" class="btn btn-primary"><i class="icon wb-pencil" aria-hidden="true"></i> Подписать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="clearfix login-footer">
+            <div class="float-left">
+                <a href="#">Инструкция пользователя</a>
+                <a href="#">Обратная связь</a>
+            </div>
+            <div class="float-right">
+                <div class="tel">
+                    Служба технической поддержки:
+                    <br>
+                    <span>+998 71 200 00 00</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Core  -->
+    <script src="global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+    <script src="global/vendor/jquery/jquery.js"></script>
+    <script src="global/vendor/popper-js/umd/popper.min.js"></script>
+    <script src="global/vendor/bootstrap/bootstrap.js"></script>
+    <script src="global/vendor/mousewheel/jquery.mousewheel.js"></script>
+    <script src="global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+    <script src="global/vendor/asscrollable/jquery-asScrollable.js"></script>
+    <script src="global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+    <script src="global/vendor/select2/select2.full.min.js"></script>
+    <script src="global/vendor/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+    <script src="global/vendor/datatables.net/jquery.dataTables.js"></script>
+    <script src="global/vendor/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+    <script src="global/vendor/ckeditor/ckeditor.js"></script>
+    <script src="global/vendor/switchery/switchery.min.js"></script>
+    <script src="global/vendor/formatter/jquery.formatter.js"></script>
+    <!-- Scripts -->
+    <script src="global/js/Component.js"></script>
+    <script src="global/js/Plugin.js"></script>
+    <script src="global/js/Base.js"></script>
+    <script src="global/js/Config.js"></script>
+    <script src="assets/js/Section/Menubar.js"></script>
+    <script src="assets/js/Section/GridMenu.js"></script>
+    <script src="assets/js/Section/Sidebar.js"></script>
+    <script src="assets/js/Section/PageAside.js"></script>
+    <script src="assets/js/Plugin/menu.js"></script>
+    <script src="global/js/Plugin/formatter.js?v4.0.2"></script>
+    <script src="assets/js/Site.js"></script>
+    <script src="global/js/Plugin/ion.rangeSlider.min.js"></script>
+    <script src="global/js/Plugin/asselectable.min.js"></script>
+    <script src="global/js/Plugin/selectable.min.js"></script>
+    <script src="global/js/Plugin/switchery.js"></script>
+    <script>
+    (function(document, window, $) {
+        'use strict';
+        var Site = window.Site;
+        $(document).ready(function() {
+            Site.run();
+        });
+    })(document, window, jQuery);
+    </script>
+    <script>
+    CKEDITOR.replace('ckeditor', {});
+    CKEDITOR.config.height = 320;
+    $(document).ready(function() {
+        $(".js-meta-data [data-alias]").on("click", function() {
+            var alias = $(this).data("alias");
+            var html = "<span class=\"meta-data-item\" data-alias=\"" + alias + "\">{{" + alias + "}}</span>";
+            CKEDITOR.instances.my_editor.insertHtml(html);
+        });
+        var ckbox_oneside = $('#oneside_dogovar');
+        var add_complated = $('#add_complated');
+        $('#oneside_dogovar').on('click', function() {
+            if (ckbox_oneside.is(':checked')) {
+                $('#oneside_dogovar_inputs input').prop("disabled", true);
+            } else {
+                $('#oneside_dogovar_inputs input').prop("disabled", false);
+            }
+        });
+        $(add_complated).on('click', function() {
+            if (add_complated.is(':checked')) {
+                $('#add_complated_div').show();
+            } else {
+                $('#add_complated_div').hide();
+            }
+        });
+
+    });
+    </script>
+</body>
+
+</html>

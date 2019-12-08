@@ -316,6 +316,11 @@
                     </a>
                 </li>
                 <li class="nav-item" role="presentation">
+                    <a class="nav-link" data-toggle="tab" href="#tabsSolid4" aria-controls="tabsSolid4" role="tab">
+                        Изменить пароль
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
                     <a class="nav-link" data-toggle="tab" href="#tabsSolid2" aria-controls="tabsSolid2" role="tab">
                         Подразделение, сотрудники и роли
                     </a>
@@ -328,7 +333,6 @@
             </ul>
             <div class="tab-content page-content">
                 <div class="tab-pane active panel-wide p-20" id="tabsSolid1" role="tabpanel">
-                    
                     <div class="row">
                         <div class="form-group col-md-4">
                             <label class="form-control-label">ИНН</label>
@@ -390,6 +394,30 @@
                     </div>
                     <hr>
                     <button type="button" class="btn btn-success"><i class="icon wb-plus mr-10" aria-dden="true"></i>Сохранить</button>
+                </div>
+                <div class="tab-pane panel-wide p-20" id="tabsSolid4" role="tabpanel">
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <label class="form-control-label">Текущий пароль
+                            </label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <label class="form-control-label">Новый пароль
+                            </label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <label class="form-control-label">Новый пароль ещё раз
+                            </label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success">Изменить пароль</button>
                 </div>
                 <div class="tab-pane panel-wide" id="tabsSolid2" role="tabpanel">
                     <div class="dataTable-wrap">
@@ -541,97 +569,96 @@
             </div>
         </div>
     </footer>
-
     <!-- Modal -->
-                    <div class="modal fade" id="exampleFormModal" aria-hidden="false" aria-labelledby="exampleFormModalLabel" role="dialog" tabindex="-1">
-                        <div class="modal-dialog modal-simple">
-                            <form class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">×</span>
-                                    </button>
-                                    <h4 class="modal-title" id="exampleFormModalLabel">Добавить сотрудника</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="row">
-                                        <div class="form-group col-md-6">
-                                            <label class="form-control-label">Фамилия</label>
-                                            <input type="text" class="form-control" placeholder="">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label class="form-control-label">Имя</label>
-                                            <input type="text" class="form-control" placeholder="">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label class="form-control-label">Отчетество</label>
-                                            <input type="text" class="form-control" placeholder="">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label class="form-control-label">Паспорт серия </label>
-                                            <div class="d-flex">
-                                                <input type="text" class="form-control w-25" placeholder="AA">
-                                                <input type="text" class="form-control w-75 ml-20" placeholder="12345678">
-                                            </div>
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label class="form-control-label">Дата выдачи паспорта: </label>
-                                            <input type="text" class="form-control" placeholder="">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label class="form-control-label">Кем выдано </label>
-                                            <input type="text" class="form-control" placeholder="">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label class="form-control-label">Мобильный</label>
-                                            <input type="text" class="form-control" placeholder="" data-plugin="formatter" data-pattern="+998 [[99]]-[[999]]-[[9999]]">
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label class="form-control-label">Подразделение</label>
-                                            <select class="form-control" data-plugin="select2">
-                                                <option>Выберите </option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label class="form-control-label">Отдел </label>
-                                            <select class="form-control" data-plugin="select2">
-                                                <option>Выберите </option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label class="form-control-label">Должность </label>
-                                            <select class="form-control" data-plugin="select2">
-                                                <option>Выберите </option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <!-- Example Multi-Select Simple -->
-                                    <div class="example-wrap m-md-0">
-                                        <h4 class="example-title">Роли</h4>
-                                        <div class="example">
-                                            <select class="form-control" data-plugin="multiSelect">
-                                                <option value="a1">Создать договор</option>
-                                                <option value="a2">Создать счет-фактуру</option>
-                                                <option value="a3">Создать АКТ -счет-фактуру Создать доверенность</option>
-                                                <option value="a4">Создать счет на оплату</option>
-                                                <option value="a5">Создать ТТН</option>
-                                                <option value="a6">Одобрить договор</option>
-                                                <option value="a7">Одобрить счет-фактуру</option>
-                                                <option value="a8">Одобрить АКТ-счет-фактуру</option>
-                                                <option value="a9">Одобрить доверенность</option>
-                                                <option value="a10">Одобрить счет на оплату</option>
-                                                <option value="a11">Одобрить ТТН</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-                                <button type="button" class="btn btn-primary">Зарегистрировать сотрудника</button>
-                              </div>
-                            </form>
+    <div class="modal fade" id="exampleFormModal" aria-hidden="false" aria-labelledby="exampleFormModalLabel" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-simple">
+            <form class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title" id="exampleFormModalLabel">Добавить сотрудника</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label class="form-control-label">Фамилия</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="form-control-label">Имя</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="form-control-label">Отчетество</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="form-control-label">Паспорт серия </label>
+                            <div class="d-flex">
+                                <input type="text" class="form-control w-25" placeholder="AA">
+                                <input type="text" class="form-control w-75 ml-20" placeholder="12345678">
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="form-control-label">Дата выдачи паспорта: </label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="form-control-label">Кем выдано </label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="form-control-label">Мобильный</label>
+                            <input type="text" class="form-control" placeholder="" data-plugin="formatter" data-pattern="+998 [[99]]-[[999]]-[[9999]]">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="form-control-label">Подразделение</label>
+                            <select class="form-control" data-plugin="select2">
+                                <option>Выберите </option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="form-control-label">Отдел </label>
+                            <select class="form-control" data-plugin="select2">
+                                <option>Выберите </option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="form-control-label">Должность </label>
+                            <select class="form-control" data-plugin="select2">
+                                <option>Выберите </option>
+                            </select>
                         </div>
                     </div>
-                    <!-- End Modal -->
+                    <!-- Example Multi-Select Simple -->
+                    <div class="example-wrap m-md-0">
+                        <h4 class="example-title">Роли</h4>
+                        <div class="example">
+                            <select class="form-control" data-plugin="multiSelect">
+                                <option value="a1">Создать договор</option>
+                                <option value="a2">Создать счет-фактуру</option>
+                                <option value="a3">Создать АКТ -счет-фактуру Создать доверенность</option>
+                                <option value="a4">Создать счет на оплату</option>
+                                <option value="a5">Создать ТТН</option>
+                                <option value="a6">Одобрить договор</option>
+                                <option value="a7">Одобрить счет-фактуру</option>
+                                <option value="a8">Одобрить АКТ-счет-фактуру</option>
+                                <option value="a9">Одобрить доверенность</option>
+                                <option value="a10">Одобрить счет на оплату</option>
+                                <option value="a11">Одобрить ТТН</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Зарегистрировать сотрудника</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- End Modal -->
     <!-- Core  -->
     <script src="global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
     <script src="global/vendor/jquery/jquery.js"></script>

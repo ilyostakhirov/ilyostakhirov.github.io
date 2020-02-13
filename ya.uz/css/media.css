@@ -1,0 +1,149 @@
+@media screen and ( max-width: 1199px) {
+
+}
+
+@media screen and ( max-width: 991px) {
+    .news_slider li {
+        width: 23%;
+    }
+    .lang {
+        display: block;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .social_btn li a {
+        padding: 0 11px;
+    }
+
+    .line_search {
+        width: 190px;
+    }
+
+    .white_mask {
+        position: absolute;
+        top: 45%;
+    }
+
+    .popular_news {
+        height: 280px;
+    }
+
+    .menu .navbar-default .navbar-nav > li > a {
+        font-size: 13px;
+    }
+
+    .social_btn li a .fa {
+        font-size: 18px;
+    }
+
+    .social_btn li:nth-child(1) {
+        border: none;
+    }
+
+    .social_btn li:nth-child(5) {
+        border: none;
+    }
+
+    .social_btn li a {
+        padding: 0 7px;
+    }
+
+    .date_list {
+        margin-bottom: 15px;
+    }
+
+    .img_size .item img {
+        max-width: 100%;
+    }
+}
+
+@media screen and ( max-width: 767px) {
+    .news_slider li {
+        width: 48%;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #fff;
+        background-color: #162b80;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #fff;
+    }
+    .navbar-default {
+        background-color: #2e4780;
+        border: none;
+    }
+    .navbar-default .navbar-toggle {
+        border:none;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+    .social_btn {
+        padding: 8px 0;
+    }
+    .line_search {
+        width: 170px;
+    }
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+        background: transparent;
+    }
+}
+
+@media screen and ( max-width: 587px) {
+    .news_slider li {
+        width: 100%;
+    }
+    .top_container .col-md-5{
+        width: 100%;
+    }
+    .logo_box a {
+        text-align: center;
+    }
+    .slider_box .col-xs-9,.col-xs-3 {
+        width: 100%;
+
+    }
+    .news_slider .col-xs-3{
+        width: 50%;
+    }
+    .search_box {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+    .line_search{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .weather{
+        margin-left: 0;
+        display: inline-block;
+        width: 50%;
+    }
+    .central_news .col-xs-6{
+        width: 100%;
+
+    }
+    .photo-item{
+        margin-bottom: 15px;
+        display: block;
+    }
+    .info {
+        text-align: center;
+    }
+    .mini_menu ul{
+        text-align: center;
+    }
+    .mini_menu li{
+        display: inline-block;
+        float: none;
+    }
+
+    .whlogo a{
+        text-align: center;
+        display: block;
+    }
+}
+

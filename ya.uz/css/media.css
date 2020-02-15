@@ -38,6 +38,7 @@
 	}
 	.lang {
 		display: block;
+		    margin-left: 15px;
 	}
 
 	.container {
@@ -91,7 +92,7 @@
 }
 .top_container {
     display: flex;
-        padding: 15px 15px 0 15px;
+        padding: 0;
 }
 .flexis .flextor a {
     margin: 0 0 15px;
@@ -178,9 +179,11 @@
 		right: 0;
 	}
 	.logo_box {
-		display: block;
-		width: 195px;
-		text-align: center;
+		    display: block;
+    width: 195px;
+    text-align: center;
+    margin-right: 0;
+    margin-top: 15px;
 	}
 	.news_slider li {
 		width: 47%;

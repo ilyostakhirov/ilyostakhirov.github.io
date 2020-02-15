@@ -40,6 +40,9 @@
 		display: block;
 		    margin-left: 15px;
 	}
+	.slider_box .nopade-right{
+		padding-right: 15px;
+	}
 
 	.container {
 		width: 100%;

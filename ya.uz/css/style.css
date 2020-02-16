@@ -910,6 +910,9 @@ th {
 	/* padding: 0 20px; */
 	margin-bottom: 30px;
 }
+.search_box {
+    position: relative;
+}
 .slider_box {
 }
 .central_news {

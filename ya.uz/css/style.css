@@ -42,7 +42,7 @@ img {
 	background: #fff;
 	box-shadow: 0px 0px 5.31px 3.69px rgba(209, 209, 209, 0.67);
 	z-index: 1;
-	padding: 0 20px;
+	padding: 0 30px;
 }
 .top_container {
 	padding: 20px 0 0 0;
@@ -253,11 +253,7 @@ img {
 	font-size: 14px;
 }
 .menu {
-	/* margin-top: 12px; */
-	margin-bottom: 40px;
-	margin: 0 -20px 40px;
-	/* z-index: 1; */
-	/* position: relative; */
+	margin: 0 -30px 30px;
 }
 .menu .navbar {
 	border-radius: 0;
@@ -927,7 +923,7 @@ th {
 	/* right: 120px; */
 }
 .photo_box {
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 }
 .owl-dots button {
 	outline: none;
@@ -1205,7 +1201,10 @@ th {
 	display: block;
 }
 .flexis {
-	width: 100%;
+	display: flex;
+	    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 .flextor a {
 	display: block;
@@ -1220,7 +1219,6 @@ th {
 	max-width: 256px;
 }
 .flexis .flextor a {
-	margin: 15px;
 	margin-bottom: 55px;
 }
 
@@ -1231,6 +1229,10 @@ th {
 	margin-bottom: 15px;
 }
 .flextor {
-	width: 25%;
-	float: left;
+	    flex: 0 0 25%;
+    max-width: 25%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
 }

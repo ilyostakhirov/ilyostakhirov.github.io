@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', arial, sans-serif;
+}
+
+body {
+  width: 1020px;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-bottom: 0.5em;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 0.5em;
+}
+
+.h1 {
+  font-size: 32px;
+  text-transform: capitalize;
+}
+
+.h2 {
+  font-size: 28px;
+  text-transform: capitalize;
+}
+
+.certificate {
+  width: 1000px;
+  height: 750px;
+  text-align: center;
+  margin: 10px;
+  background: url('frame.png') no-repeat;
+  background-size: cover;
+}
+.certificate h1 {
+  font-size: 55px;
+  text-transform: uppercase;
+  color: #0079c5;
+}
+.certificate h2{
+  font-size: 40px;
+  color: #231f20;
+  border-bottom: 2px solid #00afc8;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-right: 10px;
+}
+.certificate h3{
+  font-size: 30px;
+}
+.certificate {
+  font-weight: bold;
+  color: #0079c5;
+  font-size: 18px;
+}
+.certificate--inner-wrap {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.certificate--date, .certificate--from {
+  position: absolute;
+  font-weight: bold;
+}
+
+.certificate--date {
+left: 43px;
+    bottom: 92px;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.certificate--from {
+right: 8px;
+    width: 200px;
+    bottom: 94px;
+}
+.certificate--from img {
+  width: 115px;
+}
+
+.certificate-Firma {
+  right: 0;
+  bottom: 1em;
+  width: 200px;
+}
+.certificate-Firma img {
+  width: 150px;
+  height: 100px;
+}
+.logoes {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 113px 40px;
+    padding-top: 35px;
+}
+.logo-left{
+  display: flex;
+  align-items: center;
+}
+.logo-left span{
+  margin-left: 20px;
+  text-align: left;
+  color: #fff;
+  font-size: 16px;
+}
+
+.certificate--date hr {
+    margin: 5px 0;
+        border: 0;
+    border-top: 1px solid #fff;
+}

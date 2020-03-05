@@ -30,7 +30,7 @@
  
 
 html {
-  font-size: 18pt;
+  font-size: 16pt;
   font-size: 1vmax; }
 
 @media screen and (max-width: 1680px) {
@@ -67,7 +67,7 @@ html {
  ***/
 
 body {
-	font-size:14px;
+	 font-size: 1rem;
 	color:#777777;
 	line-height:1.7em;
 	font-weight:400;
@@ -117,7 +117,7 @@ p,.text{
 
 .auto-container{
 	position:static;
-	max-width:1300px;
+	max-width:1200px;
 	padding:0px 15px;
 	margin:0 auto;
 }
@@ -535,21 +535,21 @@ color:#ffffff;
 }
 .block-section .item_box img{
 	max-width:100%;
-	width: 450px;
-	height: 396px;
+	width: 400px;
+	height: 380px;
 	object-fit: contain;
 	object-position: center;
 	margin-bottom: 30px;
 }
 .block-section .item_box .title_product{
-    font-size: 3.5rem;
+    font-size: 3rem;
     line-height: 1.4;
     font-weight:bold;    
     margin-bottom: 15px;
 	
 }
 .block-section .item_box .under_title{
-	font-size: 2rem;
+	font-size: 1.8rem;
 	line-height: 1.4;	
 }
 /*** 
@@ -883,7 +883,7 @@ img{
 .sec-title h2{
 	position:relative;
 	display: inline-block;
-	font-size:2.2rem;
+	font-size:2rem;
 	line-height:1.2em;
 	color:#1e1f36;
 	font-weight:bold;
@@ -977,7 +977,7 @@ img{
 }
 .lang li a{
 	display: block;	
-	 font-size: 16px;
+	 font-size: 14px;
 	 width: 37px;
 	 height: 37px;
 	 text-align: center;
@@ -1034,7 +1034,7 @@ img{
 .main-menu .navigation > li > a{
 	position:relative;
 	display:block;
-	font-size:15px;
+	font-size:14px;
 	line-height:30px;
 	font-weight:500;
 	text-transform: uppercase;
@@ -1534,7 +1534,8 @@ iframe{
 }
 .page .back-home svg{
 	fill: #fff;
-	opacity: 0.5
+	opacity: 0.5;
+	width: 35px;
 }
 /*** 
 
@@ -8838,7 +8839,7 @@ iframe{
 .main-footer .footer-nav li{
 	position: relative;
 	display: inline-block;
-	margin: 0 15px;
+	margin: 0 10px;
 }
 .main-footer .footer-nav li:last-child{
 	margin-right:0;
@@ -8846,7 +8847,7 @@ iframe{
 .main-footer .footer-nav li a{
 	position: relative;
 	display: block;
-	font-size: 16px;
+	font-size: 0.8rem;
 	line-height: 30px;
 	color: #ffffff;
 	font-weight: 500;
@@ -8923,8 +8924,8 @@ iframe{
 	position: relative;
 	display: block;
 	text-transform: uppercase;
-	font-size: 16px;
-	line-height: 30px;
+	font-size: 0.7rem;
+	line-height: 1.7;
 	color: #848787;
 	font-weight: 500;
 	-webkit-transition: all 300ms ease;
@@ -8941,7 +8942,7 @@ iframe{
 .main-footer.style-three .copyright-text{
 	text-align: center;
     color: #848787;
-    font-size: 18px;
+    font-size: 0.8rem;
 	margin-bottom: 0;
 }
 
@@ -11148,14 +11149,14 @@ iframe{
 	-moz-transition:all 300ms ease;
 }
 .tel{
-	font-size: 18px;
+	font-size: 15px;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
     color: #1b4e9b;
 }
 .banner-product {
     position: relative;
-    padding: 140px 0;
+    padding: 70px 0;
     z-index: 1;
     background: #1B4E9B;
 }
@@ -11169,6 +11170,11 @@ iframe{
       background-image: url(../img/right-trin.png), url(../img/left-tring.svg);
   background-position: right top, left bottom;
   background-repeat: no-repeat, no-repeat;
+      background-size: contain;
+    opacity: 0.5;
+}
+.banner-product img{
+	max-width: 400px;
 }
 .main-box .auto-container{
 	display:flex;
@@ -11204,7 +11210,7 @@ iframe{
 .feature-item .text_area {
 	flex-grow: 1;
     color: #2B2A29;
-    font-size: 22px;
+    font-size: 1rem;
     line-height:1.4;
     font-weight:bold;
 }
@@ -11220,7 +11226,7 @@ margin-bottom: 30px;
 .product-item a span{
 	    display: block;
 	    text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height:1.5;
     color: #000000;
 }

@@ -354,6 +354,13 @@ background-color: #fff;
 }
 }
 @media only screen and (max-width: 767px){
+	.block-section {
+    flex-direction: column;
+}
+.block-section a {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
 	.block-section .item_box img {
     height: 144px;
 }
@@ -669,6 +676,7 @@ position: absolute;
 @media only screen and (max-width: 599px){
 .main-footer.style-three .footer-nav li a{
 	text-transform: inherit;
+	    font-size: 1rem;
 }
 	.page-title h1,
 	.banner-meetup h2,

@@ -41,7 +41,7 @@ html {
 @media screen and (max-width: 1280px) {
   html {
     font-size: 14pt;
-    font-size: 1.7vmax; } }
+    font-size: 1.4vmax; } }
 
 /*** 
 
@@ -1533,9 +1533,9 @@ iframe{
     border: 1px solid #fff;
 }
 .page .back-home svg{
-	fill: #fff;
 	opacity: 0.5;
-	width: 35px;
+	width: 30px;
+	height: 30px;
 }
 /*** 
 
@@ -11529,7 +11529,7 @@ table tr:nth-of-type(odd) td{
     font-weight: bold;
 }
 .white_bg h1{
-    font-size: 2.2rem;
+    font-size: 2rem;
     line-height: 1.2em;
     color: #1e1f36;
     margin-bottom:30px;
@@ -11572,7 +11572,7 @@ label span {
     font-weight: 400;
 }
 .under_than, .thans {
-    font-size: 36px;
+    font-size: 18px;
     max-width: 680px;
     margin: 0 auto 40px auto;
     color: #212121;

@@ -6,6 +6,7 @@
     <title></title>
     <!-- Stylesheets -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/asSpinner.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,10 +19,8 @@
         <header class="main-header" id="mainNav">
             <div class="main-box">
                 <div class="auto-container clearfix">
-                    <a href="#" class="back-home"><svg width="43" height="43" viewBox="0 0 43 43" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.9859 24.6198L4.09138 15.5829L11.9859 6.546C12.6239 5.81492 12.5494 4.70473 11.8184 4.0662C11.0873 3.42825 9.97768 3.50325 9.33856 4.23375L0.434115 14.427C-0.144705 15.089 -0.144705 16.0773 0.434115 16.7393L9.33864 26.9326C9.68659 27.3298 10.1734 27.5337 10.6632 27.5337C11.0733 27.5337 11.485 27.3908 11.8184 27.0996C12.5495 26.4611 12.6244 25.3509 11.9859 24.6198Z"></path>
-                            <path d="M30.2285 13.8254H1.75746C0.786766 13.8254 0 14.6121 0 15.5829C0 16.5536 0.786766 17.3403 1.75746 17.3403H30.2285C35.3327 17.3403 39.4851 21.4926 39.4851 26.5963C39.4851 31.7001 35.3327 35.8523 30.2285 35.8523H4.10079C3.1301 35.8523 2.34333 36.6391 2.34333 37.6098C2.34333 38.5805 3.1301 39.3672 4.10079 39.3672H30.2285C37.2701 39.3672 43 33.6379 43 26.5963C43 19.5547 37.2707 13.8254 30.2285 13.8254Z"></path>
-                        </svg></a>
+                    <a href="#" class="back-home"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 12H6M12 5l-7 7 7 7" /></svg></a>
                     <div class="logo-box">
                         <div class="logo"><a href="#"><img src="images/logo.svg" alt="" title=""></a></div>
                     </div>
@@ -44,6 +43,7 @@
                                     <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#">Cвязаться с нами</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#">Заказ</a></li>
+                                    <li class="nav-item tel"><a class="nav-link" href="#">+998 90 777 77 77</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -106,20 +106,11 @@
                                 <div class="col-md-4">
                                     <div class="input-group">
                                         <label>Количество <span>*</span></label>
-                                        <div class="downstar">
-                                            <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
-                                            <span class="input-group-btn">
-                                                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#028638" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                        <line x1="12" y1="5" x2="12" y2="19"></line>
-                                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                    </svg>
-                                                </button>
-                                            </span>
-                                        </div>
+                                        <input type="text" class="form-control quty" value="0" />
                                     </div>
                                 </div>
                             </div>
+                            <a class="add-new" href="#">+ Добавить еще</a>
                             <div class="d-flex mt-3 mb-3">
                                 <div class="custom-control custom-checkbox mr-4">
                                     <input type="checkbox" class="custom-control-input" id="customCheck2">
@@ -209,7 +200,20 @@
     <script src="js/wow.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+    <script src="js/jquery-asSpinner.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+    jQuery(function($) {
+        $('.quty').asSpinner({
+            namespace: 'spinnerUi',
+            skin: null,
+            min: 0,
+            max: 10000,
+            step: 1,
+            mousewheel: true,
+        });
+    });
+    </script>
 </body>
 
 </html>

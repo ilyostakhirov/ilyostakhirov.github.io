@@ -11659,7 +11659,7 @@ background-color: #a53692;
 .page1 .bg-yellow{
 	background: url(../img/bg.png);
 }
-.banner-carousel1 .slide-item:before {
+.banner-carousel1 .slide-item:before,.page-title:before {
     position: absolute;
     left: 0;
     top: 0;

@@ -457,4 +457,101 @@
         enableMasonry();
     });
 
+    const initProductGallery = function(element, layout) {
+        layout = layout !== undefined ? layout : 'standard';
+
+        const options = {
+            dots: false,
+            margin: 10
+        };
+        const layoutOptions = {
+            standard: {
+                responsive: {
+                    1200: { items: 3 },
+                    992: { items: 3 },
+                    768: { items: 2 },
+                    480: { items: 2 },
+                    380: { items:2 },
+                    0: { items: 3 }
+                }
+            },
+            sidebar: {
+                responsive: {
+                    768: { items: 3 },
+                    480: { items: 2 },
+                    380: { items: 2 },
+                    0: { items: 2 }
+                }
+            },
+            columnar: {
+                responsive: {
+                    768: { items: 2 },
+                    480: { items: 2 },
+                    380: { items: 2 },
+                    0: { items: 2 }
+                }
+            },
+            quickview: {
+                responsive: {
+                    1200: { items: 3 },
+                    768: { items: 2 },
+                    480: { items: 2 },
+                    380: { items: 2 },
+                    0: { items: 2 }
+                }
+            }
+        };
+
+        const gallery = $(element);
+
+        const image = gallery.find('.product-gallery__featured .owl-carousel');
+        const carousel = gallery.find('.product-gallery__carousel .owl-carousel');
+
+        image
+            .owlCarousel({ items: 1, dots: false })
+            .on('changed.owl.carousel', syncPosition);
+
+        carousel
+            .on('initialized.owl.carousel', function() {
+                carousel.find('.product-gallery__carousel-item').eq(0).addClass('product-gallery__carousel-item--active');
+            })
+            .owlCarousel($.extend({}, options, layoutOptions[layout]));
+
+        carousel.on('click', '.owl-item', function(e) {
+            e.preventDefault();
+
+            image.data('owl.carousel').to($(this).index(), 300, true);
+        });
+
+        function syncPosition(el) {
+            let current = el.item.index;
+
+            carousel
+                .find('.product-gallery__carousel-item')
+                .removeClass('product-gallery__carousel-item--active')
+                .eq(current)
+                .addClass('product-gallery__carousel-item--active');
+            const onscreen = carousel.find('.owl-item.active').length - 1;
+            const start = carousel.find('.owl-item.active').first().index();
+            const end = carousel.find('.owl-item.active').last().index();
+
+            if (current > end) {
+                carousel.data('owl.carousel').to(current, 100, true);
+            }
+            if (current < start) {
+                carousel.data('owl.carousel').to(current - onscreen, 100, true);
+            }
+        }
+    };
+
+    $(function() {
+        $('.product').each(function() {
+            const gallery = $(this).find('.product-gallery');
+
+            if (gallery.length > 0) {
+                initProductGallery(gallery[0], $(this).data('layout'));
+            }
+        });
+    });
+
 })(window.jQuery);

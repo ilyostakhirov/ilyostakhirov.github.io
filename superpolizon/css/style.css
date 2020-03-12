@@ -41,7 +41,7 @@ html {
 
 @media screen and (max-width: 1280px) {
   html {
-    font-size: 14pt;
+    font-size: 10pt;
     font-size: 1.4vmax; } }
 
 /*** 
@@ -1082,6 +1082,7 @@ img{
 .social_btn ul a svg {
     width: 33px;
     height: 33px;
+        fill: #1b4e9b;
 }
 .social_btn ul li:last-child a{
 	margin-right:0;
@@ -11611,13 +11612,13 @@ label span {
     font-size: 14px;
 }
 .page1.page .main-header .main-box {
-    background-color: #369040;
-    border-bottom: 1px solid #33973e;
+background-color: #a53692;
+    border-bottom: 1px solid #852a75;
 }
 .page1 .banner-product{
 	    background: #ffcc00;
 }
-.banner-product h2{
+.page1 .banner-product h2{
 	    color: #2B2A29;
 }
 .banner-wrap{
@@ -11669,11 +11670,11 @@ label span {
     content: "";
 }
 .page1 .main-menu .navigation > li > a:before, .page1 .main-menu .navigation > li > a.active:before{
-    background: rgb(35, 92, 42);
-    background: linear-gradient(to left, rgb(8, 82, 16) 0%,rgb(107, 225, 120) 100%);
+    background: rgb(141, 39, 124);
+    background: linear-gradient(to left, rgb(121, 31, 105) 0%,rgb(225, 128, 208) 100%);
 }
 .page1 .main-menu .navigation > li > ul{
-	border-bottom: 3px solid #369040;
+	border-bottom: 3px solid #a53692;
 }
 .desc ul{
     position: relative;
@@ -11697,4 +11698,43 @@ position: absolute;
     content: "\f05d";
     font-family: 'FontAwesome';
     color: #369040;
+}
+.product-gallery__featured {
+    -webkit-box-shadow: inset 0 0 0 2px #f2f2f2;
+    box-shadow: inset 0 0 0 2px #f2f2f2;
+    padding: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+.product-gallery__featured a {
+    display: block;
+    padding: 20px;
+}
+.product-gallery__featured a > img {
+    max-height: 311px;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+.product-gallery__carousel {
+    margin-top: 16px;
+}
+.product-gallery__carousel img {
+    height: 75px;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+.product-gallery__carousel-item {
+    cursor: pointer;
+    display: block;
+    -webkit-box-shadow: inset 0 0 0 2px #f2f2f2;
+    box-shadow: inset 0 0 0 2px #f2f2f2;
+    padding: 12px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+.product-gallery__carousel-item--active {
+    -webkit-box-shadow: inset 0 0 0 2px #1b4e9b;
+    box-shadow: inset 0 0 0 2px #1b4e9b;
 }

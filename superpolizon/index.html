@@ -143,6 +143,36 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        $('.block-section a').hover(
+               function(){ $(this).addClass('hover') },
+               function(){ $(this).removeClass('hover') }
+        )
+    </script>
+    <style>
+        .block-section a{
+-webkit-transition: all 200ms cubic-bezier(0.420, 0.000, 1.000, 1.000);
+   -moz-transition: all 200ms cubic-bezier(0.420, 0.000, 1.000, 1.000);
+     -o-transition: all 200ms cubic-bezier(0.420, 0.000, 1.000, 1.000);
+        transition: all 200ms cubic-bezier(0.420, 0.000, 1.000, 1.000); /* ease-in */
+
+-webkit-transition-timing-function: cubic-bezier(0.420, 0.000, 1.000, 1.000);
+   -moz-transition-timing-function: cubic-bezier(0.420, 0.000, 1.000, 1.000);
+     -o-transition-timing-function: cubic-bezier(0.420, 0.000, 1.000, 1.000);
+        transition-timing-function: cubic-bezier(0.420, 0.000, 1.000, 1.000); /* ease-in */
+        }
+        .block-section a.hover {
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+        .block-section a.hover.box_center2 {
+    margin-left: -20%;
+}
+        .block-section a.hover.box_center {
+    margin-right: -20%;
+    z-index: 9;
+}
+    </style>
 </body>
 
 </html>

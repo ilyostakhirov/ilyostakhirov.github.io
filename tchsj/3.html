@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="uz">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PulPul</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="mt-20 d-flex justify-content-between align-items-center">
+            <!--<a class="back"-->
+            <!--th:href="@{/edu(phone=${init_phone}, user_hash=${userHash}, store_id=${web_store_id})}">Назад</a>-->
+            <a class="back" href="#">Назад</a>
+            <!--Todo link reference to commune-->
+            <img class="small-tsj" src="img/logo.png" alt="">
+        </div>
+        <div class="title blue text-center mt-30 mb-20">Товарищество</div>
+        <div class="box p-15">
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Тема обращения</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlFile1">Прикрепить фото</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Текст обращения</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+        </div>
+        <div class="title mt-30 mb-20">История</div>
+        <div class="box">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Дата подачи</th>
+                        <th>Состояние</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>22.01.2020</td>
+                        <td>
+                            <span class="badge badge-primary">Обработано</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>22.01.2020</td>
+                        <td>
+                            <span class="badge badge-primary">
+                                В обработке</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="footer-text">
+            По вопросам задолженности обращаться в
+            <span>Образовательный центр</span> по номеру: <span>998935941994</span>
+        </div>
+        <div class="navigation">
+            <ul class="ul">
+                <li>
+                    <a href="1.html">
+                        <img src="img/icons/home.svg" alt="">
+                        <span>Главная</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="2.html">
+                        <img src="img/icons/services.svg" alt="">
+                        <span>Услуги</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active" href="3.html">
+                        <img src="img/icons/check.svg" alt="">
+                        <span>Жалоба</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    </script>
+</body>
+
+</html>

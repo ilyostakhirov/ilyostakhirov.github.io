@@ -5,13 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>PulPul</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/owl.carousel.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
 </head>
 
 <body>
-    <div class="container mt-40">
         <div class="owl-carousel owl-theme">
             <div class="box p-15 lits-item ">
                 <div class="image">
@@ -28,7 +26,7 @@
                         <dt class="col-3">Сальдо:</dt>
                         <dd class="col-9"><strong class="red f-14 mr-5">-84 174</strong> сум</dd>
                     </dl>
-                    <a class="btn btn-outline btn-warning btn-block mt-10" href="#">Оплатить <i class="next-icon"></i></a>
+                    <a class="btn btn-outline btn-warning btn-block mt-10" href="page1.2.html">Оплатить <i class="next-icon"></i></a>
                 </div>
             </div>
             <div class="box p-15 lits-item ">
@@ -46,7 +44,7 @@
                         <dt class="col-3">Сальдо:</dt>
                         <dd class="col-9"><strong class="green f-14 mr-5">+84 174 сум</strong></dd>
                     </dl>
-                    <a class="btn btn-outline btn-warning btn-block mt-10" href="#">Оплатить <i class="next-icon"></i></a>
+                    <a class="btn btn-outline btn-warning btn-block mt-10" href="page1.2.html">Оплатить <i class="next-icon"></i></a>
                 </div>
             </div>
             <div class="box p-15 lits-item ">
@@ -64,7 +62,7 @@
                         <dt class="col-3">Сальдо:</dt>
                         <dd class="col-9"><strong class="red f-14 mr-5">-84 174</strong> сум</dd>
                     </dl>
-                    <a class="btn btn-outline btn-warning btn-block mt-10" href="#">Оплатить <i class="next-icon"></i></a>
+                    <a class="btn btn-outline btn-warning btn-block mt-10" href="page1.2.html">Оплатить <i class="next-icon"></i></a>
                 </div>
             </div>
             <div class="box p-15 lits-item ">
@@ -82,20 +80,25 @@
                         <dt class="col-3">Сальдо:</dt>
                         <dd class="col-9"><strong class="green f-14 mr-5">+84 174 сум</strong></dd>
                     </dl>
-                    <a class="btn btn-outline btn-warning btn-block mt-10" href="#">Оплатить <i class="next-icon"></i></a>
+                    <a class="btn btn-outline btn-warning btn-block mt-10" href="page1.2.html">Оплатить <i class="next-icon"></i></a>
                 </div>
             </div>
         </div>      
-    </div>
     <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
     <script>
     $('.owl-carousel').owlCarousel({
         margin: 15,
         items: 1,
         stagePadding: 30,
+        responsive:{
+        0:{
+            items:1
+        },
+        700:{
+            items:2
+        }
+    }
     })
     </script>
 </body>

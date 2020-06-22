@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="uz">
 
@@ -6,121 +5,82 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>PulPul</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/owl.carousel.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet"></head>
+    <link href="css/style.css" rel="stylesheet">
+    
+</head>
 
 <body>
-<div class="container">
-    <div class="title mt-20 mb-20">Мои квартиры</div>
-
-    <div class="box p-15 lits-item mb-15">
-        <div class="image">
-            <img class="small-tsj"
-                 src="https://panel.paymo.uz/open/logo/17" alt="">
+        <div class="container">
+    <div class="mt-20 d-flex justify-content-between align-items-center">
+        <!--<a class="back"-->
+           <!--th:href="@{/edu(phone=${init_phone}, user_hash=${userHash}, store_id=${web_store_id})}">Назад</a>-->
+        <a class="back" href="#">Назад</a>
+        <!--Todo link reference to commune-->
+        <img class="small-tsj" src="img/logo.png" alt="">
+    </div>
+    <div class="title blue text-center mt-30 mb-20">Товарищество</div>
+    <div class="widgets row">
+        <div class="col-6">
+            <a href="2.1.html" class="widget_item">
+                <img src="img/icons/1.png" alt="">
+                <span class="title">Квартплата</span>
+                <strong class="red f-16">
+                    <span>-132 184</span><span><small> cум</small></span>
+                </strong>
+            </a>
         </div>
-        <div class="info">
-            <dl class="dl-horizontal row">
-                <dt class="col-3">ТЧСЖ:</dt>
-                <dd class="col-9">Товарищество</dd>
-                <dt class="col-3">Адрес:</dt>
-                <dd class="col-9">Ц4, дом 5А, 13</dd>
-                <dt class="col-3">ФИО:</dt>
-                <dd class="col-9">Умарова</dd>
-                <dt class="col-3">Сальдо:</dt>
-                <dd class="col-9">
-                    <strong
-                            class="red f-16"
-                    >-1 169 500</strong> сум
-                </dd>
-            </dl>
-            <a class="btn btn-outline btn-warning btn-block mt-10"
-               href="/commune/apartment?id=119&amp;user_hash=9a14d4a84a5fc5ca78a95fa6836d9c52">
-                Оплатить<i class="next-icon"></i>
+        
+        <div class="col-6">
+            <a href="2.1.html" class="widget_item">
+                <img src="img/icons/2.png" alt="">
+                <span class="title">Горячая вода</span>
+                <strong class="f-16 green">
+                    <span>100 000</span><span><small> cум</small></span>
+                </strong>
+            </a>
+        </div>
+        <div class="col-6">
+            <a href="2.1.html" class="widget_item">
+                <img src="img/icons/3.png" alt="">
+                <span class="title">Отопление</span>
+                <strong class="f-16 green">
+                    <span>100 000</span><span><small> cум</small></span>
+                </strong>
             </a>
         </div>
     </div>
-
-    <div class="box p-15 lits-item mb-15">
-        <div class="image">
-            <img class="small-tsj"
-                 src="https://panel.paymo.uz/open/logo/17" alt="">
-        </div>
-        <div class="info">
-            <dl class="dl-horizontal row">
-                <dt class="col-3">ТЧСЖ:</dt>
-                <dd class="col-9">Товарищество</dd>
-                <dt class="col-3">Адрес:</dt>
-                <dd class="col-9">Ц4, дом 35, 10</dd>
-                <dt class="col-3">ФИО:</dt>
-                <dd class="col-9">Откир</dd>
-                <dt class="col-3">Сальдо:</dt>
-                <dd class="col-9">
-                    <strong
-                            class="red f-16"
-                    >-1 785 348</strong> сум
-                </dd>
-            </dl>
-            <a class="btn btn-outline btn-warning btn-block mt-10"
-               href="/commune/apartment?id=191&amp;user_hash=9a14d4a84a5fc5ca78a95fa6836d9c52">
-                Оплатить<i class="next-icon"></i>
-            </a>
-        </div>
+    
+    <div class="footer-text">
+        По вопросам задолженности обращаться в 
+        <span>Образовательный центр</span> по номеру: <span>998935941994</span>
     </div>
-
-
-    <div class="pr-t-w mt-30">
-        <div class="title float-left">ТЧСЖ</div>
-<!--        <a id="show_all" hidden="hidden" class="show_all float-right" onclick="show_all()" href="#" th:text="${'Все ' + stores.size()}">Все 15</a>-->
-<!--        <a id="hide_all" class="show_all float-right" onclick="hide_all()" href="#" >Карусель</a>-->
-    </div>
-    <div class="owl-carousel grid">
-        <div class="item">
-            <a href="/commune/apartments-by-store?id=12&amp;user_hash=9a14d4a84a5fc5ca78a95fa6836d9c52">
-                <img src="https://panel.paymo.uz/open/logo/12" alt="">
-                <div class="info">
-                    <strong>Рассрочки</strong>
-                </div>
-            </a>
+    <div class="navigation">
+        
+            <ul class="ul">
+                <li>
+                    <a href="1.html">
+                        <img src="img/icons/home.svg" alt="">
+                        <span>Главная</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active" href="2.html">
+                        <img src="img/icons/services.svg" alt="">
+                        <span>Услуги</span>
+                    </a>
+                </li>
+                <li>
+                    <a  href="3.html">
+                        <img src="img/icons/check.svg" alt="">
+                        <span>Жалоба</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="item">
-            <a href="/commune/apartments-by-store?id=17&amp;user_hash=9a14d4a84a5fc5ca78a95fa6836d9c52">
-                <img src="https://panel.paymo.uz/open/logo/17" alt="">
-                <div class="info">
-                    <strong>Товарищество</strong>
-                </div>
-            </a>
-        </div>
-    </div>
-
-</div>
-<script src="/js/jquery.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/owl.carousel.min.js"></script>
-<script src="/js/main.js"></script>
-<script>
-    /*<![CDATA[*/
-
-    // $('#apartments').owlCarousel({
-    //     margin: 15,
-    //     loop: false,
-    //     autoWidth: true,
-    //     items: 4
-    // })
-
-    // function show_all() {
-    //     $('#apartments').removeClass('owl-carousel owl-theme').addClass('owl-carousel owl-theme grid');
-    //     $('#show_all').prop("hidden", true);
-    //     $('#hide_all').prop("hidden", false);
-    // }
-    //
-    // function hide_all() {
-    //     $('#apartments').removeClass("owl-carousel owl-theme grid").addClass('owl-carousel owl-theme');
-    //     $('#show_all').prop("hidden", false);
-    //     $('#hide_all').prop("hidden", true);
-    // }
-    /*]]>*/
-</script>
+</div>  
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    </script>
 </body>
 
 </html>
